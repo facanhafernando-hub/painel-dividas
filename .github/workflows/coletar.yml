@@ -3,8 +3,9 @@ name: Coletar dados
 on:
   schedule:
     # horários em UTC (Brasília = UTC-3)
-    - cron: "47 23 * * 1-5"   # 20:47 BRT: depois da ANBIMA (até 20h) e do fechamento da B3
-    - cron: "17 2 * * 2-6"    # 23:17 BRT: segunda passada, pega publicação atrasada
+    - cron: "47 23 * * 1-5"   # 20:47 BRT: ANBIMA do dia (publica até 20h) e B3 se já disponível
+    - cron: "17 2 * * 2-6"    # 23:17 BRT: segunda passada
+    - cron: "43 12 * * 1-5"   # 09:43 BRT: B3 consolida o dia anterior de manhã
   workflow_dispatch:
     inputs:
       data:
@@ -25,7 +26,7 @@ concurrency:
 jobs:
   coletar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -44,6 +45,7 @@ jobs:
           python coletor/coletar.py $ARGS
 
       - name: Salvar dados no repositório
+        if: always()
         run: |
           git config user.name "painel-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

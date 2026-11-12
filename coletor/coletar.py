@@ -26,6 +26,7 @@ import json
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 import unicodedata
 import urllib.error
 import urllib.request
@@ -47,6 +48,11 @@ ALERTA_DESVIO_ANBIMA = 2.0   # |PU negociado / PU ANBIMA - 1| acima de X%
 ALERTA_VOLUME_MULT = 3.0     # volume do dia > X vezes a média dos últimos 20 pregões
 ALERTA_VOLUME_MIN = 1_000_000.0
 SERIE_MAX_PONTOS = 750       # ~3 anos de pregões por ativo
+# Tipos fora do escopo do painel (CFF = cotas de fundos fechados/FIDC, ~90% das linhas da B3)
+TIPOS_EXCLUIR = {"CFF"}
+B3_TAM_PAG = 500
+B3_TIMEOUT = 15     # a API da B3 responde em <2s ou trava: desistir rápido e tentar de novo
+B3_TENTATIVAS = 8
 
 
 # ----------------------------------------------------------------------------- utilidades
@@ -79,22 +85,23 @@ def num(v):
 
 
 def http(url: str, metodo: str = "GET", corpo: bytes | None = None,
-         tentativas: int = 3) -> bytes | None:
+         tentativas: int = 3, timeout: int = 60) -> bytes | None:
     hdr = {"User-Agent": UA, "Accept": "*/*", "Accept-Language": "pt-BR,pt;q=0.9"}
     if corpo is not None:
         hdr["Content-Type"] = "application/json"
     for i in range(1, tentativas + 1):
         try:
             req = urllib.request.Request(url, data=corpo, headers=hdr, method=metodo)
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
             if e.code == 404:
+                log(f"  404 em {url}")
                 return None
             log(f"  HTTP {e.code} em {url} (tentativa {i})")
         except Exception as e:  # rede, timeout, TLS
             log(f"  erro {type(e).__name__}: {e} em {url} (tentativa {i})")
-        time.sleep(3 * i)
+        time.sleep(min(2 * i, 8))
     return None
 
 
@@ -115,26 +122,26 @@ def escrever_json(caminho: Path, obj) -> None:
 
 # nome lógico -> candidatos (normalizados). Cobre rótulo PT, EN e tag ISO usada na API.
 B3_MAPA = {
-    "tipo":      ["instrumentofinanceiro", "instrumento", "financialinstrument", "instrmtp",
+    "tipo":      ["instrumentcode", "instrumentofinanceiro", "instrumento", "financialinstrument", "instrmtp",
                   "instrmnttp", "tipoinstrumento", "tipo", "sctyctgynm", "sctyctgy"],
     "codigo":    ["codigoif", "codif", "tickersymbol", "tckrsymb", "codigo", "ifcode"],
     "isin":      ["codigoisin", "isin", "isincode"],
-    "emissor":   ["emissor", "issuer", "issrnm", "issuername", "nomeemissor", "emissornm"],
-    "data_neg":  ["datanegocio", "tradedate", "trddt", "traddt", "rptdt"],
-    "data_liq":  ["dataliquidacao", "settlementdate", "sttlmdt"],
-    "qtd":       ["quantidadenegociada", "tradedquantity", "tradqty", "trdqty", "quantidade"],
-    "pu_min":    ["precominimo", "minprice", "minpric", "minprc"],
-    "pu_med":    ["precomedio", "averageprice", "avrgpric", "avgpric", "avgprc"],
-    "pu_max":    ["precomaximo", "maxprice", "maxpric", "maxprc"],
-    "pu_ult":    ["ultimopreco", "lastprice", "lastpric", "lastprc"],
-    "pu_ref":    ["precodereferencia", "precoreferencia", "referenceprice", "refpric", "mtmpric"],
+    "emissor":   ["issuer", "emissor", "issrnm", "issuername", "nomeemissor", "emissornm"],
+    "data_neg":  ["tradedate", "datanegocio", "trddt", "traddt", "rptdt"],
+    "data_liq":  ["settlementdt", "dataliquidacao", "settlementdate", "sttlmdt"],
+    "qtd":       ["quantity", "quantidadenegociada", "tradedquantity", "tradqty", "trdqty", "quantidade"],
+    "pu_min":    ["minimum", "precominimo", "minprice", "minpric", "minprc"],
+    "pu_med":    ["average", "precomedio", "averageprice", "avrgpric", "avgpric", "avgprc"],
+    "pu_max":    ["maximum", "precomaximo", "maxprice", "maxpric", "maxprc"],
+    "pu_ult":    ["closing", "ultimopreco", "lastprice", "lastpric", "lastprc"],
+    "pu_ref":    ["referenceprice", "precodereferencia", "precoreferencia", "referenceprice", "refpric", "mtmpric"],
     "n_neg":     ["numerodenegocios", "numberoftrades", "nbroftrds", "nboftrds", "tradsqty", "qtdnegocios",
                   "rglrtxsqty"],
     "volume":    ["volumefinanceiror", "volumefinanceiro", "financialvolume", "ntlfinvol",
                   "fnclvol", "volume"],
-    "classif":   ["classificacaodonegocio", "classificacaodosnegocios", "classificacao",
+    "classif":   ["businessclass", "classificacaodonegocio", "classificacaodosnegocios", "classificacao",
                   "tradeclassification", "trdclssfctn"],
-    "oscilacao": ["oscilacao", "oscillation", "oscn", "prcvartn"],
+    "oscilacao": ["osc", "oscilacao", "oscillation", "oscn", "prcvartn"],
 }
 
 
@@ -156,42 +163,62 @@ def mapear_colunas(colunas: list[str]) -> dict[str, int]:
     return idx
 
 
-def b3_tabela(tabela: str, d: date) -> tuple[list[str], list[list]]:
-    """Lê todas as páginas de uma tabela do BDI. Protege contra página 'eco'."""
+def b3_pagina(tabela: str, d: date, pag: int):
+    raw = http(B3_URL.format(tabela=tabela, d=d.isoformat(), pag=pag, tam=B3_TAM_PAG),
+               metodo="POST", corpo=b"{}", tentativas=B3_TENTATIVAS, timeout=B3_TIMEOUT)
+    if raw is None:
+        return None
+    try:
+        return json.loads(raw).get("table") or {}
+    except json.JSONDecodeError:
+        return None
+
+
+def b3_tabela(tabela: str, d: date) -> tuple[list[str], list[list]] | None:
+    """Lê todas as páginas (6 em paralelo). Devolve None se alguma página falhar,
+    para a data não ser gravada pela metade e ser refeita na próxima execução."""
     colunas: list[str] = []
     linhas: list[list] = []
-    ultimo_hash = None
-    for pag in range(1, 200):
-        raw = http(B3_URL.format(tabela=tabela, d=d.isoformat(), pag=pag, tam=1000),
-                   metodo="POST", corpo=b"{}")
-        if raw is None:
-            break
-        try:
-            t = json.loads(raw).get("table") or {}
-        except json.JSONDecodeError:
-            log("  B3 devolveu algo que não é JSON")
-            break
-        vals = t.get("values") or []
-        if not colunas:
-            colunas = [c.get("name") or c.get("friendlyName") or f"c{i}"
-                       for i, c in enumerate(t.get("columns") or [])]
-            escrever_json(DADOS / "_debug" / f"b3_{tabela}_colunas.json",
-                          {"data": d.isoformat(), "columns": t.get("columns"),
-                           "amostra": vals[:3]})
-        if not vals:
-            break
-        h = hashlib.sha1(json.dumps(vals, sort_keys=True).encode()).hexdigest()
-        if h == ultimo_hash:  # endpoint repetindo a mesma página
-            break
-        ultimo_hash = h
-        linhas.extend(vals)
-        if len(vals) < 1000:
-            break
+    hashes = set()
+    pag = 1
+    with ThreadPoolExecutor(6) as ex:
+        while pag < 400:
+            lote = list(range(pag, pag + 6))
+            res = list(ex.map(lambda p: b3_pagina(tabela, d, p), lote))
+            fim = False
+            for p, t in zip(lote, res):
+                if t is None:
+                    log(f"  B3: página {p} falhou após {B3_TENTATIVAS} tentativas; data fica para depois")
+                    return None
+                if not colunas and t.get("columns"):
+                    colunas = [c.get("name") or f"c{i}" for i, c in enumerate(t["columns"])]
+                    escrever_json(DADOS / "_debug" / f"b3_{tabela}_colunas.json",
+                                  {"data": d.isoformat(), "columns": t["columns"],
+                                   "amostra": (t.get("values") or [])[:3]})
+                vals = t.get("values") or []
+                if not vals:
+                    fim = True
+                    break
+                h = hashlib.sha1(json.dumps(vals, sort_keys=True).encode()).hexdigest()
+                if h in hashes:  # endpoint repetindo página
+                    fim = True
+                    break
+                hashes.add(h)
+                linhas.extend(vals)
+                if len(vals) < B3_TAM_PAG:
+                    fim = True
+                    break
+            if fim:
+                break
+            pag += 6
     return colunas, linhas
 
 
 def coletar_b3(d: date) -> dict[str, dict]:
-    colunas, linhas = b3_tabela("ConsolidatedRecords", d)
+    r = b3_tabela("ConsolidatedRecords", d)
+    if r is None:
+        return None
+    colunas, linhas = r
     if not linhas:
         return {}
     idx = mapear_colunas(colunas)
@@ -206,9 +233,16 @@ def coletar_b3(d: date) -> dict[str, dict]:
         return row[i] if i is not None and i < len(row) else None
 
     ativos: dict[str, dict] = {}
+    por_tipo: dict[str, list] = {}
     for row in linhas:
         cod = str(g(row, "codigo") or "").strip().upper()
         if not cod or cod == "-":
+            continue
+        tp = str(g(row, "tipo") or "").strip().upper()
+        pt = por_tipo.setdefault(tp, [0, 0.0])
+        pt[0] += 1
+        pt[1] += num(g(row, "volume")) or 0
+        if tp in TIPOS_EXCLUIR:
             continue
         a = ativos.setdefault(cod, {
             "tipo": (str(g(row, "tipo") or "").strip().upper() or None),
@@ -243,7 +277,10 @@ def coletar_b3(d: date) -> dict[str, dict]:
     for a in ativos.values():
         a["pu_med"] = round(a["volume"] / a["qtd"], 6) if a["qtd"] else None
         a["volume"] = round(a["volume"], 2)
-    log(f"  B3: {len(linhas)} linhas, {len(ativos)} ativos negociados")
+    resumo = ", ".join(f"{k}={v[0]} (R$ {v[1]/1e6:,.0f} mi)" for k, v in
+                       sorted(por_tipo.items(), key=lambda x: -x[1][1]))
+    log(f"  B3: {len(linhas)} linhas; por tipo: {resumo}")
+    log(f"  B3: {len(ativos)} ativos no escopo (excluídos: {sorted(TIPOS_EXCLUIR)})")
     return ativos
 
 
@@ -387,7 +424,14 @@ def processar(d: date, forcar: bool = False) -> bool:
     ds = d.isoformat()
     destino = DADOS / "daily" / f"{ds}.json"
     log(f"Data {ds}")
+    if destino.exists() and not forcar:
+        f = json.loads(destino.read_text(encoding="utf-8"))["fontes"]
+        if f.get("b3") and f.get("anbima"):
+            log("  já completo; pulando")
+            return False
     neg = coletar_b3(d)
+    if neg is None:
+        return False
     anb = coletar_anbima(d)
     if not neg and not anb:
         log("  sem dados (feriado, fim de semana ou ainda não publicado)")
@@ -451,7 +495,7 @@ def main() -> int:
     if d.weekday() < 5:
         datas.append(d)
     x = d
-    for _ in range(args.backfill if args.backfill else (0 if datas else 1)):
+    for _ in range(max(args.backfill, 1)):
         x = dia_util_anterior(x)
         datas.append(x)
     # do mais antigo para o mais novo, para os alertas de volume enxergarem o histórico
