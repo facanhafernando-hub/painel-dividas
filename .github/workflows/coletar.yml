@@ -1,0 +1,57 @@
+name: Coletar dados
+
+on:
+  schedule:
+    # horários em UTC (Brasília = UTC-3)
+    - cron: "47 23 * * 1-5"   # 20:47 BRT: depois da ANBIMA (até 20h) e do fechamento da B3
+    - cron: "17 2 * * 2-6"    # 23:17 BRT: segunda passada, pega publicação atrasada
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "Data AAAA-MM-DD (vazio = hoje)"
+        required: false
+      backfill:
+        description: "Dias úteis anteriores a reprocessar"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rodar coletor
+        env:
+          TZ: America/Sao_Paulo
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.data }}" ]; then ARGS="$ARGS --data ${{ github.event.inputs.data }}"; fi
+          if [ -n "${{ github.event.inputs.backfill }}" ]; then ARGS="$ARGS --backfill ${{ github.event.inputs.backfill }}"; fi
+          # a passada das 23:17 BRT roda já no dia seguinte em UTC, mas o script usa a data de Brasília
+          python coletor/coletar.py $ARGS
+
+      - name: Salvar dados no repositório
+        run: |
+          git config user.name "painel-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data
+          if git diff --cached --quiet; then
+            echo "Nada novo para salvar."
+          else
+            git commit -m "dados: $(TZ=America/Sao_Paulo date +%Y-%m-%d)"
+            git pull --rebase --autostash
+            git push
+          fi

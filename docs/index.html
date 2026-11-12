@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Painel de Dívidas · Mercado Secundário</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f4f4f2; --surface-1: #fcfcfb; --surface-2: #f0efec; --border: #e2e1dc;
+    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #7a7974;
+    --series-1: #2a78d6; --series-2: #eb6834; --bar: #2a78d6;
+    --pos: #0f7a3d; --neg: #c0362c;
+    --crit-bg: #fde8e7; --crit-fg: #9b1c16; --warn-bg: #fdf1d8; --warn-fg: #7a4e00;
+    --info-bg: #e5effb; --info-fg: #174f93;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg: #111110; --surface-1: #1a1a19; --surface-2: #232321; --border: #33332f;
+      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8e86;
+      --series-1: #3987e5; --series-2: #d95926; --bar: #3987e5;
+      --pos: #4cc27e; --neg: #ef7a70;
+      --crit-bg: #4a1d1a; --crit-fg: #ffb4ad; --warn-bg: #3d2f10; --warn-fg: #f3cf7c;
+      --info-bg: #17304f; --info-fg: #a9cbf5;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text-primary);
+         font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+         font-variant-numeric: tabular-nums; }
+  header { padding: 16px 20px 8px; display: flex; flex-wrap: wrap; gap: 8px 16px;
+           align-items: baseline; justify-content: space-between; }
+  h1 { font-size: 18px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
+  .sub { color: var(--text-secondary); font-size: 12.5px; }
+  main { padding: 0 20px 40px; max-width: 1500px; margin: 0 auto; }
+  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 8px 0 14px; }
+  .kpi { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .kpi .l { font-size: 12px; color: var(--text-secondary); }
+  .kpi .v { font-size: 22px; font-weight: 650; margin-top: 2px; letter-spacing: -.02em; }
+  .filtros { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+  input[type=search], select { background: var(--surface-1); color: var(--text-primary);
+         border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font: inherit; }
+  input[type=search] { min-width: 220px; flex: 1 1 220px; max-width: 360px; }
+  .chips { display: flex; gap: 4px; flex-wrap: wrap; }
+  .chip { border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary);
+          border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
+  .chip[aria-pressed=true] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
+  .tabela-wrap { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+                 overflow: auto; max-height: calc(100vh - 250px); }
+  table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 13px; }
+  th, td { padding: 7px 10px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); }
+  th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-secondary);
+       font-weight: 600; font-size: 12px; cursor: pointer; user-select: none; z-index: 2; }
+  th[data-ord]::after { content: attr(data-ord); margin-left: 4px; }
+  th:first-child, td:first-child { position: sticky; left: 0; text-align: left; background: inherit; z-index: 1; }
+  th:first-child { z-index: 3; background: var(--surface-2); }
+  td:first-child { background: var(--surface-1); font-weight: 600; }
+  td.txt, th.txt { text-align: left; }
+  td.emissor { max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover td { background: var(--surface-2); }
+  .mut { color: var(--text-muted); }
+  .pos { color: var(--pos); } .neg { color: var(--neg); }
+  .tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; margin-right: 3px; font-weight: 600; }
+  .t-crit { background: var(--crit-bg); color: var(--crit-fg); }
+  .t-warn { background: var(--warn-bg); color: var(--warn-fg); }
+  .t-info { background: var(--info-bg); color: var(--info-fg); }
+  .rodape { color: var(--text-muted); font-size: 12px; margin-top: 10px; }
+  .vazio { padding: 40px; text-align: center; color: var(--text-secondary); }
+  /* painel de detalhe */
+  #det { position: fixed; inset: 0 0 0 auto; width: min(640px, 100vw); background: var(--surface-1);
+         border-left: 1px solid var(--border); box-shadow: -8px 0 24px rgba(0,0,0,.12);
+         transform: translateX(100%); transition: transform .2s ease; overflow-y: auto; z-index: 10; }
+  #det.aberto { transform: none; }
+  #det .topo { position: sticky; top: 0; background: var(--surface-1); padding: 16px 18px 10px;
+               border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 12px; }
+  #det h2 { margin: 0; font-size: 18px; }
+  #det .corpo { padding: 14px 18px 30px; }
+  .fechar { background: none; border: 1px solid var(--border); color: var(--text-primary); border-radius: 8px;
+            padding: 4px 10px; cursor: pointer; font: inherit; height: fit-content; }
+  .grade { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px 14px; margin: 6px 0 16px; }
+  .grade .l { font-size: 11.5px; color: var(--text-secondary); }
+  .grade .v { font-weight: 600; }
+  .graf h3 { font-size: 13px; margin: 14px 0 2px; font-weight: 600; }
+  .legenda { display: flex; gap: 14px; font-size: 12px; color: var(--text-secondary); margin: 2px 0 4px; }
+  .legenda i { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 5px; }
+  .graf svg { width: 100%; height: auto; display: block; }
+  .graf .grid { stroke: var(--border); stroke-width: 1; }
+  .graf .eixo { fill: var(--text-muted); font-size: 10.5px; }
+  #tip { position: fixed; pointer-events: none; background: var(--text-primary); color: var(--surface-1);
+         font-size: 12px; padding: 6px 9px; border-radius: 6px; display: none; z-index: 20; white-space: nowrap; }
+  @media (max-width: 760px) {
+    header, main { padding-left: 12px; padding-right: 12px; }
+    .kpis { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .kpi .v { font-size: 18px; }
+    .tabela-wrap { max-height: none; }
+    td.emissor { max-width: 130px; }
+    .grade { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Painel de Dívidas · Mercado Secundário</h1>
+    <div class="sub" id="sub">Carregando…</div>
+  </div>
+  <label class="sub">Data de referência
+    <select id="selData"></select>
+  </label>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+  <section class="filtros">
+    <input type="search" id="busca" placeholder="Buscar código ou emissor">
+    <div class="chips" id="chipsTipo"></div>
+    <select id="selVis">
+      <option value="neg">Negociados no dia</option>
+      <option value="alerta">Só com alerta</option>
+      <option value="todos">Todos (inclui só ANBIMA)</option>
+    </select>
+  </section>
+  <div class="tabela-wrap"><table id="tab"><thead></thead><tbody></tbody></table></div>
+  <div class="rodape" id="rodape"></div>
+</main>
+
+<aside id="det" aria-hidden="true">
+  <div class="topo">
+    <div><h2 id="detTit"></h2><div class="sub" id="detSub"></div></div>
+    <button class="fechar" onclick="fecharDet()">Fechar</button>
+  </div>
+  <div class="corpo" id="detCorpo"></div>
+</aside>
+<div id="tip"></div>
+
+<script>
+const ALERTAS = {
+  vencida_antecipadamente: ["Vencida antecip.", "t-crit"],
+  negociado_abaixo_par: ["Negociado < 80% par", "t-crit"],
+  indicativo_abaixo_par: ["Indicativo < 80% par", "t-warn"],
+  desvio_anbima: ["Desvio vs ANBIMA", "t-warn"],
+  salto_volume: ["Salto de volume", "t-info"],
+};
+const TIPOS_FIXOS = ["DEB", "CRI", "CRA"];
+const st = { dados: null, tipo: "Todos", busca: "", vis: "neg", ord: "vol", dir: -1 };
+
+const nf = (d) => new Intl.NumberFormat("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const f0 = nf(0), f2 = nf(2), f4 = nf(4);
+const fmt = (v, f = f2) => (v === null || v === undefined || Number.isNaN(v)) ? "–" : f.format(v);
+const fmtMi = (v) => v ? (v >= 1e9 ? f2.format(v / 1e9) + " bi" : f2.format(v / 1e6) + " mi") : "–";
+const fmtData = (s) => s ? s.split("-").reverse().join("/") : "–";
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// métricas derivadas por ativo
+function derivar(r) {
+  const n = r.n || {}, a = r.a || {};
+  r._vol = n.volume || 0;
+  r._qtd = n.qtd || 0;
+  r._neg = n.n_neg || 0;
+  r._pmed = n.pu_med ?? null;
+  r._panb = a.pu ?? null;
+  r._desv = (r._pmed && r._panb) ? (r._pmed / r._panb - 1) * 100 : null;
+  r._ppar = (r._pmed && a.pu_par) ? r._pmed / a.pu_par * 100 : (a.pct_par ?? null);
+  r._parNeg = !!(r._pmed && a.pu_par);
+  r._tx = a.tx_ind ?? null;
+  r._tipoGrp = TIPOS_FIXOS.includes(r.t) ? r.t : "Outros";
+  return r;
+}
+
+const COLS = [
+  ["cod", "Código", r => r.c, r => esc(r.c), "txt"],
+  ["emi", "Emissor", r => r.e || "", r => `<span title="${esc(r.e)}">${esc(r.e || "–")}</span>`, "txt emissor"],
+  ["vol", "Volume (R$)", r => r._vol, r => r._vol ? fmtMi(r._vol) : '<span class="mut">–</span>'],
+  ["pmed", "PU médio", r => r._pmed ?? -1, r => `<b>${fmt(r._pmed)}</b>`],
+  ["desv", "Δ vs ANBIMA", r => r._desv ?? -999, r => r._desv === null ? '<span class="mut">–</span>'
+      : `<span class="${r._desv < 0 ? "neg" : "pos"}">${r._desv > 0 ? "+" : ""}${f2.format(r._desv)}%</span>`],
+  ["ppar", "% PU par", r => r._ppar ?? 999, r => r._ppar === null ? '<span class="mut">–</span>'
+      : `<span class="${r._ppar < 80 ? "neg" : ""}" title="${r._parNeg ? "PU negociado / PU par" : "indicativo ANBIMA"}">${f2.format(r._ppar)}%${r._parNeg ? "" : "*"}</span>`],
+  ["al", "Alertas", r => r.al.length, r => r.al.map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join(""), "txt"],
+  ["tipo", "Tipo", r => r.t || "", r => esc(r.t || "–"), "txt"],
+  ["neg", "Negócios", r => r._neg, r => r._neg ? f0.format(r._neg) : '<span class="mut">–</span>'],
+  ["qtd", "Qtd", r => r._qtd, r => r._qtd ? f0.format(r._qtd) : '<span class="mut">–</span>'],
+  ["pmin", "PU mín", r => r.n?.pu_min ?? -1, r => fmt(r.n?.pu_min)],
+  ["pmax", "PU máx", r => r.n?.pu_max ?? -1, r => fmt(r.n?.pu_max)],
+  ["panb", "PU ANBIMA", r => r._panb ?? -1, r => fmt(r._panb)],
+  ["tx", "Taxa ind.", r => r._tx ?? -999, r => r._tx === null ? "–" : f4.format(r._tx)],
+  ["idx", "Indexador", r => r.a?.indice || "", r => esc(r.a?.indice || "–"), "txt"],
+  ["ven", "Vencimento", r => (r.a?.vencimento || "").split("/").reverse().join(""), r => esc(r.a?.vencimento || "–")],
+];
+
+async function getJSON(u) {
+  const r = await fetch(u, { cache: "no-cache" });
+  if (!r.ok) throw new Error(`${r.status} ${u}`);
+  return r.json();
+}
+
+async function iniciar() {
+  try {
+    const idx = await getJSON("data/index.json");
+    const sel = document.getElementById("selData");
+    sel.innerHTML = idx.datas.map(d => `<option value="${d}">${fmtData(d)}</option>`).join("");
+    sel.onchange = () => carregar(sel.value);
+    await carregar(idx.ultima);
+  } catch (e) {
+    document.getElementById("sub").textContent = "Ainda não há dados coletados.";
+    document.querySelector("#tab tbody").innerHTML = `<tr><td class="vazio" colspan="16">Sem dados ainda. A primeira coleta roda à noite em dia útil.</td></tr>`;
+  }
+}
+
+async function carregar(d) {
+  const dados = await getJSON(`data/daily/${d}.json`);
+  dados.ativos.forEach(derivar);
+  st.dados = dados;
+  document.getElementById("selData").value = d;
+  document.getElementById("sub").textContent =
+    `Pregão de ${fmtData(dados.data)} · B3: ${f0.format(dados.fontes.b3)} ativos negociados · ANBIMA: ${f0.format(dados.fontes.anbima)} preços indicativos`;
+  const tipos = ["Todos", ...TIPOS_FIXOS, "Outros"];
+  document.getElementById("chipsTipo").innerHTML = tipos.map(t =>
+    `<button class="chip" aria-pressed="${t === st.tipo}" data-t="${t}">${t}</button>`).join("");
+  document.querySelectorAll("#chipsTipo .chip").forEach(b => b.onclick = () => { st.tipo = b.dataset.t; carregarChips(); render(); });
+  document.getElementById("rodape").innerHTML =
+    `Fontes: B3, Boletim Diário (Negociação consolidada de balcão) e ANBIMA (Mercado Secundário de Debêntures). ` +
+    `Volume e PU médio somam todas as datas de liquidação e classificações (intra e extragrupo). ` +
+    `* % do par indicativo ANBIMA quando não houve negócio. Gerado em ${new Date(dados.gerado_em).toLocaleString("pt-BR")}.`;
+  render();
+}
+function carregarChips() {
+  document.querySelectorAll("#chipsTipo .chip").forEach(b => b.setAttribute("aria-pressed", b.dataset.t === st.tipo));
+}
+
+function filtrar() {
+  const q = st.busca.trim().toUpperCase();
+  return st.dados.ativos.filter(r =>
+    (st.tipo === "Todos" || r._tipoGrp === st.tipo) &&
+    (st.vis === "todos" || (st.vis === "neg" ? r._vol > 0 : r.al.length > 0)) &&
+    (!q || r.c.includes(q) || (r.e || "").toUpperCase().includes(q)));
+}
+
+function render() {
+  if (!st.dados) return;
+  const linhas = filtrar();
+  const col = COLS.find(c => c[0] === st.ord);
+  linhas.sort((a, b) => { const x = col[2](a), y = col[2](b); return (x > y ? 1 : x < y ? -1 : 0) * st.dir; });
+
+  // KPIs refletem o filtro atual
+  const vol = linhas.reduce((s, r) => s + r._vol, 0);
+  const neg = linhas.reduce((s, r) => s + r._neg, 0);
+  const nNeg = linhas.filter(r => r._vol > 0).length;
+  const nAl = linhas.filter(r => r.al.length).length;
+  document.getElementById("kpis").innerHTML = [
+    ["Ativos negociados", f0.format(nNeg)], ["Volume negociado", "R$ " + fmtMi(vol)],
+    ["Número de negócios", f0.format(neg)], ["Ativos com alerta", f0.format(nAl)],
+  ].map(([l, v]) => `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("");
+
+  const thead = document.querySelector("#tab thead");
+  thead.innerHTML = "<tr>" + COLS.map(c =>
+    `<th class="${c[4] || ""}" data-k="${c[0]}" ${c[0] === st.ord ? `data-ord="${st.dir < 0 ? "▼" : "▲"}"` : ""}>${c[1]}</th>`).join("") + "</tr>";
+  thead.querySelectorAll("th").forEach(th => th.onclick = () => {
+    if (st.ord === th.dataset.k) st.dir *= -1; else { st.ord = th.dataset.k; st.dir = ["cod", "tipo", "emi", "idx", "ven", "ppar"].includes(st.ord) ? 1 : -1; }
+    render();
+  });
+  const tb = document.querySelector("#tab tbody");
+  const vis = linhas.slice(0, 1500);
+  tb.innerHTML = vis.length ? vis.map((r, i) => "<tr data-i=\"" + i + "\">" + COLS.map(c => `<td class="${c[4] || ""}">${c[3](r)}</td>`).join("") + "</tr>").join("")
+    : `<tr><td class="vazio" colspan="${COLS.length}">Nenhum ativo com esses filtros.</td></tr>`;
+  tb.querySelectorAll("tr[data-i]").forEach(tr => tr.onclick = () => abrirDet(vis[+tr.dataset.i]));
+}
+
+document.getElementById("busca").oninput = (e) => { st.busca = e.target.value; render(); };
+document.getElementById("selVis").onchange = (e) => { st.vis = e.target.value; render(); };
+document.addEventListener("keydown", e => { if (e.key === "Escape") fecharDet(); });
+
+// ------------------------------------------------------------- detalhe do ativo
+function fecharDet() { const d = document.getElementById("det"); d.classList.remove("aberto"); d.setAttribute("aria-hidden", "true"); }
+
+async function abrirDet(r) {
+  const det = document.getElementById("det");
+  document.getElementById("detTit").textContent = r.c;
+  document.getElementById("detSub").textContent = [r.t, r.e, r.i].filter(Boolean).join(" · ");
+  const a = r.a || {}, n = r.n || {};
+  const itens = [
+    ["Volume do dia", r._vol ? "R$ " + fmtMi(r._vol) : "–"], ["Negócios", r._neg ? f0.format(r._neg) : "–"],
+    ["Quantidade", r._qtd ? f0.format(r._qtd) : "–"], ["PU mín / médio / máx", `${fmt(n.pu_min)} / ${fmt(n.pu_med)} / ${fmt(n.pu_max)}`],
+    ["Último PU", fmt(n.pu_ult)], ["Volume extragrupo", n.vol_extragrupo ? "R$ " + fmtMi(n.vol_extragrupo) : "–"],
+    ["PU ANBIMA", fmt(a.pu)], ["PU par", fmt(a.pu_par)], ["% PU par", r._ppar === null ? "–" : f2.format(r._ppar) + "%"],
+    ["Taxa indicativa", a.tx_ind == null ? "–" : f4.format(a.tx_ind)], ["Taxa compra / venda", `${fmt(a.tx_compra, f4)} / ${fmt(a.tx_venda, f4)}`],
+    ["Duration (d.u.)", fmt(a.duration, f0)], ["Indexador", a.indice || "–"], ["Vencimento", a.vencimento || "–"],
+    ["Categoria ANBIMA", (a.categoria || "–").replace(/_/g, " ")],
+  ];
+  const tags = r.al.map(k => `<span class="tag ${ALERTAS[k]?.[1]}">${ALERTAS[k]?.[0] || k}</span>`).join("");
+  const corpo = document.getElementById("detCorpo");
+  corpo.innerHTML = (tags ? `<div style="margin-bottom:10px">${tags}</div>` : "") +
+    `<div class="grade">${itens.map(([l, v]) => `<div><div class="l">${l}</div><div class="v">${esc(v)}</div></div>`).join("")}</div>` +
+    `<div class="graf" id="graf"><span class="mut">Carregando histórico…</span></div>`;
+  det.classList.add("aberto"); det.setAttribute("aria-hidden", "false");
+  try {
+    const s = await getJSON(`data/series/${encodeURIComponent(r.c)}.json`);
+    desenhar(s.p);
+  } catch { document.getElementById("graf").innerHTML = '<span class="mut">Sem histórico ainda.</span>'; }
+}
+
+// ponto: [data, pu_med, qtd, volume, n_neg, pu_anbima, tx_ind, pct_par]
+function desenhar(pts) {
+  const g = document.getElementById("graf");
+  if (!pts.length) { g.innerHTML = '<span class="mut">Sem histórico ainda.</span>'; return; }
+  const W = 600, H = 230, HV = 110, m = { l: 62, r: 12, t: 10, b: 24 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b, ihv = HV - m.t - m.b;
+  const N = pts.length, x = i => m.l + (N === 1 ? iw / 2 : i / (N - 1) * iw);
+  const vals = pts.flatMap(p => [p[1], p[5]]).filter(v => v != null);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (!vals.length) { lo = 0; hi = 1; }
+  const pad = (hi - lo) * 0.08 || hi * 0.02 || 1; lo -= pad; hi += pad;
+  const y = v => m.t + (1 - (v - lo) / (hi - lo)) * ih;
+  const vmax = Math.max(...pts.map(p => p[3] || 0)) || 1;
+  const yv = v => m.t + (1 - v / vmax) * ihv;
+
+  const ticks = 4, grid = [];
+  for (let k = 0; k <= ticks; k++) {
+    const v = lo + (hi - lo) * k / ticks;
+    grid.push(`<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>` +
+      `<text class="eixo" x="${m.l - 6}" y="${y(v) + 3}" text-anchor="end">${f2.format(v)}</text>`);
+  }
+  const xl = [0, Math.floor((N - 1) / 2), N - 1].filter((v, i, a) => a.indexOf(v) === i)
+    .map(i => `<text class="eixo" x="${x(i)}" y="${H - 6}" text-anchor="${i === 0 ? "start" : i === N - 1 ? "end" : "middle"}">${fmtData(pts[i][0]).slice(0, 5)}</text>`).join("");
+  const linha = (k, cor) => {
+    let d = "", pen = false;
+    pts.forEach((p, i) => { if (p[k] == null) { if (k !== 1) pen = false; return; } d += (pen ? "L" : "M") + x(i).toFixed(1) + "," + y(p[k]).toFixed(1); pen = true; });
+    const pontos = pts.map((p, i) => p[k] == null ? "" : `<circle cx="${x(i)}" cy="${y(p[k])}" r="${k === 1 && N <= 90 ? 3 : 0}" fill="${cor}" stroke="var(--surface-1)" stroke-width="2"/>`).join("");
+    return `<path d="${d}" fill="none" stroke="${cor}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>${pontos}`;
+  };
+  const bw = Math.max(1, Math.min(14, iw / N - 2));
+  const barras = pts.map((p, i) => p[3] ? `<rect x="${x(i) - bw / 2}" y="${yv(p[3])}" width="${bw}" height="${m.t + ihv - yv(p[3])}" rx="${Math.min(2, bw / 2)}" fill="var(--bar)"/>` : "").join("");
+
+  g.innerHTML = `
+    <h3>Preço unitário</h3>
+    <div class="legenda"><span><i style="background:var(--series-1)"></i>PU médio negociado (B3)</span><span><i style="background:var(--series-2)"></i>PU indicativo (ANBIMA)</span></div>
+    <svg viewBox="0 0 ${W} ${H}" id="svgPU">${grid.join("")}${xl}${linha(5, "var(--series-2)")}${linha(1, "var(--series-1)")}
+      <line id="cross" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-muted)" stroke-width="1" style="display:none"/>
+      <rect x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent" id="hit"/></svg>
+    <h3>Volume negociado (R$)</h3>
+    <svg viewBox="0 0 ${W} ${HV}">
+      <line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${m.t + ihv}" y2="${m.t + ihv}"/>
+      <text class="eixo" x="${m.l - 6}" y="${m.t + 6}" text-anchor="end">${fmtMi(vmax)}</text>${barras}</svg>
+    <h3>Últimos pregões</h3>
+    <div class="tabela-wrap" style="max-height:260px"><table><thead><tr><th class="txt">Data</th><th>PU médio</th><th>PU ANBIMA</th><th>Taxa ind.</th><th>Volume</th><th>Negócios</th></tr></thead>
+    <tbody>${pts.slice(-30).reverse().map(p => `<tr><td class="txt">${fmtData(p[0])}</td><td>${fmt(p[1])}</td><td>${fmt(p[5])}</td><td>${fmt(p[6], f4)}</td><td>${p[3] ? fmtMi(p[3]) : "–"}</td><td>${p[4] ? f0.format(p[4]) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+
+  const svg = document.getElementById("svgPU"), hit = document.getElementById("hit"), cross = document.getElementById("cross"), tip = document.getElementById("tip");
+  hit.addEventListener("mousemove", ev => {
+    const pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
+    const sx = pt.matrixTransform(svg.getScreenCTM().inverse()).x;
+    const i = Math.max(0, Math.min(N - 1, Math.round((sx - m.l) / (iw || 1) * (N - 1))));
+    const p = pts[i];
+    cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.style.display = "";
+    tip.innerHTML = `<b>${fmtData(p[0])}</b><br>PU negociado: ${fmt(p[1])}<br>PU ANBIMA: ${fmt(p[5])}<br>Volume: ${p[3] ? "R$ " + fmtMi(p[3]) : "–"}`;
+    tip.style.display = "block"; tip.style.left = (ev.clientX + 14) + "px"; tip.style.top = (ev.clientY - 10) + "px";
+  });
+  hit.addEventListener("mouseleave", () => { cross.style.display = "none"; tip.style.display = "none"; });
+}
+
+iniciar();
+</script>
+</body>
+</html>
