@@ -48,8 +48,9 @@ ALERTA_DESVIO_ANBIMA = 2.0   # |PU negociado / PU ANBIMA - 1| acima de X%
 ALERTA_VOLUME_MULT = 3.0     # volume do dia > X vezes a média dos últimos 20 pregões
 ALERTA_VOLUME_MIN = 1_000_000.0
 SERIE_MAX_PONTOS = 750       # ~3 anos de pregões por ativo
-# Tipos fora do escopo do painel (CFF = cotas de fundos fechados/FIDC, ~90% das linhas da B3)
-TIPOS_EXCLUIR = {"CFF"}
+# Escopo: dívida corporativa e do agro. Fora: papéis bancários (CDB, LCA, LCI, LF, CCB, COE...)
+# e cotas de fundos (CFF), que somam a maior parte das linhas da B3.
+TIPOS_INCLUIR = {"DEB", "CRI", "CRA", "NC", "CDCA", "CPR"}
 B3_TAM_PAG = 500
 B3_TIMEOUT = 15     # a API da B3 responde em <2s ou trava: desistir rápido e tentar de novo
 B3_TENTATIVAS = 8
@@ -181,9 +182,9 @@ def b3_tabela(tabela: str, d: date) -> tuple[list[str], list[list]] | None:
     linhas: list[list] = []
     hashes = set()
     pag = 1
-    with ThreadPoolExecutor(6) as ex:
-        while pag < 400:
-            lote = list(range(pag, pag + 6))
+    with ThreadPoolExecutor(8) as ex:
+        while pag < 600:
+            lote = list(range(pag, pag + 8))
             res = list(ex.map(lambda p: b3_pagina(tabela, d, p), lote))
             fim = False
             for p, t in zip(lote, res):
@@ -210,7 +211,7 @@ def b3_tabela(tabela: str, d: date) -> tuple[list[str], list[list]] | None:
                     break
             if fim:
                 break
-            pag += 6
+            pag += 8
     return colunas, linhas
 
 
@@ -242,7 +243,7 @@ def coletar_b3(d: date) -> dict[str, dict]:
         pt = por_tipo.setdefault(tp, [0, 0.0])
         pt[0] += 1
         pt[1] += num(g(row, "volume")) or 0
-        if tp in TIPOS_EXCLUIR:
+        if tp not in TIPOS_INCLUIR:
             continue
         a = ativos.setdefault(cod, {
             "tipo": (str(g(row, "tipo") or "").strip().upper() or None),
@@ -280,7 +281,7 @@ def coletar_b3(d: date) -> dict[str, dict]:
     resumo = ", ".join(f"{k}={v[0]} (R$ {v[1]/1e6:,.0f} mi)" for k, v in
                        sorted(por_tipo.items(), key=lambda x: -x[1][1]))
     log(f"  B3: {len(linhas)} linhas; por tipo: {resumo}")
-    log(f"  B3: {len(ativos)} ativos no escopo (excluídos: {sorted(TIPOS_EXCLUIR)})")
+    log(f"  B3: {len(ativos)} ativos no escopo (tipos: {sorted(TIPOS_INCLUIR)})")
     return ativos
 
 
@@ -426,7 +427,9 @@ def processar(d: date, forcar: bool = False) -> bool:
     log(f"Data {ds}")
     if destino.exists() and not forcar:
         f = json.loads(destino.read_text(encoding="utf-8"))["fontes"]
-        if f.get("b3") and f.get("anbima"):
+        # completo = tem B3 e (tem ANBIMA ou a ANBIMA já não guarda mais essa data)
+        recente = (datetime.now(BRT).date() - d).days <= 4
+        if f.get("b3") and (f.get("anbima") or not recente):
             log("  já completo; pulando")
             return False
     neg = coletar_b3(d)
