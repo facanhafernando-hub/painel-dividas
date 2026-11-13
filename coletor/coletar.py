@@ -865,6 +865,28 @@ def ytm_pela_razao(cf, cupom: float, pct_par: float) -> float | None:
     return round(mid * 100, 2)
 
 
+def ytm_descontado(fl, cupom: float, pct_par: float) -> float | None:
+    """Spread/taxa s tal que PV(s)/PV(cupom) = % do par, descontando cada fluxo projetado pelo fator do contrato
+    (DI futuro x (1+s)^t no DI+; inflação implícita x (1+s)^t no IPCA+). fl = [(t, caixa, dc)] com
+    dc = desconto à taxa contratual. Diferente do método da razão simples, o DI não é cancelado: os cupons de um DI+
+    carregam o DI, o que encurta a duration, igual à precificação da ANBIMA."""
+    fl = [(t, v * dc) for t, v, dc in fl if v and dc]
+    if not fl:
+        return None
+    pv = lambda s_: sum(w * ((1 + cupom) / (1 + s_)) ** t for t, w in fl)
+    alvo = pct_par / 100 * pv(cupom)
+    lo, hi = -0.5, 20.0
+    if not (pv(hi) <= alvo <= pv(lo)):
+        return None
+    for _ in range(100):
+        mid = (lo + hi) / 2
+        if pv(mid) > alvo:
+            lo = mid
+        else:
+            hi = mid
+    return round(mid * 100, 2)
+
+
 def fluxo_nominal(d: date, venc: date, base: str, c: float, mult: float | None,
                   juros_datas: list[date], amort_datas: list[date], cv: "Curva", inicio: date | None = None):
     """Fluxo nominal projetado (DI futuro e inflação implícita da curva) por 1 unidade de principal,
@@ -969,12 +991,15 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
         if base:
             out["y_met"] = "agenda"
             if base != "%DI":
-                cf = [(t_, v_) for t_, v_, _ in fluxo_agenda(d, ev, base, snd.get("mult"), R, ini, None)]
                 c_ref = next((e[2] / 100 for e in ev if e[1] == "J"), (snd.get("taxa") or 0) / 100)
-                if cf:
-                    y = ytm_pela_razao(cf, c_ref, pct)
-                    if y is not None:
-                        out.update(y=y, y_base=base)
+                y = None
+                if base == "DI+" and cv:      # DI+ com curva: desconto pelo DI futuro (padrão ANBIMA)
+                    y = ytm_descontado(fluxo_agenda(d, ev, base, snd.get("mult"), R, ini, cv, c_ref), c_ref, pct)
+                if y is None:
+                    cf = [(t_, v_) for t_, v_, _ in fluxo_agenda(d, ev, base, snd.get("mult"), R, ini, None)]
+                    y = ytm_pela_razao(cf, c_ref, pct) if cf else None
+                if y is not None:
+                    out.update(y=y, y_base=base)
             else:
                 out["y_base"] = "%DI"
             if cv:
@@ -995,8 +1020,13 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
                 am = _meses(snd.get("amort_cada"), snd.get("amort_un"))
                 ad = _datas(_data(snd.get("amort_car")), am, venc, d) if am else [venc]
             ini = _data(snd.get("inicio_rent")) or _data(snd.get("dt_emissao"))
-            cf = fluxo_caixa(d, venc, snd["taxa"] / 100, jd, ad, ini)
-            y = ytm_pela_razao(cf, snd["taxa"] / 100, pct)
+            y = None
+            if base == "DI+" and cv:
+                y = ytm_descontado(fluxo_nominal(d, venc, base, snd["taxa"] / 100, snd.get("mult"), jd, ad, cv, ini),
+                                   snd["taxa"] / 100, pct)
+            if y is None:
+                cf = fluxo_caixa(d, venc, snd["taxa"] / 100, jd, ad, ini)
+                y = ytm_pela_razao(cf, snd["taxa"] / 100, pct)
             if y is not None:
                 out.update(y=y, y_base=base, y_met="fluxo")
             if cv:
@@ -1129,9 +1159,27 @@ def empresa_do_ativo(t, cod, neg, anb_cc, snd, anb_deb) -> tuple[str | None, str
 _CACHE: dict = {}
 
 
+def corrigir_juros_agenda(ag: dict, snd: dict) -> int:
+    """A agenda do SND às vezes traz a taxa de juros futura como 0% ou 1% (sem a taxa definida). Se o cadastro tem
+    outra taxa contratual, usa a do cadastro."""
+    n = 0
+    for c, ev in ag.items():
+        t0 = (snd.get(c) or {}).get("taxa")
+        if t0 is None:
+            continue
+        for k, e in enumerate(ev):
+            if e[1] == "J" and e[2] in (0, 0.0, 1, 1.0) and abs(e[2] - t0) > 0.25:
+                ev[k] = [e[0], e[1], t0, e[3]]
+                n += 1
+    if n:
+        log(f"  juros da agenda corrigidos pela taxa do cadastro: {n} eventos")
+    return n
+
+
 def snd_agenda() -> dict:
     if "agenda" not in _CACHE:
         ag = coletar_snd_agenda(datetime.now(BRT).date())
+        corrigir_juros_agenda(ag, snd_cadastro())
         _CACHE["ajustes"] = ajustar_pelas_escrituras(ag)
         _CACHE["agenda"] = ag
     return _CACHE["agenda"]

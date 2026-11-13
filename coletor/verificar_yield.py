@@ -22,7 +22,7 @@ def ano(d0, d1):
     return (d1 - d0).days / 365.25
 
 
-def fluxo_independente(d, ev, base, R, inicio):
+def fluxo_independente(d, ev, base, R, inicio, cv=None):
     """Fluxo contratual por 1 de saldo, em termos do contrato (indexador cancela). Mesmas convenções do painel,
     código separado; na mesma data processa juros/PIK, depois prêmio, depois amortização/vencimento."""
     ordem = {"J": 0, "I": 0, "P": 1, "A": 2, "V": 3}
@@ -39,14 +39,24 @@ def fluxo_independente(d, ev, base, R, inicio):
     if inicio and ini < inicio:
         ini = inicio
     ini = min(ini, d)
+    di = base == "DI+" and cv is not None
+    curto = cv.pre(0.01) if di else 0.0
+
+    def fdi(da, db):          # fator DI entre duas datas (passado aproximado pela taxa curta, futuro pela curva)
+        if not di:
+            return 1.0
+        ta, tb = ano(d, da), ano(d, db)
+        f_pass = (1 + curto) ** (-ta) if ta < 0 else 1.0
+        return f_pass * cv.fator_di(tb) / (cv.fator_di(ta) if ta > 0 else 1.0)
+
     saldo, ref_j, ref_p, fluxo = 1.0, ini, ini, {}
     for dt, cod, taxa, bs in evs:
         cx = 0.0
         if cod == "J":
-            cx = saldo * ((1 + taxa / 100) ** ano(ref_j, dt) - 1)
+            cx = saldo * (fdi(ref_j, dt) * (1 + taxa / 100) ** ano(ref_j, dt) - 1)
             ref_j = dt
         elif cod == "I":
-            saldo *= (1 + taxa / 100) ** ano(ref_j, dt)
+            saldo *= fdi(ref_j, dt) * (1 + taxa / 100) ** ano(ref_j, dt)
             ref_j = dt
         elif cod == "P":
             cx = saldo * ((1 + taxa / 100) ** ano(ref_p, dt) - 1) if taxa else 0.0
@@ -67,16 +77,15 @@ def fluxo_independente(d, ev, base, R, inicio):
     return sorted(fluxo.items())
 
 
-def pv(cf, s):
-    return sum(v / (1 + s) ** t for t, v in cf)
-
-
-def newton(cf, cupom, pct):
-    alvo = pct / 100 * pv(cf, cupom)
+def newton(cf, cupom, pct, cv=None):
+    """Newton em s: PV(s)/PV(cupom) = % do par, com desconto 1/(fatorDI(t)·(1+s)^t) se houver curva (DI+)."""
+    g = [(t, v / (cv.fator_di(t) if cv else 1.0)) for t, v in cf]
+    pv = lambda s_: sum(w / (1 + s_) ** t for t, w in g)
+    alvo = pct / 100 * pv(cupom)
     s = cupom
     for _ in range(200):
-        f = pv(cf, s) - alvo
-        df = sum(-t * v / (1 + s) ** (t + 1) for t, v in cf)
+        f = pv(s) - alvo
+        df = sum(-t * w / (1 + s) ** (t + 1) for t, w in g)
         if df == 0:
             return None
         s2 = s - f / df
@@ -96,6 +105,8 @@ def main():
     snd = C.snd_cadastro()
     agenda = C.snd_agenda()
     pu_snd = C.coletar_snd_pu(d)
+    cj = C.obter_curva(d, baixar=False)
+    cv = C.Curva(cj) if cj else None
     res, r1, r2, r3 = [], Counter(), Counter(), Counter()
     for a in dia["ativos"]:
         p = a.get("p") or {}
@@ -106,7 +117,7 @@ def main():
         linha = {"c": c, "t": a.get("t"), "met": p.get("y_met"), "base": p.get("y_base"), "y": p.get("y")}
         # 1) reprodução com o motor do painel
         if p.get("y") is not None:
-            novo = C.calcular_preco_e_yield(a.get("t"), d, a.get("n"), anb or None, s, pu_snd.get(c), None, ev)
+            novo = C.calcular_preco_e_yield(a.get("t"), d, a.get("n"), anb or None, s, pu_snd.get(c), cv, ev)
             linha["y1"] = novo.get("y")
             dif = None if novo.get("y") is None else abs(novo["y"] - p["y"])
             linha["d1"] = dif
@@ -120,21 +131,36 @@ def main():
             if p.get("y_met") == "agenda" and s and ev:
                 base = C.base_indexador(s.get("indice"), s.get("mult"))
                 ini = C._data(s.get("inicio_rent")) or C._data(s.get("dt_emissao"))
-                cf = fluxo_independente(d, ev, base, C.saldo_relativo(s), ini)
+                usa_di = base == "DI+" and cv is not None
+                cf = fluxo_independente(d, ev, base, C.saldo_relativo(s), ini, cv if usa_di else None)
                 cup = next((float(e[2]) / 100 for e in ev if e[1] == "J"), (s.get("taxa") or 0) / 100)
-                y2 = newton(cf, cup, pct) if cf else None
+                y2 = newton(cf, cup, pct, cv if usa_di else None) if cf else None
                 linha["y2"] = None if y2 is None else round(y2, 2)
                 dif = None if y2 is None else abs(y2 - p["y"])
                 linha["d2"] = dif
                 r2["igual (≤0,05 p.p.)" if dif is not None and dif <= 0.05 else "diferente" if dif is not None else "sem solução"] += 1
+            elif p.get("y_met") == "duration" and anb.get("tx_ind") is not None and anb.get("duration"):
+                preco = (a.get("n") or {}).get("pu_med") or anb.get("pu")
+                y2 = ((1 + anb["tx_ind"] / 100) * (anb["pu"] / preco) ** (252 / anb["duration"]) - 1) * 100
+                dif = abs(y2 - p["y"]); linha.update(y2=round(y2, 2), d2=dif)
+                r2["igual (≤0,05 p.p.)" if dif <= 0.05 else "diferente"] += 1
+            elif p.get("y_met") == "bullet" and anb.get("vencimento") and anb.get("indice"):
+                cup = C.taxa_do_texto(anb.get("indice"))
+                T = ano(d, C._data(anb["vencimento"]))
+                if cup is not None and T > 0:
+                    y2 = ((1 + cup / 100) * (pct / 100) ** (-1 / T) - 1) * 100       # forma fechada
+                    dif = abs(y2 - p["y"]); linha.update(y2=round(y2, 2), d2=dif)
+                    r2["igual (≤0,05 p.p.)" if dif <= 0.05 else "diferente"] += 1
+                else:
+                    r2["bullet sem dados"] += 1
             else:
-                r2["sem agenda (só resíduo)"] += 1
+                r2[f"método {p.get('y_met')}: sem checagem independente"] += 1
         # 3) mercado: yield no PU ANBIMA com o fluxo do painel x taxa indicativa ANBIMA
         if anb.get("tx_ind") is not None and anb.get("pu") and anb.get("pu_par") and s and ev:
             base = C.base_indexador(s.get("indice"), s.get("mult"))
             if base in ("DI+", "IPCA+", "PRE"):
                 pct_a = anb["pu"] / anb["pu_par"] * 100
-                novo = C.calcular_preco_e_yield("DEB", d, None, {**anb, "pu_par": anb["pu_par"]}, s, None, None, ev)
+                novo = C.calcular_preco_e_yield("DEB", d, None, {**anb, "pu_par": anb["pu_par"]}, s, None, cv, ev)
                 ya = novo.get("y")
                 if ya is not None and novo.get("y_met") == "agenda":
                     dif = ya - anb["tx_ind"]
