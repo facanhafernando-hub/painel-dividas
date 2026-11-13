@@ -263,7 +263,7 @@ function listaEmpresas() {
   document.getElementById("listaE").innerHTML = !L.length ? '<div class="vazio">Nenhuma empresa encontrada.</div>' :
     `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? " (mostrando 200; refine a busca)" : ""}</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
     L.map(e => `<a class="emp" href="#/e/${encodeURIComponent(e.k)}">
-      <div><div class="n">${esc(e.nome)} ${crTag(e.cr)}${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
+      <div><div class="n">${esc(e.nome)} ${crTag(e.cr)}${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor único: lastro pulverizado ou devedor não informado na ANBIMA nem no informe mensal da CVM">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
       <div class="sub">${e.situacao ? `<span style="color:var(--text-primary)">${esc(e.situacao)}</span> · ` : ""}${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
       <div class="v hide-m"><b>${pctPar(e.pior)}</b><span>pior título</span></div>
       <div class="v"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b><span>${e.vol ? "negociado" : "sem negócio"}</span></div></a>`).join("");
@@ -408,7 +408,9 @@ async function abrirTitulo(i) {
   const det = document.getElementById("det");
   document.getElementById("detTit").textContent = i.c;
   document.getElementById("detSub").innerHTML = [esc(i.t), i.e && i.k ? `<a href="#/e/${encodeURIComponent(i.k)}" style="text-decoration:underline" title="${esc(i.e)}">${esc(i.n || titulo(i.e))}</a>` : esc(i.n || titulo(i.e)),
-    i.s && i.s !== i.e ? "securitizadora: " + esc(titulo(i.s)) : null].filter(Boolean).join(" · ");
+    i.s && i.s !== i.e ? "securitizadora: " + esc(titulo(i.s)) : null,
+    i.dvf === "CVM" ? `${i.dvt === "cedente" ? "cedente" : "devedor"} com ${f2.format(i.dvp)}% do lastro (informe mensal CVM)` : null,
+    i.pulv ? "lastro pulverizado" : null].filter(Boolean).join(" · ");
   const p = i.upp ?? i.ppa;
   const dest = [["% do par", pctPar(p) + (i.upp == null && i.ppa != null ? ' <span class="mut" style="font-size:12px">indicativo</span>' : "")],
                 ["Yield implícito", yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)], ["TIR nominal" + (i.uind ? " (no indicativo)" : ""), tirTxt(i.utir, i.upp ?? i.ppa)],

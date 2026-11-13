@@ -1150,6 +1150,8 @@ def empresa_do_ativo(t, cod, neg, anb_cc, snd, anb_deb) -> tuple[str | None, str
     if t in ("CRI", "CRA"):
         sec = (neg or {}).get("emissor") or (anb_cc or {}).get("securitizadora")
         dev = (anb_cc or {}).get("devedor")
+        if not dev:   # sem devedor na ANBIMA: informe mensal da CVM (devedor/cedente com >= 50% do lastro)
+            dev = (devedores_cricra().get((cod or "").upper()) or {}).get("nome")
         return (dev or sec), sec
     return ((snd or {}).get("empresa") or (neg or {}).get("emissor") or (anb_deb or {}).get("nome")), None
 
@@ -1183,6 +1185,16 @@ def snd_agenda() -> dict:
         _CACHE["ajustes"] = ajustar_pelas_escrituras(ag)
         _CACHE["agenda"] = ag
     return _CACHE["agenda"]
+
+
+def devedores_cricra() -> dict:
+    """Devedor de cada CRI/CRA pelos informes mensais da CVM (docs/data/devedores_cricra.json, coletor/devedores.py)."""
+    if "dev" not in _CACHE:
+        try:
+            _CACHE["dev"] = json.loads((DADOS / "devedores_cricra.json").read_text(encoding="utf-8"))
+        except Exception:
+            _CACHE["dev"] = {}
+    return _CACHE["dev"]
 
 
 def nomes_empresas() -> dict:
@@ -1404,6 +1416,9 @@ def construir_catalogo() -> None:
         anb = (h.get("a") or a.get("a")) or {}
         un = ultimo_neg.get(c)
         emp = a.get("e") or (s or {}).get("empresa")
+        dv = devedores_cricra().get(c.upper()) or {} if t in ("CRI", "CRA") else {}
+        if t in ("CRI", "CRA") and not anb.get("devedor") and dv.get("nome") and dv.get("tipo") in ("devedor", "cedente"):
+            emp = dv["nome"]          # devedor do informe mensal da CVM no lugar da securitizadora
         idx_txt = anb.get("indice")
         if not idx_txt and s:
             base = base_indexador(s.get("indice"), s.get("mult"))
@@ -1439,6 +1454,13 @@ def construir_catalogo() -> None:
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
         })
+        if t in ("CRI", "CRA"):
+            if anb.get("devedor"):
+                itens[-1]["dvf"] = "ANBIMA"
+            elif dv.get("tipo") in ("devedor", "cedente") and dv.get("nome"):
+                itens[-1].update(dvf="CVM", dvp=dv.get("pct"), dvt=dv["tipo"])
+            elif dv.get("tipo") == "pulverizado":
+                itens[-1]["pulv"] = True
         nm = nomes_empresas().get(itens[-1]["k"])
         if nm:
             itens[-1]["n"] = nm
