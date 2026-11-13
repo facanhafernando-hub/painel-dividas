@@ -27428,18 +27428,20 @@
 "nome": "BEM BRASIL ALIMENTOS S/A"
 },
 "CRA020002GZ": {
-"cnpj": "89637490000145",
+"cnpj": "01838723000127",
 "pct": 100.0,
 "tipo": "devedor",
 "ref": "2026-09-01",
-"nome": "KLABIN S/A"
+"nome": "BRF S.A.",
+"corrigido": "Vert 46ª emissão (BRF S.A.); informe mensal traz o CNPJ da Klabin"
 },
 "CRA020002H1": {
-"cnpj": "89637490000145",
+"cnpj": "01838723000127",
 "pct": 100.0,
 "tipo": "devedor",
 "ref": "2026-09-01",
-"nome": "KLABIN S/A"
+"nome": "BRF S.A.",
+"corrigido": "Vert 46ª emissão (BRF S.A.); informe mensal traz o CNPJ da Klabin"
 },
 "CRA020002S4": {
 "cnpj": null,
@@ -27723,11 +27725,12 @@
 "nome": "NORTOX SA"
 },
 "CRA0210013B": {
-"cnpj": "89637490000145",
+"cnpj": "01838723000127",
 "pct": 100.0,
 "tipo": "devedor",
 "ref": "2026-09-01",
-"nome": "KLABIN S/A"
+"nome": "BRF S.A.",
+"corrigido": "Vert 60ª emissão (BRF III), lastro 3ª emissão de debêntures da BRF; informe mensal traz o CNPJ da Klabin"
 },
 "CRA0210013C": {
 "cnpj": "00297598000122",
