@@ -63,7 +63,10 @@ def informes():
 # Palavras que não identificam empresa no "Nome_Emissao" do informe
 GENERICAS = set("""S A SA LTDA CRA CRI SERIE SERIES EMISSAO EMISSOES UNICA I II III IV V VI VII VIII IX X DE DA DO DAS DOS E
   COMPANHIA CIA GRUPO HOLDING PARTICIPACOES AGRO AGRONEGOCIO AGRICOLA RECEBIVEIS CERTIFICADOS CREDITO IMOBILIARIO IMOBILIARIOS
-  SECURITIZADORA SECURITIZACAO BRASIL BRASILEIRA DEBENTURE DEBENTURES PULVERIZADO PULVERIZADA OPERACAO CR CPR NC CCB""".split())
+  SECURITIZADORA SECURITIZACAO BRASIL BRASILEIRA DEBENTURE DEBENTURES PULVERIZADO PULVERIZADA OPERACAO CR CPR NC CCB
+  SENIOR SUBORDINADA SUBORDINADO MEZANINO OFERTA PRIMEIRA SEGUNDA TERCEIRA QUARTA UNICO FUNDO INVESTIMENTO IMOBILIARIO SPE
+  EMPREENDIMENTOS CONFIANZA OPEA VIRGO TRUE VERT ECO ECOAGRO TRAVESSIA CANAL HABITASEC BARI ISEC OCTANTE GAIA FORTE PROVINCIA
+  LEVERAGE APICE CIBRASEC RBSEC POLO CAPITAL BSI BASE""".split())
 
 
 def tokens(t):
@@ -163,7 +166,7 @@ def main():
             ne = (nome_em.get(cert) or ("",))[0]
             tn, td = set(tokens(ne)), set(tokens(e["nome"]))
             if tn and td and not (tn & td):
-                conflitos.append({"codigo": cod, "certificado": cert, "nome_emissao": ne, "cnpj_informado": e["cnpj"], "nome_cnpj": e["nome"]})
+                conflitos.append({"codigo": cod, "certificado": cert, "nome_emissao": ne, "cnpj_informado": e["cnpj"], "nome_cnpj": e["nome"], "_tn": tn})
         out[cod] = e
     # correções manuais: securitizadora informou o CNPJ errado no informe mensal
     corr_p = Path(__file__).with_name("devedores_correcoes.json")
@@ -173,6 +176,16 @@ def main():
             continue
         out[cod] = {**out.get(cod, {}), "cnpj": c["cnpj"], "nome": c["nome"], "pct": c.get("pct", 100.0), "tipo": "devedor",
                     "corrigido": c.get("motivo", "correção manual")}
+    # só interessa o conflito em que o nome da emissão cita OUTRA empresa conhecida (primeira palavra da razão social)
+    conhecidos = {e2["cnpj"] for e2 in out.values() if e2.get("cnpj")}
+    primeiro = {}
+    for cj, nm in cache.items():
+        t = tokens(nm)
+        if cj in conhecidos and t:
+            primeiro.setdefault(t[0], set()).add(cj)
+    for c in conflitos:
+        c["cita"] = sorted({cache[cj] for t in c.pop("_tn") if t in primeiro for cj in primeiro[t] if cj != c["cnpj_informado"]})[:3]
+    conflitos = [c for c in conflitos if c["cita"]]
     (DADOS / "_debug").mkdir(exist_ok=True)
     (DADOS / "_debug" / "devedores_conflitos.json").write_text(json.dumps(
         [c for c in conflitos if c["codigo"] not in corr], ensure_ascii=False, indent=1), encoding="utf-8")
