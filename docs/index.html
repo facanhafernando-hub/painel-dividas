@@ -4,133 +4,218 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:,">
-<title>Painel de Dívidas · Mercado Secundário</title>
+<title>Painel de Dívidas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light;
-    --bg: #f4f4f2; --surface-1: #fcfcfb; --surface-2: #f0efec; --border: #e2e1dc;
-    --text-primary: #0b0b0b; --text-secondary: #52514e; --text-muted: #7a7974;
-    --series-1: #2a78d6; --series-2: #eb6834; --bar: #2a78d6;
-    --pos: #0f7a3d; --neg: #c0362c; --amb: #9a6400;
-    --crit-bg: #fde8e7; --crit-fg: #9b1c16; --warn-bg: #fdf1d8; --warn-fg: #7a4e00;
-    --info-bg: #e5effb; --info-fg: #174f93; --neu-bg: #ecebe7; --neu-fg: #52514e;
+    --bg: #f3f4f2; --surface-1: #ffffff; --surface-2: #f6f7f5; --border: #e3e5e1; --line: #eceee9;
+    --text-primary: #191c20; --text-secondary: #565c63; --text-muted: #8a9097;
+    --accent: #1f4fbf; --accent-soft: #e8eefb;
+    --series-1: #1f4fbf; --series-2: #e0712f; --bar: #9db2e3;
+    --pos: #1c7a46; --neg: #c2412d; --amb: #b07612; --par-ok: #aab1b8;
+    --crit-bg: #fbe9e5; --crit-fg: #9e2f1e; --warn-bg: #fbf1dc; --warn-fg: #7a5208;
+    --info-bg: #e8eefb; --info-fg: #1d4597; --neu-bg: #eef0ec; --neu-fg: #565c63;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --bg: #111110; --surface-1: #1a1a19; --surface-2: #232321; --border: #33332f;
-      --text-primary: #f0efec; --text-secondary: #c3c2b7; --text-muted: #8f8e86;
-      --series-1: #3987e5; --series-2: #d95926; --bar: #3987e5;
-      --pos: #4cc27e; --neg: #ef7a70; --amb: #e3b04b;
-      --crit-bg: #4a1d1a; --crit-fg: #ffb4ad; --warn-bg: #3d2f10; --warn-fg: #f3cf7c;
-      --info-bg: #17304f; --info-fg: #a9cbf5; --neu-bg: #2b2b28; --neu-fg: #c3c2b7;
+      --bg: #121417; --surface-1: #1a1d21; --surface-2: #20242a; --border: #2e333a; --line: #262a30;
+      --text-primary: #eceef0; --text-secondary: #b5bac0; --text-muted: #868c94;
+      --accent: #7fa3f0; --accent-soft: #1c2a47;
+      --series-1: #7fa3f0; --series-2: #ec8a4d; --bar: #3d5795;
+      --pos: #5cc48a; --neg: #ef8471; --amb: #e2b14f; --par-ok: #5a6068;
+      --crit-bg: #47201a; --crit-fg: #ffb5a6; --warn-bg: #3b2e12; --warn-fg: #f1cf7e;
+      --info-bg: #1c2a47; --info-fg: #aac4f6; --neu-bg: #262a30; --neu-fg: #b5bac0;
     }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text-primary);
-         font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+         font: 14px/1.45 "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
          font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
-  header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--border); }
-  .top { max-width: 1840px; margin: 0 auto; padding: 12px 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-  h1 { font-size: 16px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
-  .ref { color: var(--text-muted); font-size: 12px; }
-  nav { max-width: 1840px; margin: 0 auto; padding: 0 20px; display: flex; gap: 22px; }
-  nav a { padding: 10px 0 9px; color: var(--text-secondary); font-weight: 550; border-bottom: 2px solid transparent; }
-  nav a.on { color: var(--text-primary); border-bottom-color: var(--text-primary); }
-  main { max-width: 1840px; margin: 0 auto; padding: 16px 20px 60px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  b, strong { font-weight: 600; }
+
+  /* cabeçalho: marca, abas e data do pregão numa linha */
+  header { position: sticky; top: 0; z-index: 5; background: var(--surface-1); border-bottom: 1px solid var(--border); }
+  .top { max-width: 1840px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 36px; min-height: 56px; }
+  h1 { font-size: 15px; margin: 0; font-weight: 600; white-space: nowrap; }
+  nav { display: flex; gap: 4px; align-self: stretch; }
+  nav a { display: flex; align-items: center; padding: 0 12px; color: var(--text-secondary); font-weight: 500; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  nav a:hover { color: var(--text-primary); }
+  nav a.on { color: var(--text-primary); border-bottom-color: var(--accent); }
+  .ref { margin-left: auto; color: var(--text-muted); font-size: 12.5px; white-space: nowrap; }
+  main { max-width: 1840px; margin: 0 auto; padding: 22px 24px 64px; }
+
   .sub { color: var(--text-secondary); font-size: 12.5px; }
   .mut { color: var(--text-muted); }
   .neg { color: var(--neg); } .pos { color: var(--pos); } .amb { color: var(--amb); }
-  .barra { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; position: relative; }
-  .ac { position: absolute; z-index: 30; background: var(--surface-1); border: 1px solid var(--border, rgba(127,127,127,.25)); border-radius: 10px;
-        box-shadow: 0 8px 24px rgba(0,0,0,.18); max-height: 360px; overflow-y: auto; display: none; }
-  .ac a { display: flex; justify-content: space-between; gap: 10px; padding: 9px 12px; color: var(--text-primary); text-decoration: none; font-size: 14px; cursor: pointer; }
-  .ac a:hover, .ac a.on { background: var(--surface-2, rgba(127,127,127,.12)); }
+
+  /* barra de busca e filtros */
+  .barra { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; position: relative; }
+  input[type=search], select { background: var(--surface-1); color: var(--text-primary);
+         border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font: inherit; height: 38px; }
+  input[type=search] { flex: 1 1 260px; max-width: 380px; padding-left: 34px;
+         background: var(--surface-1) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%238a9097' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 3.5 3.5'/%3E%3C/svg%3E") no-repeat 11px center; }
+  input[type=search]:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+  .chips { display: inline-flex; gap: 2px; flex-wrap: wrap; background: var(--surface-2); border: 1px solid var(--border); border-radius: 9px; padding: 3px; }
+  .chip { border: 0; background: transparent; color: var(--text-secondary); border-radius: 6px; padding: 5px 11px; font: inherit; font-size: 13px; cursor: pointer; }
+  .chip:hover { color: var(--text-primary); }
+  .chip[aria-pressed=true] { background: var(--surface-1); color: var(--text-primary); font-weight: 500; box-shadow: 0 0 0 1px var(--border); }
+  .ac { position: absolute; z-index: 30; background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+        box-shadow: 0 10px 28px rgba(20,25,35,.14); max-height: 360px; overflow-y: auto; display: none; }
+  .ac a { display: flex; justify-content: space-between; gap: 10px; padding: 9px 12px; color: var(--text-primary); font-size: 14px; cursor: pointer; }
+  .ac a:hover, .ac a.on { background: var(--surface-2); }
   .ac a .sub { white-space: nowrap; }
   .ac b { font-weight: 600; }
-  input[type=search], select { background: var(--surface-1); color: var(--text-primary);
-         border: 1px solid var(--border); border-radius: 9px; padding: 9px 12px; font: inherit; }
-  input[type=search] { flex: 1 1 260px; max-width: 420px; }
-  .chips { display: flex; gap: 4px; flex-wrap: wrap; }
-  .chip { border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary);
-          border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer; }
-  .chip[aria-pressed=true] { background: var(--text-primary); color: var(--surface-1); border-color: var(--text-primary); }
-  .tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; margin-right: 3px; font-weight: 600; white-space: nowrap; }
+
+  /* selos: cor só para evento de crédito; o resto é neutro */
+  .tag { display: inline-block; font-size: 11px; line-height: 17px; padding: 0 7px; border-radius: 4px; margin-left: 6px; font-weight: 500; white-space: nowrap; vertical-align: 1px; }
   .t-crit { background: var(--crit-bg); color: var(--crit-fg); } .t-warn { background: var(--warn-bg); color: var(--warn-fg); }
   .t-info { background: var(--info-bg); color: var(--info-fg); } .t-neu { background: var(--neu-bg); color: var(--neu-fg); }
-  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; }
-  .emp { display: grid; grid-template-columns: 1fr auto auto; gap: 4px 18px; align-items: center;
-         padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer; }
-  .emp:last-child { border-bottom: 0; }
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; }
+
+  /* % do par: número + régua até o par (o traço marca 100%) */
+  .pp { display: inline-flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  .ppb { position: relative; width: 52px; height: 6px; border-radius: 3px; background: var(--line); flex: none; }
+  .ppb i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 3px; background: var(--par-ok); }
+  .ppb u { position: absolute; left: 90.9%; top: -3px; bottom: -3px; width: 1.5px; background: var(--text-muted); text-decoration: none; }
+  .ppb.neg i { background: var(--neg); } .ppb.amb i { background: var(--amb); }
+
+  /* faixa de números (substitui os cartões de KPI) */
+  .kpis { display: flex; flex-wrap: wrap; gap: 8px 40px; margin: 0 0 18px; }
+  .kpi .l { font-size: 12px; color: var(--text-secondary); }
+  .kpi .v { font-size: 22px; font-weight: 500; letter-spacing: -.01em; line-height: 1.25; }
+
+  /* lista de empresas */
+  .emp, .cab-emp { display: grid; grid-template-columns: minmax(0,1fr) 90px 130px 190px 140px; gap: 4px 20px; align-items: center; padding: 12px 18px; }
+  .emp { border-top: 1px solid var(--line); cursor: pointer; }
   .emp:hover { background: var(--surface-2); }
-  .emp .n { font-weight: 620; }
-  .emp .v { text-align: right; min-width: 92px; }
-  .emp .v b { display: block; font-weight: 600; }
-  .emp .v span { font-size: 11.5px; color: var(--text-muted); }
-  .cab-emp { display: grid; grid-template-columns: 1fr auto auto; gap: 18px; padding: 8px 16px; font-size: 11.5px; color: var(--text-muted); border-bottom: 1px solid var(--border); }
-  .cab-emp div:not(:first-child) { text-align: right; min-width: 92px; }
-  .voltar { display: inline-block; color: var(--text-secondary); font-size: 13px; margin-bottom: 8px; }
-  h2 { font-size: 22px; margin: 0 0 2px; letter-spacing: -.02em; }
-  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 10px; margin: 14px 0; }
-  .kpi { padding: 11px 14px; }
-  .kpi .l { font-size: 11.5px; color: var(--text-secondary); }
-  .kpi .v { font-size: 20px; font-weight: 650; margin-top: 1px; letter-spacing: -.02em; }
-  .rel { font-size: 12.5px; color: var(--text-secondary); margin-top: 6px; }
-  .rel a { text-decoration: underline; text-underline-offset: 2px; margin-right: 10px; }
+  .emp .n { font-weight: 600; }
+  .emp .c { text-align: right; }
+  .emp .c b { font-weight: 500; }
+  .cab-emp { font-size: 12px; color: var(--text-muted); padding-top: 10px; padding-bottom: 10px; }
+  .cab-emp div:not(:first-child) { text-align: right; }
+  .so-m { display: none; } .so-msel { display: none; }
+
+  .voltar { display: inline-block; color: var(--text-secondary); font-size: 13px; margin-bottom: 10px; }
+  .voltar:hover { color: var(--accent); }
+  h2 { font-size: 26px; font-weight: 600; margin: 0 0 4px; letter-spacing: -.015em; line-height: 1.2; }
+  .cab { margin-bottom: 20px; }
+  .cab .sub + .sub { margin-top: 2px; }
+  .rel { font-size: 12.5px; color: var(--text-secondary); margin-top: 8px; }
+  .rel a { color: var(--accent); margin-right: 12px; }
+  .situ { margin-top: 10px; padding: 9px 12px; background: var(--info-bg); color: var(--info-fg); border-radius: 8px; font-size: 13px; display: inline-block; }
+
+  /* tabelas */
   .tw { overflow: auto; }
   table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 13px; }
-  th, td { padding: 9px 12px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); }
-  th { position: sticky; top: 0; background: var(--surface-2); color: var(--text-secondary); font-weight: 600; font-size: 11.5px; cursor: pointer; user-select: none; }
-  th[data-ord]::after { content: attr(data-ord); margin-left: 4px; }
+  th, td { padding: 10px 14px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+  th { position: sticky; top: 0; z-index: 1; background: var(--surface-1); color: var(--text-muted); font-weight: 500; font-size: 12px;
+       border-bottom: 1px solid var(--border); cursor: pointer; user-select: none; }
+  th:hover { color: var(--text-primary); }
+  th[data-ord] { color: var(--text-primary); }
+  th[data-ord]::after { content: attr(data-ord); margin-left: 4px; font-size: 9px; vertical-align: 1px; }
   td.l, th.l { text-align: left; }
   tbody tr { cursor: pointer; } tbody tr:hover td { background: var(--surface-2); }
   tbody tr:last-child td { border-bottom: 0; }
-  td .cod { font-weight: 650; } td .tp { font-size: 10.5px; color: var(--text-muted); margin-left: 5px; font-weight: 600; }
-  .ell { max-width: 240px; overflow: hidden; text-overflow: ellipsis; }
-  .nota { color: var(--text-muted); font-size: 12px; margin-top: 10px; line-height: 1.5; }
+  td .cod { font-weight: 600; } td .tp { font-size: 10.5px; color: var(--text-muted); margin-left: 6px; font-weight: 500; }
+  td .sub { font-size: 12px; margin-top: 1px; }
+  .ell { max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+
+  /* notas recolhidas */
+  .nota { color: var(--text-muted); font-size: 12px; margin-top: 10px; line-height: 1.55; }
+  details.nota summary { cursor: pointer; color: var(--text-secondary); width: fit-content; }
+  details.nota summary:hover { color: var(--accent); }
+  details.nota[open] summary { margin-bottom: 6px; }
+  details.nota p { margin: 0 0 6px; max-width: 110ch; }
   .vazio { padding: 40px; text-align: center; color: var(--text-secondary); }
+
+  /* cartões no celular */
   .cards { display: none; }
-  .tc { padding: 12px 14px; border-bottom: 1px solid var(--border); cursor: pointer; }
-  .tc:last-child { border-bottom: 0; }
+  .tc { padding: 13px 16px; border-top: 1px solid var(--line); cursor: pointer; }
+  .tc:first-child { border-top: 0; }
   .tc .l1 { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-  .tc .l2 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 6px; margin-top: 8px; }
-  .tc .l2 div span { display: block; font-size: 11px; color: var(--text-muted); }
-  .tc .l2 div b { font-weight: 600; font-size: 13px; white-space: nowrap; }
-  #det { position: fixed; inset: 0 0 0 auto; width: min(620px, 100vw); background: var(--surface-1);
-         border-left: 1px solid var(--border); box-shadow: -8px 0 24px rgba(0,0,0,.12);
+  .tc .l2 { display: grid; grid-template-columns: 1.3fr 1fr 1fr 0.8fr; gap: 6px; margin-top: 10px; }
+  .tc .l2 div > span { display: block; font-size: 11px; color: var(--text-muted); }
+  .tc .l2 div b { font-weight: 500; font-size: 13px; white-space: nowrap; }
+  .tc .l2 .pp { justify-content: flex-start; } .tc .l2 .ppb { display: none; }
+
+  /* detalhe do título */
+  #det { position: fixed; inset: 0 0 0 auto; width: min(640px, 100vw); background: var(--surface-1);
+         border-left: 1px solid var(--border); box-shadow: -12px 0 32px rgba(20,25,35,.12);
          transform: translateX(100%); transition: transform .2s ease; overflow-y: auto; z-index: 10; }
   #det.aberto { transform: none; }
-  #det .topo { position: sticky; top: 0; background: var(--surface-1); padding: 16px 18px 10px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; gap: 12px; z-index: 1; }
-  #det h3 { margin: 0; font-size: 18px; }
-  #det .corpo { padding: 14px 18px 30px; }
-  .fechar { background: none; border: 1px solid var(--border); color: var(--text-primary); border-radius: 8px; padding: 4px 10px; cursor: pointer; font: inherit; height: fit-content; }
-  .grade { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px 14px; margin: 4px 0 16px; }
-  .grade .l { font-size: 11.5px; color: var(--text-secondary); }
-  .grade .v { font-weight: 600; }
-  .grade .dest .v { font-size: 20px; letter-spacing: -.02em; }
-  .graf h4 { font-size: 13px; margin: 16px 0 2px; font-weight: 600; }
-  .legenda { display: flex; gap: 14px; font-size: 12px; color: var(--text-secondary); margin: 2px 0 4px; flex-wrap: wrap; }
-  .legenda i { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 5px; }
+  #det .topo { position: sticky; top: 0; background: var(--surface-1); padding: 18px 22px 14px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; z-index: 2; }
+  #det h3 { margin: 0 0 2px; font-size: 20px; font-weight: 600; }
+  #det .sub a { color: var(--accent); }
+  #det .corpo { padding: 18px 22px 40px; }
+  .fechar { background: none; border: 1px solid var(--border); color: var(--text-secondary); border-radius: 8px; padding: 5px 11px; cursor: pointer; font: inherit; font-size: 13px; }
+  .fechar:hover { color: var(--text-primary); border-color: var(--text-muted); }
+  .hero { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; padding: 4px 0 18px; border-bottom: 1px solid var(--line); }
+  .hero .l { font-size: 12px; color: var(--text-secondary); }
+  .hero .v { font-size: 21px; font-weight: 500; letter-spacing: -.01em; line-height: 1.3; overflow-wrap: anywhere; }
+  .hero .v.longo { font-size: 16px; padding-top: 4px; }
+  .hero .v .pp { justify-content: flex-start; }
+  .hero .x { font-size: 11.5px; color: var(--text-muted); }
+  .sec { font-size: 14px; font-weight: 600; margin: 22px 0 8px; display: flex; align-items: center; gap: 2px; flex-wrap: wrap; }
+  .grade { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px 16px; margin: 0; }
+  .grade .l { font-size: 12px; color: var(--text-muted); }
+  .grade .v { font-weight: 500; }
+  .alerta-cr { padding: 12px 14px; margin: 0 0 16px; border-radius: 8px; background: var(--crit-bg); color: var(--crit-fg); font-size: 13px; }
+  .alerta-cr.leve { background: var(--warn-bg); color: var(--warn-fg); }
+  .alerta-cr .tag { margin-left: 0; background: var(--surface-1); }
+  .gitem { padding: 12px 0; border-top: 1px solid var(--line); }
+  .gitem:first-child { border-top: 0; padding-top: 4px; }
+  .gitem .gt { font-weight: 600; text-transform: capitalize; }
+  .gitem .gp { margin-top: 3px; }
+  .gitem .gc { margin-top: 4px; color: var(--text-secondary); font-size: 13px; line-height: 1.5; }
+  .gitem .gf { margin-top: 4px; color: var(--text-muted); font-size: 12px; }
+  .ldoc { display: grid; grid-template-columns: 86px 1fr auto; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); font-size: 13px; align-items: baseline; }
+  .ldoc:first-child { border-top: 0; }
+  .ldoc a { color: var(--accent); }
+  .sim { background: var(--surface-2); border-radius: 10px; padding: 14px 16px; margin: 18px 0 0; }
+  .sim input { width: 100px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-1); color: var(--text-primary); font: inherit; margin-top: 3px; }
+
+  /* gráficos */
+  .graf h4 { font-size: 14px; margin: 22px 0 4px; font-weight: 600; }
+  .legenda { display: flex; gap: 16px; font-size: 12px; color: var(--text-secondary); margin: 2px 0 6px; flex-wrap: wrap; }
+  .legenda i { display: inline-block; width: 14px; height: 2px; vertical-align: middle; margin-right: 6px; }
   .graf svg { width: 100%; height: auto; display: block; }
-  .graf .grid { stroke: var(--border); stroke-width: 1; }
-  .graf .eixo { fill: var(--text-muted); font-size: 10.5px; }
-  #tip { position: fixed; pointer-events: none; background: var(--text-primary); color: var(--surface-1); font-size: 12px; padding: 6px 9px; border-radius: 6px; display: none; z-index: 20; white-space: nowrap; }
-  @media (max-width: 760px) {
-    .top, nav, main { padding-left: 14px; padding-right: 14px; }
-    .kpis { grid-template-columns: repeat(2, minmax(0,1fr)); }
-    .tabela-titulos { display: none; } .cards { display: block; }
-    .emp { grid-template-columns: 1fr auto; } .emp .v.hide-m, .cab-emp .hide-m { display: none; }
-    .cab-emp { grid-template-columns: 1fr auto; }
-    .grade { grid-template-columns: repeat(2, minmax(0,1fr)); }
-    h2 { font-size: 19px; }
+  .graf .grid { stroke: var(--line); stroke-width: 1; }
+  .graf .eixo { fill: var(--text-muted); font-size: 11px; }
+  #tip { position: fixed; pointer-events: none; background: var(--text-primary); color: var(--surface-1); font-size: 12px; padding: 7px 10px; border-radius: 6px; display: none; z-index: 20; white-space: nowrap; line-height: 1.5; }
+
+  @media (max-width: 1100px) {
+    .emp, .cab-emp { grid-template-columns: minmax(0,1fr) 170px 120px; }
+    .emp .c.hide-t, .cab-emp .hide-t { display: none; }
   }
+  @media (max-width: 760px) {
+    .top { flex-wrap: wrap; gap: 0 12px; padding: 10px 14px 0; min-height: 0; }
+    .ref { margin-left: auto; }
+    nav { order: 3; width: 100%; margin: 6px 0 0 -12px; }
+    nav a { padding: 10px 12px; }
+    main { padding: 16px 14px 56px; }
+    .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .kpi .v { font-size: 19px; }
+    input[type=search] { max-width: none; flex-basis: 100%; }
+    .tabela-titulos, .so-d { display: none; } .cards { display: block; }
+    .emp, .cab-emp { grid-template-columns: minmax(0,1fr) auto; padding: 12px 14px; }
+    .emp .c.hide-m, .cab-emp .hide-m { display: none; }
+    .so-m { display: inline; } .so-msel { display: block; }
+    .hero { grid-template-columns: 1fr 1fr; }
+    .grade { grid-template-columns: 1fr 1fr; }
+    h2 { font-size: 22px; }
+    #det .topo, #det .corpo { padding-left: 16px; padding-right: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) { #det { transition: none; } }
 </style>
 </head>
 <body>
 <header>
-  <div class="top"><h1>Painel de Dívidas · Mercado Secundário</h1><span class="ref" id="ref"></span></div>
-  <nav><a href="#/" id="nEmp">Empresas</a><a href="#/mercado" id="nMer">Mercado do dia</a><a href="#/curva" id="nCur">Curva de juros</a></nav>
+  <div class="top"><h1>Painel de Dívidas</h1><nav><a href="#/" id="nEmp">Empresas</a><a href="#/mercado" id="nMer">Mercado do dia</a><a href="#/curva" id="nCur">Curva de juros</a></nav><span class="ref" id="ref"></span></div>
 </header>
 <main id="app"><div class="vazio">Carregando…</div></main>
 <aside id="det" aria-hidden="true">
@@ -155,11 +240,12 @@ const ordVen = s => { const d = venData(s); return d ? d.getTime() : 9e15; };
 const ALERTAS = {
   vencida_antecipadamente: ["Vencida antecip.", "t-crit"], negociado_abaixo_par: ["Negociado < 80% par", "t-crit"],
   indicativo_abaixo_par: ["Indicativo < 80% par", "t-warn"], desvio_anbima: ["Desvio vs ANBIMA", "t-warn"],
-  salto_volume: ["Salto de volume", "t-info"],
+  salto_volume: ["Salto de volume", "t-neu"],
 };
 const ESSENCIAIS = ["vencida_antecipadamente", "salto_volume"];
 const tagsE = al => tags((al || []).filter(k => ESSENCIAIS.includes(k)));
-const tags = al => (al || []).filter(k => k !== "desvio_anbima").map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
+const OCULTOS = ["desvio_anbima", "negociado_abaixo_par", "indicativo_abaixo_par"];
+const tags = al => (al || []).filter(k => !OCULTOS.includes(k)).map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
 const CR = { va: ["Venc. antecipado", "t-crit", 4], rj: ["RJ", "t-crit", 3], re: ["RE", "t-crit", 2], rp: ["Reperfilada", "t-warn", 1] };
 const crTag = (cr, crr) => cr ? `<span class="tag ${CR[cr][1]}" title="${esc(crr || "")}">${CR[cr][0]}</span>` : "";
 const crGrave = cr => cr === "va" || cr === "rj" || cr === "re";
@@ -188,16 +274,22 @@ const garCurta = i => i.gn == null ? esc(i.gar || "–")
 
 function pctPar(v, extra = "") {
   if (nada(v)) return '<span class="mut">–</span>';
-  const cl = v < 80 ? "neg" : v < 95 ? "amb" : "";
+  const cl = v < 80 ? "neg" : "";
   return `<span class="${cl}"${extra}>${f1.format(v)}%</span>`;
+}
+// % do par com régua: barra até o preço, traço no par (escala 0–110%)
+function pctBar(v, ind) {
+  if (nada(v)) return '<span class="mut">–</span>';
+  const cl = v < 80 ? "neg" : v < 95 ? "amb" : "";
+  return `<span class="pp"><span class="${cl === "neg" ? "neg" : ""}">${f1.format(v)}%${ind ? '<span class="mut">*</span>' : ""}</span><span class="ppb ${cl}" aria-hidden="true"><i style="width:${Math.max(2, Math.min(100, v / 1.1)).toFixed(1)}%"></i><u></u></span></span>`;
 }
 function yieldTxt(y, base, est, pct) {
   if (nada(y) || !base) return base === "%DI" ? '<span class="mut" title="Papel em % do DI: veja a TIR nominal">% DI</span>' : '<span class="mut">–</span>';
   const t = base === "PRE" ? `${f2.format(y)}%` : `${base.replace("+", "")} + ${f2.format(y)}%`;
-  const cor = !nada(pct) && pct < 80 ? ' class="neg"' : "";
+  const cor = "";
   return est ? `<span${cor} title="Estimativa: CRI/CRA sem cronograma, supõe pagamento único no vencimento">≈ ${t}</span>` : `<span${cor}>${t}</span>`;
 }
-const tirTxt = (v, pct) => nada(v) ? '<span class="mut">–</span>' : `<span${!nada(pct) && pct < 80 ? ' class="neg"' : ""}>${f1.format(v)}%</span>`;
+const tirTxt = v => nada(v) ? '<span class="mut">–</span>' : `<span>${f1.format(v)}%</span>`;
 const moicTxt = v => nada(v) ? '<span class="mut">–</span>' : `${f2.format(v)}x`;
 function taxaAnb(t, idx) {
   if (nada(t)) return '<span class="mut">–</span>';
@@ -323,7 +415,7 @@ async function telaEmpresas() {
       </select>
     </div>
     <div class="card" id="listaE"></div>
-    <div class="nota">Agrupado pelo emissor (debêntures) ou pelo devedor (CRI/CRA precificados pela ANBIMA; nos demais aparece a securitizadora). "Pior % do par" usa o último negócio dos últimos 30 pregões ou, sem negócio, o indicativo ANBIMA.</div>`;
+    <details class="nota"><summary>Como ler esta lista</summary><p>Agrupado pelo emissor (debêntures) ou pelo devedor (CRI/CRA). Quando o devedor não é identificado na ANBIMA nem no informe mensal da CVM, o título fica na securitizadora.</p><p>"Pior % do par" usa o último negócio dos últimos 30 pregões ou, sem negócio, o indicativo ANBIMA. A régua mostra o preço até o par (traço = 100%): cinza perto do par, amarelo entre 80% e 95%, vermelho abaixo de 80%.</p></details>`;
   const oE = document.getElementById("oE"); oE.value = st.ordE;
   document.getElementById("bE").oninput = e => { st.busca = e.target.value; listaEmpresas(); };
   autocompletar(document.getElementById("bE"));
@@ -340,12 +432,14 @@ function listaEmpresas() {
   L.sort(S[st.ordE]);
   const tot = L.length; L = L.slice(0, 200);
   document.getElementById("listaE").innerHTML = !L.length ? '<div class="vazio">Nenhuma empresa encontrada.</div>' :
-    `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? " (mostrando 200; refine a busca)" : ""}</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
+    `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? ", mostrando 200 (refine a busca)" : ""}</div><div class="hide-m hide-t">Títulos</div><div class="hide-m hide-t">Negociados hoje</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
     L.map(e => `<a class="emp" href="#/e/${encodeURIComponent(e.k)}">
-      <div><div class="n">${esc(e.nome)} ${crTag(e.cr)}${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor único: lastro pulverizado ou devedor não informado na ANBIMA nem no informe mensal da CVM">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
-      <div class="sub">${e.situacao ? `<span style="color:var(--text-primary)">${esc(e.situacao)}</span> · ` : ""}${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
-      <div class="v hide-m"><b>${pctPar(e.pior)}</b><span>pior título</span></div>
-      <div class="v"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b><span>${e.vol ? "negociado" : "sem negócio"}</span></div></a>`).join("");
+      <div><div class="n">${esc(e.nome)}${crTag(e.cr, e.situacao)}${e.lista ? '<span class="tag t-info">Minha lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor único: lastro pulverizado ou devedor não informado na ANBIMA nem no informe mensal da CVM">securitizadora</span>' : ""}</div>
+      ${e.situacao ? `<div class="sub">${esc(e.situacao)}</div>` : ""}<div class="sub so-m">${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${!nada(e.pior) ? ` · pior ${pctPar(e.pior)} do par` : ""}</div></div>
+      <div class="c hide-m hide-t">${e.itens.length}</div>
+      <div class="c hide-m hide-t">${e.negHoje || '<span class="mut">–</span>'}</div>
+      <div class="c hide-m">${pctBar(e.pior)}</div>
+      <div class="c"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b></div></a>`).join("");
 }
 
 async function telaEmpresa(k) {
@@ -359,51 +453,59 @@ async function telaEmpresa(k) {
   const cnpj = e.cnpj && e.cnpj.length >= 14 ? e.cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5") : null;
   app.innerHTML = `
     <a class="voltar" href="#/">← Empresas</a>
-    <h2>${esc(e.nome)}</h2>${e.curto ? `<div class="sub" style="margin:-2px 0 4px">${esc(titulo(e.razao))}</div>` : ""}
-    <div class="sub">${[cnpj ? "CNPJ " + cnpj : null, `${itens.length} título${itens.length > 1 ? "s" : ""} em mercado`].filter(Boolean).join(" · ")}</div>
-    ${e.situacao ? `<div style="margin-top:6px"><span class="tag t-info">Minha lista</span> <span class="sub" style="color:var(--text-primary)">${esc(e.situacao)}</span></div>` : ""}
-    ${rel.length ? `<div class="rel">Mesmo grupo: ${rel.map(r => `<a href="#/e/${encodeURIComponent(r.k)}">${esc(r.nome)}</a>`).join("")}</div>` : ""}
+    <div class="cab">
+      <h2>${esc(e.nome)}${crTag(e.cr, e.situacao)}${e.lista ? '<span class="tag t-info">Minha lista</span>' : ""}</h2>
+      ${e.curto ? `<div class="sub">${esc(titulo(e.razao))}</div>` : ""}${cnpj ? `<div class="sub mut">CNPJ ${cnpj}</div>` : ""}
+      ${e.situacao ? `<div class="situ">${esc(e.situacao)}</div>` : ""}
+      ${rel.length ? `<div class="rel">Mesmo grupo: ${rel.map(r => `<a href="#/e/${encodeURIComponent(r.k)}">${esc(r.nome)}</a>`).join("")}</div>` : ""}
+    </div>
     <div class="kpis">
-      <div class="card kpi"><div class="l">Títulos</div><div class="v">${itens.length}</div></div>
-      <div class="card kpi"><div class="l">Negociados hoje</div><div class="v">${e.negHoje}</div></div>
-      <div class="card kpi"><div class="l">Volume hoje</div><div class="v">${e.vol ? "R$ " + mi(e.vol) : "–"}</div></div>
-      <div class="card kpi"><div class="l">Pior % do par</div><div class="v">${pctPar(e.pior)}</div></div>
+      <div class="kpi"><div class="l">Títulos em mercado</div><div class="v">${itens.length}</div></div>
+      <div class="kpi"><div class="l">Negociados hoje</div><div class="v">${e.negHoje || "–"}</div></div>
+      <div class="kpi"><div class="l">Volume hoje</div><div class="v">${e.vol ? "R$ " + mi(e.vol) : "–"}</div></div>
+      <div class="kpi"><div class="l">Pior % do par</div><div class="v">${pctPar(e.pior)}</div></div>
     </div>
     <div class="card tw tabela-titulos"><table><thead><tr>
-      <th class="l">Título</th><th>Vencimento</th><th class="l">Remuneração</th><th>Último negócio</th><th>PU negociado</th>
-      <th>% do par</th><th title="Spread/juro real implícito, pagando tudo no vencimento">Yield implícito</th><th title="TIR nominal com DI futuro e inflação implícita da curva ANBIMA">TIR nominal</th><th title="Total a receber ÷ preço pago">MOIC</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
+      <th class="l">Título</th><th>Vencimento</th><th class="l">Remuneração</th><th>PU negociado</th>
+      <th>% do par</th><th title="Spread/juro real implícito, pagando tudo no vencimento">Yield implícito</th><th title="TIR nominal com DI futuro e inflação implícita da curva ANBIMA">TIR nominal</th><th title="Total a receber ÷ preço pago">MOIC</th><th class="l">Garantia</th><th>Volume hoje</th><th>Último negócio</th><th>Taxa ANBIMA</th><th class="l"></th>
     </tr></thead><tbody>${itens.map((i, n) => linhaTitulo(i, n)).join("")}</tbody></table></div>
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
-    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 5% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato. Selos de situação (venc. antecipado, RJ, RE, reperfilada) vêm da leitura automática de escrituras, aditamentos, atas de AGD e comunicados na CVM; † = TIR contratual de título com evento de crédito, só como referência.</div>`;
+    ${NOTA_NUMEROS}`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
   if (st.abrirCod) { const it = itens.find(i => i.c === st.abrirCod); st.abrirCod = null; if (it) abrirTitulo(it); }
 }
+const NOTA_NUMEROS = `<details class="nota"><summary>Como ler os números</summary>
+  <p><b>% do par</b> = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * = indicativo ANBIMA, sem negócio nos últimos 30 pregões. A régua vai até o par (traço = 100%); fica vermelha abaixo de 80%, quando o retorno passa a depender da recuperação e não do contrato.</p>
+  <p><b>Yield implícito</b> (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento. DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento).</p>
+  <p><b>TIR nominal e MOIC</b> projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculados entre 5% e 150% do par. † = TIR contratual de título com evento de crédito, só como referência.</p>
+  <p><b>Garantia</b> lida nas escrituras e aditamentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. <b>Selos</b> (venc. antecipado, RJ, RE, reperfilada) vêm da leitura de escrituras, atas de AGD e comunicados.</p></details>`;
 // TIR contratual perde sentido com evento de crédito grave: mostra esmaecida, com aviso
 function tirCr(i) {
-  const t = tirTxt(i.utir, i.upp ?? i.ppa);
+  const t = tirTxt(i.utir);
   return crGrave(i.cr) && !nada(i.utir) ? `<span style="opacity:.55" title="Contratual: supõe pagamento pelo cronograma original, que deixou de valer com o evento de crédito. Use o simulador de recuperação.">${t}†</span>` : t;
 }
 function linhaTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<tr data-i="${n}">
-    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}${i.gn != null || i.gar ? `<div class="sub">garantia: ${garCurta(i)}</div>` : ""}${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
+    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.inc ? '<span class="tag t-neu" title="Incentivada (Lei 12.431)">12.431</span>' : ""}${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}</td>
     <td>${esc(i.ven || "–")}</td><td class="l">${esc(i.idx || "–")}</td>
-    <td>${i.ud ? dbr(i.ud) : '<span class="mut">sem negócio</span>'}</td>
     <td>${fmt(i.up)}</td>
-    <td>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</td>
-    <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</td><td>${tirCr(i)}${i.uind ? '<span class="mut" title="no PU indicativo ANBIMA">*</span>' : ""}</td><td>${moicTxt(i.umoic)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
+    <td>${pctBar(p, ind)}</td>
+    <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</td><td>${tirCr(i)}${i.uind ? '<span class="mut" title="no PU indicativo ANBIMA">*</span>' : ""}</td><td>${moicTxt(i.umoic)}</td>
+    <td class="l">${garTipoTxt(i)}</td>
     <td>${i.vh ? mi(i.vh) : '<span class="mut">–</span>'}</td>
-    <td class="l ell">${garCurta(i)}</td><td class="l">${tagsE(i.al)}</td></tr>`;
+    <td>${i.ud ? dbr(i.ud) : '<span class="mut">sem negócio</span>'}</td><td>${taxaAnb(i.ta, i.idx)}</td>
+    <td class="l">${tagsE(i.al)}</td></tr>`;
 }
 function cartaoTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<div class="tc" data-i="${n}">
-    <div class="l1"><div><span style="font-weight:650">${esc(i.c)}</span> <span class="mut" style="font-size:11px;font-weight:600">${esc(i.t)}</span></div><div class="sub">venc. ${esc(i.ven || "–")}${i.ud ? " · neg. " + dbr(i.ud).slice(0, 5) : ""}</div></div>
-    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${crTag(i.cr, i.crr)}${tagsE(i.al)}</div>${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}
+    <div class="l1"><div><span style="font-weight:600">${esc(i.c)}</span><span class="mut" style="font-size:11px;margin-left:6px">${esc(i.t)}</span>${crTag(i.cr, i.crr)}</div><div class="sub">venc. ${esc(i.ven || "–")}</div></div>
+    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${garTipo(i).t !== "–" ? " · " + garTipoTxt(i) : ""}${i.inc ? " · incentivada" : ""}</div>${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}
     <div class="l2">
-      <div><span>% do par${ind ? " (ind.)" : ""}</span><b>${pctPar(p)}</b></div>
+      <div><span>% do par${ind ? " (ind.)" : ""}</span><b>${pctBar(p)}</b></div>
       <div><span>Yield</span><b>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</b></div>
-      <div><span>TIR nominal${i.uind ? " (ind.)" : ""}</span><b>${tirCr(i)}</b></div>
+      <div><span>TIR${i.uind ? " (ind.)" : ""}</span><b>${tirCr(i)}</b></div>
       <div><span>MOIC</span><b>${moicTxt(i.umoic)}</b></div>
     </div></div>`;
 }
@@ -430,11 +532,17 @@ async function telaMercado() {
     <div class="barra">
       <input type="search" id="bM" placeholder="Buscar código ou empresa" value="${esc(st.buscaM)}">
       <div class="chips" id="cM">${["Todos", "DEB", "CRI", "CRA", "Outros"].map(t => `<button class="chip" data-t="${t}" aria-pressed="${t === st.tipoM}">${t}</button>`).join("")}</div>
+      <select id="oM" class="so-msel" aria-label="Ordenar"><option value="vol">Maior volume</option><option value="ppar">Mais descontados</option><option value="tir">Maior TIR</option><option value="ven">Vencimento</option></select>
       <select id="vM"><option value="neg">Negociados no dia</option><option value="alerta">Só com alerta</option><option value="todos">Todos (inclui só ANBIMA)</option></select>
     </div>
-    <div class="card tw" style="max-height:calc(100vh - 250px)"><table id="tM"><thead></thead><tbody></tbody></table></div>
-    <div class="nota">Fontes: B3 (negociação consolidada de balcão), ANBIMA (debêntures e CRI/CRA) e SND (PU de curva). Volume e PU médio somam todas as liquidações e classificações. * % do par indicativo ANBIMA quando não houve negócio. Garantia: lida nos documentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. Gerado em ${new Date(st.dia.gerado_em).toLocaleString("pt-BR")}.</div>`;
+    <div class="card tw so-d" style="max-height:calc(100vh - 260px)"><table id="tM"><thead></thead><tbody></tbody></table></div>
+    <div class="card cards" id="cardsM"></div>
+    <details class="nota"><summary>Fontes e como ler os números</summary>
+      <p>Fontes: B3 (negociação consolidada de balcão), ANBIMA (debêntures e CRI/CRA) e SND (PU de curva). Volume e PU médio somam todas as liquidações e classificações. Atualizado em ${new Date(st.dia.gerado_em).toLocaleString("pt-BR")}.</p>
+      <p><b>% do par</b>: * = indicativo ANBIMA quando não houve negócio. A régua vai até o par (traço = 100%) e fica vermelha abaixo de 80%. <b>Garantia</b>: lida nos documentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. "Com alerta" inclui título abaixo de 80% do par, salto de volume e vencimento antecipado.</p></details>`;
   document.getElementById("vM").value = st.visM;
+  const oM = document.getElementById("oM"); oM.value = ["vol", "ppar", "tir", "ven"].includes(st.ordM) ? st.ordM : "vol";
+  oM.onchange = e => { st.ordM = e.target.value; st.dirM = ["ppar", "ven"].includes(st.ordM) ? 1 : -1; tabelaMercado(); };
   document.getElementById("bM").oninput = e => { st.buscaM = e.target.value; tabelaMercado(); };
   carregarCatalogo().then(() => autocompletar(document.getElementById("bM")));
   document.getElementById("vM").onchange = e => { st.visM = e.target.value; tabelaMercado(); };
@@ -445,10 +553,10 @@ const COLS = [
   ["cod", "Título", r => r.c, r => `<span class="cod">${esc(r.c)}</span><span class="tp">${esc(r.t || "")}</span>`, "l"],
   ["emp", "Empresa", r => r._nome || r.e || "", r => `<span title="${esc(r.e)}">${esc(r._nome || titulo(r.e) || "–")}</span>`, "l ell"],
   ["vol", "Volume (R$)", r => r._vol, r => r._vol ? mi(r._vol) : '<span class="mut">–</span>'],
-  ["pmed", "PU médio", r => r._pmed ?? -1, r => `<b>${fmt(r._pmed)}</b>`],
-  ["ppar", "% do par", r => r._ppar ?? 999, r => pctPar(r._ppar) + (r._ppar != null && !r._parNeg ? '<span class="mut">*</span>' : "")],
+  ["pmed", "PU médio", r => r._pmed ?? -1, r => fmt(r._pmed)],
+  ["ppar", "% do par", r => r._ppar ?? 999, r => pctBar(r._ppar, r._ppar != null && !r._parNeg)],
   ["y", "Yield implícito", r => r.p?.y ?? -999, r => yieldTxt(r.p?.y, r.p?.y_base, r.p?.y_est, r.p?.pct_par_neg)],
-  ["tir", "TIR nominal", r => r.p?.tir ?? -999, r => tirTxt(r.p?.tir, r.p?.pct_par_neg)],
+  ["tir", "TIR nominal", r => r.p?.tir ?? -999, r => tirTxt(r.p?.tir)],
   ["moic", "MOIC", r => r.p?.moic ?? -1, r => moicTxt(r.p?.moic)],
   ["ven", "Vencimento", r => ordVen(r.a?.vencimento || r._cat?.ven), r => esc(r.a?.vencimento || r._cat?.ven || "–")],
   ["gar", "Garantia", r => garTipo(r._cat).o, r => garTipoTxt(r._cat), "l"],
@@ -468,19 +576,31 @@ function tabelaMercado() {
   L.sort((a, b) => { const x = col[2](a), y = col[2](b); return (x > y ? 1 : x < y ? -1 : 0) * st.dirM; });
   const vol = L.reduce((s, r) => s + r._vol, 0), neg = L.reduce((s, r) => s + r._neg, 0);
   document.getElementById("kM").innerHTML = [["Títulos negociados", f0.format(L.filter(r => r._vol).length)], ["Volume", "R$ " + mi(vol)],
-    ["Negócios", f0.format(neg)], ["Com alerta", f0.format(L.filter(r => r.al.length).length)]].map(([l, v]) => `<div class="card kpi"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("");
+    ["Negócios", f0.format(neg)], ["Com alerta", f0.format(L.filter(r => r.al.length).length)]].map(([l, v]) => `<div class="kpi"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("");
   const th = document.querySelector("#tM thead");
   th.innerHTML = "<tr>" + COLS.map(c => `<th class="${c[4] || ""}" data-k="${c[0]}" ${c[0] === st.ordM ? `data-ord="${st.dirM < 0 ? "▼" : "▲"}"` : ""}>${c[1]}</th>`).join("") + "</tr>";
   th.querySelectorAll("th").forEach(h => h.onclick = () => { if (st.ordM === h.dataset.k) st.dirM *= -1; else { st.ordM = h.dataset.k; st.dirM = ["cod", "emp", "ven", "ppar"].includes(st.ordM) ? 1 : -1; } tabelaMercado(); });
   const vis = L.slice(0, 1500);
-  const tb = document.querySelector("#tM tbody");
-  tb.innerHTML = vis.length ? vis.map((r, i) => `<tr data-i="${i}">` + COLS.map(c => `<td class="${c[4] || ""}">${c[3](r)}</td>`).join("") + "</tr>").join("") : `<tr><td class="vazio" colspan="${COLS.length}">Nenhum título com esses filtros.</td></tr>`;
-  tb.querySelectorAll("tr[data-i]").forEach(tr => tr.onclick = async () => {
-    const r = vis[+tr.dataset.i];
+  const abrir = async r => {
     await carregarCatalogo().catch(() => {});
     const i = st.cat?.itens.find(x => x.c === r.c);
     abrirTitulo(i || { c: r.c, t: r.t, e: r.e, s: r.s, ven: r.a?.vencimento, idx: r.a?.indice, al: r.al });
-  });
+  };
+  if (matchMedia("(max-width: 760px)").matches) {
+    const vm = L.slice(0, 300), cm = document.getElementById("cardsM");
+    cm.innerHTML = vm.length ? vm.map((r, k) => `<div class="tc" data-i="${k}">
+      <div class="l1"><div><span style="font-weight:600">${esc(r.c)}</span><span class="mut" style="font-size:11px;margin-left:6px">${esc(r.t || "")}</span></div><div class="sub">${r._vol ? "R$ " + mi(r._vol) : "sem negócio"}</div></div>
+      <div class="sub" style="margin-top:2px">${esc(r._nome || titulo(r.e) || "–")}${garTipo(r._cat).t !== "–" ? " · " + garTipoTxt(r._cat) : ""}${r.al.length ? " " + tags(r.al) : ""}</div>
+      <div class="l2"><div><span>% do par</span><b>${pctBar(r._ppar, r._ppar != null && !r._parNeg)}</b></div>
+        <div><span>Yield</span><b>${yieldTxt(r.p?.y, r.p?.y_base, r.p?.y_est)}</b></div><div><span>TIR</span><b>${tirTxt(r.p?.tir)}</b></div><div><span>MOIC</span><b>${moicTxt(r.p?.moic)}</b></div></div></div>`).join("")
+      + (L.length > 300 ? `<div class="vazio">Mostrando 300 de ${f0.format(L.length)}. Busque pelo código ou empresa.</div>` : "")
+      : '<div class="vazio">Nenhum título com esses filtros.</div>';
+    cm.querySelectorAll(".tc[data-i]").forEach(el => el.onclick = () => abrir(vm[+el.dataset.i]));
+    return;
+  }
+  const tb = document.querySelector("#tM tbody");
+  tb.innerHTML = vis.length ? vis.map((r, i) => `<tr data-i="${i}">` + COLS.map(c => `<td class="${c[4] || ""}">${c[3](r)}</td>`).join("") + "</tr>").join("") : `<tr><td class="vazio" colspan="${COLS.length}">Nenhum título com esses filtros.</td></tr>`;
+  tb.querySelectorAll("tr[data-i]").forEach(tr => tr.onclick = () => abrir(vis[+tr.dataset.i]));
 }
 
 function fecharDet() { const d = document.getElementById("det"); d.classList.remove("aberto"); d.setAttribute("aria-hidden", "true"); }
@@ -494,31 +614,33 @@ async function abrirTitulo(i) {
     i.s && i.s !== i.e ? "securitizadora: " + esc(titulo(i.s)) : null,
     i.dvf === "CVM" ? `${i.dvt === "cedente" ? "cedente" : "devedor"} com ${f2.format(i.dvp)}% do lastro (informe mensal CVM)` : null,
     i.pulv ? "lastro pulverizado" : null].filter(Boolean).join(" · ");
-  const p = i.upp ?? i.ppa;
-  const dest = [["% do par", pctPar(p) + (i.upp == null && i.ppa != null ? ' <span class="mut" style="font-size:12px">indicativo</span>' : "")],
-                ["Yield implícito", yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)], ["TIR nominal" + (i.uind ? " (no indicativo)" : ""), tirTxt(i.utir, i.upp ?? i.ppa)],
-                ["MOIC", moicTxt(i.umoic)], ["Retorno total nominal", nada(i.uret) ? "–" : f1.format(i.uret) + "%"],
-                ["Último negócio", i.ud ? dbr(i.ud) : "–"]];
+  const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
+  const hero = [
+    ["% do par", pctBar(p), ind ? "indicativo ANBIMA" : i.ud ? "negócio de " + dbr(i.ud) : ""],
+    ["Yield implícito", yieldTxt(i.uy, i.uyb, i.uye), "hold to maturity"],
+    [crGrave(i.cr) ? "TIR contratual †" : "TIR nominal", tirTxt(i.utir), i.uind ? "no indicativo" : "a.a."],
+    ["MOIC", moicTxt(i.umoic), nada(i.uret) ? "" : "retorno " + f1.format(i.uret) + "%"]];
   const dados = [
     ["PU negociado", fmt(i.up)], ["PU par (curva)", fmt(i.par)], ["Volume hoje", i.vh ? "R$ " + mi(i.vh) : "–"],
     ["Vencimento", esc(i.ven || "–")], ["Remuneração", esc(i.idx || "–")], ["Taxa ANBIMA", taxaAnb(i.ta, i.idx)],
-    ["PU ANBIMA", fmt(i.pa)], ["Duration (d.u.)", fmt(i.du, f0)], ["Garantia", garTipoTxt(i) + (i.gres && i.gn ? `<div class="sub" style="font-weight:400">${esc(i.gres)}</div>` : "")],
-    ["Emissão / série", i.em ? `${esc(i.em)}ª / ${esc(i.se || "–")}` : "–"], ["Qtd. em mercado", i.qm ? f0.format(i.qm) : "–"],
-    ["Incentivada (12.431)", i.inc == null ? "–" : i.inc ? "Sim" : "Não"], ["Resgate antecipado", i.ra == null ? "–" : i.ra ? "Previsto" : "Não"],
-    ["Categoria ANBIMA", esc((i.cat || "–").replace(/_/g, " "))],
+    ["PU ANBIMA", fmt(i.pa)], ["Duration (d.u.)", fmt(i.du, f0)], ["Emissão / série", i.em ? `${esc(i.em)}ª / ${esc(i.se || "–")}` : "–"],
+    ["Qtd. em mercado", i.qm ? f0.format(i.qm) : "–"], ["Incentivada (12.431)", i.inc == null ? "–" : i.inc ? "Sim" : "Não"],
+    ["Resgate antecipado", i.ra == null ? "–" : i.ra ? "Previsto" : "Não"], ["Categoria ANBIMA", esc((i.cat || "–").replace(/_/g, " ").toLowerCase().replace(/^./, c => c.toUpperCase()))],
   ];
-  if (crGrave(i.cr)) dest[2][0] = "TIR contratual †";
   const sim = (i.up || i.pa) && i.par ? simulador(i) : "";
-  document.getElementById("detCorpo").innerHTML = (i.al?.length ? `<div style="margin-bottom:10px">${tags(i.al)}</div>` : "") +
-    (i.cr ? `<div class="card" style="padding:10px 14px;margin:0 0 10px;border-left:3px solid var(--${crGrave(i.cr) ? "crit" : "warn"}-fg)">
-       <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">${crTag(i.cr)}<span class="sub">${i.crd ? "desde " + dbr(i.crd) : ""}${i.crf === "lista" ? " · informado na Minha lista" : " · lido nos documentos da CVM"}</span></div>
-       <div style="margin-top:4px;font-size:13px">${esc(i.crr || "")}</div>
-       ${crGrave(i.cr) ? '<div class="nota" style="margin-top:4px">Com evento de crédito, o retorno depende da recuperação, não do cronograma original. Use o simulador abaixo; a TIR contratual fica só como referência.</div>' : ""}</div>` : "") +
-    (crGrave(i.cr) ? sim : "") +
-    `<div class="grade">${dest.map(([l, v]) => `<div class="dest"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
+  const al = tags(i.al);
+  document.getElementById("detCorpo").innerHTML =
+    (i.cr ? `<div class="alerta-cr${crGrave(i.cr) ? "" : " leve"}">
+       <div>${crTag(i.cr)} <span>${i.crd ? "desde " + dbr(i.crd) : ""}${i.crf === "lista" ? " · informado na Minha lista" : " · lido nos documentos da CVM"}</span></div>
+       ${i.crr ? `<div style="margin-top:6px;color:var(--text-primary)">${esc(i.crr)}</div>` : ""}
+       ${crGrave(i.cr) ? '<div style="margin-top:6px">O retorno passa a depender da recuperação, não do cronograma original. Use o simulador; a TIR contratual fica só como referência.</div>' : ""}</div>` : "") +
+    `<div class="hero">${hero.map(([l, v, x]) => `<div><div class="l">${l}</div><div class="v${v.replace(/<[^>]+>/g, "").length > 13 ? " longo" : ""}">${v}</div><div class="x">${x || "&nbsp;"}</div></div>`).join("")}</div>
+     ${al ? `<div style="margin-top:12px">${al.replace(/margin-left:\d+px/g, "")}</div>` : ""}
+     ${crGrave(i.cr) ? sim : ""}
+     <div id="gars"></div>
+     <div class="sec">Dados do título</div>
      <div class="grade">${dados.filter(([l, v]) => !/^(–|<span class="mut">–<\/span>)$/.test(v)).map(([l, v]) => `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      ${crGrave(i.cr) ? "" : sim}
-     <div id="gars"></div>
      <div id="crono"></div>
      <div id="docs"></div>
      <div class="graf" id="graf"><span class="mut">Carregando histórico…</span></div>`;
@@ -533,38 +655,38 @@ async function abrirTitulo(i) {
 
 function simulador(i) {
   const anos = venData(i.ven) ? Math.max(0.25, (venData(i.ven) - new Date()) / 3.156e10) : 3;
-  return `<div class="card" style="padding:12px 14px;margin:4px 0 8px">
-    <div style="font-weight:600;font-size:13px;margin-bottom:6px">Simular recuperação</div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:end">
-      <label class="sub">Recupera (% do par atual)<br><input id="sRec" type="number" value="100" min="0" step="5" style="width:110px;padding:7px 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface-1);color:var(--text-primary);font:inherit"></label>
-      <label class="sub">Em quantos anos<br><input id="sAnos" type="number" value="${anos.toFixed(1)}" min="0.25" step="0.5" style="width:90px;padding:7px 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface-1);color:var(--text-primary);font:inherit"></label>
-      <div id="sRes" style="flex:1;min-width:180px"></div>
+  return `<div class="sim">
+    <div style="font-weight:600;margin-bottom:8px">Simular recuperação</div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:end">
+      <label class="sub">Recupera (% do par de hoje)<br><input id="sRec" type="number" value="100" min="0" step="5"></label>
+      <label class="sub">Em quantos anos<br><input id="sAnos" type="number" value="${anos.toFixed(1)}" min="0.25" step="0.5" style="width:80px"></label>
+      <div id="sRes" style="flex:1;min-width:200px;padding-bottom:6px"></div>
     </div>
-    <div class="nota" style="margin-top:6px">Recebimento único de X% do PU par de hoje (R$ ${fmt(i.par)}) daqui a Y anos, sem correção adicional. Preço de entrada: ${i.up ? "último PU negociado" : "PU indicativo ANBIMA"} (R$ ${fmt(i.up || i.pa)}).</div></div>`;
+    <div class="nota" style="margin-top:8px">Recebimento único de X% do PU par de hoje (R$ ${fmt(i.par)}) daqui a Y anos. Entrada pelo ${i.up ? "último PU negociado" : "PU indicativo ANBIMA"} (R$ ${fmt(i.up || i.pa)}).</div></div>`;
 }
 function ligarSimulador(i) {
   const calc = () => {
     const r = +document.getElementById("sRec").value / 100, a = +document.getElementById("sAnos").value;
     const moic = r * i.par / (i.up || i.pa), tir = a > 0 && moic > 0 ? (Math.pow(moic, 1 / a) - 1) * 100 : null;
-    document.getElementById("sRes").innerHTML = `<div class="sub">MOIC <b style="color:var(--text-primary);font-size:16px">${f2.format(moic)}x</b> · TIR <b style="color:var(--text-primary);font-size:16px">${tir === null ? "–" : f1.format(tir) + "%"}</b> · retorno ${f1.format((moic - 1) * 100)}%</div>`;
+    document.getElementById("sRes").innerHTML = `<span class="sub">MOIC</span> <b style="font-size:18px;font-weight:500">${f2.format(moic)}x</b>&nbsp;&nbsp; <span class="sub">TIR</span> <b style="font-size:18px;font-weight:500">${tir === null ? "–" : f1.format(tir) + "%"}</b>&nbsp;&nbsp; <span class="sub">retorno ${f1.format((moic - 1) * 100)}%</span>`;
   };
   document.getElementById("sRec").oninput = calc; document.getElementById("sAnos").oninput = calc; calc();
 }
 
 async function carregarGarantias(i) {
   const el = document.getElementById("gars");
-  if (!i.garq) { el.innerHTML = i.gar ? `<h4 style="font-size:13px;margin:14px 0 4px">Garantias</h4><div class="sub">Espécie no SND: ${esc(i.gar)}. Garantias ainda não lidas nos documentos.</div>` : ""; return; }
+  const cab = `<div class="sec">Garantias <span class="tag t-neu">${esc(garTipo(i).t)}</span></div>`;
+  if (!i.garq) { el.innerHTML = i.gar ? cab + `<div class="sub">Espécie no SND: ${esc(i.gar)}. Os documentos deste título ainda não foram lidos, então fiança e aval podem não aparecer.</div>` : ""; return; }
   let j; try { j = await getJSON(`data/escrituras/${i.garq}.json`); } catch { el.innerHTML = ""; return; }
   const g = (j.garantias || {})[i.c] || {};
   const gm = j.garantias_meta || {};
   const lst = g.garantias || [];
   const cor = s => s === "vigente" ? "t-info" : s === "liberada" ? "t-neu" : "t-warn";
-  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Garantias (documentos CVM)</h4>
-    <div class="sub" style="margin-bottom:6px">Espécie: ${esc(g.especie || i.gar || "–")}${gm.emissora_atual ? ` · emissora atual: ${esc(gm.emissora_atual)}` : ""}</div>
-    ${lst.length ? `<div class="card tw"><table><tbody>${lst.map(x => `<tr style="cursor:default"><td class="l" style="white-space:normal;width:28%"><b>${esc(x.tipo || "–")}</b><div><span class="tag ${cor(x.situacao)}">${esc(x.situacao || "?")}</span></div></td>
-      <td class="l" style="white-space:normal">${esc(x.prestador_ou_objeto || "–")}<div class="sub">${esc(x.condicoes || "")}</div>${x.fonte ? `<div class="sub mut">fonte: ${esc(x.fonte)}</div>` : ""}</td></tr>`).join("")}</tbody></table></div>`
-      : `<div class="nota" style="margin:0">Nenhuma garantia nos documentos lidos: ${esc(g.resumo || "quirografária")}.</div>`}
-    ${gm.lacunas ? `<details style="margin-top:6px"><summary class="sub" style="cursor:pointer">Lacunas da leitura</summary><div class="nota">${esc(gm.lacunas)}</div></details>` : ""}`;
+  el.innerHTML = cab + `<div class="sub" style="margin-bottom:6px">Espécie: ${esc(g.especie || i.gar || "–")}${gm.emissora_atual ? `. Emissora atual: ${esc(gm.emissora_atual)}` : ""}</div>
+    ${lst.length ? lst.map(x => `<div class="gitem"><div><span class="gt">${esc(x.tipo || "–")}</span><span class="tag ${cor(x.situacao)}">${esc(x.situacao || "situação ?")}</span></div>
+      <div class="gp">${esc(x.prestador_ou_objeto || "–")}</div>${x.condicoes ? `<div class="gc">${esc(x.condicoes)}</div>` : ""}${x.fonte ? `<div class="gf">Fonte: ${esc(x.fonte)}</div>` : ""}</div>`).join("")
+      : `<div class="sub">Nenhuma garantia nos documentos lidos: ${esc(g.resumo || "quirografária")}.</div>`}
+    ${gm.lacunas ? `<details class="nota"><summary>Lacunas da leitura</summary><p>${esc(gm.lacunas)}</p></details>` : ""}`;
 }
 
 async function carregarDocumentos(i) {
@@ -575,18 +697,17 @@ async function carregarDocumentos(i) {
   const nomeT = { escritura: "Escritura / aditamento", ata_agd: "Ata de AGD", proposta_agd: "Proposta de AGD", comunicado: "Comunicado / fato relevante", plano_rj: "Plano de RJ/RE" };
   const r = sr.remuneracao || {};
   const docs = (j.meta?.documentos || []).slice().reverse();
-  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Documentos lidos (CVM)</h4>
-    <div class="sub" style="margin-bottom:6px">Leitura automática em ${dbr(j.meta?.lido_em)} · confiança ${esc(sr.confianca || "–")}${r.indexador ? ` · remuneração vigente: ${esc(r.indexador)} ${r.taxa != null ? f2.format(r.taxa) + "%" : ""}${r.vigente_desde ? " desde " + dbr(r.vigente_desde) : ""}` : ""}</div>
-    ${sr.fonte ? `<div class="nota" style="margin:0 0 6px">Fonte do cronograma: ${esc(sr.fonte)}</div>` : ""}
-    <div class="card tw" style="max-height:220px"><table><tbody>${docs.map(d => `<tr style="cursor:default"><td class="l">${dbr(d.data)}</td><td class="l" style="white-space:normal">${esc(nomeT[d.tipo] || d.tipo)}<div class="sub">${esc((d.assunto || "").slice(0, 120))}</div></td><td class="l"><a href="${esc(d.url)}" target="_blank" rel="noopener" style="text-decoration:underline">abrir</a></td></tr>`).join("")}</tbody></table></div>
-    ${j.lacunas ? `<details style="margin-top:6px"><summary class="sub" style="cursor:pointer">O que a leitura não conseguiu determinar</summary><div class="nota">${esc(j.lacunas)}</div></details>` : ""}`;
+  el.innerHTML = `<div class="sec">Documentos lidos na CVM</div>
+    <div class="sub" style="margin-bottom:6px">Leitura automática em ${dbr(j.meta?.lido_em)}, confiança ${esc(sr.confianca || "–")}${r.indexador ? `. Remuneração vigente: ${esc(r.indexador)} ${r.taxa != null ? f2.format(r.taxa) + "%" : ""}${r.vigente_desde ? " desde " + dbr(r.vigente_desde) : ""}` : ""}</div>
+    <div>${docs.map(d => `<div class="ldoc"><span class="mut">${dbr(d.data)}</span><div>${esc(nomeT[d.tipo] || d.tipo)}<div class="sub">${esc((d.assunto || "").slice(0, 120))}</div></div><a href="${esc(d.url)}" target="_blank" rel="noopener">Abrir</a></div>`).join("")}</div>
+    ${sr.fonte || j.lacunas ? `<details class="nota"><summary>Fonte do cronograma e lacunas da leitura</summary>${sr.fonte ? `<p>${esc(sr.fonte)}</p>` : ""}${j.lacunas ? `<p>${esc(j.lacunas)}</p>` : ""}</details>` : ""}`;
 }
 
 async function carregarCronograma(i) {
   const el = document.getElementById("crono");
   let c;
   try { c = await getJSON(`data/cronograma/${encodeURIComponent(i.c)}.json`); }
-  catch { el.innerHTML = i.t === "DEB" ? "" : '<div class="nota" style="margin:0 0 6px">Cronograma: CRI/CRA ainda sem agenda pública; TIR e MOIC supõem pagamento único no vencimento.</div>'; return; }
+  catch { el.innerHTML = i.t === "DEB" ? "" : '<div class="nota" style="margin:14px 0 0">Cronograma: CRI/CRA ainda sem agenda pública; TIR e MOIC supõem pagamento único no vencimento.</div>'; return; }
   const nome = { J: "Juros", A: "Amortização", I: "Incorporação de juros (PIK)", P: "Prêmio", V: "Vencimento" };
   const fx = new Map((c.fluxo || []).map(([d, v]) => [d, v]));
   const iso = s => s.split("/").reverse().join("-");
@@ -609,11 +730,11 @@ async function carregarCronograma(i) {
   const conf = c.escok === true ? ' <span class="tag t-info" title="Datas e percentuais de amortização iguais aos da escritura/aditamento lidos na CVM">conferido com a escritura</span>'
     : c.escok === false ? ' <span class="tag t-warn" title="A escritura/aditamento lido traz datas ou percentuais diferentes da agenda do SND">diverge da escritura</span>' : "";
   const aj = c.aj?.length ? `<div class="nota" style="margin:0 0 6px">Agenda do SND ajustada pela escritura: ${c.aj.map(x => x === "base" ? "base das amortizações (% do saldo × % do valor de emissão)" : "percentuais de amortização que o SND não informa").join(" e ")}.</div>` : "";
-  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Cronograma (agenda SND)${conf}</h4>${aj}
+  el.innerHTML = `<div class="sec">Cronograma${conf}</div>${aj}
     <div class="sub" style="margin-bottom:6px">${c.ev.filter(e => e[1] === "J").length} pagamentos de juros · ${nA ? nA + (nA > 1 ? " amortizações" : " amortização") : "principal no vencimento (bullet)"}${nI ? ` · <span class="neg">${nI} incorporações de juros (PIK)</span>` : ""}${tot ? ` · total projetado R$ ${f2.format(tot)} por debênture` : ""}</div>
-    <div class="card tw" style="max-height:300px"><table><thead><tr><th class="l">Pagamento</th><th class="l">Evento</th><th title="Projeção com a curva ANBIMA de ${dbr(c.curva)}">Caixa proj. (R$)</th></tr></thead>
+    <div class="card tw" style="max-height:300px"><table><thead><tr style="cursor:default"><th class="l">Pagamento</th><th class="l">Evento</th><th title="Projeção com a curva ANBIMA de ${dbr(c.curva)}">Caixa proj. (R$)</th></tr></thead>
     <tbody>${linhas.map(l => `<tr style="cursor:default"><td class="l">${l.d}</td><td class="l" style="white-space:normal;min-width:140px">${esc(l.desc)}</td><td>${l.pik && !l.cx ? '<span class="mut">incorporado</span>' : l.cx ? (l.amort ? "<b>" + f2.format(l.cx) + "</b>" : f2.format(l.cx)) : "–"}</td></tr>`).join("")}</tbody></table></div>
-    <div class="nota" style="margin-top:4px">Caixa projetado por debênture, supondo pagamento integral: DI futuro e inflação implícita da curva ANBIMA de ${dbr(c.curva)}, escalado para o PU par de hoje (R$ ${fmt(c.par)}).</div>`;
+    <div class="nota" style="margin-top:6px">Agenda de eventos do SND. Caixa projetado por debênture, supondo pagamento integral, com DI futuro e inflação implícita da curva ANBIMA de ${dbr(c.curva)}, escalado para o PU par de hoje (R$ ${fmt(c.par)}).</div>`;
 }
 
 // ------------------------------------------------------------------ tela: curva de juros
@@ -623,7 +744,7 @@ async function telaCurva() {
     return (b1 + b2 * f1_ + b3 * (f1_ - Math.exp(-x1)) + b4 * (f2_ - Math.exp(-x2))) * 100; };
   const T = []; for (let t = 0.25; t <= 15.001; t += 0.25) T.push(t);
   const pre = T.map(t => sv(c.pre, t)), ipca = T.map(t => sv(c.ipca, t)), inf = T.map((t, k) => ((1 + pre[k] / 100) / (1 + ipca[k] / 100) - 1) * 100);
-  const W = Math.max(320, Math.min(760, document.getElementById("app").clientWidth - 30)), H = W < 450 ? 230 : 300, m = { l: 40, r: 12, t: 14, b: 26 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const W = Math.max(320, Math.min(1500, document.getElementById("app").clientWidth - 30)), H = W < 450 ? 240 : Math.round(Math.min(400, W * 0.3)), m = { l: 40, r: 12, t: 14, b: 26 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
   const hi = Math.ceil(Math.max(...pre) + 1), lo = 0;
   const x = t => m.l + (t - 0.25) / (15 - 0.25) * iw, y = v => m.t + (1 - (v - lo) / (hi - lo)) * ih;
   const linha = (arr, cor, dash) => `<path d="${arr.map((v, k) => (k ? "L" : "M") + x(T[k]).toFixed(1) + "," + y(v).toFixed(1)).join("")}" fill="none" stroke="${cor}" stroke-width="2" ${dash ? 'stroke-dasharray="5 4"' : ""}/>`;
@@ -631,8 +752,8 @@ async function telaCurva() {
   const xt = (W < 450 ? [1, 3, 5, 10, 15] : [1, 2, 3, 5, 7, 10, 15]).map(t => `<text class="eixo" x="${x(t)}" y="${H - 8}" text-anchor="middle">${t}a</text>`).join("");
   const tab = [0.5, 1, 2, 3, 5, 10].map(t => { const a = sv(c.pre, t), b = sv(c.ipca, t); return `<tr><td class="l">${t < 1 ? "6 meses" : t + (t > 1 ? " anos" : " ano")}</td><td>${f2.format(a)}%</td><td>${f2.format(b)}%</td><td>${f2.format(((1 + a / 100) / (1 + b / 100) - 1) * 100)}%</td></tr>`; }).join("");
   document.getElementById("app").innerHTML = `
-    <h2>Curva de juros</h2><div class="sub">Estrutura a termo ANBIMA de ${dbr(c.data)} (Svensson). Usada para projetar o DI futuro e a inflação implícita nos fluxos dos títulos.</div>
-    <div class="card graf" style="padding:12px 14px;margin-top:14px">
+    <div class="cab"><h2>Curva de juros</h2><div class="sub">Estrutura a termo ANBIMA de ${dbr(c.data)} (Svensson). É a curva usada para projetar o DI futuro e a inflação implícita nos fluxos dos títulos.</div></div>
+    <div class="card graf" style="padding:14px 16px">
       <div class="legenda"><span><i style="background:var(--series-1)"></i>Prefixada (≈ DI futuro)</span><span><i style="background:var(--series-2)"></i>IPCA (juro real)</span><span><i style="background:var(--text-muted)"></i>Inflação implícita</span></div>
       <svg viewBox="0 0 ${W} ${H}" id="svgC">${grid}${xt}${linha(pre, "var(--series-1)")}${linha(ipca, "var(--series-2)")}${linha(inf, "var(--text-muted)", true)}
         <line id="crossC" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-muted)" style="display:none"/><rect id="hitC" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>
@@ -701,7 +822,7 @@ function desenhar(pts) {
 (async () => {
   try {
     st.idx = await getJSON("data/index.json");
-    document.getElementById("ref").textContent = st.idx.ultima ? "Último pregão: " + dbr(st.idx.ultima) : "";
+    document.getElementById("ref").textContent = st.idx.ultima ? "Pregão de " + dbr(st.idx.ultima) : "";
   } catch { st.idx = { ultima: null, datas: [] }; }
   rota();
 })();
