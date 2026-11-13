@@ -23,45 +23,20 @@ d = date.today() - timedelta(days=1)
 while d.weekday() >= 5:
     d -= timedelta(days=1)
 
-print("=" * 80, "\nANBIMA CRI/CRA CSV")
-for fd in (d.strftime("%d/%m/%Y"), d.strftime("%Y-%m-%d"), d.strftime("%d%m%Y")):
-    st, b = req(f"https://www.anbima.com.br/pt_br/anbima/TaxasCriCraExport/exportarCSV?filtroTermo=&filtroData={urllib.request.quote(fd)}")
-    print(fd, st, len(b))
-    if st == 200 and len(b) > 200:
-        t = b.decode("utf-8-sig", errors="replace")
-        if "Ã" in t[:3000] or "�" in t[:3000]:
-            t = b.decode("latin-1")
-        ls = t.splitlines()
-        print("  linhas:", len(ls))
-        for l in ls[:6] + ls[len(ls)//2:len(ls)//2+2]:
-            print("   ", l[:600])
-        break
-
-print("=" * 80, "\nSND características")
-st, b = req("https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/caracteristicas_r.asp?tip_deb=publicas&selecao=RAIZ", timeout=90)
-t = b.decode("latin-1")
-print("status", st, len(t))
-rows = re.findall(r"<tr[^>]*>(.*?)</tr>", t, re.S | re.I)
-print("linhas <tr>:", len(rows))
-def cells(r):
-    return [H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", c))).strip() for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", r, re.S | re.I)]
-for r in rows[:6]:
-    print("   ", cells(r)[:40])
-ncol = collections.Counter(len(cells(r)) for r in rows)
-print("colunas por linha:", ncol.most_common(5))
-for r in rows:
-    c = cells(r)
-    if any("RAIZ" in x for x in c[:3]):
-        print("   raizen:", c[:60]); break
-for m in re.findall(r'href="([^"]+\.(?:xls|csv|txt|asp)[^"]*)"', t)[:15]:
-    print("   link:", m)
-
 print("=" * 80, "\nSND PU histórico (curva)")
-for u in ("https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/puhistorico_r.asp?op_exc=False&ativo=RAIZ15&dt_ini=&dt_fim=&Submit.x=1",
-          "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/puhistorico_e.asp?op_exc=False&ativo=RAIZ15"):
+ds = urllib.request.quote(d.strftime("%d/%m/%Y"))
+base = "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/"
+for u in (base + f"puhistorico_r.asp?op_exc=False&ativo=RAIZ15&dt_ini={ds}&dt_fim={ds}&Submit.x=1",
+          base + f"puhistorico_r.asp?op_exc=False&ativo=&dt_ini={ds}&dt_fim={ds}&Submit.x=1",
+          base + f"puhistorico_e.asp?op_exc=False&ativo=&dt_ini={ds}&dt_fim={ds}",
+          base + f"puhistorico_e.asp?op_exc=False&ativo=RAIZ15&dt_ini={ds}&dt_fim={ds}",
+          base + "caracteristicas_d.asp?tip_deb=publicas&selecao=RAIZ15"):
     st, b = req(u, timeout=90, tent=2)
     t = b.decode("latin-1")
     print(u, st, len(t))
     rr = re.findall(r"<tr[^>]*>(.*?)</tr>", t, re.S | re.I)
-    for r in rr[:8]:
-        print("   ", cells(r)[:12])
+    print("   trs:", len(rr))
+    if "_e.asp" in u:
+        print("   raw:", t[:800].replace("\r", ""))
+    for r in [x for x in rr if len([c for c in cells(x) if c]) >= 2][:14]:
+        print("   ", [c for c in cells(r) if c][:12])
