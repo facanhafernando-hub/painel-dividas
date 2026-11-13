@@ -1,16 +1,12 @@
-"""Diagnóstico: testa a chave da API (sem imprimir a chave)."""
-import json, os, urllib.request, urllib.error
-import re
-k0 = os.environ.get("ANTHROPIC_API_KEY", "")
-k = re.sub(r"\s", "", k0)
-print("tinha espaços/quebras:", k0 != k, "| tamanho limpo:", len(k))
-print("presente:", bool(k), "| prefixo ok:", k.startswith("sk-ant-"))
-if k:
-    for modelo in ("claude-haiku-5-5", "claude-sonnet-5-5"):
-        body = json.dumps({"model": modelo, "max_tokens": 5, "messages": [{"role": "user", "content": "Responda só: ok"}]}).encode()
-        req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, headers={
-            "x-api-key": k, "anthropic-version": "2026-10-21", "content-type": "application/json"})
-        try:
-            r = urllib.request.urlopen(req, timeout=60); print(modelo, r.status, r.read()[:200])
-        except urllib.error.HTTPError as e:
-            print(modelo, e.code, e.read()[:300])
+"""Diagnóstico: onde estão os aditamentos da Viveo (CM Hospitalar) no IPE."""
+import io, re, zipfile, urllib.request
+UA = "Mozilla/5.0"
+for ano in (2022, 2023, 2024, 2025, 2026):
+    b = urllib.request.urlopen(urllib.request.Request(f"https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip", headers={"User-Agent": UA}), timeout=240).read()
+    z = zipfile.ZipFile(io.BytesIO(b)); txt = z.read(z.namelist()[0]).decode("latin-1").splitlines()
+    cab = txt[0].split(";")
+    for l in txt[1:]:
+        r = dict(zip(cab, l.split(";")))
+        if r.get("CNPJ_Companhia", "").replace(".", "").replace("/", "").replace("-", "") in ("12420164000157",) or "CREMER" in r.get("Nome_Companhia", "").upper():
+            if re.search(r"escritura|aditamento|deb[eê]nt|vencimento", " ".join([r.get("Categoria",""), r.get("Tipo",""), r.get("Assunto","")]), re.I):
+                print(r["Data_Entrega"][:10], "|", r["Nome_Companhia"][:20], "|", r["Categoria"][:45], "|", r.get("Tipo","")[:25], "|", r.get("Especie","")[:20], "|", r.get("Assunto","")[:140])
