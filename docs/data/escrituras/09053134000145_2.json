@@ -1,0 +1,372 @@
+{
+ "series": [
+  {
+   "codigo": "ELFA12",
+   "serie": "UNI",
+   "data_emissao": "2022-04-13",
+   "vencimento": "2031-12-13",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 3.4,
+    "base": "252 du",
+    "vigente_desde": "2024-12-13",
+    "historico": "100% da Taxa DI-Over + spread de 2,80% a.a. desde a Primeira Data de Integralização até 2024-12-13 (exclusive). Spread de 3,40% a.a. a partir de 2024-12-13 (inclusive), conforme o 5º Aditamento e mantido na escritura consolidada. Há possibilidade de step-up de 0,30% ou 0,60% a.a. se o controle da Emissora mudar (cláusula 5.18). O VNU passou de R$ 1.000,00 para R$ 1.060,04 em 2024-02-22 (incorporação do waiver fee, 4º Aditamento)."
+   },
+   "juros": {
+    "periodicidade_meses": 1,
+    "primeira_data": "2024-11-13",
+    "ultima_data": "2031-12-13",
+    "datas_irregulares": [
+     "2022-10-13",
+     "2023-04-13",
+     "2023-10-13",
+     "2024-04-13",
+     "2024-10-13"
+    ],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2028-01-13",
+     "percentual": 1.25,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-02-13",
+     "percentual": 1.266,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-03-13",
+     "percentual": 1.282,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-04-13",
+     "percentual": 2.453,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-05-13",
+     "percentual": 2.515,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-13",
+     "percentual": 2.58,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-07-13",
+     "percentual": 2.648,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-08-13",
+     "percentual": 2.72,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-09-13",
+     "percentual": 2.796,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-10-13",
+     "percentual": 2.876,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-13",
+     "percentual": 2.962,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-13",
+     "percentual": 3.052,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-01-13",
+     "percentual": 1.667,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-02-13",
+     "percentual": 1.695,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-13",
+     "percentual": 1.724,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-04-13",
+     "percentual": 3.314,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-13",
+     "percentual": 3.427,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-13",
+     "percentual": 3.549,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-07-13",
+     "percentual": 3.68,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-08-13",
+     "percentual": 3.82,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-09-13",
+     "percentual": 3.972,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-10-13",
+     "percentual": 4.136,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-13",
+     "percentual": 4.315,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-13",
+     "percentual": 4.509,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-13",
+     "percentual": 2.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-02-13",
+     "percentual": 2.564,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-03-13",
+     "percentual": 2.632,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-04-13",
+     "percentual": 5.105,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-13",
+     "percentual": 5.38,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-06-13",
+     "percentual": 5.686,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-13",
+     "percentual": 6.028,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-08-13",
+     "percentual": 6.415,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-09-13",
+     "percentual": 6.855,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-10-13",
+     "percentual": 7.359,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-13",
+     "percentual": 7.944,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-12-13",
+     "percentual": 8.629,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-01-13",
+     "percentual": 5.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-02-13",
+     "percentual": 5.263,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-03-13",
+     "percentual": 5.556,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-04-13",
+     "percentual": 11.111,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-13",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-06-13",
+     "percentual": 14.286,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-07-13",
+     "percentual": 16.667,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-08-13",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-09-13",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-10-13",
+     "percentual": 33.333,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-11-13",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-12-13",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "7º Aditamento (entregue em 2026-08-10), Anexo A (escritura consolidada), cláusulas 5.8.1 (vencimento), 5.17.1 (remuneração), 5.19.1 (pagamento da remuneração) e 5.20.1 (amortização). O texto é idêntico ao 6º Aditamento (entregue em 2025-11-07), que substituiu o cronograma do 5º Aditamento.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 48,
+    "amort_doc": 48,
+    "datas_iguais": 33,
+    "so_snd": [
+     "2028-02-14",
+     "2028-05-15",
+     "2028-08-14",
+     "2029-01-15",
+     "2029-02-14",
+     "2029-05-14",
+     "2029-10-15",
+     "2030-01-14",
+     "2030-04-15",
+     "2030-07-15",
+     "2030-10-14",
+     "2031-04-14"
+    ],
+    "so_doc": [
+     "2028-02-13",
+     "2028-05-13",
+     "2028-08-13",
+     "2029-01-13",
+     "2029-02-13",
+     "2029-05-13",
+     "2029-10-13",
+     "2030-01-13",
+     "2030-04-13",
+     "2030-07-13",
+     "2030-10-13",
+     "2031-04-13"
+    ],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "Não há vencimento antecipado declarado, RJ/RE ou novação nos trechos. A emissão está em reperfilamento contínuo por AGDs: a AGD de 2025-10-08 (6º Aditamento) alongou o vencimento de 2028-12-13 para 2031-12-13 e concedeu waiver do covenant Dívida Líquida/EBITDA para 2025. A AGD de 2026-03-19 (7º Aditamento) estendeu até 2026-12-31 o prazo do Aumento de Capital e o prazo para envio de documentos pendentes.",
+ "lacunas": "1) A tabela de datas de pagamento da Remuneração está truncada nos trechos (de 2025-04-13 até 2031-09-13). A regra mensal no dia 13, do primeiro pagamento mensal em 2024-11-13 até o vencimento, foi inferida da cláusula 5.19.1 e do início e fim da tabela. 2) A cláusula 5.19.1 foi alterada de 2024-12-13 (5º Aditamento) para 2024-11-13 (6º Aditamento) como início dos pagamentos mensais. Usei a versão mais recente. 3) O campo 'vne' traz o VNU original de R$ 1.000,00. O VNU vigente após o waiver fee é R$ 1.060,04 desde 2024-02-22. As amortizações são percentuais do saldo do VNU, e o saldo atual é desconhecido porque os trechos não informam amortizações extraordinárias já pagas nem a recompra de debêntures aprovada na AGD de 2025-10. 4) O 5º Aditamento previa amortizações de 2025-10-13 a 2027-12-13. Elas foram substituídas pelo cronograma do 6º Aditamento, que começa em 2028-01-13. Os trechos não esclarecem se houve pagamento de principal antes disso. 5) Amortizações extraordinárias obrigatórias e contingentes, sem datas fixas, não foram lançadas no cronograma: M&A (40% dos recursos líquidos, mínimo de R$ 40 mi até 2026-12-31, com prêmio dispensado); DRS (50% dos recursos líquidos, R$ 21 mi até 2026-01-27); e Aumento de Capital (10% do Saldo Devedor, mais 1,40% se houver liberação de depósitos judiciais). Segundo o 6º Aditamento, o aporte é de USD 70 a 100 mi. O 7º Aditamento estendeu o prazo do Aumento de Capital até 2026-12-31. O trecho com o texto da AGD de 2026-03-19 está cortado, então a mudança de cláusulas é inferida do preâmbulo. 6) A amortização extraordinária facultativa e o resgate antecipado total têm prêmio de 0,60% a.a. sobre o prazo remanescente (cláusulas 5.22.1 e 5.22.2). Não é um prêmio com data fixa e por isso não foi listado.",
+ "meta": {
+  "emissora": "ELFA MEDICAMENTOS SA",
+  "cnpj": "09053134000145",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-04-13",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA  2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE COM  GARANTIA REAL,  EM SÉRIE ÚNICA",
+    "protocolo": "025348IPE170320220104466411-67",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=967164&numSequencia=491898&numVersao=1"
+   },
+   {
+    "data": "2024-12-02",
+    "tipo": "escritura",
+    "assunto": "Quinto Aditamento ao Instrumento Particular de Escritura da 2ª (Segunda) Emissão de Debêntures Simples, Não Conversíveis em Ações",
+    "protocolo": "025348IPE021220240104562811-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1310152&numSequencia=834878&numVersao=1"
+   },
+   {
+    "data": "2025-11-07",
+    "tipo": "escritura",
+    "assunto": "Sexto Aditamento ao Instrumento Particular de Escritura da 2ª (Segunda) Emissão de Debêntures Simples, Não Conversíveis em Ações",
+    "protocolo": "025348IPE071120250160431275-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1442017&numSequencia=966729&numVersao=1"
+   },
+   {
+    "data": "2026-08-10",
+    "tipo": "escritura",
+    "assunto": "7º (Sétimo) Aditamento ao Instrumento Particular de Escritura da 2ª (Segunda) Emissão de Debêntures Simples.",
+    "protocolo": "025348IPE170420260170392825-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555405&numSequencia=1080111&numVersao=1"
+   }
+  ],
+  "uso": {
+   "input_tokens": 122312,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5071,
+   "output_tokens_details": {
+    "thinking_tokens": 1731
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard"
+  }
+ }
+}

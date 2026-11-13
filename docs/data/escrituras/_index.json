@@ -1,0 +1,35 @@
+{
+ "emissoes": {
+  "12420164000157_4": {
+   "codigos": [
+    "CMPH14"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "12420164000157_6": {
+   "codigos": [
+    "VVEO16"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "09053134000145_2": {
+   "codigos": [
+    "ELFA12"
+   ],
+   "status": "ok",
+   "assinatura": "5be0a46f28cb",
+   "bate_snd": false,
+   "situacao": "Não há vencimento antecipado declarado, RJ/RE ou novação nos trechos. A emissão está em reperfilamento contínuo por AGDs: a AGD de 2025-10-08 (6º Aditamento) alongou o vencimento de 2028-12-13 para 2031-12-13 e concedeu waiver do covenant Dívida Líquida/EBITDA para 2025. A AGD de 2026-03-19 (7º Aditamento) estendeu até 2026-12-31 o prazo do Aumento de Capital e o prazo para envio de documentos pendentes."
+  },
+  "12420164000157_5": {
+   "codigos": [
+    "VVEO15"
+   ],
+   "status": "ok",
+   "assinatura": "11a22fb5bd3c",
+   "bate_snd": false,
+   "situacao": null
+  }
+ },
+ "gasto_usd": 0.4016
+}
