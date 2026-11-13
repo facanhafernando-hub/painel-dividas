@@ -15,6 +15,9 @@ on:
       forcar:
         description: "Reler mesmo sem documento novo (sim/não)"
         default: "não"
+      classificar:
+        description: "Só classificar situações já lidas (sim/não)"
+        default: "não"
   schedule:
     - cron: "17 9 * * 2-6"     # todo dia útil cedo: lê só documentos novos
 
@@ -49,6 +52,7 @@ jobs:
           [ -n "${{ github.event.inputs.codigos }}" ] && ARGS="$ARGS --codigos ${{ github.event.inputs.codigos }}"
           [ "${{ github.event.inputs.modo || 'lote' }}" = "lote" ] && ARGS="$ARGS --lote" || ARGS="$ARGS --direto"
           [ "${{ github.event.inputs.forcar }}" = "sim" ] && ARGS="$ARGS --forcar"
+          [ "${{ github.event.inputs.classificar }}" = "sim" ] && ARGS="$ARGS --classificar"
           python coletor/escrituras.py $ARGS
       - name: Salvar
         if: always()

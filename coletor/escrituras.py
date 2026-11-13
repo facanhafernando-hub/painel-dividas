@@ -389,6 +389,46 @@ def coletar_lote(idx, idx_p, espera_max=2 * 3600):
     return True
 
 
+CLASSIFICA = """Você recebe o resumo da situação de uma emissão de debêntures, escrito por um analista a partir de documentos da CVM. O resumo pode mencionar outras emissões da mesma empresa.
+Para CADA código listado, classifique o evento de crédito VIGENTE que afeta aquela série (ou a emissora como um todo):
+- "vencimento_antecipado": vencimento antecipado declarado ou automático já ocorrido (não conta mera previsão contratual nem AGD que decidiu NÃO declarar)
+- "rj": emissora ou fiadora em recuperação judicial em curso
+- "re": recuperação extrajudicial pedida ou homologada
+- "reperfilamento": cronograma/remuneração alterados por renegociação, waiver com mudança de fluxo, suspensão temporária de pagamentos ou plano já implementado
+- "nenhum": nada disso
+Se houver mais de um, use o mais grave (vencimento_antecipado > rj > re > reperfilamento). Frases como "não há vencimento antecipado" significam "nenhum".
+Responda só com JSON: {"CODIGO": {"evento": "...", "data": "AAAA-MM-DD ou null", "resumo": "até 160 caracteres, em português, sem travessão"}}"""
+
+
+def classificar(forcar=False):
+    """Converte o texto livre de situação em evento estruturado por código (modelo pequeno, custo de centavos)."""
+    from concurrent.futures import ThreadPoolExecutor
+    arqs = [p for p in SAIDA.glob("*_*.json") if not p.name.startswith("_")]
+    fila = []
+    for p in arqs:
+        j = json.load(open(p))
+        cods = [s.get("codigo") for s in j.get("series", []) if s.get("codigo")]
+        if not cods or (j.get("eventos") and not forcar):
+            continue
+        fila.append((p, j, cods))
+    gasto = 0.0
+    def um(x):
+        p, j, cods = x
+        txt = f"Emissão {j['meta']['emissao']}ª de {j['meta']['emissora']}. Códigos: {', '.join(cods)}.\nResumo da situação: {j.get('situacao') or 'sem informação'}"
+        r = json.loads(api("/v1/messages", {"model": "claude-haiku-5-5", "max_tokens": 800, "system": CLASSIFICA,
+                                            "messages": [{"role": "user", "content": txt}]}))
+        out = ler_json("".join(b.get("text", "") for b in r["content"])) or {}
+        u = r.get("usage", {})
+        return p, j, out, (u.get("input_tokens", 0) * 0.10 + u.get("output_tokens", 0) * 0.50) / 1e6
+    with ThreadPoolExecutor(6) as ex:
+        for p, j, out, c in ex.map(um, fila):
+            gasto += c
+            j["eventos"] = {k: v for k, v in out.items() if isinstance(v, dict)}
+            json.dump(j, open(p, "w"), ensure_ascii=False, indent=1)
+    log(f"classificadas: {len(fila)} emissões | US$ {gasto:.3f}")
+    return gasto
+
+
 # ---------------------------------------------------------------- orquestração
 def chave_emissao(e):
     return f"{e[0]}_{e[1]}"
@@ -401,6 +441,7 @@ def main():
     ap.add_argument("--lote", action="store_true")
     ap.add_argument("--limite-usd", type=float, default=20.0)
     ap.add_argument("--forcar", action="store_true")
+    ap.add_argument("--classificar", action="store_true", help="só classifica as situações já lidas")
     a = ap.parse_args()
     if not CHAVE:
         sys.exit("ANTHROPIC_API_KEY ausente")
@@ -408,6 +449,10 @@ def main():
     idx_p = SAIDA / "_index.json"
     idx = json.load(open(idx_p)) if idx_p.exists() else {"emissoes": {}, "gasto_usd": 0.0}
 
+    if a.classificar:
+        idx["gasto_usd"] = round(idx["gasto_usd"] + classificar(a.forcar), 4)
+        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
+        return
     if idx.get("lote"):
         log("coletando lote pendente", idx["lote"]["id"])
         ok = coletar_lote(idx, idx_p)
@@ -511,11 +556,13 @@ def main():
         log("lote enviado:", b["id"])
         if not coletar_lote(idx, idx_p):
             sys.exit("lote ainda em processamento; a próxima execução coleta")
+        idx["gasto_usd"] = round(idx["gasto_usd"] + classificar(), 4)
         json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
         log(f"gasto acumulado: US$ {idx['gasto_usd']:.2f}")
         return
 
     processar(idx, [(k, g, sel, ass) for k, g, sel, ass, _ in pendentes], resultados, modo)
+    idx["gasto_usd"] = round(idx["gasto_usd"] + classificar(), 4)
     json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
     log(f"gasto acumulado: US$ {idx['gasto_usd']:.2f}")
 
