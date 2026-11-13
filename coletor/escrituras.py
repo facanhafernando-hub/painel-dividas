@@ -102,7 +102,9 @@ ORDINAIS = {"primeira": 1, "segunda": 2, "terceira": 3, "quarta": 4, "quinta": 5
 
 def emissoes_citadas(txt):
     t = sem_acento(txt).lower()
-    ns = {int(m) for m in re.findall(r"(\d{1,2})\s*[ªaº°o]?\s*(?:\([^)]*\)\s*)?emiss", t)}
+    ns = set()
+    for g in re.findall(r"((?:\d{1,2}\s*[ªaº°o]?\s*(?:\([^)]*\))?\s*(?:,|e)\s*)*\d{1,2}\s*[ªaº°o]?\s*(?:\([^)]*\)\s*)?)emiss", t):
+        ns |= {int(n) for n in re.findall(r"\d{1,2}", re.sub(r"\([^)]*\)", "", g))}
     for nome, n in ORDINAIS.items():
         if re.search(rf"\b{nome}\s+emiss", t):
             ns.add(n)
