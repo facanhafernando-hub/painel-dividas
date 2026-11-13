@@ -406,6 +406,8 @@ def coletar_snd_cadastro() -> dict[str, dict]:
             continue
         qm = num(g(r, "Quantidade em Mercado")) or 0
         venc = g(r, "Data de Saida / Novo Vencimento") or g(r, "Data de Vencimento")
+        if venc[-4:].isdigit() and int(venc[-4:]) >= 2090:   # placeholder do SND
+            venc = g(r, "Data de Vencimento") if g(r, "Data de Vencimento")[-4:] < "2090" else venc
         out[cod] = {
             "empresa": g(r, "Empresa"), "serie": g(r, "Serie"), "emissao": g(r, "Emissao").lstrip("0"),
             "isin": g(r, "ISIN"), "dt_emissao": g(r, "Data de Emissao"), "venc": venc,
@@ -678,7 +680,7 @@ def yield_implicito(pu_neg, pu_ref, y_ref_pct, dur_du):
 CDI_APROX = 0.14  # só para estimar duration de papéis DI+ sem duration ANBIMA
 
 
-YIELD_PCT_MIN, YIELD_PCT_MAX = 20.0, 150.0   # faixa de % do par em que o yield é calculado
+YIELD_PCT_MIN, YIELD_PCT_MAX = 5.0, 150.0   # faixa de % do par em que yield/TIR são calculados
 
 
 # ----------------------------------------------------------------------------- curva de juros (ETTJ ANBIMA)
@@ -1301,6 +1303,17 @@ def construir_catalogo() -> None:
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
         })
+    try:
+        lista = json.loads((RAIZ / "coletor" / "lista_acompanhamento.json").read_text(encoding="utf-8"))["empresas"]
+    except Exception:
+        lista = []
+    for it in itens:
+        alvo = chave_empresa(it.get("e")) + " " + chave_empresa(it.get("s"))
+        for emp in lista:
+            if any(chave_empresa(t) and chave_empresa(t) in alvo for t in emp["termos"]):
+                it["w"] = emp["nome"]
+                it["ws"] = emp.get("situacao")
+                break
     escrever_cronogramas(itens, snd, datas[-1])
     cur = sorted((DADOS / "curva").glob("*.json")) if (DADOS / "curva").exists() else []
     if cur:

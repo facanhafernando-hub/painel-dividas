@@ -197,6 +197,7 @@ async function carregarCatalogo() {
     if ((i.al || []).some(k => ESSENCIAIS.includes(k)) || (i.cat || "").includes("VENCID")) e.alerta = true;
     if (i.t === "CRI" || i.t === "CRA") { if (i.s && i.s === i.e) e.secs = (e.secs || 0) + 1; } else e.naoSec = true;
     if (!e.cnpj && i.cnpj) e.cnpj = i.cnpj;
+    if (i.w) { e.lista = i.w; e.situacao = i.ws; }
   }
   for (const e of g.values()) {
     e.nome = Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0][0];
@@ -232,7 +233,7 @@ async function telaEmpresas() {
     <div class="barra">
       <input type="search" id="bE" placeholder="Buscar empresa, código ou securitizadora" value="${esc(st.busca)}">
       <div class="chips" id="fE">
-        ${[["todas", "Todas"], ["hoje", "Negociadas hoje"], ["desc", "Abaixo de 80% do par"]].map(([k, l]) => `<button class="chip" data-k="${k}" aria-pressed="${st.filtroE === k}">${l}</button>`).join("")}
+        ${[["todas", "Todas"], ["lista", "Minha lista"], ["hoje", "Negociadas hoje"], ["desc", "Abaixo de 80% do par"]].map(([k, l]) => `<button class="chip" data-k="${k}" aria-pressed="${st.filtroE === k}">${l}</button>`).join("")}
       </div>
       <select id="oE">
         <option value="vol">Mais negociadas</option><option value="desc">Mais descontadas</option><option value="nome">A–Z</option><option value="tit">Mais títulos</option>
@@ -249,7 +250,7 @@ async function telaEmpresas() {
 function listaEmpresas() {
   const q = semAc(st.busca.trim());
   let L = st.empresas.filter(e => (!q || e.busca.includes(q)) &&
-    (st.filtroE === "todas" || (st.filtroE === "hoje" ? e.negHoje > 0 : (e.pior !== null && e.pior < 80))));
+    (st.filtroE === "todas" || (st.filtroE === "lista" ? !!e.lista : st.filtroE === "hoje" ? e.negHoje > 0 : (e.pior !== null && e.pior < 80))));
   const S = { vol: (a, b) => b.vol - a.vol || b.itens.length - a.itens.length, desc: (a, b) => (a.pior ?? 999) - (b.pior ?? 999),
               nome: (a, b) => a.nome.localeCompare(b.nome), tit: (a, b) => b.itens.length - a.itens.length };
   L.sort(S[st.ordE]);
@@ -257,8 +258,8 @@ function listaEmpresas() {
   document.getElementById("listaE").innerHTML = !L.length ? '<div class="vazio">Nenhuma empresa encontrada.</div>' :
     `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? " (mostrando 200; refine a busca)" : ""}</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
     L.map(e => `<a class="emp" href="#/e/${encodeURIComponent(e.k)}">
-      <div><div class="n">${esc(titulo(e.nome))} ${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
-      <div class="sub">${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
+      <div><div class="n">${esc(titulo(e.nome))} ${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
+      <div class="sub">${e.situacao ? `<span style="color:var(--text-primary)">${esc(e.situacao)}</span> · ` : ""}${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
       <div class="v hide-m"><b>${pctPar(e.pior)}</b><span>pior título</span></div>
       <div class="v"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b><span>${e.vol ? "negociado" : "sem negócio"}</span></div></a>`).join("");
 }
@@ -276,6 +277,7 @@ async function telaEmpresa(k) {
     <a class="voltar" href="#/">← Empresas</a>
     <h2>${esc(titulo(e.nome))}</h2>
     <div class="sub">${[cnpj ? "CNPJ " + cnpj : null, `${itens.length} título${itens.length > 1 ? "s" : ""} em mercado`].filter(Boolean).join(" · ")}</div>
+    ${e.situacao ? `<div style="margin-top:6px"><span class="tag t-info">Minha lista</span> <span class="sub" style="color:var(--text-primary)">${esc(e.situacao)}</span></div>` : ""}
     ${rel.length ? `<div class="rel">Mesmo grupo: ${rel.map(r => `<a href="#/e/${encodeURIComponent(r.k)}">${esc(titulo(r.nome))}</a>`).join("")}</div>` : ""}
     <div class="kpis">
       <div class="card kpi"><div class="l">Títulos</div><div class="v">${itens.length}</div></div>
@@ -288,7 +290,7 @@ async function telaEmpresa(k) {
       <th>% do par</th><th title="Spread/juro real implícito, pagando tudo no vencimento">Yield implícito</th><th title="TIR nominal com DI futuro e inflação implícita da curva ANBIMA">TIR nominal</th><th title="Total a receber ÷ preço pago">MOIC</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
     </tr></thead><tbody>${itens.map((i, n) => linhaTitulo(i, n)).join("")}</tbody></table></div>
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
-    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 20% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
+    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 5% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
 }
 function linhaTitulo(i, n) {
