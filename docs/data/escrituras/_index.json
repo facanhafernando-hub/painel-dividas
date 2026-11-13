@@ -1115,7 +1115,7 @@
    "bate_snd": false
   }
  },
- "gasto_usd": 13.0939,
+ "gasto_usd": 13.3619,
  "garantias": {
   "12528708000107_2": {
    "status": "ok",
@@ -1126,20 +1126,20 @@
   },
   "05197443000138_6": {
    "status": "ok",
-   "assinatura": "73ac6ddb9aff",
+   "assinatura": "c7ac8b7711dd",
    "codigos": [
     "BCBF16"
    ]
   },
   "12420164000157_4": {
-   "status": "sem_series",
+   "status": "ok",
    "assinatura": "ec2ce119ab15",
    "codigos": [
     "CMPH14"
    ]
   },
   "12420164000157_5": {
-   "status": "sem_series",
+   "status": "ok",
    "assinatura": "a0c3ba025410",
    "codigos": [
     "VVEO15"

@@ -204,7 +204,37 @@
    "resumo": "Repactuação proposta, sem ata de aprovação; cronograma original segue vigente (amortizações em 2026 e vencimento em 2027). Sem vencimento antecipado, RJ ou RE."
   }
  },
- "garantias": {},
+ "garantias": {
+  "CMPH14": {
+   "codigo": "CMPH14",
+   "emissao": 4,
+   "especie": "com garantia real, com garantia adicional fidejussória (original: quirografária com fiança; passou a garantia real no aditamento de 15/04/2025)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Cremer S.A. e Proinfusion S.A. (esta substituiu a Expressa Distribuidora de Medicamentos Ltda. no aditamento de 15/04/2025)",
+     "condicoes": "As condições da fiança (solidariedade, renúncia ao benefício de ordem) não constam dos trechos da 4ª emissão; só aparecem na escritura da 5ª emissão. Os trechos da 4ª tratam a fiança como parte das \"Garantias Adicionais\", que valem até o integral cumprimento das obrigações.",
+     "situacao": "vigente",
+     "fonte": "Proposta AGD 4ª emissão (13/05/2026 e 03/06/2026), preâmbulo e cláusula 4.22.3; Escritura de 28/10/2021, aditada em 01/09/2023 e 15/04/2025"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "100% das ações ordinárias da Cremer S.A. de titularidade da CM Hospitalar S.A. (emissora), mais ações futuras, frutos, dividendos, JCP e direitos decorrentes",
+     "condicoes": "Contrato de 15/04/2025 entre CM Hospitalar, Banco Santander (Brasil) S.A., International Finance Corporation – IFC e Pentágono S.A. DTVM, com anuência da Cremer; garantia compartilhada com o IFC e o Santander. Regra atual de liberação total: alienação da Cremer, índice financeiro abaixo de 2,25x (Condição Resolutiva) ou quitação integral. A proposta da AGD elimina a Condição Resolutiva e só libera a garantia se a Cremer for vendida e os recursos forem usados no pré-pagamento das Dívidas Financeiras, ou se houver quitação integral (liberação parcial em venda parcial).",
+     "situacao": "vigente",
+     "fonte": "Proposta AGD 4ª emissão (03/06/2026), cláusula 4.22.1(ii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Objeto não detalhado nos trechos da 4ª emissão (definida como \"Cessão Fiduciária\" e integrante das \"Garantias Reais\"; há um \"Contrato de Cessão Fiduciária\")",
+     "condicoes": "Faz parte das Garantias Reais e Adicionais, válidas até o integral cumprimento das obrigações.",
+     "situacao": "vigente",
+     "fonte": "Proposta AGD 4ª emissão, cláusulas 4.22.1 e 4.22.3"
+    }
+   ],
+   "resumo": "Fiança Cremer e Proinfusion + AF ações Cremer + cessão fiduciária; reestruturação (AGD 08/06/26) sob condições"
+  }
+ },
  "garantias_meta": {
   "lido_em": "2026-11-13",
   "modelo": "claude-sonnet-5-5",
@@ -215,7 +245,8 @@
     "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE080620260164867820-40",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521705&numSequencia=1046411&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521705&numSequencia=1046411&numVersao=1",
+    "explicito": true
    },
    {
     "data": "2026-05-13",
@@ -223,7 +254,8 @@
     "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
     "protocolo": "025682IPE130520260105651273-61",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-06-03",
@@ -231,7 +263,8 @@
     "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE080620260288479481-38",
     "versao": "2",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530615&numSequencia=1055321&numVersao=2"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530615&numSequencia=1055321&numVersao=2",
+    "explicito": true
    },
    {
     "data": "2026-06-08",
@@ -239,7 +272,8 @@
     "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE080620260108581623-47",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-06-08",
@@ -247,7 +281,8 @@
     "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE080620260196876480-22",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-06-08",
@@ -255,7 +290,8 @@
     "assunto": "Assembleias Gerais de Debenturistas",
     "protocolo": "025682IPE080620260135810552-85",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-06-11",
@@ -263,7 +299,8 @@
     "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE110620260143830448-60",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-06-11",
@@ -271,7 +308,8 @@
     "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE110620260114936476-60",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-06-11",
@@ -279,11 +317,12 @@
     "assunto": "Assembleias Gerais de Debenturistas",
     "protocolo": "025682IPE110620260158538370-54",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1",
+    "explicito": false
    }
   ],
   "cnpj_documental": null,
-  "emissora_atual": null,
-  "lacunas": null
+  "emissora_atual": "CM Hospitalar S.A. (CNPJ 12.420.164/0001-57) — as duas emissões foram feitas por ela, sem cessão para outra empresa do grupo",
+  "lacunas": "Não constam: a escritura da 4ª emissão (28/10/2021) e seus aditamentos (01/09/2023, 15/04/2025); o aditamento de 22/07/2022 e o aditamento de 15/04/2025 da 5ª; e a ata da AGD da 4ª emissão (08/06/2026, apenas a convocação e o comunicado de que foi aprovada). Os termos da fiança da 4ª (solidariedade, renúncia ao benefício de ordem) e o objeto detalhado das cessões fiduciárias (4ª e 5ª) não estão nos trechos. A natureza da Cessão Fiduciária só é referida pela definição de 'Garantias Reais'. A 4ª foi descrita como 'quirografária' na escritura original e 'com garantia real' nas propostas de 2026. As alterações da AGD de 08/06/2026 dependem das condições suspensiva e resolutiva (prazo até 30/09/2026), cujo cumprimento não está comprovado."
  }
 }
