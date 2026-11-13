@@ -193,31 +193,38 @@ def texto_documento(doc):
     return t
 
 
-PALAVRAS = r"amortiza|remunera|juros|vencimento|car[eê]ncia|data[s]? de pagamento|cronograma|anexo|atualiza[cç][aã]o monet|incorpora|capitaliza|pr[eê]mio|valor nominal unit|data de emiss|s[eé]rie|resgate|taxa di|ipca|spread|sobretaxa|repactua|percentual"
+FORTE = r"amortiza|cronograma|vencimento|remunera|car[eê]ncia|incorpora|capitaliza|data[s]? de pagamento|repactua|spread|sobretaxa|juros remunerat|anexo"
+FRACA = r"juros|atualiza[cç][aã]o monet|pr[eê]mio|valor nominal unit|data de emiss|s[eé]rie|resgate|taxa di|ipca|percentual|vencimento antecipado|suspens"
 DATA_RX = re.compile(r"\d{1,2}\s*(?:/|de)\s*(?:\d{1,2}|[a-zç]{4,9})\s*(?:/|de)\s*\d{4}", re.I)
+LIMITE_TIPO = {"escritura": 90000, "ata_agd": 40000, "proposta_agd": 45000, "comunicado": 10000, "plano_rj": 70000}
 
 
 def recortar(t, limite=90000):
-    """Mantém blocos ao redor das palavras-chave e as linhas de tabela com datas (anexos de cronograma)."""
+    """Prioridade: (1) linhas de tabela com data e número (cronogramas), (2) cláusulas de amortização/remuneração/vencimento,
+    (3) demais cláusulas relevantes. Corta das camadas menos importantes até caber no limite, sem quebrar tabelas."""
     linhas = t.splitlines()
-    manter = [False] * len(linhas)
-    for i, l in enumerate(linhas):
-        if re.search(PALAVRAS, l, re.I):
-            for j in range(max(0, i - 3), min(len(linhas), i + 12)):
-                manter[j] = True
-        if len(DATA_RX.findall(l)) >= 1 and re.search(r"\d+[,.]\d+\s*%|\d+[,.]\d{2,}", l):
-            manter[i] = True
-    out, ult = [], -2
-    for i, l in enumerate(linhas):
-        if manter[i] and l.strip():
-            if i > ult + 1:
-                out.append("[...]")
-            out.append(re.sub(r"\s{3,}", "   ", l.strip()))
-            ult = i
-    s = "\n".join(out)
-    if len(s) > limite:
-        s = s[:limite // 2] + "\n[... trecho cortado ...]\n" + s[-limite // 2:]
-    return s
+    n = len(linhas)
+    tabela = [bool(DATA_RX.search(l)) and bool(re.search(r"\d+[,.]\d+", l)) for l in linhas]
+    def janelas(rx, antes, depois):
+        m = [False] * n
+        for i, l in enumerate(linhas):
+            if re.search(rx, l, re.I):
+                for j in range(max(0, i - antes), min(n, i + depois)):
+                    m[j] = True
+        return m
+    for forte, fraca in ((janelas(FORTE, 3, 14), janelas(FRACA, 1, 5)), (janelas(FORTE, 2, 8), [False] * n), (janelas(FORTE, 1, 4), [False] * n)):
+        manter = [tabela[i] or forte[i] or fraca[i] for i in range(n)]
+        out, ult = [], -2
+        for i, l in enumerate(linhas):
+            if manter[i] and l.strip():
+                if i > ult + 1:
+                    out.append("[...]")
+                out.append(re.sub(r"\s{3,}", "   ", l.strip()))
+                ult = i
+        s = "\n".join(out)
+        if len(s) <= limite:
+            return s
+    return s[:int(limite * 0.6)] + "\n[... trecho cortado ...]\n" + s[-int(limite * 0.4):]
 
 
 # ---------------------------------------------------------------- 4. leitura pelo modelo
@@ -236,7 +243,7 @@ Regras:
 Responda APENAS com um JSON válido, sem texto fora dele, no formato:
 {
  "series": [
-  {"codigo": "XXXX11", "serie": "1", "data_emissao": "AAAA-MM-DD", "vencimento": "AAAA-MM-DD", "vne": 1000.0,
+  {"codigo": "XXXX11", "emissao": 1, "serie": "1", "data_emissao": "AAAA-MM-DD", "vencimento": "AAAA-MM-DD", "vne": 1000.0,
    "remuneracao": {"indexador": "DI+" | "%DI" | "IPCA+" | "IGPM+" | "PRE" | "outro", "taxa": 2.5, "base": "252 du" | "360" | "365", "vigente_desde": "AAAA-MM-DD" | null, "historico": "texto curto se mudou"},
    "juros": {"periodicidade_meses": 6, "primeira_data": "AAAA-MM-DD", "ultima_data": "AAAA-MM-DD", "datas_irregulares": ["AAAA-MM-DD"], "carencia_ate": "AAAA-MM-DD" | null},
    "incorporacao_juros": [{"de": "AAAA-MM-DD", "ate": "AAAA-MM-DD", "observacao": ""}],
@@ -245,14 +252,17 @@ Responda APENAS com um JSON válido, sem texto fora dele, no formato:
    "fonte": "documento e cláusula/anexo de onde saiu o cronograma",
    "confianca": "alta" | "media" | "baixa"}
  ],
- "situacao": "texto curto (vencimento antecipado, suspensão, RJ/RE, renegociação em curso) ou null",
+ "situacao": "texto curto por emissão (vencimento antecipado, suspensão, RJ/RE, renegociação em curso) ou null",
  "lacunas": "o que não foi possível determinar e por quê, ou null"
 }"""
 
 
-def montar_prompt(emissao, itens, docs_txt):
-    cods = ", ".join(f"{i['c']} (série {i.get('se') or '?'})" for i in itens)
-    cab = f"Emissora: {itens[0]['e']} (CNPJ {emissao[0]}), {emissao[1]}ª emissão de debêntures.\nSéries a extrair (códigos B3/CETIP): {cods}.\n"
+def montar_prompt(grupo, docs_txt):
+    cnpj = grupo[0][0][0]
+    linhas = [f"Emissora: {grupo[0][1][0]['e']} (CNPJ {cnpj})."]
+    for (c, em), itens in grupo:
+        linhas.append(f"- {em}ª emissão: séries " + ", ".join(f"{i['c']} (série {i.get('se') or '?'})" for i in itens))
+    cab = "Extraia o cronograma de TODAS as séries abaixo (cada documento pode tratar de uma ou mais emissões):\n" + "\n".join(linhas) + "\n"
     corpo = "\n\n".join(f"===== DOCUMENTO {n + 1}: {d['tipo']} entregue em {d['data']} | {d['assunto'][:200]} =====\n{t}"
                         for n, (d, t) in enumerate(docs_txt))
     return cab + "\n" + corpo
@@ -299,7 +309,10 @@ def conferir(serie):
             return datetime.strptime(d, "%d/%m/%Y").strftime("%Y-%m-%d")
         except Exception:
             return d
-    snd = {iso(e[0]): e[2] for e in ev if e[1] in ("A", "V") and (e[2] or 0) > 0}
+    snd = {iso(e[0]): e[2] for e in ev if e[1] == "A" and (e[2] or 0) > 0}
+    for e in ev:
+        if e[1] == "V":
+            snd.setdefault(iso(e[0]), 100.0)
     doc = {a["data"]: a.get("percentual") for a in serie.get("amortizacoes") or [] if a.get("data")}
     par, livres = {}, set(snd)
     for d in sorted(doc):          # casa cada data do documento com a do SND (que já vem ajustada para dia útil)
@@ -344,32 +357,55 @@ def main():
     linhas = ipe(range(2010, date.today().year + 1))
     docs = documentos(emissoes, linhas)
 
-    pendentes = []
+    # agrupa por empresa: documentos compartilhados (atas, comunicados, planos) são lidos uma vez só
+    por_cnpj = collections.defaultdict(list)
     for e, itens in sorted(emissoes.items()):
-        k = chave_emissao(e)
-        sel = selecionar(docs.get(e, []))
-        assinatura = hashlib.sha1(json.dumps([d["protocolo"] + "_" + str(d["versao"]) for d in sel]).encode()).hexdigest()[:12]
-        if not sel:
-            idx["emissoes"][k] = {"codigos": [i["c"] for i in itens], "status": "sem_documentos_cvm"}
-            continue
-        if not a.forcar and idx["emissoes"].get(k, {}).get("assinatura") == assinatura and idx["emissoes"][k].get("status") == "ok":
-            continue
-        docs_txt = []
-        for d in sel:
-            try:
-                docs_txt.append((d, recortar(texto_documento(d))))
-            except Exception as ex:
-                log("  download falhou", k, d["protocolo"], ex)
-        if not docs_txt or sum(len(t) for _, t in docs_txt) < 500:
-            idx["emissoes"][k] = {"codigos": [i["c"] for i in itens], "status": "texto_vazio", "docs": sel}
-            continue
-        prompt = montar_prompt(e, itens, docs_txt)
-        pendentes.append((k, e, itens, sel, assinatura, prompt))
-        log(f"  {k} {[i['c'] for i in itens]}: {len(sel)} docs, {len(prompt):,} caracteres")
+        por_cnpj[e[0]].append((e, itens))
+    pendentes = []
+    for cnpj, ems in por_cnpj.items():
+        sel_por = {e: selecionar(docs.get(e, [])) for e, _ in ems}
+        for e, itens in ems:
+            if not sel_por[e]:
+                idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "sem_documentos_cvm"}
+        ems = [x for x in ems if sel_por[x[0]]]
+        # fatia em grupos que caibam num pedido (~320 mil caracteres)
+        grupos, atual, tam = [], [], 0
+        for e, itens in ems:
+            t = sum(LIMITE_TIPO.get(d["tipo"], 60000) for d in sel_por[e])
+            if atual and tam + t > 320000:
+                grupos.append(atual); atual, tam = [], 0
+            atual.append((e, itens)); tam += t
+        if atual:
+            grupos.append(atual)
+        for grupo in grupos:
+            vistos, sel = set(), []
+            for e, _ in grupo:
+                for d in sel_por[e]:
+                    if d["protocolo"] not in vistos:
+                        vistos.add(d["protocolo"]); sel.append(d)
+            sel.sort(key=lambda d: d["data"])
+            k = cnpj + "_" + "-".join(e[1] for e, _ in grupo)
+            ass = hashlib.sha1(json.dumps([d["protocolo"] + "_" + str(d["versao"]) for d in sel]).encode()).hexdigest()[:12]
+            if not a.forcar and all(idx["emissoes"].get(chave_emissao(e), {}).get("assinatura") == ass and
+                                    idx["emissoes"][chave_emissao(e)].get("status") == "ok" for e, _ in grupo):
+                continue
+            docs_txt = []
+            for d in sel:
+                try:
+                    docs_txt.append((d, recortar(texto_documento(d), LIMITE_TIPO.get(d["tipo"], 60000))))
+                except Exception as ex:
+                    log("  download falhou", k, d["protocolo"], ex)
+            if sum(len(t) for _, t in docs_txt) < 500:
+                for e, itens in grupo:
+                    idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "texto_vazio"}
+                continue
+            prompt = montar_prompt(grupo, docs_txt)
+            pendentes.append((k, grupo, sel, ass, prompt))
+            log(f"  {k} {[i['c'] for _, its in grupo for i in its]}: {len(sel)} docs, {len(prompt):,} caracteres")
 
     modo = "lote" if a.lote else "direto"
-    est = sum(len(p[5]) / 3.2 for p in pendentes)
-    est_usd = (est * PRECO[modo][0] + len(pendentes) * 4000 * PRECO[modo][1]) / 1e6
+    est = sum(len(p[4]) / 2.6 for p in pendentes)
+    est_usd = (est * PRECO[modo][0] + len(pendentes) * 7000 * PRECO[modo][1]) / 1e6
     log(f"pendentes: {len(pendentes)} | ~{est / 1e6:.2f} MTok de entrada | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
     if idx["gasto_usd"] + est_usd > a.limite_usd:
         sys.exit(f"ABORTADO: estimativa passaria do teto de US$ {a.limite_usd}")
@@ -379,11 +415,11 @@ def main():
 
     resultados = {}
     if modo == "direto":
-        for k, e, itens, sel, ass, prompt in pendentes:
+        for k, grupo, sel, ass, prompt in pendentes:
             r = json.loads(api("/v1/messages", params(prompt)))
             resultados[k] = ("".join(b.get("text", "") for b in r["content"]), r.get("usage", {}))
     else:
-        req = [{"custom_id": p[0], "params": params(p[5])} for p in pendentes]
+        req = [{"custom_id": p[0], "params": params(p[4])} for p in pendentes]
         b = json.loads(api("/v1/messages/batches", {"requests": req}))
         idx["lote_em_andamento"] = b["id"]
         json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
@@ -406,7 +442,7 @@ def main():
                 log("  falhou:", r["custom_id"], r["result"])
         idx.pop("lote_em_andamento", None)
 
-    for k, e, itens, sel, ass, prompt in pendentes:
+    for k, grupo, sel, ass, prompt in pendentes:
         if k not in resultados:
             continue
         txt, uso = resultados[k]
@@ -416,18 +452,23 @@ def main():
         except Exception:
             j = None
         if not j:
-            idx["emissoes"][k] = {"codigos": [i["c"] for i in itens], "status": "json_invalido", "assinatura": ass}
+            for e, itens in grupo:
+                idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "json_invalido", "assinatura": ass}
             (SAIDA / f"{k}.raw.txt").write_text(txt)
             continue
-        for s in j.get("series", []):
-            s["conferencia_snd"] = conferir(s)
-        j["meta"] = {"emissora": itens[0]["e"], "cnpj": e[0], "emissao": e[1], "lido_em": date.today().isoformat(),
-                     "modelo": MODELO, "documentos": sel, "uso": uso}
-        json.dump(j, open(SAIDA / f"{k}.json", "w"), ensure_ascii=False, indent=1)
-        oks = [s["conferencia_snd"].get("ok") for s in j.get("series", [])]
-        idx["emissoes"][k] = {"codigos": [i["c"] for i in itens], "status": "ok", "assinatura": ass,
-                              "bate_snd": all(oks) if oks else None, "situacao": j.get("situacao")}
-        log(f"  {k}: {len(j.get('series', []))} séries | bate com SND: {oks} | situação: {j.get('situacao')}")
+        for e, itens in grupo:
+            cods = {i["c"] for i in itens}
+            series = [s for s in j.get("series", []) if s.get("codigo") in cods or str(s.get("emissao")) == e[1]]
+            for s in series:
+                s["conferencia_snd"] = conferir(s)
+            out = {"series": series, "situacao": j.get("situacao"), "lacunas": j.get("lacunas"),
+                   "meta": {"emissora": itens[0]["e"], "cnpj": e[0], "emissao": e[1], "lido_em": date.today().isoformat(),
+                            "modelo": MODELO, "documentos": sel, "uso_grupo": uso, "grupo": k}}
+            json.dump(out, open(SAIDA / f"{chave_emissao(e)}.json", "w"), ensure_ascii=False, indent=1)
+            oks = [s["conferencia_snd"].get("ok") for s in series]
+            idx["emissoes"][chave_emissao(e)] = {"codigos": sorted(cods), "status": "ok" if series else "sem_series", "assinatura": ass,
+                                                 "bate_snd": all(oks) if oks else None}
+            log(f"  {chave_emissao(e)}: {len(series)} séries | bate com SND: {oks}")
     json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
     log(f"gasto acumulado: US$ {idx['gasto_usd']:.2f}")
 
