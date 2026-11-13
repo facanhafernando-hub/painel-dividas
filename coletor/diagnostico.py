@@ -38,28 +38,41 @@ try:
 except Exception as e:
     print("erro", e, b[:300])
 
-# procura linhas de DEB/CRA no cadastro (varre algumas páginas)
-achou = collections.Counter()
-for p in range(1, 60, 5):
+# varre o cadastro inteiro em paralelo, contando tipos e guardando amostras
+from concurrent.futures import ThreadPoolExecutor
+t0 = time.time()
+def pag(p):
     st, b = req(f"https://arquivos.b3.com.br/bdi/table/InstrumentRegistration/{d}/{d}/{p}/1000", b"{}")
-    if st != 200:
-        print("pág", p, st); continue
-    t = json.loads(b)["table"]
-    if not t["values"]:
-        print("fim na pág", p); break
-    cols = [c["name"] for c in t["columns"]]
-    for v in t["values"]:
-        row = dict(zip(cols, v))
-        tipo = next((str(row[k]) for k in row if "nstrument" in k or "Tp" in k), "?")
-        achou[tipo] += 1
-        if any(x in json.dumps(v, ensure_ascii=False) for x in ("RAIZEN", "AMERICANAS")) and achou["_amostra"] < 6:
-            achou["_amostra"] += 1
-            print("  amostra:", row)
-print("tipos vistos:", achou.most_common(30))
+    return json.loads(b)["table"]["values"] if st == 200 else None
+tot = []
+p = 1
+with ThreadPoolExecutor(8) as ex:
+    while p < 400:
+        res = list(ex.map(pag, range(p, p + 8)))
+        falhou = [p + i for i, r in enumerate(res) if r is None]
+        if falhou: print("falhas", falhou)
+        fim = False
+        for r in res:
+            if r is None: continue
+            if not r: fim = True; break
+            tot.extend(r)
+        if fim: break
+        p += 8
+print(f"cadastro: {len(tot)} linhas em {time.time()-t0:.0f}s")
+print("tipos:", collections.Counter(r[4] for r in tot).most_common(40))
+for alvo in ("RAIZEN", "AMERICANAS"):
+    rs = [r for r in tot if alvo in str(r[3]).upper() and r[4] in ("DEB", "CRA", "CRI")][:5]
+    for r in rs: print("  ", alvo, r)
+print("indexadores DEB:", collections.Counter(r[8] for r in tot if r[4] == "DEB").most_common(10))
 
 print("=" * 80, "\nANBIMA CRI/CRA")
-for u in ("https://www.anbima.com.br/pt_br/informar/precos-e-indices/precos/taxas-de-cri-e-cra/taxas-de-cri-e-cra.htm",
-          "https://www.anbima.com.br/pt_br/informar/precos-e-indices/precos/taxas-de-cri-e-cra.htm"):
+st, b = req("https://www.anbima.com.br/pt_br/anbima/TaxasCriCraExport/exportarCSV?filtroTermo=", timeout=60, tent=3)
+print("CSV status", st, len(b))
+txt = b.decode("utf-8-sig", errors="replace") if b"\xc3" in b[:5000] else b.decode("latin-1", errors="replace")
+for l in txt.splitlines()[:12]:
+    print("   ", l[:500])
+print("   linhas:", len(txt.splitlines()))
+for u in ():
     st, b = req(u, timeout=30, tent=2)
     print(u, st, len(b))
     if st == 200:
