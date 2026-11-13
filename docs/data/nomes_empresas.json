@@ -284,6 +284,11 @@
   "razao": "ALCOESTE BIOENERGIA FERNANDOPOLIS S A",
   "fonte": "modelo"
  },
+ "ALENTEJO SECURITIZADORA CREDITOS FINANCEIROS": {
+  "nome": "Alentejo Securitizadora",
+  "razao": "ALENTEJO COMPANHIA SECURITIZADORA CREDITOS FINANCEIROS",
+  "fonte": "modelo"
+ },
  "ALEX ENERGIA PARTICIPACOES": {
   "nome": "Alex Energia",
   "razao": "ALEX ENERGIA PARTICIPACOES S.A.",
@@ -3389,6 +3394,11 @@
   "razao": "HCC PPP MS02 SEINFRA SPE S.A",
   "fonte": "modelo"
  },
+ "HELEXIA GERACAO HOLDING": {
+  "nome": "Helexia Geração",
+  "razao": "HELEXIA GERACAO HOLDING S.A.",
+  "fonte": "modelo"
+ },
  "HELEXIA SBH3": {
   "nome": "Helexia SBH3",
   "razao": "HELEXIA SBH3 S.A..",
@@ -6347,6 +6357,11 @@
  "VALID SOLUCOES": {
   "nome": "Valid",
   "razao": "VALID SOLUCOES S/A",
+  "fonte": "modelo"
+ },
+ "VAMOS COMERCIO DE MAQUINAS LINHA AMARELA": {
+  "nome": "Vamos Linha Amarela",
+  "razao": "VAMOS COMERCIO DE MAQUINAS LINHA AMARELA S.A.",
   "fonte": "modelo"
  },
  "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS": {
