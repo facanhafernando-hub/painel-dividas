@@ -1,0 +1,60 @@
+name: Ler escrituras
+
+on:
+  workflow_dispatch:
+    inputs:
+      codigos:
+        description: "Códigos separados por vírgula (vazio = todos os pendentes)"
+        default: ""
+      modo:
+        description: "direto (teste) ou lote (Batch API, metade do preço)"
+        default: "lote"
+      limite_usd:
+        description: "Teto de gasto acumulado (US$)"
+        default: "20"
+      forcar:
+        description: "Reler mesmo sem documento novo (sim/não)"
+        default: "não"
+  schedule:
+    - cron: "17 9 * * 2-6"     # todo dia útil cedo: lê só documentos novos
+
+concurrency:
+  group: escrituras
+  cancel-in-progress: false
+
+jobs:
+  ler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get install -y -qq poppler-utils > /dev/null
+      - uses: actions/cache@v4
+        with:
+          path: cache
+          key: escrituras-${{ github.run_id }}
+          restore-keys: escrituras-
+      - name: Ler documentos
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS="--limite-usd ${{ github.event.inputs.limite_usd || '20' }}"
+          [ -n "${{ github.event.inputs.codigos }}" ] && ARGS="$ARGS --codigos ${{ github.event.inputs.codigos }}"
+          [ "${{ github.event.inputs.modo || 'lote' }}" = "lote" ] && ARGS="$ARGS --lote" || ARGS="$ARGS --direto"
+          [ "${{ github.event.inputs.forcar }}" = "sim" ] && ARGS="$ARGS --forcar"
+          python coletor/escrituras.py $ARGS
+      - name: Salvar
+        if: always()
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add docs/data/escrituras || true
+          git diff --cached --quiet && exit 0
+          git commit -qm "Escrituras: leitura $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push -q && break; sleep 10; done
