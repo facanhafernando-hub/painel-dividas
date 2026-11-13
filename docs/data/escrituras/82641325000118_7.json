@@ -1,7 +1,56 @@
 {
- "series": [],
- "situacao": "Nenhuma informação sobre a 7ª emissão (CREM17). O único documento fornecido trata da 4ª emissão da Cremer S.A. (escritura de 11/04/2014, 20.000 debêntures, R$ 200 milhões, série única). Nessa 4ª emissão, a AGD de 19/10/2016 aprovou a suspensão dos efeitos do vencimento antecipado causado pela Venda do Ativo (Dental Cremer) e pela Redução do Capital. A mesma AGD elevou a sobretaxa de 1,75% para 2,00% a.a. (base 252 du) a partir de 19/10/2016 e incluiu cessão fiduciária de recebíveis como garantia real. A remuneração acumulada de 15/04/2016 a 19/10/2016 foi incorporada ao VNU.",
- "lacunas": "O Primeiro Aditamento recebido refere-se exclusivamente à 4ª emissão, e não há menção à 7ª emissão nem ao código CREM17. Por isso não é possível determinar data de emissão, vencimento, VNE, remuneração, juros, amortizações ou prêmios da série CREM17. Não atribuí à CREM17 os dados da 4ª emissão para não inventar informação. Para a 4ª emissão, os trechos também não trazem as datas de vencimento e de amortização nem o cronograma de juros. Para extrair o cronograma da CREM17, é preciso enviar a escritura da 7ª emissão e seus aditamentos ou atas de AGD.",
+ "series": [
+  {
+   "codigo": "CREM17",
+   "emissao": 7,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Nenhum trecho fornecido trata da 7ª emissão (CREM17). O único documento é o Primeiro Aditamento à escritura da 4ª emissão da Cremer S.A.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 10,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-07-30",
+     "2030-01-30",
+     "2030-07-30",
+     "2031-01-30",
+     "2031-07-30",
+     "2032-01-30",
+     "2032-07-30",
+     "2033-01-31",
+     "2033-08-01",
+     "2034-01-30"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "Nada consta sobre a 7ª emissão (CREM17). Sobre a 4ª emissão, que não é a série pedida, o documento registra que a AGD de 19/10/2016 aprovou a suspensão dos efeitos do vencimento antecipado decorrente da Venda do Ativo e da Redução do Capital.",
+ "lacunas": "O documento fornecido (Primeiro Aditamento, entregue em 2016-10-28) refere-se exclusivamente à 4ª emissão de debêntures da Cremer S.A., série única, escritura de 11/04/2014, 20.000 debêntures e R$ 200.000.000,00. Não há trecho da escritura, de aditamento ou de ata da 7ª emissão (CREM17). Por isso, data de emissão, vencimento, VNE, remuneração, juros, amortizações, prêmios e situação da CREM17 não puderam ser determinados e ficaram null. Não extrapolei os dados da 4ª emissão para a 7ª. Para essa emissão, o aditamento traz apenas: DI + sobretaxa de 1,75% a.a. até 2016-10-19 (exclusive) e 2,00% a.a. (base 252 du) de 2016-10-19 (inclusive) até o vencimento; incorporação ao VNU da remuneração acumulada de 2016-04-15 a 2016-10-19; e inclusão de cessão fiduciária de recebíveis como garantia. A data de vencimento e o cronograma de juros e amortização da 4ª emissão não constam dos trechos. Para extrair a CREM17, é preciso enviar os documentos da 7ª emissão.",
  "meta": {
   "emissora": "CREMER S/A",
   "cnpj": "82641325000118",
@@ -26,14 +75,21 @@
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 895,
+   "output_tokens": 1246,
    "output_tokens_details": {
-    "thinking_tokens": 346
+    "thinking_tokens": 339
    },
    "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
   "grupo": "82641325000118_7"
+ },
+ "eventos": {
+  "CREM17": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nada consta sobre a 7ª emissão (CREM17). A suspensão de vencimento antecipado da AGD de 19/10/2016 refere-se à 4ª emissão, não à série pedida."
+  }
  }
 }

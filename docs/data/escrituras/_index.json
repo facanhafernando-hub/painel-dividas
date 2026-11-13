@@ -1118,10 +1118,10 @@
    "codigos": [
     "CREM17"
    ],
-   "status": "sem_series",
+   "status": "ok",
    "assinatura": "2985649003c7",
-   "bate_snd": null
+   "bate_snd": false
   }
  },
- "gasto_usd": 12.2595
+ "gasto_usd": 12.491
 }
