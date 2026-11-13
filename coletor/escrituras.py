@@ -415,11 +415,18 @@ def classificar(forcar=False):
     def um(x):
         p, j, cods = x
         txt = f"Emissão {j['meta']['emissao']}ª de {j['meta']['emissora']}. Códigos: {', '.join(cods)}.\nResumo da situação: {j.get('situacao') or 'sem informação'}"
-        r = json.loads(api("/v1/messages", {"model": "claude-haiku-5-5", "max_tokens": 800, "system": CLASSIFICA,
-                                            "messages": [{"role": "user", "content": txt}]}))
-        out = ler_json("".join(b.get("text", "") for b in r["content"])) or {}
-        u = r.get("usage", {})
-        return p, j, out, (u.get("input_tokens", 0) * 0.10 + u.get("output_tokens", 0) * 0.50) / 1e6
+        out, c = {}, 0.0
+        for _ in range(2):
+            try:
+                r = json.loads(api("/v1/messages", {"model": "claude-haiku-5-5", "max_tokens": 1000, "system": CLASSIFICA,
+                                                    "messages": [{"role": "user", "content": txt}]}))
+                u = r.get("usage", {})
+                c += (u.get("input_tokens", 0) * 0.10 + u.get("output_tokens", 0) * 0.50) / 1e6
+                out = ler_json("".join(b.get("text", "") for b in r["content"])) or {}
+                break
+            except Exception as ex:
+                log("  classificação falhou", p.name, str(ex)[:120])
+        return p, j, out, c
     with ThreadPoolExecutor(6) as ex:
         for p, j, out, c in ex.map(um, fila):
             gasto += c
