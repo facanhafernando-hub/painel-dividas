@@ -1281,9 +1281,11 @@ def construir_catalogo() -> None:
                 idx_txt = f"{f2(s.get('taxa'))}% a.a."
             elif base:
                 idx_txt = f"{base[:-1]} + {f2(s.get('taxa'))}%"
+        ag = snd_agenda().get(c) or []
+        ven_ag = next((e[0] for e in ag if e[1] == "V"), ag[-1][0] if ag else None)
         itens.append({
             "c": c, "t": t, "e": emp, "k": chave_empresa(emp), "s": a.get("s"),
-            "ven": anb.get("vencimento") or (s or {}).get("venc"),
+            "ven": anb.get("vencimento") or ven_ag or (s or {}).get("venc"),
             "idx": idx_txt, "gar": (s or {}).get("garantia"), "inc": (s or {}).get("incentivada"),
             "em": (s or {}).get("emissao"), "se": (s or {}).get("serie"),
             "qm": (s or {}).get("qtd_mercado"), "vne": (s or {}).get("vne"),
@@ -1310,7 +1312,8 @@ def construir_catalogo() -> None:
     for it in itens:
         alvo = chave_empresa(it.get("e")) + " " + chave_empresa(it.get("s"))
         for emp in lista:
-            if any(chave_empresa(t) and chave_empresa(t) in alvo for t in emp["termos"]):
+            if any(chave_empresa(t) and re.search(r"(^|\s)" + re.escape(chave_empresa(t)) + r"(\s|$)", alvo)
+                   for t in emp["termos"]):
                 it["w"] = emp["nome"]
                 it["ws"] = emp.get("situacao")
                 break

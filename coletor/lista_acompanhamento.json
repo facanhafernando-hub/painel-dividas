@@ -1,21 +1,122 @@
 {
   "descricao": "Empresas acompanhadas mesmo fora do filtro automático (RJ/RE, pós-reestruturação, casos específicos). Termos são procurados no nome da empresa/devedor/securitizadora, sem acento.",
   "empresas": [
-    {"nome": "Raízen", "termos": ["RAIZEN"], "situacao": "RE homologada (jul/26); escolha de opção até 03/12/2026"},
-    {"nome": "Braskem", "termos": ["BRASKEM"], "situacao": "RE protocolada em 24/08/2026"},
-    {"nome": "Casas Bahia", "termos": ["CASAS BAHIA"], "situacao": "RJ pedida em ago/26, deferida em out/26"},
-    {"nome": "GPA", "termos": ["COMPANHIA BRASILEIRA DE DISTRIBUICAO"], "situacao": "RE e pedido de RJ (out/26)"},
-    {"nome": "Oncoclínicas", "termos": ["ONCOCLINICAS"], "situacao": "RE pedida em 13/07/2026"},
-    {"nome": "Ambipar", "termos": ["AMBIPAR", "ENVIRONMENTAL ESG"], "situacao": "RJ desde out/25; AGC suspensa pelo STJ (set/26)"},
-    {"nome": "Grupo Toky", "termos": ["TOKY", "TOK STOK", "MOBLY"], "situacao": "RJ (mai/26)"},
-    {"nome": "AgroGalaxy", "termos": ["AGROGALAXY", "AGRO GALAXY"], "situacao": "em reestruturação"},
-    {"nome": "InterCement", "termos": ["INTERCEMENT"], "situacao": "RJ (status a confirmar)"},
-    {"nome": "Light", "termos": ["LIGHT S"], "situacao": "RJ encerrada em 09/09/2026; conversões em execução"},
-    {"nome": "Americanas", "termos": ["AMERICANAS"], "situacao": "RJ encerrada em 19/10/2026"},
-    {"nome": "Azul", "termos": ["AZUL"], "situacao": "saiu do Chapter 11 em 20/01/2026"},
-    {"nome": "Gol", "termos": ["GOL LINHAS"], "situacao": "pós-Chapter 11 (status a confirmar)"},
-    {"nome": "Oi", "termos": ["OI S A", "OI S.A"], "situacao": "status a confirmar"},
-    {"nome": "Elfa", "termos": ["ELFA MEDICAMENTOS"], "situacao": "negociação com debenturistas (AGD reaberta out/26)"},
-    {"nome": "Aeris", "termos": ["AERIS"], "situacao": "RE pedida em 03/11/2026 (R$ 1,52 bi)"}
+    {
+      "nome": "Raízen",
+      "termos": [
+        "RAIZEN"
+      ],
+      "situacao": "RE homologada (jul/26); escolha de opção até 03/12/2026"
+    },
+    {
+      "nome": "Braskem",
+      "termos": [
+        "BRASKEM"
+      ],
+      "situacao": "RE protocolada em 24/08/2026"
+    },
+    {
+      "nome": "Casas Bahia",
+      "termos": [
+        "CASAS BAHIA"
+      ],
+      "situacao": "RJ pedida em ago/26, deferida em out/26"
+    },
+    {
+      "nome": "GPA",
+      "termos": [
+        "COMPANHIA BRASILEIRA DE DISTRIBUICAO"
+      ],
+      "situacao": "RE e pedido de RJ (out/26)"
+    },
+    {
+      "nome": "Oncoclínicas",
+      "termos": [
+        "ONCOCLINICAS"
+      ],
+      "situacao": "RE pedida em 13/07/2026"
+    },
+    {
+      "nome": "Ambipar",
+      "termos": [
+        "AMBIPAR",
+        "ENVIRONMENTAL ESG"
+      ],
+      "situacao": "RJ desde out/25; AGC suspensa pelo STJ (set/26)"
+    },
+    {
+      "nome": "Grupo Toky",
+      "termos": [
+        "TOKY",
+        "TOK STOK",
+        "MOBLY"
+      ],
+      "situacao": "RJ (mai/26)"
+    },
+    {
+      "nome": "AgroGalaxy",
+      "termos": [
+        "AGROGALAXY",
+        "AGRO GALAXY"
+      ],
+      "situacao": "em reestruturação"
+    },
+    {
+      "nome": "InterCement",
+      "termos": [
+        "INTERCEMENT"
+      ],
+      "situacao": "RJ (status a confirmar)"
+    },
+    {
+      "nome": "Light",
+      "termos": [
+        "LIGHT SERVICOS DE ELETRICIDADE",
+        "LIGHT"
+      ],
+      "situacao": "RJ encerrada em 09/09/2026; conversões em execução"
+    },
+    {
+      "nome": "Americanas",
+      "termos": [
+        "AMERICANAS"
+      ],
+      "situacao": "RJ encerrada em 19/10/2026"
+    },
+    {
+      "nome": "Azul",
+      "termos": [
+        "AZUL LINHAS AEREAS"
+      ],
+      "situacao": "saiu do Chapter 11 em 20/01/2026"
+    },
+    {
+      "nome": "Gol",
+      "termos": [
+        "GOL LINHAS"
+      ],
+      "situacao": "pós-Chapter 11 (status a confirmar)"
+    },
+    {
+      "nome": "Oi",
+      "termos": [
+        "OI"
+      ],
+      "situacao": "status a confirmar"
+    },
+    {
+      "nome": "Elfa",
+      "termos": [
+        "ELFA MEDICAMENTOS"
+      ],
+      "situacao": "negociação com debenturistas (AGD reaberta out/26)"
+    },
+    {
+      "nome": "Aeris",
+      "termos": [
+        "AERIS"
+      ],
+      "situacao": "RE pedida em 03/11/2026 (R$ 1,52 bi)"
+    }
   ]
 }
