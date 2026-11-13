@@ -1140,6 +1140,7 @@ SUFIXOS = re.compile(r"\b(S\.?\s?/?A\.?|LTDA\.?|CIA\.?|COMPANHIA|EM RECUPERACAO 
 
 def chave_empresa(nome: str | None) -> str:
     s = unicodedata.normalize("NFKD", (nome or "").upper()).encode("ascii", "ignore").decode()
+    s = re.sub(r"(?<=[A-Z])['`´’](?=[A-Z])", "", s)      # D'OR -> DOR
     s = SUFIXOS.sub(" ", s)
     s = re.sub(r"[^A-Z0-9 ]", " ", s)
     return re.sub(r"\s+", " ", s).strip()
@@ -1459,6 +1460,8 @@ def construir_catalogo() -> None:
                 itens[-1]["dvf"] = "ANBIMA"
             elif dv.get("tipo") in ("devedor", "cedente") and dv.get("nome"):
                 itens[-1].update(dvf="CVM", dvp=dv.get("pct"), dvt=dv["tipo"])
+                if not itens[-1].get("cnpj") and dv.get("cnpj"):
+                    itens[-1]["cnpj"] = dv["cnpj"]
             elif dv.get("tipo") == "pulverizado" and itens[-1]["e"] == itens[-1].get("s"):
                 itens[-1]["pulv"] = True
         nm = nomes_empresas().get(itens[-1]["k"])
@@ -1475,6 +1478,27 @@ def construir_catalogo() -> None:
                 "escok": True if cf.get("ok") else (False if cf.get("snd") and cf.get("amort_doc") and cf.get("amort_snd") else None),
                 "aj": (_CACHE.get("ajustes") or {}).get(c),
             })
+    # mesma empresa com grafias diferentes (ANBIMA, SND, Receita): unifica pelo CNPJ, usando a grafia das debêntures
+    por_cnpj = collections.defaultdict(list)
+    for it in itens:
+        cj = re.sub(r"\D", "", it.get("cnpj") or "")
+        if cj and it.get("k"):
+            por_cnpj[cj].append(it)
+    unif = 0
+    for cj, its in por_cnpj.items():
+        if len({x["k"] for x in its}) < 2:
+            continue
+        base_ = collections.Counter((x["k"], x["e"]) for x in its if x["t"] == "DEB") or collections.Counter((x["k"], x["e"]) for x in its)
+        k0, e0 = base_.most_common(1)[0][0]
+        n0 = nomes_empresas().get(k0)
+        for x in its:
+            if x["k"] != k0:
+                x["k"], x["e"] = k0, e0
+                if n0:
+                    x["n"] = n0
+                unif += 1
+    if unif:
+        log(f"  títulos unificados pelo CNPJ: {unif}")
     try:
         lista = json.loads((RAIZ / "coletor" / "lista_acompanhamento.json").read_text(encoding="utf-8"))["empresas"]
     except Exception:

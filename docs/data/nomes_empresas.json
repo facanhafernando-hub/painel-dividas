@@ -6025,14 +6025,14 @@
   "fonte": "modelo"
  },
  "REDE D OR SAO LUIZ": {
-  "nome": "Rede D'Or São Luiz",
+  "nome": "Rede D'Or",
   "razao": "REDE D'OR SÃO LUIZ S.A.",
-  "fonte": "modelo"
+  "fonte": "manual"
  },
  "REDE DOR SAO LUIZ": {
-  "nome": "Rede Dor São Luiz S/A",
+  "nome": "Rede D'Or",
   "razao": "REDE DOR SAO LUIZ S/A",
-  "fonte": "modelo"
+  "fonte": "manual"
  },
  "REDE ENERGIA PARTICIPACOES": {
   "nome": "Rede Energia",
