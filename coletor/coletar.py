@@ -412,9 +412,11 @@ def alertas(neg: dict | None, anb: dict | None, serie: list[list], ds: str) -> l
         if abs(pmed / anb["pu"] - 1) * 100 > ALERTA_DESVIO_ANBIMA:
             out.append("desvio_anbima")
     if neg and neg.get("volume"):
-        hist = [p[3] for p in [q for q in serie if q[0] < ds][-20:] if p[3]]
-        media = sum(hist) / 20 if hist else 0  # dias sem negócio contam como zero
-        if neg["volume"] >= ALERTA_VOLUME_MIN and (not media or neg["volume"] > ALERTA_VOLUME_MULT * media):
+        janela = [q for q in serie if q[0] < ds][-20:]
+        media = sum(q[3] or 0 for q in janela) / len(janela) if janela else 0  # dia sem negócio = 0
+        # só alerta com histórico mínimo, para não disparar em massa nos primeiros dias
+        if (len(janela) >= 10 and neg["volume"] >= ALERTA_VOLUME_MIN
+                and neg["volume"] > ALERTA_VOLUME_MULT * max(media, 1.0)):
             out.append("salto_volume")
     return out
 
