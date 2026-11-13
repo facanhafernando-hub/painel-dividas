@@ -1,0 +1,2462 @@
+[
+ {
+  "c": "21K0001812",
+  "t": "CRI",
+  "e": "ULTRA SOM SERVIÇOS MÉDICOS S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "22B0006022",
+  "t": "CRI",
+  "e": "MRV ENGENHARIA E PARTICIPAÇÕES S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "22K0934880",
+  "t": "CRI",
+  "e": "BCBF PARTICIPAÇÕES S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "24A2720884",
+  "t": "CRI",
+  "e": "DIAGNÓSTICAS DA AMÉRICA S.A.",
+  "s": "VERT COMPANHIA  SECURITIZADORA",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "24A2722748",
+  "t": "CRI",
+  "e": "DIAGNÓSTICOS DA AMÉRICA S.A.",
+  "s": "VERT COMPANHIA  SECURITIZADORA",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "24B0013203",
+  "t": "CRI",
+  "e": "CIDADE MARAVILHOSA INDÚSTRIA E COMÉRCIO DE ROUPAS S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "AEGE16",
+  "t": "DEB",
+  "e": "EQUIPAV SANEAMENTO S.A.",
+  "s": null,
+  "cnpj": "15385166000140",
+  "em": "6",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "AEGE17",
+  "t": "DEB",
+  "e": "EQUIPAV SANEAMENTO S.A.",
+  "s": null,
+  "cnpj": "15385166000140",
+  "em": "7",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "AEGPA0",
+  "t": "DEB",
+  "e": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "08827501000158",
+  "em": "10",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "AEGPA8",
+  "t": "DEB",
+  "e": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "08827501000158",
+  "em": "18",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "AEGPB3",
+  "t": "DEB",
+  "e": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "08827501000158",
+  "em": "23",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "AEGPB5",
+  "t": "DEB",
+  "e": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "08827501000158",
+  "em": "25",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ALAR13",
+  "t": "DEB",
+  "e": "ALARES INTERNET PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "23438929000100",
+  "em": "3",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "ALAR23",
+  "t": "DEB",
+  "e": "ALARES INTERNET PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "23438929000100",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "ANET11",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ANET12",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ARAJ11",
+  "t": "DEB",
+  "e": "CONCESSIONARIA DE ILUMINACAO PUBLICA CONECTA ARACAJU S.A.",
+  "s": null,
+  "cnpj": "39763833000140",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ARML14",
+  "t": "DEB",
+  "e": "ARMAC LOCACAO LOGISTICA E SERVICOS S.A.",
+  "s": null,
+  "cnpj": "00242184000104",
+  "em": "4",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ARML15",
+  "t": "DEB",
+  "e": "ARMAC LOCACAO LOGISTICA E SERVICOS S.A.",
+  "s": null,
+  "cnpj": "00242184000104",
+  "em": "5",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "ARML25",
+  "t": "DEB",
+  "e": "ARMAC LOCACAO LOGISTICA E SERVICOS S.A.",
+  "s": null,
+  "cnpj": "00242184000104",
+  "em": "5",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "ARML26",
+  "t": "DEB",
+  "e": "ARMAC LOCACAO LOGISTICA E SERVICOS S.A.",
+  "s": null,
+  "cnpj": "00242184000104",
+  "em": "6",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "ARTR19",
+  "t": "DEB",
+  "e": "ARTERIS S.A.",
+  "s": null,
+  "cnpj": "02919555000167",
+  "em": "9",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "ASER12",
+  "t": "DEB",
+  "e": "AGUAS DO SERTAO S.A.",
+  "s": null,
+  "cnpj": "45456117000112",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "BCBF16",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "6",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "BGCE12",
+  "t": "DEB",
+  "e": "BONFIM GERACAO E COMERCIO DE ENERGIA SPE S/A",
+  "s": null,
+  "cnpj": "34714313000123",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "BION17",
+  "t": "DEB",
+  "e": "BIOENERGETICA VALE DO PARACATU S/A.",
+  "s": null,
+  "cnpj": "08793343000162",
+  "em": "7",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "BRKMA8",
+  "t": "DEB",
+  "e": "BRASKEM S/A",
+  "s": null,
+  "cnpj": "42150391000170",
+  "em": "18",
+  "se": "001",
+  "w": "Braskem"
+ },
+ {
+  "c": "BRKMB6",
+  "t": "DEB",
+  "e": "BRASKEM S/A",
+  "s": null,
+  "cnpj": "42150391000170",
+  "em": "16",
+  "se": "002",
+  "w": "Braskem"
+ },
+ {
+  "c": "BRKMB8",
+  "t": "DEB",
+  "e": "BRASKEM S/A",
+  "s": null,
+  "cnpj": "42150391000170",
+  "em": "18",
+  "se": "002",
+  "w": "Braskem"
+ },
+ {
+  "c": "CBRDB8",
+  "t": "DEB",
+  "e": "COMPANHIA BRASILEIRA DE DISTRIBUICAO",
+  "s": null,
+  "cnpj": "47508411000156",
+  "em": "18",
+  "se": "002",
+  "w": "GPA"
+ },
+ {
+  "c": "CCLS11",
+  "t": "DEB",
+  "e": "REGENERA RIO S.A",
+  "s": null,
+  "cnpj": "10319900000150",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CCLS21",
+  "t": "DEB",
+  "e": "REGENERA RIO S.A",
+  "s": null,
+  "cnpj": "10319900000150",
+  "em": "1",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "CGCE12",
+  "t": "DEB",
+  "e": "CANTA GERACAO E COMERCIO DE ENERGIA SPE S/A",
+  "s": null,
+  "cnpj": "34714322000114",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CGEE13",
+  "t": "DEB",
+  "e": "COMPANHIA ESTADUAL DE GERACAO DE ENERGIA ELETRICA - CEEE-G",
+  "s": null,
+  "cnpj": "39881421000104",
+  "em": "3",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CGEE23",
+  "t": "DEB",
+  "e": "COMPANHIA ESTADUAL DE GERACAO DE ENERGIA ELETRICA - CEEE-G",
+  "s": null,
+  "cnpj": "39881421000104",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "CMIN11",
+  "t": "DEB",
+  "e": "CSN MINERACAO S.A.",
+  "s": null,
+  "cnpj": "08902291000115",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CMIN12",
+  "t": "DEB",
+  "e": "CSN MINERACAO S.A.",
+  "s": null,
+  "cnpj": "08902291000115",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CMIN21",
+  "t": "DEB",
+  "e": "CSN MINERACAO S.A.",
+  "s": null,
+  "cnpj": "08902291000115",
+  "em": "1",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "CMIN22",
+  "t": "DEB",
+  "e": "CSN MINERACAO S.A.",
+  "s": null,
+  "cnpj": "08902291000115",
+  "em": "2",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "CMPH14",
+  "t": "DEB",
+  "e": "CM HOSPITALAR S.A.",
+  "s": null,
+  "cnpj": "12420164000157",
+  "em": "4",
+  "se": "UNI",
+  "w": "Viveo"
+ },
+ {
+  "c": "CONX12",
+  "t": "DEB",
+  "e": "ALARES INTERNET PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "23438929000100",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "CPTM15",
+  "t": "DEB",
+  "e": "LIGGA TELECOMUNICACOES S.A",
+  "s": null,
+  "cnpj": "04368865000166",
+  "em": "5",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "CRA019003V2",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA019003V3",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA020001P7",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA020001P8",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA021000RX",
+  "t": "CRA",
+  "e": "MINERVA S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA0210013B",
+  "t": "CRA",
+  "e": "BRF S.A.",
+  "s": "VERT COMPANHIA  SECURITIZADORA",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA021001PQ",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA022000XF",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA022004MS",
+  "t": "CRA",
+  "e": "VAMOS LOCAÇÃO DE CAMINHÕES, MÁQUINAS E EQUIPAMENTOS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA0220073P",
+  "t": "CRA",
+  "e": "MINERVA S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA0220079D",
+  "t": "CRA",
+  "e": "BRF S.A.",
+  "s": "VERT COMPANHIA  SECURITIZADORA",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA022008C2",
+  "t": "CRA",
+  "e": "VICUNHA TÊXTIL S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA022008NB",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA022008ND",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA02200C6Y",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA02200C6Z",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA023000MC",
+  "t": "CRA",
+  "e": "VAMOS LOCAÇÃO DE CAMINHÕES, MÁQUINAS E EQUIPAMENTOS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA023000RT",
+  "t": "CRA",
+  "e": "VAMOS LOCAÇÃO DE CAMINHÕES, MÁQUINAS E EQUIPAMENTOS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA02300G7F",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA02300MOQ",
+  "t": "CRA",
+  "e": "MINERVA S.A.",
+  "s": "RIZA SECURITIZADORA S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA024002MJ",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA024002ML",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA0240066K",
+  "t": "CRA",
+  "e": "BRF S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA024009Q4",
+  "t": "CRA",
+  "e": "MARFRIG GLOBAL FOODS S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA0250012Y",
+  "t": "CRA",
+  "e": "FS FLORESTAL S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA0250066B",
+  "t": "CRA",
+  "e": "BRF S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CRA02500BVT",
+  "t": "CRA",
+  "e": "BRF S.A.",
+  "s": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO S.A.",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": null
+ },
+ {
+  "c": "CSNAA1",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "11",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "CSNAA2",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "12",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "CSNAA4",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "14",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CSNAA5",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "15",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CSNAA6",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "16",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CSNAB4",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "14",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "CSNAB5",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "15",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "CSNAC4",
+  "t": "DEB",
+  "e": "COMPANHIA SIDERURGICA NACIONAL",
+  "s": null,
+  "cnpj": "33042730000104",
+  "em": "14",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "CVCB14",
+  "t": "DEB",
+  "e": "CVC BRASIL OPERADORA E AGENCIA DE VIAGENS S.A.",
+  "s": null,
+  "cnpj": "10760260000119",
+  "em": "4",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "CVCB17",
+  "t": "DEB",
+  "e": "CVC BRASIL OPERADORA E AGENCIA DE VIAGENS S.A.",
+  "s": null,
+  "cnpj": "10760260000119",
+  "em": "7",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ELPLA7",
+  "t": "DEB",
+  "e": "ELETROPAULO METROPOL. ELETR. DE S.P. S/A",
+  "s": null,
+  "cnpj": "61695227000193",
+  "em": "27",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ELPLB9",
+  "t": "DEB",
+  "e": "ELETROPAULO METROPOL. ELETR. DE S.P. S/A",
+  "s": null,
+  "cnpj": "61695227000193",
+  "em": "29",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "EMMP21",
+  "t": "DEB",
+  "e": "EMAM PARTICIPACOES LTDA",
+  "s": null,
+  "cnpj": "36475062000105",
+  "em": "1",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "EMMP41",
+  "t": "DEB",
+  "e": "EMAM PARTICIPACOES LTDA",
+  "s": null,
+  "cnpj": "36475062000105",
+  "em": "1",
+  "se": "004",
+  "w": null
+ },
+ {
+  "c": "FORB11",
+  "t": "DEB",
+  "e": "FORTBRASIL ALFA SECURITIZADORA S.A..",
+  "s": null,
+  "cnpj": "49571208000150",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "FSII14",
+  "t": "DEB",
+  "e": "FS I INDUSTRIA DE ETANOL S.A",
+  "s": null,
+  "cnpj": "46710597000169",
+  "em": "4",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "GBSP11",
+  "t": "DEB",
+  "e": "GBS PARTICIPACOES S.A.",
+  "s": null,
+  "cnpj": "41774224000138",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "HAPV15",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "5",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "HAPV17",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "7",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "HAPV18",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "8",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "HAPV19",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "9",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "HAPV28",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "8",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "HAPVA0",
+  "t": "DEB",
+  "e": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "s": null,
+  "cnpj": "05197443000138",
+  "em": "10",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "HGLB23",
+  "t": "DEB",
+  "e": "HIGHLINE DO BRASIL II INFRAESTRUTURA DE TELECOMUNICACOES S.A",
+  "s": null,
+  "cnpj": "27902165000105",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "IBIP11",
+  "t": "DEB",
+  "e": "IBIPAR S.A.",
+  "s": null,
+  "cnpj": "07729358000107",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "IGSN15",
+  "t": "DEB",
+  "e": "IGUA SANEAMENTO S.A",
+  "s": null,
+  "cnpj": "08159965000133",
+  "em": "5",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "IRBR12",
+  "t": "DEB",
+  "e": "IRB BRASIL RESSEGUROS S/A",
+  "s": null,
+  "cnpj": "33376989000191",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "IRJS14",
+  "t": "DEB",
+  "e": "IGUA RIO DE JANEIRO S.A.",
+  "s": null,
+  "cnpj": "42353180000135",
+  "em": "4",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "IRJS15",
+  "t": "DEB",
+  "e": "IGUA RIO DE JANEIRO S.A.",
+  "s": null,
+  "cnpj": "42353180000135",
+  "em": "5",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "JSMLA5",
+  "t": "DEB",
+  "e": "JSL S.A",
+  "s": null,
+  "cnpj": "52548435000179",
+  "em": "3",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "JSMLB5",
+  "t": "DEB",
+  "e": "JSL S.A",
+  "s": null,
+  "cnpj": "52548435000179",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "KRSA12",
+  "t": "DEB",
+  "e": "KORA SAUDE PARTICIPACOES S.A.",
+  "s": null,
+  "cnpj": "13270520000166",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "LIGH2B",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "21",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGHC0",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "20",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGHE2",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "22",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LVTC22",
+  "t": "DEB",
+  "e": "LIVETECH DA BAHIA INDUSTRIA E COMERCIO S/A",
+  "s": null,
+  "cnpj": "05917486000140",
+  "em": "2",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "MEAL14",
+  "t": "DEB",
+  "e": "INTERNATIONAL MEAL COMPANY ALIMENTACAO S/A",
+  "s": null,
+  "cnpj": "17314329000120",
+  "em": "4",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "MEZ511",
+  "t": "DEB",
+  "e": "MEZ 5 ENERGIA S.A.",
+  "s": null,
+  "cnpj": "40215231000137",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "MOVI18",
+  "t": "DEB",
+  "e": "MOVIDA PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "21314559000166",
+  "em": "8",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "MOVI28",
+  "t": "DEB",
+  "e": "MOVIDA PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "21314559000166",
+  "em": "8",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "MOVI37",
+  "t": "DEB",
+  "e": "MOVIDA PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "21314559000166",
+  "em": "7",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "MTRO12",
+  "t": "DEB",
+  "e": "COMPANHIA DO METROPOLITANO DE SAO PAULO - METRO",
+  "s": null,
+  "cnpj": "62070362000106",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "MVLV16",
+  "t": "DEB",
+  "e": "MOVIDA PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "21314559000166",
+  "em": "17",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "MVLV26",
+  "t": "DEB",
+  "e": "MOVIDA PARTICIPACOES S/A",
+  "s": null,
+  "cnpj": "21314559000166",
+  "em": "17",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "NTEN11",
+  "t": "DEB",
+  "e": "NORTE ENERGIA S/A",
+  "s": null,
+  "cnpj": "12300288000107",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "OMTX14",
+  "t": "DEB",
+  "e": "OMNI TAXI AEREO S.A.",
+  "s": null,
+  "cnpj": "03670763000138",
+  "em": "4",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "ORIG11",
+  "t": "DEB",
+  "e": "ORIGEM ENERGIA S.A.",
+  "s": null,
+  "cnpj": "32021201000161",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "ORIG21",
+  "t": "DEB",
+  "e": "ORIGEM ENERGIA S.A.",
+  "s": null,
+  "cnpj": "32021201000161",
+  "em": "1",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "QUAL18",
+  "t": "DEB",
+  "e": "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+  "s": null,
+  "cnpj": "11992680000193",
+  "em": "8",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "RAIN12",
+  "t": "DEB",
+  "e": "PAU RAINHA GERACAO E COMERCIO DE ENERGIA SPE S/A",
+  "s": null,
+  "cnpj": "34714305000187",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "RAIZ14",
+  "t": "DEB",
+  "e": "RAIZEN S.A.",
+  "s": null,
+  "cnpj": "33453598000123",
+  "em": "4",
+  "se": "UNI",
+  "w": "Raízen"
+ },
+ {
+  "c": "RBRAI7",
+  "t": "DEB",
+  "e": "OPEA SECURITIZADORA S/A",
+  "s": null,
+  "cnpj": "02773542000122",
+  "em": "27",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "RESA14",
+  "t": "DEB",
+  "e": "RAIZEN ENERGIA S/A",
+  "s": null,
+  "cnpj": "08070508000178",
+  "em": "4",
+  "se": "UNI",
+  "w": "Raízen"
+ },
+ {
+  "c": "RESA15",
+  "t": "DEB",
+  "e": "RAIZEN ENERGIA S/A",
+  "s": null,
+  "cnpj": "08070508000178",
+  "em": "5",
+  "se": "UNI",
+  "w": "Raízen"
+ },
+ {
+  "c": "RESA17",
+  "t": "DEB",
+  "e": "RAIZEN ENERGIA S/A",
+  "s": null,
+  "cnpj": "08070508000178",
+  "em": "7",
+  "se": "001",
+  "w": "Raízen"
+ },
+ {
+  "c": "RESA27",
+  "t": "DEB",
+  "e": "RAIZEN ENERGIA S/A",
+  "s": null,
+  "cnpj": "08070508000178",
+  "em": "7",
+  "se": "002",
+  "w": "Raízen"
+ },
+ {
+  "c": "RIS412",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 4 SPE S.A",
+  "s": null,
+  "cnpj": "42644220000106",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "RIS414",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 4 SPE S.A",
+  "s": null,
+  "cnpj": "42644220000106",
+  "em": "4",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "RIS422",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 4 SPE S.A",
+  "s": null,
+  "cnpj": "42644220000106",
+  "em": "2",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "RIS424",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 4 SPE S.A",
+  "s": null,
+  "cnpj": "42644220000106",
+  "em": "4",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "RISP12",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 1 SPE S.A",
+  "s": null,
+  "cnpj": "42310775000103",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "RISP14",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 1 SPE S.A",
+  "s": null,
+  "cnpj": "42310775000103",
+  "em": "4",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "RISP22",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 1 SPE S.A",
+  "s": null,
+  "cnpj": "42310775000103",
+  "em": "2",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "RISP24",
+  "t": "DEB",
+  "e": "AGUAS DO RIO 1 SPE S.A",
+  "s": null,
+  "cnpj": "42310775000103",
+  "em": "4",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "SAUC16",
+  "t": "DEB",
+  "e": "S/A USINA CORURIPE ACUCAR E ALCOOL",
+  "s": null,
+  "cnpj": "12229415000110",
+  "em": "6",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "SEQL13",
+  "t": "DEB",
+  "e": "SEQUOIA LOGISTICA E TRANSPORTES S.A",
+  "s": null,
+  "cnpj": "01599101000193",
+  "em": "3",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "SIMH16",
+  "t": "DEB",
+  "e": "SIMPAR S.A.",
+  "s": null,
+  "cnpj": "07415333000120",
+  "em": "6",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "SLZG12",
+  "t": "DEB",
+  "e": "SANTA LUZ GERACAO E COMERCIO DE ENERGIA SPE S/A.",
+  "s": null,
+  "cnpj": "34745410000183",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "SNRO11",
+  "t": "DEB",
+  "e": "OURO PRETO SERVICOS DE SANEAMENTO S/A-SANEOURO",
+  "s": null,
+  "cnpj": "35198517000111",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "SOLY11",
+  "t": "DEB",
+  "e": "SPE SOL DO LESTE INFRAESTRUTURA S.A.",
+  "s": null,
+  "cnpj": "54218779000145",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "SRQE11",
+  "t": "DEB",
+  "e": "SAO ROQUE ENERGETICA S.A.",
+  "s": null,
+  "cnpj": "15116321000123",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "SUMI17",
+  "t": "DEB",
+  "e": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
+  "s": null,
+  "cnpj": "07714104000107",
+  "em": "7",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "SUMI18",
+  "t": "DEB",
+  "e": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
+  "s": null,
+  "cnpj": "07714104000107",
+  "em": "8",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "SUMI19",
+  "t": "DEB",
+  "e": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
+  "s": null,
+  "cnpj": "07714104000107",
+  "em": "9",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "SUMI37",
+  "t": "DEB",
+  "e": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
+  "s": null,
+  "cnpj": "07714104000107",
+  "em": "7",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "SUMI39",
+  "t": "DEB",
+  "e": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
+  "s": null,
+  "cnpj": "07714104000107",
+  "em": "9",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "TAEB15",
+  "t": "DEB",
+  "e": "TEREOS ACUCAR E ENERGIA BRASIL S.A.",
+  "s": null,
+  "cnpj": "47080619000117",
+  "em": "5",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "TBCR18",
+  "t": "DEB",
+  "e": "TRANSBRASILIANA CONCESSIONARIA DE RODOVIA S.A",
+  "s": null,
+  "cnpj": "09074183000164",
+  "em": "8",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "TEPA11",
+  "t": "DEB",
+  "e": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "s": null,
+  "cnpj": "35764708000101",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "TEPA12",
+  "t": "DEB",
+  "e": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "s": null,
+  "cnpj": "35764708000101",
+  "em": "2",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "TEPA13",
+  "t": "DEB",
+  "e": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "s": null,
+  "cnpj": "35764708000101",
+  "em": "3",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "TEPA22",
+  "t": "DEB",
+  "e": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "s": null,
+  "cnpj": "35764708000101",
+  "em": "2",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "TEPA23",
+  "t": "DEB",
+  "e": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "s": null,
+  "cnpj": "35764708000101",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "TUPW11",
+  "t": "DEB",
+  "e": "TUPI ENERGIAS RENOVAVEIS S.A.",
+  "s": null,
+  "cnpj": "59115685000164",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "TUPW21",
+  "t": "DEB",
+  "e": "TUPI ENERGIAS RENOVAVEIS S.A.",
+  "s": null,
+  "cnpj": "59115685000164",
+  "em": "1",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "TXXI11",
+  "t": "DEB",
+  "e": "TRAVESSIA SECURITIZADORA DE CREDITOS FINANCEIROS XXI S.A.",
+  "s": null,
+  "cnpj": "40004405000112",
+  "em": "1",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "URBS17",
+  "t": "DEB",
+  "e": "URBA DESENVOLVIMENTO URBANO S/A",
+  "s": null,
+  "cnpj": "10571175000102",
+  "em": "7",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "USNA12",
+  "t": "DEB",
+  "e": "USINA SANTA FE S.A.",
+  "s": null,
+  "cnpj": "45281813000135",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "VAMO23",
+  "t": "DEB",
+  "e": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS S.A.",
+  "s": null,
+  "cnpj": "23373000000132",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "VAMO33",
+  "t": "DEB",
+  "e": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS S.A.",
+  "s": null,
+  "cnpj": "23373000000132",
+  "em": "3",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "VAMO34",
+  "t": "DEB",
+  "e": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS S.A.",
+  "s": null,
+  "cnpj": "23373000000132",
+  "em": "4",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "VAMOA1",
+  "t": "DEB",
+  "e": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS S.A.",
+  "s": null,
+  "cnpj": "23373000000132",
+  "em": "11",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "VBMT12",
+  "t": "DEB",
+  "e": "VIA BRASIL MT 246 CONCESSIONARIA DE RODOVIAS S.A.",
+  "s": null,
+  "cnpj": "40952394000100",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "VBRR11",
+  "t": "DEB",
+  "e": "VIA BRASIL BR 163 CONCESSIONARIA DE RODOVIAS S.A.",
+  "s": null,
+  "cnpj": "44067725000172",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "VERO12",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "2",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "VERO13",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "3",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "VERO14",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "4",
+  "se": "001",
+  "w": null
+ },
+ {
+  "c": "VERO23",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "3",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "VERO24",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "4",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "VERO25",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "5",
+  "se": "002",
+  "w": null
+ },
+ {
+  "c": "VERO34",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "4",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "VERO35",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "5",
+  "se": "003",
+  "w": null
+ },
+ {
+  "c": "VERO44",
+  "t": "DEB",
+  "e": "VERO S.A.",
+  "s": null,
+  "cnpj": "31748174000160",
+  "em": "4",
+  "se": "004",
+  "w": null
+ },
+ {
+  "c": "VNTT11",
+  "t": "DEB",
+  "e": "VENTOS DE SAO TITO HOLDING S/A",
+  "s": null,
+  "cnpj": "17875156000119",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "VVEO15",
+  "t": "DEB",
+  "e": "CM HOSPITALAR S.A.",
+  "s": null,
+  "cnpj": "12420164000157",
+  "em": "5",
+  "se": "UNI",
+  "w": "Viveo"
+ },
+ {
+  "c": "VVEO16",
+  "t": "DEB",
+  "e": "CM HOSPITALAR S.A.",
+  "s": null,
+  "cnpj": "12420164000157",
+  "em": "6",
+  "se": "UNI",
+  "w": "Viveo"
+ },
+ {
+  "c": "XPPO11",
+  "t": "DEB",
+  "e": "XP PORTOS PARTICIPACOES SPE S.A.",
+  "s": null,
+  "cnpj": "51577236000126",
+  "em": "1",
+  "se": "UNI",
+  "w": null
+ },
+ {
+  "c": "AERI11",
+  "t": "DEB",
+  "e": "AERIS INDUSTRIA E COMERCIO DE EQUIPAMENTOS PARA GERACAO DE ENERGIA S.A.",
+  "s": null,
+  "cnpj": "12528708000107",
+  "em": "1",
+  "se": "UNI",
+  "w": "Aeris"
+ },
+ {
+  "c": "AERI12",
+  "t": "DEB",
+  "e": "AERIS INDUSTRIA E COMERCIO DE EQUIPAMENTOS PARA GERACAO DE ENERGIA S.A.",
+  "s": null,
+  "cnpj": "12528708000107",
+  "em": "2",
+  "se": "UNI",
+  "w": "Aeris"
+ },
+ {
+  "c": "AGXY13",
+  "t": "DEB",
+  "e": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "21240146000184",
+  "em": "3",
+  "se": "001",
+  "w": "AgroGalaxy"
+ },
+ {
+  "c": "AGXY14",
+  "t": "DEB",
+  "e": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "21240146000184",
+  "em": "4",
+  "se": "UNI",
+  "w": "AgroGalaxy"
+ },
+ {
+  "c": "AGXY23",
+  "t": "DEB",
+  "e": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "21240146000184",
+  "em": "3",
+  "se": "002",
+  "w": "AgroGalaxy"
+ },
+ {
+  "c": "AGXY33",
+  "t": "DEB",
+  "e": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "21240146000184",
+  "em": "3",
+  "se": "003",
+  "w": "AgroGalaxy"
+ },
+ {
+  "c": "AGXY43",
+  "t": "DEB",
+  "e": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "21240146000184",
+  "em": "3",
+  "se": "004",
+  "w": "AgroGalaxy"
+ },
+ {
+  "c": "AMBP15",
+  "t": "DEB",
+  "e": "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A",
+  "s": null,
+  "cnpj": "12648266000124",
+  "em": "5",
+  "se": "UNI",
+  "w": "Ambipar"
+ },
+ {
+  "c": "AMBP16",
+  "t": "DEB",
+  "e": "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A",
+  "s": null,
+  "cnpj": "12648266000124",
+  "em": "6",
+  "se": "UNI",
+  "w": "Ambipar"
+ },
+ {
+  "c": "AMERE2",
+  "t": "DEB",
+  "e": "AMERICANAS S.A. - EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "00776574000660",
+  "em": "22",
+  "se": "001",
+  "w": "Americanas"
+ },
+ {
+  "c": "AMERF2",
+  "t": "DEB",
+  "e": "AMERICANAS S.A. - EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "00776574000660",
+  "em": "22",
+  "se": "002",
+  "w": "Americanas"
+ },
+ {
+  "c": "AMERG2",
+  "t": "DEB",
+  "e": "AMERICANAS S.A. - EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "00776574000660",
+  "em": "22",
+  "se": "003",
+  "w": "Americanas"
+ },
+ {
+  "c": "AZLAA3",
+  "t": "DEB",
+  "e": "AZUL LINHAS AEREAS BRASILEIRAS S.A.",
+  "s": null,
+  "cnpj": "09296295000160",
+  "em": "13",
+  "se": "UNI",
+  "w": "Azul"
+ },
+ {
+  "c": "AZLAB3",
+  "t": "DEB",
+  "e": "AZUL LINHAS AEREAS BRASILEIRAS S.A.",
+  "s": null,
+  "cnpj": "09296295000160",
+  "em": "13",
+  "se": "002",
+  "w": "Azul"
+ },
+ {
+  "c": "BHIAA0",
+  "t": "DEB",
+  "e": "GRUPO CASAS BAHIA S.A",
+  "s": null,
+  "cnpj": "33041260065290",
+  "em": "10",
+  "se": "001",
+  "w": "Casas Bahia"
+ },
+ {
+  "c": "BHIAA1",
+  "t": "DEB",
+  "e": "GRUPO CASAS BAHIA S.A",
+  "s": null,
+  "cnpj": "33041260065290",
+  "em": "11",
+  "se": "001",
+  "w": "Casas Bahia"
+ },
+ {
+  "c": "BHIAB0",
+  "t": "DEB",
+  "e": "GRUPO CASAS BAHIA S.A",
+  "s": null,
+  "cnpj": "33041260065290",
+  "em": "10",
+  "se": "002",
+  "w": "Casas Bahia"
+ },
+ {
+  "c": "BHIAB1",
+  "t": "DEB",
+  "e": "GRUPO CASAS BAHIA S.A",
+  "s": null,
+  "cnpj": "33041260065290",
+  "em": "11",
+  "se": "002",
+  "w": "Casas Bahia"
+ },
+ {
+  "c": "BHIAC0",
+  "t": "DEB",
+  "e": "GRUPO CASAS BAHIA S.A",
+  "s": null,
+  "cnpj": "33041260065290",
+  "em": "10",
+  "se": "003",
+  "w": "Casas Bahia"
+ },
+ {
+  "c": "BHIAC1",
+  "t": "DEB",
+  "e": "GRUPO CASAS BAHIA S.A",
+  "s": null,
+  "cnpj": "33041260065290",
+  "em": "11",
+  "se": "003",
+  "w": "Casas Bahia"
+ },
+ {
+  "c": "BRKMA6",
+  "t": "DEB",
+  "e": "BRASKEM S/A",
+  "s": null,
+  "cnpj": "42150391000170",
+  "em": "16",
+  "se": "001",
+  "w": "Braskem"
+ },
+ {
+  "c": "CCCI13",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "001",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI23",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "002",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI33",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "003",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI43",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "004",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI53",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "005",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI63",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "006",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI73",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "007",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI83",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "008",
+  "w": "InterCement"
+ },
+ {
+  "c": "CCCI93",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "3",
+  "se": "009",
+  "w": "InterCement"
+ },
+ {
+  "c": "CRA019000GT",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA02300JR6",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CRA02300JR7",
+  "t": "CRA",
+  "e": "RAÍZEN ENERGIA S.A.",
+  "s": "OPEA SECURITIZADORA S/A",
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Raízen"
+ },
+ {
+  "c": "CREM17",
+  "t": "DEB",
+  "e": "CREMER S/A",
+  "s": null,
+  "cnpj": "82641325000118",
+  "em": "7",
+  "se": "UNI",
+  "w": "Viveo"
+ },
+ {
+  "c": "EESG13",
+  "t": "DEB",
+  "e": "ENVIRONMENTAL ESG PARTICIPACOES S.A.",
+  "s": null,
+  "cnpj": "09527023000123",
+  "em": "3",
+  "se": "UNI",
+  "w": "Ambipar"
+ },
+ {
+  "c": "ELFA12",
+  "t": "DEB",
+  "e": "ELFA MEDICAMENTOS SA",
+  "s": null,
+  "cnpj": "09053134000145",
+  "em": "2",
+  "se": "UNI",
+  "w": "Elfa"
+ },
+ {
+  "c": "ICBR14",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "4",
+  "se": "001",
+  "w": "InterCement"
+ },
+ {
+  "c": "ICBR24",
+  "t": "DEB",
+  "e": "INTERCEMENT BRASIL S.A.",
+  "s": null,
+  "cnpj": "62258884000136",
+  "em": "4",
+  "se": "002",
+  "w": "InterCement"
+ },
+ {
+  "c": "LGTE17",
+  "t": "DEB",
+  "e": "LIGHT ENERGIA S.A",
+  "s": null,
+  "cnpj": "01917818000136",
+  "em": "7",
+  "se": "001",
+  "w": "Light"
+ },
+ {
+  "c": "LGTE27",
+  "t": "DEB",
+  "e": "LIGHT ENERGIA S.A",
+  "s": null,
+  "cnpj": "01917818000136",
+  "em": "7",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGH1B",
+  "t": "DEB",
+  "e": "LIGHT SERVIÇOS DE ELETRICIDADE S/A (*) (**)",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHA5",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHA9",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHB0",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHB4",
+  "t": "DEB",
+  "e": "LIGHT SERVIÇOS DE ELETRICIDADE S/A (*) (**)",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHB6",
+  "t": "DEB",
+  "e": "LIGHT SERVIÇOS DE ELETRICIDADE S/A (*) (**)",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHB7",
+  "t": "DEB",
+  "e": "LIGHT SERVIÇOS DE ELETRICIDADE S/A (*) (**)",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHB9",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "19",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGHC3",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHC4",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "24",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGHC5",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "15",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGHC6",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHC7",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "17",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "LIGHD2",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LIGHD3",
+  "t": "DEB",
+  "e": "LIGHT SERVIÇOS DE ELETRICIDADE S/A (*) (**)",
+  "s": null,
+  "cnpj": null,
+  "em": null,
+  "se": null,
+  "w": "Light"
+ },
+ {
+  "c": "LSVE39",
+  "t": "DEB",
+  "e": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "s": null,
+  "cnpj": "60444437000146",
+  "em": "9",
+  "se": "002",
+  "w": "Light"
+ },
+ {
+  "c": "OIBRA2",
+  "t": "DEB",
+  "e": "OI S/A – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "76535764000143",
+  "em": "12",
+  "se": "UNI",
+  "w": "Oi"
+ },
+ {
+  "c": "ONCO19",
+  "t": "DEB",
+  "e": "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+  "s": null,
+  "cnpj": "12104241000402",
+  "em": "9",
+  "se": "001",
+  "w": "Oncoclínicas"
+ },
+ {
+  "c": "ONCO29",
+  "t": "DEB",
+  "e": "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+  "s": null,
+  "cnpj": "12104241000402",
+  "em": "9",
+  "se": "002",
+  "w": "Oncoclínicas"
+ },
+ {
+  "c": "ONCOA1",
+  "t": "DEB",
+  "e": "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+  "s": null,
+  "cnpj": "12104241000402",
+  "em": "11",
+  "se": "UNI",
+  "w": "Oncoclínicas"
+ },
+ {
+  "c": "ONCOA2",
+  "t": "DEB",
+  "e": "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+  "s": null,
+  "cnpj": "12104241000402",
+  "em": "12",
+  "se": "UNI",
+  "w": "Oncoclínicas"
+ },
+ {
+  "c": "PCARD0",
+  "t": "DEB",
+  "e": "COMPANHIA BRASILEIRA DE DISTRIBUICAO",
+  "s": null,
+  "cnpj": "47508411000156",
+  "em": "20",
+  "se": "003",
+  "w": "GPA"
+ },
+ {
+  "c": "RAIZ13",
+  "t": "DEB",
+  "e": "RAIZEN S.A.",
+  "s": null,
+  "cnpj": "33453598000123",
+  "em": "3",
+  "se": "001",
+  "w": "Raízen"
+ },
+ {
+  "c": "RAIZ23",
+  "t": "DEB",
+  "e": "RAIZEN S.A.",
+  "s": null,
+  "cnpj": "33453598000123",
+  "em": "3",
+  "se": "002",
+  "w": "Raízen"
+ },
+ {
+  "c": "TLNL16",
+  "t": "DEB",
+  "e": "OI S/A – EM RECUPERACAO JUDICIAL",
+  "s": null,
+  "cnpj": "76535764000143",
+  "em": "6",
+  "se": "UNI",
+  "w": "Oi"
+ },
+ {
+  "c": "VRGL17",
+  "t": "DEB",
+  "e": "GOL LINHAS AEREAS S/A",
+  "s": null,
+  "cnpj": "07575651000159",
+  "em": "7",
+  "se": "001",
+  "w": "Gol"
+ },
+ {
+  "c": "VRGL18",
+  "t": "DEB",
+  "e": "GOL LINHAS AEREAS S/A",
+  "s": null,
+  "cnpj": "07575651000159",
+  "em": "8",
+  "se": "UNI",
+  "w": "Gol"
+ },
+ {
+  "c": "VRGL27",
+  "t": "DEB",
+  "e": "GOL LINHAS AEREAS S/A",
+  "s": null,
+  "cnpj": "07575651000159",
+  "em": "7",
+  "se": "002",
+  "w": "Gol"
+ },
+ {
+  "c": "VRGL37",
+  "t": "DEB",
+  "e": "GOL LINHAS AEREAS S/A",
+  "s": null,
+  "cnpj": "07575651000159",
+  "em": "7",
+  "se": "003",
+  "w": "Gol"
+ },
+ {
+  "c": "VVEO17",
+  "t": "DEB",
+  "e": "CM HOSPITALAR S.A.",
+  "s": null,
+  "cnpj": "12420164000157",
+  "em": "7",
+  "se": "UNI",
+  "w": "Viveo"
+ }
+]

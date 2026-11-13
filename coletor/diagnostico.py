@@ -1,12 +1,11 @@
-"""Diagnóstico: chave da API + fontes de escrituras (CVM IPE, ANBIMA Data, SND)."""
+"""Diagnóstico 2: cobertura da CVM para a lista-alvo, download de PDF, segredos, token ANBIMA Data."""
 import io, json, os, re, zipfile, collections, urllib.request, urllib.error
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 
-def get(u, data=None, headers=None, timeout=90):
-    h = {"User-Agent": UA, "Accept": "*/*"}
-    h.update(headers or {})
+def get(u, data=None, headers=None, timeout=120):
+    h = {"User-Agent": UA, "Accept": "*/*"}; h.update(headers or {})
     try:
         r = urllib.request.urlopen(urllib.request.Request(u, data=data, headers=h), timeout=timeout)
         return r.status, r.headers.get("Content-Type"), r.read()
@@ -16,52 +15,47 @@ def get(u, data=None, headers=None, timeout=90):
         return None, None, repr(e).encode()
 
 
-print("=== 1. CHAVE ANTHROPIC ===")
-k = os.environ.get("ANTHROPIC_API_KEY", "")
-print("presente:", bool(k), "| tamanho:", len(k), "| prefixo ok:", k.startswith("sk-ant-"))
-if k:
-    body = json.dumps({"model": "claude-haiku-5-5", "max_tokens": 5,
-                       "messages": [{"role": "user", "content": "ok"}]}).encode()
-    st, ct, b = get("https://api.anthropic.com/v1/messages", body,
-                    {"x-api-key": k, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-    print("status:", st, b[:300])
+print("=== segredos ===")
+for n in ("ANTHROPIC_API_KEY", "ANTHROPIC_KEY", "CLAUDE_API_KEY", "API_KEY", "CLAUDE_KEY"):
+    v = os.environ.get(n, ""); print(n, bool(v), len(v), v.startswith("sk-ant-"))
 
-print("\n=== 2. CVM IPE (dados abertos) ===")
-st, ct, b = get("https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_2026.zip", timeout=180)
-print("status", st, len(b))
-if st == 200:
-    z = zipfile.ZipFile(io.BytesIO(b))
-    nome = z.namelist()[0]
-    txt = z.read(nome).decode("latin-1").splitlines()
-    cab = txt[0].split(";"); print(cab)
-    rows = [dict(zip(cab, l.split(";"))) for l in txt[1:]]
-    cat = collections.Counter((r.get("Categoria"), r.get("Tipo")) for r in rows)
-    for (c, t), n in cat.most_common(200):
-        if re.search(r"escritura|deb[eê]nt|securitiza|termo|assembl|aditamento|plano", f"{c} {t}", re.I):
-            print(n, "|", c, "|", t)
-    for emp in ("CM HOSPITALAR", "HAPVIDA", "ELFA", "AERIS", "OPEA", "VIRGO"):
-        sel = [r for r in rows if emp in r.get("Nome_Companhia", "").upper()]
-        print(f"\n-- {emp}: {len(sel)} docs")
-        for r in sel[:400]:
-            if re.search(r"escritura|deb[eê]nt|termo|assembl|aditamento|plano", " ".join(r.values()), re.I):
-                print("  ", r.get("Data_Entrega"), "|", r.get("Categoria"), "|", r.get("Tipo"), "|",
-                      r.get("Especie"), "|", (r.get("Assunto") or "")[:90], "|", r.get("Link_Download"))
+print("\n=== ANBIMA Data env-config ===")
+st, ct, b = get("https://data.anbima.com.br/titulos-privados/env-config.js")
+print(st, b[:1500].decode("utf-8", "replace"))
 
-print("\n=== 3. ANBIMA DATA ===")
-for u in ["https://data.anbima.com.br/debentures/VVEO15/documentos",
-          "https://data-api.prd.anbima.com.br/web-bff/v1/debentures/VVEO15/documentos",
-          "https://data-api.prd.anbima.com.br/web-bff/v1/debentures/VVEO15",
-          "https://data-api.prd.anbima.com.br/web-bff/v1/documentos?codigo=VVEO15",
-          "https://data-api.prd.anbima.com.br/web-bff/v1/certificado-recebiveis/CRA022008NU/documentos"]:
-    st, ct, b = get(u, headers={"Origin": "https://data.anbima.com.br", "Referer": "https://data.anbima.com.br/"})
-    print(st, ct, u, "\n   ", b[:500])
+alvo = json.load(open("coletor/escrituras_alvo.json"))
+dig = lambda s: re.sub(r"\D", "", s or "")
+cnpjs = {dig(a["cnpj"]) for a in alvo if a.get("cnpj")}
+print("\n=== CVM IPE 2010-2026: cobertura ===", len(cnpjs), "cnpjs-alvo")
+docs = collections.defaultdict(list)
+secs = collections.Counter()
+for ano in range(2010, 2027):
+    st, ct, b = get(f"https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip", timeout=240)
+    if st != 200:
+        print(ano, st); continue
+    z = zipfile.ZipFile(io.BytesIO(b)); txt = z.read(z.namelist()[0]).decode("latin-1").splitlines()
+    cab = txt[0].split(";")
+    for l in txt[1:]:
+        r = dict(zip(cab, l.split(";")))
+        cat = r.get("Categoria", "")
+        if re.search(r"Escritura|Termo de Securitiza|Recupera|Nota Comercial", cat) or (r.get("Tipo") == "AGDEB" and r.get("Especie") == "Ata"):
+            c = dig(r.get("CNPJ_Companhia"))
+            if c in cnpjs:
+                docs[c].append((r["Data_Entrega"], cat, r.get("Tipo"), r.get("Assunto", "")[:80], r["Link_Download"]))
+            if "Securitiza" in cat:
+                secs[r.get("Nome_Companhia")] += 1
+cob = collections.Counter()
+for a in alvo:
+    c = dig(a.get("cnpj"))
+    esc = [d for d in docs.get(c, []) if "Escritura" in d[1]]
+    cob["com escritura na CVM" if esc else ("cnpj sem escritura" if c else "sem cnpj")] += 1
+print(cob)
+print("empresas-alvo com escrituras:", sum(1 for c in cnpjs if any("Escritura" in d[1] for d in docs.get(c, []))), "de", len(cnpjs))
+print("securitizadoras com termos na CVM:", secs.most_common(15))
+falta = sorted({a["e"] for a in alvo if a.get("cnpj") and not any("Escritura" in d[1] for d in docs.get(dig(a["cnpj"]), []))})
+print("sem escritura na CVM (amostra):", falta[:60])
 
-print("\n=== 4. SND ===")
-for u in ["https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/caracteristicas_d.asp?tip_deb=publicas&op_exc=False&ativo=VVEO15",
-          "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/documentos_r.asp?ativo=VVEO15"]:
-    st, ct, b = get(u)
-    t = b.decode("cp1252", errors="replace")
-    print(st, ct, len(b), u)
-    for m in re.findall(r'href="([^"]+)"[^>]*>([^<]{0,80})', t):
-        if re.search(r"pdf|escritura|documento|prospecto|aditamento", " ".join(m), re.I):
-            print("   ", m)
+print("\n=== download de um PDF do RAD ===")
+u = "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555405&numSequencia=1080111&numVersao=1"
+st, ct, b = get(u)
+print(st, ct, len(b), b[:8])
