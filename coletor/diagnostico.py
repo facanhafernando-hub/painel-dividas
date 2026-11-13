@@ -24,6 +24,8 @@ while d.weekday() >= 5:
     d -= timedelta(days=1)
 
 print("=" * 80, "\nSND PU histórico (curva)")
+def cells(r):
+    return [H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", c))).strip() for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", r, re.S | re.I)]
 ds = urllib.request.quote(d.strftime("%d/%m/%Y"))
 base = "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/"
 for u in (base + f"puhistorico_r.asp?op_exc=False&ativo=RAIZ15&dt_ini={ds}&dt_fim={ds}&Submit.x=1",
