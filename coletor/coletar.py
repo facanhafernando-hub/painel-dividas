@@ -1500,6 +1500,23 @@ def construir_catalogo() -> None:
                 unif += 1
     if unif:
         log(f"  títulos unificados pelo CNPJ: {unif}")
+    # grupos econômicos (coletor/grupos.json): títulos de controladas aparecem na página da controladora
+    try:
+        grupos = {k: v for k, v in json.loads((RAIZ / "coletor" / "grupos.json").read_text(encoding="utf-8")).items()
+                  if not k.startswith("_")}
+    except Exception:
+        grupos = {}
+    if grupos:
+        nome_k = {}
+        for it in itens:
+            nome_k.setdefault(it["k"], (it["e"], it.get("n")))
+        for it in itens:
+            g = grupos.get(it.get("k"))
+            if g and g["grupo"] in nome_k and g["grupo"] != it["k"]:
+                it["leg"] = it.get("n") or it["e"]          # emissora/devedora legal
+                it["legr"] = g.get("relacao")
+                it["k"] = g["grupo"]
+                it["n"] = nome_k[g["grupo"]][1] or it.get("n")
     try:
         lista = json.loads((RAIZ / "coletor" / "lista_acompanhamento.json").read_text(encoding="utf-8"))["empresas"]
     except Exception:

@@ -111,7 +111,47 @@ def emissoes_citadas(txt):
     return ns
 
 
+COD_RX = re.compile(r"\b([A-Z]{4})\s?-?\s?([0-9][0-9A-Z]|[A-Z][0-9])\b")
+
+
 def documentos(emissoes, linhas):
+    # pré-passo: documentos que citam o código do título no assunto (ex.: "BCBF16 - AGD ATA"), em qualquer CNPJ.
+    # Se o CNPJ desses documentos for outro (emissão migrada), ele vira o "CNPJ documental" da emissão.
+    cod_em = {i["c"].upper(): e for e, itens in emissoes.items() for i in itens}
+    cnpj_doc = {}
+    for r in linhas:
+        for m in COD_RX.finditer(sem_acento(r.get("Assunto", "")).upper()):
+            e = cod_em.get(m.group(1) + m.group(2))
+            if e:
+                c = dig(r.get("CNPJ_Companhia"))
+                if c != e[0]:
+                    cnpj_doc[e] = c
+    alvo = {}                       # (cnpj documental, emissão) -> emissão-alvo
+    for e in emissoes:
+        alvo[(cnpj_doc.get(e, e[0]), e[1])] = e
+    emissoes_doc = {k: emissoes[v] for k, v in alvo.items()}
+    por_doc = _documentos(emissoes_doc, linhas)
+    out = collections.defaultdict(list)
+    for k, ds in por_doc.items():
+        out[alvo[k]] = ds
+    # documentos com o código no assunto entram sempre
+    for r in linhas:
+        for m in COD_RX.finditer(sem_acento(r.get("Assunto", "")).upper()):
+            e = cod_em.get(m.group(1) + m.group(2))
+            if e and not any(d["protocolo"] == r.get("Protocolo_Entrega") for d in out[e]):
+                cat = r.get("Categoria", "")
+                tipo = ("escritura" if cat in CATS_ESCRITURA else "ata_agd" if r.get("Especie") == "Ata"
+                        else "proposta_agd" if r.get("Tipo") == "AGDEB" else "comunicado")
+                out[e].append({"data": r["Data_Entrega"][:10], "tipo": tipo, "assunto": r.get("Assunto", "")[:300],
+                               "protocolo": r.get("Protocolo_Entrega"), "versao": r.get("Versao"), "url": r["Link_Download"]})
+    for e in out:
+        out[e].sort(key=lambda d: d["data"])
+    if cnpj_doc:
+        log(f"  emissões com documentos em outro CNPJ (migradas): {len(cnpj_doc)}")
+    return out, cnpj_doc
+
+
+def _documentos(emissoes, linhas):
     cnpjs = {c for c, _ in emissoes}
     por = collections.defaultdict(list)
     for r in linhas:
@@ -190,8 +230,33 @@ def texto_documento(doc):
         partes.append(out.stdout.decode("utf-8", "replace"))
         tmp.unlink(missing_ok=True)
     t = "\n".join(partes)
+    if len(t.strip()) < 3000 and pdfs and OCR:      # PDF escaneado: OCR das primeiras páginas
+        t = ocr(pdfs[0], doc["protocolo"])
     p.write_text(t)
     return t
+
+
+OCR = os.environ.get("OCR", "1") == "1"
+
+
+def ocr(pdf, nome, max_pag=45):
+    import glob, shutil
+    d = CACHE / f"ocr_{nome}"
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "x.pdf").write_bytes(pdf)
+    try:
+        subprocess.run(["pdftoppm", "-r", "200", "-gray", "-png", "-l", str(max_pag), str(d / "x.pdf"), str(d / "p")],
+                       check=True, timeout=600)
+        out = []
+        for n, pg in enumerate(sorted(glob.glob(str(d / "p-*.png"))), 1):
+            r = subprocess.run(["tesseract", pg, "-", "-l", "por", "--psm", "6"], capture_output=True, timeout=180)
+            out.append(f"\n[página {n}]\n" + r.stdout.decode("utf-8", "replace"))
+        return "".join(out)
+    except Exception as ex:
+        log("  OCR falhou", nome, ex)
+        return ""
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
 
 
 FORTE = r"amortiza|cronograma|vencimento|remunera|car[eê]ncia|incorpora|capitaliza|data[s]? de pagamento|repactua|spread|sobretaxa|juros remunerat|anexo"
@@ -436,6 +501,161 @@ def classificar(forcar=False):
     return gasto
 
 
+
+# ---------------------------------------------------------------- garantias
+GAR_FORTE = (r"esp[eé]cie|garantia|fian[cç]a|fiador|avalista|\baval\b|aliena[cç][aã]o fiduci|cess[aã]o fiduci|hipoteca|penhor|"
+             r"fundo de reserva|fundo de despesa|coobriga|fidejuss|conta vinculada|obriga[cç][oõ]es garantidas|subordina|"
+             r"compartilhamento de garantia|libera[cç][aã]o da|refor[cç]o de garantia|recomposi[cç][aã]o")
+LIMITE_GAR = {"escritura": 40000, "ata_agd": 20000, "proposta_agd": 20000, "comunicado": 6000, "plano_rj": 30000}
+
+
+def recortar_garantias(t, limite):
+    linhas = [l.strip() for l in t.splitlines()]
+    freq = collections.Counter(l for l in linhas if len(l) > 20)
+    n = len(linhas)
+    manter = [False] * n
+    for i, l in enumerate(linhas):
+        if re.search(GAR_FORTE, l, re.I) and freq[l] <= 3:          # ignora cabeçalho repetido em toda página
+            for j in range(max(0, i - 2), min(n, i + 12)):
+                manter[j] = True
+    out, ult = [], -2
+    for i, l in enumerate(linhas):
+        if manter[i] and l and freq[l] <= 3:
+            if i > ult + 1:
+                out.append("[...]")
+            out.append(re.sub(r"\s{3,}", "   ", l))
+            ult = i
+    s_ = "\n".join(out)
+    return s_ if len(s_) <= limite else s_[:int(limite * 0.7)] + "\n[... cortado ...]\n" + s_[-int(limite * 0.3):]
+
+
+GARANTIAS = """Você é analista de crédito e lê documentos de debêntures brasileiras (escritura, aditamentos, atas e propostas de AGD, comunicados e plano de recuperação) para identificar as GARANTIAS VIGENTES de cada série.
+
+Regras:
+- Documentos em ordem cronológica; os posteriores prevalecem (garantias podem ser incluídas, reforçadas, compartilhadas ou liberadas em aditamentos e AGDs).
+- Trechos recortados automaticamente: "[...]" indica texto omitido. Alguns trechos vêm de OCR e podem ter erros de digitação.
+- Extraia somente o que está escrito. Não invente. Se não for possível determinar, diga em "lacunas".
+- Espécie: quirografária, com garantia real, com garantia flutuante, subordinada; registre também "garantia adicional fidejussória" quando houver.
+- Para cada garantia: tipo (fiança, aval, alienação fiduciária, cessão fiduciária, hipoteca, penhor, fundo de reserva, conta vinculada, coobrigação, outra), quem presta (fiador/avalista, com o nome completo) ou o objeto (ex.: ações da SPE X, recebíveis do contrato Y, imóvel Z), condições relevantes (solidária, renúncia ao benefício de ordem, limite de valor, percentual mínimo de cobertura, compartilhada com outros credores, sob condição suspensiva) e situação (vigente, liberada, proposta, desconhecida).
+- Se uma emissão migrou de emissora (cessão para outra empresa do grupo), diga quem é a emissora atual e se a garantia foi mantida.
+
+Responda APENAS com JSON válido:
+{"series": [{"codigo": "XXXX11", "emissao": 1, "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [{"tipo": "fiança", "prestador_ou_objeto": "Nome S.A. (CNPJ se houver)", "condicoes": "solidária; principal pagadora; renúncia ao benefício de ordem", "situacao": "vigente", "fonte": "documento e cláusula"}],
+   "resumo": "até 110 caracteres, ex.: Fiança da Notre Dame Intermédica Saúde (solidária)"}],
+ "emissora_atual": "nome ou null", "lacunas": "ou null"}"""
+
+
+def ler_garantias(a, idx, idx_p):
+    emissoes = lista_alvo()
+    if a.codigos:
+        cods = {c.strip().upper() for c in a.codigos.split(",")}
+        emissoes = {k: v for k, v in emissoes.items() if any(i["c"] in cods for i in v)}
+    linhas = ipe(range(2010, date.today().year + 1))
+    docs, cnpj_doc = documentos(emissoes, linhas)
+    sel_por = {e: selecionar(docs.get(e, [])) for e in emissoes}
+    gi = idx.setdefault("garantias", {})
+    fila = []
+    for e, itens in emissoes.items():
+        sel = sel_por[e]
+        ass = hashlib.sha1(json.dumps([d["protocolo"] + "_" + str(d["versao"]) for d in sel]).encode()).hexdigest()[:12]
+        if not sel:
+            gi[chave_emissao(e)] = {"status": "sem_documentos_cvm"}
+            continue
+        if not a.forcar and gi.get(chave_emissao(e), {}).get("assinatura") == ass:
+            continue
+        fila.append((e, itens, sel, ass))
+    from concurrent.futures import ThreadPoolExecutor
+    todos = {d["protocolo"]: d for _, _, sel, _ in fila for d in sel}
+    log(f"garantias: {len(fila)} emissões, {len(todos)} documentos (OCR quando escaneado)")
+    def baixa(d):
+        try:
+            return d["protocolo"], recortar_garantias(texto_documento(d), LIMITE_GAR.get(d["tipo"], 20000))
+        except Exception as ex:
+            log("  falhou", d["protocolo"], str(ex)[:100]); return d["protocolo"], ""
+    with ThreadPoolExecutor(6) as ex:
+        txt = dict(ex.map(baixa, todos.values()))
+    # agrupa por CNPJ documental
+    por = collections.defaultdict(list)
+    for x in fila:
+        por[cnpj_doc.get(x[0], x[0][0])].append(x)
+    pedidos = []
+    for cj, xs in por.items():
+        grupo, vistos = [], set()
+        for x in xs:
+            novos = {d["protocolo"] for d in x[2]} - vistos
+            if grupo and sum(len(txt.get(p_, "")) for p_ in vistos | novos) > 220000:
+                pedidos.append(grupo); grupo, vistos = [], set()
+                novos = {d["protocolo"] for d in x[2]}
+            grupo.append(x); vistos |= novos
+        if grupo:
+            pedidos.append(grupo)
+    corpo = []
+    for g in pedidos:
+        sel = sorted({d["protocolo"]: d for x in g for d in x[2]}.values(), key=lambda d: d["data"])
+        cab = "Séries:\n" + "\n".join(f"- {x[0][1]}ª emissão de {x[1][0]['e']}: " + ", ".join(i["c"] for i in x[1]) for x in g)
+        docs_txt = "\n\n".join(f"===== DOCUMENTO {n + 1}: {d['tipo']} entregue em {d['data']} | {d['assunto'][:160]} =====\n{txt.get(d['protocolo'], '')}"
+                               for n, d in enumerate(sel) if txt.get(d["protocolo"]))
+        if len(docs_txt) < 300:
+            continue
+        k = "g_" + hashlib.sha1(cab.encode()).hexdigest()[:10]
+        corpo.append((k, g, sel, cab + "\n\n" + docs_txt))
+    modo = "lote" if a.lote else "direto"
+    est = sum(len(p_[3]) / 2.6 for p_ in corpo)
+    est_usd = (est * PRECO[modo][0] + len(corpo) * 2500 * PRECO[modo][1]) / 1e6
+    log(f"pedidos: {len(corpo)} | ~{est / 1e6:.2f} MTok | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
+    if idx["gasto_usd"] + est_usd > a.limite_usd:
+        sys.exit(f"ABORTADO: passaria do teto de US$ {a.limite_usd}")
+    prm = lambda t: {"model": MODELO, "max_tokens": 6000, "system": GARANTIAS, "messages": [{"role": "user", "content": t}]}
+    res = {}
+    if modo == "direto":
+        for k, g, sel, t in corpo:
+            r = json.loads(api("/v1/messages", prm(t)))
+            res[k] = ("".join(b.get("text", "") for b in r["content"]), r.get("usage", {}))
+    else:
+        b = json.loads(api("/v1/messages/batches", {"requests": [{"custom_id": k, "params": prm(t)} for k, _, _, t in corpo]}))
+        log("lote:", b["id"])
+        t0 = time.time()
+        while True:
+            st = json.loads(api(f"/v1/messages/batches/{b['id']}"))
+            if st["processing_status"] == "ended":
+                break
+            if time.time() - t0 > 2.5 * 3600:
+                sys.exit("lote não terminou")
+            time.sleep(45)
+        for l in api(f"/v1/messages/batches/{b['id']}/results").decode().splitlines():
+            r = json.loads(l)
+            if r["result"]["type"] == "succeeded":
+                m = r["result"]["message"]
+                res[r["custom_id"]] = ("".join(x.get("text", "") for x in m["content"]), m.get("usage", {}))
+    for k, g, sel, t in corpo:
+        if k not in res:
+            continue
+        texto, uso = res[k]
+        idx["gasto_usd"] = round(idx["gasto_usd"] + custo(uso, modo), 4)
+        try:
+            j = ler_json(texto) or {}
+        except Exception:
+            j = {}
+        for e, itens, sel_e, ass in g:
+            cods = {i["c"] for i in itens}
+            ser = {x["codigo"]: x for x in j.get("series", []) if x.get("codigo") in cods}
+            p_ = SAIDA / f"{chave_emissao(e)}.json"
+            f = json.load(open(p_)) if p_.exists() else {"series": [], "meta": {"emissora": itens[0]["e"], "cnpj": e[0], "emissao": e[1]}}
+            f["garantias"] = ser
+            f["garantias_meta"] = {"lido_em": date.today().isoformat(), "modelo": MODELO, "documentos": sel_e,
+                                   "cnpj_documental": cnpj_doc.get(e), "emissora_atual": j.get("emissora_atual"),
+                                   "lacunas": j.get("lacunas")}
+            if e in cnpj_doc:            # emissão migrada: a leitura do cronograma usou documentos de outro CNPJ
+                f.setdefault("meta", {})["documentos"] = sel_e
+                idx["emissoes"].pop(chave_emissao(e), None)
+            json.dump(f, open(p_, "w"), ensure_ascii=False, indent=1)
+            gi[chave_emissao(e)] = {"status": "ok" if ser else "sem_series", "assinatura": ass, "codigos": sorted(cods)}
+        log(f"  {k}: {sum(1 for x in j.get('series', []))} séries")
+    json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
+    log(f"gasto acumulado: US$ {idx['gasto_usd']:.2f}")
+
+
 # ---------------------------------------------------------------- orquestração
 def chave_emissao(e):
     return f"{e[0]}_{e[1]}"
@@ -449,6 +669,7 @@ def main():
     ap.add_argument("--limite-usd", type=float, default=20.0)
     ap.add_argument("--forcar", action="store_true")
     ap.add_argument("--classificar", action="store_true", help="só classifica as situações já lidas")
+    ap.add_argument("--garantias", action="store_true", help="lê as garantias de cada série")
     a = ap.parse_args()
     if not CHAVE:
         sys.exit("ANTHROPIC_API_KEY ausente")
@@ -456,6 +677,9 @@ def main():
     idx_p = SAIDA / "_index.json"
     idx = json.load(open(idx_p)) if idx_p.exists() else {"emissoes": {}, "gasto_usd": 0.0}
 
+    if a.garantias:
+        ler_garantias(a, idx, idx_p)
+        return
     if a.classificar:
         idx["gasto_usd"] = round(idx["gasto_usd"] + classificar(a.forcar), 4)
         json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
@@ -472,7 +696,7 @@ def main():
         emissoes = {k: v for k, v in emissoes.items() if any(i["c"] in cods for i in v)}
     log("emissões-alvo:", len(emissoes))
     linhas = ipe(range(2010, date.today().year + 1))
-    docs = documentos(emissoes, linhas)
+    docs, _ = documentos(emissoes, linhas)
 
     # agrupa por empresa: documentos compartilhados (atas, comunicados, planos) são lidos uma vez só
     # baixa e extrai em paralelo tudo o que vai ser lido (fica em cache entre execuções)

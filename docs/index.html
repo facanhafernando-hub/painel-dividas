@@ -193,7 +193,7 @@ async function carregarCatalogo() {
     if (!i.k) continue;
     let e = g.get(i.k);
     if (!e) { e = { k: i.k, nomes: {}, itens: [], vol: 0, negHoje: 0, pior: null, alerta: false, cnpj: i.cnpj }; g.set(i.k, e); }
-    e.itens.push(i); e.nomes[i.e] = (e.nomes[i.e] || 0) + 1; if (i.n) e.curto = i.n;
+    e.itens.push(i); if (!i.leg) { e.nomes[i.e] = (e.nomes[i.e] || 0) + 1; if (i.n) e.curto = i.n; }
     if (i.vh) { e.vol += i.vh; e.negHoje++; }
     const p = i.upp ?? i.ppa;
     if (!nada(p) && (e.pior === null || p < e.pior)) e.pior = p;
@@ -204,7 +204,8 @@ async function carregarCatalogo() {
     if (i.cr && (!e.cr || CR[i.cr][2] > CR[e.cr][2])) e.cr = i.cr;
   }
   for (const e of g.values()) {
-    e.razao = Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0][0];
+    e.razao = (Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0] || [e.itens[0].e])[0];
+    if (!e.curto) e.curto = e.itens.find(i => i.n)?.n;
     e.nome = e.curto || titulo(e.razao);
     e.busca = semAc(e.nome + " " + e.razao + " " + e.k + " " + e.itens.map(i => i.c + " " + (i.s || "")).join(" "));
     e.grupo = e.k.split(" ")[0];
@@ -306,7 +307,7 @@ function tirCr(i) {
 function linhaTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<tr data-i="${n}">
-    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
+    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
     <td>${esc(i.ven || "–")}</td><td class="l">${esc(i.idx || "–")}</td>
     <td>${i.ud ? dbr(i.ud) : '<span class="mut">sem negócio</span>'}</td>
     <td>${fmt(i.up)}</td>
@@ -319,7 +320,7 @@ function cartaoTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<div class="tc" data-i="${n}">
     <div class="l1"><div><span style="font-weight:650">${esc(i.c)}</span> <span class="mut" style="font-size:11px;font-weight:600">${esc(i.t)}</span></div><div class="sub">venc. ${esc(i.ven || "–")}${i.ud ? " · neg. " + dbr(i.ud).slice(0, 5) : ""}</div></div>
-    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${crTag(i.cr, i.crr)}${tagsE(i.al)}</div>
+    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${crTag(i.cr, i.crr)}${tagsE(i.al)}</div>${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}
     <div class="l2">
       <div><span>% do par${ind ? " (ind.)" : ""}</span><b>${pctPar(p)}</b></div>
       <div><span>Yield</span><b>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</b></div>
@@ -408,6 +409,7 @@ async function abrirTitulo(i) {
   const det = document.getElementById("det");
   document.getElementById("detTit").textContent = i.c;
   document.getElementById("detSub").innerHTML = [esc(i.t), i.e && i.k ? `<a href="#/e/${encodeURIComponent(i.k)}" style="text-decoration:underline" title="${esc(i.e)}">${esc(i.n || titulo(i.e))}</a>` : esc(i.n || titulo(i.e)),
+    i.leg ? `${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}` : null,
     i.s && i.s !== i.e ? "securitizadora: " + esc(titulo(i.s)) : null,
     i.dvf === "CVM" ? `${i.dvt === "cedente" ? "cedente" : "devedor"} com ${f2.format(i.dvp)}% do lastro (informe mensal CVM)` : null,
     i.pulv ? "lastro pulverizado" : null].filter(Boolean).join(" · ");

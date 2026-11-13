@@ -18,6 +18,9 @@ on:
       classificar:
         description: "Só classificar situações já lidas (sim/não)"
         default: "não"
+      garantias:
+        description: "Ler as garantias (sim/não)"
+        default: "não"
   schedule:
     - cron: "17 9 * * 2-6"     # todo dia útil cedo: lê só documentos novos
 
@@ -38,7 +41,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: sudo apt-get install -y -qq poppler-utils > /dev/null
+      - run: sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-por > /dev/null
       - uses: actions/cache@v4
         with:
           path: cache
@@ -53,6 +56,7 @@ jobs:
           [ "${{ github.event.inputs.modo || 'lote' }}" = "lote" ] && ARGS="$ARGS --lote" || ARGS="$ARGS --direto"
           [ "${{ github.event.inputs.forcar }}" = "sim" ] && ARGS="$ARGS --forcar"
           [ "${{ github.event.inputs.classificar }}" = "sim" ] && ARGS="$ARGS --classificar"
+          [ "${{ github.event.inputs.garantias }}" = "sim" ] && ARGS="$ARGS --garantias"
           python coletor/escrituras.py $ARGS
       - name: Salvar
         if: always()
