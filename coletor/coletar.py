@@ -1285,7 +1285,9 @@ def construir_catalogo() -> None:
         ven_ag = next((e[0] for e in ag if e[1] == "V"), ag[-1][0] if ag else None)
         itens.append({
             "c": c, "t": t, "e": emp, "k": chave_empresa(emp), "s": a.get("s"),
-            "ven": anb.get("vencimento") or ven_ag or (s or {}).get("venc"),
+            "ven": next((v for v in (anb.get("vencimento"), ven_ag, (s or {}).get("venc"))
+                         if v and not (v[-4:].isdigit() and int(v[-4:]) >= 2090)),
+                        anb.get("vencimento") or (s or {}).get("venc")),
             "idx": idx_txt, "gar": (s or {}).get("garantia"), "inc": (s or {}).get("incentivada"),
             "em": (s or {}).get("emissao"), "se": (s or {}).get("serie"),
             "qm": (s or {}).get("qtd_mercado"), "vne": (s or {}).get("vne"),
