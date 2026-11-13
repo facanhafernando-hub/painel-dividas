@@ -377,7 +377,7 @@ def _snd_tsv(url: str, marcador: str) -> tuple[list[str], list[list[str]]]:
     raw = http(url, tentativas=3, timeout=120)
     if not raw:
         return [], []
-    linhas = raw.decode("latin-1", errors="replace").replace("\r", "").split("\n")
+    linhas = raw.decode("cp1252", errors="replace").replace("\r", "").split("\n")
     i = next((k for k, l in enumerate(linhas[:30]) if l.startswith(marcador)), None)
     if i is None:
         log(f"  SND: cabeçalho '{marcador}' não encontrado em {url}")

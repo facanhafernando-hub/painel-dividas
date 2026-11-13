@@ -151,6 +151,8 @@ const ALERTAS = {
   indicativo_abaixo_par: ["Indicativo < 80% par", "t-warn"], desvio_anbima: ["Desvio vs ANBIMA", "t-warn"],
   salto_volume: ["Salto de volume", "t-info"],
 };
+const ESSENCIAIS = ["vencida_antecipadamente", "salto_volume"];
+const tagsE = al => tags((al || []).filter(k => ESSENCIAIS.includes(k)));
 const tags = al => (al || []).map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
 
 function pctPar(v, extra = "") {
@@ -190,7 +192,8 @@ async function carregarCatalogo() {
     if (i.vh) { e.vol += i.vh; e.negHoje++; }
     const p = i.upp ?? i.ppa;
     if (!nada(p) && (e.pior === null || p < e.pior)) e.pior = p;
-    if ((i.al || []).length || (i.cat || "").includes("VENCID")) e.alerta = true;
+    if ((i.al || []).some(k => ESSENCIAIS.includes(k)) || (i.cat || "").includes("VENCID")) e.alerta = true;
+    if (i.t === "CRI" || i.t === "CRA") { if (i.s && i.s === i.e) e.secs = (e.secs || 0) + 1; } else e.naoSec = true;
     if (!e.cnpj && i.cnpj) e.cnpj = i.cnpj;
   }
   for (const e of g.values()) {
@@ -250,7 +253,7 @@ function listaEmpresas() {
   document.getElementById("listaE").innerHTML = !L.length ? '<div class="vazio">Nenhuma empresa encontrada.</div>' :
     `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? " (mostrando 200; refine a busca)" : ""}</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
     L.map(e => `<a class="emp" href="#/e/${encodeURIComponent(e.k)}">
-      <div><div class="n">${esc(titulo(e.nome))} ${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
+      <div><div class="n">${esc(titulo(e.nome))} ${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
       <div class="sub">${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
       <div class="v hide-m"><b>${pctPar(e.pior)}</b><span>pior título</span></div>
       <div class="v"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b><span>${e.vol ? "negociado" : "sem negócio"}</span></div></a>`).join("");
@@ -294,13 +297,13 @@ function linhaTitulo(i, n) {
     <td>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</td>
     <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
     <td>${i.vh ? mi(i.vh) : '<span class="mut">–</span>'}</td>
-    <td class="l ell">${esc(i.gar || "–")}</td><td class="l">${tags(i.al)}</td></tr>`;
+    <td class="l ell">${esc(i.gar || "–")}</td><td class="l">${tagsE(i.al)}</td></tr>`;
 }
 function cartaoTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<div class="tc" data-i="${n}">
     <div class="l1"><div><span style="font-weight:650">${esc(i.c)}</span> <span class="mut" style="font-size:11px;font-weight:600">${esc(i.t)}</span></div><div class="sub">venc. ${esc(i.ven || "–")}</div></div>
-    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${tags(i.al)}</div>
+    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${tagsE(i.al)}</div>
     <div class="l2">
       <div><span>% do par</span><b>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</b></div>
       <div><span>Yield implícito</span><b>${yieldTxt(i.uy, i.uyb, i.uye, i.upp)}</b></div>
