@@ -1,0 +1,173 @@
+{
+ "series": [
+  {
+   "codigo": "VVEO17",
+   "emissao": 7,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2034-01-30",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.7,
+    "base": "252 du",
+    "vigente_desde": "2026-07-30",
+    "historico": "100% da Taxa DI + 1,60% a.a. (base 252 du) desde a Data de Emissão até 2026-07-30 (exclusive). Pela AGD de 2026-06-11, passa a 100% da Taxa DI + 1,70% a.a. (base 252 du) de 2026-07-30 (inclusive) até o vencimento. A mudança está sujeita às Condições Suspensiva e Resolutiva."
+   },
+   "juros": {
+    "periodicidade_meses": 3,
+    "primeira_data": "2026-07-30",
+    "ultima_data": "2034-01-30",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2029-07-30",
+     "percentual": 7.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-30",
+     "percentual": 8.1081,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-30",
+     "percentual": 8.8235,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-01-30",
+     "percentual": 9.6774,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-01-30",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2029-07-30",
+     "descricao": "Início do Prêmio Extraordinário de 0,50% a.a. (base 252 du) sobre o VNU/saldo, de 2029-07-30 (exclusive) até 2030-07-30 (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração. Nada é devido em pagamento antecipado ocorrido até 2029-07-30 (inclusive)."
+    },
+    {
+     "data": "2030-07-30",
+     "descricao": "Prêmio Extraordinário passa a 1,00% a.a. (base 252 du) de 2030-07-30 (exclusive) até o vencimento (2034-01-30, inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração, com a última na Data de Vencimento."
+    }
+   ],
+   "fonte": "Ata de AGD de 2026-06-11 (7ª emissão da CM Hospitalar, rito de registro automático), quadro 'Antes/Após a AGD': Data de Vencimento, cláusulas 4.11.1 (Remuneração), 4.12 (Pagamento da Remuneração e do Prêmio Extraordinário), 4.13.1 (Amortização) e 4.11.2 (Prêmio Extraordinário, em 'Inclusões'). Confirmado pelo comunicado de 2026-06-11 (vencimento 2034-01-30, carência de amortização até 2029-07-30, DI+1,70% a partir de 2026-07-30).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 5,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [
+     "2029-07-30",
+     "2030-01-30",
+     "2030-07-30",
+     "2031-01-30"
+    ],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "7ª emissão (VVEO17): a AGD de 2026-06-11 aprovou, com 100% das Debêntures em Circulação, a repactuação de remuneração, datas de pagamento, amortização, vencimento (de 2029-02-28 para 2034-01-30), aquisição facultativa, vencimentos antecipados, obrigações, resgate antecipado facultativo total e amortização extraordinária facultativa (limitada a 98%). A eficácia depende das Condições Suspensiva e Resolutiva e da formalização do Segundo Aditamento, que nos trechos aparece apenas como modelo (Anexo II), sem assinatura. O comunicado de 2026-06-08 diz que a eficácia também depende das aprovações da 7ª emissão da Cremer e da 7ª emissão da Companhia. Antes disso, a Companhia comunicou em 2026-05-13 que estava em tratativas para repactuar suas dívidas financeiras. Há nova curva de covenant (Dívida Líquida/EBITDA): 4,75x a partir de 30/06/26, caindo até 3,50x a partir de 30/06/30. A definição de EBITDA passa a deduzir pagamentos de arrendamento. Os trechos do modelo de aditamento ainda mencionam um Período de Waiver Temporário até dezembro de 2025. Não há vencimento antecipado declarado, RJ/RE nem suspensão de pagamentos nos trechos. A proposta de AGD de 2024-12-05 (Documento 1) trata da 6ª emissão e não afeta esta série.",
+ "lacunas": "1) Data de emissão e VNE não constam dos trechos. 2) Atribuição do documento: os Documentos 6 e 7 tratam ambos de uma '7ª emissão'. O Documento 6 parece ser a 7ª emissão da Cremer (pagamentos em 28/02 e 28/08, incorporação da Cremer pela CM Hospitalar no Anexo III). O Documento 7 parece ser a 7ª emissão da CM Hospitalar e foi usado aqui, mas o código VVEO17 não aparece nos trechos. 3) O Documento 7 tem inconsistência interna: a coluna 'Antes' traz vencimento 2029-02-28 e amortização 50% em 2028-02-28, mas a tabela de juros anterior usa 08/05 e 08/11 e fala em amortização em 08/05/2029. O histórico mostra que um aditamento anterior alterou vencimento e amortizações de 08/05 para 28/02, e as datas de pagamento de juros passadas podem ter mudado junto. 4) Juros: pelo texto, são semestrais em 08/05 e 08/11 (primeiro pagamento em 2024-11-08) até 2026-05-08, e trimestrais a partir de 2026-07-30. Os trechos não esclarecem se houve pagamento entre 2026-05-08 e 2026-07-30. 5) Amortização: o cronograma novo tem 10 parcelas semestrais de saldo (a partir de 2029-07-30, a última no vencimento). A tabela está parcialmente omitida: as parcelas 5ª a 9ª (previstas, pela regra semestral, para 2031-07-30, 2032-01-30, 2032-07-30, 2033-01-30 e 2033-07-30) não têm percentual nos trechos. No Documento 7 só são legíveis a 1ª (7,5%), a 3ª (8,8235%) e a 10ª (100%, no vencimento), e a 4ª aparece parcialmente (9,6774%, com data e ano cortados). A 2ª (8,1081%, 2030-01-30) e a data da 4ª (2031-01-30) foram completadas pelas atas das 5ª e 6ª emissões (Documentos 3 e 4), que têm a mesma estrutura e foram aplicadas por analogia. Os percentuais seguem o padrão de parcelas iguais de 7,5% do VNE, mas isso é inferência e não foi preenchido. 6) Não há incorporação de juros nem carência de juros nos trechos; a carência é só de amortização, até 2029-07-30. 7) A taxa de 1,70% e o cronograma novo só valem após o cumprimento das condições e a assinatura do aditamento; sem isso, vigora o cronograma anterior (vencimento 2029-02-28, DI+1,60%).",
+ "meta": {
+  "emissora": "CM HOSPITALAR S.A.",
+  "cnpj": "12420164000157",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-05",
+    "tipo": "proposta_agd",
+    "assunto": "",
+    "protocolo": "025682IPE261220240104563105-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311601&numSequencia=836327&numVersao=1"
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "comunicado",
+    "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE130520260105651273-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260108581623-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260196876480-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE080620260135810552-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260143830448-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260114936476-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE110620260158538370-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 73310,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6561,
+   "output_tokens_details": {
+    "thinking_tokens": 3899
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "12420164000157_7"
+ }
+}

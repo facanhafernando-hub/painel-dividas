@@ -2,16 +2,17 @@
  "series": [
   {
    "codigo": "VVEO16",
+   "emissao": 6,
    "serie": "UNI",
    "data_emissao": null,
    "vencimento": "2034-01-30",
-   "vne": 1000.0,
+   "vne": null,
    "remuneracao": {
     "indexador": "DI+",
     "taxa": 1.7,
     "base": "252 du",
     "vigente_desde": "2026-07-30",
-    "historico": "100% da Taxa DI + 1,60% a.a. desde a Data de Emissão até 30/07/2026 (exclusive), que é a taxa em vigor hoje. A AGD de 08/06/2026 aprovou 100% da Taxa DI + 1,70% a.a. de 30/07/2026 (inclusive) até o vencimento. Essa alteração está sujeita às condições suspensiva e resolutiva."
+    "historico": "100% da Taxa DI + 1,60% a.a. desde a Data de Emissão até 30/07/2026 (exclusive); 100% da Taxa DI + 1,70% a.a. de 30/07/2026 (inclusive) até a Data de Vencimento, conforme AGD de 08/06/2026. Vigência sujeita às Condições Suspensiva e Resolutiva."
    },
    "juros": {
     "periodicidade_meses": 3,
@@ -44,7 +45,7 @@
     },
     {
      "data": "2031-07-30",
-     "percentual": 10.7143,
+     "percentual": null,
      "base": "saldo"
     },
     {
@@ -76,31 +77,33 @@
    "premios": [
     {
      "data": "2029-07-30",
-     "descricao": "Prêmio Extraordinário de 0,50% a.a. (base 252 du, pro rata) sobre VNU/saldo, de 30/07/2029 (exclusive) a 30/07/2030 (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração. Não é devido em pagamento antecipado ocorrido até 30/07/2029 (inclusive)."
+     "descricao": "Início do Prêmio Extraordinário: 0,50% a.a., base 252 du, sobre o VNU ou saldo, de 30/07/2029 (exclusive) até 30/07/2030 (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração."
     },
     {
      "data": "2030-07-30",
-     "descricao": "Prêmio Extraordinário de 1,00% a.a. (pro rata) sobre VNU/saldo, de 30/07/2030 (exclusive) até a Data de Vencimento (2034-01-30, inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração, com pagamento final no vencimento."
+     "descricao": "Prêmio Extraordinário passa a 1,00% a.a., de 30/07/2030 (exclusive) até a Data de Vencimento (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração."
+    },
+    {
+     "data": "2034-01-30",
+     "descricao": "Pagamento do Prêmio Extraordinário na Data de Vencimento (marcado 'Sim' na tabela). Não é devido Prêmio Extraordinário em pagamento antecipado ocorrido até 30/07/2029 (inclusive)."
     }
    ],
-   "fonte": "Ata da AGD da 6ª emissão de 08/06/2026 (quadro 'Antes/Após a AGD': cláusulas 4.11.1 Remuneração, 4.11.2 Prêmio Extraordinário, 4.12.1 Pagamento da Remuneração e 4.13.1 Amortização). Complementada pela Proposta da Administração de 03/06/2026 e pelo Comunicado de 08/06/2026.",
+   "fonte": "Documento 5 (ata da AGD de 08/06/2026 da 6ª emissão, quadro 'Antes/Após a AGD': cláusulas 4.11, 4.11.2, 4.12 e 4.13.1) e Documento 3 (proposta da administração de 03/06/2026 da 6ª emissão). Documentos 6 e 9 (comunicados) confirmam vencimento, carência de amortização até 30/07/2029 e spread de 1,70%.",
    "confianca": "media",
    "conferencia_snd": {
     "snd": true,
-    "amort_snd": 9,
+    "amort_snd": 10,
     "amort_doc": 10,
-    "datas_iguais": 9,
+    "datas_iguais": 10,
     "so_snd": [],
-    "so_doc": [
-     "2034-01-30"
-    ],
+    "so_doc": [],
     "pct_diferente": [],
-    "ok": false
+    "ok": true
    }
   }
  ],
- "situacao": "Não há vencimento antecipado, suspensão de pagamentos, RJ ou RE nos trechos. Há repactuação aprovada na AGD de 08/06/2026, por 99,19% das debêntures em circulação, sem rejeições ou abstenções. As alterações são: vencimento de 27/10/2027 para 30/01/2034, carência de amortização até 30/07/2029, spread de 1,60% para 1,70% a partir de 30/07/2026, juros trimestrais a partir de 30/07/2026, Prêmio Extraordinário, resgate antecipado facultativo e amortização extraordinária facultativa, novos covenants e novas obrigações. A eficácia está condicionada (i) à aprovação das reestruturações das debêntures da 4ª emissão (CMPH14), da 5ª (VVEO15), da 7ª da Companhia (VVEO17) e da 7ª da Cremer (CREM17) e (ii) à aprovação do IFC e ao aditamento da alienação fiduciária até 30/09/2026. Se a aprovação do IFC não vier no prazo, as aprovações perdem eficácia automaticamente. Os aditamentos à escritura ainda estão por ser celebrados. Se as condições não forem cumpridas, vale o cronograma original: vencimento em 27/10/2027, juros semestrais em 27/04 e 27/10, amortização de 50% do saldo em 27/10/2026 e 100% do saldo remanescente no vencimento, e DI + 1,60% a.a.",
- "lacunas": "1) A data de emissão não consta dos trechos. A escritura é de 19/10/2022 e o primeiro pagamento de juros foi em 27/04/2023. 2) O VNE de R$ 1.000,00 vem do Anexo (400.000 debêntures, R$ 400 milhões) e da oferta de aquisição, não de uma cláusula da escritura. 3) Os percentuais das parcelas 6 a 9 de amortização (2032-01-30 a 2033-07-30) não aparecem nos trechos da ata da 6ª emissão. As datas dessas parcelas foram deduzidas da regra de 10 parcelas semestrais, de 30/07/2029 a 30/01/2034. Na ata da 7ª série (VVEO17, outra emissão) aparece 12,0000% em 30/01/2032, o que sugere o mesmo padrão, mas isso não foi confirmado para VVEO16. 4) Em juros, a regra vale a partir de 30/07/2026 (trimestral, dias 30 de jan/abr/jul/out). Até lá a regra é semestral em 27/04 e 27/10, com primeiro pagamento em 2023-04-27 e último em 2026-04-27. A tabela de datas da cláusula 4.12.1 está truncada, e a numeração de parcelas (39, com 'outubro de 2033' como parcela 38) não bate exatamente com a contagem das datas. 5) A base dos percentuais é o saldo do VNU, conforme o cabeçalho da tabela ('Percentual do Saldo do Valor Nominal Unitário a ser amortizado'). 6) Os documentos tratam como um cronograma só as aprovações condicionais, sem aditamento celebrado. Não foi possível confirmar se as condições já foram cumpridas.",
+ "situacao": "6ª emissão (CM Hospitalar, série única, Pentágono como agente fiduciário): AGD de 08/06/2026 aprovou a repactuação com 99,19% das Debêntures em Circulação, sem rejeições ou abstenções. Mudanças aprovadas: vencimento de 27/10/2027 para 30/01/2034, nova remuneração, juros trimestrais, nova amortização com carência até 30/07/2029, Prêmio Extraordinário, resgate antecipado facultativo total e amortização extraordinária facultativa (até 98%), novos covenants e novos eventos de vencimento antecipado. A eficácia depende da Condição Suspensiva (aprovação e formalização dos instrumentos de dívida) e da Condição Resolutiva, e o aditamento ainda será celebrado (modelo do 'Terceiro Aditamento' em minuta). O comunicado de 08/06/2026 também condiciona a eficácia às aprovações de outras emissões (7ª da Cremer e 7ª da Companhia). Não há vencimento antecipado declarado, suspensão de pagamentos nem RJ/RE nos trechos. A repactuação sugere stress financeiro, e a Companhia já está renegociando dívidas (Fato Relevante de 13/05/2026).",
+ "lacunas": "1) Data de emissão e VNE não constam nos trechos; a escritura original é de 19/10/2022 e os pagamentos de juros começaram em 27/04/2023. 2) Percentuais das parcelas 5ª a 9ª de amortização não aparecem nos trechos; as datas 2031-07-30 a 2033-07-30 foram deduzidas da regra de 10 parcelas semestrais consecutivas entre 30/07/2029 e 30/01/2034. Os percentuais conhecidos (7,5000%, 8,1081%, 8,8235% e 9,6774%) equivalem a 7,5% do VNU original em cada parcela, aplicados sobre o saldo remanescente. 3) A tabela de datas do Prêmio Extraordinário (Sim/Não por parcela) foi cortada; só se confirma 'Sim' na data de vencimento. 4) Cronograma anterior (até a repactuação): vencimento 27/10/2027, juros semestrais em 27/04 e 27/10 desde 27/04/2023, amortização em 2 parcelas (50% em 27/10/2026 e 100% do saldo no vencimento). Esse cronograma foi substituído pela AGD, mas só vale integralmente se as condições não se verificarem. 5) A escritura original e os aditamentos anteriores (AGD 1 e AGD 2 e waivers) não foram fornecidos, apenas referências a eles. 6) Os Documentos 4, 7 e 8 tratam de outras emissões (5ª e 7ª) e foram desconsiderados; o Documento 1 é genérico e o Documento 2 é comunicado de convocação.",
  "meta": {
   "emissora": "CM HOSPITALAR S.A.",
   "cnpj": "12420164000157",
@@ -181,21 +184,22 @@
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1"
    }
   ],
-  "uso": {
-   "input_tokens": 173316,
+  "uso_grupo": {
+   "input_tokens": 91985,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5808,
+   "output_tokens": 4769,
    "output_tokens_details": {
-    "thinking_tokens": 3445
+    "thinking_tokens": 2494
    },
    "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard"
-  }
+  },
+  "grupo": "12420164000157_6"
  }
 }

@@ -2,31 +2,32 @@
  "series": [
   {
    "codigo": "ELFA12",
+   "emissao": 2,
    "serie": "UNI",
    "data_emissao": "2022-04-13",
    "vencimento": "2031-12-13",
-   "vne": 1000.0,
+   "vne": 1060.04,
    "remuneracao": {
     "indexador": "DI+",
     "taxa": 3.4,
     "base": "252 du",
     "vigente_desde": "2024-12-13",
-    "historico": "100% da Taxa DI-Over + spread. O spread máximo na escritura original era de 3,10% a.a., a ser definido no bookbuilding, e o 5º aditamento o fixa em 2,80% a.a. até 2024-12-13 (exclusive). A partir de 2024-12-13 (inclusive), o spread passou a 3,40% a.a. A versão consolidada do 7º aditamento mantém 2,80% e 3,40%. Há possibilidade de step-up de +0,30% ou +0,60% a.a. em caso de mudança de controle com rebaixamento de rating. Os trechos não mostram esse evento como ocorrido."
+    "historico": "100% da Taxa DI-Over + spread. A escritura original previa spread máximo de 3,10% a.a., a ser definido no bookbuilding. O 5º aditamento registra 2,80% a.a. até 13/12/2024 (exclusive) e 3,40% a.a. a partir de 13/12/2024 (inclusive). Pode haver step-up de +0,30% ou +0,60% a.a. no spread se o controlador deixar de ser o Pátria e o rating cair 1 ou 2 notches. Não há evidência nos trechos de que o step-up tenha ocorrido."
    },
    "juros": {
     "periodicidade_meses": 1,
     "primeira_data": "2024-11-13",
     "ultima_data": "2031-12-13",
-    "datas_irregulares": [
-     "2022-10-13",
-     "2023-04-13",
-     "2023-10-13",
-     "2024-04-13",
-     "2024-10-13"
-    ],
-    "carencia_ate": null
+    "datas_irregulares": [],
+    "carencia_ate": "2026-10-30"
    },
-   "incorporacao_juros": [],
+   "incorporacao_juros": [
+    {
+     "de": null,
+     "ate": "2026-10-30",
+     "observacao": "Não é PIK formal. Durante o Período de Suspensão aprovado nas AGDs de 13/07/2026 e 10/08/2026 e prorrogado em 01/10, 09/10, 16/10 e 23/10 (até 30/10/2026), o pagamento da Remuneração é automaticamente adiado para a Data de Pagamento da Remuneração subsequente ao fim do período, com extensão do Período de Capitalização em curso. A data de início exata da suspensão não consta dos trechos."
+    }
+   ],
    "amortizacoes": [
     {
      "data": "2028-01-13",
@@ -272,27 +273,25 @@
    "premios": [
     {
      "data": "2025-04-13",
-     "descricao": "A partir desta data (36º mês), a amortização extraordinária facultativa e o resgate antecipado total pagam prêmio de i = 0,60% a.a. sobre o prazo remanescente (DU/252). A amortização extraordinária M&A fica dispensada desse prêmio."
+     "descricao": "Prêmio na amortização extraordinária facultativa e no resgate antecipado total, a partir de 13/04/2025: P = [(1+0,60/100)^(DU/252) - 1] x PU, com DU de prazo remanescente até o vencimento. Não incide nas amortizações extraordinárias obrigatórias (M&A/Alienação de Participação, DRS e Aumento de Capital)."
     }
    ],
-   "fonte": "7º Aditamento (entregue em 2026-08-10), Anexo A (escritura consolidada): cláusulas 5.4.1, 5.8.1, 5.17.1, 5.19.1, 5.20.1 e 5.22. Essas cláusulas foram alteradas pelo 6º Aditamento (AGD de 2025-10-08), que substituiu o cronograma do 5º Aditamento.",
+   "fonte": "Cláusulas 5.8.1, 5.19.1, 5.20.1 e 5.22.1 da versão consolidada da Escritura (Anexo A do 6º Aditamento, entregue em 2025-11-07, mantida no Anexo A do 7º Aditamento, entregue em 2026-08-10). A remuneração (Cláusula 5.17.1 e spread 3,40%) e o VNU de R$1.060,04 vêm do Anexo A do 5º Aditamento, repetido nos aditamentos seguintes. A suspensão vem das atas de AGD de outubro/2026 e das propostas. O vencimento antecipado vem do comunicado de 2026-11-03.",
    "confianca": "media",
    "conferencia_snd": {
     "snd": true,
-    "amort_snd": 47,
+    "amort_snd": 48,
     "amort_doc": 48,
-    "datas_iguais": 47,
+    "datas_iguais": 48,
     "so_snd": [],
-    "so_doc": [
-     "2031-12-13"
-    ],
+    "so_doc": [],
     "pct_diferente": [],
-    "ok": false
+    "ok": true
    }
   }
  ],
- "situacao": "Vencimento antecipado declarado. O comunicado de 2026-11-03 informa que o agente fiduciário (Pentágono) declarou o vencimento antecipado das debêntures na AGD de 2026-10-30, com base na Cláusula 8.1.1, item (xi), ao fim do Período de Suspensão Adicional e em razão da Medida Cautelar, ressalvada eventual decisão judicial em contrário. Antes disso, AGDs de 2026-07-13 e 2026-08-10 (textos não fornecidos) concederam suspensão temporária de obrigações. As propostas de 2026-09-24 e 2026-10-05 pediam mais 120 dias de suspensão. A AGD iniciada em 2026-10-01 foi suspensa e reaberta em 10-09, 10-16, 10-23 e 10-30. Durante a suspensão, o pagamento da Remuneração é prorrogado para a data subsequente ao término do período. Está em negociação uma reestruturação por repactuação, dação em pagamento, venda de ativos ou alteração de garantias. Os trechos não mostram essa reestruturação aprovada nem novação. Não há RJ/RE nos trechos. Com a aceleração, o cronograma acima é o contratual vigente, mas todo o saldo está exigível.",
- "lacunas": "1) Os textos das AGDs de 2026-07-13 e 2026-08-10 e a ata de 2026-10-30 não foram fornecidos. As atas de 10-09, 10-16 e 10-23 estão truncadas, então o resultado das votações e as datas exatas da suspensão não puderam ser confirmados. 2) O saldo atual do VNU e os pagamentos efetivamente realizados não constam nos trechos. Isso inclui as parcelas de 2025-10-13 em diante do cronograma anterior, a prorrogação de 30 dias do pagamento do VNU (AGD de 2025-10-08), as recompras de debêntures e as amortizações extraordinárias M&A, DRS e aumento de capital. 3) O VNU é de R$ 1.000,00 na emissão e de R$ 1.060,04 desde 2024-02-22, quando o waiver fee foi incorporado. O campo 'vne' traz o valor original, e as amortizações em % são sobre o saldo do VNU. 4) As datas mensais de pagamento da Remuneração de 2025-05 a 2031-10 estão omitidas nos trechos, e foram inferidas pela regra mensal no dia 13, com último pagamento em 2031-12-13. 5) Os trechos não mostram incorporação de juros (PIK) nem carência formal de juros. A suspensão de 2026 apenas prorroga a Remuneração. 6) O 6º Aditamento fala em pagamento mensal da Remuneração desde 2024-11-13, enquanto o 5º dizia 2024-12-13. Foi adotada a versão mais recente (6º e 7º aditamentos). 7) A taxa de 3,40% é a vigente, mas pode haver step-up por evento de controle e rating, que não aparece nos trechos.",
+ "situacao": "Emissão 2 (ELFA12): vencimento antecipado declarado. Pelo comunicado de 03/11/2026, na AGD de 30/10/2026 o agente fiduciário (Pentágono) declarou o vencimento antecipado das debêntures com base na Cláusula 8.1.1, item (xi), ao fim do Período de Suspensão Adicional e em razão da Medida Cautelar, ressalvada eventual decisão judicial em contrário. O cronograma de amortização e juros acima, vigente até então, deixa de valer se o vencimento antecipado for mantido. Antes disso, a Emissora estava em suspensão temporária de obrigações (standstill) aprovada nas AGDs de 13/07/2026 e 10/08/2026. A suspensão foi estendida até 01/10, 09/10, 16/10, 23/10 e 30/10/2026, e impediu o vencimento antecipado e as execuções. O pagamento da Remuneração ficou adiado, sem novação. A proposta de reestruturação (repactuação, quitação, dação em pagamento etc.) foi retirada de pauta, sem termos definidos. Também estavam suspensas as obrigações das 'Aquisições Facultativas AGD' (recompra de debêntures), cujos termos não constam dos trechos. Não há registro de recuperação judicial ou extrajudicial nos trechos.",
+ "lacunas": "1) O VNU original (anterior a 22/02/2024) não aparece nos trechos; consta apenas R$1.060,04 a partir de 22/02/2024 (incorporação do waiver fee), então 'vne' é o valor vigente. O VNU atualizado após amortizações extraordinárias eventualmente realizadas (M&A, DRS, Aumento de Capital) não é informado. 2) Não há como saber, pelos trechos, se ocorreram amortizações extraordinárias ou recompras de debêntures desde 2024; o cronograma refere-se ao saldo do VNU na data. 3) O 5º aditamento fixa a remuneração mensal a partir de 13/12/2024, mas o 6º, que prevalece, diz a partir de 13/11/2024 e inclui 13/11/2024 na tabela; adotei 2024-11-13. Antes disso os pagamentos foram semestrais (13/10/2022, 13/04/2023, 13/10/2023, 13/04/2024, 13/10/2024). 4) Os trechos omitem a tabela mensal completa de juros, mas a regra é clara (dia 13, mensal, até o vencimento). 5) A ata de 30/10/2026 e a Medida Cautelar não estão nos documentos; a declaração de vencimento antecipado baseia-se só no comunicado de 03/11/2026, e o item (xi) citado não corresponde claramente à numeração da Cláusula 8.1.1 nos trechos. 6) As deliberações da AGD de 19/03/2026 (7º aditamento) e das AGDs de 13/07 e 10/08/2026 estão truncadas; o 7º aditamento consolidou o mesmo cronograma do 6º, sem mudanças visíveis. 7) A data exata de início da suspensão e o valor/data de eventual pagamento de juros em atraso não constam. 8) Datas que caírem em dia não útil são prorrogadas (Cláusula 5.25), sem ajuste no cronograma acima. 9) O aditamento de bookbuilding da taxa original não consta dos trechos.",
  "meta": {
   "emissora": "ELFA MEDICAMENTOS SA",
   "cnpj": "09053134000145",
@@ -405,21 +404,22 @@
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582913&numSequencia=1107619&numVersao=1"
    }
   ],
-  "uso": {
-   "input_tokens": 182120,
+  "uso_grupo": {
+   "input_tokens": 158753,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5600,
+   "output_tokens": 6734,
    "output_tokens_details": {
-    "thinking_tokens": 2098
+    "thinking_tokens": 2819
    },
    "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard"
-  }
+  },
+  "grupo": "09053134000145_2"
  }
 }
