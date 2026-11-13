@@ -1,43 +1,39 @@
-"""Diagnóstico: OCR da escritura da 6ª emissão da BCBF (PDF escaneado): fiança, remuneração, amortização."""
-import glob, io, os, re, subprocess, time, zipfile, urllib.request
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-
-
-def get(u, t=240):
-    for i in range(5):
-        try:
-            return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=t).read()
-        except Exception as e:
-            err = e; time.sleep(6 * (i + 1))
-    raise err
-
-
-z = zipfile.ZipFile(io.BytesIO(get("https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_2021.zip")))
-txt = z.read(z.namelist()[0]).decode("latin-1").splitlines()
-cab = txt[0].split(";")
-url = next(dict(zip(cab, l.split(";")))["Link_Download"] for l in txt[1:]
-           if "19.276.528/0001-16" in l and "Escritura da 6" in l)
-b = get(url)
-pdf = b if b[:4] == b"%PDF" else zipfile.ZipFile(io.BytesIO(b)).read([n for n in zipfile.ZipFile(io.BytesIO(b)).namelist() if n.lower().endswith(".pdf")][0])
-open("/tmp/esc.pdf", "wb").write(pdf)
-os.makedirs("/tmp/pg", exist_ok=True)
-subprocess.run(["pdftoppm", "-r", "200", "-gray", "-png", "/tmp/esc.pdf", "/tmp/pg/p"], check=True)
-paginas = sorted(glob.glob("/tmp/pg/p-*.png"))
-print("páginas:", len(paginas))
-texto = []
-for n, p in enumerate(paginas, 1):
-    t = subprocess.run(["tesseract", p, "-", "-l", "por", "--psm", "6"], capture_output=True).stdout.decode("utf-8", "replace")
-    texto.append(f"\n=== PÁGINA {n} ===\n{t}")
-full = "".join(texto)
-open("/tmp/esc.txt", "w").write(full)
-print("caracteres OCR:", len(full))
-PAL = re.compile(r"fian[çc]a|fiador|fidejuss|benef[íi]cio de ordem|solid[áa]ri|principal pagador|sobretaxa|spread|1,45|1,60|amortiza[çc][ãa]o do valor nominal|data de vencimento|esp[ée]cie|garantia real", re.I)
-linhas = full.splitlines()
-vistos = set()
-for i, l in enumerate(linhas):
-    if l.startswith("=== PÁGINA"):
-        pag = l
-    if PAL.search(l) and i not in vistos:
-        for j in range(i - 1, i + 4):
-            vistos.add(j)
-        print(f"[{pag[11:-4].strip()}]", re.sub(r"\s+", " ", " ".join(linhas[max(0, i - 1):i + 4]))[:520])
+"""Diagnóstico: CRA da Klabin (Vert) negociados a ~70% do par. Mostra o que o informe mensal da CVM e a ANBIMA dizem
+sobre cada série: quantidade, valor, saldo, taxa, amortizações e eventos. Saída em docs/data/_debug/klabin_cra.json."""
+import csv, io, json, sys, urllib.request, zipfile
+csv.field_size_limit(10**9)
+CODS = ["CRA0210013B", "CRA020002H1", "CRA020002GZ", "CRA019001E7", "CRA019003JY", "CRA022007EP"]
+UA = {"User-Agent": "Mozilla/5.0"}
+def get(u):
+    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=180).read()
+out = {"cvm": {}, "anbima": []}
+z = zipfile.ZipFile(io.BytesIO(get("https://dados.cvm.gov.br/dados/SECURIT/DOC/INF_MENSAL_CRA/DADOS/inf_mensal_cra_2026.zip")))
+print("arquivos:", z.namelist())
+tabs = {n: list(csv.DictReader(io.StringIO(z.read(n).decode("latin-1")), delimiter=";")) for n in z.namelist()}
+cert = {}
+for n, rows in tabs.items():
+    if "_classe_" in n:
+        for r in rows:
+            if (r.get("Codigo_CETIP") or "").strip().upper() in CODS:
+                cert[r["Codigo_Identificacao_Certificado"]] = r["Codigo_CETIP"].strip().upper()
+print("certificados:", cert)
+for n, rows in tabs.items():
+    sel = [r for r in rows if r.get("Codigo_Identificacao_Certificado") in cert or (r.get("Codigo_CETIP") or "").strip().upper() in CODS]
+    if sel:
+        # só as duas últimas competências de cada certificado
+        sel.sort(key=lambda r: r.get("Data_Referencia") or r.get("Data_Competencia") or "")
+        out["cvm"][n] = sel[-24:]
+        print(n, len(sel), "colunas:", list(sel[0].keys())[:40])
+try:
+    txt = get("https://www.anbima.com.br/pt_br/anbima/TaxasCriCraExport/exportarCSV").decode("latin-1")
+    for l in txt.splitlines():
+        if any(c in l for c in CODS) or l.lower().startswith(("código", "codigo", "emissor", "tipo")):
+            out["anbima"].append(l)
+except Exception as e:
+    out["anbima"].append(f"erro: {e}")
+json.dump(out, open("docs/data/_debug/klabin_cra.json", "w"), ensure_ascii=False, indent=1)
+print(json.dumps(out["anbima"], ensure_ascii=False, indent=1))
+for n, rows in out["cvm"].items():
+    print("=====", n)
+    for r in rows:
+        print(json.dumps({k: v for k, v in r.items() if v not in ("", None)}, ensure_ascii=False))
