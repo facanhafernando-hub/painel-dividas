@@ -464,7 +464,16 @@ def processar(idx, pendentes, resultados, modo):
             out = {"series": series, "situacao": j.get("situacao"), "lacunas": j.get("lacunas"),
                    "meta": {"emissora": itens[0]["e"], "cnpj": e[0], "emissao": e[1], "lido_em": date.today().isoformat(),
                             "modelo": MODELO, "documentos": sel, "uso_grupo": uso, "grupo": k}}
-            json.dump(out, open(SAIDA / f"{chave_emissao(e)}.json", "w"), ensure_ascii=False, indent=1)
+            ant_p = SAIDA / f"{chave_emissao(e)}.json"
+            if ant_p.exists():          # preserva o que outras leituras gravaram (garantias)
+                try:
+                    ant = json.load(open(ant_p))
+                    for kk in ("garantias", "garantias_meta"):
+                        if kk in ant:
+                            out[kk] = ant[kk]
+                except Exception:
+                    pass
+            json.dump(out, open(ant_p, "w"), ensure_ascii=False, indent=1)
             oks = [s["conferencia_snd"].get("ok") for s in series]
             idx["emissoes"][chave_emissao(e)] = {"codigos": sorted(cods), "status": "ok" if series else "sem_series", "assinatura": ass,
                                                  "bate_snd": all(oks) if oks else None}
