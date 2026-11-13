@@ -1,6 +1,19 @@
 {
  "_comentario": "Empresas do mesmo grupo econômico exibidas na página da controladora. Chave = chave da empresa (razão social normalizada); 'grupo' = chave da página de destino. A emissora/devedora legal continua visível em cada título.",
- "BCBF PARTICIPACOES": {"grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS", "relacao": "controlada indireta"},
- "NOTRE DAME INTERMEDICA SAUDE": {"grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS", "relacao": "controlada indireta"},
- "NOTRE DAME INTERMEDICA PARTICIPACOES": {"grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS", "relacao": "controlada"}
+ "BCBF PARTICIPACOES": {
+  "grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+  "relacao": "controlada indireta"
+ },
+ "NOTRE DAME INTERMEDICA SAUDE": {
+  "grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+  "relacao": "controlada indireta"
+ },
+ "NOTRE DAME INTERMEDICA PARTICIPACOES": {
+  "grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+  "relacao": "controlada"
+ },
+ "BRF": {
+  "grupo": "MARFRIG GLOBAL FOODS",
+  "relacao": "subsidiária integral"
+ }
 }

@@ -327,7 +327,7 @@ async function carregarCatalogo() {
     e.razao = (Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0] || [e.itens[0].e])[0];
     if (!e.curto) e.curto = e.itens.find(i => i.n)?.n;
     e.nome = e.curto || titulo(e.razao);
-    e.busca = semAc(e.nome + " " + e.razao + " " + e.k + " " + e.itens.map(i => i.c + " " + (i.s || "")).join(" "));
+    e.busca = semAc(e.nome + " " + e.razao + " " + e.k + " " + e.itens.map(i => i.c + " " + (i.s || "") + " " + (i.leg || "")).join(" "));
     e.grupo = e.k.split(" ")[0];
   }
   st.empresas = [...g.values()];
@@ -359,8 +359,10 @@ function sugerir(q) {
   const out = [];
   for (const e of st.empresas) {
     const n = semAc(e.nome), r = semAc(e.razao);
+    // empresas do grupo (ex.: BRF na página da MBRF, BCBF na da Hapvida) também acham a página
+    const g = e._legs ??= [...new Set(e.itens.map(i => semAc(i.leg || "")).filter(Boolean))].join(" ");
     let sc = n.startsWith(Q) ? 0 : n.split(/[^A-Z0-9]+/).some(w => w.startsWith(Q)) ? 1 : r.startsWith(Q) ? 2
-      : r.split(/[^A-Z0-9]+/).some(w => w.startsWith(Q)) ? 3 : null;
+      : r.split(/[^A-Z0-9]+/).some(w => w.startsWith(Q)) || g.split(/[^A-Z0-9]+/).some(w => w.startsWith(Q)) ? 3 : null;
     if (sc !== null) out.push({ sc, e, vol: e.vol || 0 });
     else if (Q.length >= 3) {
       const it = e.itens.find(i => i.c.startsWith(Q));
