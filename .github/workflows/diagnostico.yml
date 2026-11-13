@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: sudo apt-get install -y -qq poppler-utils > /dev/null
+      - run: sudo apt-get install -y -qq poppler-utils tesseract-ocr tesseract-ocr-por > /dev/null
       - run: python coletor/diagnostico.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
