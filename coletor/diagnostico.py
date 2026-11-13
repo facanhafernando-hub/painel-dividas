@@ -28,17 +28,19 @@ def cells(r):
     return [H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", c))).strip() for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", r, re.S | re.I)]
 ds = urllib.request.quote(d.strftime("%d/%m/%Y"))
 base = "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/"
-for u in (base + f"puhistorico_r.asp?op_exc=False&ativo=RAIZ15&dt_ini={ds}&dt_fim={ds}&Submit.x=1",
-          base + f"puhistorico_r.asp?op_exc=False&ativo=&dt_ini={ds}&dt_fim={ds}&Submit.x=1",
-          base + f"puhistorico_e.asp?op_exc=False&ativo=&dt_ini={ds}&dt_fim={ds}",
-          base + f"puhistorico_e.asp?op_exc=False&ativo=RAIZ15&dt_ini={ds}&dt_fim={ds}",
-          base + "caracteristicas_d.asp?tip_deb=publicas&selecao=RAIZ15"):
+for u in (base + "caracteristicas_e.asp?tip_deb=publicas&selecao=",
+          base + "caracteristicas_e.asp?tip_deb=publicas",
+          base + "caracteristicas_e.asp?tip_deb=publicas&selecao=RAIZ"):
     st, b = req(u, timeout=90, tent=2)
     t = b.decode("latin-1")
     print(u, st, len(t))
     rr = re.findall(r"<tr[^>]*>(.*?)</tr>", t, re.S | re.I)
     print("   trs:", len(rr))
     if "_e.asp" in u:
-        print("   raw:", t[:800].replace("\r", ""))
+        ls = t.replace("\r", "").split("\n")
+        print("   linhas:", len(ls))
+        for l in ls[:4]: print("   ", l[:3000])
+        for l in ls:
+            if "RAIZ" in l[:20]: print("   raizen:", l[:3000]); break
     for r in [x for x in rr if len([c for c in cells(x) if c]) >= 2][:14]:
         print("   ", [c for c in cells(r) if c][:12])
