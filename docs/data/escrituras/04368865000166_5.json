@@ -127,5 +127,11 @@
   },
   "grupo": "04368865000166_5"
  },
- "eventos": {}
+ "eventos": {
+  "CPTM15": {
+   "evento": "reperfilamento",
+   "data": "2026-04-27",
+   "resumo": "Reperfilamento aprovado em 27/04/2026, vigente só após fechamento do M&A com a BST: novas datas, desconto de 7% e suspensão da parcela de set/2026."
+  }
+ }
 }

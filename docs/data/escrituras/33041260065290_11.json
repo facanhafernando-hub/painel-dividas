@@ -307,5 +307,21 @@
   },
   "grupo": "33041260065290_11"
  },
- "eventos": {}
+ "eventos": {
+  "BHIAA1": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-08-16",
+   "resumo": "AGD de 14/09/2026 ratificou vencimento antecipado automático (Cl. 8.1(b)) com data em 16/08/2026, após pedido de RJ. Alcance da tutela não verificado."
+  },
+  "BHIAB1": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-08-16",
+   "resumo": "Ratificado na AGD de 14/09/2026 o vencimento antecipado de 16/08/2026; conversão obrigatória em ações (Cl. 6.4.3(ii), 8.3). Alcance da tutela incerto."
+  },
+  "BHIAC1": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-08-16",
+   "resumo": "AGD de 14/09/2026 ratificou vencimento antecipado automático (Cl. 8.1(b)) com data em 16/08/2026, após pedido de RJ. Alcance da tutela não verificado."
+  }
+ }
 }

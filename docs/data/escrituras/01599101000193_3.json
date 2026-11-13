@@ -128,5 +128,11 @@
   },
   "grupo": "01599101000193_3"
  },
- "eventos": {}
+ "eventos": {
+  "SEQL13": {
+   "evento": "vencimento_antecipado",
+   "data": null,
+   "resumo": "Plano de RE protocolado em out/2024. Cláusula 6.1.1.1(ii)(d) prevê vencimento antecipado automático. Sem waiver nos trechos. Data exata não informada."
+  }
+ }
 }

@@ -189,5 +189,11 @@
   },
   "grupo": "12528708000107_1-2"
  },
- "eventos": {}
+ "eventos": {
+  "AERI12": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-11-04",
+   "resumo": "Pedido de RE pela Emissora é vencimento antecipado automático (cl. 4.15.2 I da 2ª emissão). Trechos não trazem declaração nem deliberação de AGD."
+  }
+ }
 }

@@ -262,5 +262,21 @@
   },
   "grupo": "33041260065290_10"
  },
- "eventos": {}
+ "eventos": {
+  "BHIAA0": {
+   "evento": "vencimento_antecipado",
+   "data": null,
+   "resumo": "RJ ajuizada (proc. 4152930-18.2026.8.26.0100). Ingresso do pedido é VA automático (cl. 8.1b). Tutela obsta declarações. AGD sem quórum."
+  },
+  "BHIAB0": {
+   "evento": "vencimento_antecipado",
+   "data": null,
+   "resumo": "RJ ajuizada (proc. 4152930-18.2026.8.26.0100). Ingresso do pedido é VA automático (cl. 8.1b). Tutela obsta declarações. AGD sem quórum."
+  },
+  "BHIAC0": {
+   "evento": "vencimento_antecipado",
+   "data": null,
+   "resumo": "RJ ajuizada (proc. 4152930-18.2026.8.26.0100). Ingresso do pedido é VA automático (cl. 8.1b). Tutela obsta declarações. AGD sem quórum."
+  }
+ }
 }

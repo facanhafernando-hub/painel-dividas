@@ -308,5 +308,16 @@
   },
   "grupo": "12104241000402_11-12-9"
  },
- "eventos": {}
+ "eventos": {
+  "ONCO19": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Só há propostas (waiver de 26/03/2026, AGD de reestruturação de 06/07/2026, sustação) sem resultado. Cautelar antecedente à RJ de 16/04/2026 tem alcance não confirmado."
+  },
+  "ONCO29": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Só há propostas (waiver de 26/03/2026, AGD de reestruturação de 06/07/2026, sustação) sem resultado. Cautelar antecedente à RJ de 16/04/2026 tem alcance não confirmado."
+  }
+ }
 }
