@@ -143,7 +143,8 @@ def documentos(emissoes, linhas):
                 tipo = ("escritura" if cat in CATS_ESCRITURA else "ata_agd" if r.get("Especie") == "Ata"
                         else "proposta_agd" if r.get("Tipo") == "AGDEB" else "comunicado")
                 out[e].append({"data": r["Data_Entrega"][:10], "tipo": tipo, "assunto": r.get("Assunto", "")[:300],
-                               "protocolo": r.get("Protocolo_Entrega"), "versao": r.get("Versao"), "url": r["Link_Download"]})
+                               "protocolo": r.get("Protocolo_Entrega"), "versao": r.get("Versao"), "url": r["Link_Download"],
+                               "explicito": True})
     for e in out:
         out[e].sort(key=lambda d: d["data"])
     if cnpj_doc:
@@ -176,11 +177,18 @@ def _documentos(emissoes, linhas):
         ns = emissoes_citadas(r.get("Assunto", ""))
         doc = {"data": r["Data_Entrega"][:10], "tipo": tipo, "assunto": r.get("Assunto", "")[:300],
                "protocolo": r.get("Protocolo_Entrega"), "versao": r.get("Versao"), "url": r["Link_Download"]}
+        doc_base = doc
+        cods_assunto = {m.group(1) + m.group(2) for m in COD_RX.finditer(sem_acento(r.get("Assunto", "")).upper())}
         for (cc, em) in emissoes:
             if cc != c:
                 continue
+            meus = {i["c"].upper() for i in emissoes[(cc, em)]}
+            prefixos = {x[:4] for x in meus}
+            if any(x[:4] in prefixos and x not in meus for x in cods_assunto):
+                continue                       # cita outro título da mesma família (ex.: BCBF15 para a BCBF16)
+            explicito = int(em) in ns or bool(cods_assunto & meus)
             if tipo == "plano_rj" or int(em) in ns or not ns:
-                por[(cc, em)].append(doc)
+                por[(cc, em)].append({**doc_base, "explicito": explicito})
     # remove versões antigas do mesmo protocolo
     for k, ds in por.items():
         ult = {}
@@ -194,6 +202,8 @@ def _documentos(emissoes, linhas):
 def selecionar(ds):
     """Escritura original + 3 aditamentos mais recentes + atas de AGD posteriores ao último aditamento + plano de RJ/RE."""
     esc = [d for d in ds if d["tipo"] == "escritura"]
+    if any(d.get("explicito") for d in esc):        # prefere escrituras/aditamentos que citam a emissão ou o código
+        esc = [d for d in esc if d.get("explicito")]
     sel = []
     if esc:
         sel.append(esc[0])
@@ -606,7 +616,7 @@ def ler_garantias(a, idx, idx_p):
     log(f"pedidos: {len(corpo)} | ~{est / 1e6:.2f} MTok | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
     if idx["gasto_usd"] + est_usd > a.limite_usd:
         sys.exit(f"ABORTADO: passaria do teto de US$ {a.limite_usd}")
-    prm = lambda t: {"model": MODELO, "max_tokens": 6000, "system": GARANTIAS, "messages": [{"role": "user", "content": t}]}
+    prm = lambda t: {"model": MODELO, "max_tokens": 12000, "system": GARANTIAS, "messages": [{"role": "user", "content": t}]}
     res = {}
     if modo == "direto":
         for k, g, sel, t in corpo:
@@ -637,6 +647,9 @@ def ler_garantias(a, idx, idx_p):
             j = ler_json(texto) or {}
         except Exception:
             j = {}
+        if not j.get("series"):
+            (SAIDA / f"{k}.garantias.raw.txt").write_text(texto)
+            log(f"  {k}: sem séries; saída bruta gravada ({len(texto)} caracteres, stop={uso.get('output_tokens')})")
         for e, itens, sel_e, ass in g:
             cods = {i["c"] for i in itens}
             ser = {x["codigo"]: x for x in j.get("series", []) if x.get("codigo") in cods}
