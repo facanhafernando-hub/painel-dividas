@@ -1,0 +1,125 @@
+{
+ "series": [
+  {
+   "codigo": "IRBR12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": "2020-12-15",
+   "vencimento": "2026-12-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.6579,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 1) previa 2 séries: 1ª série a DI + spread de até 3,35% a.a. (venc. 2023-10-15), e 2ª série a IPCA + juros prefixados de no máximo 6,15% a.a. (venc. 2026-10-15). O 1º Aditamento (Doc. 3, assinado em 2020-12-21) cancelou a 1ª série por ausência de demanda e unificou a emissão em série única, com 229.193 debêntures. Fixou os juros em 6,6579% a.a., base 252 du, sobre o Valor Nominal Atualizado pelo IPCA. A taxa vigora desde a Primeira Data de Integralização, cuja data não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2021-06-15",
+    "ultima_data": "2026-12-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-12-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-12-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2022-12-15",
+     "descricao": "A partir desta data (inclusive) o Emissor pode fazer o Resgate Antecipado Facultativo Total. O valor é o maior entre (A) o Valor Nominal Atualizado mais juros e encargos e (B) o valor presente das parcelas remanescentes, descontado pela NTN-B 2026. Não é um prêmio fixo. A 5.3 também prevê Oferta de Resgate Antecipado com prêmio eventual, a critério do Emissor."
+    }
+   ],
+   "fonte": "Doc. 3 (1º Aditamento à Escritura da 2ª Emissão, em série única, entregue em 2020-12-29): cláusulas 4.4.1 (vencimento), 4.9.1 (IPCA), 4.10.1.1 (taxa), 4.11.1 (tabela de juros) e 4.12.1 (tabela de amortização). A cláusula 4.12.1 expressa a amortização como percentual do saldo do Valor Nominal Atualizado.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": null,
+ "lacunas": "1) A data de emissão (2020-12-15) foi inferida, não está expressa nos trechos. O Doc. 3 diz que o resgate antecipado é permitido após 24 meses da Data de Emissão, 'a partir de 15 de dezembro de 2022', e o vencimento é em 15 de dezembro de 2026. 2) A data da Primeira Data de Integralização não aparece, então 'vigente_desde' ficou null. 3) O código IRBR12 e a série UNI vieram do cabeçalho da solicitação. O Doc. 3 só confirma série única. 4) O Doc. 2 só tem carimbos de protocolo da JUCERJA, sem conteúdo de cronograma. 5) O Doc. 4 (2023-06-07) trata da 3ª emissão, com garantia real e 2 séries, vencimentos em 2027 e DI + 4%. Está fora do escopo pedido (só IRBR12) e seus códigos de negociação não foram informados, então não foi extraído. 6) Não há trechos de aditamentos posteriores, atas de AGD ou plano de recuperação sobre a 2ª emissão. O cronograma reflete o 1º Aditamento, mas alterações posteriores não visíveis aqui poderiam existir. 7) Não há registro de vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação nos trechos.",
+ "meta": {
+  "emissora": "IRB BRASIL RESSEGUROS S/A",
+  "cnpj": "33376989000191",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2020-10-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE280920200104411913-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=800278&numSequencia=325016&numVersao=1"
+   },
+   {
+    "data": "2020-11-30",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE191120200104416513-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=812066&numSequencia=336804&numVersao=1"
+   },
+   {
+    "data": "2020-12-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE211220200104419411-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=819556&numSequencia=344294&numVersao=1"
+   },
+   {
+    "data": "2023-06-07",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE010620230104508410-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1111121&numSequencia=635850&numVersao=1"
+   },
+   {
+    "data": "2025-09-10",
+    "tipo": "comunicado",
+    "assunto": "Agência de classificação de riscos S&ampP Global Ratings (\"S&ampP\") elevou os ratings de crédito de emissor de longo prazo e de emissão atribuídos ao IRB-Brasil Resseguros S.A. e às suas debêntures||de 'brAA+' para 'brAAA' na Escala Nacional Brasil",
+    "protocolo": "024180IPE100920250100422075-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1422499&numSequencia=947211&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 75217,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2577,
+   "output_tokens_details": {
+    "thinking_tokens": 1100
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "33376989000191_2"
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "series": [
+  {
+   "codigo": "CSNAA6",
+   "emissao": 16,
+   "serie": "1",
+   "data_emissao": "2024-11-15",
+   "vencimento": "2034-11-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.5888,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original limitava a taxa à maior entre a NTN-B 2033 + 0,49% a.a. e 6,90% a.a. A taxa foi fixada em 7,5888% a.a. pelo bookbuilding de 29/11/2024, ratificado no 1º Aditamento. O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-05-15",
+    "ultima_data": "2034-11-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2034-11-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "1º Aditamento da 16ª emissão (entregue em 2024-12-02), Anexo A (escritura consolidada): cláusulas 4.6.1, 4.11.1, 4.12.1, 4.13.1 e Anexo II. Amortização única na data de vencimento.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "15ª e 16ª emissões: nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. O Anexo I (agente fiduciário) das escrituras de nov/2024 e dez/2024 indica status ATIVO e sem inadimplementos para as séries da 15ª emissão. A ata de AGD de 30/06/2025 (Documento 6) trata apenas da 13ª emissão (série única, vencimento prorrogado para 2030-11-30). Não se aplica às séries pedidas.",
+ "lacunas": "1) A Data de Emissão não aparece como data explícita nos trechos. Foi deduzida pelos prazos e vencimentos (10 anos até 15/04/2034 na 15ª emissão; 10 anos até 15/11/2034 na 16ª emissão). A 16ª emissão teve bookbuilding em 29/11/2024, posterior à data de emissão deduzida (15/11/2024). Isso pode indicar que a data de emissão ou a de início da rentabilidade difere, e deve ser conferido. 2) Data de Início da Rentabilidade e Primeira Data de Integralização não aparecem nos trechos, por isso 'vigente_desde' é null. 3) Os tickers CSNAA5, CSNAB5 e CSNAA6 foram associados às séries conforme a lista do usuário. Os trechos não trazem códigos B3. A 2ª série da 16ª emissão (CSNAB6 presumido; 7,6952% a.a., vencimento 2039-11-15, amortizações de 33,3333% em 2037-11-15 e 50% em 2038-11-15 e 100% no vencimento) não foi solicitada e não foi extraída. 4) O Documento 1 (14ª emissão, 3 séries, vencimentos em 2030/2033/2038) e o Documento 6 (13ª emissão) não pertencem às séries solicitadas e foram ignorados. 5) A tabela de amortização do 1º Aditamento da 15ª emissão traz a data '15 de abril 2033' (sem 'de'), tratada como 2033-04-15. 6) Não há aditamentos posteriores aos de 2024-05-07 (15ª) e 2024-12-02 (16ª) nos documentos. O cronograma assume que continuam vigentes. O Anexo II lista as datas de pagamento de juros apenas em trecho, e a regra semestral foi inferida das cláusulas 4.12.1.",
+ "meta": {
+  "emissora": "COMPANHIA SIDERURGICA NACIONAL",
+  "cnpj": "33042730000104",
+  "emissao": "16",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-06-19",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "004030IPE160620230104509611-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1114714&numSequencia=639443&numVersao=1"
+   },
+   {
+    "data": "2024-04-16",
+    "tipo": "escritura",
+    "assunto": "Instrumento particular de escritura da 15ª (décima quinta) emissão de debêntures",
+    "protocolo": "004030IPE120420240104539812-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1222509&numSequencia=747235&numVersao=1"
+   },
+   {
+    "data": "2024-05-07",
+    "tipo": "escritura",
+    "assunto": "1º ADITAMENTO DA 15ª (DÉCIMA QUINTA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "004030IPE070520240104541914-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1234162&numSequencia=758888&numVersao=1"
+   },
+   {
+    "data": "2024-11-05",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "004030IPE051120240104560113-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1298755&numSequencia=823481&numVersao=1"
+   },
+   {
+    "data": "2024-12-02",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento da Escritura de Debenture - 16º emissão",
+    "protocolo": "004030IPE021220240104562814-59",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1310388&numSequencia=835114&numVersao=1"
+   },
+   {
+    "data": "2025-07-04",
+    "tipo": "ata_agd",
+    "assunto": "Alteração da escritura de emissão",
+    "protocolo": "004030IPE300620250179744184-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1398090&numSequencia=922802&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 130311,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4200,
+   "output_tokens_details": {
+    "thinking_tokens": 1560
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "33042730000104_15-16"
+ }
+}

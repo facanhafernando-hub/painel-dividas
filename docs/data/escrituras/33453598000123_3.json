@@ -1,0 +1,202 @@
+{
+ "series": [
+  {
+   "codigo": "RAIZ13",
+   "emissao": 3,
+   "serie": "1",
+   "data_emissao": "2024-09-15",
+   "vencimento": "2034-09-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.4879,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 1) previa o maior entre NTN-B 2033 menos 0,10% a.a. e 5,80% a.a. O 1º Aditamento (Doc. 2) fixou 6,4879% a.a. após o bookbuilding. A taxa incide sobre o VNU atualizado pelo IPCA e vale desde a 1ª Data de Integralização, cuja data não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-03-15",
+    "ultima_data": "2034-09-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2034-09-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 2 (1º Aditamento, Anexo A, versão consolidada da Escritura): cláusulas 7.1.1, 7.6.1, 7.7.1, 7.11.1, 7.12.1 e 7.13.1. Amortização em parcela única do VNU Atualizado no vencimento. Os juros são pagos todo dia 15 de março e setembro, e a última data é o próprio vencimento, 15/09/2034 (a tabela lista 15/03/2034 e depois a Data de Vencimento).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": false
+   }
+  },
+  {
+   "codigo": "RAIZ23",
+   "emissao": 3,
+   "serie": "2",
+   "data_emissao": "2024-09-15",
+   "vencimento": "2039-09-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.4794,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 1) previa o maior entre NTN-B 2035 menos 0,05% a.a. e 5,85% a.a. O 1º Aditamento (Doc. 2) fixou 6,4794% a.a. após o bookbuilding. A taxa incide sobre o VNU atualizado pelo IPCA e vale desde a 1ª Data de Integralização, cuja data não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-03-15",
+    "ultima_data": "2039-09-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2037-09-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-09-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-09-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 2 (1º Aditamento, Anexo A, versão consolidada da Escritura): cláusulas 7.1.1, 7.6.1, 7.7.1, 7.11.2, 7.12.2, 7.13.2 e 7.13.3. São 3 parcelas anuais em 15/09 sobre o VNU Atualizado, a partir do 13º ano. Os percentuais incidem sobre o saldo do VNU Atualizado, não sobre o VNE.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": false
+   }
+  }
+ ],
+ "situacao": "3ª emissão (RAIZ13 e RAIZ23): as atas de AGD (Docs. 5, 6, 8 e 10) registram o vencimento antecipado automático da emissão, notificado pelo Agente Fiduciário em 11/03/2026. A causa foi o pedido de Recuperação Extrajudicial protocolado pela Raízen S.A. em 11/03/2026. O Plano de RE (Doc. 4) foi homologado nos autos 4037759-13.2026.8.26.0100 e confirmado em 30/07/2026 (Docs. 7, 9 e 11). Os créditos quirografários, incluindo as debêntures, estão sujeitos ao Plano, que prevê novação e reestruturação. As opções previstas incluem Novas Notas, Novo Empréstimo ou Novas Debêntures RSA com amortização em 31/03/2032 e 31/03/2034, a Opção B com vencimento em 31/03/2047 e a capitalização em Units. O Plano prevalece sobre os instrumentos originais (cl. 1.2.8). A AGD de 03/07/2026 foi suspensa e reaberta em 07/08, 25/08 e 05/10/2026, e foi suspensa de novo para reabertura em 03/12/2026. Nenhuma deliberação de mérito está registrada nos trechos. O cronograma contratual acima é o último documentado, mas está superado pelo vencimento antecipado e pela RE em curso.",
+ "lacunas": "1) A data da 1ª Data de Integralização das séries não consta dos trechos, então 'vigente_desde' ficou null. 2) As datas intermediárias das tabelas de juros foram omitidas pelos recortes, mas a regra semestral em 15/03 e 15/09 está expressa no texto. 3) Não está claro em que opção do Plano (A, B, C etc.) os titulares de RAIZ13 e RAIZ23 foram alocados. Os trechos das atas de 05/10/2026 que citam as Opções A e C parecem se referir a emissão de série única, possivelmente outra emissão. 4) Os Anexos 3.1, 3.2.1, 3.2.2 e D do Plano não estão nos trechos, portanto não há cronograma novado específico, como juros, PIK e prazos, para RAIZ13 e RAIZ23. 5) Não há documento que confirme pagamentos de juros ou principal após 11/03/2026, e as atas só registram suspensões. 6) O Doc. 3 trata da 2ª emissão da Raízen S.A. (série única, 24/06/2031, DI+0,83%) e foi ignorado por não pertencer às séries pedidas. Os demais títulos citados nas listas de emissões do agente fiduciário também foram ignorados.",
+ "meta": {
+  "emissora": "RAIZEN S.A.",
+  "cnpj": "33453598000123",
+  "emissao": "3",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-10-01",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão",
+    "protocolo": "025917IPE230920240104556609-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1286882&numSequencia=811608&numVersao=1"
+   },
+   {
+    "data": "2024-10-07",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento à Escritura de Emissão de Debênture",
+    "protocolo": "025917IPE041020240104557210-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1289135&numSequencia=813861&numVersao=1"
+   },
+   {
+    "data": "2024-10-07",
+    "tipo": "escritura",
+    "assunto": "Escritura da Debênture",
+    "protocolo": "025917IPE180620240104557212-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1289334&numSequencia=814060&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "025917IPE100320260206650085-07",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1532009&numSequencia=1056715&numVersao=2"
+   },
+   {
+    "data": "2026-06-23",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação da Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE220620260109005551-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537736&numSequencia=1062442&numVersao=1"
+   },
+   {
+    "data": "2026-07-03",
+    "tipo": "ata_agd",
+    "assunto": "Ata Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE030720260101935782-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1541832&numSequencia=1066538&numVersao=1"
+   },
+   {
+    "data": "2026-07-30",
+    "tipo": "comunicado",
+    "assunto": "Homologação do Plano de Recuperação Extrajudicial",
+    "protocolo": "025917IPE300620260154824981-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549784&numSequencia=1074490&numVersao=1"
+   },
+   {
+    "data": "2026-09-02",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE250820260191991805-04",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564323&numSequencia=1089029&numVersao=1"
+   },
+   {
+    "data": "2026-09-30",
+    "tipo": "comunicado",
+    "assunto": "Aprovação de Medidas Voltadas à Implementação do Plano de Recuperação Extrajudicial",
+    "protocolo": "025917IPE300920260152893847-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572701&numSequencia=1097407&numVersao=1"
+   },
+   {
+    "data": "2026-10-06",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE051020260158842872-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574863&numSequencia=1099569&numVersao=1"
+   },
+   {
+    "data": "2026-11-06",
+    "tipo": "comunicado",
+    "assunto": "Aumento de Capital Privado, Instituição do Programa de Units, Programa de ADSs e Emissão de Debêntures RSA",
+    "protocolo": "025917IPE061120260230502989-03",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585801&numSequencia=1110507&numVersao=2"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 136744,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3538,
+   "output_tokens_details": {
+    "thinking_tokens": 1207
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "33453598000123_3"
+ }
+}

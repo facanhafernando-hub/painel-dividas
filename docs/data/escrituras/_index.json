@@ -5,7 +5,7 @@
     "CMPH14"
    ],
    "status": "ok",
-   "assinatura": "ec2ce119ab15",
+   "assinatura": "89cb02704792",
    "bate_snd": false
   },
   "12420164000157_6": {
@@ -13,7 +13,7 @@
     "VVEO16"
    ],
    "status": "ok",
-   "assinatura": "764e033ba8a4",
+   "assinatura": "adba443fe9d2",
    "bate_snd": true
   },
   "09053134000145_2": {
@@ -29,7 +29,7 @@
     "VVEO15"
    ],
    "status": "ok",
-   "assinatura": "a0c3ba025410",
+   "assinatura": "89cb02704792",
    "bate_snd": true
   },
   "12420164000157_7": {
@@ -37,9 +37,1091 @@
     "VVEO17"
    ],
    "status": "ok",
-   "assinatura": "d96a925a75e4",
+   "assinatura": "adba443fe9d2",
    "bate_snd": false
+  },
+  "00776574000660_22": {
+   "codigos": [
+    "AMERE2",
+    "AMERF2",
+    "AMERG2"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "02773542000122_27": {
+   "codigos": [
+    "RBRAI7"
+   ],
+   "status": "texto_vazio"
+  },
+  "03670763000138_4": {
+   "codigos": [
+    "OMTX14"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "07415333000120_6": {
+   "codigos": [
+    "SIMH16"
+   ],
+   "status": "texto_vazio"
+  },
+  "07575651000159_7": {
+   "codigos": [
+    "VRGL17",
+    "VRGL27",
+    "VRGL37"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "07575651000159_8": {
+   "codigos": [
+    "VRGL18"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "07729358000107_1": {
+   "codigos": [
+    "IBIP11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "08793343000162_7": {
+   "codigos": [
+    "BION17"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "09296295000160_13": {
+   "codigos": [
+    "AZLAA3",
+    "AZLAB3"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "12229415000110_6": {
+   "codigos": [
+    "SAUC16"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "15116321000123_1": {
+   "codigos": [
+    "SRQE11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "17875156000119_1": {
+   "codigos": [
+    "VNTT11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "27902165000105_3": {
+   "codigos": [
+    "HGLB23"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "34714305000187_2": {
+   "codigos": [
+    "RAIN12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "34714313000123_2": {
+   "codigos": [
+    "BGCE12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "34714322000114_2": {
+   "codigos": [
+    "CGCE12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "34745410000183_2": {
+   "codigos": [
+    "SLZG12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "35198517000111_1": {
+   "codigos": [
+    "SNRO11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "36475062000105_1": {
+   "codigos": [
+    "EMMP21",
+    "EMMP41"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "39763833000140_1": {
+   "codigos": [
+    "ARAJ11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "40004405000112_1": {
+   "codigos": [
+    "TXXI11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "40215231000137_1": {
+   "codigos": [
+    "MEZ511"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "40952394000100_2": {
+   "codigos": [
+    "VBMT12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "41774224000138_1": {
+   "codigos": [
+    "GBSP11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "45281813000135_2": {
+   "codigos": [
+    "USNA12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "46710597000169_4": {
+   "codigos": [
+    "FSII14"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "47080619000117_5": {
+   "codigos": [
+    "TAEB15"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "49571208000150_1": {
+   "codigos": [
+    "FORB11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "51577236000126_1": {
+   "codigos": [
+    "XPPO11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "54218779000145_1": {
+   "codigos": [
+    "SOLY11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "59115685000164_1": {
+   "codigos": [
+    "TUPW11",
+    "TUPW21"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "00242184000104_4": {
+   "codigos": [
+    "ARML14"
+   ],
+   "status": "ok",
+   "assinatura": "20933b15b7db",
+   "bate_snd": false
+  },
+  "00242184000104_5": {
+   "codigos": [
+    "ARML15",
+    "ARML25"
+   ],
+   "status": "ok",
+   "assinatura": "20933b15b7db",
+   "bate_snd": true
+  },
+  "00242184000104_6": {
+   "codigos": [
+    "ARML26"
+   ],
+   "status": "ok",
+   "assinatura": "20933b15b7db",
+   "bate_snd": true
+  },
+  "01599101000193_3": {
+   "codigos": [
+    "SEQL13"
+   ],
+   "status": "ok",
+   "assinatura": "e10b9d03fe34",
+   "bate_snd": true
+  },
+  "01917818000136_7": {
+   "codigos": [
+    "LGTE17",
+    "LGTE27"
+   ],
+   "status": "ok",
+   "assinatura": "3a6dbb4dd960",
+   "bate_snd": false
+  },
+  "02919555000167_9": {
+   "codigos": [
+    "ARTR19"
+   ],
+   "status": "ok",
+   "assinatura": "e024a27923f4",
+   "bate_snd": false
+  },
+  "04368865000166_5": {
+   "codigos": [
+    "CPTM15"
+   ],
+   "status": "ok",
+   "assinatura": "3b5c9bb4cf34",
+   "bate_snd": false
+  },
+  "05197443000138_10": {
+   "codigos": [
+    "HAPVA0"
+   ],
+   "status": "ok",
+   "assinatura": "d30a43167f03",
+   "bate_snd": true
+  },
+  "05197443000138_5": {
+   "codigos": [
+    "HAPV15"
+   ],
+   "status": "ok",
+   "assinatura": "d30a43167f03",
+   "bate_snd": true
+  },
+  "05197443000138_6": {
+   "codigos": [
+    "BCBF16"
+   ],
+   "status": "ok",
+   "assinatura": "d30a43167f03",
+   "bate_snd": false
+  },
+  "05197443000138_7": {
+   "codigos": [
+    "HAPV17"
+   ],
+   "status": "ok",
+   "assinatura": "d121c8efb1eb",
+   "bate_snd": true
+  },
+  "05197443000138_8": {
+   "codigos": [
+    "HAPV18",
+    "HAPV28"
+   ],
+   "status": "ok",
+   "assinatura": "7e1b2fdb2d1c",
+   "bate_snd": true
+  },
+  "05197443000138_9": {
+   "codigos": [
+    "HAPV19"
+   ],
+   "status": "ok",
+   "assinatura": "7e1b2fdb2d1c",
+   "bate_snd": true
+  },
+  "05917486000140_2": {
+   "codigos": [
+    "LVTC22"
+   ],
+   "status": "ok",
+   "assinatura": "056a06218982",
+   "bate_snd": true
+  },
+  "07714104000107_7": {
+   "codigos": [
+    "SUMI17",
+    "SUMI37"
+   ],
+   "status": "ok",
+   "assinatura": "b3c2335a54df",
+   "bate_snd": false
+  },
+  "07714104000107_8": {
+   "codigos": [
+    "SUMI18"
+   ],
+   "status": "ok",
+   "assinatura": "b3c2335a54df",
+   "bate_snd": true
+  },
+  "07714104000107_9": {
+   "codigos": [
+    "SUMI19",
+    "SUMI39"
+   ],
+   "status": "ok",
+   "assinatura": "b3c2335a54df",
+   "bate_snd": true
+  },
+  "08070508000178_4": {
+   "codigos": [
+    "RESA14"
+   ],
+   "status": "ok",
+   "assinatura": "e8d92d09fe2c",
+   "bate_snd": false
+  },
+  "08070508000178_5": {
+   "codigos": [
+    "RESA15"
+   ],
+   "status": "ok",
+   "assinatura": "e8d92d09fe2c",
+   "bate_snd": false
+  },
+  "08070508000178_7": {
+   "codigos": [
+    "RESA17",
+    "RESA27"
+   ],
+   "status": "ok",
+   "assinatura": "e8d92d09fe2c",
+   "bate_snd": false
+  },
+  "08159965000133_5": {
+   "codigos": [
+    "IGSN15"
+   ],
+   "status": "ok",
+   "assinatura": "81633d5b95d2",
+   "bate_snd": false
+  },
+  "08827501000158_10": {
+   "codigos": [
+    "AEGPA0"
+   ],
+   "status": "ok",
+   "assinatura": "3d6dfdb610d9",
+   "bate_snd": false
+  },
+  "08827501000158_18": {
+   "codigos": [
+    "AEGPA8"
+   ],
+   "status": "ok",
+   "assinatura": "3d6dfdb610d9",
+   "bate_snd": false
+  },
+  "08827501000158_23": {
+   "codigos": [
+    "AEGPB3"
+   ],
+   "status": "ok",
+   "assinatura": "3d6dfdb610d9",
+   "bate_snd": false
+  },
+  "08827501000158_25": {
+   "codigos": [
+    "AEGPB5"
+   ],
+   "status": "ok",
+   "assinatura": "3d6dfdb610d9",
+   "bate_snd": false
+  },
+  "08902291000115_1": {
+   "codigos": [
+    "CMIN11",
+    "CMIN21"
+   ],
+   "status": "ok",
+   "assinatura": "5815e3d09e58",
+   "bate_snd": true
+  },
+  "08902291000115_2": {
+   "codigos": [
+    "CMIN12",
+    "CMIN22"
+   ],
+   "status": "ok",
+   "assinatura": "5815e3d09e58",
+   "bate_snd": true
+  },
+  "09074183000164_8": {
+   "codigos": [
+    "TBCR18"
+   ],
+   "status": "ok",
+   "assinatura": "9c43ef245b4a",
+   "bate_snd": false
+  },
+  "09527023000123_3": {
+   "codigos": [
+    "EESG13"
+   ],
+   "status": "ok",
+   "assinatura": "bbe982c62877",
+   "bate_snd": false
+  },
+  "10319900000150_1": {
+   "codigos": [
+    "CCLS11",
+    "CCLS21"
+   ],
+   "status": "ok",
+   "assinatura": "5bad4acc50da",
+   "bate_snd": false
+  },
+  "10571175000102_7": {
+   "codigos": [
+    "URBS17"
+   ],
+   "status": "ok",
+   "assinatura": "766cb5af917b",
+   "bate_snd": true
+  },
+  "10760260000119_4": {
+   "codigos": [
+    "CVCB14"
+   ],
+   "status": "ok",
+   "assinatura": "bef7e796c102",
+   "bate_snd": true
+  },
+  "10760260000119_7": {
+   "codigos": [
+    "CVCB17"
+   ],
+   "status": "ok",
+   "assinatura": "f6ee71483bd6",
+   "bate_snd": true
+  },
+  "11992680000193_8": {
+   "codigos": [
+    "QUAL18"
+   ],
+   "status": "ok",
+   "assinatura": "b01b1ce2e31b",
+   "bate_snd": true
+  },
+  "12104241000402_11": {
+   "codigos": [
+    "ONCOA1"
+   ],
+   "status": "ok",
+   "assinatura": "80ff4aaef372",
+   "bate_snd": true
+  },
+  "12104241000402_12": {
+   "codigos": [
+    "ONCOA2"
+   ],
+   "status": "ok",
+   "assinatura": "80ff4aaef372",
+   "bate_snd": true
+  },
+  "12104241000402_9": {
+   "codigos": [
+    "ONCO19",
+    "ONCO29"
+   ],
+   "status": "ok",
+   "assinatura": "80ff4aaef372",
+   "bate_snd": false
+  },
+  "12300288000107_1": {
+   "codigos": [
+    "NTEN11"
+   ],
+   "status": "ok",
+   "assinatura": "3269a119f8d9",
+   "bate_snd": false
+  },
+  "12528708000107_1": {
+   "codigos": [
+    "AERI11"
+   ],
+   "status": "ok",
+   "assinatura": "7512aa944c63",
+   "bate_snd": false
+  },
+  "12528708000107_2": {
+   "codigos": [
+    "AERI12"
+   ],
+   "status": "ok",
+   "assinatura": "7512aa944c63",
+   "bate_snd": false
+  },
+  "12648266000124_5": {
+   "codigos": [
+    "AMBP15"
+   ],
+   "status": "ok",
+   "assinatura": "e21ce577d8b1",
+   "bate_snd": false
+  },
+  "12648266000124_6": {
+   "codigos": [
+    "AMBP16"
+   ],
+   "status": "ok",
+   "assinatura": "e21ce577d8b1",
+   "bate_snd": false
+  },
+  "13270520000166_2": {
+   "codigos": [
+    "KRSA12"
+   ],
+   "status": "ok",
+   "assinatura": "8ddc98e01070",
+   "bate_snd": true
+  },
+  "15385166000140_6": {
+   "codigos": [
+    "AEGE16"
+   ],
+   "status": "ok",
+   "assinatura": "153f1c9352be",
+   "bate_snd": false
+  },
+  "15385166000140_7": {
+   "codigos": [
+    "AEGE17"
+   ],
+   "status": "ok",
+   "assinatura": "153f1c9352be",
+   "bate_snd": false
+  },
+  "17314329000120_4": {
+   "codigos": [
+    "MEAL14"
+   ],
+   "status": "ok",
+   "assinatura": "79da2fd5bc4a",
+   "bate_snd": true
+  },
+  "21240146000184_3": {
+   "codigos": [
+    "AGXY13",
+    "AGXY23",
+    "AGXY33",
+    "AGXY43"
+   ],
+   "status": "ok",
+   "assinatura": "dbc33c8db825",
+   "bate_snd": false
+  },
+  "21240146000184_4": {
+   "codigos": [
+    "AGXY14"
+   ],
+   "status": "ok",
+   "assinatura": "dbc33c8db825",
+   "bate_snd": false
+  },
+  "21314559000166_17": {
+   "codigos": [
+    "MVLV16",
+    "MVLV26"
+   ],
+   "status": "ok",
+   "assinatura": "0dd8f32d0676",
+   "bate_snd": false
+  },
+  "21314559000166_7": {
+   "codigos": [
+    "MOVI37"
+   ],
+   "status": "ok",
+   "assinatura": "0dd8f32d0676",
+   "bate_snd": false
+  },
+  "21314559000166_8": {
+   "codigos": [
+    "MOVI18",
+    "MOVI28"
+   ],
+   "status": "ok",
+   "assinatura": "0dd8f32d0676",
+   "bate_snd": false
+  },
+  "23373000000132_11": {
+   "codigos": [
+    "VAMOA1"
+   ],
+   "status": "ok",
+   "assinatura": "ecb5bc5fa128",
+   "bate_snd": true
+  },
+  "23373000000132_3": {
+   "codigos": [
+    "VAMO23",
+    "VAMO33"
+   ],
+   "status": "ok",
+   "assinatura": "ecb5bc5fa128",
+   "bate_snd": true
+  },
+  "23373000000132_4": {
+   "codigos": [
+    "VAMO34"
+   ],
+   "status": "ok",
+   "assinatura": "ecb5bc5fa128",
+   "bate_snd": false
+  },
+  "23438929000100_2": {
+   "codigos": [
+    "CONX12"
+   ],
+   "status": "ok",
+   "assinatura": "c92860698e08",
+   "bate_snd": true
+  },
+  "23438929000100_3": {
+   "codigos": [
+    "ALAR13",
+    "ALAR23"
+   ],
+   "status": "ok",
+   "assinatura": "c92860698e08",
+   "bate_snd": false
+  },
+  "31748174000160_1": {
+   "codigos": [
+    "ANET11"
+   ],
+   "status": "ok",
+   "assinatura": "57ea8b1bcb39",
+   "bate_snd": true
+  },
+  "31748174000160_2": {
+   "codigos": [
+    "ANET12",
+    "VERO12"
+   ],
+   "status": "ok",
+   "assinatura": "9ce85387e093",
+   "bate_snd": true
+  },
+  "31748174000160_3": {
+   "codigos": [
+    "VERO13",
+    "VERO23"
+   ],
+   "status": "ok",
+   "assinatura": "be5d2aa7da46",
+   "bate_snd": true
+  },
+  "31748174000160_4": {
+   "codigos": [
+    "VERO14",
+    "VERO24",
+    "VERO34",
+    "VERO44"
+   ],
+   "status": "ok",
+   "assinatura": "fd9cec549b66",
+   "bate_snd": true
+  },
+  "31748174000160_5": {
+   "codigos": [
+    "VERO25",
+    "VERO35"
+   ],
+   "status": "ok",
+   "assinatura": "627858d6b686",
+   "bate_snd": true
+  },
+  "32021201000161_1": {
+   "codigos": [
+    "ORIG11",
+    "ORIG21"
+   ],
+   "status": "ok",
+   "assinatura": "c43c153665ea",
+   "bate_snd": false
+  },
+  "33041260065290_10": {
+   "codigos": [
+    "BHIAA0",
+    "BHIAB0",
+    "BHIAC0"
+   ],
+   "status": "ok",
+   "assinatura": "51710638a998",
+   "bate_snd": true
+  },
+  "33041260065290_11": {
+   "codigos": [
+    "BHIAA1",
+    "BHIAB1",
+    "BHIAC1"
+   ],
+   "status": "ok",
+   "assinatura": "bf38a9163f78",
+   "bate_snd": false
+  },
+  "33042730000104_11": {
+   "codigos": [
+    "CSNAA1"
+   ],
+   "status": "ok",
+   "assinatura": "9fc0c5a92dc6",
+   "bate_snd": true
+  },
+  "33042730000104_12": {
+   "codigos": [
+    "CSNAA2"
+   ],
+   "status": "ok",
+   "assinatura": "9fc0c5a92dc6",
+   "bate_snd": false
+  },
+  "33042730000104_14": {
+   "codigos": [
+    "CSNAA4",
+    "CSNAB4",
+    "CSNAC4"
+   ],
+   "status": "ok",
+   "assinatura": "9fc0c5a92dc6",
+   "bate_snd": true
+  },
+  "33042730000104_15": {
+   "codigos": [
+    "CSNAA5",
+    "CSNAB5"
+   ],
+   "status": "ok",
+   "assinatura": "4823cc8104c7",
+   "bate_snd": true
+  },
+  "33042730000104_16": {
+   "codigos": [
+    "CSNAA6"
+   ],
+   "status": "ok",
+   "assinatura": "4823cc8104c7",
+   "bate_snd": true
+  },
+  "33376989000191_2": {
+   "codigos": [
+    "IRBR12"
+   ],
+   "status": "ok",
+   "assinatura": "53fb999cab9c",
+   "bate_snd": true
+  },
+  "33453598000123_3": {
+   "codigos": [
+    "RAIZ13",
+    "RAIZ23"
+   ],
+   "status": "ok",
+   "assinatura": "b06a412c9d5a",
+   "bate_snd": false
+  },
+  "33453598000123_4": {
+   "codigos": [
+    "RAIZ14"
+   ],
+   "status": "ok",
+   "assinatura": "1e5a0f12d72a",
+   "bate_snd": false
+  },
+  "35764708000101_1": {
+   "codigos": [
+    "TEPA11"
+   ],
+   "status": "ok",
+   "assinatura": "32ff5ed407e2",
+   "bate_snd": false
+  },
+  "35764708000101_2": {
+   "codigos": [
+    "TEPA12",
+    "TEPA22"
+   ],
+   "status": "ok",
+   "assinatura": "32ff5ed407e2",
+   "bate_snd": false
+  },
+  "35764708000101_3": {
+   "codigos": [
+    "TEPA13",
+    "TEPA23"
+   ],
+   "status": "ok",
+   "assinatura": "32ff5ed407e2",
+   "bate_snd": true
+  },
+  "39881421000104_3": {
+   "codigos": [
+    "CGEE13",
+    "CGEE23"
+   ],
+   "status": "ok",
+   "assinatura": "1a76f6d52441",
+   "bate_snd": true
+  },
+  "42150391000170_16": {
+   "codigos": [
+    "BRKMA6",
+    "BRKMB6"
+   ],
+   "status": "ok",
+   "assinatura": "dfc22ef86fdd",
+   "bate_snd": true
+  },
+  "42150391000170_18": {
+   "codigos": [
+    "BRKMA8",
+    "BRKMB8"
+   ],
+   "status": "ok",
+   "assinatura": "dfc22ef86fdd",
+   "bate_snd": false
+  },
+  "42310775000103_2": {
+   "codigos": [
+    "RISP12",
+    "RISP22"
+   ],
+   "status": "ok",
+   "assinatura": "0471dd20bb91",
+   "bate_snd": true
+  },
+  "42310775000103_4": {
+   "codigos": [
+    "RISP14",
+    "RISP24"
+   ],
+   "status": "ok",
+   "assinatura": "0471dd20bb91",
+   "bate_snd": true
+  },
+  "42353180000135_4": {
+   "codigos": [
+    "IRJS14"
+   ],
+   "status": "ok",
+   "assinatura": "73906ac9c662",
+   "bate_snd": true
+  },
+  "42353180000135_5": {
+   "codigos": [
+    "IRJS15"
+   ],
+   "status": "ok",
+   "assinatura": "fb78c5605e8e",
+   "bate_snd": false
+  },
+  "42644220000106_2": {
+   "codigos": [
+    "RIS412",
+    "RIS422"
+   ],
+   "status": "ok",
+   "assinatura": "6d1104313dbb",
+   "bate_snd": true
+  },
+  "42644220000106_4": {
+   "codigos": [
+    "RIS414",
+    "RIS424"
+   ],
+   "status": "ok",
+   "assinatura": "6d1104313dbb",
+   "bate_snd": true
+  },
+  "44067725000172_1": {
+   "codigos": [
+    "VBRR11"
+   ],
+   "status": "ok",
+   "assinatura": "ea2cbc2501bf",
+   "bate_snd": true
+  },
+  "45456117000112_2": {
+   "codigos": [
+    "ASER12"
+   ],
+   "status": "ok",
+   "assinatura": "a563e2f100e1",
+   "bate_snd": false
+  },
+  "47508411000156_18": {
+   "codigos": [
+    "CBRDB8"
+   ],
+   "status": "ok",
+   "assinatura": "e8665f799228",
+   "bate_snd": true
+  },
+  "47508411000156_20": {
+   "codigos": [
+    "PCARD0"
+   ],
+   "status": "ok",
+   "assinatura": "fc1d97dba55d",
+   "bate_snd": true
+  },
+  "52548435000179_3": {
+   "codigos": [
+    "JSMLA5",
+    "JSMLB5"
+   ],
+   "status": "sem_series",
+   "assinatura": "b118a63c0159",
+   "bate_snd": null
+  },
+  "60444437000146_15": {
+   "codigos": [
+    "LIGHC5"
+   ],
+   "status": "ok",
+   "assinatura": "8f3831be0c96",
+   "bate_snd": true
+  },
+  "60444437000146_17": {
+   "codigos": [
+    "LIGHC7"
+   ],
+   "status": "ok",
+   "assinatura": "97e38a3cbc17",
+   "bate_snd": false
+  },
+  "60444437000146_19": {
+   "codigos": [
+    "LIGHB9"
+   ],
+   "status": "ok",
+   "assinatura": "ecd0ade9f024",
+   "bate_snd": true
+  },
+  "60444437000146_20": {
+   "codigos": [
+    "LIGHC0"
+   ],
+   "status": "ok",
+   "assinatura": "3b57063b55d1",
+   "bate_snd": true
+  },
+  "60444437000146_21": {
+   "codigos": [
+    "LIGH2B"
+   ],
+   "status": "ok",
+   "assinatura": "f1a534f4419d",
+   "bate_snd": true
+  },
+  "60444437000146_22": {
+   "codigos": [
+    "LIGHE2"
+   ],
+   "status": "ok",
+   "assinatura": "540ffdd7d041",
+   "bate_snd": true
+  },
+  "60444437000146_24": {
+   "codigos": [
+    "LIGHC4"
+   ],
+   "status": "ok",
+   "assinatura": "3e77412de755",
+   "bate_snd": true
+  },
+  "60444437000146_9": {
+   "codigos": [
+    "LSVE39"
+   ],
+   "status": "ok",
+   "assinatura": "7a2d6dea008d",
+   "bate_snd": true
+  },
+  "61695227000193_27": {
+   "codigos": [
+    "ELPLA7"
+   ],
+   "status": "ok",
+   "assinatura": "a5e0f40e1054",
+   "bate_snd": false
+  },
+  "61695227000193_29": {
+   "codigos": [
+    "ELPLB9"
+   ],
+   "status": "ok",
+   "assinatura": "a5e0f40e1054",
+   "bate_snd": true
+  },
+  "62070362000106_2": {
+   "codigos": [
+    "MTRO12"
+   ],
+   "status": "ok",
+   "assinatura": "e4f41b253315",
+   "bate_snd": false
+  },
+  "62258884000136_3": {
+   "codigos": [
+    "CCCI13",
+    "CCCI23",
+    "CCCI33",
+    "CCCI43",
+    "CCCI53",
+    "CCCI63",
+    "CCCI73",
+    "CCCI83",
+    "CCCI93"
+   ],
+   "status": "json_invalido",
+   "assinatura": "76c872825076"
+  },
+  "62258884000136_4": {
+   "codigos": [
+    "ICBR14",
+    "ICBR24"
+   ],
+   "status": "json_invalido",
+   "assinatura": "76c872825076"
+  },
+  "76535764000143_12": {
+   "codigos": [
+    "OIBRA2"
+   ],
+   "status": "ok",
+   "assinatura": "34cf58517f3f",
+   "bate_snd": false
+  },
+  "76535764000143_6": {
+   "codigos": [
+    "TLNL16"
+   ],
+   "status": "ok",
+   "assinatura": "34cf58517f3f",
+   "bate_snd": false
+  },
+  "82641325000118_7": {
+   "codigos": [
+    "CREM17"
+   ],
+   "status": "sem_series",
+   "assinatura": "2985649003c7",
+   "bate_snd": null
   }
  },
- "gasto_usd": 3.4637
+ "gasto_usd": 12.2305
 }

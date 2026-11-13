@@ -1,0 +1,196 @@
+{
+ "series": [
+  {
+   "codigo": "VERO12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": "2023-03-17",
+   "vencimento": "2030-03-17",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura prevê juros equivalentes ao maior entre (i) a taxa do Tesouro IPCA+ 2028 (NTN-B 15/08/2028) apurada no bookbuilding mais spread de 3,00% a.a., e (ii) 9,34% a.a., ambos base 252 du. A taxa final foi fixada no bookbuilding e ratificada em aditamento (Anexo II, modelo com spread em branco). Esse aditamento não consta dos trechos. O valor nominal é atualizado pelo IPCA (cl. 7.13.1)."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-09-15",
+    "ultima_data": "2030-03-17",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-03-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-03-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-03-17",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 1 (Escritura da 2ª emissão da Vero, assinada), cláusulas 7.12.1 (vencimento), 7.14.1 (Amortização Programada, base: saldo do VNU Atualizado), 7.15.1 (Remuneração) e 7.16.1 (pagamento semestral de juros em 15/mar e 15/set). Documento 2 (Lâmina da Oferta) confirma as mesmas datas.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 4,
+    "amort_doc": 4,
+    "datas_iguais": 4,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "ANET12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": "2022-11-15",
+   "vencimento": "2030-11-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.9619,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Taxa definida no bookbuilding e ratificada em aditamento de 2022-11-28. O IPCA atualiza o valor nominal desde a Data de Início da Rentabilidade (data da primeira integralização, que não consta dos trechos). Não há registro de mudança de taxa."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-05-15",
+    "ultima_data": "2030-11-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-11-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 4 (3º Aditamento à escritura da 2ª emissão da America Net, incorporada pela Vero), Anexo A (versão consolidada): cl. 4.6.1 (vencimento), 4.11.1 (remuneração), 4.12.1 (juros semestrais em 15/mai e 15/nov) e 4.13.1 (amortização, base: Valor Nominal Atualizado). Documentos 5 e 6 (propostas para a AGD) trazem as mesmas cláusulas.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 4,
+    "amort_doc": 4,
+    "datas_iguais": 4,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "VERO12 (2ª emissão Vero): nos trechos não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. ANET12 (2ª emissão America Net, sucedida pela Vero por incorporação): há AGD convocada em 1ª convocação para 2026-02-09 para aprovar o 3º Aditamento. O aditamento equaliza covenants, hipóteses de vencimento antecipado e quóruns com as demais emissões da Vero, converte a espécie de garantia real com fiança para quirografária e exclui as referências à Fiança e à Cessão Fiduciária. O texto do aditamento tem datas ainda em branco ou entre colchetes, portanto a aprovação não está confirmada. Nenhuma das alterações propostas muda o fluxo de pagamentos. Não há vencimento antecipado, suspensão, RJ/RE ou novação em nenhuma das duas.",
+ "lacunas": "1) VERO12: o VNU não aparece nos trechos (só o montante ofertado de R$ 375 mi); a Data de Emissão (cl. 7.10.1) não foi recortada e foi deduzida de 'sete anos' até 2030-03-17, ou seja, 2023-03-17; a taxa final do bookbuilding não consta (só o intervalo: maior entre IPCA+/2028 + 3,00% e 9,34% a.a.), e o aditamento que a ratifica não foi fornecido. A tabela de prêmios de resgate (cl. 7.17.5) não foi recortada, por isso 'premios' está vazio. Não há aditamentos posteriores nos documentos; o Documento 3, apesar do nome do arquivo, trata da 1ª emissão da Vero (CDI + 2,30%, vencimento 2027-12-08, amortização mensal) e foi excluído por não ser a emissão pedida. 2) ANET12: o 3º Aditamento é minuta com campos em branco ou entre colchetes ([9]/[6] de fevereiro de 2026, '[=]' para a data da incorporação das Fiadoras). Não foram fornecidos a escritura original, o 1º e o 2º aditamentos, nem a ata da AGD de 2026, por isso o cronograma vem da versão consolidada anexa à minuta. A data de início da rentabilidade não consta. A porcentagem de amortização incide sobre o Valor Nominal Atualizado, que cresce com o IPCA, e não sobre o VNE.",
+ "meta": {
+  "emissora": "VERO S.A.",
+  "cnpj": "31748174000160",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-03-21",
+    "tipo": "escritura",
+    "assunto": "Debs Vero - Escritura de Emissão das Debêntures (Assinada)(103336243.1)",
+    "protocolo": "026409IPE170320230104500600-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1075173&numSequencia=599903&numVersao=1"
+   },
+   {
+    "data": "2023-04-10",
+    "tipo": "escritura",
+    "assunto": "2ª Emissão de Debêntures - Lâmina da Oferta",
+    "protocolo": "026409IPE200320230104502609-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1084380&numSequencia=609109&numVersao=1"
+   },
+   {
+    "data": "2023-05-25",
+    "tipo": "escritura",
+    "assunto": "Vero - Aditamento Escritura de Emissão assinada",
+    "protocolo": "026409IPE301120210104507113-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1106503&numSequencia=631232&numVersao=1"
+   },
+   {
+    "data": "2026-01-19",
+    "tipo": "escritura",
+    "assunto": "3º (TERCEIRO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO",
+    "protocolo": "026409IPE190120260145692380-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468351&numSequencia=993057&numVersao=1"
+   },
+   {
+    "data": "2026-01-20",
+    "tipo": "proposta_agd",
+    "assunto": "PROPOSTA DA ADMINISTRAÇÃO PARA ASSEMBLEIA GERAL DE DEBENTURISTAS DA 2ª (SEGUNDA) EMISSÃO",
+    "protocolo": "026409IPE090220260203772632-30",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468480&numSequencia=993186&numVersao=2"
+   },
+   {
+    "data": "2026-01-20",
+    "tipo": "proposta_agd",
+    "assunto": "PROPOSTA DA ADMINISTRAÇÃO PARA ASSEMBLEIA GERAL DE DEBENTURISTAS DA 2ª (SEGUNDA) EMISSÃO",
+    "protocolo": "026409IPE090220260319774787-78",
+    "versao": "3",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468533&numSequencia=993239&numVersao=3"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 133517,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4768,
+   "output_tokens_details": {
+    "thinking_tokens": 2422
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "31748174000160_2"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "series": [
+  {
+   "codigo": "EESG13",
+   "emissao": 3,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Os trechos não trazem a remuneração original da debênture (escritura ausente). O Plano de RJ prevê remunerações genéricas por classe de credor, mas não há indicação de qual classe ou condição se aplica à EESG13."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Nenhum dos documentos fornecidos (comunicados de 2025-10-27, 2025-10-30 e 2025-12-19 e Plano de RJ de 2025-12-19) contém a escritura, aditamentos ou cronograma da 3ª emissão (EESG13). Os trechos do Plano tratam apenas de condições genéricas por classe de credor.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-06-25",
+     "2028-06-26",
+     "2029-06-25"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "3ª emissão (EESG13): a Environmental ESG Participações S.A. está em recuperação judicial (processo 3014764-58.2025.8.19.0001, Grupo Ambipar). Em 2025-10-27 houve antecipação da tutela recursal para processamento do pedido, com suspensão de medidas dos credores. Em 2025-10-30 houve comunicado de deferimento do pedido. Em 2025-12-19 foi apresentado o Plano de RJ, que ainda pode ser alterado por negociações com os credores. Não consta dos trechos a declaração de vencimento antecipado específica da EESG13, nem sua classificação no plano (quirografário, financeiro colaborador, Debêntures Reestruturação etc.).",
+ "lacunas": "Não há cronograma vigente da EESG13 nos trechos: faltam data de emissão, vencimento, VNE, remuneração original, datas de juros e amortizações. A escritura e os aditamentos da 3ª emissão não foram fornecidos. O Plano de RJ traz condições gerais por classe de credor (por exemplo, quirografários com carência até nov/2040, 2% a.a. capitalizados e parcelas anuais de 31/12/2040 a 31/12/2045; Condição G com Debêntures Reestruturação a 100% DI, prazo de 132 meses, carência de 24 meses de juros com capitalização e 36 meses de principal). Esses termos não podem ser atribuídos à EESG13 sem saber a classe do credor e a opção escolhida, por isso não foram preenchidos. Também não foi possível confirmar a data de homologação do plano, da qual dependem os prazos.",
+ "meta": {
+  "emissora": "ENVIRONMENTAL ESG PARTICIPACOES S.A.",
+  "cnpj": "09527023000123",
+  "emissao": "3",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-10-27",
+    "tipo": "comunicado",
+    "assunto": "Antecipação da tutela recursal para processamento do pedido de recuperação judicial",
+    "protocolo": "026271IPE271020250184076525-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436270&numSequencia=960982&numVersao=1"
+   },
+   {
+    "data": "2025-10-30",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do Pedido de Recuperação Judicial",
+    "protocolo": "026271IPE301020250132015835-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1437840&numSequencia=962552&numVersao=1"
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "comunicado",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "026271IPE191220250137959204-59",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459943&numSequencia=984649&numVersao=1"
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "026271IPE191220250113622362-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459942&numSequencia=984648&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 18783,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1050,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "09527023000123_3"
+ }
+}

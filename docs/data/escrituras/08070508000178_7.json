@@ -1,0 +1,266 @@
+{
+ "series": [
+  {
+   "codigo": "RESA17",
+   "emissao": 7,
+   "serie": "001",
+   "data_emissao": "2022-03-15",
+   "vencimento": "2029-03-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 5.9219,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Taxa definida no bookbuilding e ratificada no 1º Aditamento (2022-03-25), incidindo sobre o Valor Nominal Unitário Atualizado pelo IPCA. Step-up condicional de +0,1250% por SKPI descumprido, limitado a +0,2500%. Se a meta não for atendida até 2026-09-15, passa a valer a partir de 2027-03-15. Não há evidência de que tenha sido acionado. Foram emitidas 768.094 debêntures nesta série."
+   },
+   "juros": {
+    "periodicidade_meses": 12,
+    "primeira_data": "2023-03-15",
+    "ultima_data": "2029-03-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2029-03-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3, 1º Aditamento e escritura consolidada (Anexo A), cláusulas 7.6, 7.10, 7.12 e 7.13.I.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": false
+   }
+  },
+  {
+   "codigo": "RESA27",
+   "emissao": 7,
+   "serie": "002",
+   "data_emissao": "2022-03-15",
+   "vencimento": "2032-03-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 5.9645,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Taxa ratificada no 1º Aditamento (2022-03-25), incidindo sobre o Valor Nominal Unitário Atualizado pelo IPCA. Step-up condicional de +0,1250% por SKPI descumprido, limitado a +0,2500%. Se a meta não for atendida até 2026-09-15, passa a valer a partir de 2027-03-15. Não há evidência de que tenha sido acionado. Foram emitidas 428.591 debêntures nesta série."
+   },
+   "juros": {
+    "periodicidade_meses": 12,
+    "primeira_data": "2023-03-15",
+    "ultima_data": "2032-03-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-03-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-03-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-03-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3, 1º Aditamento e escritura consolidada (Anexo A), cláusulas 7.6, 7.10, 7.12 e 7.13.II (tabela de amortização).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": false
+   }
+  }
+ ],
+ "situacao": "4ª, 5ª e 7ª emissões: Raízen S.A. e Raízen Energia ajuizaram recuperação extrajudicial em 2026-03-11 (processo 4037759-13.2026.8.26.0100, 3ª Vara de Falências e Recuperações Judiciais de SP). Em 2026-03-12 a decisão ratificou a suspensão de ações e execuções por 180 dias, incluindo a exigibilidade de principal, juros e acréscimos dos créditos sujeitos. As atas de AGD de junho a outubro de 2026 declaram as três emissões vencidas antecipadamente de forma automática, com notificação do Agente Fiduciário em 2026-03-11 (7ª emissão). O cronograma original, portanto, não é mais exigível. O plano de RE foi homologado judicialmente (data truncada nos trechos). O Agente Fiduciário (Pentágono) elegeu uma Opção de Pagamento do plano para toda a comunhão de cada emissão, nos termos das cláusulas 4.1.5 e 4.2 do Plano, e esse pagamento vincula todos os debenturistas. Os quóruns deliberativos não foram atingidos nas AGDs de 29/09 e 13-14/10/2026. O prazo para individualização da escolha vai até 2026-10-20 (4ª e 5ª emissões) e 2026-10-21 (7ª emissão). A negociação secundária será suspensa 2 dias úteis antes do fim do período de eleição.",
+ "lacunas": "1) A escritura original da 4ª emissão (RESA14) e o termo de emissão da 5ª não estão nos trechos. Faltam data de emissão, VNE explícito, base de cálculo (RESA14), periodicidade de juros e amortizações. Para ambas só se conhece o vencimento, o indexador e a taxa. Os VNEs de R$1.000,00 são derivados de valor total / quantidade, a partir do Anexo III. 2) Para a 5ª emissão, o 1º Aditamento de 2020 só exclui a série 1 e fixa a taxa, e o vencimento (2030-06-15) vem apenas do Anexo III de outro documento. 3) O VNE da 7ª emissão está na cláusula 6.3, omitida nos trechos. A data de emissão de 2022-03-15 foi calculada como o vencimento menos 7 anos (série 1) e menos 10 anos (série 2), e não foi lida de uma cláusula. 4) O texto do plano de recuperação extrajudicial (novas condições de pagamento, descontos, conversão, prazos) e a Opção de Pagamento escolhida não aparecem nos trechos. O novo cronograma pós-RE não pôde ser extraído, e o cronograma acima é o contratual original, hoje suspenso. 5) Não há registro de PIK, carência ou prêmios. 6) Não se sabe se o step-up de SKPI da 7ª emissão (verificação em 2026-09-15) foi acionado.",
+ "meta": {
+  "emissora": "RAIZEN ENERGIA S/A",
+  "cnpj": "08070508000178",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2019-11-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE311020190104378011-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=720707&numSequencia=245530&numVersao=1"
+   },
+   {
+    "data": "2020-07-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE100620200104404113-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=779310&numSequencia=304051&numVersao=1"
+   },
+   {
+    "data": "2020-07-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE120620200104404113-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=779311&numSequencia=304052&numVersao=1"
+   },
+   {
+    "data": "2022-02-04",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DE EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE QUIROGRAFÁRIA, COM GARANTIA ADICIONAL FIDEJUSSÓRIA, DA SÉTIMA EMISSÃO DE RAÍZEN ENERGIA S.A.",
+    "protocolo": "023230IPE040220220104459614-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=939264&numSequencia=463998&numVersao=1"
+   },
+   {
+    "data": "2022-03-25",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE250320220104464512-98",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=958895&numSequencia=483629&numVersao=1"
+   },
+   {
+    "data": "2026-03-11",
+    "tipo": "comunicado",
+    "assunto": "Pedido de Recuperação Extrajudicial Raízen S.A.",
+    "protocolo": "023230IPE110320260195736967-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1488697&numSequencia=1013403&numVersao=1"
+   },
+   {
+    "data": "2026-03-12",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do Processo de Recuperação Extrajudicial",
+    "protocolo": "023230IPE120320260148659598-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489896&numSequencia=1014602&numVersao=1"
+   },
+   {
+    "data": "2026-06-29",
+    "tipo": "ata_agd",
+    "assunto": "Ata Assembleia Geral de Debenturistas - 4ª emissão - 26.06.2026",
+    "protocolo": "023230IPE260620260124071673-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539623&numSequencia=1064329&numVersao=1"
+   },
+   {
+    "data": "2026-06-29",
+    "tipo": "ata_agd",
+    "assunto": "Ata Assembleia Geral de Debenturistas - 5ª emissão - 26.06.2026",
+    "protocolo": "023230IPE260620260190445249-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539495&numSequencia=1064201&numVersao=1"
+   },
+   {
+    "data": "2026-06-29",
+    "tipo": "ata_agd",
+    "assunto": "Ata Assembleia Geral de Debenturistas - 7ª emissão - 26.06.2026",
+    "protocolo": "023230IPE260620260187977700-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539524&numSequencia=1064230&numVersao=1"
+   },
+   {
+    "data": "2026-07-14",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas - 4ª emissão",
+    "protocolo": "023230IPE140720260184075120-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544826&numSequencia=1069532&numVersao=1"
+   },
+   {
+    "data": "2026-07-15",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas - 5ª emissão",
+    "protocolo": "023230IPE140720260138260835-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545281&numSequencia=1069987&numVersao=1"
+   },
+   {
+    "data": "2026-07-15",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas - 7ª emissão",
+    "protocolo": "023230IPE140720260132030846-40",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545280&numSequencia=1069986&numVersao=1"
+   },
+   {
+    "data": "2026-09-29",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - Assembleia de Debenturistas 5ª emissão",
+    "protocolo": "023230IPE290920260132073190-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572620&numSequencia=1097326&numVersao=1"
+   },
+   {
+    "data": "2026-09-29",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - Assembleia de Debenturistas 7ª emissão",
+    "protocolo": "023230IPE290920260120931691-98",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572616&numSequencia=1097322&numVersao=1"
+   },
+   {
+    "data": "2026-09-30",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - Assembleia de Debenturistas 4ª emissão",
+    "protocolo": "023230IPE290920260142104942-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573035&numSequencia=1097741&numVersao=1"
+   },
+   {
+    "data": "2026-10-15",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - 4ª emissão",
+    "protocolo": "023230IPE131020260155329161-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577593&numSequencia=1102299&numVersao=1"
+   },
+   {
+    "data": "2026-10-15",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - 5ª emissão",
+    "protocolo": "023230IPE131020260141065742-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577592&numSequencia=1102298&numVersao=1"
+   },
+   {
+    "data": "2026-10-15",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - 7ª emissão",
+    "protocolo": "023230IPE141020260100422470-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577591&numSequencia=1102297&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 115050,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4558,
+   "output_tokens_details": {
+    "thinking_tokens": 1349
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08070508000178_4-5-7"
+ }
+}

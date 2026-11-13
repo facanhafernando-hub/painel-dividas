@@ -1,0 +1,265 @@
+{
+ "series": [
+  {
+   "codigo": "BHIAA0",
+   "emissao": 10,
+   "serie": "1",
+   "data_emissao": null,
+   "vencimento": "2050-11-28",
+   "vne": 1.0,
+   "remuneracao": {
+    "indexador": "%DI",
+    "taxa": 100.0,
+    "base": "252 du",
+    "vigente_desde": "2025-12-29",
+    "historico": "Desde a Data de Emissão até 2025-12-28 (inclusive): 100% da Taxa DI + spread de 1,50% a.a., base 252 du. A partir de 2025-12-29 (inclusive): 100% da Taxa DI, sem spread. A data de corte foi corrigida pelo 5º aditamento (2026-01-13), com efeitos retroativos a 2025-12-17. O 4º aditamento previa corte em 2025-12-16/17."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": "2050-11-28",
+    "ultima_data": "2050-11-28",
+    "datas_irregulares": [
+     "2050-11-28"
+    ],
+    "carencia_ate": "2050-11-28"
+   },
+   "incorporacao_juros": [
+    {
+     "de": null,
+     "ate": "2025-12-28",
+     "observacao": "Juros capitalizados no VNU desde a Data de Emissão até 2025-12-28 (inclusive). A escritura original previa incorporação em 2024-11-28, 2025-05-28, 2025-11-28 e 2026-05-28, com pagamento em dinheiro depois. O 4º e o 5º aditamentos eliminaram o cronograma semestral. A data inicial do período não é informada, porque a Data de Emissão/Início da Rentabilidade não consta nos trechos."
+    },
+    {
+     "de": "2025-12-29",
+     "ate": "2050-11-28",
+     "observacao": "Sem pagamentos periódicos: a Remuneração é paga somente na Data de Vencimento (cláusula 6.12.1(i)). Os trechos não dizem expressamente se os juros desse período são incorporados ao VNU."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2050-11-28",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura original (Doc. 1), cláusulas 6.6.1, 6.11.1, 6.12 e 6.13.1; 4º Aditamento (Doc. 3), novas cláusulas 6.6.1, 6.11.1, 6.12.1(i), 6.12.2 e 6.13.1; 5º Aditamento (Doc. 4), cláusulas 3.1 (6.11.1, 6.11.4 e 6.12.2) e Anexo A (consolidado). Vigente: Doc. 4.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "BHIAB0",
+   "emissao": 10,
+   "serie": "2",
+   "data_emissao": null,
+   "vencimento": "2030-11-28",
+   "vne": 1.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Sem alteração: 100% da Taxa DI + 1,00% a.a., base 252 du, desde a Data de Início da Rentabilidade."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-11-28",
+    "ultima_data": "2030-05-28",
+    "datas_irregulares": [],
+    "carencia_ate": "2030-11-28"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2024-11-28",
+     "ate": "2030-05-28",
+     "observacao": "A Remuneração é capitalizada no VNU em todas as datas semestrais (28/nov e 28/mai), parcelas 1 a 12 (2024-11-28 a 2030-05-28). Na Data de Vencimento (2030-11-28, parcela 13) a incorporação é 'Não', ou seja, a Remuneração é paga junto com o principal. As parcelas 8 a 10 foram omitidas no trecho, mas seguem a regra semestral."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2030-11-28",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura original (Doc. 1), cláusulas 6.6.2, 6.11.2, 6.12.1(ii), 6.12.3 e 6.13.2. Mantido sem alteração no 4º Aditamento (Doc. 3) e no 5º Aditamento (Doc. 4), Anexo A consolidado.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "BHIAC0",
+   "emissao": 10,
+   "serie": "3",
+   "data_emissao": null,
+   "vencimento": "2050-11-28",
+   "vne": 1.0,
+   "remuneracao": {
+    "indexador": "%DI",
+    "taxa": 100.0,
+    "base": "252 du",
+    "vigente_desde": "2025-12-29",
+    "historico": "Desde a Data de Emissão até 2025-12-28 (inclusive): 100% da Taxa DI + spread de 1,00% a.a., base 252 du. A partir de 2025-12-29 (inclusive): 100% da Taxa DI, sem spread. A data de corte foi corrigida pelo 5º aditamento (2026-01-13), com efeitos retroativos a 2025-12-17. O 4º aditamento previa corte em 2025-12-16/17."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": "2050-11-28",
+    "ultima_data": "2050-11-28",
+    "datas_irregulares": [
+     "2050-11-28"
+    ],
+    "carencia_ate": "2050-11-28"
+   },
+   "incorporacao_juros": [
+    {
+     "de": null,
+     "ate": "2025-12-28",
+     "observacao": "Juros capitalizados no VNU desde a Data de Emissão até 2025-12-28 (inclusive). A escritura original previa incorporação semestral em todas as datas, de 2024-11-28 a 2030-05-28. O 4º e o 5º aditamentos eliminaram o cronograma semestral. A data inicial do período não é informada nos trechos."
+    },
+    {
+     "de": "2025-12-29",
+     "ate": "2050-11-28",
+     "observacao": "Sem pagamentos periódicos: a Remuneração é paga somente na Data de Vencimento (cláusula 6.12.1(iii)). Os trechos não dizem expressamente se os juros desse período são incorporados ao VNU."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2050-11-28",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura original (Doc. 1), cláusulas 6.6.3, 6.11.3, 6.12 e 6.13.3; 4º Aditamento (Doc. 3), novas cláusulas 6.6.3, 6.11.3, 6.12.1(iii), 6.12.2 e 6.13.3; 5º Aditamento (Doc. 4), cláusulas 3.1 (6.11.3, 6.11.4 e 6.12.2) e Anexo A (consolidado). Vigente: Doc. 4.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "10ª emissão (BHIAA0, BHIAB0, BHIAC0): a Emissora ajuizou pedido de recuperação judicial (processo nº 4152930-18.2026.8.26.0100). O ingresso do pedido de RJ é Evento de Vencimento Antecipado Automático, nos termos da Cláusula 8.1(b) da Escritura, segundo o Termo de não instalação da AGD (Doc. 6). Decisão interlocutória de 2026-08-19 deferiu tutela de urgência e obstou declarações de vencimento antecipado fundadas no ajuizamento da RJ. A decisão também obstou retenções ou amortizações de recebíveis extraordinários fora do fluxo ordinário. A AGD de 2026-09-15, sobre sustar ou não o vencimento antecipado, não foi instalada por falta de quórum (termo de 2026-09-17). O Agente Fiduciário não adotará providências contrárias à decisão judicial e deve convocar nova AGD em segunda convocação. Os Docs. 5, 7 e 8 (comunicados de 2026-08-31, 2026-10-19 e 2026-10-21, sobre tutela de urgência, ratificação do pedido e deferimento da RJ) vieram apenas com cabeçalhos genéricos, e seu conteúdo não está nos trechos. O cronograma contratual acima pode, portanto, estar suspenso ou ser alterado pelo plano de RJ, ainda não disponível. Nenhum plano de recuperação judicial ou proposta de novação consta nos trechos.",
+ "lacunas": "1) Data de Emissão e Data de Início da Rentabilidade da 10ª emissão não aparecem nos trechos. Os prazos de vigência são inconsistentes entre si: 67 meses até 2029-11-28 e 79 meses até 2030-11-28 apontam para 2024-04-28, enquanto 312 meses até 2050-11-28 aponta para 2024-11-28. Por isso data_emissao está null. 2) O Doc. 2 (escritura entregue em 2025-12-15, vencimentos de 2026-01-15, 2028-06-22, 2029-12-22 e 2060-12-22, com emissão aparentemente em 2025-12-22) trata de outra emissão, com séries de 1 a 4, e não foi usado. A 10ª emissão aparece nele apenas numa lista de outras emissões do agente fiduciário, com vencimentos de 2029-11-28 e 2030-11-28, informação que já estava defasada em relação aos aditamentos. 3) O Anexo A do 5º Aditamento ainda traz, na cláusula 6.12.2, a data '17 de dezembro de 2025' na frase da capitalização. Foi considerado o texto da cláusula 3.1 do aditamento (2025-12-28/29), que corrige a data de alteração da remuneração. 4) O percentual 100% de amortização única é sobre o saldo do VNU, que na data pode incluir juros incorporados. O VNU original é R$ 1,00, mas o saldo atualizado na data não é calculável pelos trechos. 5) A 2ª série é conversível em ações (período de conversão de 13 a 36 meses da Data de Emissão, podendo ser estendido até o vencimento, conforme as cláusulas 6.4.2.x), o que pode antecipar a extinção de parte das debêntures. A conversão não foi modelada como cronograma. 6) Tabelas parcialmente omitidas ('[...]'): parcelas 8 a 10 da 2ª série. Por isso as datas semestrais foram inferidas pela regra de periodicidade. 7) Resgates e amortizações facultativos ou obrigatórios (cash sweep) são eventuais e não têm datas fixas. Não foram incluídos. 8) Não há informação sobre pagamentos efetivamente realizados ou suspensos após a RJ.",
+ "meta": {
+  "emissora": "GRUPO CASAS BAHIA S.A",
+  "cnpj": "33041260065290",
+  "emissao": "10",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-04-29",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "006505IPE280420240104541111-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1228505&numSequencia=753231&numVersao=1"
+   },
+   {
+    "data": "2024-08-06",
+    "tipo": "escritura",
+    "assunto": "Escritura 10° emissão de debentures",
+    "protocolo": "006505IPE060820240104551013-01",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1267642&numSequencia=792368&numVersao=1"
+   },
+   {
+    "data": "2025-12-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "006505IPE141220250106849889-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1457069&numSequencia=981781&numVersao=1"
+   },
+   {
+    "data": "2025-12-30",
+    "tipo": "escritura",
+    "assunto": "Quarto aditamento à escritura da 10ª emissão de debentures",
+    "protocolo": "006505IPE291220250181311255-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462260&numSequencia=986966&numVersao=1"
+   },
+   {
+    "data": "2026-01-13",
+    "tipo": "escritura",
+    "assunto": "5 Aditamento à escritura da 10ª emissão de debentures",
+    "protocolo": "006505IPE090120260177444565-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1466861&numSequencia=991567&numVersao=1"
+   },
+   {
+    "data": "2026-08-31",
+    "tipo": "comunicado",
+    "assunto": "Deferimento de Tutela de Urgência na Recuperação Judicial",
+    "protocolo": "006505IPE310820260170920575-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562849&numSequencia=1087555&numVersao=1"
+   },
+   {
+    "data": "2026-09-17",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação da Assembleia Geral de Debenturistas da 10ª emissão de debentures",
+    "protocolo": "006505IPE150920260194788226-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569125&numSequencia=1093831&numVersao=1"
+   },
+   {
+    "data": "2026-10-19",
+    "tipo": "comunicado",
+    "assunto": "Ratificação do Pedido de Recuperação Judicial",
+    "protocolo": "006505IPE191020260101192350-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578469&numSequencia=1103175&numVersao=1"
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do pedido de Recuperação Judicial",
+    "protocolo": "006505IPE211020260116241989-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579129&numSequencia=1103835&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 117762,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 7452,
+   "output_tokens_details": {
+    "thinking_tokens": 3440
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "33041260065290_10"
+ }
+}

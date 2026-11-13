@@ -1,0 +1,130 @@
+{
+ "series": [
+  {
+   "codigo": "CONX12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": "2022-08-15",
+   "vencimento": "2029-08-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Atualização monetária pelo IPCA sobre o VNU. Juros prefixados: taxa a definir em bookbuilding, igual ao maior entre 7,30% a.a. e a TIR da NTN-B 2028 + 1,80% a.a. (base 252 du). A taxa final ratificada no Aditamento Bookbuilding não consta dos trechos. Incidência desde a primeira Data de Integralização (data não informada)."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-02-15",
+    "ultima_data": "2029-08-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2026-08-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-08-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-08-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-08-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 1 (Escritura da 2ª emissão, assinada em 08/08/2022): cláusulas 4.1.1, 4.5.1, 4.6.1, 4.12, 4.13.1, 4.14.1 (juros semestrais em 15/02 e 15/08) e 4.15.1 (tabela de amortização, em % do VNU Atualizado). Esta é a versão original: não há aditamento nem versão consolidada entre os documentos recebidos.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": null,
+ "lacunas": "CONX12: a taxa final de juros (Aditamento Bookbuilding) e a primeira Data de Integralização não constam dos trechos. O Documento 2 cita a escritura de 08/08/2022 'conforme aditado', mas nenhum aditamento, ata de AGD ou plano foi fornecido, então o cronograma pode ter mudado e não é possível confirmar. Nenhum trecho indica vencimento antecipado, RJ/RE ou renegociação da 2ª emissão. ALAR13 e ALAR23 (3ª emissão de debêntures, séries 001 e 002): não há documento delas. Os Documentos 2 e 3 tratam da 1ª emissão de Notas Comerciais Escriturais (Triple Play, R$ 150 mi, vencimento 2029-12-26, DI + 2,50%) e seu 1º aditamento, e o Documento 4 trata da 3ª emissão de Notas Comerciais Escriturais da Alares (emissão 2025-12-15, vencimento 2030-12-15). Nenhum deles é debênture e não foram usados. A cláusula 7.1 do Documento 4 confirma apenas que existe uma '3ª emissão de debêntures ... em 2 (duas) séries', sem trazer o cronograma. Por isso as duas séries ficaram com valores nulos.",
+ "meta": {
+  "emissora": "ALARES INTERNET PARTICIPACOES S/A",
+  "cnpj": "23438929000100",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-08-19",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "025194IPE080820220104479210-95",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1009666&numSequencia=534400&numVersao=1"
+   },
+   {
+    "data": "2023-10-27",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento Escritura 2ª Emissão Debêntures (CONX12) - Remuneração",
+    "protocolo": "025194IPE260820220104522612-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1155381&numSequencia=680107&numVersao=1"
+   },
+   {
+    "data": "2024-07-03",
+    "tipo": "escritura",
+    "assunto": "Termo de emissão Nota Comercial",
+    "protocolo": "025194IPE191220230104547607-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256384&numSequencia=781110&numVersao=1"
+   },
+   {
+    "data": "2024-07-03",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento Termo de Emissão Nota Comercial",
+    "protocolo": "025194IPE140620240104547607-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256387&numSequencia=781113&numVersao=1"
+   },
+   {
+    "data": "2025-12-15",
+    "tipo": "escritura",
+    "assunto": "Termo de Emissa~o da 3a Emissa~o de Notas Comerciais",
+    "protocolo": "025194IPE031220250108531471-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1457765&numSequencia=982477&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 112072,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3466,
+   "output_tokens_details": {
+    "thinking_tokens": 1670
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "23438929000100_2-3"
+ }
+}

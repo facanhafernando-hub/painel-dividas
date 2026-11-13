@@ -1,0 +1,480 @@
+{
+ "series": [
+  {
+   "codigo": "CGEE13",
+   "emissao": 3,
+   "serie": "1",
+   "data_emissao": "2024-12-15",
+   "vencimento": "2041-12-14",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.7219,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa taxa a definir no bookbuilding: o maior entre NTN-B 2035 + 0,85% a.a. e 7,40% a.a. (base 252). O 1º Aditamento (entregue em 2025-03-01) fixou 8,7219% a.a., base 252 du, sobre o VNU Atualizado. O texto não traz a data de início da rentabilidade."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-06-15",
+    "ultima_data": "2041-12-14",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-06-15",
+     "percentual": 0.25,
+     "base": "saldo"
+    },
+    {
+     "data": "2025-12-15",
+     "percentual": 0.2506,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-06-15",
+     "percentual": 0.3769,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-12-15",
+     "percentual": 0.3783,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-06-15",
+     "percentual": 0.5063,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-12-15",
+     "percentual": 0.5089,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-15",
+     "percentual": 1.2788,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-15",
+     "percentual": 1.2953,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-15",
+     "percentual": 2.3622,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-15",
+     "percentual": 2.4194,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-06-15",
+     "percentual": 2.7548,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-12-15",
+     "percentual": 2.8329,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-06-15",
+     "percentual": 4.0233,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-12-15",
+     "percentual": 4.192,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-06-15",
+     "percentual": 4.3754,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-12-15",
+     "percentual": 4.5756,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-06-15",
+     "percentual": 4.7255,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-12-15",
+     "percentual": 4.9599,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-06-15",
+     "percentual": 5.449,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-12-15",
+     "percentual": 5.763,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-06-15",
+     "percentual": 7.0629,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-12-15",
+     "percentual": 7.5996,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-06-15",
+     "percentual": 8.2247,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-12-15",
+     "percentual": 8.9617,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-06-15",
+     "percentual": 9.7239,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-12-15",
+     "percentual": 10.7713,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-06-15",
+     "percentual": 12.0715,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-12-15",
+     "percentual": 13.7288,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-06-15",
+     "percentual": 15.9136,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-12-15",
+     "percentual": 18.9252,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-06-15",
+     "percentual": 23.3429,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-12-15",
+     "percentual": 30.4511,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-06-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-12-14",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 2 (Escritura da 3ª emissão), cláusulas 4.6.1, 4.12.1 e 4.13.1 (tabela de amortização da 1ª série, 3ª coluna); Documento 3 (1º Aditamento), cláusulas 1.3 e 4.11.1 (taxa final 8,7219%). O Documento 4 (2º Aditamento) só altera o Anexo V, sem efeito no cronograma.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 31,
+    "amort_doc": 31,
+    "datas_iguais": 31,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "CGEE23",
+   "emissao": 3,
+   "serie": "2",
+   "data_emissao": "2024-12-15",
+   "vencimento": "2041-12-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.7219,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa taxa a definir no bookbuilding: o maior entre NTN-B 2035 + 0,85% a.a. e 7,40% a.a. (base 252). O 1º Aditamento (entregue em 2025-03-01) fixou 8,7219% a.a., base 252 du, sobre o VNU Atualizado. O texto não traz a data de início da rentabilidade."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-06-15",
+    "ultima_data": "2041-12-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-06-15",
+     "percentual": 0.25,
+     "base": "saldo"
+    },
+    {
+     "data": "2025-12-15",
+     "percentual": 0.2506,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-06-15",
+     "percentual": 0.3769,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-12-15",
+     "percentual": 0.3783,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-06-15",
+     "percentual": 0.5063,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-12-15",
+     "percentual": 0.5089,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-15",
+     "percentual": 1.2788,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-15",
+     "percentual": 1.2953,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-15",
+     "percentual": 2.3622,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-15",
+     "percentual": 2.4194,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-06-15",
+     "percentual": 2.7548,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-12-15",
+     "percentual": 2.8329,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-06-15",
+     "percentual": 4.0233,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-12-15",
+     "percentual": 4.192,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-06-15",
+     "percentual": 4.3754,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-12-15",
+     "percentual": 4.5756,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-06-15",
+     "percentual": 4.7255,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-12-15",
+     "percentual": 4.9599,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-06-15",
+     "percentual": 5.449,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-12-15",
+     "percentual": 5.763,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-06-15",
+     "percentual": 7.0629,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-12-15",
+     "percentual": 7.5996,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-06-15",
+     "percentual": 8.2247,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-12-15",
+     "percentual": 8.9617,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-06-15",
+     "percentual": 9.7239,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-12-15",
+     "percentual": 10.7713,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-06-15",
+     "percentual": 12.0715,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-12-15",
+     "percentual": 13.7288,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-06-15",
+     "percentual": 15.9136,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-12-15",
+     "percentual": 18.9252,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-06-15",
+     "percentual": 23.3429,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-12-15",
+     "percentual": 30.4511,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-06-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-12-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 2 (Escritura da 3ª emissão), cláusulas 4.6.2, 4.12.2 e 4.13.2 (tabela de amortização da 2ª série, 3ª coluna); Documento 3 (1º Aditamento), cláusulas 1.3 e 4.11.2 (taxa final 8,7219%). O Documento 4 (2º Aditamento) só altera o Anexo V, sem efeito no cronograma.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 31,
+    "amort_doc": 31,
+    "datas_iguais": 31,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "3ª emissão (CGEE13 e CGEE23): os trechos não mostram vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. Os dois aditamentos (1º: fixação da taxa e das quantidades; 2º: correção do Anexo V) não alteram o cronograma de pagamentos. O Documento 1 trata da outra emissão da CEEE-G (série única, vencimento em 2025-03-07, CDI+2,35%), que está fora do escopo pedido.",
+ "lacunas": "(1) A data de emissão (2024-12-15) não aparece em cláusula nos trechos. Foi inferida da 1ª parcela 'no 6º mês contado da Data de Emissão, ou seja, 15/06/2025' e dos prazos de 6.208 e 6.209 dias até 14/12/2041 e 15/12/2041. (2) O VNU da 3ª emissão não aparece nos trechos. R$ 1.000,00 foi calculado a partir de R$ 400 mi / 400.000 debêntures (1ª série) e R$ 800 mi / 800.000 (2ª série). O R$ 1.000,00 da escritura do Documento 1 é de outra emissão. (3) O trecho original não mostra a cláusula de atualização monetária; o indexador IPCA foi deduzido do Valor Nominal Unitário Atualizado, do Tesouro IPCA+ e da Lei 12.431. (4) A data de início da rentabilidade não aparece. (5) A tabela de amortização tem duas colunas de percentuais. Usou-se a 3ª coluna (percentual do VNU Atualizado), que a cláusula indica expressamente e que fecha em 100%, o que é coerente com base em saldo. A 4ª coluna (percentual com nota de rodapé, de 0,25% a 4,625%) não foi extraída e sua nota de rodapé não aparece nos trechos. (6) Os documentos de 2025 não incluem eventos posteriores como AGD, aditamentos de repactuação ou plano de recuperação. Não há como saber se o cronograma mudou depois do 2º Aditamento (2025-08-04). (7) Não se verificou ajuste de datas por dia não útil.",
+ "meta": {
+  "emissora": "COMPANHIA ESTADUAL DE GERACAO DE ENERGIA ELETRICA - CEEE-G",
+  "cnpj": "39881421000104",
+  "emissao": "3",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-02-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027154IPE230120250104569110-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1329735&numSequencia=854461&numVersao=1"
+   },
+   {
+    "data": "2025-02-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027154IPE240120250104569110-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1329736&numSequencia=854462&numVersao=1"
+   },
+   {
+    "data": "2025-03-01",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027154IPE280220250104571707-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1341767&numSequencia=866493&numVersao=1"
+   },
+   {
+    "data": "2025-08-04",
+    "tipo": "escritura",
+    "assunto": "2º Adiatamento da Escritura de Debenture",
+    "protocolo": "027154IPE280720250126695806-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1407312&numSequencia=932024&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 78460,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6764,
+   "output_tokens_details": {
+    "thinking_tokens": 2498
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "39881421000104_3"
+ }
+}

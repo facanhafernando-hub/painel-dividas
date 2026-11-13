@@ -1,0 +1,130 @@
+{
+ "series": [
+  {
+   "codigo": "CPTM15",
+   "emissao": 5,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.85,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "A taxa de IPCA + 8,85% a.a. foi aprovada na AGD instalada em 22/09/2026 e reaberta em 05/10/2026. Ela só vale após o fechamento da Operação de M&A com a BST, quando as Debêntures serão transferidas para a Ligga Serviços/Nova Emissora. A remuneração original da Escritura (Cláusula 7.15.2.2) não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": "2027-09-15",
+    "ultima_data": null,
+    "datas_irregulares": [
+     "2026-09-15"
+    ],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 1 (proposta da administração para AGD de 15/09/2026), que cita a AGD de 27/04/2026 e a Cláusula 7.15.2.2 da Escritura. Documento 6 (ata da AGD instalada em 22/09/2026 e reaberta em 05/10/2026), que traz o desconto adicional e a nova remuneração.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 10,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-09-17",
+     "2030-03-15",
+     "2030-09-16",
+     "2031-03-17",
+     "2031-09-15",
+     "2032-03-15",
+     "2032-09-15",
+     "2033-03-15",
+     "2033-09-15",
+     "2034-03-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "5ª emissão (CPTM15): o reperfilamento aprovado na AGD de 27/04/2026 só passa a valer com o fechamento da Operação de M&A com a Brasil TecPar (BST). Ele prevê novas datas de pagamento de remuneração, a primeira em 15/09/2027, e desconto de 7% sobre o VNU. A Emissora estima o fechamento até 30/11/2026. Até lá, vale o cronograma original da Cláusula 7.15.2.2, que tem parcela de remuneração em 15/09/2026. O Documento 1 propôs não pagar essa parcela (waiver). Se o fechamento não ocorrer até 30/11/2026, a suspensão cessa, a parcela fica imediatamente exigível e o não pagamento vira Evento de Inadimplemento, com prazo de cura da Cláusula 7.27.1(b). Os trechos não mostram o resultado dessa AGD de 15/09/2026. A ata da AGD de 22/09/2026, reaberta em 05/10/2026, aprovou condicionado ao fechamento do M&A: (a) desconto adicional de 23% sobre o VNU Atualizado no Dia Útil anterior ao fechamento, o que leva o desconto total a 30% com os 7% da AGD de abril, e (b) remuneração de IPCA + 8,85% a.a. Em caso de vencimento antecipado automático (Cláusula 7.27.1, itens (i), (iii) ou (v) do modelo de aditamento de abril), o pagamento será de Saldo do VNU × 1,3296. Os trechos não mostram vencimento antecipado declarado, RJ ou RE. A transferência das Debêntures para a Nova Emissora/Ligga Serviços e a possível troca do ticker ocorrem após o fechamento.",
+ "lacunas": "Os trechos não trazem data de emissão, vencimento, VNE, indexador e taxa originais, base de cálculo (252 du/360/365), cronograma original da Cláusula 7.15.2.2, nem o cronograma de amortização original ou o novo. O cronograma de pagamento da AGD de abril/2026 (primeira parcela de remuneração em 15/09/2027) é citado sem as demais datas, a periodicidade, as amortizações e o eventual PIK ou carência. O resultado da AGD de 15/09/2026 (waiver) não aparece. Portanto não é possível confirmar se a carência até 30/11/2026 foi aprovada, e por isso carencia_ate ficou null. A data 2026-09-15 em datas_irregulares é a parcela original sujeita à suspensão proposta. Na ata do Documento 6, o quórum do item (i) está cortado; só o do item (ii), 76,55% a favor, aparece. O desconto adicional parece aprovado, mas isso não é totalmente confirmado. Os Documentos 2 a 5 estão truncados e não trazem deliberações de cronograma.",
+ "meta": {
+  "emissora": "LIGGA TELECOMUNICACOES S.A",
+  "cnpj": "04368865000166",
+  "emissao": "5",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-08-26",
+    "tipo": "proposta_agd",
+    "assunto": "Waiver p/ não pagamento da parcela da Remuneração das Debêntures (15/09/26), diante da necessidade de prorrogar o prazo de fechamento da Operação de M&ampA com a Brasil TecPar",
+    "protocolo": "027367IPE150920260170743991-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561441&numSequencia=1086147&numVersao=1"
+   },
+   {
+    "data": "2026-09-16",
+    "tipo": "proposta_agd",
+    "assunto": "Concessão de desconto adicional em relação ao valor devido no âmbito das Debêntures",
+    "protocolo": "027367IPE220920260102111494-41",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568904&numSequencia=1093610&numVersao=1"
+   },
+   {
+    "data": "2026-10-04",
+    "tipo": "ata_agd",
+    "assunto": "Alterção de características das debêntures",
+    "protocolo": "027367IPE220920260195338711-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574062&numSequencia=1098768&numVersao=1"
+   },
+   {
+    "data": "2026-10-04",
+    "tipo": "ata_agd",
+    "assunto": "Alteração de características das debêntures",
+    "protocolo": "027367IPE280920260160906057-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574063&numSequencia=1098769&numVersao=1"
+   },
+   {
+    "data": "2026-10-22",
+    "tipo": "ata_agd",
+    "assunto": "Alteração de características das debêntures",
+    "protocolo": "027367IPE290920260195061679-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579453&numSequencia=1104159&numVersao=1"
+   },
+   {
+    "data": "2026-10-22",
+    "tipo": "ata_agd",
+    "assunto": "Alteração de características das debêntures",
+    "protocolo": "027367IPE051020260145523754-65",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579454&numSequencia=1104160&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 9515,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2451,
+   "output_tokens_details": {
+    "thinking_tokens": 865
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "04368865000166_5"
+ }
+}

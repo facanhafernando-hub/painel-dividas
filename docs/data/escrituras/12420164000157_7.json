@@ -12,7 +12,7 @@
     "taxa": 1.7,
     "base": "252 du",
     "vigente_desde": "2026-07-30",
-    "historico": "100% da Taxa DI + 1,60% a.a. (base 252 du) desde a Data de Emissão até 2026-07-30 (exclusive). Pela AGD de 2026-06-11, passa a 100% da Taxa DI + 1,70% a.a. (base 252 du) de 2026-07-30 (inclusive) até o vencimento. A mudança está sujeita às Condições Suspensiva e Resolutiva."
+    "historico": "100% da Taxa DI + 1,60% a.a. (base 252) desde a emissão até 2026-07-30 (exclusive); aprovada na AGD de 2026-06-11 a taxa de DI + 1,70% a.a. de 2026-07-30 (inclusive) até o vencimento. Vencimento anterior: 2029-02-28 (o quadro 'Antes da AGD' indica essa data; o texto do aditamento cita 2029-05-08 como data original)."
    },
    "juros": {
     "periodicidade_meses": 3,
@@ -30,7 +30,7 @@
     },
     {
      "data": "2030-01-30",
-     "percentual": 8.1081,
+     "percentual": null,
      "base": "saldo"
     },
     {
@@ -44,6 +44,31 @@
      "base": "saldo"
     },
     {
+     "data": "2031-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-01-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-01-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
      "data": "2034-01-30",
      "percentual": 100.0,
      "base": "saldo"
@@ -52,34 +77,39 @@
    "premios": [
     {
      "data": "2029-07-30",
-     "descricao": "Início do Prêmio Extraordinário de 0,50% a.a. (base 252 du) sobre o VNU/saldo, de 2029-07-30 (exclusive) até 2030-07-30 (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração. Nada é devido em pagamento antecipado ocorrido até 2029-07-30 (inclusive)."
+     "descricao": "Prêmio Extraordinário de 0,50% a.a. (base 252) sobre VNU/saldo, de 2029-07-30 (exclusive) até 2030-07-30 (inclusive); pago trimestralmente nas Datas de Pagamento da Remuneração."
     },
     {
      "data": "2030-07-30",
-     "descricao": "Prêmio Extraordinário passa a 1,00% a.a. (base 252 du) de 2030-07-30 (exclusive) até o vencimento (2034-01-30, inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração, com a última na Data de Vencimento."
+     "descricao": "Prêmio Extraordinário de 1,00% a.a. a partir de 2030-07-30 (exclusive) até o vencimento (2034-01-30, inclusive); pago trimestralmente nas Datas de Pagamento da Remuneração."
     }
    ],
-   "fonte": "Ata de AGD de 2026-06-11 (7ª emissão da CM Hospitalar, rito de registro automático), quadro 'Antes/Após a AGD': Data de Vencimento, cláusulas 4.11.1 (Remuneração), 4.12 (Pagamento da Remuneração e do Prêmio Extraordinário), 4.13.1 (Amortização) e 4.11.2 (Prêmio Extraordinário, em 'Inclusões'). Confirmado pelo comunicado de 2026-06-11 (vencimento 2034-01-30, carência de amortização até 2029-07-30, DI+1,70% a partir de 2026-07-30).",
+   "fonte": "Doc. 9 (ata da AGD de 2026-06-11 da 7ª emissão da CM Hospitalar, com anexo do modelo do Segundo Aditamento): quadro-resumo 'Antes/Após a AGD' das cláusulas 4.11.1, 4.11.2, 4.12.1 e 4.13.1.",
    "confianca": "media",
    "conferencia_snd": {
     "snd": true,
     "amort_snd": 1,
-    "amort_doc": 5,
+    "amort_doc": 10,
     "datas_iguais": 1,
     "so_snd": [],
     "so_doc": [
      "2029-07-30",
      "2030-01-30",
      "2030-07-30",
-     "2031-01-30"
+     "2031-01-30",
+     "2031-07-30",
+     "2032-01-30",
+     "2032-07-30",
+     "2033-01-30",
+     "2033-07-30"
     ],
     "pct_diferente": [],
     "ok": false
    }
   }
  ],
- "situacao": "7ª emissão (VVEO17): a AGD de 2026-06-11 aprovou, com 100% das Debêntures em Circulação, a repactuação de remuneração, datas de pagamento, amortização, vencimento (de 2029-02-28 para 2034-01-30), aquisição facultativa, vencimentos antecipados, obrigações, resgate antecipado facultativo total e amortização extraordinária facultativa (limitada a 98%). A eficácia depende das Condições Suspensiva e Resolutiva e da formalização do Segundo Aditamento, que nos trechos aparece apenas como modelo (Anexo II), sem assinatura. O comunicado de 2026-06-08 diz que a eficácia também depende das aprovações da 7ª emissão da Cremer e da 7ª emissão da Companhia. Antes disso, a Companhia comunicou em 2026-05-13 que estava em tratativas para repactuar suas dívidas financeiras. Há nova curva de covenant (Dívida Líquida/EBITDA): 4,75x a partir de 30/06/26, caindo até 3,50x a partir de 30/06/30. A definição de EBITDA passa a deduzir pagamentos de arrendamento. Os trechos do modelo de aditamento ainda mencionam um Período de Waiver Temporário até dezembro de 2025. Não há vencimento antecipado declarado, RJ/RE nem suspensão de pagamentos nos trechos. A proposta de AGD de 2024-12-05 (Documento 1) trata da 6ª emissão e não afeta esta série.",
- "lacunas": "1) Data de emissão e VNE não constam dos trechos. 2) Atribuição do documento: os Documentos 6 e 7 tratam ambos de uma '7ª emissão'. O Documento 6 parece ser a 7ª emissão da Cremer (pagamentos em 28/02 e 28/08, incorporação da Cremer pela CM Hospitalar no Anexo III). O Documento 7 parece ser a 7ª emissão da CM Hospitalar e foi usado aqui, mas o código VVEO17 não aparece nos trechos. 3) O Documento 7 tem inconsistência interna: a coluna 'Antes' traz vencimento 2029-02-28 e amortização 50% em 2028-02-28, mas a tabela de juros anterior usa 08/05 e 08/11 e fala em amortização em 08/05/2029. O histórico mostra que um aditamento anterior alterou vencimento e amortizações de 08/05 para 28/02, e as datas de pagamento de juros passadas podem ter mudado junto. 4) Juros: pelo texto, são semestrais em 08/05 e 08/11 (primeiro pagamento em 2024-11-08) até 2026-05-08, e trimestrais a partir de 2026-07-30. Os trechos não esclarecem se houve pagamento entre 2026-05-08 e 2026-07-30. 5) Amortização: o cronograma novo tem 10 parcelas semestrais de saldo (a partir de 2029-07-30, a última no vencimento). A tabela está parcialmente omitida: as parcelas 5ª a 9ª (previstas, pela regra semestral, para 2031-07-30, 2032-01-30, 2032-07-30, 2033-01-30 e 2033-07-30) não têm percentual nos trechos. No Documento 7 só são legíveis a 1ª (7,5%), a 3ª (8,8235%) e a 10ª (100%, no vencimento), e a 4ª aparece parcialmente (9,6774%, com data e ano cortados). A 2ª (8,1081%, 2030-01-30) e a data da 4ª (2031-01-30) foram completadas pelas atas das 5ª e 6ª emissões (Documentos 3 e 4), que têm a mesma estrutura e foram aplicadas por analogia. Os percentuais seguem o padrão de parcelas iguais de 7,5% do VNE, mas isso é inferência e não foi preenchido. 6) Não há incorporação de juros nem carência de juros nos trechos; a carência é só de amortização, até 2029-07-30. 7) A taxa de 1,70% e o cronograma novo só valem após o cumprimento das condições e a assinatura do aditamento; sem isso, vigora o cronograma anterior (vencimento 2029-02-28, DI+1,60%).",
+ "situacao": "6ª emissão: a AGD de 2026-06-08 aprovou a repactuação com 99,19% das debêntures em circulação, sem rejeições ou abstenções. A aprovação está sujeita a Condição Suspensiva e Resolutiva, e o aditamento (Terceiro Aditamento) ainda aparece apenas como modelo, com datas em branco. O comunicado de 2026-06-08 diz que a eficácia depende também das aprovações das 7ªs emissões (Cremer e CM Hospitalar). Não há vencimento antecipado declarado nos trechos. A proposta de 2024-12-05 pedia waiver temporário do covenant de alavancagem para 2024-2026, e há referência a uma AGD de 2024-12-26 sobre verificação de índice financeiro. O Fato Relevante de 2026-05-13 informa que a companhia está em tratativas para repactuar suas dívidas financeiras. Nova curva de covenant aprovada: 4,75x (2026-06-30 a 2027-03-31), 4,50x, 4,00x, 3,75x e 3,50x a partir de 2030-06-30. Cláusula de carência de principal até 2029-07-30. Não há RJ/RE nos trechos. 7ª emissão: a AGD de 2026-06-11 aprovou a repactuação com 100% das debêntures em circulação, também condicionada às Condições Suspensiva e Resolutiva e a um Segundo Aditamento ainda em modelo. Há menção a uma AGD de 2025-02-24 com waiver temporário até o exercício de 2025 e à possível venda/incorporação da Cremer (fiadora). Não há vencimento antecipado declarado nem RJ/RE nos trechos.",
+ "lacunas": "1) VNE, data de emissão e data de integralização não aparecem nos trechos (null). 2) Percentuais de amortização: nas duas séries só aparecem parcialmente. Para a 6ª faltam as parcelas 5ª a 9ª (cortadas). Para a 7ª falta também a 2ª parcela (nos documentos da 6ª ela é 8,1081%, mas não aparece no Doc. 9). As datas das parcelas intermediárias foram derivadas da regra semestral (a partir de 2029-07-30, até o vencimento em 2034-01-30), e a 10ª parcela (100% do saldo) está no vencimento. 3) A tabela completa das Datas de Pagamento da Remuneração e do Prêmio (39 parcelas na 6ª, 35 na 7ª) está truncada; usei a regra trimestral (dias 30 de jan/abr/jul/out) com primeiro pagamento em 2026-07-30. 4) O histórico de juros semestrais anteriores não foi listado como datas avulsas (6ª: 27/abr e 27/out desde 2023-04-27; 7ª: 08/mai e 08/nov desde 2024-11-08, até 2026-05-08). 5) As alterações estão aprovadas mas condicionadas e ainda sem aditamento assinado nos trechos, por isso a confiança é 'media'. Se as condições não se cumprirem, valem os cronogramas anteriores: 6ª, amortização de 50% em 2026-10-27 e 100% do saldo em 2027-10-27 (base saldo); 7ª, 50% em 2028-02-28 e 100% do saldo em 2029-02-28 (base saldo). 6) Excluídos por tratarem de outras emissões: Doc. 5 (ata da 5ª emissão, vencimento anterior 2027-07-22) e Doc. 8 (7ª emissão da Cremer S.A., juros em 28/fev e 28/ago, vencimento anterior 2028-02-28... 2029-02-28). Atribuí o Doc. 9 à 7ª emissão da CM Hospitalar porque nele a Cremer figura como fiadora. 7) Os códigos VVEO16 e VVEO17 vêm do enunciado e não constam dos documentos.",
  "meta": {
   "emissora": "CM HOSPITALAR S.A.",
   "cnpj": "12420164000157",
@@ -97,11 +127,27 @@
    },
    {
     "data": "2026-05-13",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 6ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260157685866-17",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521716&numSequencia=1046422&numVersao=1"
+   },
+   {
+    "data": "2026-05-13",
     "tipo": "comunicado",
     "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
     "protocolo": "025682IPE130520260105651273-61",
     "versao": "1",
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
+   },
+   {
+    "data": "2026-06-03",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 6ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260217418813-58",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530618&numSequencia=1055324&numVersao=2"
    },
    {
     "data": "2026-06-08",
@@ -153,21 +199,21 @@
    }
   ],
   "uso_grupo": {
-   "input_tokens": 73310,
+   "input_tokens": 97204,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 6561,
+   "output_tokens": 10982,
    "output_tokens_details": {
-    "thinking_tokens": 3899
+    "thinking_tokens": 7350
    },
-   "service_tier": "standard",
+   "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "12420164000157_7"
+  "grupo": "12420164000157_6-7"
  }
 }

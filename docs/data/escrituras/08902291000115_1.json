@@ -1,0 +1,165 @@
+{
+ "series": [
+  {
+   "codigo": "CMIN11",
+   "emissao": 1,
+   "serie": "001",
+   "data_emissao": "2021-07-15",
+   "vencimento": "2031-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 4.879,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa a maior taxa entre a NTN-B 2030 + 0,70% a.a. e 4,77% a.a. O 1º Aditamento (2021-08-02/03) fixou 4,8790% a.a. após o bookbuilding, incidente desde a Data de Início da Rentabilidade (Primeira Data de Integralização da série, cuja data não consta dos trechos). O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-01-15",
+    "ultima_data": "2031-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2031-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "1º Aditamento à Escritura da 1ª emissão (Doc. 2), Anexo A (escritura consolidada): cláusulas 4.6.1, 4.11.1, 4.12.1 e 4.13.1",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "CMIN21",
+   "emissao": 1,
+   "serie": "002",
+   "data_emissao": "2021-07-15",
+   "vencimento": "2036-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 5.021,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa a maior taxa entre a NTN-B 2035 + 0,78% a.a. e 4,90% a.a. O 1º Aditamento fixou 5,0210% a.a. após o bookbuilding, incidente desde a Data de Início da Rentabilidade (Primeira Data de Integralização da série, cuja data não consta dos trechos). O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-01-15",
+    "ultima_data": "2036-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2033-07-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-07-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "1º Aditamento à Escritura da 1ª emissão (Doc. 2), Anexo A (escritura consolidada): cláusulas 4.6.2, 4.11.2, 4.12.2 e 4.13.2",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 4,
+    "amort_doc": 4,
+    "datas_iguais": 4,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": null,
+ "lacunas": "1) Os documentos fornecidos não trazem eventos posteriores a julho de 2022: nenhum aditamento, ata de AGD, vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. Por isso o cronograma reflete a versão consolidada mais recente. 2) Data de emissão da 2ª emissão: os trechos não a trazem expressamente. Inferi 2022-07-15 porque o vencimento de 15/07/2032 corresponde a 10 anos 'contados da Data de Emissão'. 3) VNU da 2ª emissão: o valor não aparece nos trechos, por isso está null. 4) As datas das Primeiras Datas de Integralização (início da rentabilidade) de nenhuma das emissões constam nos trechos, então 'vigente_desde' está null. 5) Não foi possível determinar a quantidade de debêntures por série após o bookbuilding, pois esses números não aparecem nos trechos. 6) Os percentuais de amortização são sobre o saldo do Valor Nominal Unitário Atualizado, conforme as tabelas das escrituras. 7) As datas de pagamento seguem a regra de prorrogação para o dia útil seguinte (e feriados nacionais pela B3), sem ajuste nas datas listadas.",
+ "meta": {
+  "emissora": "CSN MINERACAO S.A.",
+  "cnpj": "08902291000115",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-07-20",
+    "tipo": "escritura",
+    "assunto": "Escritura Particular da 1ª emissão de debêntures",
+    "protocolo": "025585IPE160720210104439710-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=885095&numSequencia=409832&numVersao=1"
+   },
+   {
+    "data": "2021-08-03",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 1ª (PRIMEIRA) EMISSÃO DE DEBÊNTURES SIMPLES,",
+    "protocolo": "025585IPE160720210104441111-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=888964&numSequencia=413700&numVersao=1"
+   },
+   {
+    "data": "2022-07-12",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, PARA DISTRIBUIÇÃO PÚBLICA",
+    "protocolo": "025585IPE120720220104475412-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=997701&numSequencia=522435&numVersao=1"
+   },
+   {
+    "data": "2022-07-28",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "025585IPE270720220104477012-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1001404&numSequencia=526138&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 122284,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4022,
+   "output_tokens_details": {
+    "thinking_tokens": 1188
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08902291000115_1-2"
+ }
+}

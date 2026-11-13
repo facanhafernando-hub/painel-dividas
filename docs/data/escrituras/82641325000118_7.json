@@ -1,0 +1,39 @@
+{
+ "series": [],
+ "situacao": "Nenhuma informação sobre a 7ª emissão (CREM17). O único documento fornecido trata da 4ª emissão da Cremer S.A. (escritura de 11/04/2014, 20.000 debêntures, R$ 200 milhões, série única). Nessa 4ª emissão, a AGD de 19/10/2016 aprovou a suspensão dos efeitos do vencimento antecipado causado pela Venda do Ativo (Dental Cremer) e pela Redução do Capital. A mesma AGD elevou a sobretaxa de 1,75% para 2,00% a.a. (base 252 du) a partir de 19/10/2016 e incluiu cessão fiduciária de recebíveis como garantia real. A remuneração acumulada de 15/04/2016 a 19/10/2016 foi incorporada ao VNU.",
+ "lacunas": "O Primeiro Aditamento recebido refere-se exclusivamente à 4ª emissão, e não há menção à 7ª emissão nem ao código CREM17. Por isso não é possível determinar data de emissão, vencimento, VNE, remuneração, juros, amortizações ou prêmios da série CREM17. Não atribuí à CREM17 os dados da 4ª emissão para não inventar informação. Para a 4ª emissão, os trechos também não trazem as datas de vencimento e de amortização nem o cronograma de juros. Para extrair o cronograma da CREM17, é preciso enviar a escritura da 7ª emissão e seus aditamentos ou atas de AGD.",
+ "meta": {
+  "emissora": "CREMER S/A",
+  "cnpj": "82641325000118",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2016-10-28",
+    "tipo": "escritura",
+    "assunto": "Alteração de taxa garantia condição de vencimento",
+    "protocolo": "020141IPE191020160104267110-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=535500&numSequencia=78248&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 6858,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 895,
+   "output_tokens_details": {
+    "thinking_tokens": 346
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "82641325000118_7"
+ }
+}

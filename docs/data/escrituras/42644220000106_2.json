@@ -1,0 +1,314 @@
+{
+ "series": [
+  {
+   "codigo": "RIS412",
+   "emissao": 2,
+   "serie": "1",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2034-01-15",
+   "vne": 10.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.9,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (28/06/2023) fixava apenas um teto, o maior entre 8,10% a.a. e a NTN-B 2030 + 2,00% a.a. A taxa foi fixada em 6,9000% a.a. pelo bookbuilding de 04/08/2023, ratificado no aditamento entregue em 07/08/2023. Esse aditamento não informa a Data de Início da Rentabilidade."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2034-01-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-07-15",
+     "percentual": 3.0949,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-01-15",
+     "percentual": 3.1938,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-07-15",
+     "percentual": 2.6527,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-01-15",
+     "percentual": 2.725,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-07-15",
+     "percentual": 7.0151,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-15",
+     "percentual": 7.5443,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-15",
+     "percentual": 10.0493,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-01-15",
+     "percentual": 11.172,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-07-15",
+     "percentual": 15.867,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-01-15",
+     "percentual": 18.8595,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-07-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-01-15",
+     "percentual": 33.3334,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-01-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura da 2ª emissão (Doc. 1), cláusulas 4.6, 4.7, 4.12.1 e 4.13.1. Remuneração conforme o aditamento de bookbuilding (Doc. 3), cláusula 4.11.1. O 1º aditamento (Doc. 2) não altera o cronograma.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 14,
+    "amort_doc": 14,
+    "datas_iguais": 14,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "RIS422",
+   "emissao": 2,
+   "serie": "2",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2042-01-15",
+   "vne": 10.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.2,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (28/06/2023) fixava apenas um teto, o maior entre 9,30% a.a. e a NTN-B 2040 + 3,00% a.a. A taxa foi fixada em 7,2000% a.a. pelo bookbuilding de 04/08/2023, ratificado no aditamento entregue em 07/08/2023. Esse aditamento não informa a Data de Início da Rentabilidade."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2042-01-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2034-07-15",
+     "percentual": 4.1204,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-01-15",
+     "percentual": 4.2974,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-07-15",
+     "percentual": 4.4904,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-01-15",
+     "percentual": 4.7015,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-07-15",
+     "percentual": 5.2547,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-01-15",
+     "percentual": 5.5461,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-07-15",
+     "percentual": 5.8718,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-01-15",
+     "percentual": 6.2381,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-07-15",
+     "percentual": 6.6531,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-01-15",
+     "percentual": 7.1273,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-07-15",
+     "percentual": 18.2641,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-01-15",
+     "percentual": 22.3452,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-07-15",
+     "percentual": 25.8712,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-01-15",
+     "percentual": 34.9003,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2042-01-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura da 2ª emissão (Doc. 1), cláusulas 4.6, 4.7, 4.12.1 e 4.13.2. Remuneração conforme o aditamento de bookbuilding (Doc. 3), cláusula 4.11.2. O 1º aditamento (Doc. 2) não altera o cronograma.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 16,
+    "amort_doc": 16,
+    "datas_iguais": 16,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Emissões 2ª e 4ª: nos trechos fornecidos não há vencimento antecipado declarado, suspensão de pagamentos, RJ/RE nem proposta de novação. Os Documentos 6 e 7 (atas de AGD de 2026) tratam apenas da renovação das Cartas de Fiança da 3ª emissão (série única, não solicitada). Não alteram o cronograma das emissões 2 e 4.",
+ "lacunas": "1) As datas de emissão não estão literalmente nos trechos. Foram deduzidas do prazo de vencimento (2ª emissão: 10 anos e 6 meses antes de 15/01/2034 e 18 anos e 6 meses antes de 15/01/2042, ou seja, 15/07/2023; 4ª emissão: 10 anos e 6 meses antes de 15/09/2034 e 18 anos e 6 meses antes de 15/09/2042, ou seja, 15/03/2024). 2) O VNE de R$ 10,00 consta na cláusula 4.7 da 2ª emissão. A cláusula equivalente da 4ª emissão não aparece nos trechos, por isso vne = null. 3) A Data de Início da Rentabilidade (primeira integralização) não consta em nenhuma das duas emissões, então vigente_desde = null. 4) O indexador IPCA foi inferido do uso de 'Atualização Monetária', da menção ao IPCA nas declarações e das taxas 'IPCA + 6,9%/7,2%' do Anexo VI/VIII do Doc. 4. A cláusula de atualização monetária em si está cortada. 5) A cláusula de remuneração da 4ª emissão fala em 'IPCA' apenas por referência nas declarações. 6) Nos trechos não há aditamentos, atas ou planos posteriores às datas citadas que alterem as séries das emissões 2 e 4. Os trechos são recortes, então não se pode excluir alteração posterior que não tenha sido fornecida. 7) A tabela da 4ª emissão traz 50,0025% (série 2) e 49,9997% (série 1) nas penúltimas parcelas, exatamente como no documento.",
+ "meta": {
+  "emissora": "AGUAS DO RIO 4 SPE S.A",
+  "cnpj": "42644220000106",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-06-28",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão da 2ª (Segunda) Emissão de Debêntures da Companhia",
+    "protocolo": "026743IPE280620230104510505-40",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1117282&numSequencia=642011&numVersao=1"
+   },
+   {
+    "data": "2023-07-13",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento à Escritura de Emissão da 2ª (Segunda) Emissão de Debêntures da Companhia",
+    "protocolo": "026743IPE130720230104512014-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1122574&numSequencia=647303&numVersao=1"
+   },
+   {
+    "data": "2023-08-07",
+    "tipo": "escritura",
+    "assunto": "Aditamento para refletir o resultado do Procedimento de Bookbuilding da 2ª Emissão",
+    "protocolo": "026743IPE040820230104514513-24",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1130324&numSequencia=655053&numVersao=1"
+   },
+   {
+    "data": "2024-02-20",
+    "tipo": "escritura",
+    "assunto": "Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries",
+    "protocolo": "026743IPE190220240104534209-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1196560&numSequencia=721286&numVersao=1"
+   },
+   {
+    "data": "2024-04-02",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries, da Águas do Rio",
+    "protocolo": "026743IPE020420240104538410-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1216926&numSequencia=741652&numVersao=1"
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026743IPE270520260106384635-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542315&numSequencia=1067021&numVersao=1"
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026743IPE290420260161160050-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542317&numSequencia=1067023&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 109733,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 7255,
+   "output_tokens_details": {
+    "thinking_tokens": 2265
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "42644220000106_2-4"
+ }
+}

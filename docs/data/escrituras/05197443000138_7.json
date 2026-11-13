@@ -1,0 +1,142 @@
+{
+ "series": [
+  {
+   "codigo": "HAPV17",
+   "emissao": 7,
+   "serie": "UNI",
+   "data_emissao": "2024-05-10",
+   "vencimento": "2031-05-10",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.6,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Sem alteração nos documentos recebidos. 100% da Taxa DI over extra-grupo mais sobretaxa exponencial de 1,60% a.a., base 252 dias úteis, sem atualização monetária. Incide sobre o VNU ou sobre o saldo do VNU, contada desde a primeira Data de Integralização (data não informada nos trechos)."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-11-10",
+    "ultima_data": "2031-05-10",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2029-05-10",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-10",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-10",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-05-10",
+     "descricao": "Prêmio flat de 0,60% no Resgate Antecipado Facultativo total, de 2026-05-10 (inclusive) a 2027-05-10 (exclusive). É contingente: só se paga se a Emissora resgatar antecipadamente."
+    },
+    {
+     "data": "2028-05-10",
+     "descricao": "Prêmio flat de 0,20% no Resgate Antecipado Facultativo, de 2028-05-10 (inclusive) a 2029-05-10 (exclusive, inferido da linha seguinte). A faixa de 2027-05-10 a 2028-05-10 não aparece nos trechos."
+    },
+    {
+     "data": "2029-05-10",
+     "descricao": "Prêmio flat de 0,10% no Resgate Antecipado Facultativo, de 2029-05-10 (inclusive) a 2030-05-10 (exclusive)."
+    },
+    {
+     "data": "2030-05-10",
+     "descricao": "Prêmio flat de 0,05% no Resgate Antecipado Facultativo, de 2030-05-10 (inclusive) até a Data de Vencimento (exclusive)."
+    }
+   ],
+   "fonte": "Documento 1 (escritura da 7ª emissão, entregue em 2024-05-06): cláusulas 4.2.1, 4.3.1, 4.4.1, 4.10.1 (tabela de amortização), 4.10.3 (remuneração), 4.11.1 (pagamento da remuneração) e 4.14.1.5 (prêmio de resgate). Documento 5 (comunicado de 2026-08-25) sobre aquisições no mercado, sem alteração de cronograma.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "7ª emissão (HAPV17): nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos documentos. O comunicado de 2026-08-25 informa que a Hapvida pode recomprar HAPV17 no mercado secundário, a preço de mercado e sem prêmio, dentro de um limite conjunto de R$ 150 milhões, já quase todo usado (R$ 149,9 mi) em 2026-08-25. Nessa data havia 960.953 debêntures em circulação e 39.047 em tesouraria. A recompra não altera o cronograma das debêntures em circulação.",
+ "lacunas": "1) Não houve aditamento, ata de AGD ou plano de recuperação sobre HAPV17. O cronograma vem apenas da escritura original; é possível que existam aditamentos que não foram enviados. 2) Os documentos 2, 3 e 4 tratam das 9ª e 10ª emissões e só citam a 7ª em listas de emissões, e o documento 5 trata só de recompras. 3) A data da primeira Data de Integralização não aparece nos trechos, então 'vigente_desde' ficou null. 4) A tabela de prêmio de resgate está incompleta: falta a faixa de 2027-05-10 a 2028-05-10 e as datas finais das faixas seguintes foram inferidas. 5) As datas de 10/11/2024 e de algumas outras datas de juros caem em dia não útil. A escritura prevê prorrogação para o dia útil seguinte (cláusula 4.17.1), e as datas acima são as nominais.",
+ "meta": {
+  "emissora": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "cnpj": "05197443000138",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-05-06",
+    "tipo": "escritura",
+    "assunto": "7ª emissão de Debêntures",
+    "protocolo": "024392IPE060520240104541814-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1233451&numSequencia=758177&numVersao=1"
+   },
+   {
+    "data": "2025-04-24",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250151163146-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1"
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE071020250184374491-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1"
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE081020250101964273-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1"
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
+    "protocolo": "024392IPE250820260171572734-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 114086,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2586,
+   "output_tokens_details": {
+    "thinking_tokens": 922
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "05197443000138_7"
+ }
+}

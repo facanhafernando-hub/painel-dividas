@@ -1,0 +1,310 @@
+{
+ "series": [
+  {
+   "codigo": "BHIAA1",
+   "emissao": 11,
+   "serie": "1",
+   "data_emissao": "2025-12-22",
+   "vencimento": "2029-12-22",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + spread de 1,00% a.a. (Cláusula 6.11.1). Sem mudança nas versões consolidadas dos aditamentos (2025-12-22 e 2025-12-30). A data de início da rentabilidade não aparece nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-06-22",
+    "ultima_data": "2029-12-22",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2026-06-22",
+     "percentual": 2.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-12-22",
+     "percentual": 2.5641,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-06-22",
+     "percentual": 7.8947,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-12-22",
+     "percentual": 8.5714,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-22",
+     "percentual": 18.75,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-22",
+     "percentual": 23.0769,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-22",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-22",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura (Doc. 1) e versões consolidadas nos Aditamentos (Docs. 2 e 3), Cláusulas 6.6.1, 6.11.1, 6.12.1 (tabela de remuneração, com incorporação 'Não' em todas as parcelas) e 6.13.1 (tabela de amortização, coluna 'Percentual do (Saldo do) VNU a ser amortizado'). Eventos posteriores: Ata da AGD de 2026-09-17 (Doc. 5).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 7,
+    "amort_doc": 7,
+    "datas_iguais": 7,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "BHIAB1",
+   "emissao": 11,
+   "serie": "2",
+   "data_emissao": "2025-12-22",
+   "vencimento": "2028-06-22",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Mandatoriamente conversível em ações. Não paga juros nem outra remuneração, fixa ou variável. Faz jus apenas à participação nos lucros equivalente a dividendos e vantagens pecuniárias atribuídos às ações (Cláusulas 6.11.2 e 6.11.2.1)."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [
+    {
+     "data": "2026-03-31",
+     "descricao": "Período de Conversão Obrigatória (1º a 31/03/2026): limite de 10,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2026-06-30",
+     "descricao": "Período de Conversão Obrigatória (1º a 30/06/2026): limite de 15,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2026-09-30",
+     "descricao": "Período de Conversão Obrigatória (1º a 30/09/2026): limite de 15,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2026-12-31",
+     "descricao": "Período de Conversão Obrigatória (1º a 31/12/2026): limite de 20,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2027-03-31",
+     "descricao": "Período de Conversão Obrigatória (1º a 31/03/2027): limite de 30,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2028-06-22",
+     "descricao": "Data de Vencimento: conversão obrigatória e automática do saldo remanescente em ações, se não houver vencimento antecipado nem conversão prévia."
+    }
+   ],
+   "fonte": "Escritura (Doc. 1) e versões consolidadas (Docs. 2 e 3), Cláusulas 6.4.3, 6.4.3.1, 6.6.2, 6.11.2 e 6.13.2 (VNU Atualizado não amortizado, em razão da Conversão Obrigatória). Eventos posteriores: Ata da AGD de 2026-09-17 (Doc. 5).",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2028-06-22"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  },
+  {
+   "codigo": "BHIAC1",
+   "emissao": 11,
+   "serie": "3",
+   "data_emissao": "2025-12-22",
+   "vencimento": "2060-12-22",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Facultativamente conversível. Não faz jus a juros remuneratórios (Cláusula 6.11.3). O VNU é atualizado pela TR desde a Primeira Data de Integralização até o vencimento (Atualização Monetária TR, incorporada ao VNU)."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2060-12-22",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-03-31",
+     "descricao": "Data de Conversão Facultativa: limite de 10,00% (tabela da Cláusula 6.4.4). A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2026-06-30",
+     "descricao": "Data de Conversão Facultativa: limite de 15,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2026-09-30",
+     "descricao": "Data de Conversão Facultativa: limite de 15,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2026-12-31",
+     "descricao": "Data de Conversão Facultativa: limite de 20,00%. A base do percentual não está nos trechos."
+    },
+    {
+     "data": "2027-03-31",
+     "descricao": "Data de Conversão Facultativa: limite de 30,00%. A base do percentual não está nos trechos."
+    }
+   ],
+   "fonte": "Escritura (Doc. 1) e versões consolidadas (Docs. 2 e 3), Cláusulas 6.6.3 (vencimento em 22/12/2060, 420 meses), 6.9 (atualização pela TR), 6.11.3 e 6.13.3 (amortização em parcela única em 22/12/2060). A tabela de conversão aparece sem título, entre as cláusulas 6.4.3 e 6.4.4, e foi atribuída à 3ª série por posição.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "11ª emissão (Grupo Casas Bahia S.A.): em 2026-08-16 a Emissora ajuizou pedido de recuperação judicial (processo nº 4152930-18.2026.8.26.0100, 2ª Vara de Falências e Recuperações Judiciais de São Paulo). A AGD de 2026-09-14 (ata entregue em 2026-09-17) ratificou, por aprovação, o Evento de Vencimento Antecipado Automático da Cláusula 8.1(b), com Data do Vencimento Antecipado em 2026-08-16. Para a 2ª série (BHIAB1) vale o tratamento específico das Cláusulas 6.4.3(ii) e 8.3: conversão obrigatória em ações na data de declaração do vencimento antecipado. A própria ata ressalva que a deliberação não autoriza ato incompatível com decisão judicial vigente ou superveniente. A Emissora pediu tutela de urgência para obstar vencimento antecipado fundado só na RJ e a excussão de garantias sobre estoque. Os Docs. 4, 6 e 7 (deferimento de tutela de urgência, ratificação do pedido e deferimento da RJ, entregues em 2026-08-31, 2026-10-19 e 2026-10-21) vieram só com os títulos e trechos de cabeçalho. Não se sabe o alcance da tutela sobre o vencimento antecipado. Os cronogramas acima são os contratuais originais, mantidos nas versões consolidadas dos aditamentos, e hoje estão prejudicados pelo vencimento antecipado ratificado e pela RJ, sem novo cronograma, plano de recuperação ou novação nos trechos.",
+ "lacunas": "1) Valor Nominal Unitário (Cláusula 6.7.1) cortado nos trechos, por isso vne = null. 2) Data de emissão (2025-12-22) deduzida dos prazos das Cláusulas 6.6 (48 meses até 22/12/2029; 24 dias até 15/01/2026), não lida diretamente. 3) Data de Início da Rentabilidade e Primeira Data de Integralização não aparecem, então 'vigente_desde' ficou null. 4) A 4ª série, com vencimento em 2026-01-15 e DI 100%, está na escritura, mas só foram pedidos os códigos BHIAA1, BHIAB1 e BHIAC1, então foi omitida. O mapeamento série 001/002/003 para 1ª/2ª/3ª foi assumido. 5) O conteúdo dos Docs. 4, 6 e 7 (decisões judiciais da RJ) não está nos trechos, assim como eventual plano de recuperação, novação ou suspensão de pagamentos. 6) Não consta se a 1ª série pagou a amortização/juros de 2026-06-22 antes do pedido de RJ. 7) A base dos percentuais de conversão (10/15/15/20/30%) das séries 2 e 3 não está nos trechos, assim como a Data de Conversão Obrigatória efetiva da 2ª série após o vencimento antecipado. 8) As versões consolidadas dos Aditamentos 1 e 2 não mostram mudança nos cronogramas, mas o que cada aditamento alterou não aparece nos trechos.",
+ "meta": {
+  "emissora": "GRUPO CASAS BAHIA S.A",
+  "cnpj": "33041260065290",
+  "emissao": "11",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-04-29",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "006505IPE280420240104541111-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1228505&numSequencia=753231&numVersao=1"
+   },
+   {
+    "data": "2025-12-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "006505IPE141220250106849889-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1457069&numSequencia=981781&numVersao=1"
+   },
+   {
+    "data": "2025-12-22",
+    "tipo": "escritura",
+    "assunto": "Aditamento 11ª emissão de Debentures",
+    "protocolo": "006505IPE221220250167937260-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1460703&numSequencia=985409&numVersao=1"
+   },
+   {
+    "data": "2025-12-30",
+    "tipo": "escritura",
+    "assunto": "Segundo Aditamento à escritura da 11ª emissão de debentures",
+    "protocolo": "006505IPE291229250197548132-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462259&numSequencia=986965&numVersao=1"
+   },
+   {
+    "data": "2026-04-07",
+    "tipo": "escritura",
+    "assunto": "Terceiro Aditamento de Escritura da 11ª Emissão de Debentures",
+    "protocolo": "006505IPE010420260149301803-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1502105&numSequencia=1026811&numVersao=1"
+   },
+   {
+    "data": "2026-08-31",
+    "tipo": "comunicado",
+    "assunto": "Deferimento de Tutela de Urgência na Recuperação Judicial",
+    "protocolo": "006505IPE310820260170920575-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562849&numSequencia=1087555&numVersao=1"
+   },
+   {
+    "data": "2026-09-17",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas da 11ª emissão de debentures",
+    "protocolo": "006505IPE140920260112146369-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569126&numSequencia=1093832&numVersao=1"
+   },
+   {
+    "data": "2026-10-19",
+    "tipo": "comunicado",
+    "assunto": "Ratificação do Pedido de Recuperação Judicial",
+    "protocolo": "006505IPE191020260101192350-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578469&numSequencia=1103175&numVersao=1"
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do pedido de Recuperação Judicial",
+    "protocolo": "006505IPE211020260116241989-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579129&numSequencia=1103835&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 81008,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5607,
+   "output_tokens_details": {
+    "thinking_tokens": 1813
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "33041260065290_11"
+ }
+}

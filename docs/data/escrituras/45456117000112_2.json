@@ -1,0 +1,339 @@
+{
+ "series": [
+  {
+   "codigo": "ASER12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2049-06-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Os trechos não informam indexador, taxa nem base de cálculo. O texto menciona 'Valor Nominal Unitário Atualizado', o que indica atualização monetária, mas não diz qual. A AGD de 2026 não alterou a taxa. Apenas incorporou a Remuneração ao VNU Atualizado durante a carência."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2028-12-15",
+    "ultima_data": "2049-06-15",
+    "datas_irregulares": [],
+    "carencia_ate": "2028-06-15"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2026-06-15",
+     "ate": "2028-06-15",
+     "observacao": "Cláusula 4.12.2 aprovada na AGD. Não há pagamento de Remuneração entre 2026-12-15 e 2028-06-15 (inclusive). A Remuneração incorrida de 2026-06-15 a 2028-06-15 é incorporada ao VNU Atualizado em cada Data de Pagamento prevista no período (2026-12-15, 2027-06-15, 2027-12-15 e 2028-06-15). A lista de datas está cortada no trecho, então essa lista é inferência a partir da regra semestral. O primeiro pagamento de Remuneração é em 2028-12-15 (42 parcelas semestrais, a última no vencimento)."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2028-12-15",
+     "percentual": 0.1252,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-15",
+     "percentual": 0.1253,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-15",
+     "percentual": 0.1255,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-06-15",
+     "percentual": 0.1256,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-12-15",
+     "percentual": 0.1258,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-06-15",
+     "percentual": 0.5038,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-12-15",
+     "percentual": 0.5063,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-06-15",
+     "percentual": 0.6616,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-12-15",
+     "percentual": 1.2295,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-06-15",
+     "percentual": 0.9336,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-12-15",
+     "percentual": 0.9424,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-06-15",
+     "percentual": 1.4799,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-12-15",
+     "percentual": 1.5558,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-06-15",
+     "percentual": 1.9619,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-12-15",
+     "percentual": 2.0567,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-06-15",
+     "percentual": 2.3837,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-12-15",
+     "percentual": 2.4419,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-06-15",
+     "percentual": 2.801,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-12-15",
+     "percentual": 2.8817,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-06-15",
+     "percentual": 3.4091,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-12-15",
+     "percentual": 3.5294,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-06-15",
+     "percentual": 4.065,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-12-15",
+     "percentual": 4.2373,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-06-15",
+     "percentual": 4.7198,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-12-15",
+     "percentual": 5.031,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-06-15",
+     "percentual": 5.6235,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-12-15",
+     "percentual": 6.0449,
+     "base": "saldo"
+    },
+    {
+     "data": "2042-06-15",
+     "percentual": 6.7096,
+     "base": "saldo"
+    },
+    {
+     "data": "2042-12-15",
+     "percentual": 7.1921,
+     "base": "saldo"
+    },
+    {
+     "data": "2043-06-15",
+     "percentual": 7.9618,
+     "base": "saldo"
+    },
+    {
+     "data": "2043-12-15",
+     "percentual": 8.6505,
+     "base": "saldo"
+    },
+    {
+     "data": "2044-06-15",
+     "percentual": 8.2071,
+     "base": "saldo"
+    },
+    {
+     "data": "2044-12-15",
+     "percentual": 8.9409,
+     "base": "saldo"
+    },
+    {
+     "data": "2045-06-15",
+     "percentual": 8.9124,
+     "base": "saldo"
+    },
+    {
+     "data": "2045-12-15",
+     "percentual": 9.7844,
+     "base": "saldo"
+    },
+    {
+     "data": "2046-06-15",
+     "percentual": 11.5809,
+     "base": "saldo"
+    },
+    {
+     "data": "2046-12-15",
+     "percentual": 13.3056,
+     "base": "saldo"
+    },
+    {
+     "data": "2047-06-15",
+     "percentual": 16.307,
+     "base": "saldo"
+    },
+    {
+     "data": "2047-12-15",
+     "percentual": 19.4842,
+     "base": "saldo"
+    },
+    {
+     "data": "2048-06-15",
+     "percentual": 26.6904,
+     "base": "saldo"
+    },
+    {
+     "data": "2048-12-15",
+     "percentual": 36.4078,
+     "base": "saldo"
+    },
+    {
+     "data": "2049-06-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 5 (ata de AGD da 2ª emissão, reaberta em 23/09/2026, entregue em 2026-09-25): Cláusulas 4.6.1, 4.12.1, 4.12.2 e 4.13.1 aprovadas, com a tabela de amortização usando a 4ª coluna (percentual do VNU Atualizado a ser amortizado). Substitui a proposta de 25/08/2026 (Documento 1), que previa vencimento em 2050-06-15.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 42,
+    "amort_doc": 42,
+    "datas_iguais": 42,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [
+     "2031-06-15",
+     "2031-12-15",
+     "2032-06-15",
+     "2032-12-15",
+     "2033-06-15",
+     "2033-12-15",
+     "2034-06-15",
+     "2034-12-15",
+     "2035-06-15",
+     "2035-12-15",
+     "2036-06-15",
+     "2036-12-15"
+    ],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "2ª emissão (ASER12): reperfilamento aprovado em AGD, iniciada em 26/08/2026 e concluída em 23/09/2026. Inclui carência de pagamentos até 2028-06-15, incorporação da Remuneração ao VNU Atualizado e prorrogação do vencimento de 2043-12-15 para 2049-06-15. As alterações estão sujeitas a Condição Suspensiva e Condição Resolutiva, cujos termos não aparecem nos trechos. Se a Condição Resolutiva se verificar, voltam os termos anteriores da Escritura, e a Emissora deve pagar em até 2 dias úteis os valores de Remuneração e amortização postergados ou incorporados. A proposta incluía waiver do ICSD Mínimo (exercícios de 2026 a 2033). Os trechos não mostram vencimento antecipado declarado, RJ/RE ou novação. Os documentos também afirmam que as alterações não constituem novação.",
+ "lacunas": "1) Data de Emissão não está expressa nos trechos. O prazo de 7.257 dias até 2043-12-15 sugere cerca de 2024-02-01, mas isso é só inferência, então ficou null. A Escritura é de 2024-01-16. 2) VNE, indexador, taxa e base de cálculo da Remuneração não aparecem nos trechos. 3) Cronograma original (antes de 2026) não consta além da data de vencimento de 2043-12-15. 4) Percentuais de amortização: a 3ª coluna da tabela (0,1250%, 0,5000% etc.) soma 99,875%. Isso indica que 0,125% já foi amortizado antes de 2028-12-15, mas os trechos não dizem quando. Informei a 4ª coluna (base saldo do VNU Atualizado), que é a operativa e termina em 100% no vencimento. 5) Condição Suspensiva e Condição Resolutiva (prazos e eventos) e o texto completo da cláusula 4.12.2 (datas de incorporação) estão cortados. A percentagem de aprovação na ata está truncada. Um documento da 1ª emissão, não da ASER12, cita 30/11/2026 como prazo para cumprir condições suspensivas da AGD da 2ª emissão, mas isso não foi confirmado nos trechos da própria ASER12. 6) Waiver fee: o trecho está cortado, então não é possível confirmar se há prêmio. 7) O Documento 4 (ata de 23/09/2026, 'Postergação de Vencimento') trata da 1ª emissão, com vencimento 2026-09-24 prorrogado para 2027-06-24 e pagamentos em 24/02 e 24/08. Foi excluído por não ser da emissão ASER12. Os Documentos 2 e 3 são atas de suspensão, sem deliberação legível, e não alteram o cronograma. A proposta (Documento 1) previa vencimento em 2050-06-15 e carência até 2028-12-15, mas foi superada pela ata do Documento 5.",
+ "meta": {
+  "emissora": "AGUAS DO SERTAO S.A.",
+  "cnpj": "45456117000112",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-08-25",
+    "tipo": "proposta_agd",
+    "assunto": "Reperfilamento",
+    "protocolo": "027359IPE260820260138120270-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561440&numSequencia=1086146&numVersao=1"
+   },
+   {
+    "data": "2026-09-10",
+    "tipo": "ata_agd",
+    "assunto": "Reperfilamento (Suspensão)",
+    "protocolo": "027359IPE090920260169082343-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566640&numSequencia=1091346&numVersao=1"
+   },
+   {
+    "data": "2026-09-23",
+    "tipo": "ata_agd",
+    "assunto": "Reperfilamento",
+    "protocolo": "027359IPE210920260106640966-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571018&numSequencia=1095724&numVersao=1"
+   },
+   {
+    "data": "2026-09-25",
+    "tipo": "ata_agd",
+    "assunto": "Postergação Vencimento",
+    "protocolo": "027359IPE230920260109529851-06",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571439&numSequencia=1096145&numVersao=1"
+   },
+   {
+    "data": "2026-09-25",
+    "tipo": "ata_agd",
+    "assunto": "Reperfilamento",
+    "protocolo": "027359IPE230920260179748060-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571440&numSequencia=1096146&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 34187,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 8906,
+   "output_tokens_details": {
+    "thinking_tokens": 5561
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "45456117000112_2"
+ }
+}

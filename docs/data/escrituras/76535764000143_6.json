@@ -1,0 +1,122 @@
+{
+ "series": [
+  {
+   "codigo": "TLNL16",
+   "emissao": 6,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2035-02-25",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "%DI",
+    "taxa": 80.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "80% da Taxa DI over extra-grupo, base 252 du, conforme a escritura da própria emissão, que não foi fornecida. Nenhuma alteração aparece nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 1, declaração do agente fiduciário (alínea k) sobre a 6ª emissão da Telemar. A escritura e o cronograma dessa emissão não estão nos trechos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 17,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-02-25",
+     "2027-08-25",
+     "2028-02-25",
+     "2028-08-25",
+     "2029-02-26",
+     "2029-08-27",
+     "2030-02-25",
+     "2030-08-26",
+     "2031-02-26",
+     "2031-08-25",
+     "2032-02-25",
+     "2032-08-25"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "12ª emissão (OIBRA2): a escritura prevê vencimento antecipado por decisão de AGD (2/3), ou automático nos casos (f), (i), (j) e (o). Nenhuma declaração de vencimento antecipado ou suspensão de pagamentos aparece nos trechos. A emissão foi integralizada com créditos da primeira recuperação judicial (2016), que a Oi deixou para trás com o plano homologado em 2018. O Documento 2 (aditamento ao plano, protocolado em 2025-07-02) traz nova reestruturação (segunda RJ) com novação dos Créditos Concursais, incluindo valores mobiliários, e emissão de Dívida Roll-Up, Dívida A&E, Dívida Participativa e dívidas reinstated. Nos trechos não consta homologação do aditamento nem o enquadramento das debêntures em uma classe ou opção de pagamento. O cronograma acima é o contratual da escritura, e o tratamento no plano pode alterá-lo. 6ª emissão (TLNL16): a Telemar foi incorporada pela Oi em maio de 2021 (Documento 2), então a Oi é a devedora sucessora. O agente fiduciário declarou, em 2018, que não havia eventos de resgate nem inadimplemento. Os Documentos 3 (convolação em falência da Serede) e 4 (homologação do plano da Tahto) tratam de outras empresas e não trazem informação sobre as debêntures da Oi.",
+ "lacunas": "1) OIBRA2: a tabela de amortização do Documento 1 está recortada. As parcelas 1 a 10 (2,0000% cada, de 2023-08-25 a 2028-02-25) e as parcelas de 162º mês (5,7000%) e 204º mês (5,9000%) aparecem expressamente. O cabeçalho 'entre 126 e 198 meses' indica 5,7000% para as parcelas de 2028-08-25 a 2034-08-25. Preenchi essas parcelas intermediárias a partir do cabeçalho e das datas semestrais, mas não vi cada linha. A soma 10×2% + 13×5,7% + 5,9% = 100% é coerente. 2) Base dos percentuais: a escritura diz que amortiza o VNU ou saldo 'já acrescido da Remuneração capitalizada', mas não esclarece se os percentuais incidem sobre o valor capitalizado ao fim da carência ou sobre o saldo atualizado a cada data. Por isso a base ficou como 'desconhecida'. 3) Ajuste de datas: a tabela mostra datas ajustadas para dia útil em 2024-02-26, 2024-08-26 e 2035-02-26. As demais datas futuras estão no dia 25 nominal e podem ser ajustadas ao dia útil seguinte. O vencimento nominal é 2035-02-25 (cláusula 4.5) e a última parcela está em 2035-02-26. 4) A cláusula 4.10.2(b) prevê pagamentos semestrais de juros desde 2023-08-25, mas o texto não detalha se os juros acompanham o ajuste de dias úteis. 5) OIBRA2: há previsão de resgate antecipado facultativo e de resgate obrigatório com geração de caixa excedente, sem datas fixas. Não há evidência de resgates efetivados. 6) TLNL16: não há data de emissão, cronograma de juros, carência, incorporação nem amortizações nos trechos. A escritura da 6ª emissão não foi fornecida, e o VNE de R$1.000 vem de R$2.324.344.000 ÷ 2.324.344 debêntures. É provável que o cronograma seja semelhante ao da 12ª emissão, pois ambas vencem em 2035-02-25 com a mesma remuneração, mas isso não está escrito e não foi assumido. 7) Não há informação sobre pagamentos efetivos, inadimplência ou o cronograma de juros e amortização após 2023. Os trechos não mostram se houve renegociação ou suspensão de pagamentos.",
+ "meta": {
+  "emissora": "OI S/A – EM RECUPERACAO JUDICIAL",
+  "cnpj": "76535764000143",
+  "emissao": "6",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2018-07-19",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "011312IPE130720180104330009-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=633430&numSequencia=167350&numVersao=1"
+   },
+   {
+    "data": "2025-07-02",
+    "tipo": "plano_rj",
+    "assunto": "Aditamento RJ Oi Protocolado",
+    "protocolo": "011312IPE010720250127062562-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1396770&numSequencia=921482&numVersao=1"
+   },
+   {
+    "data": "2026-03-16",
+    "tipo": "comunicado",
+    "assunto": "Convolação da Recuperação Judicial da Serede em Falência",
+    "protocolo": "011312IPE160320260118868831-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1490738&numSequencia=1015444&numVersao=1"
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Continuidade do julgamento dos Agravos de Instrumento referentes à decisão que convolou a recuperação judicial do Grupo Oi em falência",
+    "protocolo": "011312IPE250820260135039982-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561017&numSequencia=1085723&numVersao=1"
+   },
+   {
+    "data": "2026-10-22",
+    "tipo": "comunicado",
+    "assunto": "Homologação do Plano de Recuperação Judicial da Tahto",
+    "protocolo": "011312IPE221020260173223241-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579598&numSequencia=1104304&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 53858,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6373,
+   "output_tokens_details": {
+    "thinking_tokens": 3054
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "76535764000143_12-6"
+ }
+}

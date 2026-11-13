@@ -1,0 +1,98 @@
+{
+ "series": [
+  {
+   "codigo": "TBCR18",
+   "emissao": 8,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": 12.06,
+    "base": "252 du",
+    "vigente_desde": "2025-03-25",
+    "historico": "Terceiro Aditamento (2024-03-19): a partir de 2024-03-25, juros de 9,98% a.a. sobre o VNU Atualizado. Quarto Aditamento (2025-03-24): a partir de 2025-03-25, 12,06% a.a. (Spread = 12,0600). Os trechos não indicam a taxa original da Escritura nem o indexador de atualização do VNU. O cálculo é exponencial pro rata temporis por Dias Úteis, o que sugere base 252 du, mas a base não está escrita expressamente."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Quarto Aditamento à Escritura da 8ª Emissão (entregue em 2025-03-24), Cláusula 2.1, que altera a Cláusula 5.12 e o Spread da Cláusula 5.12.5. VNE de R$1.000,00 e 275.400 debêntures conforme os considerandos dos aditamentos. O Terceiro Aditamento (2024-03-19) alterou a Cláusula 5.12 anteriormente.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 12,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-03-25",
+     "2027-09-27",
+     "2028-03-27",
+     "2028-09-25",
+     "2029-03-26",
+     "2029-09-25",
+     "2030-03-25",
+     "2030-09-25",
+     "2031-03-25",
+     "2031-09-25",
+     "2032-03-25",
+     "2032-09-27"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "8ª emissão: nos trechos não há vencimento antecipado declarado, suspensão de pagamentos, RJ/RE nem proposta de novação. As menções ao vencimento antecipado são apenas cláusulas genéricas de execução específica.",
+ "lacunas": "Os trechos não trazem as cláusulas da Escritura original sobre data de emissão, data de vencimento, periodicidade e datas de pagamento da Remuneração, cronograma de amortização do principal, indexador de atualização do VNU (o texto fala em 'Valor Nominal Unitário Atualizado' e em fórmula com 'Spread', o que sugere um indexador como IPCA ou outro, mas isso não está escrito), prêmios e eventual incorporação de juros ou carência. Por isso data_emissao, vencimento, juros e amortizações ficaram null ou vazios. A escritura foi registrada na JUCESP em 2022-03-30, mas essa não é a data de emissão. A base de cálculo (252 du) é inferida do critério 'por Dias Úteis'. O primeiro e o segundo aditamentos não foram fornecidos. O código TBCR18 vem do cabeçalho do pedido.",
+ "meta": {
+  "emissora": "TRANSBRASILIANA CONCESSIONARIA DE RODOVIA S.A",
+  "cnpj": "09074183000164",
+  "emissao": "8",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-03-19",
+    "tipo": "escritura",
+    "assunto": "TERCEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 8ª (OITAVA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "022225IPE190320240104537011-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1209431&numSequencia=734157&numVersao=1"
+   },
+   {
+    "data": "2025-03-24",
+    "tipo": "escritura",
+    "assunto": "QUARTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 8ª (OITAVA) EMISSÃO DE DEBÊNTURES SIMPLES,",
+    "protocolo": "022225IPE240320250104574013-90",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1350854&numSequencia=875580&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 7915,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1046,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "09074183000164_8"
+ }
+}

@@ -1,0 +1,208 @@
+{
+ "series": [
+  {
+   "codigo": "LIGHC0",
+   "emissao": 20,
+   "serie": "2",
+   "data_emissao": "2020-08-15",
+   "vencimento": "2037-11-13",
+   "vne": 102.64555006,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 3.0,
+    "base": "252 du",
+    "vigente_desde": "2024-11-13",
+    "historico": "A emissão original era série única, com VNU de R$ 1.000,00 implícito (R$ 600.000.000,00 / 600.000 debêntures). Com a Repactuação de 13/11/2024, a 2ª série passou a ter VNU de R$ 102,64555006, atualização monetária pelo IPCA e juros de 3% a.a. (base 252 du) sobre o VNU Atualizado. A lista de outras emissões do Documento 1 indica que a 20ª emissão pagava IPCA + 5,0867% a.a. antes da repactuação."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-05-13",
+    "ultima_data": "2037-11-13",
+    "datas_irregulares": [],
+    "carencia_ate": "2025-11-13"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2024-11-13",
+     "ate": "2025-11-13",
+     "observacao": "A remuneração devida entre a Data de Repactuação e 13/11/2025 é incorporada ao VNU Atualizado em 13/11/2025 (cláusula 5.17.3.1). O primeiro pagamento de juros em caixa é em 13/05/2026, e os juros são pagos todo dia 13 de maio e novembro até o vencimento."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2028-05-13",
+     "percentual": 2.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-13",
+     "percentual": 2.0408,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-13",
+     "percentual": 2.0833,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-13",
+     "percentual": 2.1277,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-13",
+     "percentual": 2.1739,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-13",
+     "percentual": 2.2222,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-13",
+     "percentual": 4.5455,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-11-13",
+     "percentual": 4.7619,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-05-13",
+     "percentual": 5.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-11-13",
+     "percentual": 5.2632,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-05-13",
+     "percentual": 5.5556,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-11-13",
+     "percentual": 5.8824,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-05-13",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-11-13",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-05-13",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-11-13",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-05-13",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-11-13",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-05-13",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-11-13",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3: Segundo Aditamento à Escritura da 20ª Emissão (repactuação), Anexo A (escritura consolidada). Cláusulas 5.8 (VNU), 5.9 (data de emissão), 5.15 (vencimento), 5.16.1 (IPCA), 5.17.2 e 5.17.3.1 (remuneração e incorporação), 5.18.2 (pagamento de juros da 2ª série), 5.20.1 (tabela de amortização da 2ª série).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 20,
+    "amort_doc": 20,
+    "datas_iguais": 20,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "20ª emissão: a Fiadora Light S.A. está em recuperação judicial. A repactuação de 13/11/2024 decorre do Plano de Recuperação Judicial, e as declarações da Emissora e da Fiadora ressalvam inadimplementos de créditos sujeitos à RJ. Para a 2ª série não há vencimento antecipado declarado nos trechos. A 2ª série tem fiança da Light S.A. (cláusula 5.7.1) e há Cash Sweep (amortização extraordinária obrigatória) prioritariamente para a 1ª série, que não consta no cronograma.",
+ "lacunas": "O código de negociação 'LIGHC0' foi usado como informado e pode estar incompleto, por exemplo sem o sufixo numérico. A correspondência de 'série 002' com a 'Segunda Série' é inferida, pois a 20ª emissão tem 3 séries após a repactuação. O campo 'vne' traz o VNU na Data de Repactuação (R$ 102,64555006), pois o VNU original de R$ 1.000,00 não está explícito nos trechos. As amortizações são percentuais do saldo do VNU Atualizado, sem valores em reais. Datas fora de dia útil seguem a prorrogação da cláusula 5.23. As amortizações extraordinárias, facultativa e obrigatória (Cash Sweep), são eventuais e não têm data fixa, e o Cash Sweep tem primeira medição apenas a partir de 30/09/2027. Não há nos trechos documento posterior ao Segundo Aditamento (09/12/2024) sobre a 20ª emissão, e eventual pagamento ou inadimplemento posterior não pôde ser verificado. Os Documentos 1, 2 e 4 tratam de outras emissões (24ª emissão, debêntures vinculadas a CRI e notas comerciais) e não foram usados.",
+ "meta": {
+  "emissora": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "cnpj": "60444437000146",
+  "emissao": "20",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-03-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE250320220104464908-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=960025&numSequencia=484759&numVersao=1"
+   },
+   {
+    "data": "2022-12-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE301120220104490311-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039491&numSequencia=564221&numVersao=1"
+   },
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "COM GARANTIA FIDEJUSSÓRIA ADICIONAL, PARA DISTRIBUIÇÃO PÚBLICA COM ESFORÇOS RESTRITOS||SEGUNDO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 20ª (VIGÉSIMA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM SÉRIE ÚNICA, DA ESPÉCIE QUIROGRAFÁRIA",
+    "protocolo": "008036IPE281120240104563512-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313157&numSequencia=837883&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE240920260184023869-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571394&numSequencia=1096100&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 132373,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4277,
+   "output_tokens_details": {
+    "thinking_tokens": 2095
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "60444437000146_20"
+ }
+}

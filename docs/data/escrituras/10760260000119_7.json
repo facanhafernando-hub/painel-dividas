@@ -1,0 +1,144 @@
+{
+ "series": [
+  {
+   "codigo": "CVCB17",
+   "emissao": 7,
+   "serie": "UNI",
+   "data_emissao": "2026-09-10",
+   "vencimento": "2029-09-10",
+   "vne": 1.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 3.9,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + Sobretaxa Original de 3,9000% a.a. (cl. 4.11.1 e 4.11.2). Pode haver step-up de até 0,30 p.p. (Sobretaxa Ajustada) se o Montante Efetivamente Captado em Eventos de Liquidez nos 12 meses após a emissão (verificação em 2027-09-10) for inferior a R$ 100 mi. Step-up = 0,30% x (100.000.000 - Montante Captado)/100.000.000, e vale a partir do Período de Capitalização seguinte. Nos trechos não consta ocorrência de step-up nem aditamento que o ateste."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2027-03-10",
+    "ultima_data": "2029-09-10",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-09-10",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-03-10",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-09-10",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-10",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-09-10",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-10-08",
+     "descricao": "Waiver Fee de 2% flat, aprovado na AGD de 2026-10-06. Incide sobre o VNU + Remuneração pro rata, desconsiderando a Amortização Extraordinária Obrigatória. Pago pela B3 aos titulares ao final do dia útil anterior à AGD, sem gross-up. É encargo extraordinário e não recorrente."
+    },
+    {
+     "data": "2027-03-10",
+     "descricao": "A partir desta data, o Resgate Antecipado Facultativo Total e a Amortização Extraordinária Facultativa (limitada a 98% do saldo) são permitidos, com prêmio de 0,50% a.a. x prazo remanescente (du/252). Só se aplica se a Emissora exercer a opção."
+    }
+   ],
+   "fonte": "Doc 2 (Escritura de 2026-09-04) cl. 4.1.1, 4.6.1, 4.7.1, 4.11, 4.13.1, 4.14.1, 5.1, 5.2. Repetido sem alteração na versão consolidada do Doc 3 (1º Aditamento, Anexo A) e do Doc 4 (2º Aditamento, Anexo A). Doc 5 (AGD 2026-10-06) alterou apenas a cl. 5.5 (Oferta de Resgate Antecipado, agora total ou parcial) e aprovou o waiver fee.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 5,
+    "amort_doc": 5,
+    "datas_iguais": 5,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "7ª emissão (CVCB17): nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. A AGD de 2026-10-06 (100% das Debêntures em Circulação) aprovou que a Oferta de Resgate Antecipado possa ser total ou parcial (cl. 5.5) e aprovou o waiver fee de 2% pago em 2026-10-08. O 2º Aditamento formaliza isso. O cronograma de juros e amortização não mudou. O Documento 1 trata da 4ª emissão da CVC (reperfilamento de 2023, vencimento 2026-11-30), que não faz parte do pedido e não gerou série no JSON. As Debêntures da 4ª e da 5ª emissão podem ser usadas para integralizar a 7ª emissão por dação em pagamento.",
+ "lacunas": "1) A Data de Início da Rentabilidade (cl. 4.2.1) está truncada nos trechos, então 'vigente_desde' ficou null. A data de emissão é 2026-09-10 e a primeira Data de Integralização não aparece. 2) O cronograma de principal pode ser reduzido por eventos contingentes sem data certa. (a) Amortização Extraordinária Obrigatória (cl. 5.3.1): 15% do Valor Total da Emissão, uma única vez, até 10 dias úteis da primeira integralização, se forem integralizados pelo menos R$ 150 mi. (b) Amortização Extraordinária por Evento de Liquidez (cl. 5.4.1): 60% dos recursos líquidos captados em até 12 meses da emissão, limitada a R$ 60 mi, concluída em até 90 dias da liquidação do evento. Os trechos não informam se esses eventos ocorreram. As amortizações do cronograma são % do saldo, então o saldo efetivo depende deles. 3) O Valor Total da Emissão (R$ 450 mi, 450.000.000 debêntures) admite distribuição parcial e o resultado do bookbuilding não aparece. A quantidade final e a taxa final (eventual aditamento de bookbuilding) são desconhecidas. 4) Não há nos trechos aditamento que ateste step-up da Sobretaxa. Ele só seria verificado em 2027-09-10.",
+ "meta": {
+  "emissora": "CVC BRASIL OPERADORA E AGENCIA DE VIAGENS S.A.",
+  "cnpj": "10760260000119",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-04-06",
+    "tipo": "escritura",
+    "assunto": "Reperfilamento de Debêntures",
+    "protocolo": "023310IPE060420230104502211-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1083885&numSequencia=608614&numVersao=1"
+   },
+   {
+    "data": "2026-09-04",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão da 7ª Emissão de Debêntures",
+    "protocolo": "023310IPE040920260199688046-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565362&numSequencia=1090068&numVersao=1"
+   },
+   {
+    "data": "2026-09-21",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura de Emissão da 7ª Emissão de Debêntures",
+    "protocolo": "023310IPE210920260144842971-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570280&numSequencia=1094986&numVersao=1"
+   },
+   {
+    "data": "2026-10-06",
+    "tipo": "escritura",
+    "assunto": "Segundo Aditamento à Escritura da 7ª Emissão de Debêntures - Alteração das Condições da Oferta de Resgate Antecipado",
+    "protocolo": "023310IPE061020260118645075-65",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574869&numSequencia=1099575&numVersao=1"
+   },
+   {
+    "data": "2026-10-06",
+    "tipo": "ata_agd",
+    "assunto": "Alteração das condições da Oferta de Resgate Antecipado da 7ª Emissão de Debêntures, aprovação de waiver fee e autorização para celebração do Segundo Aditamento à Escritura de Emissão.",
+    "protocolo": "023310IPE061020260108586806-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574868&numSequencia=1099574&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 137572,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3177,
+   "output_tokens_details": {
+    "thinking_tokens": 1175
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "10760260000119_7"
+ }
+}

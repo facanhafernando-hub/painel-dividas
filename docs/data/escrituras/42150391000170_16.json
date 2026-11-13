@@ -1,0 +1,202 @@
+{
+ "series": [
+  {
+   "codigo": "BRKMA6",
+   "emissao": 16,
+   "serie": "1",
+   "data_emissao": "2022-05-12",
+   "vencimento": "2029-05-12",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.75,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa spread limitado a 1,85% a.a. O 1º aditamento ratificou o resultado do bookbuilding em 1,75% a.a. sobre 100% da Taxa DI. Não há alteração posterior nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-11-12",
+    "ultima_data": "2029-05-12",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2029-05-12",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2025-05-12",
+     "descricao": "Prêmio de 0,50% a.a. na amortização extraordinária facultativa ou resgate antecipado facultativo total, de 2025-05-12 (inclusive) até 2026-11-12 (exclusive). A amortização extraordinária é limitada a 98% do saldo. O prêmio incide sobre o valor amortizado ou resgatado; a tabela do resgate total não aparece integralmente nos trechos (só a faixa de 0,30%)."
+    },
+    {
+     "data": "2026-11-12",
+     "descricao": "Prêmio de 0,30% a.a. na amortização extraordinária facultativa ou resgate antecipado facultativo total, de 2026-11-12 (inclusive) até o vencimento (exclusive)."
+    }
+   ],
+   "fonte": "Anexo A (escritura consolidada) do 1º Aditamento à Escritura da 16ª Emissão: cláusulas 4.1, 4.6, 4.7, 4.11.1, 4.13.1, 4.14.1 e 5.1.3. Spread de 1,75% conforme cláusula 4.11.1 alterada pelo aditamento. Saldo e vencimento conferem com o Anexo C do Plano de RE (12/05/2029).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "BRKMB6",
+   "emissao": 16,
+   "serie": "2",
+   "data_emissao": "2022-05-12",
+   "vencimento": "2032-05-12",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa spread limitado a 2,20% a.a. O 1º aditamento ratificou o resultado do bookbuilding em 2,00% a.a. sobre 100% da Taxa DI. Não há alteração posterior nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-11-12",
+    "ultima_data": "2032-05-12",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-05-12",
+     "percentual": 33.33,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-12",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-05-12",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2027-05-12",
+     "descricao": "Prêmio de 0,50% a.a. na amortização extraordinária facultativa, de 2027-05-12 (inclusive) até 2028-05-12 (exclusive). A faixa seguinte (2028-05-12 a 2029-05-12) foi cortada nos trechos. A amortização extraordinária é limitada a 98% do saldo."
+    },
+    {
+     "data": "2029-05-12",
+     "descricao": "Prêmio de 0,30% a.a. na amortização extraordinária facultativa ou resgate antecipado facultativo total, de 2029-05-12 (inclusive) até o vencimento (exclusive)."
+    }
+   ],
+   "fonte": "Anexo A (escritura consolidada) do 1º Aditamento à Escritura da 16ª Emissão: cláusulas 4.1, 4.6, 4.7, 4.11.2, 4.13.1, 4.14.2 (tabela de amortização) e 5.1.3. Spread de 2,00% conforme cláusula 4.11.2 alterada pelo aditamento. Vencimento confere com o Anexo C do Plano de RE (12/05/2032).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Braskem S.A. (devedora das emissões 16ª e 18ª) está em Recuperação Extrajudicial (RE). O Plano foi protocolado em 2026-08-24 (processo 4113246-86.2026.8.26.0100). O comunicado de 2026-08-28 informa o deferimento do processamento e a ratificação da suspensão por 120 dias de execuções, ações e pedidos de falência contra as requerentes por credores sujeitos à RE (já descontados 60 dias da tutela cautelar). O plano prevê suspensão da exigibilidade e dos vencimentos dos créditos sujeitos por 90 dias da data do pedido ou até a Data de Resolução do Plano, o que ocorrer primeiro. Prevê também negociação de um 'Plano Atualizado', com possível prorrogação de vencimentos, PIK de juros e eventual capitalização de dívida. Esses termos ainda não estão definidos. O Anexo C inclui as debêntures da 16ª (R$ 789.540.964,01 com vencimento 12/05/2029; R$ 255.084.025,79 com vencimento 12/05/2032) e da 18ª (R$ 1.153.333.278,50 com vencimento 09/11/2029; R$ 100.646.333,45 com vencimento 09/11/2032) como créditos sujeitos. Nos trechos não há declaração de vencimento antecipado das debêntures. Há suspensão da exigibilidade dos créditos sujeitos, então o cronograma contratual pode não estar sendo cumprido na prática.",
+ "lacunas": "1) Não há aditamento, ata de AGD ou termos do Plano Atualizado que alterem o cronograma da 16ª ou da 18ª; o cronograma da 16ª é o contratual do 1º aditamento, e a RE só suspende a exigibilidade. 2) O Documento 3 (18ª emissão) traz apenas o título; faltam data de emissão, VNE, remuneração, juros, amortizações e a correspondência entre séries e vencimentos. Os vencimentos de 2029-11-09 e 2032-11-09 vêm só do Anexo C do Plano, sem indicação de série. 3) Para a 18ª, o Anexo C indica só um vencimento final por série; a existência de amortizações intermediárias é desconhecida. 4) Nos trechos não consta a data da Primeira Data de Integralização da 16ª, então 'vigente_desde' da remuneração está null. 5) A tabela de prêmios da amortização extraordinária e do resgate total da 16ª está incompleta (faixas intermediárias cortadas). 6) Não consta o volume final emitido por série da 16ª (resultado do bookbuilding), nem se houve pagamentos de juros ou amortizações desde 2022. Os saldos do Anexo C não permitem verificar isso e podem incluir juros acumulados.",
+ "meta": {
+  "emissora": "BRASKEM S/A",
+  "cnpj": "42150391000170",
+  "emissao": "16",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-11-22",
+    "tipo": "escritura",
+    "assunto": "1º aditamento à Escritura da 16ª Emissão de Debêntures",
+    "protocolo": "004820IPE080620220104488706-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1034750&numSequencia=559480&numVersao=1"
+   },
+   {
+    "data": "2022-11-22",
+    "tipo": "escritura",
+    "assunto": "Escritura da 16ª Emissão de Debêntures",
+    "protocolo": "004820IPE110520220104488706-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1034751&numSequencia=559481&numVersao=1"
+   },
+   {
+    "data": "2022-11-22",
+    "tipo": "escritura",
+    "assunto": "Escritura da 18ª Emissão de Debêntures",
+    "protocolo": "004820IPE091120220104488706-27",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1034748&numSequencia=559478&numVersao=1"
+   },
+   {
+    "data": "2026-08-24",
+    "tipo": "comunicado",
+    "assunto": "Braskem comunica sobre informações compartilhadas com investidores no contexto do plano de Recuperação Extrajudicial",
+    "protocolo": "004820IPE240820260195595414-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560756&numSequencia=1085462&numVersao=1"
+   },
+   {
+    "data": "2026-08-24",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "004820IPE240820260165245183-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560753&numSequencia=1085459&numVersao=1"
+   },
+   {
+    "data": "2026-08-28",
+    "tipo": "comunicado",
+    "assunto": "Braskem comunica sobre deferimento do processamento da recuperação extrajudicial",
+    "protocolo": "004820IPE280820260116704749-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562270&numSequencia=1086976&numVersao=1"
+   },
+   {
+    "data": "2026-09-25",
+    "tipo": "comunicado",
+    "assunto": "Braskem comunica que foi informada de decisão proferida no âmbito da Recuperação Extrajudicial da Braskem e de determinadas controladas",
+    "protocolo": "004820IPE250920260160400829-75",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571421&numSequencia=1096127&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 98148,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5166,
+   "output_tokens_details": {
+    "thinking_tokens": 1788
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "42150391000170_16-18"
+ }
+}

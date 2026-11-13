@@ -1,0 +1,208 @@
+{
+ "series": [
+  {
+   "codigo": "LIGH2B",
+   "emissao": 21,
+   "serie": "2",
+   "data_emissao": "2021-01-15",
+   "vencimento": "2037-11-13",
+   "vne": 102.64555006,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 3.0,
+    "base": "252 du",
+    "vigente_desde": "2024-11-13",
+    "historico": "Emissão original em série única (15/01/2021). Em 13/11/2024 (Data de Repactuação, conforme o Plano de Recuperação Judicial) foi dividida em 3 séries. A 2ª série passou a ter atualização pelo IPCA e juros de 3% a.a. (base 252) sobre o VNA. As condições anteriores à repactuação não constam dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-05-13",
+    "ultima_data": "2037-11-13",
+    "datas_irregulares": [],
+    "carencia_ate": "2026-05-13"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2024-11-13",
+     "ate": "2025-11-13",
+     "observacao": "A Remuneração devida entre a Data de Repactuação e 13/11/2025 é incorporada ao Valor Nominal Unitário Atualizado em 13/11/2025 (cláusula 4.13.2.3). Não há pagamento de juros antes de 13/05/2026, e o primeiro pagamento ocorre 18 meses após a repactuação. Pagamentos sempre nos dias 13 de maio e novembro."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2028-05-13",
+     "percentual": 2.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-13",
+     "percentual": 2.0408,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-13",
+     "percentual": 2.0833,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-13",
+     "percentual": 2.1277,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-13",
+     "percentual": 2.1739,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-13",
+     "percentual": 2.2222,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-13",
+     "percentual": 4.5455,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-11-13",
+     "percentual": 4.7619,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-05-13",
+     "percentual": 5.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-11-13",
+     "percentual": 5.2632,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-05-13",
+     "percentual": 5.5556,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-11-13",
+     "percentual": 5.8824,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-05-13",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-11-13",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-05-13",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-11-13",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-05-13",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-11-13",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-05-13",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-11-13",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3: Primeiro Aditamento à Escritura da 21ª Emissão, com escritura consolidada no Anexo A. Cláusulas 4.6.1 (vencimento), 4.8.1 (VNU), 4.12.1 (IPCA), 4.13.2 e 4.13.2.3 (remuneração e incorporação), 4.14.2 (pagamento de juros) e 4.15.1 (tabela de amortização da Segunda Série).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 20,
+    "amort_doc": 20,
+    "datas_iguais": 20,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Emissão 21 (Light Serviços de Eletricidade): sujeita à Recuperação Judicial. A repactuação aprovada no Plano de Recuperação Judicial vigora desde 13/11/2024. A emissão passou de série única para 3 séries, e a 2ª série mantém garantias e fiança. Os trechos não mencionam vencimento antecipado declarado nem suspensão de pagamentos posterior à repactuação.",
+ "lacunas": "1) O mapeamento 'LIGH2B = série 002 = Segunda Série da repactuação' foi assumido pelo enunciado. Os trechos não trazem o código de negociação. 2) O VNU de R$ 102,64555006 é o da Data de Repactuação (2024-11-13). O VNU original de 2021 não consta dos trechos, só as 360.000 debêntures emitidas. 3) A data-limite da carência não é explícita. Usei 2026-05-13, a data do primeiro pagamento de juros. A remuneração de 2024-11-13 a 2025-11-13 é capitalizada, e o trecho entre 2025-11-13 e 2026-05-13 é pago em 2026-05-13. 4) A 2ª série tem amortização extraordinária obrigatória (cash sweep) e por venda de ativos, com ordem de prioridade que privilegia a 1ª série (cláusulas 5.2.1 a 5.2.7). Esses valores dependem de eventos futuros e não estão no cronograma. A amortização extraordinária facultativa também não está. O limite de 98% do VNU é de amortização extraordinária facultativa e do cash sweep (primeiro pagamento do saldo da 1ª série). 5) A lista de pagamentos de juros no aditamento está abreviada com '[...]', mas a regra semestral em 13/05 e 13/11 permite reconstruí-la. 6) Os documentos 1, 2 e 4 tratam de outras emissões (24ª emissão de debêntures, debênture vinculada a CRI e Notas Comerciais de 2026) e não alteram o cronograma da 21ª. Não há ata de AGD posterior ao aditamento nos trechos. 7) Percentuais da tabela têm base 'saldo' do VNU Atualizado. A tabela original tem um erro tipográfico em um percentual da 1ª série ('11.1100%'), irrelevante para a 2ª série.",
+ "meta": {
+  "emissora": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "cnpj": "60444437000146",
+  "emissao": "21",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-03-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE250320220104464908-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=960025&numSequencia=484759&numVersao=1"
+   },
+   {
+    "data": "2022-12-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE301120220104490311-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039491&numSequencia=564221&numVersao=1"
+   },
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "COM GARANTIA FIDEJUSSÓRIA ADICIONAL, PARA DISTRIBUIÇÃO PÚBLICA COM ESFORÇOS RESTRITOS||PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 21ª (VIGÉSIMA PRIMEIRA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM SÉRIE ÚNICA, DA ESPÉCIE QUIROGRAFÁRIA",
+    "protocolo": "008036IPE281120240104563512-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313158&numSequencia=837884&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE240920260184023869-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571394&numSequencia=1096100&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 128377,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3796,
+   "output_tokens_details": {
+    "thinking_tokens": 1486
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "60444437000146_21"
+ }
+}

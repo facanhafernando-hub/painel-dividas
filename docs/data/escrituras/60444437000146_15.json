@@ -1,0 +1,208 @@
+{
+ "series": [
+  {
+   "codigo": "LIGHC5",
+   "emissao": 15,
+   "serie": "2",
+   "data_emissao": "2018-10-15",
+   "vencimento": "2037-11-13",
+   "vne": 102.64555006,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 3.0,
+    "base": "252 du",
+    "vigente_desde": "2024-11-13",
+    "historico": "Os termos atuais valem desde a Data de Repactuação (2024-11-13), com atualização monetária mensal pelo IPCA e juros de 3% a.a. base 252 sobre o VNU Atualizado. A remuneração anterior à repactuação não consta dos trechos fornecidos. As condições originais da 2ª série foram alteradas por repactuação aprovada no Plano de Recuperação Judicial."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-05-13",
+    "ultima_data": "2037-11-13",
+    "datas_irregulares": [],
+    "carencia_ate": "2026-05-13"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2024-11-13",
+     "ate": "2025-11-13",
+     "observacao": "Cláusula 5.18.2.3: a remuneração devida entre a Data de Repactuação e 13/11/2025 é incorporada ao VNU Atualizado em 13/11/2025. Nessa data começa o período de capitalização seguinte. Não há pagamento de juros antes de 2026-05-13 (pagamento a partir do 18º mês)."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2028-05-13",
+     "percentual": 2.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-13",
+     "percentual": 2.0408,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-13",
+     "percentual": 2.0833,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-13",
+     "percentual": 2.1277,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-13",
+     "percentual": 2.1739,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-13",
+     "percentual": 2.2222,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-13",
+     "percentual": 4.5455,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-11-13",
+     "percentual": 4.7619,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-05-13",
+     "percentual": 5.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-11-13",
+     "percentual": 5.2632,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-05-13",
+     "percentual": 5.5556,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-11-13",
+     "percentual": 5.8824,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-05-13",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-11-13",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-05-13",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-11-13",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-05-13",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-11-13",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-05-13",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-11-13",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3: Terceiro Aditamento à Escritura da 15ª Emissão, com a Escritura consolidada no Anexo A. Vencimento: cláusula 5.16. Atualização monetária: 5.17.1. Remuneração: 5.18.2 e 5.18.2.3. Pagamento de juros: 5.19.2. Amortização: 5.21.1, tabela da Segunda Série. VNU na Data de Repactuação: definições e cláusula 5.8. Data de emissão: 5.9.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 20,
+    "amort_doc": 20,
+    "datas_iguais": 20,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "15ª emissão: a Fiadora Light S.A. está em recuperação judicial. A escritura foi aditada e consolidada para refletir a repactuação aprovada no Plano de Recuperação Judicial, com Data de Repactuação em 2024-11-13. A 2ª série foi repactuada (IPCA + 3% a.a., vencimento em 2037-11-13) e a emissão passou a ter 3 séries. O Documento 4 (2026) lista, entre as emissões do agente fiduciário, uma emissão com vencimento em 13/11/2037, IPCA + 3% a.a. e status ATIVO, compatível com a 2ª série, mas sem identificá-la nominalmente. Não há, nos trechos, vencimento antecipado declarado nem suspensão de pagamentos específica para a série. Os Documentos 1 (24ª emissão), 2 (emissão vinculada a CRI) e 4 (Notas Comerciais) tratam de outras operações e não alteram o cronograma de LIGHC5.",
+ "lacunas": "O VNU original de 2018 não consta dos trechos; usou-se o VNU de R$ 102,64555006 da Data de Repactuação como 'vne'. A remuneração anterior à repactuação (2018-10-15 a 2024-11-13) e o histórico de pagamentos anteriores também não constam. A escritura original e os dois primeiros aditamentos não foram fornecidos. As datas de pagamento seguem o dia 13 de maio e novembro e podem ser prorrogadas se não forem dias úteis. A tabela de datas de juros da 2ª série vem abreviada ('[...]'), por isso a periodicidade semestral foi inferida da cláusula 5.19.2, com primeira data em 2026-05-13 e última no vencimento. Existe ainda amortização extraordinária obrigatória (cash sweep, cláusula 6.2) sem datas nem percentuais fixos: apuração anual a partir de 30/09, após 36 a 42 meses da repactuação, e pagamento no 5º dia do mês seguinte à divulgação das demonstrações financeiras revisadas. Além disso, 25% de venda de ativos e de êxitos judiciais acima de R$ 50 milhões até o fim da RJ, com prioridade para a 1ª série. Também há amortização extraordinária facultativa e resgate antecipado facultativo, sem cronograma fixo. Não foram fornecidos pagamentos efetivamente realizados nem o saldo atual.",
+ "meta": {
+  "emissora": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "cnpj": "60444437000146",
+  "emissao": "15",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-03-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE250320220104464908-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=960025&numSequencia=484759&numVersao=1"
+   },
+   {
+    "data": "2022-12-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE301120220104490311-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039491&numSequencia=564221&numVersao=1"
+   },
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "PARA DISTRIBUIÇÃO PÚBLICA||TERCEIRO ADITAMENTO À ESCRITURA PARTICULAR DA 15ª EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM DUAS SÉRIES, DA ESPÉCIE QUIROGRAFÁRIA, COM GARANTIA FIDEJUSSÓRIA ADICIONAL",
+    "protocolo": "008036IPE281120240104563511-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313128&numSequencia=837854&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE240920260184023869-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571394&numSequencia=1096100&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 130964,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3892,
+   "output_tokens_details": {
+    "thinking_tokens": 1546
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "60444437000146_15"
+ }
+}

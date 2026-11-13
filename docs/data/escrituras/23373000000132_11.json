@@ -1,0 +1,136 @@
+{
+ "series": [
+  {
+   "codigo": "VAMOA1",
+   "emissao": 11,
+   "serie": "UNI",
+   "data_emissao": "2024-06-25",
+   "vencimento": "2029-06-25",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.35,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + 2,3500% a.a. desde a emissão. Os trechos não trazem a Data de Início da Rentabilidade (cláusula 5.2) nem alteração posterior."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-12-25",
+    "ultima_data": "2029-06-25",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2028-06-25",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-25",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3 (escritura da 11ª emissão): cláusulas 5.1.1, 5.6.1, 5.7.1, 5.11.1, 5.12.1 (tabela de datas de juros) e 5.13.1 (tabela de amortização)",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação foi encontrado nos trechos para as emissões solicitadas (3ª, 4ª e 11ª). As AGDs e propostas dos Documentos 4 a 7 (cisão parcial e anuência prévia, com prêmio aos debenturistas) tratam da 2ª série da 2ª emissão e da 7ª emissão. Essas emissões não foram solicitadas e as AGDs não alteram o cronograma das séries pedidas.",
+ "lacunas": "Para a 3ª emissão não há aditamento de bookbuilding nem escritura consolidada. As taxas finais das séries 2 e 3 e as quantidades (223.750 e 464.460) vieram das tabelas do agente fiduciário. Eventual alteração posterior do cronograma não seria visível. Para a 4ª emissão (VAMO34) só há vencimento e taxa nas tabelas do agente fiduciário. Faltam data de emissão, VNE, periodicidade e datas de juros, amortizações e base de cálculo, por ausência da escritura. A base 252 du é presumida. Os códigos de negociação foram aceitos conforme o enunciado, pois não aparecem nos trechos. A Data de Início da Rentabilidade da 11ª emissão (cláusula 5.2) foi omitida no recorte. Resgate antecipado facultativo e amortização extraordinária facultativa (11ª emissão: prêmio de 0,40% a.a. a partir de 2026-12-25; 3ª emissão: 0,55% a.a. para a série 2 a partir de 2027-06-15, e prêmio com base na NTN-B para a série 3) são opcionais da emissora e não foram registrados como prêmios do cronograma.",
+ "meta": {
+  "emissora": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS S.A.",
+  "cnpj": "23373000000132",
+  "emissao": "11",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-06-16",
+    "tipo": "escritura",
+    "assunto": "Escritura da 3ª (Terceira) Emissão de Debêntures simples.",
+    "protocolo": "024716IPE100620210104436311-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=876750&numSequencia=401487&numVersao=1"
+   },
+   {
+    "data": "2023-12-21",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão de debentures",
+    "protocolo": "024716IPE131220230104528111-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1176573&numSequencia=701299&numVersao=1"
+   },
+   {
+    "data": "2024-06-21",
+    "tipo": "escritura",
+    "assunto": "Escritura da 11ª emissão de debentures",
+    "protocolo": "024716IPE190620240104546406-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1252336&numSequencia=777062&numVersao=1"
+   },
+   {
+    "data": "2024-10-22",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a concessão de anuência prévia pelos Debenturistas para a realização da cisão da Emissora e incorporação, pela Simpar, da parcela cindida.",
+    "protocolo": "024716IPE211120240104558706-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1293431&numSequencia=818157&numVersao=1"
+   },
+   {
+    "data": "2024-10-23",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a concessão de anuência prévia pelos Debenturistas para a realização da cisão da Emissora e incorporação, pela Simpar, da parcela cindida.",
+    "protocolo": "024716IPE211120240204558706-20",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1293904&numSequencia=818630&numVersao=2"
+   },
+   {
+    "data": "2024-11-13",
+    "tipo": "ata_agd",
+    "assunto": "I. A concessão de anuência prévia pelos Debenturistas para a realização da cisão da Companhia.||II. a autorização para que a Companhia, em conjunto com o Agente Fiduciário, pratique todos os ato nas matérias eventualmente aprovadas na AGD.",
+    "protocolo": "024716IPE131120240104560911-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1303662&numSequencia=828388&numVersao=1"
+   },
+   {
+    "data": "2024-11-14",
+    "tipo": "ata_agd",
+    "assunto": "Deliberação, pelos Debenturistas, sobre as matérias informadas na Proposta de Administração disponibilizada nas páginas eletrônicas da  Companhia (https://ri.grupovamos.com.br/)",
+    "protocolo": "024716IPE141120240104561011-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1304518&numSequencia=829244&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 137482,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4672,
+   "output_tokens_details": {
+    "thinking_tokens": 1954
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "23373000000132_11-3-4"
+ }
+}

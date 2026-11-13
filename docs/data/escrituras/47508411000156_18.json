@@ -1,0 +1,176 @@
+{
+ "series": [
+  {
+   "codigo": "CBRDB8",
+   "emissao": 18,
+   "serie": "2",
+   "data_emissao": "2021-05-10",
+   "vencimento": "2028-05-10",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.95,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI acrescida exponencialmente de spread de 1,95% a.a., base 252 du, a partir da Data da Primeira Subscrição e Integralização. Nenhum documento posterior alterou a taxa. A AGD de 05/11/2025 concedeu apenas waiver de covenants (sem mudança de taxa, datas ou amortização)."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2021-11-10",
+    "ultima_data": "2028-05-10",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-05-10",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-05-10",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 2 (Escritura da 18ª emissão), cláusulas 4.7.1 (vencimento), 4.9.2 (amortização), 4.10.1.1 (remuneração) e 4.10.1.3.1 (datas de juros). Documento 3 (aditamento pós-bookbuilding) fixou 520.000 debêntures na 2ª série (R$ 520.000.000) e não alterou o cronograma. Documentos 5 a 8 (AGD, waiver) não alteraram o cronograma. Documentos 9 a 12 (plano de recuperação extrajudicial) preveem a novação e a substituição por novas debêntures.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "18ª emissão (1ª e 2ª séries): Recuperação Extrajudicial da Companhia Brasileira de Distribuição. O pedido de homologação foi protocolado em 10/03/2026 e o processamento deferido em 11/03/2026, com suspensão de 180 dias de ações e execuções sobre os Créditos Sujeitos. Os comunicados de 07/10/2026, 08/10/2026 e 21/10/2026 informam a homologação do plano e a publicação da decisão, e dizem que os Créditos Sujeitos são considerados novados. O Anexo F do plano lista a 18ª emissão como Crédito Sujeito (saldo de R$ 994.727.767,00, séries 1 e 2 somadas). A B3 vai bloquear as debêntures da 18ª emissão até a substituição por Novas Debêntures (Emissão A ou B), em até 60 dias corridos. Antes disso, a AGD de 02/10/2025 não foi instalada. A AGD de 05/11/2025, em 2ª convocação, aprovou o waiver do covenant Dívida Líquida/PL e flexibilizou o covenant Dívida Líquida/EBITDA até 3T27, a partir da medição de 30/09/2025. Não consta declaração de vencimento antecipado nos trechos.",
+ "lacunas": "1) O cronograma acima é o contratual original da escritura. Com a homologação, o plano prevê a substituição da série por Novas Debêntures: Emissão A (1ª e 2ª séries) ou Emissão B, com remuneração DI+2,5% a.a. ou DI, capitalização diária desde 10/03/2026 e novos vencimentos e amortizações. Os trechos não dizem qual opção os debenturistas desta série elegeram nem se a substituição foi concluída, então não há cronograma pós-novação aplicável à CBRDB8. 2) A data da Primeira Subscrição e Integralização, que inicia a remuneração, não está nos trechos, por isso 'vigente_desde' é null. 3) A tabela de juros da 2ª série no documento recortado omite a parcela 11, que por inferência é 10/11/2026 (regra semestral em maio e novembro). 4) A escritura prevê resgate antecipado facultativo (a partir de 06/05/2025, prêmio de 0,40% a.a. sobre o prazo a decorrer) e amortização facultativa, ambos sem data fixa. A proposta de waiver prevê amortização extraordinária obrigatória, condicionada a vendas de ativos, também sem data fixa. Nenhum dos três foi incluído no cronograma. 5) Os trechos não mostram eventuais pagamentos já realizados ou amortizações extraordinárias efetivadas, nem o saldo atual. 6) Os Documentos 1 (10ª emissão) e 4 (20ª emissão) tratam de outras emissões e foram ignorados.",
+ "meta": {
+  "emissora": "COMPANHIA BRASILEIRA DE DISTRIBUICAO",
+  "cnpj": "47508411000156",
+  "emissao": "18",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2012-01-10",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "",
+    "versao": "",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=316952&numSequencia=0&numVersao=0"
+   },
+   {
+    "data": "2021-05-13",
+    "tipo": "escritura",
+    "assunto": "Escritura 18 emissão de debêntures",
+    "protocolo": "014826IPE050520210104432912-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=867308&numSequencia=392045&numVersao=1"
+   },
+   {
+    "data": "2021-05-13",
+    "tipo": "escritura",
+    "assunto": "Aditamento 18 emissão de debêntures",
+    "protocolo": "014826IPE120520210104432912-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=867312&numSequencia=392049&numVersao=1"
+   },
+   {
+    "data": "2024-11-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "014826IPE081120240104560413-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1301455&numSequencia=826181&numVersao=1"
+   },
+   {
+    "data": "2025-09-30",
+    "tipo": "proposta_agd",
+    "assunto": "18ª Emissão - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE021020250257291686-02",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1427814&numSequencia=952526&numVersao=2"
+   },
+   {
+    "data": "2025-10-07",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "014826IPE021020250144049583-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1430204&numSequencia=954916&numVersao=1"
+   },
+   {
+    "data": "2025-10-28",
+    "tipo": "proposta_agd",
+    "assunto": "18ª emissão - 2ª convocação - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE051120250141824612-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436728&numSequencia=961440&numVersao=1"
+   },
+   {
+    "data": "2025-11-10",
+    "tipo": "ata_agd",
+    "assunto": "18ª Emissão - Ata - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE051120250109336175-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1442435&numSequencia=967147&numVersao=1"
+   },
+   {
+    "data": "2026-05-05",
+    "tipo": "plano_rj",
+    "assunto": "Nova Versão do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE050520260140531175-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516387&numSequencia=1041093&numVersao=1"
+   },
+   {
+    "data": "2026-10-07",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260194351299-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574980&numSequencia=1099686&numVersao=1"
+   },
+   {
+    "data": "2026-10-08",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260295440636-17",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575329&numSequencia=1100035&numVersao=2"
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Publicac¸a~o da Homologac¸a~o do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE211020260137121682-38",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578908&numSequencia=1103614&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 142802,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3041,
+   "output_tokens_details": {
+    "thinking_tokens": 1304
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "47508411000156_18"
+ }
+}

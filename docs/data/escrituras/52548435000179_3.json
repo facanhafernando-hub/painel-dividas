@@ -1,0 +1,95 @@
+{
+ "series": [],
+ "situacao": null,
+ "lacunas": "Não foi possível extrair o cronograma de JSMLA5 (série 001) e JSMLB5 (série 002) da 3ª emissão da JSL S.A. Nenhum dos 4 documentos trata dessa emissão, e os códigos JSMLA5 e JSMLB5 não aparecem em nenhum trecho. Os documentos tratam de outras emissões: o Doc. 1 (1º Aditamento com escritura consolidada) e o Doc. 3 (ata de AGD de 2021-09-24) são da 10ª emissão (série única); o Doc. 2 (proposta de AGD) é da 13ª emissão (2 séries); o Doc. 4 (ata de AGD) é da 12ª emissão (série única, garantia flutuante). Como não há vínculo com a 3ª emissão, não atribuí datas, taxas nem amortizações dessas emissões às séries solicitadas. Para a 3ª emissão faltam a escritura, os aditamentos e as atas de AGD correspondentes. Se os documentos enviados foram os errados, reenvie os da 3ª emissão. Se a intenção era extrair as emissões que aparecem nos documentos (10ª, 12ª, 13ª), informe os códigos de negociação, que também não constam dos trechos.",
+ "meta": {
+  "emissora": "JSL S.A",
+  "cnpj": "52548435000179",
+  "emissao": "3",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2017-03-22",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "022020IPE150320170104281611-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=553261&numSequencia=96009&numVersao=1"
+   },
+   {
+    "data": "2017-06-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "022020IPE200620170104291510-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=569610&numSequencia=112399&numVersao=1"
+   },
+   {
+    "data": "2019-01-14",
+    "tipo": "escritura",
+    "assunto": "Repactuação",
+    "protocolo": "022020IPE040120190104347910-95",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=660645&numSequencia=191181&numVersao=1"
+   },
+   {
+    "data": "2020-08-05",
+    "tipo": "proposta_agd",
+    "assunto": "(a) aprovação para a dispensa da solidariedade entre a Emissora e a Simpar, em relação à totalidade das obrigações representadas pelas Debêntures, após a realização de Reorganização Societária||(b) a autorização para que a Emissora e o Agente Fiduciário pratiquem todos e quaisquer atos e assinem tod",
+    "protocolo": "022020IPE200520200104404804-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=781173&numSequencia=305914&numVersao=1"
+   },
+   {
+    "data": "2021-06-23",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre: (a) aprovar ou não a modificação da Escritura de Emissão para alterar o conceito de \"Dívida Financeira Líquida\"||e (c) autorização à Emissora e ao Agente Fiduciário para a prática de todos e quaisquer atos necessários e/ou convenientes à realização da deliberação referente às matéri",
+    "protocolo": "022020IPE230620210104437011-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=878322&numSequencia=403059&numVersao=1"
+   },
+   {
+    "data": "2021-09-24",
+    "tipo": "ata_agd",
+    "assunto": "(a) os  juros remuneratórios||(b) a Data de Vencimento das Debêntures||(c) alterar a data de possibilidade de  realização da Amortização Extraordinária e do Resgate Antecipado||(d) as Datas de Amortização do Valor  2 SP - 23925466v1  Nominal Unitário das Debentures||(e) alterar o Prêmio a ser consid",
+    "protocolo": "022020IPE240920210104446313-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=903397&numSequencia=428131&numVersao=1"
+   },
+   {
+    "data": "2021-09-24",
+    "tipo": "ata_agd",
+    "assunto": "(i) aprovação da exclusão da constituição da garantia fidejussória para a totalidade da dívida representada na Escritura de Emissão, prestada pela Simpar S.A||(ii) o  aditamento da Escritura de Emissão||(iii) autorização  à Companhia e ao Agente Fiduciário para a prática dos atos necessários à reali",
+    "protocolo": "022020IPE240920210104446313-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=903402&numSequencia=428136&numVersao=1"
+   },
+   {
+    "data": "2021-09-27",
+    "tipo": "ata_agd",
+    "assunto": "(i) aprovação da exclusão da constituição da garantia fidejussória para a totalidade da dívida representada na Escritura de Emissão, prestada pela Simpar S.A||(ii) o  aditamento da Escritura de Emissão||(iii) autorização  à Companhia e ao Agente Fiduciário para a prática dos atos necessários à reali",
+    "protocolo": "022020IPE240920210204446313-97",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=903683&numSequencia=428417&numVersao=2"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 47104,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 925,
+   "output_tokens_details": {
+    "thinking_tokens": 453
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "52548435000179_3"
+ }
+}

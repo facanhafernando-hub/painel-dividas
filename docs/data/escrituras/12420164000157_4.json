@@ -5,19 +5,19 @@
    "emissao": 4,
    "serie": "UNI",
    "data_emissao": null,
-   "vencimento": "2034-01-30",
+   "vencimento": "2028-11-05",
    "vne": null,
    "remuneracao": {
     "indexador": "DI+",
     "taxa": 1.7,
     "base": "252 du",
     "vigente_desde": null,
-    "historico": "100% da Taxa DI + 1,70% a.a., base 252 du. O spread consta do Anexo da escritura da 7ª emissão (lista de dívidas do grupo), que traz a 4ª emissão com vencimento 05/11/2028. Os comunicados de 08/06 e 11/06/2026 citam alteração de spread (1,60% para 1,70%) apenas para a 5ª e a 6ª emissões, então a 4ª não teria mudança. A data de início do spread de 1,70% não aparece nos trechos."
+    "historico": "100% da Taxa DI + 1,70% a.a. segundo o Anexo II da escritura da 5ª emissão (2022) e os anexos de lista de emissões das propostas/atas de junho/2026. Não há mudança aprovada nos documentos. A proposta de 2026-06-03 prevê 'Prêmio Extraordinário' de 0,50% a.a. (2029-07-30 a 2030-07-30) e 1,00% a.a. (depois disso, até o vencimento), mas não há ata de aprovação."
    },
    "juros": {
-    "periodicidade_meses": 3,
-    "primeira_data": "2026-07-30",
-    "ultima_data": "2034-01-30",
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-05-05",
+    "ultima_data": "2028-11-05",
     "datas_irregulares": [],
     "carencia_ate": null
    },
@@ -29,84 +29,52 @@
      "base": "saldo"
     },
     {
-     "data": "2029-07-30",
-     "percentual": 7.5,
-     "base": "saldo"
-    },
-    {
-     "data": "2030-01-30",
-     "percentual": 8.1081,
-     "base": "saldo"
-    },
-    {
-     "data": "2030-07-30",
+     "data": "2026-11-05",
      "percentual": null,
      "base": "desconhecida"
     },
     {
-     "data": "2031-01-30",
+     "data": "2027-11-05",
      "percentual": null,
      "base": "desconhecida"
     },
     {
-     "data": "2031-07-30",
+     "data": "2028-11-05",
      "percentual": null,
      "base": "desconhecida"
-    },
-    {
-     "data": "2032-01-30",
-     "percentual": 12.0,
-     "base": "saldo"
-    },
-    {
-     "data": "2032-07-30",
-     "percentual": null,
-     "base": "desconhecida"
-    },
-    {
-     "data": "2033-01-30",
-     "percentual": null,
-     "base": "desconhecida"
-    },
-    {
-     "data": "2033-07-30",
-     "percentual": null,
-     "base": "desconhecida"
-    },
-    {
-     "data": "2034-01-30",
-     "percentual": 100.0,
-     "base": "saldo"
     }
    ],
-   "premios": [
-    {
-     "data": "2029-07-30",
-     "descricao": "Início do Prêmio Extraordinário de 0,50% a.a., base 252 du, sobre o VNU ou saldo, de 30/07/2029 (exclusive) até 30/07/2030 (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração. Não é devido em pagamento antecipado ocorrido até 30/07/2029."
-    },
-    {
-     "data": "2030-07-30",
-     "descricao": "Prêmio Extraordinário de 1,00% a.a., base 252 du, de 30/07/2030 (exclusive) até a Data de Vencimento (2034-01-30, inclusive). Pago trimestralmente. A tabela de pagamentos marca o Vencimento como data de pagamento do prêmio."
-    }
-   ],
-   "fonte": "Documento 3 (proposta da administração de 2026-06-03 para a AGD da 4ª emissão): quadro-resumo 'Antes da AGD / Após a AGD', cláusulas 4.12 (pagamento da remuneração e do prêmio), 4.13.1 (amortização) e 4.11.2 (Prêmio Extraordinário). Remuneração: Anexo da escritura da 7ª emissão (Documentos 7 e 8). Documentos 6 e 9 (comunicados de 08/06 e 11/06/2026) confirmam em termos gerais a alteração do vencimento para 30/01/2034 e a carência de amortização até 30/07/2029. Amortização de 05/11/2025 (25%): tabela 'Antes da AGD' do Documento 3.",
+   "premios": [],
+   "fonte": "Documento 5 (proposta da AGD de 2026-06-03), coluna 'Antes da AGD', cláusulas 4.12.1 e 4.13.1. Vencimento e spread confirmados nos anexos dos documentos 6, 10 e 11. Cronograma original, porque a repactuação proposta não tem ata de aprovação nos documentos.",
    "confianca": "baixa",
    "conferencia_snd": {
     "snd": true,
     "amort_snd": 10,
-    "amort_doc": 11,
-    "datas_iguais": 10,
-    "so_snd": [],
+    "amort_doc": 2,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-07-30",
+     "2030-01-30",
+     "2030-07-30",
+     "2031-01-30",
+     "2031-07-30",
+     "2032-01-30",
+     "2032-07-30",
+     "2033-01-31",
+     "2033-08-01",
+     "2034-01-30"
+    ],
     "so_doc": [
-     "2025-11-05"
+     "2027-11-05",
+     "2028-11-05"
     ],
     "pct_diferente": [],
     "ok": false
    }
   }
  ],
- "situacao": "4ª emissão (CM Hospitalar): em repactuação. O Fato Relevante de 13/05/2026 informa tratativas para repactuar as dívidas financeiras e a convocação das AGDs da 4ª, 5ª e 6ª emissões para 08/06/2026 (1ª convocação). Os trechos não trazem ata de AGD específica da 4ª emissão. Os comunicados de 08/06 e 11/06/2026 dizem, de forma geral, que as alterações foram aprovadas, mas citam as séries apenas em pontos específicos (5ª e 6ª na remuneração). As atas das 5ª, 6ª e 7ª emissões (Docs. 4, 5, 7 e 8) estão sujeitas a Condição Suspensiva e Resolutiva e à formalização por aditamento. O Documento 6 diz que a eficácia depende também de aprovações na 7ª emissão da Cremer e na 7ª emissão da Companhia. Não há vencimento antecipado declarado, RJ ou RE nos trechos. Antes da proposta, o cronograma da 4ª emissão já havia sido alterado por AGDs e aditamentos anteriores (waiver de covenants, amortização parcial em 05/11/2025).",
- "lacunas": "1) Falta a ata da AGD da 4ª emissão e o aditamento formalizado. O cronograma acima vem da proposta da administração (Doc. 3) e dos comunicados gerais, e a aprovação e a eficácia (condições suspensiva e resolutiva) não estão confirmadas para esta série. Se não vigorar, o cronograma anterior era: vencimento 05/11/2028; juros semestrais em 05/05 e 05/11; saldo amortizado em 4 parcelas anuais a partir de 05/11/2025, com primeira parcela de 25% do saldo, e demais percentuais não visíveis. 2) Data de emissão e VNE não constam nos trechos; a escritura é de 28/10/2021. 3) Percentuais das parcelas 3ª a 5ª e 7ª a 9ª da nova tabela de amortização foram cortados do trecho. As datas dessas parcelas foram derivadas da regra 'semestrais e consecutivas' a partir de 30/07/2029, consistente com a 6ª parcela em 30/01/2032. O percentual de 100% do vencimento (10ª parcela) é inferido, pois o trecho mostra só 'Vencimento'. 4) Juros: até a Data de Pagamento de 05/05/2026 o regime era semestral (05/05 e 05/11, desde 05/05/2022, 9 parcelas); a partir de 30/07/2026 passa a trimestral (30/01, 30/04, 30/07 e 30/10; 31 parcelas, total de 40). A parcela de 05/11/2026 deixa de existir. O campo 'juros' registra apenas o regime trimestral. 5) Não há menção a incorporação de juros ou carência de juros. A carência é só de amortização, até 30/07/2029. 6) O percentual de 25% da amortização de 05/11/2025 vem da tabela anterior; o Doc. 3 afirma que a parcela ocorreu, mas não traz o saldo remanescente nem confirma o pagamento.",
+ "situacao": "Emissora: CM Hospitalar S.A. (Viveo). Fato relevante de 2026-05-13: a companhia está em tratativas para repactuar suas dívidas financeiras, e foram convocadas AGDs da 4ª, 5ª e 6ª emissões para 2026-06-08. 4ª emissão (CMPH14): há proposta de repactuação (vencimento 2034-01-30, juros trimestrais, amortização em 10 parcelas semestrais a partir de 2029-07-30, prêmio extraordinário), mas não há ata de aprovação nos documentos, então o resultado da AGD é desconhecido. 5ª emissão (VVEO15): a AGD de 2026-06-08 aprovou a repactuação com 96,54% das debêntures em circulação, sem rejeições ou abstenções. A eficácia depende de condição suspensiva (formalização dos instrumentos e aprovações das demais emissões, incluindo a 7ª emissão da Cremer e a 7ª emissão da companhia, ainda a finalizar), e a ata também menciona uma condição resolutiva. Até o aditamento ser formalizado, o cronograma efetivamente vigente continua sendo o original da escritura (vencimento 2027-07-22; amortização de 50% em 2026-07-22 e 100% em 2027-07-22). Não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação declarados nos trechos. Há referências a waivers de covenants anteriores (AGDs de 2024/2025).",
+ "lacunas": "CMPH14: não constam data de emissão, VNE e quantidade (a escritura de 2021-10-28 não foi fornecida). A data de emissão deve ser 2021-11-05 pela regra de 'início no 4º ano' com 1ª amortização em 2025-11-05. Os percentuais das amortizações de 2026-11-05 em diante não aparecem nos trechos cortados; as datas foram inferidas das 'quatro parcelas anuais'. Spread de 1,70% a.a. obtido apenas pelos anexos de outras escrituras. Não há ata da AGD da 4ª emissão. VVEO15: o documento 1 prevê até 2 séries (1ª série com vencimento em 2027-07-22 e spread de 1,60%); considerei apenas a série única remanescente, pois os documentos de 2026 tratam a emissão como série única. Não constam nos trechos os percentuais de amortização de 2031-07-30 a 2033-07-30, e a ata não traz a tabela completa dos pagamentos de juros e prêmio. Os valores visíveis (7,5% / 8,1081% / 8,8235% / 9,6774%) sugerem parcelas de 7,5% do VNE nas parcelas 1 a 9, mas isso não está escrito. Em ambas as emissões, não há informação sobre pagamentos efetivamente realizados nem sobre incorporação de juros ou carência de juros, salvo a carência de amortização até 2029-07-30.",
  "meta": {
   "emissora": "CM HOSPITALAR S.A.",
   "cnpj": "12420164000157",
@@ -114,6 +82,14 @@
   "lido_em": "2026-11-13",
   "modelo": "claude-sonnet-5-5",
   "documentos": [
+   {
+    "data": "2022-07-07",
+    "tipo": "escritura",
+    "assunto": "ESCRITURA DA 5ª (QUINTA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025682IPE070720220104474911-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=996305&numSequencia=521039&numVersao=1"
+   },
    {
     "data": "2026-05-13",
     "tipo": "proposta_agd",
@@ -131,12 +107,28 @@
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
    },
    {
+    "data": "2026-05-13",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 5ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260178232473-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521711&numSequencia=1046417&numVersao=1"
+   },
+   {
     "data": "2026-06-03",
     "tipo": "proposta_agd",
     "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
     "protocolo": "025682IPE080620260288479481-38",
     "versao": "2",
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530615&numSequencia=1055321&numVersao=2"
+   },
+   {
+    "data": "2026-06-03",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 5ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260294782634-42",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530616&numSequencia=1055322&numVersao=2"
    },
    {
     "data": "2026-06-08",
@@ -188,21 +180,21 @@
    }
   ],
   "uso_grupo": {
-   "input_tokens": 91920,
+   "input_tokens": 141774,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 6260,
+   "output_tokens": 9689,
    "output_tokens_details": {
-    "thinking_tokens": 3738
+    "thinking_tokens": 6664
    },
-   "service_tier": "standard",
+   "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "12420164000157_4"
+  "grupo": "12420164000157_4-5"
  }
 }

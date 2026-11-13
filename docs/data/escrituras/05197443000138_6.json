@@ -1,0 +1,111 @@
+{
+ "series": [
+  {
+   "codigo": "BCBF16",
+   "emissao": 6,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2027-10-07",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.45,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Os anexos listam apenas '100% da Taxa DI + 1,45% a.a.'. Nenhuma alteração encontrada."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Apenas o Anexo II da escritura do documento 1 (listagem do Agente Fiduciário: '6ª Emissão de Debêntures da BCBF S.A.', R$ 1,2 bi, 1.200.000 debêntures, vencimento 07/10/2027, 100% DI + 1,45% a.a.), repetido nos Anexos II dos documentos 2 e 3, onde a emissão aparece como 'Hapvida (Antiga BCBF S.A.)'. O documento 5 só confirma que BCBF16 é a série única da 6ª emissão, em circulação. Não há escritura nem aditamento da série nos trechos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-10-07"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "5ª emissão (HAPV15): sem vencimento antecipado, suspensão, RJ/RE ou novação nos trechos. Em 25/08/2026, a Hapvida informou programa de recompra de debêntures próprias, sem prêmio e a preço de mercado, de até R$ 150 mi, com R$ 149,9 mi já usados e liquidação até 31/12/2026. HAPV15 tinha 974.114 debêntures em circulação e 25.886 em tesouraria. 10ª emissão (HAPVA0): sem eventos de inadimplência nos trechos. Os recursos serviriam ao pré-pagamento de HAPV22 (2ª emissão) e HAPV13 (3ª emissão) e a outras ações de reperfilamento. HAPVA0 está entre as séries elegíveis à recompra de 2026, sem dados de tesouraria para ela. 6ª emissão (BCBF16): sem eventos nos trechos. Também está entre as séries elegíveis à recompra de 2026, sem dados de tesouraria para ela.",
+ "lacunas": "BCBF16: não há escritura nem aditamento nos trechos. Faltam data de emissão, VNE (1.200.000 debêntures para R$ 1,2 bi sugere R$ 1.000, mas isso não está escrito), base de dias da taxa, periodicidade e datas de juros, amortizações e prêmios. Todas as séries: a data da primeira integralização não consta, então não foi possível fixar 'vigente_desde'. Os documentos 1 e 3 são as escrituras originais, sem aditamentos posteriores nos trechos; mudanças posteriores, se houver, não podem ser verificadas. Em HAPV15 e HAPVA0, as faixas de prêmio de resgate com data final omitida foram deduzidas do início da faixa seguinte. O Documento 2 (9ª emissão, HAPV19) não era série solicitada e foi usado apenas como confirmação cruzada.",
+ "meta": {
+  "emissora": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "cnpj": "05197443000138",
+  "emissao": "6",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-12-22",
+    "tipo": "escritura",
+    "assunto": "5ª Emissão de Debêntures",
+    "protocolo": "024392IPE151220230104528209-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1176895&numSequencia=701621&numVersao=1"
+   },
+   {
+    "data": "2025-04-24",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250151163146-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1"
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE071020250184374491-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1"
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE081020250101964273-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1"
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
+    "protocolo": "024392IPE250820260171572734-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 114791,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4992,
+   "output_tokens_details": {
+    "thinking_tokens": 1766
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "05197443000138_10-5-6"
+ }
+}

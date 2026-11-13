@@ -1,0 +1,164 @@
+{
+ "series": [
+  {
+   "codigo": "ORIG11",
+   "emissao": 1,
+   "serie": "1",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 1 (Segundo Aditamento à Escritura da 1ª Emissão, entregue em 2023-12-27): só confirma 369.414 debêntures na 1ª série e a escritura original de 2023-12-04. Nenhum cronograma foi trazido nos trechos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 14,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-06-15",
+     "2029-12-17",
+     "2030-06-17",
+     "2030-12-16",
+     "2031-06-16",
+     "2031-12-15",
+     "2032-06-15",
+     "2032-12-15",
+     "2033-06-15",
+     "2033-12-15",
+     "2034-06-15",
+     "2034-12-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  },
+  {
+   "codigo": "ORIG21",
+   "emissao": 1,
+   "serie": "2",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 1 (Segundo Aditamento à Escritura da 1ª Emissão, entregue em 2023-12-27): só confirma 1.380.586 debêntures na 2ª série. Nenhum cronograma foi trazido nos trechos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 14,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-06-15",
+     "2029-12-17",
+     "2030-06-17",
+     "2030-12-16",
+     "2031-06-16",
+     "2031-12-15",
+     "2032-06-15",
+     "2032-12-15",
+     "2033-06-15",
+     "2033-12-15",
+     "2034-06-15",
+     "2034-12-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "1ª emissão: nenhum evento de vencimento antecipado, suspensão, RJ/RE ou novação aparece nos trechos. 2ª emissão (Docs. 2 e 3): nenhum evento desse tipo aparece nos trechos, que trazem só as cláusulas de vencimento antecipado como previsão contratual. Não há aditamento, ata de AGD ou plano posterior a 2025-08-13.",
+ "lacunas": "(1) Os Docs. 2 e 3 tratam da 2ª emissão de debêntures da Origem Energia (escritura de 2025-07-20, séries de R$ 841.317.000 e R$ 558.683.000). O cabeçalho pede a 1ª emissão (ORIG11 e ORIG21), e o único documento da 1ª emissão (Doc. 1) não traz cronograma, taxa, vencimento nem VNE. Por isso as séries da 1ª emissão ficam nulas. Não atribuí os dados da 2ª emissão a ORIG11/ORIG21, e os tickers das séries da 2ª emissão não constam nos trechos (codigo null). (2) Data de emissão da 2ª emissão: não consta nos trechos. O prazo de 3.835 dias até 2035-12-15 implica 2025-06-15, mas é só inferência aritmética, por isso data_emissao ficou null. (3) VNE da 2ª emissão: não consta de forma expressa. R$ 1.000,00 é o resultado de dividir o valor total de cada série pela quantidade de debêntures (841.317.000/841.317 e 558.683.000/558.683). (4) A Data de Início da Rentabilidade (vigente_desde) não aparece nos trechos. (5) Os trechos da 1ª emissão não incluem a escritura original de 2023-12-04 nem o Primeiro Aditamento, onde estaria o cronograma. (6) Não há informação de pagamentos já realizados, repactuação, resgate ou aquisição.",
+ "meta": {
+  "emissora": "ORIGEM ENERGIA S.A.",
+  "cnpj": "32021201000161",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-12-14",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027227IPE041220230104527409-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1173538&numSequencia=698264&numVersao=1"
+   },
+   {
+    "data": "2023-12-27",
+    "tipo": "escritura",
+    "assunto": "Aditamento à Escritura de Emissão",
+    "protocolo": "027227IPE271220230104528707-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1177615&numSequencia=702341&numVersao=1"
+   },
+   {
+    "data": "2025-07-21",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027227IPE200720250168229812-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1402374&numSequencia=927086&numVersao=1"
+   },
+   {
+    "data": "2025-08-13",
+    "tipo": "escritura",
+    "assunto": "Alterações para refletir o Resultado do Procedimento de Bookbuilding,",
+    "protocolo": "027227IPE120820250157574790-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1412919&numSequencia=937631&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 49372,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5083,
+   "output_tokens_details": {
+    "thinking_tokens": 1830
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "32021201000161_1"
+ }
+}

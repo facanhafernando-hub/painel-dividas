@@ -1,0 +1,320 @@
+{
+ "series": [
+  {
+   "codigo": "IRJS14",
+   "emissao": 4,
+   "serie": "1",
+   "data_emissao": "2023-05-15",
+   "vencimento": "2043-05-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A taxa final saiu do Procedimento de Bookbuilding e não aparece nos trechos. A escritura fixa só o teto: o maior entre (i) a TIR da NTN-B 2035 mais 2,65% a.a. e (ii) 8,80% a.a., ambos base 252 du. A atualização monetária (VNa = VNe x C) incide sobre o VNU, e os juros incidem sobre o VNU Atualizado. Sem alteração nos documentos posteriores."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-11-15",
+    "ultima_data": "2043-05-15",
+    "datas_irregulares": [],
+    "carencia_ate": "2025-05-15"
+   },
+   "incorporacao_juros": [
+    {
+     "de": null,
+     "ate": "2025-05-15",
+     "observacao": "A remuneração do período entre a Primeira Data de Integralização e 15/05/2025 (Data de Incorporação) é incorporada ao VNU Atualizado, sem pagamento em caixa. A data de início é a Primeira Data de Integralização, que não consta dos trechos. Os pagamentos semestrais de juros começam em 15/11/2025, nos dias 15 de maio e novembro, em 36 parcelas, a última no vencimento."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2025-11-15",
+     "percentual": 0.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-05-15",
+     "percentual": 0.5025,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-11-15",
+     "percentual": 0.5051,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-05-15",
+     "percentual": 0.3046,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-11-15",
+     "percentual": 0.3055,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-05-15",
+     "percentual": 0.4597,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-15",
+     "percentual": 0.4618,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-15",
+     "percentual": 0.8247,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-15",
+     "percentual": 0.8316,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-15",
+     "percentual": 1.2579,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-15",
+     "percentual": 1.2739,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-15",
+     "percentual": 1.2903,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-11-15",
+     "percentual": 1.3072,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-05-15",
+     "percentual": 2.0971,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-11-15",
+     "percentual": 2.1421,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-05-15",
+     "percentual": 3.1682,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-11-15",
+     "percentual": 3.2719,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-05-15",
+     "percentual": 3.69,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-11-15",
+     "percentual": 3.8314,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-05-15",
+     "percentual": 4.1833,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-11-15",
+     "percentual": 4.3659,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-05-15",
+     "percentual": 4.6377,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-11-15",
+     "percentual": 4.8632,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-05-15",
+     "percentual": 5.9904,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-11-15",
+     "percentual": 6.3721,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-05-15",
+     "percentual": 7.7677,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-11-15",
+     "percentual": 8.4219,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-05-15",
+     "percentual": 9.2394,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-11-15",
+     "percentual": 10.1799,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-05-15",
+     "percentual": 11.7554,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-11-15",
+     "percentual": 13.3214,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-05-15",
+     "percentual": 15.5065,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-11-15",
+     "percentual": 18.3524,
+     "base": "saldo"
+    },
+    {
+     "data": "2042-05-15",
+     "percentual": 24.975,
+     "base": "saldo"
+    },
+    {
+     "data": "2042-11-15",
+     "percentual": 33.2889,
+     "base": "saldo"
+    },
+    {
+     "data": "2043-05-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura da 4ª emissão (12/05/2023), cláusulas 4.6.1, 4.11, 4.13.1 e 4.14.1, mantida na versão consolidada do aditamento de 31/05/2023 (Anexo A), cujo cronograma é idêntico. Os percentuais acima são os da 4ª coluna da tabela 4.14.1 (% do VNU Atualizado, ou seja, do saldo). A 3ª coluna traz o mesmo cronograma como % do VNU original: 0,5000; 0,5000; 0,5000; 0,3000; 0,3000; 0,4500; 0,4500; 0,8000; 0,8000; 1,2000 (x2 em 2030); 1,2000 (2031 x2); 1,9000 (2032 x2); 2,7500 (2033 x2); 3,0000 (2034 x2); 3,1500 (2035 x2); 3,2000 (2036 x2); 3,7500 (2037 x2); 4,2800 (2038 x2); 4,3000 (2039 x2); 4,4600 (2040 x2); 4,5000 (2041 x2); 5,0000 (2042 x2); 10,0200 (2043).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 34,
+    "amort_doc": 34,
+    "datas_iguais": 34,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "4ª emissão, 1ª série (IRJS14): não há vencimento antecipado, RJ/RE nem novação nos trechos. A emissora propôs aos debenturistas da 1ª série um waiver para substituir o Saldo Mínimo da Conta Reserva por cartas de fiança bancária, até 31/12/2033 ou até o Completion Total da 2ª Série, com aporte mínimo de R$ 50 milhões da Fiadora até 31/12/2026. A AGD de 24/11/2025 em 1ª convocação não foi instalada (32,74% presentes). A AGD de 04/12/2025 em 2ª convocação teve 36,81% presentes, e o trecho da ata registra aprovação condicionada: cartas de fiança não substituíveis por dinheiro nos primeiros 2 anos e lista restrita de bancos. O trecho não traz o resultado da votação nem o quórum de aprovação. Esse waiver trata de garantia e não altera datas, juros ou amortizações. Na 2ª série, a AGD de 12/05/2025 aprovou waiver semelhante da conta reserva.",
+ "lacunas": "VNE (valor nominal unitário) e taxa final do bookbuilding não aparecem nos trechos, então ficaram null. A data de emissão (2023-05-15) foi inferida do prazo de 20 anos até o vencimento de 15/05/2043, porque a cláusula própria foi omitida. A data de início da incorporação de juros (Primeira Data de Integralização) também não consta. O prêmio de resgate antecipado facultativo total (possível a partir de 15/05/2031) é citado, mas as cláusulas com os percentuais foram omitidas, então 'premios' ficou vazio. O documento 3 (AGD da 3ª emissão privada, vencimento 27/01/2028) refere-se a outra emissão e não afeta o IRJS14. Os trechos não trazem aditamento posterior que altere o cronograma da 1ª série.",
+ "meta": {
+  "emissora": "IGUA RIO DE JANEIRO S.A.",
+  "cnpj": "42353180000135",
+  "emissao": "4",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-05-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026727IPE120520230104505813-94",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1101961&numSequencia=626690&numVersao=1"
+   },
+   {
+    "data": "2023-05-31",
+    "tipo": "escritura",
+    "assunto": "Alterações dos termos e condições da Escritura de Emissão.",
+    "protocolo": "026727IPE300520230104507705-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1108040&numSequencia=632769&numVersao=1"
+   },
+   {
+    "data": "2024-08-27",
+    "tipo": "ata_agd",
+    "assunto": "Consolidar as características das Debêntures, a fim de refletir a alteração a ser realizada no âmbito do 2º Aditamento",
+    "protocolo": "026727IPE070820240104553108-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1275941&numSequencia=800667&numVersao=1"
+   },
+   {
+    "data": "2025-05-12",
+    "tipo": "ata_agd",
+    "assunto": "Waiver Conta Reserva",
+    "protocolo": "026727IPE120520250133161960-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1376536&numSequencia=901248&numVersao=1"
+   },
+   {
+    "data": "2025-10-24",
+    "tipo": "proposta_agd",
+    "assunto": "IRJS14 - Proposta da Administração",
+    "protocolo": "026727IPE241120250125252830-90",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1435680&numSequencia=960392&numVersao=1"
+   },
+   {
+    "data": "2025-11-24",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "026727IPE241120250107573591-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1448920&numSequencia=973632&numVersao=1"
+   },
+   {
+    "data": "2025-11-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração 2° convocação",
+    "protocolo": "026727IPE041220250174449464-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1450162&numSequencia=974874&numVersao=1"
+   },
+   {
+    "data": "2025-12-04",
+    "tipo": "ata_agd",
+    "assunto": "Examinar, discutir e deliberar sobre a aprovação da autorização prévia para que a Emissora possa, nos termos das Cláusulas 3.2.2(iii) e 3.4.1 do \"Instrumento Particular de Cessão Fiduciária de ...",
+    "protocolo": "026727IPE041220250144701149-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1453107&numSequencia=977819&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 110913,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4971,
+   "output_tokens_details": {
+    "thinking_tokens": 1989
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "42353180000135_4"
+ }
+}

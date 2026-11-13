@@ -1,0 +1,261 @@
+{
+ "series": [
+  {
+   "codigo": "VERO14",
+   "emissao": 4,
+   "serie": "1",
+   "data_emissao": "2024-10-15",
+   "vencimento": "2029-10-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.75,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa 100% da Taxa DI + spread a definir em bookbuilding, limitado a 2,00% a.a. (Taxa Teto). O 1º Aditamento (Doc. 4) ratificou o bookbuilding e fixou o spread em 1,75% a.a., base 252 du."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-04-15",
+    "ultima_data": "2029-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2028-10-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 4 (1º Aditamento à 4ª emissão, Anexo A – escritura consolidada): Cláusulas 7.12.1 (vencimento), 7.14.1 (amortização), 7.15.1 (remuneração) e 7.16.1 (pagamento da remuneração, 10 parcelas). Os percentuais são do saldo do VNU.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "VERO24",
+   "emissao": 4,
+   "serie": "2",
+   "data_emissao": "2024-10-15",
+   "vencimento": "2031-10-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.3524,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa IPCA + taxa limitada à maior entre NTN-B 2030 + 1,65% a.a. e 7,65% a.a. O 1º Aditamento (Doc. 4) fixou a taxa em 8,3524% a.a., base 252 du."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-04-15",
+    "ultima_data": "2031-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-10-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 4 (1º Aditamento, Anexo A consolidado): Cláusulas 7.12.1, 7.13 (atualização pelo IPCA), 7.14.2, 7.15.2 e 7.16.2 (14 parcelas). Os percentuais são do saldo do Valor Nominal Unitário Atualizado.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "VERO34",
+   "emissao": 4,
+   "serie": "3",
+   "data_emissao": "2024-10-15",
+   "vencimento": "2031-10-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "PRE",
+    "taxa": 14.6958,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa taxa prefixada limitada à maior entre DI x Pré (vértice jan/2030) + 1,65% a.a. e 13,20% a.a. O 1º Aditamento (Doc. 4) fixou a taxa em 14,6958% a.a., base 252 du."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-04-15",
+    "ultima_data": "2031-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-10-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 4 (1º Aditamento, Anexo A consolidado): Cláusulas 7.12.1, 7.14.3, 7.15.3 e 7.16.3 (14 parcelas). Os percentuais são do saldo do VNU.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "VERO44",
+   "emissao": 4,
+   "serie": "4",
+   "data_emissao": "2024-10-15",
+   "vencimento": "2034-10-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.7014,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa IPCA + taxa limitada à maior entre NTN-B 2033 + 2,00% a.a. e 8,00% a.a. O 1º Aditamento (Doc. 4) fixou a taxa em 8,7014% a.a., base 252 du."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-04-15",
+    "ultima_data": "2034-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2032-10-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-10-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 4 (1º Aditamento, Anexo A consolidado): Cláusulas 7.12.1, 7.13, 7.14.4, 7.15.4 e 7.16.4 (20 parcelas). Os percentuais são do saldo do Valor Nominal Unitário Atualizado.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "4ª emissão (VERO14, VERO24, VERO34, VERO44): os trechos não mencionam vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. Os documentos 1 e 2 tratam de outras emissões da Vero (a escritura de 2023 e o aditamento de 2023, que regem emissões distintas) e não afetam o cronograma da 4ª emissão. O Doc. 3 só traz a lista de emissões da Vero, onde as outras constam como adimplentes.",
+ "lacunas": "1) A Data de Emissão da 4ª emissão não aparece nos trechos (Cláusula 7.10.1 omitida). O valor 2024-10-15 foi deduzido dos prazos da Cláusula 7.12.1 (vencimento da 1ª série em 15/10/2029, 5 anos após a emissão). 2) O Valor Nominal Unitário não aparece nos trechos, por isso vne = null. 3) A Data de Início da Rentabilidade e a data de vigência das taxas finais não aparecem, por isso vigente_desde = null; o 1º Aditamento (Doc. 4) apenas ratificou as taxas do bookbuilding. 4) As tabelas de datas de juros foram recortadas, e só aparecem a regra (15/abr e 15/out, a partir de 15/04/2025) e a contagem de parcelas (10, 14, 14 e 20), compatíveis com a última data no vencimento. 5) Os trechos não trazem aditamentos posteriores ao 1º Aditamento de out/2024, atas de AGD nem plano de recuperação; o cronograma reflete a versão consolidada do Doc. 4. 6) Os códigos VERO14/24/34/44 vêm do enunciado, sem confirmação nos documentos. 7) Os prêmios de resgate antecipado facultativo (ex.: 0,75% a.a. na 1ª série) são condicionais e sem datas fixas, por isso não foram listados em 'premios'.",
+ "meta": {
+  "emissora": "VERO S.A.",
+  "cnpj": "31748174000160",
+  "emissao": "4",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-03-21",
+    "tipo": "escritura",
+    "assunto": "Debs Vero - Escritura de Emissão das Debêntures (Assinada)(103336243.1)",
+    "protocolo": "026409IPE170320230104500600-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1075173&numSequencia=599903&numVersao=1"
+   },
+   {
+    "data": "2023-05-25",
+    "tipo": "escritura",
+    "assunto": "Vero - Aditamento Escritura de Emissão assinada",
+    "protocolo": "026409IPE301120210104507113-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1106503&numSequencia=631232&numVersao=1"
+   },
+   {
+    "data": "2024-09-23",
+    "tipo": "escritura",
+    "assunto": "Escritura da 4ª emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, em até 4 séries, no valor total de, inicialmente, R$ 900.000.000,00.",
+    "protocolo": "026409IPE230920240104555814-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1284589&numSequencia=809315&numVersao=1"
+   },
+   {
+    "data": "2024-10-14",
+    "tipo": "escritura",
+    "assunto": "Deb. Vero (4ª Emissão) - Aditamento Escritura de Emissão Debêntures Simples",
+    "protocolo": "026409IPE121020240104557911-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1291317&numSequencia=816043&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 127079,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4466,
+   "output_tokens_details": {
+    "thinking_tokens": 1446
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "31748174000160_4"
+ }
+}

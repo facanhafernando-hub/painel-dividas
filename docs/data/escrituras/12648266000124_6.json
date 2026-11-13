@@ -1,0 +1,113 @@
+{
+ "series": [
+  {
+   "codigo": "AMBP16",
+   "emissao": 6,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Nenhum dos documentos fornecidos trata da 6ª emissão (AMBP16).",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-04-26",
+     "2028-04-25",
+     "2029-04-25"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "Ambipar Participações e Empreendimentos S.A. e Environmental ESG Participações S.A. estão em recuperação judicial (Processo 3014764-58.2025.8.19.0001). O comunicado de 2025-10-27 trata de antecipação de tutela recursal para processamento do pedido. O comunicado de 2025-10-30 informa o deferimento do pedido. O Plano de Recuperação Judicial foi divulgado em 2025-12-19. Os trechos não dizem se as emissões 5ª e 6ª estão sujeitas ao plano, nem se houve vencimento antecipado ou suspensão de pagamentos dessas séries. O plano prevê, para créditos quirografários em geral, a Condição B: carência de principal e juros até novembro de 2040, juros de 2% a.a. capitalizados desde a homologação, pagamento em 6 parcelas anuais (31/12/2040 a 31/12/2045) e bônus de adimplência. Isso é regra genérica do plano e não foi atribuída a nenhuma série, porque os trechos não identificam as debêntures AMBP15/AMBP16 como créditos enquadrados nele.",
+ "lacunas": "Os documentos fornecidos não contêm escritura, aditamento ou ata de AGD da 5ª emissão (AMBP15) nem da 6ª emissão (AMBP16). Por isso nenhum campo do cronograma pôde ser preenchido (data de emissão, vencimento, VNE, remuneração, juros, amortizações). O Documento 1 é a escritura da 3ª emissão da Ambipar (série única, 750.000 debêntures de R$1.000,00, emitidas em 2022-01-10, vencimento 2028-01-10, DI + 2,75% a.a. base 252, juros semestrais e amortização em 2025, 2026, 2027 e no vencimento). Não é a 5ª nem a 6ª emissão, e usá-lo seria incorreto. O mesmo documento traz uma tabela com emissões de numeração 1 e 2 (vencimentos 2026-06-25 e 2027-07-15) que também não correspondem às séries pedidas. Não há como confirmar se os códigos AMBP15/AMBP16 correspondem a alguma dessas emissões. O plano de RJ, nos trechos recortados, não lista as debêntures nem o tratamento específico de cada série. Para extrair o cronograma é preciso enviar as escrituras e aditamentos da 5ª e da 6ª emissão, além de eventuais atas de AGD.",
+ "meta": {
+  "emissora": "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A",
+  "cnpj": "12648266000124",
+  "emissao": "6",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-01-10",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "024961IPE141220210104457108-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=932121&numSequencia=456855&numVersao=1"
+   },
+   {
+    "data": "2025-10-27",
+    "tipo": "comunicado",
+    "assunto": "Antecipação da tutela recursal para processamento do pedido de recuperação judicial",
+    "protocolo": "024961IPE271020250195334488-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436258&numSequencia=960970&numVersao=1"
+   },
+   {
+    "data": "2025-10-30",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do Pedido de Recuperação Judicial",
+    "protocolo": "024961IPE301020250114124154-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1437836&numSequencia=962548&numVersao=1"
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "comunicado",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "024961IPE191220250191095083-90",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459940&numSequencia=984646&numVersao=1"
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "024961IPE191220250143463475-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459937&numSequencia=984643&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 53612,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2085,
+   "output_tokens_details": {
+    "thinking_tokens": 662
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "12648266000124_5-6"
+ }
+}

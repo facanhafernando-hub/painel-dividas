@@ -1,0 +1,202 @@
+{
+ "series": [
+  {
+   "codigo": "LGTE17",
+   "emissao": 7,
+   "serie": "1",
+   "data_emissao": "2021-07-15",
+   "vencimento": "2028-07-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 4.85,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Atualização pelo IPCA mais juros de 4,85% a.a. desde a Data da Primeira Integralização (data não informada nos trechos). Nenhuma alteração posterior localizada."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-01-15",
+    "ultima_data": "2028-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    },
+    {
+     "data": "2026-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    },
+    {
+     "data": "2027-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    },
+    {
+     "data": "2028-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 1 (escritura da 7ª emissão), cláusulas 4.5.1 (vencimento), 4.7.1 e 4.7.2 (remuneração e juros) e 4.9.1 (amortização). Os trechos não dizem a qual série esses termos se aplicam.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [
+     "2027-07-15",
+     "2028-07-15"
+    ],
+    "ok": false
+   }
+  },
+  {
+   "codigo": "LGTE27",
+   "emissao": 7,
+   "serie": "2",
+   "data_emissao": "2021-07-15",
+   "vencimento": "2028-07-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 4.85,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Atualização pelo IPCA mais juros de 4,85% a.a. desde a Data da Primeira Integralização (data não informada nos trechos). Nenhuma alteração posterior localizada."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-01-15",
+    "ultima_data": "2028-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    },
+    {
+     "data": "2026-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    },
+    {
+     "data": "2027-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    },
+    {
+     "data": "2028-07-15",
+     "percentual": 25.0,
+     "base": "vne"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 1 (escritura da 7ª emissão), cláusulas 4.5.1 (vencimento), 4.7.1 e 4.7.2 (remuneração e juros) e 4.9.1 (amortização). Os trechos não dizem a qual série esses termos se aplicam.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [
+     "2027-07-15",
+     "2028-07-15"
+    ],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "7ª emissão: o Documento 5 (AGD de 2023-07-10, com 100% das debêntures em circulação) trata da atuação dos debenturistas nos autos da Recuperação Judicial da fiadora Light S.A. Nos trechos não há deliberação sobre o conteúdo, declaração de vencimento antecipado, suspensão de pagamentos nem proposta de novação ou alteração de cronograma. A escritura prevê vencimento antecipado automático em caso de pedido de recuperação judicial da Fiadora (cláusula 6.1.1(ii)(e)). Os trechos não mostram se ele foi declarado. Os Documentos 2, 3 e 4 tratam da 3ª emissão de debêntures da Light Energia (debenturista único FI-FGTS; resgate antecipado facultativo em 2023-03-28) e não afetam a 7ª emissão.",
+ "lacunas": "1) Os trechos da escritura trazem um único cronograma (vencimento em 2028-07-15, IPCA + 4,85% a.a., juros semestrais, 4 amortizações anuais de 25%). Não identificam se ele vale para a 1ª série (LGTE17), para a 2ª (LGTE27) ou para ambas. O texto cita 'Data de Vencimento da Primeira Série' e 'da Segunda Série', e é improvável que duas séries tenham vencimento e cronograma idênticos. Por isso o mesmo cronograma foi replicado nas duas séries, com confiança baixa. É provável que a outra série tenha prazo, taxa e amortização diferentes, que estão em trechos omitidos. 2) A data de emissão (2021-07-15) foi inferida: o prazo é de 7 anos até 2028-07-15. A escritura foi assinada em 2021-08-05 (segundo o Documento 5) e a data de emissão não aparece expressamente. 3) O Valor Nominal Unitário (vne) não aparece nos trechos. 4) A Data da Primeira Integralização não aparece, então vigente_desde ficou null. 5) A base dos percentuais de amortização é o VNE: a tabela da cláusula 4.9.1 traz 25% do Valor Nominal Unitário na Data de Emissão por parcela. Em coluna separada, referencial, aparecem 25%, 33,3333%, 50% e 100% do saldo atualizado. 6) Não há aditamentos da 7ª emissão nos documentos fornecidos; o Documento 5 não altera o cronograma nos trechos disponíveis. Se existir plano de recuperação judicial ou novação posterior, ele não foi fornecido. 7) Não foram localizados prêmios, carência nem incorporação de juros nos trechos.",
+ "meta": {
+  "emissora": "LIGHT ENERGIA S.A",
+  "cnpj": "01917818000136",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-08-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023000IPE110820210104441911-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=892354&numSequencia=417088&numVersao=1"
+   },
+   {
+    "data": "2023-03-17",
+    "tipo": "ata_agd",
+    "assunto": "Rebaixamento de rating do emissor",
+    "protocolo": "023000IPE150320230104500210-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1074283&numSequencia=599013&numVersao=1"
+   },
+   {
+    "data": "2023-03-23",
+    "tipo": "ata_agd",
+    "assunto": "Rebaixamento de rating do emissor",
+    "protocolo": "023000IPE220320230104500810-75",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1076264&numSequencia=600994&numVersao=1"
+   },
+   {
+    "data": "2023-03-29",
+    "tipo": "ata_agd",
+    "assunto": "Resgate antecipado de dêbentures",
+    "protocolo": "023000IPE280320230104501406-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1079300&numSequencia=604030&numVersao=1"
+   },
+   {
+    "data": "2023-07-10",
+    "tipo": "ata_agd",
+    "assunto": "Discutir e deliberar sobre a atuação de cada Debenturista nos autos da Recuperação Judicial da fiadora",
+    "protocolo": "023000IPE100720230104511710-83",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1121305&numSequencia=646034&numVersao=1"
+   },
+   {
+    "data": "2024-11-25",
+    "tipo": "comunicado",
+    "assunto": "Aditamento e Emissão de Debêntures da Light SESA e Reestruturação de Notas da Light SESA e Energia",
+    "protocolo": "023000IPE251120240104562112-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1307815&numSequencia=832541&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 34079,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3725,
+   "output_tokens_details": {
+    "thinking_tokens": 1597
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "01917818000136_7"
+ }
+}

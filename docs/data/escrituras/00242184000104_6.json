@@ -1,0 +1,120 @@
+{
+ "series": [
+  {
+   "codigo": "ARML26",
+   "emissao": 6,
+   "serie": "002",
+   "data_emissao": "2025-11-05",
+   "vencimento": "2030-11-05",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.55,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + 1,55% a.a., igual nas duas séries (escritura, cláusulas 4.11 e 4.12; comunicado do Doc. 5). Início da rentabilidade: data da primeira integralização, que não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-05-05",
+    "ultima_data": "2030-11-05",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-11-05",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2027-11-05",
+     "descricao": "Prêmio de 0,50% a.a. em eventual Resgate Antecipado Facultativo Total ou Amortização Extraordinária, a partir de 2027-11-05. Não é pagamento programado."
+    }
+   ],
+   "fonte": "Doc. 4 (Escritura da 6ª emissão), cláusulas 4.1, 4.6, 4.12, 4.13.1 (tabela de datas de juros), 4.14 e 5.1. Doc. 5 (comunicado) confirma spread de 1,55%.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": null,
+ "lacunas": "1) 4ª emissão (ARML14): não há escritura nem aditamento nos documentos. Só constam vencimento, remuneração, valor total e quantidade, citados em tabelas do agente fiduciário. O VNe de R$1.000 foi inferido por R$694.350.000 ÷ 694.350 debêntures. Data de emissão, periodicidade de juros e amortizações não foram determinados. 2) Data da primeira integralização (início da rentabilidade) não consta de nenhuma emissão, e por isso 'vigente_desde' ficou null. 3) Datas de pagamento que caiam em dia não útil são prorrogadas conforme as cláusulas de prorrogação, e não foram ajustadas. 4) As escrituras são as versões anteriores à emissão ou à liquidação. Não há documentos posteriores, como aditamentos, AGD ou plano de recuperação. Também não há informação de vencimento antecipado, RJ/RE ou repactuação. 5) O Documento 1 trata da 2ª emissão, que não foi solicitada, e foi ignorado. 6) Na 6ª emissão, o texto da cláusula 4.14 cita só 'Primeira Série' em um ponto, mas a amortização é parcela única no vencimento para ambas as séries. O prêmio de resgate foi registrado apenas como informação, sem data de pagamento programada.",
+ "meta": {
+  "emissora": "ARMAC LOCACAO LOGISTICA E SERVICOS S.A.",
+  "cnpj": "00242184000104",
+  "emissao": "6",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-11-25",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE031120210104452511-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=920333&numSequencia=445067&numVersao=1"
+   },
+   {
+    "data": "2024-09-16",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE160920240104555113-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1282696&numSequencia=807422&numVersao=1"
+   },
+   {
+    "data": "2024-10-10",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE081020240104557510-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1290444&numSequencia=815170&numVersao=1"
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE151020250188039301-76",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433110&numSequencia=957822&numVersao=1"
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "comunicado",
+    "assunto": "6a Emissão de Debentures",
+    "protocolo": "026069IPE151020250106065379-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433120&numSequencia=957832&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 135262,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4980,
+   "output_tokens_details": {
+    "thinking_tokens": 1864
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "00242184000104_4-5-6"
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "series": [
+  {
+   "codigo": "VERO25",
+   "emissao": 5,
+   "serie": "2",
+   "data_emissao": "2025-07-15",
+   "vencimento": "2032-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 9.2618,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura de 2025-07-21 previa taxa teto: maior entre NTN-B 2032 + 1,55% a.a. ou 9,00% a.a. O Bookbuilding de 2025-08-08 fixou 9,2618% a.a. (base 252 du), ratificado no 1º Aditamento. O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-01-15",
+    "ultima_data": "2032-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2031-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3 (1º Aditamento, Anexo A – escritura consolidada): cláusulas 7.12.1, 7.14.2, 7.15.2 e 7.16.2. Taxa confirmada no Documento 5 (comunicado de encerramento do Bookbuilding).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "VERO35",
+   "emissao": 5,
+   "serie": "3",
+   "data_emissao": "2025-07-15",
+   "vencimento": "2035-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 9.2707,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura de 2025-07-21 previa taxa teto: maior entre NTN-B 2033 + 1,65% a.a. ou 9,05% a.a. O Bookbuilding de 2025-08-08 fixou 9,2707% a.a. (base 252 du), ratificado no 1º Aditamento. O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-01-15",
+    "ultima_data": "2035-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2033-07-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3 (1º Aditamento, Anexo A – escritura consolidada): cláusulas 7.12.1, 7.14.3, 7.15.3 e 7.16.3. Taxa confirmada no Documento 5 (comunicado de encerramento do Bookbuilding).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "5ª emissão: nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos fornecidos. O Documento 1 trata da 2ª emissão da Vero (vencimento 2030-03-17) e não entra neste cronograma.",
+ "lacunas": "1) A data de emissão (cláusula 7.10.1) e a Data de Início da Rentabilidade não aparecem nos trechos. A data 2025-07-15 foi inferida dos prazos de 7 e 10 anos que levam aos vencimentos de 2032-07-15 e 2035-07-15. 2) O VNU de R$ 1.000,00 foi inferido do comunicado: 300.000 debêntures somam R$ 300.000.000,00, com 203.950 na 2ª série e 21.050 na 3ª. O valor expresso do VNU não está nos trechos. 3) As tabelas de datas de pagamento de juros vieram truncadas; as datas seguem a regra de 15/jan e 15/jul, primeira em 2026-01-15 e última no vencimento, com 14 parcelas na série 2 e 20 na série 3. 4) Nas amortizações, a série 2 incide sobre o VNU Atualizado e a série 3 sobre o saldo do VNU. Os percentuais crescentes (50% e 100%; 33,3333%, 50% e 100%) indicam base saldo. Na tabela da série 3 a última linha está rotulada como '2ª' (erro de numeração); trata-se da 3ª parcela, no vencimento. 5) Os percentuais referenciais sobre o VNU da série 3 não constam dos trechos. 6) Não há documento posterior ao 1º Aditamento e ao comunicado de 2025-08-11 (sem AGD, novo aditamento nem plano de recuperação).",
+ "meta": {
+  "emissora": "VERO S.A.",
+  "cnpj": "31748174000160",
+  "emissao": "5",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-03-21",
+    "tipo": "escritura",
+    "assunto": "Debs Vero - Escritura de Emissão das Debêntures (Assinada)(103336243.1)",
+    "protocolo": "026409IPE170320230104500600-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1075173&numSequencia=599903&numVersao=1"
+   },
+   {
+    "data": "2025-07-22",
+    "tipo": "escritura",
+    "assunto": "ESCRITURA DA 5ª (QUINTA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE QUIROGRAFÁRIA, EM ATÉ 3 (TRÊS) SÉRIES, PARA DISTRIBUIÇÃO PÚBLICA, EM RITO DE REGISTRO AUTOMÁTICO DE DISTRI",
+    "protocolo": "026409IPE210720250159787980-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1402990&numSequencia=927702&numVersao=1"
+   },
+   {
+    "data": "2025-08-11",
+    "tipo": "escritura",
+    "assunto": "1ª ADITAMENTO DA ESCRITURA DA 5ª (QUINTA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE QUIROGRAFÁRIA, EM ATÉ 3 (TRÊS) SÉRIES, PARA DISTRIBUIÇÃO PÚBLICA, EM RITO DE REGISTRO AUT",
+    "protocolo": "026409IPE110820250179512653-13",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1411684&numSequencia=936396&numVersao=1"
+   },
+   {
+    "data": "2025-08-11",
+    "tipo": "escritura",
+    "assunto": "1ª ADITAMENTO DA ESCRITURA DA 5ª (QUINTA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE QUIROGRAFÁRIA, EM ATÉ 3 (TRÊS) SÉRIES, PARA DISTRIBUIÇÃO PÚBLICA, EM RITO DE REGISTRO AUT",
+    "protocolo": "026409IPE110820250223668322-05",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1411761&numSequencia=936473&numVersao=2"
+   },
+   {
+    "data": "2025-08-11",
+    "tipo": "comunicado",
+    "assunto": "OFERTA PÚBLICA DE DISTRIBUIÇÃO, SOB O RITO DE REGISTRO AUTOMÁTICO, DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE QUIROGRAFÁRIA, EM 3 (TRÊS) SÉRIES, DA 5ª (QUINTA) EMISSÃO DA VERO",
+    "protocolo": "026409IPE080820250165100848-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1411746&numSequencia=936458&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 128393,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3014,
+   "output_tokens_details": {
+    "thinking_tokens": 1160
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "31748174000160_5"
+ }
+}

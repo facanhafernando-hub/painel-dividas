@@ -1,0 +1,160 @@
+{
+ "series": [
+  {
+   "codigo": "CMIN12",
+   "emissao": 2,
+   "serie": "001",
+   "data_emissao": "2022-07-15",
+   "vencimento": "2032-07-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.8798,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa taxa limitada ao maior entre a NTN-B 2032 + 0,55% a.a. e 5,95% a.a. O 1º Aditamento (Doc. 4, entregue em 2022-07-28) fixou 6,8798% a.a. após o bookbuilding, incidente desde a Primeira Data de Integralização (data não informada nos trechos). O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-01-15",
+    "ultima_data": "2032-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2032-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "1º Aditamento à Escritura da 2ª emissão (Doc. 4), Anexo I (escritura consolidada): cláusulas 5.5(i), 5.6.3.1, 5.7.1 e 5.8.1",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "CMIN22",
+   "emissao": 2,
+   "serie": "002",
+   "data_emissao": "2022-07-15",
+   "vencimento": "2037-07-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.0673,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa taxa limitada ao maior entre a NTN-B 2035 + 0,70% a.a. e 6,15% a.a. O 1º Aditamento (Doc. 4) fixou 7,0673% a.a. após o bookbuilding, incidente desde a Primeira Data de Integralização (data não informada nos trechos). O VNU é atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-01-15",
+    "ultima_data": "2037-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2035-07-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "1º Aditamento à Escritura da 2ª emissão (Doc. 4), Anexo I (escritura consolidada): cláusulas 5.5(ii), 5.6.3.2, 5.7.2 e 5.8.2",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": null,
+ "lacunas": "1) Os documentos fornecidos não trazem eventos posteriores a julho de 2022: nenhum aditamento, ata de AGD, vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. Por isso o cronograma reflete a versão consolidada mais recente. 2) Data de emissão da 2ª emissão: os trechos não a trazem expressamente. Inferi 2022-07-15 porque o vencimento de 15/07/2032 corresponde a 10 anos 'contados da Data de Emissão'. 3) VNU da 2ª emissão: o valor não aparece nos trechos, por isso está null. 4) As datas das Primeiras Datas de Integralização (início da rentabilidade) de nenhuma das emissões constam nos trechos, então 'vigente_desde' está null. 5) Não foi possível determinar a quantidade de debêntures por série após o bookbuilding, pois esses números não aparecem nos trechos. 6) Os percentuais de amortização são sobre o saldo do Valor Nominal Unitário Atualizado, conforme as tabelas das escrituras. 7) As datas de pagamento seguem a regra de prorrogação para o dia útil seguinte (e feriados nacionais pela B3), sem ajuste nas datas listadas.",
+ "meta": {
+  "emissora": "CSN MINERACAO S.A.",
+  "cnpj": "08902291000115",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-07-20",
+    "tipo": "escritura",
+    "assunto": "Escritura Particular da 1ª emissão de debêntures",
+    "protocolo": "025585IPE160720210104439710-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=885095&numSequencia=409832&numVersao=1"
+   },
+   {
+    "data": "2021-08-03",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 1ª (PRIMEIRA) EMISSÃO DE DEBÊNTURES SIMPLES,",
+    "protocolo": "025585IPE160720210104441111-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=888964&numSequencia=413700&numVersao=1"
+   },
+   {
+    "data": "2022-07-12",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, PARA DISTRIBUIÇÃO PÚBLICA",
+    "protocolo": "025585IPE120720220104475412-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=997701&numSequencia=522435&numVersao=1"
+   },
+   {
+    "data": "2022-07-28",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "025585IPE270720220104477012-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1001404&numSequencia=526138&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 122284,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4022,
+   "output_tokens_details": {
+    "thinking_tokens": 1188
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08902291000115_1-2"
+ }
+}

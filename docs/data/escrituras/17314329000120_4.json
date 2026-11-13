@@ -1,0 +1,254 @@
+{
+ "series": [
+  {
+   "codigo": "MEAL14",
+   "emissao": 4,
+   "serie": "UNI",
+   "data_emissao": "2023-10-11",
+   "vencimento": "2029-10-11",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 4.2,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + spread de 4,20% a.a. (base 252 du), conforme a Cláusula 4.11.1 das versões consolidadas dos Documentos 3 e 4. Os trechos não mostram mudança de indexador ou spread. A remuneração corre desde a Data de Início da Rentabilidade (Primeira Data de Integralização)."
+   },
+   "juros": {
+    "periodicidade_meses": 1,
+    "primeira_data": "2027-11-11",
+    "ultima_data": "2029-10-11",
+    "datas_irregulares": [
+     "2024-04-11",
+     "2024-10-11",
+     "2025-04-11",
+     "2025-10-11",
+     "2026-04-11",
+     "2026-10-11",
+     "2027-04-11",
+     "2027-10-11"
+    ],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-04-07",
+     "percentual": 22.2799,
+     "base": "saldo"
+    },
+    {
+     "data": "2025-10-11",
+     "percentual": 3.4438,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-10-11",
+     "percentual": 2.4853,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-11-11",
+     "percentual": 2.5487,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-12-11",
+     "percentual": 2.6153,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-01-11",
+     "percentual": 2.6855,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-02-11",
+     "percentual": 2.7597,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-03-11",
+     "percentual": 2.838,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-04-11",
+     "percentual": 3.505,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-05-11",
+     "percentual": 3.6324,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-11",
+     "percentual": 3.7693,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-07-11",
+     "percentual": 3.9169,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-08-11",
+     "percentual": 4.0766,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-09-11",
+     "percentual": 4.2498,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-10-11",
+     "percentual": 6.6577,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-11",
+     "percentual": 7.1326,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-11",
+     "percentual": 7.6804,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-01-11",
+     "percentual": 8.3193,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-02-11",
+     "percentual": 9.0742,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-11",
+     "percentual": 9.9798,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-04-11",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-11",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-11",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-07-11",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-08-11",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-09-11",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-10-11",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 4 (Sexto Aditamento, versão consolidada no Anexo I): Cláusula 4.6 (vencimento), 4.11 (remuneração), 4.12.1 (pagamento da remuneração) e 4.13.1 (amortização). Esse documento prevalece sobre o 4º e o 5º aditamentos (Documentos 2 e 3), que previam vencimento em 2028-10-11 e 5 parcelas de amortização.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 25,
+    "amort_doc": 25,
+    "datas_iguais": 25,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "4ª emissão (MEAL14): o Sexto Aditamento implementa a AGD de 2026, que aprovou a prorrogação do vencimento (de 2028-10-11 para 2029-10-11), um novo cronograma de amortização e de pagamento da remuneração, e a mudança da espécie para garantia real (alienação fiduciária de quotas). Os trechos não mostram vencimento antecipado declarado, suspensão de pagamentos nem RJ/RE. A renegociação já está formalizada no 6º aditamento, cujo título diz 'sob condição suspensiva'.",
+ "lacunas": "1) A Cláusula 4.13.1 diz '29 (vinte e nove) parcelas', mas a tabela lista 27 parcelas (1ª a 27ª). A ordem cronológica e os percentuais da tabela são coerentes (a última é 100% no vencimento), então usei a tabela; a divergência pode ser erro de redação do aditamento. 2) Os trechos do Sexto Aditamento não mostram qual é a condição suspensiva do título, nem se ela já foi verificada; assumi o cronograma consolidado como vigente. 3) A tabela de juros do Documento 4 foi recortada, mas as parcelas 1ª a 8ª e 29ª a 32ª estão visíveis; a periodicidade mensal de 2027-11-11 a 2029-10-11 foi inferida da cláusula 4.12.1 (mensal a partir de 2027-11-11) e da contagem de 32 parcelas. 4) Não é possível saber, pelos trechos, se as parcelas de 2025-04-07 e 2025-10-11 (e as remunerações já vencidas) foram efetivamente pagas. 5) O 'prêmio' do resgate antecipado facultativo é citado nas cláusulas 5.1 e 5.2, mas seu valor não aparece nos trechos; por isso 'premios' está vazio. 6) O Documento 1 trata da 1ª emissão (séries de 2019) e o Documento 5 é a ata de AGD da 5ª emissão (29/09/2026); nenhum dos dois define o cronograma de MEAL14 e ambos foram desconsiderados. O Documento 4 cita uma AGD de 21/09/2026 para a 4ª emissão, cuja ata não está nos trechos.",
+ "meta": {
+  "emissora": "INTERNATIONAL MEAL COMPANY ALIMENTACAO S/A",
+  "cnpj": "17314329000120",
+  "emissao": "4",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2019-03-21",
+    "tipo": "escritura",
+    "assunto": "Debentures - Finalização do Procedimento de Bookbuilding",
+    "protocolo": "023574IPE180320190104354511-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=672355&numSequencia=201228&numVersao=1"
+   },
+   {
+    "data": "2025-06-24",
+    "tipo": "escritura",
+    "assunto": "4º ADITAMENTO - ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "023574IPE260520250178373627-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1393710&numSequencia=918422&numVersao=1"
+   },
+   {
+    "data": "2026-02-20",
+    "tipo": "escritura",
+    "assunto": "QUINTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "023574IPE190220260162897268-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1479818&numSequencia=1004524&numVersao=1"
+   },
+   {
+    "data": "2026-10-01",
+    "tipo": "escritura",
+    "assunto": "Escrituras e Adiantamentos de Debêntures - - - - -  6º SEXTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "023574IPE230920260148849917-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573401&numSequencia=1098107&numVersao=1"
+   },
+   {
+    "data": "2026-10-01",
+    "tipo": "ata_agd",
+    "assunto": "ATA DA ASSEMBLEIA GERAL DE DEBENTURISTAS",
+    "protocolo": "023574IPE290920260144337552-48",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573405&numSequencia=1098111&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 100105,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4434,
+   "output_tokens_details": {
+    "thinking_tokens": 2036
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "17314329000120_4"
+ }
+}

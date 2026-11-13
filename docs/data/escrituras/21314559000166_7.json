@@ -1,0 +1,105 @@
+{
+ "series": [
+  {
+   "codigo": "MOVI37",
+   "emissao": 7,
+   "serie": "003",
+   "data_emissao": null,
+   "vencimento": "2031-09-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.6366,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Sem informação de alteração nos trechos. Taxa e vencimento constam apenas das relações de emissões do agente fiduciário (Documento 4, Anexo II, o mais recente)."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 4, Anexo II (relação de emissões do agente fiduciário): 7ª emissão, R$1.750.000.000,00, 1.750.000 debêntures, quirografária com fiança, vencimento da 3ª série em 15/09/2031, IPCA + 7,6366% a.a. A mesma informação consta dos Documentos 2 e 3. Não há escritura, aditamento ou cronograma da 7ª emissão nos trechos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-09-17",
+     "2030-09-16",
+     "2031-09-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "17ª emissão: não há informação nos documentos fornecidos. 7ª e 8ª emissões: os Anexos II dos Documentos 2, 3 e 4 (o último entregue em 2026-09-22) classificam ambas como 'adimplência pecuniária'. Nenhum dos trechos registra vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação para essas emissões.",
+ "lacunas": "Os 4 documentos fornecidos são escrituras de outras emissões: Doc. 1 é a 1ª emissão (2017); Doc. 2 é a 22ª (2025); Doc. 3 é, segundo o Anexo II do Doc. 4, a 28ª (séries com vencimento em 15/07/2028 e 15/07/2033); Doc. 4 é a 29ª (2026). Nenhum trata das emissões pedidas (17ª, 7ª e 8ª), e não há aditamentos, atas de AGD ou plano de recuperação. Por isso as informações abaixo estão ausentes ou são só indícios indiretos: (a) 17ª emissão (MVLV16 e MVLV26): sem nenhum dado, nem vencimento, taxa ou cronograma; (b) 7ª emissão, série 3, e 8ª emissão, séries 1 e 2: constam apenas vencimento, taxa e quantidade de debêntures, extraídos das listas do agente fiduciário; (c) data de emissão, VNE, base de dias (252 ou outra), periodicidade e datas de juros, amortizações, prêmios, carência e eventual incorporação de juros: todos não determinados. O VNE de R$1.000,00 é apenas implícito (7ª: R$1,75 bi para 1.750.000 debêntures; 8ª: R$1 bi para 408.169 + 591.831 debêntures), mas não está escrito e por isso foi deixado null. A 4ª e a 14ª emissões aparecem nas listas, mas não são objeto do pedido. É necessário obter as escrituras e aditamentos das emissões 17ª, 7ª e 8ª para montar o cronograma vigente.",
+ "meta": {
+  "emissora": "MOVIDA PARTICIPACOES S/A",
+  "cnpj": "21314559000166",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2017-07-05",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE040720170104292106-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=570185&numSequencia=112980&numVersao=1"
+   },
+   {
+    "data": "2025-06-13",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE060620250129028376-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1390512&numSequencia=915224&numVersao=1"
+   },
+   {
+    "data": "2026-08-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE030820260113911830-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551396&numSequencia=1076102&numVersao=1"
+   },
+   {
+    "data": "2026-09-22",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE210920260196203663-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570321&numSequencia=1095027&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 144930,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3887,
+   "output_tokens_details": {
+    "thinking_tokens": 1120
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "21314559000166_17-7-8"
+ }
+}

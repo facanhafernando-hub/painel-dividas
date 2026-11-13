@@ -1,0 +1,97 @@
+{
+ "series": [
+  {
+   "codigo": "MTRO12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [
+    {
+     "data": null,
+     "descricao": "Waiver Fee de 0,5% flat sobre o Valor Nominal Unitário (somente principal, sem juros), a ser pago aos debenturistas em até 10 Dias Úteis contados da AGD de 2023-02-14 (data de pagamento exata não informada; prazo limite aproximado 2023-02-28 se contados dias úteis, sem considerar feriados de Carnaval). Condição para a aprovação da não decretação do vencimento antecipado."
+    }
+   ],
+   "fonte": "Documento 2 (ata da AGD de 2023-02-14) para o waiver fee; Documento 1 (proposta da AGD) apenas para contexto. Nenhum dos trechos traz o cronograma de juros, amortização ou vencimento da Escritura de 2022-04-05.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 6,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2026-11-25",
+     "2026-12-28",
+     "2027-01-25",
+     "2027-02-25",
+     "2027-03-25",
+     "2027-04-26"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "2ª emissão (MTRO12): não houve vencimento antecipado declarado. Na AGD de 2023-02-14 (2ª convocação), debenturistas representando 94,40% das Debêntures em Circulação (voto contrário de 2,17%) aprovaram a não decretação do vencimento antecipado não automático decorrente da não obtenção do registro de companhia aberta categoria B na CVM no prazo de 6 meses da emissão (cláusula 6.2.1, item (v)). A Emissora comprovou que o registro foi obtido em 2023-01-06 (Ofício-RIC nº 2/2023/CVM/SEP), de modo que o item (ii), prorrogação por 180 dias, perdeu o objeto. A aprovação está condicionada ao pagamento de waiver fee de 0,5% flat sobre o VNU. Não há menção a RJ/RE, suspensão de pagamentos ou novação. Demais termos da Escritura foram ratificados, sem alteração do cronograma.",
+ "lacunas": "Os trechos não contêm a Escritura de Emissão (celebrada em 2022-04-05 com a Pentágono DTVM) nem aditamentos. Portanto não foi possível determinar: data de emissão (a Escritura é de 2022-04-05, mas a data de emissão das debêntures não está explícita), vencimento, VNE, indexador/taxa/base da remuneração, periodicidade e datas de juros, carência ou incorporação de juros, e cronograma de amortização. Os trechos indicam apenas que a emissão é em série única, com garantia real, e distribuída com esforços restritos. A data exata de pagamento do waiver fee também não consta, pois depende de dias úteis e da confirmação da Emissora.",
+ "meta": {
+  "emissora": "COMPANHIA DO METROPOLITANO DE SAO PAULO - METRO",
+  "cnpj": "62070362000106",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-01-12",
+    "tipo": "proposta_agd",
+    "assunto": "Vencimento Antecipado de Debêntures",
+    "protocolo": "027065IPE310120230104493811-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1049356&numSequencia=574086&numVersao=1"
+   },
+   {
+    "data": "2023-02-14",
+    "tipo": "ata_agd",
+    "assunto": "Vencimento Antecipado de Debêntures",
+    "protocolo": "027065IPE140220230104497112-99",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1060696&numSequencia=585426&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 6729,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1154,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "62070362000106_2"
+ }
+}

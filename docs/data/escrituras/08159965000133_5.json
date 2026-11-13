@@ -1,0 +1,211 @@
+{
+ "series": [
+  {
+   "codigo": "IGSN15",
+   "emissao": 5,
+   "serie": "UNI",
+   "data_emissao": "2020-07-15",
+   "vencimento": "2034-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.1,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original previa o maior valor entre (a) a taxa do Tesouro IPCA+ (NTN-B 2028) mais 3,00% a.a. e (b) 6,10% a.a., apurado no bookbuilding. O Primeiro Aditamento (cláusula 5.11.1) fixou 6,10% a.a., base 252 du, sobre o Valor Nominal Atualizado. O VNU é atualizado pelo IPCA a partir da primeira Data de Integralização (data não informada nos trechos); a Data de Aniversário é todo dia 15."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2021-01-15",
+    "ultima_data": "2034-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2023-01-15",
+     "percentual": 1.0,
+     "base": "vne"
+    },
+    {
+     "data": "2023-07-15",
+     "percentual": 1.0,
+     "base": "vne"
+    },
+    {
+     "data": "2024-01-15",
+     "percentual": 2.0,
+     "base": "vne"
+    },
+    {
+     "data": "2024-07-15",
+     "percentual": 2.0,
+     "base": "vne"
+    },
+    {
+     "data": "2025-01-15",
+     "percentual": 3.0,
+     "base": "vne"
+    },
+    {
+     "data": "2025-07-15",
+     "percentual": 3.0,
+     "base": "vne"
+    },
+    {
+     "data": "2026-01-15",
+     "percentual": 3.25,
+     "base": "vne"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2024-12-03",
+     "descricao": "Waiver Fee de 1,35% flat sobre o saldo do VNU, aprovado na AGD de 03/12/2024 (2ª convocação). Pagamento único em até 10 dias úteis após a AGD, para os debenturistas detentores no Dia Útil anterior ao pagamento."
+    }
+   ],
+   "fonte": "Documento 2 (Escritura da 5ª emissão), cláusulas 5.1, 5.5, 5.10-5.12 e 5.14 (tabela de amortização). Documento 3 (Primeiro Aditamento), cláusula 1.2, para a taxa fixada em 6,10%. Documentos 6 a 9 (proposta, termo de não instalação, ata da AGD de 03/12/2024 e comunicado) tratam apenas de waivers e não alteram o cronograma.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 16,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-01-15",
+     "2027-07-15",
+     "2028-01-17",
+     "2028-07-17",
+     "2029-01-15",
+     "2029-07-16",
+     "2030-01-15",
+     "2030-07-15",
+     "2031-01-15",
+     "2031-07-15",
+     "2032-01-15",
+     "2032-07-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "5ª emissão (IGSN15): não há vencimento antecipado declarado, nem suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. A AGD de 22/11/2024 em 1ª convocação não foi instalada. Na 2ª convocação, em 03/12/2024, foram aprovados com quórum de cerca de 42-43% das debêntures em circulação os waivers: conta reserva substituída por fiança bancária; rating mínimo A-; índice financeiro Dívida Líquida/EBITDA no nível da Águas Cuiabá (limites de 5,00x em 2024, 4,50x em 2025, 3,75x em 2026 e 3,50x a partir de 2027) e ICSD mínimo de 1,30x; aportes de R$ 200 milhões na Cuiabá até 31/12/2025; Waiver Fee de 1,35%. Os waivers valem até o exercício de 2032. Nenhuma alteração de datas de pagamento, amortização ou remuneração foi aprovada. Os Documentos 1, 4 e 5 referem-se à 4ª emissão (IGSN14), fora do escopo solicitado.",
+ "lacunas": "O trecho da tabela de amortização da escritura está truncado após 15/01/2026 (3,25% do VNU, equivalente a 3,6932% do Valor Nominal Atualizado). Faltam as parcelas de jul/2026 a jul/2034, inclusive a do vencimento, e não é possível confirmar que somem 100% do VNU. O acumulado até jan/2026 é de 15,25% do VNU. A tabela traz duas colunas: % do VNU, marcada com asterisco cujo texto não aparece, e % do Valor Nominal Atualizado. Classifiquei a primeira como base 'vne' porque as proporções batem com o saldo (por exemplo, 1/99 = 1,0101% e 3,25/88 = 3,6932%). As amortizações de jan/2021 a jul/2022 são 0,00% e foram omitidas da lista; as parcelas efetivas começam em 15/01/2023. A data da primeira integralização e a existência de Data de Integralização posterior a 15/07/2020 não constam dos trechos, por isso 'vigente_desde' ficou null. Não há aditamento posterior ao Primeiro Aditamento que altere o cronograma. Os pagamentos já realizados e o saldo atual não constam dos documentos. Datas não úteis são prorrogadas para o dia útil seguinte (cláusula 5.16).",
+ "meta": {
+  "emissora": "IGUA SANEAMENTO S.A",
+  "cnpj": "08159965000133",
+  "emissao": "5",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2017-05-18",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023175IPE050520170204287010-34",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=565366&numSequencia=108114&numVersao=2"
+   },
+   {
+    "data": "2019-05-23",
+    "tipo": "escritura",
+    "assunto": "Aditivo a Escritura de Debênture",
+    "protocolo": "023175IPE140520190104360811-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=692199&numSequencia=218887&numVersao=1"
+   },
+   {
+    "data": "2020-08-04",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023175IPE240720200104404710-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=780955&numSequencia=305696&numVersao=1"
+   },
+   {
+    "data": "2020-08-04",
+    "tipo": "escritura",
+    "assunto": "Aditamento",
+    "protocolo": "023175IPE300720200104404710-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=780956&numSequencia=305697&numVersao=1"
+   },
+   {
+    "data": "2024-08-02",
+    "tipo": "ata_agd",
+    "assunto": "(a) a não declaração do vencimento antecipado das Debêntures e (b) o pedido de liberação temporária do cumprimento (waiver prévio)",
+    "protocolo": "023175IPE310720240104550609-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1266092&numSequencia=790818&numVersao=1"
+   },
+   {
+    "data": "2024-08-05",
+    "tipo": "ata_agd",
+    "assunto": "(a) a não declaração do vencimento antecipado das Debêntures e (b) o pedido de liberação temporária do cumprimento (waiver prévio)",
+    "protocolo": "023175IPE310720240204533009-51",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1266616&numSequencia=791342&numVersao=2"
+   },
+   {
+    "data": "2024-11-01",
+    "tipo": "proposta_agd",
+    "assunto": "5ª emissão de debêntures simples",
+    "protocolo": "023175IPE221120240204530209-55",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1297313&numSequencia=822039&numVersao=2"
+   },
+   {
+    "data": "2024-11-01",
+    "tipo": "proposta_agd",
+    "assunto": "5ª emissão de debêntures simples",
+    "protocolo": "023175IPE221120240304559709-55",
+    "versao": "3",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1297419&numSequencia=822145&numVersao=3"
+   },
+   {
+    "data": "2024-11-22",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - 5ª emissão",
+    "protocolo": "023175IPE221120240104561810-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1307258&numSequencia=831984&numVersao=1"
+   },
+   {
+    "data": "2024-12-04",
+    "tipo": "ata_agd",
+    "assunto": "Mudanças de critério",
+    "protocolo": "023175IPE031220240104563007-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311149&numSequencia=835875&numVersao=1"
+   },
+   {
+    "data": "2024-12-04",
+    "tipo": "comunicado",
+    "assunto": "APROVAÇÃO INTEGRAL DAS PROPOSTAS DA COMPANHIA EM ASSEMBLEIA GERAL DE DEBENTURISTAS DE SUA QUINTA EMISSÃO DE DEBÊNTURES (\"IGSN15\")",
+    "protocolo": "023175IPE041220240104563012-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311433&numSequencia=836159&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 96052,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3230,
+   "output_tokens_details": {
+    "thinking_tokens": 1319
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08159965000133_5"
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "series": [
+  {
+   "codigo": "AGXY14",
+   "emissao": 4,
+   "serie": "UNI",
+   "data_emissao": "2025-12-22",
+   "vencimento": "2035-06-30",
+   "vne": 1.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 0.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A remuneração é composta apenas pela atualização monetária pelo IPCA, sem spread. A atualização é incorporada ao VNU e usa dias úteis. A data de início da rentabilidade está truncada nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2027-12-31",
+    "ultima_data": "2035-06-30",
+    "datas_irregulares": [],
+    "carencia_ate": "2027-12-31"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2025-12-22",
+     "ate": "2027-12-31",
+     "observacao": "Carência no pagamento da remuneração até a primeira data, 2027-12-31. Nesse período a atualização monetária é incorporada ao VNU. A data inicial usa a data de emissão porque a data de início da rentabilidade não aparece nos trechos."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2027-12-31",
+     "percentual": 2.25,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-30",
+     "percentual": 2.3017,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-31",
+     "percentual": 3.534,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-30",
+     "percentual": 3.6635,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-31",
+     "percentual": 5.0704,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-06-30",
+     "percentual": 5.3412,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-12-31",
+     "percentual": 7.0532,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-06-30",
+     "percentual": 7.5885,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-12-31",
+     "percentual": 9.854,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-06-30",
+     "percentual": 10.9311,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-12-31",
+     "percentual": 14.3181,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-06-30",
+     "percentual": 16.7108,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-12-31",
+     "percentual": 22.9299,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3 (escritura da 4ª emissão): cláusulas 6.1.1, 6.7.1, 6.11.1, 6.12.1, 6.13.2 (tabela de juros, parcelas 1 a 12, 15 e 16) e 6.14.1 (tabela de amortização, parcelas 1 a 13 de 16).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 16,
+    "amort_doc": 13,
+    "datas_iguais": 13,
+    "so_snd": [
+     "2034-06-30",
+     "2035-01-02",
+     "2035-07-02"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "3ª emissão (AGXY13, AGXY23, AGXY33 e AGXY43) e 4ª emissão (AGXY14): a emissora, Agrogalaxy Participações S.A., está em recuperação judicial. As debêntures foram emitidas para implementar o Plano de Recuperação Judicial, e o plano em si não foi fornecido. Os trechos não mostram vencimento antecipado declarado, suspensão de pagamentos nem proposta de novação. O Primeiro Aditamento da 3ª emissão (12/11/2025) substituiu o prazo de carência, contado da Data de Homologação, por datas fixas para o primeiro pagamento de remuneração.",
+ "lacunas": "1) Amortizações incompletas, porque os trechos foram cortados: AGXY13 tem só 7 das 16 parcelas, e faltam as de 2032-06-30 até 2036-06-30. AGXY23 tem 12 das 16, e faltam as de 2033-12-31, 2034-06-30, 2034-12-31 e 2035-06-30. AGXY33 tem 13 das 20, e faltam as de 2035-06-30 até 2038-06-30. AGXY14 tem 13 das 16, e faltam as de 2034-06-30, 2034-12-31 e 2035-06-30. Os percentuais ausentes não foram inferidos. 2) A data de início da rentabilidade (cláusula 6.2.1) está truncada em todas as séries, então 'vigente_desde' ficou null. As datas iniciais de incorporação foram aproximadas pelas datas de emissão. 3) A 'ultima_data' de juros foi tomada como a data de vencimento de cada série, por coincidir com o fim da periodicidade semestral e com o número de parcelas. Ela não consta literalmente nos trechos, exceto em AGXY14, cuja tabela mostra 2035-06-30. 4) AGXY43: o vencimento é 2029-11-03 (48 meses), mas a conversão mandatória ocorre no último Dia Útil do 49º mês, o que parece posterior ao vencimento. Os trechos não explicam essa inconsistência. As tabelas de preço de conversão estão truncadas. Há também a Aquisição Facultativa Obrigatória, por R$1,00 pela integralidade das debêntures. 5) AGXY13 também é conversível em ações, a critério do debenturista, trimestralmente entre o 1º e o 48º mês, e esse mecanismo não altera o cronograma de pagamentos acima. 6) A 5ª série da 3ª emissão (conversível, sem remuneração, vencimento 2028-11-03) não foi pedida e não tem código informado, então não foi extraída. 7) Os percentuais de amortização estão expressos como % do saldo do VNU, conforme a coluna das tabelas. O dia-base de contagem foi classificado como '252 du' porque a fórmula do IPCA usa dias úteis, e o texto não declara uma base de 252 explicitamente.",
+ "meta": {
+  "emissora": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
+  "cnpj": "21240146000184",
+  "emissao": "4",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-04-11",
+    "tipo": "plano_rj",
+    "assunto": "Novo PRJ Aprovado em AGC de 09/04/25",
+    "protocolo": "025658IPE090420250104575811-29",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1360838&numSequencia=885564&numVersao=1"
+   },
+   {
+    "data": "2025-11-03",
+    "tipo": "escritura",
+    "assunto": "Escritura da 03ª (Terceira) Emissão de Debêntures, em 5 (Cinco) Séries",
+    "protocolo": "025658IPE031120250121992640-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1439035&numSequencia=963747&numVersao=1"
+   },
+   {
+    "data": "2025-11-12",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da 03ª (Terceira) Emissão de Debêntures, em 5 (Cinco) Séries",
+    "protocolo": "025658IPE111120250167352019-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1443911&numSequencia=968623&numVersao=1"
+   },
+   {
+    "data": "2025-12-29",
+    "tipo": "escritura",
+    "assunto": "ESCRITURA DA 04ª (QUARTA) EMISSÃO DE DEBÊNTURES, NÃO CONVERSÍVEIS EM AÇÕES, EM SÉRIE ÚNICA, PARA DISTRIBUIÇÃO PÚBLICA",
+    "protocolo": "025658IPE231220250169992975-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462035&numSequencia=986741&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 73096,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 8737,
+   "output_tokens_details": {
+    "thinking_tokens": 3198
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "21240146000184_3-4"
+ }
+}

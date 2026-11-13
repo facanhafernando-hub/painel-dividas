@@ -1,0 +1,120 @@
+{
+ "series": [
+  {
+   "codigo": "ELPLB9",
+   "emissao": 29,
+   "serie": "UNI",
+   "data_emissao": "2025-09-15",
+   "vencimento": "2035-09-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.4961,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (cl. 5.16.1) previa juros equivalentes ao maior entre (i) a taxa do Tesouro IPCA+ 2035 (NTN-B 15/05/2035) menos spread de 0,14% a.a. e (ii) 7,15% a.a., base 252. O Primeiro Aditamento (entregue em 2025-10-03, após o Procedimento de Coleta de Intenções de 2025-10-02) fixou a taxa final em 7,4961% a.a., base 252. A atualização monetária pelo IPCA incide sobre o VNU. Os juros incidem sobre o VNU Atualizado desde a primeira Data de Integralização, que não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-03-15",
+    "ultima_data": "2035-09-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2034-09-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-09-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 2 (Escritura da 29ª emissão): cl. 5.7.1 (vencimento), 5.14.1 (tabela de amortização), 5.17.1 (tabela de pagamento da remuneração, 20 parcelas semestrais, nos dias 15 de março e setembro). Documento 3 (Primeiro Aditamento): cl. 5.16.1 (taxa 7,4961% a.a.). A data de emissão foi inferida do prazo de 10 anos com vencimento em 15/09/2035.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "27ª emissão: sem informação sobre vencimento antecipado, suspensão, RJ/RE ou renegociação. O Anexo II da escritura da 29ª a lista como ATIVA, sem inadimplementos no período. 29ª emissão: recém-emitida (set/out 2025) e sem eventos de vencimento antecipado, suspensão, RJ/RE ou novação nos trechos. Tem garantia fidejussória adicional (fiança), sujeita a Condição Resolutiva.",
+ "lacunas": "Documento 1 não trata de nenhuma das séries pedidas: é a escritura da 10ª emissão da Companhia Brasileira de Distribuição (CBD), embora o título diga '12ª emissão' e apareça como entregue pela Eletropaulo. Foi ignorado. ELPLA7 (27ª emissão): não há escritura, aditamentos nem atas, só uma linha do Anexo II. Faltam data de emissão, VNU, periodicidade e datas de juros, cronograma de amortização e eventuais carências ou incorporações; o vencimento e a taxa vêm do resumo do Anexo II, sem cláusula de origem. O VNU de 1.000 é apenas implícito (R$ 800.000.000 ÷ 800.000 ativos) e não foi informado. ELPLB9 (29ª emissão): o VNU não consta (só a quantidade, 500.000 debêntures), e a data de emissão e a primeira Data de Integralização não estão nos trechos; a data de emissão foi inferida. O Primeiro Aditamento está truncado; só aparecem as alterações às cláusulas 5.16 e 7.2, e não há indicação de mudança no cronograma de juros ou amortização. A tabela de datas de remuneração tem lacunas na parcela 7 a 18, mas segue a regra semestral de 15/03 e 15/09. Os percentuais de amortização estão sobre o saldo do VNU Atualizado (50% e 100% do saldo restante). O texto cita uma 'Amortização Extraordinária Facultativa', que depende de autorização legal e não tem data fixa, e um resgate antecipado facultativo, sem prêmios com datas definidas nos trechos.",
+ "meta": {
+  "emissora": "ELETROPAULO METROPOL. ELETR. DE S.P. S/A",
+  "cnpj": "61695227000193",
+  "emissao": "29",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2010-05-07",
+    "tipo": "escritura",
+    "assunto": "Instrumento Particular de Escritura da 12a. emissão de debêntures simples, não conversíveis em ações, em série única, da espécie subordinada, para distribuição pública",
+    "protocolo": "",
+    "versao": "",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=244924&numSequencia=0&numVersao=0"
+   },
+   {
+    "data": "2023-03-31",
+    "tipo": "escritura",
+    "assunto": "Escritura da 27ª Emissão de Debêntures Eletropaulo",
+    "protocolo": "014176IPE260420220104501607-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1080743&numSequencia=605472&numVersao=1"
+   },
+   {
+    "data": "2023-03-31",
+    "tipo": "escritura",
+    "assunto": "Primeiro aditamento à escritura da 27ª emissão de debêntures Eletropaulo",
+    "protocolo": "014176IPE050520220104501607-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1080772&numSequencia=605501&numVersao=1"
+   },
+   {
+    "data": "2025-09-16",
+    "tipo": "escritura",
+    "assunto": "Escritura 29a Emissão",
+    "protocolo": "014176IPE150920250167724228-67",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1424153&numSequencia=948865&numVersao=1"
+   },
+   {
+    "data": "2025-10-03",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da Escritura da 29ª Emissão de Debêntures",
+    "protocolo": "014176IPE021020250125191726-83",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1429575&numSequencia=954287&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 52761,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3146,
+   "output_tokens_details": {
+    "thinking_tokens": 1084
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "61695227000193_27-29"
+ }
+}

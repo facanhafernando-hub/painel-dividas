@@ -1,0 +1,156 @@
+{
+ "series": [
+  {
+   "codigo": "ARTR19",
+   "emissao": 9,
+   "serie": "1",
+   "data_emissao": null,
+   "vencimento": "2027-09-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 4.8392,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Sem alteração registrada nos trechos. A taxa consta apenas do quadro de emissões do Agente Fiduciário (Doc. 1, cláusula 8.2): IPCA + 4,8392% a.a. (1ª Série)."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [
+    {
+     "data": "2026-03-16",
+     "descricao": "Prêmio de 0,50% flat sobre o saldo devedor das Debêntures na data da AGD (27/02/2026), pago à vista via B3 a quem for titular no fechamento do dia útil anterior. Foi aprovado na AGD de 2ª convocação, em contrapartida à anuência prévia para perda ou transferência de concessões (Término Ordinário ou Repactuação) no Período de Renúncia (de 11/12/2025 até 12 meses após a anuência). A proposta da administração previa mínimo de 0,15% (Doc. 6); prevaleceu a ata (Doc. 7 e 8). Condições: dividendos, JCP, redução de capital e mútuo a acionistas vedados até 31/12/2027; abertura de conta escrow no BTG; limitação às controladas Fernão Dias e Regis Bittencourt."
+    }
+   ],
+   "fonte": "Doc. 1 (escritura da 15ª emissão, cláusula 8.2, quadro de emissões do Agente Fiduciário): vencimento, quantidade, valor total e remuneração. Docs. 7 e 8 (ata da AGD de 27/02/2026): prêmio e condições. Docs. 4, 5 e 6: termos de não instalação e proposta. A escritura da 9ª emissão (22/09/2020) e seus aditamentos não estão entre os documentos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-09-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "9ª emissão, 1ª série (ARTR19): sem vencimento antecipado declarado, sem suspensão de pagamentos e sem RJ/RE nos trechos. Em 22/01/2026 a AGD da 1ª série não foi instalada por falta de quórum (Docs. 4 e 5, idênticos). Na AGD de 2ª convocação, em 27/02/2026, 86,86% dos presentes aprovaram a anuência prévia (waiver) para perda ou transferência de concessões e 88,17% aprovaram a autorização para a documentação (Docs. 7 e 8). Se a Companhia descumprir qualquer das Condições da AGD, a aprovação perde eficácia e o evento passa a ser tratado como hipótese de vencimento antecipado. Isso não altera o cronograma de pagamentos, apenas cria o prêmio e as restrições.",
+ "lacunas": "Os documentos não trazem a escritura da 9ª emissão (22/09/2020) nem aditamentos dela, então o cronograma vigente da ARTR19 não pôde ser extraído. Não constam: data de emissão (provavelmente 2020-09, mas não escrito), periodicidade e datas de pagamento de juros, cronograma de amortização, base de contagem dos juros e eventual incorporação ou carência de juros. O VNU de R$ 1.000,00 foi inferido (R$ 1.454.000.000 de valor total ÷ 1.454.000 debêntures = 450.000 da 1ª série + 1.004.000 da 2ª série) e não aparece escrito. O vencimento de 15/09/2027 vem só do quadro do Agente Fiduciário (Doc. 1, abril/2024) e não foi confirmado por aditamento posterior. Os Docs. 2 e 3 tratam de outra emissão (10 anos, duas séries, vencimento em 2035, com cronograma próprio) e não foram usados. Segundo o Doc. 1, a 2ª série da 9ª emissão (DI + 2,50%, vencimento 15/09/2025) deveria ser resgatada com os recursos da 15ª emissão. Ela não foi pedida e não foi extraída.",
+ "meta": {
+  "emissora": "ARTERIS S.A.",
+  "cnpj": "02919555000167",
+  "emissao": "9",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2015-07-01",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "019771IPE190620150104218609-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=476057&numSequencia=18804&numVersao=1"
+   },
+   {
+    "data": "2024-04-16",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "019771IPE260320240104539806-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1222151&numSequencia=746877&numVersao=1"
+   },
+   {
+    "data": "2025-05-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "019771IPE120520250172500754-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1376165&numSequencia=900877&numVersao=1"
+   },
+   {
+    "data": "2025-06-02",
+    "tipo": "escritura",
+    "assunto": "Procedimento de Bookbuilding e Rerratificação da RCA",
+    "protocolo": "019771IPE020620250122371920-17",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1385954&numSequencia=910666&numVersao=1"
+   },
+   {
+    "data": "2026-01-26",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - 9ª Emissão - Arteris",
+    "protocolo": "019771IPE220120260115016544-23",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1470117&numSequencia=994823&numVersao=1"
+   },
+   {
+    "data": "2026-01-27",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - 9ª Emissão - Arteris",
+    "protocolo": "019771IPE220120260282660631-66",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1470336&numSequencia=995042&numVersao=2"
+   },
+   {
+    "data": "2026-02-25",
+    "tipo": "proposta_agd",
+    "assunto": "Arteris 9ª Emissão l Proposta da Administração - AGD 2ª Convocação",
+    "protocolo": "019771IPE270220260156006745-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1481892&numSequencia=1006598&numVersao=1"
+   },
+   {
+    "data": "2026-02-25",
+    "tipo": "proposta_agd",
+    "assunto": "Arteris 9ª Emissão l Proposta da Administração - AGD",
+    "protocolo": "019771IPE220120260543532950-32",
+    "versao": "5",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1481940&numSequencia=1006646&numVersao=5"
+   },
+   {
+    "data": "2026-02-27",
+    "tipo": "ata_agd",
+    "assunto": "Arteris 9ª Emissão l Ata da AGD",
+    "protocolo": "019771IPE270220260198966437-66",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1483517&numSequencia=1008223&numVersao=1"
+   },
+   {
+    "data": "2026-03-02",
+    "tipo": "ata_agd",
+    "assunto": "Arteris 9ª Emissão l Ata da AGD",
+    "protocolo": "019771IPE270220260288196108-16",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484071&numSequencia=1008777&numVersao=2"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 102542,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2904,
+   "output_tokens_details": {
+    "thinking_tokens": 1288
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "02919555000167_9"
+ }
+}

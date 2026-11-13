@@ -1,0 +1,128 @@
+{
+ "series": [
+  {
+   "codigo": "SUMI18",
+   "emissao": 8,
+   "serie": "1",
+   "data_emissao": "2024-10-15",
+   "vencimento": "2031-10-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.5214,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura (cl. 4.11.1) fixa a taxa como a maior entre NTN-B 2030 + 1,65% e 7,75% a.a., a definir no bookbuilding. A taxa final de 8,5214% consta apenas no Anexo II das escrituras da 9ª emissão e da emissão de 2026."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2025-04-15",
+    "ultima_data": "2031-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-10-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 1 (escritura da 8ª emissão): cl. 4.6.1 (vencimento), 4.7.1 (VNU), 4.12.1 (juros semestrais em 15/abr e 15/out), 4.13.1 (tabela de amortização do VNU Atualizado). A taxa final vem do Anexo II dos Documentos 2 e 5. A data de emissão foi deduzida do prazo de 7 anos até 15/10/2031.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "7ª, 8ª e 9ª emissões: o Anexo II mais recente (Documento 5, 2026-09-11) as lista como ATIVO, com 'não ocorreram inadimplementos no período'. Não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem proposta de novação nos trechos para as séries pedidas. Nenhum aditamento ou ata de AGD das emissões 7, 8 ou 9 foi fornecido, então o cronograma é o original das escrituras.",
+ "lacunas": "1) Nenhum documento da 7ª emissão (SUMI17 e SUMI37) foi fornecido. Só há dados do Anexo II do agente fiduciário: vencimento e taxa. Estão ausentes data de emissão, VNE, juros, amortizações e a correspondência exata série/ticker. A série 1 foi associada ao ativo de R$ 336,22 mi (2031) e a série 3 ao de R$ 213,78 mi (2034) apenas pela ordem de listagem; existe também um ativo de volume R$ 0 com vencimento em 15/07/2031, provavelmente a série 2 cancelada. 2) As datas de emissão da 8ª e da 9ª não aparecem nos trechos e foram deduzidas do prazo e do vencimento. 3) Para SUMI18, SUMI19 e SUMI39, as taxas finais do bookbuilding não constam das escrituras recortadas e foram tiradas do Anexo II do agente fiduciário, que para a 9ª série 1 rotula o indexador como 'PRE', embora a cl. 4.12 e o Anexo II do Documento 2 indiquem atualização pelo IPCA. A data de início da vigência da remuneração (Data de Início da Rentabilidade) não consta. 4) Série 2 da 8ª emissão (vencimento 2034) e série 2 da 9ª emissão não foram pedidas e não foram extraídas. O Anexo II sugere que a série 2 da 8ª não foi emitida. 5) Os Documentos 3 (6ª emissão da Giga Mais) e 4 (3ª emissão da DB3) tratam de outras emissões, e o Documento 5 trata de nova emissão com vencimento em 15/02/2032. Todos foram ignorados por não dizerem respeito às séries solicitadas.",
+ "meta": {
+  "emissora": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
+  "cnpj": "07714104000107",
+  "emissao": "8",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-10-31",
+    "tipo": "escritura",
+    "assunto": "Escritura da 8ª Emissão de Debêntures",
+    "protocolo": "027502IPE181020240104559609-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1296726&numSequencia=821452&numVersao=1"
+   },
+   {
+    "data": "2025-04-22",
+    "tipo": "escritura",
+    "assunto": "Escritura da 9ª Emissão de Debêntures",
+    "protocolo": "027502IPE170420250116546072-38",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1363208&numSequencia=887934&numVersao=1"
+   },
+   {
+    "data": "2025-05-26",
+    "tipo": "escritura",
+    "assunto": "Amortização",
+    "protocolo": "027502IPE220520250142261652-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1383104&numSequencia=907816&numVersao=1"
+   },
+   {
+    "data": "2025-05-26",
+    "tipo": "escritura",
+    "assunto": "Amortização",
+    "protocolo": "027502IPE220520250161570862-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1383107&numSequencia=907819&numVersao=1"
+   },
+   {
+    "data": "2026-07-06",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027502IPE260620260180008043-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542112&numSequencia=1066818&numVersao=1"
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027502IPE100920260162738140-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567712&numSequencia=1092418&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 132874,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 7533,
+   "output_tokens_details": {
+    "thinking_tokens": 4020
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "07714104000107_7-8-9"
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "series": [
+  {
+   "codigo": "AEGPB5",
+   "emissao": 25,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Não identificado nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Nenhuma. Os trechos não trazem escritura, aditamento ou ata da 25ª emissão. As listas dos Anexos não mostram o número da emissão para esse item.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2030-12-16"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "10ª emissão: Anexos dos Documentos 1, 2 e 3 indicam Status ATIVO. Não há menção a vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. 18ª, 23ª e 25ª: sem informação de status nos trechos.",
+ "lacunas": "Os três documentos são escrituras de outras emissões da Aegea: 26ª (série única, prefixada 14,9033% a.a., vencimento 2030-03-15, amortização única), 27ª (DI + 0,76%, vencimento 2034-03-10) e 28ª (prefixada 9,00%, vencimento 2032-03-20). Nenhum trata das emissões 10, 18, 23 ou 25. As únicas informações sobre essas emissões vêm das listas de emissões dos Anexos (Agente Fiduciário), que trazem vencimento, taxa e volume, mas não trazem cronograma de juros nem de amortização. Para a 10ª emissão (AEGPA0): faltam data de emissão, periodicidade e datas de juros, e amortizações. Também não há aditamento, ata de AGD ou plano de recuperação que possa ter alterado o cronograma. Para a 18ª, 23ª e 25ª: as listas omitem o número da emissão na maior parte dos itens (o texto foi cortado). Só aparece rotulado o item da 19ª emissão (CDI + 2,75%, vencimento 2029-06-25) e o da 9ª emissão. Por isso não foi possível associar com segurança nenhum item da lista a esses tickers, e não foi feita inferência por ordem de listagem. Itens da Emissora sem emissão identificada nos Anexos, que poderiam corresponder a essas séries mas não foram atribuídos: PRE 16,3433% com vencimento 2031-01-15; PRE 16,615% com vencimento 2031-01-15; CDI + 2,45% com vencimento 2030-03-20 (fidejussória); PRE 17,2179% com vencimento 2030-03-15; CDI + 1,8% com vencimento 2032-08-22; PRE 17,5344% com vencimento 2036-01-15; CDI + 1,8% com vencimento 2030-12-15; PRE 19,5391% com vencimento 2036-01-15. Para completar, é necessário obter as escrituras, aditamentos e atas das emissões 10, 18, 23 e 25.",
+ "meta": {
+  "emissora": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "cnpj": "08827501000158",
+  "emissao": "25",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2018-07-31",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE020720180104331211-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=634741&numSequencia=168506&numVersao=1"
+   },
+   {
+    "data": "2026-03-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE270220260122150224-55",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484930&numSequencia=1009636&numVersao=1"
+   },
+   {
+    "data": "2026-03-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE120320260181007461-94",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489707&numSequencia=1014413&numVersao=1"
+   },
+   {
+    "data": "2026-03-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE230320260117741981-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494171&numSequencia=1018877&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 89844,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4355,
+   "output_tokens_details": {
+    "thinking_tokens": 2017
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08827501000158_10-18-23-25"
+ }
+}

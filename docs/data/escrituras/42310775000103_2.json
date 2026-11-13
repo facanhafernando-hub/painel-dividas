@@ -1,0 +1,314 @@
+{
+ "series": [
+  {
+   "codigo": "RISP12",
+   "emissao": 2,
+   "serie": "1",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2034-01-15",
+   "vne": 10.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.9,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (2023-06-28) fixava só um teto, o maior entre 8,10% a.a. e a NTN-B 2030 + 2,00%. O taxa final de 6,9000% a.a. veio do Bookbuilding de 2023-08-04, ratificado no aditamento de 2023-08-07. A atualização monetária é pelo IPCA e o VNU Atualizado é a base de cálculo."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2034-01-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-07-15",
+     "percentual": 3.0949,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-01-15",
+     "percentual": 3.1938,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-07-15",
+     "percentual": 2.6527,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-01-15",
+     "percentual": 2.725,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-07-15",
+     "percentual": 7.0151,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-15",
+     "percentual": 7.5443,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-15",
+     "percentual": 10.0493,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-01-15",
+     "percentual": 11.172,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-07-15",
+     "percentual": 15.867,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-01-15",
+     "percentual": 18.8595,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-07-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-01-15",
+     "percentual": 33.3334,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-01-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura da 2ª emissão (2023-06-28), cláusulas 4.6, 4.12.1 e 4.13.1 (tabela de amortização). Taxa: Aditamento do Bookbuilding de 2023-08-07, cláusula 4.11.1. O 1º Aditamento (2023-07-13) não alterou o cronograma nos trechos disponíveis.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 14,
+    "amort_doc": 14,
+    "datas_iguais": 14,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "RISP22",
+   "emissao": 2,
+   "serie": "2",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2042-01-15",
+   "vne": 10.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.2,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (2023-06-28) fixava só um teto, o maior entre 9,30% a.a. e a NTN-B 2040 + 3,00%. A taxa final de 7,2000% a.a. veio do Bookbuilding de 2023-08-04, ratificado no aditamento de 2023-08-07. A atualização monetária é pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2042-01-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2034-07-15",
+     "percentual": 4.1204,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-01-15",
+     "percentual": 4.2974,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-07-15",
+     "percentual": 4.4904,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-01-15",
+     "percentual": 4.7015,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-07-15",
+     "percentual": 5.2547,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-01-15",
+     "percentual": 5.5461,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-07-15",
+     "percentual": 5.8718,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-01-15",
+     "percentual": 6.2381,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-07-15",
+     "percentual": 6.6531,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-01-15",
+     "percentual": 7.1273,
+     "base": "saldo"
+    },
+    {
+     "data": "2039-07-15",
+     "percentual": 18.2641,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-01-15",
+     "percentual": 22.3452,
+     "base": "saldo"
+    },
+    {
+     "data": "2040-07-15",
+     "percentual": 25.8712,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-01-15",
+     "percentual": 34.9003,
+     "base": "saldo"
+    },
+    {
+     "data": "2041-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2042-01-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura da 2ª emissão (2023-06-28), cláusulas 4.6, 4.12.1 e 4.13.2 (tabela de amortização). Taxa: Aditamento do Bookbuilding de 2023-08-07, cláusula 4.11.2. O 1º Aditamento (2023-07-13) não alterou o cronograma nos trechos disponíveis.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 16,
+    "amort_doc": 16,
+    "datas_iguais": 16,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "2ª emissão (RISP12/RISP22): nos trechos disponíveis, não há vencimento antecipado declarado, suspensão de pagamentos, RJ/RE nem proposta de novação. 4ª emissão (RISP14/RISP24): idem. Os documentos 6 e 7 (atas de AGD de 2026-04-29 e 2026-05-27) tratam da 3ª emissão (série única, escritura de 2023-09-28) e da renovação das Cartas de Fiança. Não afetam as séries pedidas e não alteram nenhum cronograma.",
+ "lacunas": "1) A Data de Emissão não está expressa nos trechos. Foi derivada do prazo e do vencimento: 10 anos e 6 meses antes de 2034-01-15 dá 2023-07-15 (2ª emissão), e 10 anos e 6 meses antes de 2034-09-15 dá 2024-03-15 (4ª emissão). Isso deve ser confirmado na escritura. 2) A Data de Início da Rentabilidade e a data de primeira integralização não aparecem, por isso 'vigente_desde' ficou null. 3) Os trechos são recortados e não incluem aditamentos posteriores a 2024-04-02 para a 4ª emissão nem posteriores a 2023-08-07 para a 2ª. Não é possível afirmar que não houve alterações depois disso, nem se houve pagamentos, resgates ou aquisições. 4) Os percentuais de amortização incidem sobre o saldo do VNU Atualizado, conforme a tabela dos documentos. O valor 50,0025% da 15ª parcela da série RISP24 (a 15ª parcela da tabela) e o 49,9997% da RISP14 estão exatamente como escritos. 5) Não há dados sobre incorporação de juros nem carência de juros, e nenhum documento menciona essas hipóteses.",
+ "meta": {
+  "emissora": "AGUAS DO RIO 1 SPE S.A",
+  "cnpj": "42310775000103",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-06-28",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão da 2ª (Segunda) Emissão de Debêntures da Companhia",
+    "protocolo": "026735IPE280620230104510505-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1117278&numSequencia=642007&numVersao=1"
+   },
+   {
+    "data": "2023-07-13",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento à Escritura de Emissão da 2ª (Segunda) Emissão de Debêntures da Companhia",
+    "protocolo": "026735IPE130720230104512013-95",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1122569&numSequencia=647298&numVersao=1"
+   },
+   {
+    "data": "2023-08-07",
+    "tipo": "escritura",
+    "assunto": "Aditamento para refletir o Resultado do Bookbuilding",
+    "protocolo": "026735IPE040820230104514512-83",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1130321&numSequencia=655050&numVersao=1"
+   },
+   {
+    "data": "2024-02-20",
+    "tipo": "escritura",
+    "assunto": "Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries",
+    "protocolo": "026735IPE190220240104534209-24",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1196559&numSequencia=721285&numVersao=1"
+   },
+   {
+    "data": "2024-04-02",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries, da Águas do Rio",
+    "protocolo": "026735IPE020420240104538410-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1216932&numSequencia=741658&numVersao=1"
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026735IPE270520260132983386-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542312&numSequencia=1067018&numVersao=1"
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026735IPE290420260194942548-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542313&numSequencia=1067019&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 109734,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6874,
+   "output_tokens_details": {
+    "thinking_tokens": 2153
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "42310775000103_2-4"
+ }
+}

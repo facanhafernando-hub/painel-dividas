@@ -1,0 +1,176 @@
+{
+ "series": [
+  {
+   "codigo": "PCARD0",
+   "emissao": 20,
+   "serie": "3",
+   "data_emissao": "2024-11-29",
+   "vencimento": "2027-11-29",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.5,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Sem alteração. 100% da Taxa DI + spread de 2,50% a.a., base 252 dias úteis, conforme cláusula 4.11.3.3 da escritura. O aditamento de 2024-11-28 não mudou a taxa da 3ª série. A AGD de 2025-09-23 concedeu apenas waiver de covenants e não alterou remuneração, datas nem prazo. A data exata de início da rentabilidade (cláusula 4.2.1) está truncada nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 3,
+    "primeira_data": "2025-02-28",
+    "ultima_data": "2027-11-29",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2026-11-29",
+     "percentual": 50.0,
+     "base": "vne"
+    },
+    {
+     "data": "2027-11-29",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Aditamento de 2024-11-28 (Anexo I, escritura consolidada da 20ª emissão): cláusulas 4.6.1, 4.7.1, 4.11.3.3, 4.12.3 (tabela de juros trimestrais) e 4.13.3 (tabela de amortização). A versão consolidada prevalece sobre a escritura de 2024-11-08. Resgate antecipado facultativo não é admitido para a 3ª série (cláusula 5.1.5).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "20ª emissão (3ª série): em 2025-09-23 a AGD aprovou, com 100% das debêntures em circulação, waiver temporário do covenant Dívida Líquida ≤ Patrimônio Líquido. Para a 3ª série ele vale até a medição do trimestre encerrado em junho/2027, com efeitos desde 30/09/2025. A aprovação trouxe condições: nova definição de EBITDA, limites de alavancagem por trimestre (Anexo I da proposta, de 5,00x em 3T25 a 3,25x em 4T28), venda de ativos limitada a R$ 25 mi por operação, e amortização extraordinária ou resgate obrigatório, sem prêmio, com recursos de venda de ativos. Não há vencimento antecipado declarado nos trechos. Em 2026-03-10 a Companhia protocolou pedido de Recuperação Extrajudicial. Em 2026-03-11 foi proferida decisão de processamento, com suspensão por 180 dias das ações e execuções relativas aos Créditos Sujeitos. O plano foi aditado e substituído em 2026-05-05, com 57,49% de adesão. Os comunicados de 2026-10-07, 2026-10-08 e 2026-10-21 informam a homologação. Com ela, os Créditos Sujeitos são novados e serão pagos por Opções A, B ou C. A B3 bloqueará as debêntures da 18ª e 20ª emissões até a substituição pelas Novas Debêntures (emissão em até 60 dias corridos). O cronograma original da 3ª série deixa de ser o vigente para os créditos novados.",
+ "lacunas": "1) Os trechos não dizem expressamente se os titulares da 3ª série (PCARD0) são Credores Sujeitos, nem qual opção de pagamento escolheram. O Anexo F traz, para a 20ª emissão, apenas créditos com vencimento em 29/07/2026 (2ª série); nenhum crédito de 29/11/2027 aparece nos trechos. O cronograma acima é o contratual da escritura consolidada e pode estar superado pela novação, se a 3ª série foi sujeita ao plano. 2) Não constam os cronogramas finais das Novas Debêntures A e B, pois as escrituras de emissão delas não estão nos trechos. Do plano saem apenas parâmetros gerais: Emissão A, DI + 2,5% a.a.; Emissão B, DI, com vencimento em 2036-09-10. 3) Base dos percentuais de amortização: a tabela diz 'Percentual Amortizado do Valor Nominal Unitário' (50% e 100%). Interpretei como 50% do VNU em 2026-11-29 e 100% do saldo remanescente no vencimento. A cláusula não explicita isso. 4) A data de início da rentabilidade e a data da primeira integralização não aparecem nos trechos (vigente_desde = null). 5) Não há informação sobre pagamentos efetivamente realizados nem sobre resgates ou amortizações extraordinárias obrigatórias ocorridos. 6) Os documentos 1, 2 e 8 tratam de outras emissões (10ª, 16ª e 18ª) e foram desconsiderados. 7) As datas de juros que caem em feriados ou fins de semana seguem a regra de prorrogação para o dia útil seguinte (cláusula 4.15.1). A data de 2027-02-28 e as demais foram listadas como escritas na tabela.",
+ "meta": {
+  "emissora": "COMPANHIA BRASILEIRA DE DISTRIBUICAO",
+  "cnpj": "47508411000156",
+  "emissao": "20",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2012-01-10",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "",
+    "versao": "",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=316952&numSequencia=0&numVersao=0"
+   },
+   {
+    "data": "2020-11-30",
+    "tipo": "escritura",
+    "assunto": "As Partes em comum acordo desejam alterar as Cláusulas 4.10.1, 4.10.1.2, 4.10.1.5, 4.10.2, 4.10.2.5, 4.10.2.2, 4.12.1 da Escritura de Emissão",
+    "protocolo": "014826IPE191120200204416211-87",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=812032&numSequencia=336770&numVersao=2"
+   },
+   {
+    "data": "2024-11-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "014826IPE081120240104560413-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1301455&numSequencia=826181&numVersao=1"
+   },
+   {
+    "data": "2024-11-28",
+    "tipo": "escritura",
+    "assunto": "Aditamento - 20ª Emissão de Debêntures",
+    "protocolo": "014826IPE281120240104562410-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1308998&numSequencia=833724&numVersao=1"
+   },
+   {
+    "data": "2025-09-02",
+    "tipo": "proposta_agd",
+    "assunto": "20ª Emissão - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE230920250174490182-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1419431&numSequencia=944143&numVersao=1"
+   },
+   {
+    "data": "2025-09-18",
+    "tipo": "proposta_agd",
+    "assunto": "20ª Emissão - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE230920250274298419-97",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1424846&numSequencia=949558&numVersao=2"
+   },
+   {
+    "data": "2025-09-29",
+    "tipo": "ata_agd",
+    "assunto": "20ª Emissão - Ata - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE230920250131286416-53",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1427447&numSequencia=952159&numVersao=1"
+   },
+   {
+    "data": "2025-10-07",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "014826IPE021020250144049583-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1430204&numSequencia=954916&numVersao=1"
+   },
+   {
+    "data": "2026-05-05",
+    "tipo": "plano_rj",
+    "assunto": "Nova Versão do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE050520260140531175-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516387&numSequencia=1041093&numVersao=1"
+   },
+   {
+    "data": "2026-10-07",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260194351299-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574980&numSequencia=1099686&numVersao=1"
+   },
+   {
+    "data": "2026-10-08",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260295440636-17",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575329&numSequencia=1100035&numVersao=2"
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Publicac¸a~o da Homologac¸a~o do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE211020260137121682-38",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578908&numSequencia=1103614&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 171264,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3262,
+   "output_tokens_details": {
+    "thinking_tokens": 1337
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "47508411000156_20"
+ }
+}

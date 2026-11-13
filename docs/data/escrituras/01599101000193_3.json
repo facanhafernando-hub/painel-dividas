@@ -1,0 +1,131 @@
+{
+ "series": [
+  {
+   "codigo": "SEQL13",
+   "emissao": 3,
+   "serie": "1",
+   "data_emissao": "2022-11-20",
+   "vencimento": "2029-11-20",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "%DI",
+    "taxa": 100.0,
+    "base": "252 du",
+    "vigente_desde": "2023-10-20",
+    "historico": "Originalmente 100% da Taxa DI + spread de 2,75% a.a., base 252 (1º Aditamento e Doc. 1). O 2º Aditamento (AGD de 04/10/2023) passou a remuneração, a partir de 20/10/2023, para 100% da Taxa DI, sem spread, e a fórmula passou a ser J = VNe x (Fator DI – 1)."
+   },
+   "juros": {
+    "periodicidade_meses": 3,
+    "primeira_data": "2026-11-20",
+    "ultima_data": "2029-11-20",
+    "datas_irregulares": [],
+    "carencia_ate": "2026-11-20"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2023-09-20",
+     "ate": "2023-10-20",
+     "observacao": "Cláusula 4.12.1 consolidada: a Remuneração do período de 20/09/2023 a 20/10/2023 foi incorporada ao VNU em 20/10/2023."
+    },
+    {
+     "de": "2023-10-20",
+     "ate": "2025-12-31",
+     "observacao": "Considerando (D) do 2º Aditamento: a AGD de 04/10/2023 concedeu waiver do pagamento da Remuneração de outubro/2023 a dezembro/2025, com incorporação ao VNU ou saldo do VNU a cada Data de Pagamento da Remuneração. A cláusula 4.12.1 consolidada fixa o 1º pagamento em 2026-11-20 e não diz se os juros de jan/2026 a nov/2026 também são incorporados. Ver lacunas."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2029-11-20",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2025-11-20",
+     "descricao": "Prêmio de 0,75% a.a. pro rata temporis (base 252 du) sobre o prazo remanescente até o vencimento. Só se aplica no Resgate Antecipado Facultativo Total, a critério da Emissora, que pode ser feito a partir de 2025-11-20 (cláusula 5.2.1). Não é um pagamento programado."
+    }
+   ],
+   "fonte": "Doc. 4 (2º Aditamento): cláusulas 2.1 a 2.4 e Anexo A, versão consolidada (cláusulas 4.6.1, 4.11, 4.12.1, 4.13.1 e 5.2). Doc. 3 (1º Aditamento) para a remuneração original. Doc. 1, no trecho do agente fiduciário, confirma 300.000 debêntures, R$ 300 mi e o vencimento original de 20/11/2027.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Emissão 3 (SEQL13): nenhum vencimento antecipado declarado nos trechos. O Doc. 2 é um Plano de Recuperação Extrajudicial da Sequoia (out/2024), voltado a dívidas não financeiras (fornecedores e locação), e não abrange as debêntures. Pela cláusula 6.1.1.1(ii)(d) da 3ª emissão, a propositura de plano de recuperação extrajudicial é evento de vencimento antecipado automático. Os trechos não mostram waiver nem declaração de vencimento sobre esse ponto. A AGD de 04/10/2023 concedeu waivers e repactuou o fluxo (juros incorporados, amortização bullet e prorrogação para 2029). A 4ª emissão (conversível, Doc. 1) tinha a 1ª série integralizada com Créditos da 3ª emissão por dação em pagamento, o que pode reduzir a quantidade de debêntures SEQL13 em circulação.",
+ "lacunas": "1) Há inconsistência sobre a incorporação de juros. A AGD de 04/10/2023 fala em waiver da Remuneração de outubro/2023 a dezembro/2025, mas o 1º pagamento consolidado é em 2026-11-20. Não há cláusula dizendo se os juros de jan a nov/2026 são incorporados ou apenas acumulados e pagos em 2026-11-20. 2) Não consta o cronograma original de amortização mensal. Só se sabe que começava no 24º mês, que a 1ª parcela era em 20/11/2023 e a 14ª em 20/12/2025 (trecho incoerente) e que foi substituído por parcela única em 2029-11-20. 3) O 3º Aditamento (Doc. 5) só traz cláusulas gerais nos trechos, sem alteração visível do cronograma; pode haver alterações omitidas pelo recorte. 4) A Data de Início da Rentabilidade não aparece nos trechos; usei a data de emissão (2022-11-20). 5) O volume em circulação após a troca de Créditos da 3ª emissão pela 4ª emissão não é informado. 6) Não há informação sobre a efetiva ocorrência dos pagamentos programados (a posição de adimplência não é conhecida).",
+ "meta": {
+  "emissora": "SEQUOIA LOGISTICA E TRANSPORTES S.A",
+  "cnpj": "01599101000193",
+  "emissao": "3",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-09-20",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025160IPE190920230204518814-77",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1144695&numSequencia=669423&numVersao=2"
+   },
+   {
+    "data": "2024-10-11",
+    "tipo": "plano_rj",
+    "assunto": "Pedido de Homologação de Plano de Recuperação",
+    "protocolo": "025160IPE111020240104557614-00",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1291156&numSequencia=815882&numVersao=1"
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE281120220164884769-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567227&numSequencia=1091933&numVersao=1"
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "SEGUNDO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE241020230188383976-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567228&numSequencia=1091934&numVersao=1"
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "TERCEIRO ADITAMENTO DO INSTRUMENTO PARTICULAR DE ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE070520250198743437-53",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567229&numSequencia=1091935&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 80705,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4144,
+   "output_tokens_details": {
+    "thinking_tokens": 2209
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "01599101000193_3"
+ }
+}

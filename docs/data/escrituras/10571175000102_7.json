@@ -1,0 +1,117 @@
+{
+ "series": [
+  {
+   "codigo": "URBS17",
+   "emissao": 7,
+   "serie": "UNI",
+   "data_emissao": "2024-03-20",
+   "vencimento": "2029-03-20",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.85,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + spread de 1,85% a.a. (cláusula 4.11). Nenhuma alteração nos trechos recebidos. A rentabilidade começa na Primeira Data de Integralização, que não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-09-20",
+    "ultima_data": "2029-03-20",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2028-03-20",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-20",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-03-20",
+     "descricao": "Resgate Antecipado Facultativo Total permitido a partir do 24º mês da Data de Emissão. Prêmio de 0,20% a.a. (base 252 du) sobre o saldo do VNU mais a Remuneração, pelos dias úteis até o vencimento. A faixa aplica-se de 2026-03-20 (inclusive) até a Data de Vencimento (exclusive). Fórmula: Prêmio = PU*[(1+Y)^(DU/252)-1]. Faixas anteriores da tabela foram omitidas nos trechos."
+    }
+   ],
+   "fonte": "Documento 3 (escritura da 7ª emissão, entregue em 2024-03-15): cláusulas 4.1, 4.6, 4.7, 4.11, 4.13.1 (datas de pagamento da Remuneração), 4.14 (amortização) e 5.1.1 (resgate antecipado)",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "7ª emissão: nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. A lista de emissões do Documento 4 (escritura da 8ª emissão) mostra a 7ª emissão com enquadramento 'Adimplência Financeira'.",
+ "lacunas": "Os Documentos 1, 2 e 4 tratam das 5ª, 6ª e 8ª emissões da URBA e não da 7ª, então não foram usados no cronograma. Não há aditamentos, atas de AGD nem plano de recuperação para a 7ª emissão, e o cronograma vem da escritura original. A tabela de amortização informa 50% em 2028-03-20 e 100% no vencimento, com cabeçalho 'Percentual do Valor Nominal Unitário a ser Amortizado'. O texto diz 'duas parcelas iguais' e 100% na última, o que indica percentual sobre o saldo, base que adotei por inferência; em termos do VNE original, 50% e 50%. A tabela de prêmios do resgate antecipado está truncada, e só a última faixa (0,20% a.a. a partir de 2026-03-20) é visível. A data da Primeira Data de Integralização não consta dos trechos. Os pagamentos ficam sujeitos à prorrogação para o dia útil seguinte (cláusula 4.16).",
+ "meta": {
+  "emissora": "URBA DESENVOLVIMENTO URBANO S/A",
+  "cnpj": "10571175000102",
+  "emissao": "7",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-05-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE220420220104468405-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=975773&numSequencia=500507&numVersao=1"
+   },
+   {
+    "data": "2023-05-25",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE180520230104507106-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1106078&numSequencia=630807&numVersao=1"
+   },
+   {
+    "data": "2024-03-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE130320240104536606-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1207933&numSequencia=732659&numVersao=1"
+   },
+   {
+    "data": "2024-11-28",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE261120240104562411-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1309071&numSequencia=833797&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 147638,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2232,
+   "output_tokens_details": {
+    "thinking_tokens": 970
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "10571175000102_7"
+ }
+}

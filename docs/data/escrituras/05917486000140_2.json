@@ -1,0 +1,131 @@
+{
+ "series": [
+  {
+   "codigo": "LVTC22",
+   "emissao": 2,
+   "serie": "2",
+   "data_emissao": "2022-06-15",
+   "vencimento": "2029-06-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.7,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura previa 100% da Taxa DI + spread definido em bookbuilding, com teto de 2,70% a.a. O bookbuilding foi feito em 2022-06-13 e o 1º Aditamento (2022-06-22) fixou o spread em 2,70% a.a., base 252 du. Não há alteração posterior nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-12-15",
+    "ultima_data": "2029-06-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-06-15",
+     "percentual": 11.1111,
+     "base": "saldo"
+    },
+    {
+     "data": "2025-12-15",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-06-15",
+     "percentual": 14.29,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-12-15",
+     "percentual": 16.67,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-06-15",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-12-15",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura de Emissão (Documento 1), cláusulas 4.5.1 (vencimento), 4.13.1 (juros semestrais, primeiro pagamento em 15/12/2022) e 4.14.2 (tabela de amortização da Segunda Série, % do saldo do VNU). A remuneração vem da cláusula 4.11.1 conforme redação do 1º Aditamento (Documento 2), item 2.6 (spread de 2,70% a.a.).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 6,
+    "amort_doc": 6,
+    "datas_iguais": 6,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "2ª emissão: nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos fornecidos.",
+ "lacunas": "1) O ano de vencimento da Segunda Série está truncado na cláusula 4.5.1 (aparece 'em 15 de junho' sem o ano). Usei 2029-06-15, que é a Data de Emissão (2022-06-15) mais 7 anos, e é coerente com a tabela de amortização (última parcela em 15/12/2028 e 100% no vencimento). 2) Os documentos só incluem a escritura e o 1º Aditamento (2022-06-22). Não há aditamento consolidado, ata de AGD ou plano posteriores, então o cronograma pode ter mudado depois sem constar aqui. 3) Há Resgate Antecipado Facultativo e Amortização Extraordinária, ambos opcionais e a partir de 2025-06-15, com prêmio de 1,50 pela fórmula da cláusula 5.1. São facultativos e sem data certa, por isso não estão em 'premios'. 4) Os percentuais de amortização estão como no documento (o texto fala em % do saldo do VNU). Os valores 14,29% e 16,67% são aproximações do próprio documento. 5) A data exata de início da Remuneração (primeira Data de Integralização) não consta nos trechos, por isso 'vigente_desde' ficou null. 6) A 'quantidade' de debêntures da Segunda Série segundo o 1º Aditamento é 252.887, o que não afeta o cronograma. 7) O 'Anexo I' da escritura lista outra emissão do agente fiduciário (vencimentos 2022/2024), que não pertence a esta emissão e foi ignorada.",
+ "meta": {
+  "emissora": "LIVETECH DA BAHIA INDUSTRIA E COMERCIO S/A",
+  "cnpj": "05917486000140",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-06-21",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão das Debêntures",
+    "protocolo": "025895IPE010620220104473312-13",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=992190&numSequencia=516924&numVersao=1"
+   },
+   {
+    "data": "2022-06-22",
+    "tipo": "escritura",
+    "assunto": "WDC Livetech - 1º Aditamento Escritura de Emissão de Debentures",
+    "protocolo": "025895IPE010620220104473411-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=992406&numSequencia=517140&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 49540,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2467,
+   "output_tokens_details": {
+    "thinking_tokens": 960
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "05917486000140_2"
+ }
+}

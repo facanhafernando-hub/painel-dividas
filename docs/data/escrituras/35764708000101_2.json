@@ -1,0 +1,134 @@
+{
+ "series": [
+  {
+   "codigo": "TEPA12",
+   "emissao": 2,
+   "serie": "001",
+   "data_emissao": null,
+   "vencimento": "2031-07-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 10.0924,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Dado extraído apenas de uma tabela-resumo do agente fiduciário sobre outras emissões (declaração, Doc. 1 e Doc. 2). Não há documento da 2ª emissão entre os trechos."
+   },
+   "juros": null,
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Doc. 1 e Doc. 2, cláusula 8.26 (tabela de emissões do agente fiduciário): 2ª Emissão, 1ª série, 484.048 debêntures, vencimento 15/07/2031, IPCA + 10,0924% a.a.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 9,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-07-15",
+     "2028-01-17",
+     "2028-07-17",
+     "2029-01-15",
+     "2029-07-16",
+     "2030-01-15",
+     "2030-07-15",
+     "2031-01-15",
+     "2031-07-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  },
+  {
+   "codigo": "TEPA22",
+   "emissao": 2,
+   "serie": "002",
+   "data_emissao": null,
+   "vencimento": "2031-07-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "PRE",
+    "taxa": 15.9233,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Dado extraído apenas de uma tabela-resumo do agente fiduciário sobre outras emissões. A base de cálculo da taxa não é informada."
+   },
+   "juros": null,
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Doc. 1 e Doc. 2, cláusula 8.26 (tabela de emissões do agente fiduciário): 2ª Emissão, 2ª série, 61.851 debêntures, vencimento 15/07/2031, prefixado de 15,9233% a.a.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 5,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-07-16",
+     "2030-01-15",
+     "2030-07-15",
+     "2031-01-15",
+     "2031-07-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "3ª emissão (TEPA13/TEPA23): o aditamento pós-bookbuilding definiu duas séries e cancelou a terceira série (10 anos, vencimento 2035, IPCA+ 3,75%/10,80%), que não foi emitida. Nos trechos não há vencimento antecipado, suspensão de pagamentos, RJ/RE, carência de juros, incorporação de juros ou proposta de novação. 1ª e 2ª emissões: nenhuma informação de situação nos trechos. O Doc. 3 trata da 4ª emissão (série única, emitida em 2025-12-04), fora do escopo solicitado, e não altera as emissões listadas.",
+ "lacunas": "(1) Não há escritura, aditamento, ata de AGD ou plano da 1ª emissão (TEPA11) nem da 2ª (TEPA12/TEPA22). Só existem vencimento e remuneração, vindos de uma tabela-resumo do agente fiduciário. O vencimento de 15/07/2031 da 2ª emissão e a atribuição do bloco sem título à 1ª emissão não puderam ser confirmados. Cronogramas de juros e amortização, VNE e datas de emissão dessas séries são desconhecidos. (2) 3ª emissão: a data de emissão (2025-03-15) foi deduzida do prazo de 7 anos até 15/03/2032 e da amortização a partir do 48º mês (15/03/2029), pois a cláusula 4.1 não aparece nos trechos. A data da primeira Data de Integralização não consta, então 'vigente_desde' ficou null. (3) O mapeamento TEPA13 = 1ª série (IPCA+) e TEPA23 = 2ª série (prefixada) segue a numeração informada pelo usuário (série 001/002). Não há tabela de códigos nos trechos. (4) Os trechos são recortes; não foi possível verificar se houve aditamentos ou deliberações posteriores à 3ª emissão. (5) As datas de pagamento seguem o calendário nominal e são prorrogadas para o Dia Útil seguinte quando não houver expediente.",
+ "meta": {
+  "emissora": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "cnpj": "35764708000101",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-03-19",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027499IPE180320250104573511-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1348878&numSequencia=873604&numVersao=1"
+   },
+   {
+    "data": "2025-04-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários||Resultado do Procedimento de Bookbuilding da 3ª Emissão de Debêntures da Companhia",
+    "protocolo": "027499IPE110420250129995073-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1360995&numSequencia=885721&numVersao=1"
+   },
+   {
+    "data": "2025-12-12",
+    "tipo": "escritura",
+    "assunto": "Aditamento Escritura de Emissa~o",
+    "protocolo": "027499IPE111220250137145582-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1456489&numSequencia=981201&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 107914,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5174,
+   "output_tokens_details": {
+    "thinking_tokens": 1998
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "35764708000101_1-2-3"
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "series": [
+  {
+   "codigo": "CSNAA4",
+   "emissao": 14,
+   "serie": "001",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2030-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.5,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa a maior taxa entre NTN-B 2030 + 1,40% e piso de 7,00% a.a. A taxa final de 6,50% a.a. foi definida no bookbuilding de 2023-07-13 e ratificada no 1º Aditamento (Doc. 4). VNU atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2030-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 4 (1º Aditamento, Anexo A, escritura consolidada), cláusulas 4.6.1, 4.11.1, 4.12.1, 4.13.1 e Anexo III. Taxa ratificada no item (iii) do aditamento.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "CSNAB4",
+   "emissao": 14,
+   "serie": "002",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2033-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 6.8,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa a maior taxa entre NTN-B 2032 + 1,65% e piso de 7,30% a.a. A taxa final de 6,80% a.a. foi definida no bookbuilding de 2023-07-13 e ratificada no 1º Aditamento (Doc. 4). VNU atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2033-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2031-07-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 4 (1º Aditamento, Anexo A, escritura consolidada), cláusulas 4.6.1, 4.11.2, 4.12.1, 4.13.2 e Anexo III.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "CSNAC4",
+   "emissao": 14,
+   "serie": "003",
+   "data_emissao": "2023-07-15",
+   "vencimento": "2038-07-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 7.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 3) previa a maior taxa entre NTN-B 2040 + 2,00% e piso de 8,00% a.a. A taxa final de 7,00% a.a. foi definida no bookbuilding de 2023-07-13 e ratificada no 1º Aditamento (Doc. 4). VNU atualizado pelo IPCA."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-01-15",
+    "ultima_data": "2038-07-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2036-07-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-07-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2038-07-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 4 (1º Aditamento, Anexo A, escritura consolidada), cláusulas 4.6.1, 4.11.3, 4.12.1, 4.13.3 e Anexo III.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "11ª emissão: nenhum vencimento antecipado, suspensão, RJ/RE ou renegociação nos trechos. O anexo do agente fiduciário no Doc. 5 (2024-11-05) informa status ATIVO e sem inadimplementos. 12ª emissão: sem documentos, situação desconhecida. 14ª emissão: nenhum evento relatado nos trechos; o mesmo anexo do Doc. 5 informa as três séries ATIVAS e sem inadimplementos. Os Documentos 5 e 6 tratam de outras emissões. O Doc. 6 é uma AGD de 2025-06-30 da 13ª emissão (série única, escritura de 2022-11-22). Ela prorroga o vencimento para 2030-11-30, eleva o spread para 2,30% e altera a amortização. Não foi aplicada a nenhuma série pedida.",
+ "lacunas": "12ª emissão (CSNAA2): nenhum documento fornecido a trata. O Doc. 6 refere-se à 13ª emissão e não foi usado, portanto todos os campos estão null. O Doc. 5 (escritura entregue em 2024-11-05, 2 séries com vencimentos em 2034 e 2039, mais as séries 15/04/2034 e 15/04/2039 citadas no anexo) é de outra emissão fora do escopo e foi ignorado. 14ª emissão: a data de emissão não aparece literalmente nos trechos; 2023-07-15 foi inferida do prazo de 7, 10 e 15 anos até 15/07/2030, 2033 e 2038 (bookbuilding em 2023-07-13). A data de início da rentabilidade e o campo 'vigente_desde' das taxas ficaram null. As quantidades de debêntures (320.000, 180.000 e 200.000) vêm do Doc. 4 e do anexo do Doc. 5, mas o trecho da 3ª série está cortado no aditamento. A lista completa de datas de juros está só no Anexo III, truncado; a regra semestral (15/jan e 15/jul) foi tirada da cláusula 4.12.1. 11ª emissão: a Data de Início da Rentabilidade não aparece nos trechos (cláusula 4.2 cortada). As faculdades de resgate antecipado e amortização extraordinária (prêmio de 0,45% a partir de 2024-11-10 na 11ª) não foram registradas como cronograma, por serem opcionais.",
+ "meta": {
+  "emissora": "COMPANHIA SIDERURGICA NACIONAL",
+  "cnpj": "33042730000104",
+  "emissao": "14",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-10-26",
+    "tipo": "escritura",
+    "assunto": "Escritura Particular da 11ª emissão de debêntures",
+    "protocolo": "004030IPE211020210104449511-00",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=910142&numSequencia=434876&numVersao=1"
+   },
+   {
+    "data": "2021-11-12",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 11ª(DÉCIMA PRIMEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "004030IPE211020210104451212-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=916875&numSequencia=441609&numVersao=1"
+   },
+   {
+    "data": "2023-06-19",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "004030IPE160620230104509611-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1114714&numSequencia=639443&numVersao=1"
+   },
+   {
+    "data": "2023-07-14",
+    "tipo": "escritura",
+    "assunto": "1° ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 14ª EMISSÃO DE DEBÊNTURES",
+    "protocolo": "004030IPE140720230104512113-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1122880&numSequencia=647609&numVersao=1"
+   },
+   {
+    "data": "2024-11-05",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "004030IPE051120240104560113-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1298755&numSequencia=823481&numVersao=1"
+   },
+   {
+    "data": "2025-07-04",
+    "tipo": "ata_agd",
+    "assunto": "Alteração da escritura de emissão",
+    "protocolo": "004030IPE300620250179744184-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1398090&numSequencia=922802&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 147265,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6319,
+   "output_tokens_details": {
+    "thinking_tokens": 3088
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "33042730000104_11-12-14"
+ }
+}

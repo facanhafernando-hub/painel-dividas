@@ -1,0 +1,141 @@
+{
+ "series": [
+  {
+   "codigo": "HAPVA0",
+   "emissao": 10,
+   "serie": "UNI",
+   "data_emissao": "2025-10-15",
+   "vencimento": "2033-10-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.05,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + sobretaxa de 1,05% a.a. Os juros correm desde a primeira Data de Integralização, que não consta dos trechos. Nenhuma alteração encontrada. O comunicado de 2025-10-08 confirma a taxa."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-04-15",
+    "ultima_data": "2033-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2032-10-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2027-10-15",
+     "descricao": "Prêmio flat de 0,60% no Resgate Antecipado Facultativo, entre 2027-10-15 (inclusive) e 2028-10-15 (exclusive). É facultativo, só vale se a Emissora resgatar."
+    },
+    {
+     "data": "2028-10-15",
+     "descricao": "Prêmio flat de 0,40% no Resgate Antecipado Facultativo, entre 2028-10-15 (inclusive) e 2029-10-15 (exclusive). A data final foi omitida no trecho e deduzida do início da faixa seguinte."
+    },
+    {
+     "data": "2029-10-15",
+     "descricao": "Prêmio flat de 0,20% no Resgate Antecipado Facultativo, entre 2029-10-15 (inclusive) e 2030-10-15 (exclusive). A data final foi omitida no trecho e deduzida do início da faixa seguinte."
+    },
+    {
+     "data": "2030-10-15",
+     "descricao": "Prêmio flat de 0,10% no Resgate Antecipado Facultativo, entre 2030-10-15 (inclusive) e 2031-10-15 (exclusive)."
+    },
+    {
+     "data": "2031-10-15",
+     "descricao": "Prêmio flat de 0,05% no Resgate Antecipado Facultativo, de 2031-10-15 (inclusive) até a Data de Vencimento (exclusive)."
+    }
+   ],
+   "fonte": "Documento 3 (escritura da 10ª emissão, 2025-10-08): cláusulas 4.2.1, 4.3.1, 4.4.1, 4.11.1 (tabela de amortização), 4.11.2.1, 4.12.1 e 4.15.6. Documento 4 (comunicado de 2025-10-08) confirma série única, DI + 1,05%, amortização em 2 parcelas e vencimento em 2033.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "5ª emissão (HAPV15): sem vencimento antecipado, suspensão, RJ/RE ou novação nos trechos. Em 25/08/2026, a Hapvida informou programa de recompra de debêntures próprias, sem prêmio e a preço de mercado, de até R$ 150 mi, com R$ 149,9 mi já usados e liquidação até 31/12/2026. HAPV15 tinha 974.114 debêntures em circulação e 25.886 em tesouraria. 10ª emissão (HAPVA0): sem eventos de inadimplência nos trechos. Os recursos serviriam ao pré-pagamento de HAPV22 (2ª emissão) e HAPV13 (3ª emissão) e a outras ações de reperfilamento. HAPVA0 está entre as séries elegíveis à recompra de 2026, sem dados de tesouraria para ela. 6ª emissão (BCBF16): sem eventos nos trechos. Também está entre as séries elegíveis à recompra de 2026, sem dados de tesouraria para ela.",
+ "lacunas": "BCBF16: não há escritura nem aditamento nos trechos. Faltam data de emissão, VNE (1.200.000 debêntures para R$ 1,2 bi sugere R$ 1.000, mas isso não está escrito), base de dias da taxa, periodicidade e datas de juros, amortizações e prêmios. Todas as séries: a data da primeira integralização não consta, então não foi possível fixar 'vigente_desde'. Os documentos 1 e 3 são as escrituras originais, sem aditamentos posteriores nos trechos; mudanças posteriores, se houver, não podem ser verificadas. Em HAPV15 e HAPVA0, as faixas de prêmio de resgate com data final omitida foram deduzidas do início da faixa seguinte. O Documento 2 (9ª emissão, HAPV19) não era série solicitada e foi usado apenas como confirmação cruzada.",
+ "meta": {
+  "emissora": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
+  "cnpj": "05197443000138",
+  "emissao": "10",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-12-22",
+    "tipo": "escritura",
+    "assunto": "5ª Emissão de Debêntures",
+    "protocolo": "024392IPE151220230104528209-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1176895&numSequencia=701621&numVersao=1"
+   },
+   {
+    "data": "2025-04-24",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250151163146-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1"
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE071020250184374491-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1"
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE081020250101964273-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1"
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
+    "protocolo": "024392IPE250820260171572734-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 114791,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4992,
+   "output_tokens_details": {
+    "thinking_tokens": 1766
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "05197443000138_10-5-6"
+ }
+}

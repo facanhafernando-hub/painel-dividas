@@ -1,0 +1,126 @@
+{
+ "series": [
+  {
+   "codigo": "QUAL18",
+   "emissao": 8,
+   "serie": "UNI",
+   "data_emissao": "2025-10-15",
+   "vencimento": "2029-10-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.5,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A Escritura de 2025-09-17 previa 100% da Taxa DI + spread a ser definido em bookbuilding, limitado a 2,50% a.a. O Primeiro Aditamento (2025-10-15) fixou o spread em 2,50% a.a., base 252 dias úteis, após o bookbuilding de 2025-10-14. A remuneração corre desde a Data de Início da Rentabilidade (primeira Data de Integralização), cuja data não aparece nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-04-15",
+    "ultima_data": "2029-10-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-10-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-10-15",
+     "percentual": 66.6666,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-10-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-04-15",
+     "descricao": "Amortização Extraordinária Facultativa permitida a partir desta data, limitada a 98% do VNU. Prêmio de 0,50% a.a. (base 252 du) × prazo remanescente em dias úteis, sobre o valor amortizado mais a Remuneração (Cláusula 5.2.3)."
+    },
+    {
+     "data": "2027-10-15",
+     "descricao": "Resgate Antecipado Facultativo Total permitido a partir desta data. Prêmio de 0,50% a.a. (base 252 du) × prazo remanescente em dias úteis, sobre VNU ou saldo mais a Remuneração (Cláusula 5.1.5)."
+    }
+   ],
+   "fonte": "Documento 3 (Escritura da 8ª Emissão, 2025-09-17): cláusulas 3.3, 4.1, 4.6, 4.10, 4.12 (remuneração) e 4.13 (amortização), 5.1 e 5.2. Documento 4 (Primeiro Aditamento, 2025-10-15): nova redação da cláusula 4.11.1, que fixou o spread em 2,50%.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": null,
+ "lacunas": "Os Documentos 1 e 2 tratam de outras emissões (1ª emissão de 2014 e 7ª emissão/QUAL17) e não foram usados no cronograma da QUAL18. Os trechos não trazem a Data de Início da Rentabilidade nem a primeira Data de Integralização, então 'vigente_desde' ficou null. Presume-se que coincida com a Data de Emissão, 2025-10-15, mas isso não está escrito. Amortizações: a tabela da cláusula 4.13.1 usa o cabeçalho 'percentual do saldo do VNU', mas os percentuais 33,3333% / 66,6666% / 100% parecem acumulados sobre o VNE. Se fossem sobre o saldo, a 2ª parcela seria 50%. Registrei exatamente como consta (base 'saldo') e recomendo conferir o texto integral. Não há aditamento consolidado nem documento posterior ao Primeiro Aditamento. Os trechos do aditamento não mostram outras alterações no cronograma de juros e amortização, que permanece o da Escritura. Nenhum evento de vencimento antecipado, RJ/RE ou renegociação aparece nos documentos.",
+ "meta": {
+  "emissora": "QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S.A.",
+  "cnpj": "11992680000193",
+  "emissao": "8",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2015-05-07",
+    "tipo": "escritura",
+    "assunto": "Alteração da data de vencimento.||Inclusão de data de pagamento de remuneração em carater extraordinário.||Inclusão de obrigação adicional a emissora referente a contratação de agência classificadora de risco.||Inclusão de pagamento de premio na hipótese de resgate antecipado",
+    "protocolo": "022497IPE270420150104213106-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=469756&numSequencia=12503&numVersao=1"
+   },
+   {
+    "data": "2025-07-30",
+    "tipo": "escritura",
+    "assunto": "Escritura de debenture QUAL17",
+    "protocolo": "022497IPE140320240137698662-26",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1405716&numSequencia=930428&numVersao=1"
+   },
+   {
+    "data": "2025-09-17",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "022497IPE170920250197153950-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1424431&numSequencia=949143&numVersao=1"
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "escritura",
+    "assunto": "Definição do fee",
+    "protocolo": "022497IPE151020250188433088-95",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433104&numSequencia=957816&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 98041,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2482,
+   "output_tokens_details": {
+    "thinking_tokens": 1084
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "11992680000193_8"
+ }
+}

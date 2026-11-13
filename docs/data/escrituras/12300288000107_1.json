@@ -1,0 +1,102 @@
+{
+ "series": [
+  {
+   "codigo": "NTEN11",
+   "emissao": 1,
+   "serie": "UNICA",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [
+     "2024-11-18"
+    ],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2024-11-18",
+     "percentual": null,
+     "base": "desconhecida"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 2 (Aviso aos Debenturistas, 2024-11-14): pagamento de principal e juros em 2024-11-18, com juros de PU 49,011904 sobre 700.000 debêntures, total de R$ 34.308.332,99. O Documento 1 (Termo de não Instalação da AGD) não traz cronograma.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 8,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2026-11-16",
+     "2027-05-17",
+     "2027-11-16",
+     "2028-05-15",
+     "2028-11-16",
+     "2029-05-15",
+     "2029-11-16",
+     "2030-05-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "1ª emissão (NTEN11): a AGD convocada para 2023-12-29 não foi instalada (termo de não instalação, com 16,97% das debêntures em circulação presentes). A pauta era a anuência ao Primeiro Termo Aditivo e de Consolidação do Contrato PR-S-007/2014, com encontro de contas entre as partes. Não há nos trechos vencimento antecipado, RJ/RE ou novação. O aviso de 2024-11-14 informa pagamento de principal e juros em 2024-11-18.",
+ "lacunas": "Os trechos não trazem a escritura nem aditamentos, então faltam data de emissão, vencimento, VNE, indexador, taxa, base de cálculo, periodicidade dos juros e o calendário de amortização. A data 2023-12-29 que aparece nos títulos parece ser a da AGD, e não a de emissão, por isso data_emissao ficou null. No aviso de 2024-11-18, só o PU de juros (49,011904) aparece. O PU do principal e o percentual amortizado foram omitidos no recorte, e o total de R$ 34.308.332,99 refere-se à linha de juros. A base da amortização é desconhecida. Falta também a data do último pagamento de juros e a regra para os próximos.",
+ "meta": {
+  "emissora": "NORTE ENERGIA S/A",
+  "cnpj": "12300288000107",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-01-02",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não Instalação da Assembleia Geral de Debenturistas",
+    "protocolo": "025097IPE291220230104529310-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1179315&numSequencia=704041&numVersao=1"
+   },
+   {
+    "data": "2024-11-14",
+    "tipo": "comunicado",
+    "assunto": "Aviso aos Debenturistas | Pagamento de Principal e Juros de 1ª Emissão de Debêntures",
+    "protocolo": "025097IPE141120240104561010-99",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1304429&numSequencia=829155&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 2841,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1371,
+   "output_tokens_details": {
+    "thinking_tokens": 484
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "12300288000107_1"
+ }
+}

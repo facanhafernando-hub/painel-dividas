@@ -1,0 +1,109 @@
+{
+ "series": [
+  {
+   "codigo": "AEGE16",
+   "emissao": 6,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2034-03-11",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 3.9,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 1, Anexo I (lista de emissões do agente fiduciário: Grua Investimentos S.A., 6ª emissão, série 1, R$ 1.000.000.000,00, 1.000.000 de ativos, vencimento 11/03/2034, CDI + 3,9% a.a. base 252). O VNE de R$ 1.000 é calculado como volume dividido pela quantidade. A escritura da 6ª emissão não está nos trechos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 7,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2028-03-13",
+     "2029-03-12",
+     "2030-03-11",
+     "2031-03-11",
+     "2032-03-11",
+     "2033-03-11",
+     "2034-03-13"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "AEGE16 (6ª emissão): nenhum vencimento antecipado, suspensão, RJ/RE ou novação nos trechos. O Anexo I indica status ATIVO e sem inadimplementos no período. AEGE17 (7ª emissão): nenhum evento do tipo nos trechos. A escritura da 7ª menciona o resgate ou pagamento antecipado de debêntures da 6ª emissão como possibilidade no cálculo do covenant, sem data nem confirmação de que ocorreu.",
+ "lacunas": "AEGE16: a escritura da 6ª emissão e seus aditamentos não estão nos trechos. O Documento 3 só altera a alienação fiduciária de ações (15% da Aegea Saneamento). Não foi possível determinar a data de emissão (a cláusula 6.3 da 7ª emissão cita 11/03/2024 como data-base de reajuste de valores, sem dizer que é a data de emissão), a periodicidade e as datas de juros, a amortização, a carência, os prêmios e a data de início da vigência da remuneração. O vencimento e a taxa vêm de uma lista de terceiros (agente fiduciário). O VNE é derivado. AEGE17: a Data de Início da Rentabilidade (cláusula 4.1.2) está truncada, então 'vigente_desde' é null. O quadro de juros foi recortado: as parcelas 14 a 17 foram omitidas, mas seguem a regra semestral regular. Na tabela de amortização, as colunas do cabeçalho estão embaralhadas. Os valores indicam 20% do VNU original por parcela, o que corresponde a 20%, 25%, 33,3333%, 50% e 100% do saldo remanescente. O prêmio de 0,50% a.a. de resgate antecipado e de amortização extraordinária facultativa é facultativo e não tem data fixa, por isso não foi listado em 'premios'. Os trechos não trazem aditamento da escritura nem ata de AGD da 7ª emissão, então não é possível confirmar que o cronograma segue o original. O cronograma também não reflete eventuais amortizações extraordinárias já realizadas.",
+ "meta": {
+  "emissora": "EQUIPAV SANEAMENTO S.A.",
+  "cnpj": "15385166000140",
+  "emissao": "6",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-11-05",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027642IPE051120240104560111-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1298607&numSequencia=823333&numVersao=1"
+   },
+   {
+    "data": "2026-05-11",
+    "tipo": "escritura",
+    "assunto": "1º (PRIMEIRO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ALIENAÇÃO FIDUCIÁRIA DE AÇÕES EM GARANTIA E OUTRAS AVENÇAS (AEGE17)",
+    "protocolo": "027642IPE020420250180802438-94",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519677&numSequencia=1044383&numVersao=1"
+   },
+   {
+    "data": "2026-05-11",
+    "tipo": "escritura",
+    "assunto": "2º (SEGUNDO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ALIENAÇÃO FIDUCIÁRIA DE AÇÕES SOB CONDIÇÃO SUSPENSIVA (AEGE16)",
+    "protocolo": "027642IPE230220260117103262-65",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519681&numSequencia=1044387&numVersao=1"
+   },
+   {
+    "data": "2026-05-11",
+    "tipo": "escritura",
+    "assunto": "2º (SEGUNDO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ALIENAÇÃO FIDUCIÁRIA DE AÇÕES SOB CONDIÇÃO SUSPENSIVA (AEGE17)",
+    "protocolo": "027642IPE230220260110818874-17",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519683&numSequencia=1044389&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 49302,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4256,
+   "output_tokens_details": {
+    "thinking_tokens": 2324
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "15385166000140_6-7"
+ }
+}

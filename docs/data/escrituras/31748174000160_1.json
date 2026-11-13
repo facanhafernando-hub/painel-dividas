@@ -1,0 +1,183 @@
+{
+ "series": [
+  {
+   "codigo": "ANET11",
+   "emissao": 1,
+   "serie": "UNI",
+   "data_emissao": "2021-03-15",
+   "vencimento": "2029-03-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 5.6006,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Sem mudança de taxa nos trechos. O VNU é atualizado pelo IPCA desde a Data de Início da Rentabilidade (Cl. 4.10.1), com Data de Aniversário no dia 15 de cada mês. Os juros de 5,6006% a.a. incidem sobre o Valor Nominal Atualizado (Cl. 4.11.1)."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2021-09-15",
+    "ultima_data": "2029-03-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2023-03-15",
+     "percentual": 7.69,
+     "base": "saldo"
+    },
+    {
+     "data": "2023-09-15",
+     "percentual": 8.33,
+     "base": "saldo"
+    },
+    {
+     "data": "2024-03-15",
+     "percentual": 9.09,
+     "base": "saldo"
+    },
+    {
+     "data": "2024-09-15",
+     "percentual": 10.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2025-03-15",
+     "percentual": 11.11,
+     "base": "saldo"
+    },
+    {
+     "data": "2025-09-15",
+     "percentual": 12.49,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-03-15",
+     "percentual": 14.28,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-09-15",
+     "percentual": 16.66,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-03-15",
+     "percentual": 19.98,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-09-15",
+     "percentual": 24.98,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-03-15",
+     "percentual": 33.29,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-09-15",
+     "percentual": 49.9,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 4 (3º Aditamento, Anexo A, versão consolidada da escritura), Cláusulas 4.1.1, 4.6.1, 4.7.1, 4.10, 4.11.1, 4.12.1 e 4.13.1 (tabela de amortização, coluna 4). Documentos 5 e 6 (propostas da AGD) repetem o mesmo cronograma.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 5,
+    "amort_doc": 5,
+    "datas_iguais": 5,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Emissão 1 (ANET11, ex-America Net, sucedida pela Vero por incorporação): não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem proposta de novação nos trechos. Há uma renegociação de cláusulas em curso, que a minuta indica ter sido submetida à AGD de 09/02/2026. Ela exclui a Cessão Fiduciária, passando a espécie para quirografária, e equaliza covenants, vencimento antecipado e obrigações com as demais emissões da Vero. Essa renegociação não altera o cronograma de pagamentos nos trechos disponíveis.",
+ "lacunas": "1) Os Documentos 1, 2 e 3 tratam de outras emissões da Vero, não de ANET11: a 1ª emissão da Vero (DI+2,30%, vencimento 2027-12-08), o prospecto da 2ª emissão (IPCA+, vencimento 2030-03-17) e o 1º aditamento da emissão de 2021. Foram ignorados no cronograma. 2) O Documento 4 é a minuta do 3º Aditamento, com a data da AGD entre colchetes ([9] de fevereiro de 2026) e entregue antes dessa data. Não há ata da AGD nos trechos, então a aprovação e a assinatura não estão confirmadas. A consolidação do Anexo A foi usada porque o cronograma é o mesmo da proposta. 3) A Data de Início da Rentabilidade e a Data da Primeira Integralização não aparecem nos trechos, por isso 'vigente_desde' ficou null. 4) A data da assembleia de 10/10/2023 (incorporação) é citada, mas não há ata nem alteração de cronograma nos trechos. 5) Base das amortizações: a tabela traz duas colunas. A coluna 4, de 'Percentual do Valor Nominal Atualizado a ser amortizado', é a usada para os pagamentos registrados na B3 e foi tratada como percentual do saldo. A coluna 3 (7,69% a cada parcela e 7,72% no vencimento, sobre o VNU) é só referencial. 6) Não há 1º e 2º aditamentos de ANET11 nos trechos, só a menção ao 3º. Não é possível confirmar se houve alterações intermediárias de cronograma, embora o 3º aditamento consolidado não mostre nenhuma. 7) Não consta o código/ticker da série na escritura. 'ANET11' foi mantido conforme a solicitação.",
+ "meta": {
+  "emissora": "VERO S.A.",
+  "cnpj": "31748174000160",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-11-30",
+    "tipo": "escritura",
+    "assunto": "Instrumento Particular de Escritura da 1ª Emissão de Debêntures Simples",
+    "protocolo": "026409IPE301120210104453011-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=921085&numSequencia=445819&numVersao=1"
+   },
+   {
+    "data": "2023-04-10",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026409IPE200320230104502609-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1084379&numSequencia=609108&numVersao=1"
+   },
+   {
+    "data": "2023-05-25",
+    "tipo": "escritura",
+    "assunto": "Vero - Aditamento Escritura de Emissão assinada",
+    "protocolo": "026409IPE301120210104507113-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1106503&numSequencia=631232&numVersao=1"
+   },
+   {
+    "data": "2026-01-19",
+    "tipo": "escritura",
+    "assunto": "3º (TERCEIRO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 1ª (PRIMEIRA) EMISSÃO",
+    "protocolo": "026409IPE190120260148560878-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468352&numSequencia=993058&numVersao=1"
+   },
+   {
+    "data": "2026-01-20",
+    "tipo": "proposta_agd",
+    "assunto": "PROPOSTA DA ADMINISTRAÇÃO PARA ASSEMBLEIA GERAL DE DEBENTURISTAS DA 1ª (PRIMEIRA) EMISSÃO",
+    "protocolo": "026409IPE090220260218182379-21",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468479&numSequencia=993185&numVersao=2"
+   },
+   {
+    "data": "2026-01-20",
+    "tipo": "proposta_agd",
+    "assunto": "PROPOSTA DA ADMINISTRAÇÃO PARA ASSEMBLEIA GERAL DE DEBENTURISTAS DA 1ª (PRIMEIRA) EMISSÃO",
+    "protocolo": "026409IPE090220260320983167-27",
+    "versao": "3",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468532&numSequencia=993238&numVersao=3"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 180302,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3283,
+   "output_tokens_details": {
+    "thinking_tokens": 1404
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "31748174000160_1"
+ }
+}

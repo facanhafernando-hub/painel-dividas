@@ -1,0 +1,172 @@
+{
+ "series": [
+  {
+   "codigo": "VBRR11",
+   "emissao": 1,
+   "serie": "UNI",
+   "data_emissao": "2022-06-15",
+   "vencimento": "2030-12-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 8.5914,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (Doc. 1) previa juros prefixados a definir em bookbuilding, limitados ao maior entre NTN-B 2028 + 2,20% a.a. e 7,35% a.a. O 1º Aditamento (Doc. 2, cláusula 2.3, bookbuilding de 2022-07-25) fixou 8,5914% a.a., base 252 du. O VNU é atualizado mensalmente pelo IPCA (cláusula 4.10, Doc. 1), e os juros incidem sobre o VNU Atualizado (fórmula da cláusula 4.11.1.2). Os juros correm desde a primeira Data de Integralização, cuja data não consta dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-06-15",
+    "ultima_data": "2030-12-15",
+    "datas_irregulares": [],
+    "carencia_ate": "2023-06-15"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2022-06-15",
+     "ate": "2022-12-15",
+     "observacao": "Os juros incorridos desde a primeira Data de Integralização até 2022-12-15 são capitalizados e incorporados ao VNU Atualizado em 2022-12-15 (cláusula 4.11.1.4). A data de início é a primeira Data de Integralização, que não consta dos trechos; foi usada a data de emissão como aproximação."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2027-06-15",
+     "percentual": 8.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-12-15",
+     "percentual": 8.6957,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-15",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-12-15",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-15",
+     "percentual": 24.1667,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-12-15",
+     "percentual": 31.8681,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-06-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-12-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 1 (Escritura, cláusulas 4.3.1, 4.8.1, 4.9.1, 4.10, 4.11.1.4); Doc. 2 (1º Aditamento, cláusulas 2.3 e 2.4, taxa de 8,5914%). Os Docs. 3 a 6 (propostas e atas de AGD de waiver de 2024) não alteram o cronograma nos trechos disponíveis.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 8,
+    "amort_doc": 8,
+    "datas_iguais": 8,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "Emissão 1 (VBRR11): não há vencimento antecipado declarado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. Em 2024 houve pedido de waiver para o índice Dívida Líquida/EBITDA do exercício de 2023 (cláusula 4.17.1.2, item (h)). A AGD de 1ª convocação (2024-03-19) não foi instalada, com 22,24% das debêntures presentes. A AGD de 2ª convocação (2024-03-28) trata das condições do waiver: aporte de capital de R$ 92.814.703,07 pela Fiadora até 2024-12-31, para elevar o capital de R$ 407.185.296,93 a R$ 500.000.000,00; waiver fee de 0,30% flat sobre o VNU Atualizado acrescido de juros; e acompanhamento trimestral do índice, cujo descumprimento gera vencimento antecipado não automático. O resultado da votação não aparece nos trechos da ata.",
+ "lacunas": "1) O VNU/VNE em reais não consta dos trechos (null). 2) A data da primeira Data de Integralização não consta, então o início exato da remuneração e da incorporação de juros é aproximado pela data de emissão (2022-06-15). 3) O resultado da deliberação da AGD de 2024-03-28 (aprovação ou não do waiver) não aparece, e o waiver fee não tem data de pagamento definida. 4) Não há aditamento ou ata posterior que altere datas, taxas ou percentuais, então o cronograma segue a escritura original com a taxa do 1º Aditamento. 5) Os percentuais de amortização estão expressos sobre o VNU Atualizado, tratado aqui como saldo atualizado. 6) A escritura consta como celebrada em 24/06/2022 (citada no Doc. 2) e entregue em 2022-06-27.",
+ "meta": {
+  "emissora": "VIA BRASIL BR 163 CONCESSIONARIA DE RODOVIAS S.A.",
+  "cnpj": "44067725000172",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-06-27",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "094480IPE240620220104473913-11",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=993412&numSequencia=518146&numVersao=1"
+   },
+   {
+    "data": "2022-07-27",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "094480IPE260720220104476911-66",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1000816&numSequencia=525550&numVersao=1"
+   },
+   {
+    "data": "2024-02-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração - Waiver",
+    "protocolo": "026913IPE190320240104534813-88",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1199341&numSequencia=724067&numVersao=1"
+   },
+   {
+    "data": "2024-03-21",
+    "tipo": "ata_agd",
+    "assunto": "Termo de Não Instalação",
+    "protocolo": "026913IPE190320240104537210-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1210472&numSequencia=735198&numVersao=1"
+   },
+   {
+    "data": "2024-03-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração - Waiver",
+    "protocolo": "026913IPE280320240104537713-01",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1212956&numSequencia=737682&numVersao=1"
+   },
+   {
+    "data": "2024-04-01",
+    "tipo": "ata_agd",
+    "assunto": "ATA da AGD - Waiver",
+    "protocolo": "026913IPE280320240104538311-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1216378&numSequencia=741104&numVersao=1"
+   },
+   {
+    "data": "2026-01-22",
+    "tipo": "comunicado",
+    "assunto": "Repactuação - TCU",
+    "protocolo": "026913IPE220120260142019930-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1469192&numSequencia=993898&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 37092,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2836,
+   "output_tokens_details": {
+    "thinking_tokens": 1033
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "44067725000172_1"
+ }
+}

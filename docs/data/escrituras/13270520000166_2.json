@@ -1,0 +1,236 @@
+{
+ "series": [
+  {
+   "codigo": "KRSA12",
+   "emissao": 2,
+   "serie": "1",
+   "data_emissao": "2024-10-30",
+   "vencimento": "2030-10-30",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.8,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + spread de 2,80% a.a. (base 252 du), contados da Primeira Data de Integralização (data não informada nos trechos). Não houve alteração aprovada. A proposta de troca para TR + 1,00% a.a. a partir de 27/04/2026, com vencimento em 2051 e amortização anual, constava da proposta da administração (documento 7). As AGDs de 13/08/2026 e 08/09/2026 foram suspensas sem deliberação, então a proposta não está vigente."
+   },
+   "juros": {
+    "periodicidade_meses": 1,
+    "primeira_data": "2025-11-30",
+    "ultima_data": "2030-10-30",
+    "datas_irregulares": [
+     "2026-02-28",
+     "2027-02-28",
+     "2028-02-28",
+     "2029-02-28",
+     "2030-02-28",
+     "2026-04-29"
+    ],
+    "carencia_ate": "2025-10-30"
+   },
+   "incorporacao_juros": [
+    {
+     "de": null,
+     "ate": "2025-10-30",
+     "observacao": "A remuneração apurada entre a Primeira Data de Integralização e o 12º mês contado da Data de Emissão foi capitalizada mensalmente e incorporada ao VNU devido em 2025-10-30 (cláusula 4.12.2, conforme 1º Aditamento). A data de início não consta dos trechos."
+    },
+    {
+     "de": "2026-03-30",
+     "ate": "2026-04-29",
+     "observacao": "A AGD aprovada em 26/03/2026 prorrogou por 30 dias corridos, a contar de 30/03/2026, o pagamento da remuneração devida em 30/03/2026, que foi incorporada ao saldo devedor. As parcelas de abril e maio de 2026 permanecem nas datas originais. A data 2026-04-29 em datas_irregulares é o fim desse prazo de 30 dias, calculado por mim, não uma data expressa no documento."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2028-01-30",
+     "percentual": 8.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-04-30",
+     "percentual": 9.0909,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-07-30",
+     "percentual": 10.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-10-30",
+     "percentual": 11.1111,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-01-30",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-04-30",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-07-30",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-10-30",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-30",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-04-30",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-30",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-10-30",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Escritura consolidada anexa ao 1º Aditamento (documento 2, 06/12/2024): cláusulas 4.6.1, 4.11.1, 4.12.1, 4.12.2 e 4.13.1, Anexo I (remuneração) e Anexo II (amortização). Ajuste da parcela de 30/03/2026 conforme comunicado de 26/03/2026 (documento 5). O ISIN BRKRSADBS028 é da primeira série (documento 3).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 12,
+    "amort_doc": 12,
+    "datas_iguais": 12,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "2ª emissão (KRSA12/KRSA22): a Emissora propôs plano de recuperação extrajudicial em 29/04/2026 (processo 4073175-42.2026.8.26.0100). As AGDs de 13/08/2026 e 08/09/2026 registram que o plano configurou Evento de Vencimento Antecipado Automático (cláusula 6.1.1 'iii', na numeração da ata). Foi deferido o processamento em 04/05/2026, com suspensão por 180 dias das execuções contra credores abrangidos. A AGD que trataria da sustação do vencimento antecipado foi suspensa sem deliberação e reaberta para 21/01/2027. A proposta de repactuação da Primeira Série (documento 7) não foi aprovada nos trechos disponíveis. Em 26/03/2026 a AGD aprovou a prorrogação em 30 dias da remuneração de 30/03/2026.",
+ "lacunas": "1) A Primeira Data de Integralização, que é o início da rentabilidade, não consta dos trechos; os documentos mostram só o bookbuilding em dez/2024. 2) O Anexo I (remuneração) está truncado nos trechos (só aparecem as parcelas 1-3, 29-33 e 59-60). Pelo 1º Aditamento, as datas de fevereiro passam a ser dia 28, e assumi o dia 30 nos demais meses, o que não está confirmado em todas as linhas. 3) As datas de amortização e de pagamento que caem em dias não úteis seguem a regra de prorrogação para o dia útil seguinte (cláusula 4.15.1). 4) Prêmio de 1% flat sobre o valor devido em resgate antecipado facultativo ou amortização extraordinária facultativa da Primeira Série, sem data fixa; por isso 'premios' ficou vazio. 5) A amortização extraordinária obrigatória por venda de ativos é eventual e não tem cronograma. 6) Não é possível confirmar se a Primeira Série foi incluída como crédito abrangido no plano de recuperação extrajudicial: o documento 6 só a cita nos considerandos, e o Anexo II não está nos trechos. 7) O resultado final das deliberações das AGDs de 2027 não está disponível. 8) O pagamento efetivo da parcela de 30/03/2026 e das parcelas de abril a julho de 2026 não é confirmado nos documentos.",
+ "meta": {
+  "emissora": "KORA SAUDE PARTICIPACOES S.A.",
+  "cnpj": "13270520000166",
+  "emissao": "2",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-03",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "025879IPE251120240104562914-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1310909&numSequencia=835635&numVersao=1"
+   },
+   {
+    "data": "2024-12-06",
+    "tipo": "escritura",
+    "assunto": "1º ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025879IPE061220240104563212-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1312433&numSequencia=837159&numVersao=1"
+   },
+   {
+    "data": "2024-12-06",
+    "tipo": "comunicado",
+    "assunto": "COMUNICADO AO MERCADO REFERENTE AO RESULTADO DO PROCEDIMENTO DE BOOKBUILDING NO ÂMBITO DA OFERTA PÚBLICA DE DISTRIBUIÇÃO, DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025879IPE061220240104563212-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1312434&numSequencia=837160&numVersao=1"
+   },
+   {
+    "data": "2024-12-12",
+    "tipo": "comunicado",
+    "assunto": "Conclusão do Reperfilamento",
+    "protocolo": "025879IPE121220240104563812-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1315150&numSequencia=839876&numVersao=1"
+   },
+   {
+    "data": "2026-03-26",
+    "tipo": "comunicado",
+    "assunto": "Aprovação em AGD da prorrogação do prazo para o pagamento da parcela da Remuneração das Debêntures da Primeira e Segunda Séries da Segunda Emissão pelo prazo de 30 dias corridos",
+    "protocolo": "025879IPE260320260195869120-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1496126&numSequencia=1020832&numVersao=1"
+   },
+   {
+    "data": "2026-05-05",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial KORA SAÚDE",
+    "protocolo": "025879IPE290420260153963139-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516342&numSequencia=1041048&numVersao=1"
+   },
+   {
+    "data": "2026-07-17",
+    "tipo": "proposta_agd",
+    "assunto": "Aditamento escritura",
+    "protocolo": "025879IPE270720260165886506-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1546111&numSequencia=1070817&numVersao=1"
+   },
+   {
+    "data": "2026-07-27",
+    "tipo": "ata_agd",
+    "assunto": "Exchange debêntures",
+    "protocolo": "025879IPE270720260163016538-76",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548554&numSequencia=1073260&numVersao=1"
+   },
+   {
+    "data": "2026-07-28",
+    "tipo": "ata_agd",
+    "assunto": "Exchange debêntures",
+    "protocolo": "025879IPE270720260230886330-20",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548682&numSequencia=1073388&numVersao=2"
+   },
+   {
+    "data": "2026-08-14",
+    "tipo": "ata_agd",
+    "assunto": "AGD 2ª emissão Kora",
+    "protocolo": "025879IPE130820260189504749-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557758&numSequencia=1082464&numVersao=1"
+   },
+   {
+    "data": "2026-09-09",
+    "tipo": "ata_agd",
+    "assunto": "AGD da 2ª Emissão de Debêntures",
+    "protocolo": "025879IPE080920260181991909-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566187&numSequencia=1090893&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 111505,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4187,
+   "output_tokens_details": {
+    "thinking_tokens": 1869
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "13270520000166_2"
+ }
+}

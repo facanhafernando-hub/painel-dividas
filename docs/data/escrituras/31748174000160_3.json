@@ -1,0 +1,170 @@
+{
+ "series": [
+  {
+   "codigo": "VERO13",
+   "emissao": 3,
+   "serie": "1",
+   "data_emissao": "2024-03-15",
+   "vencimento": "2031-03-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "O VNU é atualizado pelo IPCA (base 252 du). Os juros são 'limitados ao maior entre' (i) a taxa NTN-B 2030 (Taxa IPCA+/2030) apurada no bookbuilding + spread de 3,05% a.a. e (ii) 8,25% a.a., base 252 du. A taxa final do bookbuilding não aparece nos trechos: o modelo de aditamento do Anexo II traz '[●]', e a versão consolidada de 2024-03-19 ainda traz a redação com o piso. Por isso 'taxa' ficou null."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-09-15",
+    "ultima_data": "2031-03-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2029-03-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-03-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-03-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 4 (1º Aditamento, entregue em 2024-03-19), Anexo B (escritura consolidada): Cláusulas 7.12.1, 7.13.1, 7.15.1, 7.16.1 e 7.17.1. Texto idêntico no Doc. 3 (escritura de 2024-02-26). As parcelas incidem sobre o saldo do Valor Nominal Unitário Atualizado: 33,3333%, 50% e 100%, equivalentes a cerca de 1/3 do VNU Atualizado cada.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  },
+  {
+   "codigo": "VERO23",
+   "emissao": 3,
+   "serie": "2",
+   "data_emissao": "2024-03-15",
+   "vencimento": "2031-03-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "PRE",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "O VNU não é atualizado monetariamente. Os juros são 'limitados ao maior entre' (i) a taxa DI da curva Pré x DI da B3 (vértice 02/01/2029), apurada no bookbuilding, + spread de 3,00% a.a. e (ii) 13,00% a.a., base 252 du. A taxa final do bookbuilding não aparece nos trechos, só o modelo com '[●]'. Por isso 'taxa' ficou null."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-09-15",
+    "ultima_data": "2031-03-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2029-03-15",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-03-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-03-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc. 4 (1º Aditamento, 2024-03-19): Cláusulas 7.15.2 e 7.17.2 reescritas e Anexo B consolidado (Cláusulas 7.12.1, 7.14, 7.16.3 e 7.17.2). O Doc. 4 corrige o Doc. 3, cuja Cláusula 7.17.2 dizia 'primeiro pagamento em 15/03/2024' enquanto a tabela trazia 15/09/2024. Prevalece 15/09/2024.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "3ª emissão (VERO13 e VERO23): os trechos não registram vencimento antecipado, suspensão de pagamentos, RJ/RE nem proposta de novação. A cláusula de vencimento antecipado e os índices financeiros são apenas contratuais. O 1º Aditamento de 2024-03-19 é um ajuste de escritura (valor total da emissão, bookbuilding e cronograma da 2ª série).",
+ "lacunas": "1) O VNU (vne) não está nos trechos; só consta o valor total inicial da emissão, de R$ 600.000.000,00. 2) A Data de Emissão (Cláusula 7.10.1) não está nos trechos. Deduzi 2024-03-15 por ser o vencimento (2031-03-15) menos 7 anos, prazo informado na Cláusula 7.12.1. 3) As taxas finais do bookbuilding das duas séries não estão nos trechos; só constam os limites (spread/piso). 4) A Data de Início da Rentabilidade (primeira integralização) não aparece. 5) O valor final da emissão e a quantidade por série não aparecem. 6) Os Documentos 1 e 2 tratam de outras emissões da Vero (2ª emissão, IPCA+, vencimento 2030-03-17; 1ª emissão, CDI+2,30%, vencimento 2027-12-08) e não foram usados, por não pertencerem às séries pedidas. 7) Depois de 2024-03-19 não há aditamento, ata de AGD ou plano de recuperação. O cronograma refletido é o da versão consolidada do 1º Aditamento.",
+ "meta": {
+  "emissora": "VERO S.A.",
+  "cnpj": "31748174000160",
+  "emissao": "3",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-03-21",
+    "tipo": "escritura",
+    "assunto": "Debs Vero - Escritura de Emissão das Debêntures (Assinada)(103336243.1)",
+    "protocolo": "026409IPE170320230104500600-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1075173&numSequencia=599903&numVersao=1"
+   },
+   {
+    "data": "2023-05-25",
+    "tipo": "escritura",
+    "assunto": "Vero - Aditamento Escritura de Emissão assinada",
+    "protocolo": "026409IPE301120210104507113-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1106503&numSequencia=631232&numVersao=1"
+   },
+   {
+    "data": "2024-02-26",
+    "tipo": "escritura",
+    "assunto": "3ª Emissão 12.431 - Escritura de Emissão (MF 23.02.2024 - v.assinatura)",
+    "protocolo": "026409IPE230220240104534805-96",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1198944&numSequencia=723670&numVersao=1"
+   },
+   {
+    "data": "2024-03-19",
+    "tipo": "escritura",
+    "assunto": "Vero - 3ª Emissão 12.431 - 1º Aditamento Escritura de Emissão",
+    "protocolo": "026409IPE140320240104537010-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1209273&numSequencia=733999&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 131148,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4185,
+   "output_tokens_details": {
+    "thinking_tokens": 2105
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "31748174000160_3"
+ }
+}

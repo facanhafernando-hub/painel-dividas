@@ -1,0 +1,311 @@
+{
+ "series": [
+  {
+   "codigo": "ONCO19",
+   "emissao": 9,
+   "serie": "001",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Os trechos não trazem a remuneração da 9ª emissão. O campo 'indexador' foi preenchido apenas por exigência do formato, sem fundamento nos documentos."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Nenhum documento da 9ª emissão traz cronograma. Os documentos 5, 9, 12 e 14 citam apenas a escritura de 2022-10-27, aditada em 2022-11-23 e 2022-11-30, e propostas e atas de AGD sem termos definidos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-11-25"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  },
+  {
+   "codigo": "ONCO29",
+   "emissao": 9,
+   "serie": "002",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": "outro",
+    "taxa": null,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Os trechos não trazem a remuneração da 9ª emissão. O campo 'indexador' foi preenchido apenas por exigência do formato, sem fundamento nos documentos."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Nenhum documento da 9ª emissão traz cronograma. Os documentos 5, 9, 12 e 14 citam apenas a escritura de 2022-10-27, aditada em 2022-11-23 e 2022-11-30, e propostas e atas de AGD sem termos definidos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2028-11-27",
+     "2029-11-26"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "11ª emissão (ONCOA1): o Agente Fiduciário notificou o vencimento antecipado automático da emissão em 14/04/2026. A ata de 2026-04-20 registra o descumprimento do índice financeiro (Dívida Líquida/EBITDA ≤ 3,5), com demonstrações financeiras publicadas em 09/04/2026. Em 16/04/2026 houve decisão judicial em cautelar antecedente à recuperação judicial (processo nº 4061560-55.2026.8.26.0100, 3ª Vara de Falências e Recuperações Judiciais de São Paulo). A cautelar suspende liminarmente os efeitos das cláusulas de vencimento antecipado e a exigibilidade das dívidas relacionadas. A AGD de 15/05/2026 não foi instalada. A AGD de 12/06/2026 foi instalada em 2ª convocação e suspensa para reabertura. A AGD de 06/07/2026 trata da reestruturação (vencimento, remuneração, datas de pagamento, amortização, eventos de inadimplemento), possivelmente por plano de recuperação extrajudicial. Os trechos não mostram o resultado nem os novos termos. As propostas preveem sustação dos efeitos do vencimento antecipado até a implementação das alterações. Portanto, o cronograma contratual acima não reflete a situação atual: a dívida está declarada vencida, com efeitos suspensos judicialmente, e em reestruturação. 12ª emissão (ONCOA2): proposta de AGD de 10/03/2026 para sustar o vencimento antecipado automático decorrente do eventual não pagamento dos juros de 16/03/2026 e adiar esse pagamento para 01/06/2026, com standstill até 31/05/2026 e sem encargos moratórios. Não há ata do resultado, nem confirmação de pagamento ou de inadimplemento. Os trechos não confirmam se a 12ª emissão está entre as dívidas abrangidas pela cautelar. 9ª emissão (ONCO19 e ONCO29): em 26/03/2026 houve proposta de waiver do índice financeiro Dívida Líquida/EBITDA. Há AGD de 06/07/2026 sobre reestruturação, com possível plano de recuperação extrajudicial, e propostas de sustação do vencimento antecipado, sem resultado nos trechos. A cautelar de abril/2026 é descrita nas propostas de junho de 2026 (documentos 8, 9, 11 e 12) para essa emissão também, mas sem confirmação do alcance.",
+ "lacunas": "9ª emissão (ONCO19/ONCO29): nenhum documento traz a escritura nem os aditamentos de 2022, então data de emissão, vencimentos, VNE, remuneração, juros e amortizações ficam em branco. Nos documentos 1, 2 e 3 aparece uma tabela de outra emissão do grupo com séries de 630.000 e 120.000 debêntures, vencimentos em 25/11/2027 e 25/11/2029, DI+1,62% e DI+1,80%. O cabeçalho da tabela foi cortado, então não é possível confirmar que se trata da 9ª emissão e esses dados não foram usados. 11ª emissão: o trecho da cláusula 6.15.2 da escritura consolidada está vazio, e a Data de Início da Rentabilidade (primeira integralização) não consta. Também não há confirmação de pagamento dos juros de 2025-10-10, 2026-04-10 ou de qualquer outra data. As alterações aprovadas ou propostas na AGD de 2026-07-08 (novo vencimento, remuneração, datas de juros e amortização) não constam dos trechos: a ata não mostra o resultado e a proposta da administração com os termos seria apresentada depois. 12ª emissão: não há ata de aprovação do adiamento dos juros de 2026-03-16 para 2026-06-01, nem prova de pagamento. Se aprovado, a data de juros e o período de capitalização mudariam, sem alteração no cronograma de amortização. O resultado dessa AGD, o pagamento ou a inadimplência após 2026-03-16 e a Data de Início da Rentabilidade não constam. Os prêmios das cláusulas de amortização e resgate facultativos (0,70% e 0,35% na 12ª; fórmula DI na 11ª) são opcionais e não estão no cronograma.",
+ "meta": {
+  "emissora": "ONCOCLINICAS DO BRASIL SERVICOS MEDICOS  S.A.",
+  "cnpj": "12104241000402",
+  "emissao": "9",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-12-22",
+    "tipo": "escritura",
+    "assunto": "1ª escritura de debêntures simples, não conversíveis em ações",
+    "protocolo": "026123IPE161220210104455205-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=928070&numSequencia=452804&numVersao=1"
+   },
+   {
+    "data": "2021-12-29",
+    "tipo": "escritura",
+    "assunto": "1ª escritura de debêntures simples, não conversíveis em ações - Multihemo",
+    "protocolo": "026123IPE161220210104455911-11",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=929524&numSequencia=454258&numVersao=1"
+   },
+   {
+    "data": "2022-12-07",
+    "tipo": "escritura",
+    "assunto": "9ª Emissão de Debêntures",
+    "protocolo": "026123IPE271020220104490211-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039111&numSequencia=563841&numVersao=1"
+   },
+   {
+    "data": "2022-12-07",
+    "tipo": "escritura",
+    "assunto": "1º aditamento da 9ª Emissão de Debêntures",
+    "protocolo": "026123IPE231120220104490211-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039114&numSequencia=563844&numVersao=1"
+   },
+   {
+    "data": "2022-12-07",
+    "tipo": "escritura",
+    "assunto": "2º aditamento da 9ª Emissão de Debêntures",
+    "protocolo": "026123IPE301120220104490211-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039118&numSequencia=563848&numVersao=1"
+   },
+   {
+    "data": "2024-03-15",
+    "tipo": "escritura",
+    "assunto": "11ª Emissão de Debêntures",
+    "protocolo": "026123IPE150320240104536611-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1208191&numSequencia=732917&numVersao=1"
+   },
+   {
+    "data": "2024-04-09",
+    "tipo": "escritura",
+    "assunto": "1º aditamento da 11ª emissão de debêntures",
+    "protocolo": "026123IPE090420240104539113-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1220136&numSequencia=744862&numVersao=1"
+   },
+   {
+    "data": "2024-09-13",
+    "tipo": "escritura",
+    "assunto": "12ª Emissão de Debêntures",
+    "protocolo": "026123IPE090920240104554814-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1282310&numSequencia=807036&numVersao=1"
+   },
+   {
+    "data": "2026-03-10",
+    "tipo": "proposta_agd",
+    "assunto": "Pedido de prorrogação de pagamentos - 12ª emissão",
+    "protocolo": "026123IPE310320260175648669-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1487764&numSequencia=1012470&numVersao=1"
+   },
+   {
+    "data": "2026-03-26",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a concessão de renúncia prévia para a eventual não observância, pela  Companhia, do Índice financeiro decorrente do quociente da divisão da Dívida  Líquida pelo EBITDA",
+    "protocolo": "026123IPE020420260113646041-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1495974&numSequencia=1020680&numVersao=1"
+   },
+   {
+    "data": "2026-04-20",
+    "tipo": "ata_agd",
+    "assunto": "Waiver financeiro",
+    "protocolo": "026123IPE100420260130395018-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1506476&numSequencia=1031182&numVersao=1"
+   },
+   {
+    "data": "2026-05-25",
+    "tipo": "ata_agd",
+    "assunto": "Contratação de assessor legal - 11ª emissão",
+    "protocolo": "026123IPE150520260194469587-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526603&numSequencia=1051309&numVersao=1"
+   },
+   {
+    "data": "2026-05-25",
+    "tipo": "ata_agd",
+    "assunto": "Contratação assessor legal - 9ª emissão",
+    "protocolo": "026123IPE130520260134564863-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526608&numSequencia=1051314&numVersao=1"
+   },
+   {
+    "data": "2026-05-25",
+    "tipo": "ata_agd",
+    "assunto": "Contratação de assessor legal - 9ª emissão",
+    "protocolo": "026123IPE150520260144502709-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526646&numSequencia=1051352&numVersao=1"
+   },
+   {
+    "data": "2026-06-13",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da dívida da Cia - 11ª emissão",
+    "protocolo": "026123IPE060720260101659886-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534345&numSequencia=1059051&numVersao=1"
+   },
+   {
+    "data": "2026-06-13",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da dívida da Cia - 9ª emissão",
+    "protocolo": "026123IPE060720260188746362-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534343&numSequencia=1059049&numVersao=1"
+   },
+   {
+    "data": "2026-06-16",
+    "tipo": "ata_agd",
+    "assunto": "Medida cautelar - 11ª emissão",
+    "protocolo": "026123IPE120620260155632208-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1535167&numSequencia=1059873&numVersao=1"
+   },
+   {
+    "data": "2026-06-16",
+    "tipo": "ata_agd",
+    "assunto": "Medida Cautelar - 12ª emissão",
+    "protocolo": "026123IPE150620260165126835-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1535168&numSequencia=1059874&numVersao=1"
+   },
+   {
+    "data": "2026-06-24",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da dívida da Cia - 11ª emissão",
+    "protocolo": "026123IPE060720260223731802-96",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538161&numSequencia=1062867&numVersao=2"
+   },
+   {
+    "data": "2026-06-24",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da dívida da Cia - 9ª emissão",
+    "protocolo": "026123IPE060720260268493106-24",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538160&numSequencia=1062866&numVersao=2"
+   },
+   {
+    "data": "2026-07-08",
+    "tipo": "ata_agd",
+    "assunto": "Alterações das Características das Debêntures",
+    "protocolo": "026123IPE060720260149786920-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543086&numSequencia=1067792&numVersao=1"
+   },
+   {
+    "data": "2026-07-08",
+    "tipo": "ata_agd",
+    "assunto": "Alterações das Características das Debêntures",
+    "protocolo": "026123IPE060720260116190096-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543088&numSequencia=1067794&numVersao=1"
+   },
+   {
+    "data": "2026-10-29",
+    "tipo": "comunicado",
+    "assunto": "Atualização do Plano de Recuperação Extrajudicial",
+    "protocolo": "026123IPE291020260197453981-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581436&numSequencia=1106142&numVersao=1"
+   },
+   {
+    "data": "2026-10-30",
+    "tipo": "comunicado",
+    "assunto": "Atualização de Adesão ao plano de Recuperação Extrajudicial",
+    "protocolo": "026123IPE301020260172347721-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582517&numSequencia=1107223&numVersao=1"
+   },
+   {
+    "data": "2026-11-04",
+    "tipo": "comunicado",
+    "assunto": "Atualização adesão - Plano de Recuperação Extrajudicial",
+    "protocolo": "026123IPE041120260105093356-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584307&numSequencia=1109013&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 133269,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5698,
+   "output_tokens_details": {
+    "thinking_tokens": 2034
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "12104241000402_11-12-9"
+ }
+}

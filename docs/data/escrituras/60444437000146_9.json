@@ -1,0 +1,208 @@
+{
+ "series": [
+  {
+   "codigo": "LSVE39",
+   "emissao": 9,
+   "serie": "2",
+   "data_emissao": "2013-06-15",
+   "vencimento": "2037-11-13",
+   "vne": 102.64555006,
+   "remuneracao": {
+    "indexador": "IPCA+",
+    "taxa": 3.0,
+    "base": "252 du",
+    "vigente_desde": "2024-11-13",
+    "historico": "Remuneração repactuada na Data de Repactuação (2024-11-13) conforme o Plano de Recuperação Judicial: IPCA (atualização monetária mensal sobre o VNU) + 3% a.a. sobre o VNU Atualizado. As condições anteriores à repactuação não constam dos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-05-13",
+    "ultima_data": "2037-11-13",
+    "datas_irregulares": [],
+    "carencia_ate": "2026-05-13"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2024-11-13",
+     "ate": "2025-11-13",
+     "observacao": "Cláusula 4.13.2.3: a Remuneração devida entre a Data de Repactuação e 13/11/2025 é incorporada ao VNU Atualizado em 13/11/2025, quando se inicia o Período de Capitalização seguinte. Não há pagamento de juros antes de 2026-05-13; os juros do período 2025-11-13 a 2026-05-13 são pagos em 2026-05-13."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2028-05-13",
+     "percentual": 2.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-13",
+     "percentual": 2.0408,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-05-13",
+     "percentual": 2.0833,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-11-13",
+     "percentual": 2.1277,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-05-13",
+     "percentual": 2.1739,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-11-13",
+     "percentual": 2.2222,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-05-13",
+     "percentual": 4.5455,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-11-13",
+     "percentual": 4.7619,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-05-13",
+     "percentual": 5.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-11-13",
+     "percentual": 5.2632,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-05-13",
+     "percentual": 5.5556,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-11-13",
+     "percentual": 5.8824,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-05-13",
+     "percentual": 12.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-11-13",
+     "percentual": 14.2857,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-05-13",
+     "percentual": 16.6667,
+     "base": "saldo"
+    },
+    {
+     "data": "2035-11-13",
+     "percentual": 20.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-05-13",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2036-11-13",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-05-13",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2037-11-13",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 3 – Sexto Aditamento à Escritura da 9ª Emissão (repactuação conforme Plano de Recuperação Judicial), Anexo A (Escritura consolidada): cláusulas 4.6.1, 4.8.1, 4.12.1, 4.13.2, 4.13.2.3, 4.14.2 e 4.15.1 (tabela de amortização da Segunda Série).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 20,
+    "amort_doc": 20,
+    "datas_iguais": 20,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "9ª emissão: a emissora (Light SESA) está em Recuperação Judicial. O Sexto Aditamento, com a repactuação aprovada no Plano de Recuperação Judicial, reestruturou a emissão em 3 séries a partir da Data de Repactuação (2024-11-13). Para a Segunda Série não há vencimento antecipado declarado nos trechos. Os documentos 1, 2 e 4 tratam de outras emissões da Light (24ª emissão, debênture vinculada a CRI e Notas Comerciais) e não alteram o cronograma de LSVE39.",
+ "lacunas": "1) Os trechos não dizem qual série repactuada corresponde ao código LSVE39 (série 002). Presumi a Segunda Série (vencimento 2037-11-13, IPCA+3%) por ser a segunda da emissão original; a presunção deve ser confirmada. 2) O campo vne traz o VNU de 102,64555006 na Data de Repactuação (cláusula 4.8.1), pois o VNU original de 2013 não consta dos trechos. 3) As tabelas de pagamento de juros aparecem abreviadas, com '[...]' no meio, mas a regra semestral (dias 13 de maio e novembro, de 2026-05-13 a 2037-11-13) é explícita. 4) O Anexo I do aditamento, com o cronograma completo, não foi trazido. 5) A Amortização Extraordinária Obrigatória (cash sweep) não tem datas fixas. Ela depende da apuração de Excedente de Caixa, com primeira medição em 30 de setembro após 42 meses da Data de Repactuação (estimativa: 2027-09-30), e é paga no 5º dia do mês seguinte à divulgação das demonstrações financeiras. Na prioridade, a Primeira Série é paga antes da Segunda. Há também amortização por vendas de ativos e êxitos judiciais (25% acima de R$ 50 mi/ano) e possibilidade de resgate ou amortização facultativa, sem datas definidas. 6) Condições anteriores à repactuação (remuneração e cronograma originais de 2013) não constam dos trechos. 7) Não há ata de AGD nem texto do Plano de Recuperação Judicial posterior ao Sexto Aditamento, então podem existir alterações posteriores não captadas.",
+ "meta": {
+  "emissora": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "cnpj": "60444437000146",
+  "emissao": "9",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-03-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE250320220104464908-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=960025&numSequencia=484759&numVersao=1"
+   },
+   {
+    "data": "2022-12-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE301120220104490311-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039491&numSequencia=564221&numVersao=1"
+   },
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "PARA DISTRIBUIÇÃO PÚBLICA COM ESFORÇOS RESTRITOS||SEXTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 9ª EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE QUIROGRAFÁRIA, COM GARANTIA FIDEJUSSÓRIA ADICIONAL, EM DUAS SÉRIES",
+    "protocolo": "008036IPE281120240104563511-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313125&numSequencia=837851&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE240920260184023869-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571394&numSequencia=1096100&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 128885,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3786,
+   "output_tokens_details": {
+    "thinking_tokens": 1535
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "60444437000146_9"
+ }
+}

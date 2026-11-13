@@ -1,0 +1,188 @@
+{
+ "series": [
+  {
+   "codigo": "AERI11",
+   "emissao": 1,
+   "serie": "UNI",
+   "data_emissao": "2021-01-15",
+   "vencimento": "2030-03-30",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 3.0,
+    "base": "252 du",
+    "vigente_desde": "2026-01-08",
+    "historico": "100% da Taxa DI + sobretaxa. Escritura original: 2,90% a.a. 1º Aditamento (AGD de 2025-03-28): 2,90% até 2025-03-28; 2,00% de 2025-03-29 a 2026-01-07; 3,00% de 2026-01-08 até o vencimento."
+   },
+   "juros": {
+    "periodicidade_meses": 3,
+    "primeira_data": "2027-03-31",
+    "ultima_data": "2030-03-30",
+    "datas_irregulares": [],
+    "carencia_ate": "2026-12-31"
+   },
+   "incorporacao_juros": [
+    {
+     "de": "2025-03-28",
+     "ate": "2026-12-31",
+     "observacao": "Período de Incorporação (cl. 4.10.1). Os juros de 2025 e 2026 são incorporados ao saldo do VNU em 2025-03-28, em 2026-01-07 e nas respectivas datas de pagamento. Eles são pagos junto com o principal, conforme o cronograma da cl. 4.8.1. A partir de 2027-01-01 os juros são pagos em dinheiro, e o primeiro pagamento em dinheiro é em 2027-03-31."
+    }
+   ],
+   "amortizacoes": [
+    {
+     "data": "2027-12-30",
+     "percentual": 8.33,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-03-30",
+     "percentual": 9.09,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-06-30",
+     "percentual": 10.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-09-30",
+     "percentual": 11.11,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-03-30",
+     "percentual": 14.29,
+     "base": "saldo"
+    },
+    {
+     "data": "2029-06-30",
+     "percentual": 16.67,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-03-30",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-01-01",
+     "descricao": "Resgate Antecipado Facultativo II / Amortização Extraordinária II (facultativos) de 2026-01-01 a 2027-12-31: valor de 102% do saldo devedor do VNU, mais juros. O prêmio é adicional se ocorrer nos 12 meses anteriores a uma Venda de Controle. O Resgate Antecipado Facultativo I (sem prêmio) valia até 2025-12-31."
+    },
+    {
+     "data": "2027-01-01",
+     "descricao": "Resgate Antecipado Obrigatório por Venda de Controle: Fator Multiplicador de 100% se a venda ocorrer até 2026-12-31 e de 105% (saldo + juros) se ocorrer a partir de 2027-01-01. O prêmio pode ser dispensado por AGD (50% + 1 dos presentes)."
+    }
+   ],
+   "fonte": "1º Aditamento à Escritura da 1ª Emissão (documento 5, celebrado em 2025-03-28): cl. 4.7.1 (vencimento), 4.8.1 e tabela (amortização), 4.9.2 (spread), 4.10.1 (juros e incorporação), 4.11, 4.12, 4.20 e 4.22 (resgates e cash sweep). Prevalece sobre a escritura original (documento 1).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 10,
+    "amort_doc": 7,
+    "datas_iguais": 7,
+    "so_snd": [
+     "2029-01-02",
+     "2029-10-01",
+     "2029-12-31"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "1ª e 2ª emissões: o comunicado de 2026-11-04 informa pedido de recuperação extrajudicial (RE) da Emissora. O Plano tem adesão de 42,18% dos créditos abrangidos, acima de 1/3 (art. 163, §7º, LRF). A Companhia se comprometeu a obter mais da metade dos créditos em 90 dias do ajuizamento. O Plano abrange créditos quirografários não correntes, e desde o ajuizamento vale a suspensão do art. 6º da LRF para os créditos abrangidos (art. 163, §8º). O Plano prevê possível repactuação das condições de pagamento, captação de novos recursos e alteração de garantias, mas os trechos não trazem as condições concretas. Os trechos não mostram se as debêntures AERI11 e AERI12 estão formalmente incluídas. Nas escrituras, o pedido de RE pela Emissora é evento de vencimento antecipado automático (1ª emissão: cl. 4.14.1(i) e 4.14.3; 2ª emissão: cl. 4.15.2 I). Os trechos não trazem declaração de vencimento antecipado nem deliberação de AGD sobre o tema. O cronograma abaixo é o contratual dos últimos aditamentos (AGD de 2025-03-28), mas pode ser suspenso ou alterado pela RE.",
+ "lacunas": "1) O texto do Plano de RE não foi fornecido, então não há cronograma novado e não se sabe se as debêntures estão incluídas, nem a data do ajuizamento. 2) A tabela de amortização foi truncada pelo recorte. Na AERI11 faltam as linhas de 2028-12-30, 2029-09-30 e 2029-12-30. Na AERI12 faltam 2028-12-30 e 2029-09-30. O padrão trimestral consecutivo e os percentuais referenciais de 8,33% sugerem 12,50%, 20,00% e 25,00% sobre o saldo nessas datas, mas isso não está escrito e não foi incluído. 3) Base dos percentuais: usada a 3ª coluna (% do saldo do VNU, registrada na B3). A coluna referencial indica 8,33% por parcela e 25% no vencimento. 4) A AERI11 pagou a 1ª parcela de amortização em 2024-01-15 (33,3333% na escritura original); por já ter sido paga, ela não consta do cronograma vigente. Não há dados sobre pagamentos anteriores de juros ou amortizações em nenhuma série (por exemplo, juros semestrais da AERI11 até jan/2025 e anuais da AERI12 até 2024). 5) Vencimento da AERI11: o aditamento diz '3.362 dias corridos' e '30 de março de 2030', mas a data de emissão 2021-01-15 mais 3.362 dias daria 2030-03-31; foi usada a data expressa (2030-03-30). 6) O texto diz pagamento de juros 'no dia 30', mas o primeiro pagamento em dinheiro é 'em 31 de março de 2027'; foi usada a data expressa e pode ser ajuste de dia útil. 7) Cash sweep (amortização extraordinária obrigatória de 100% do Excedente de Caixa, semestral a partir de 2026-06-30) e reversão de Nova Dívida Acumulada: os valores e datas efetivos são desconhecidos, então não constam do cronograma; os valores pagos reduzem proporcionalmente as parcelas. 8) Os aditamentos estão sujeitos a condições resolutivas (aditamentos bancários até 2025-04-24, Contrato de Garantias Compartilhadas até 2025-04-24 e documentos de garantia até 2025-04-16), e os trechos não confirmam se elas se verificaram. 9) Não há trechos das AGDs (atas) de 2025-03-28 além do que os aditamentos reproduzem. 10) O Documento 7 não menciona AERI11 e AERI12 nem as debêntures expressamente.",
+ "meta": {
+  "emissora": "AERIS INDUSTRIA E COMERCIO DE EQUIPAMENTOS PARA GERACAO DE ENERGIA S.A.",
+  "cnpj": "12528708000107",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-06-01",
+    "tipo": "escritura",
+    "assunto": "Primeira Emissão de Debêntures",
+    "protocolo": "025283IPE150120210104434809-69",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=872626&numSequencia=397363&numVersao=1"
+   },
+   {
+    "data": "2021-08-16",
+    "tipo": "escritura",
+    "assunto": "Escritura da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE150720210104442411-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=894005&numSequencia=418739&numVersao=1"
+   },
+   {
+    "data": "2021-08-16",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE060820210104442412-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=894006&numSequencia=418740&numVersao=1"
+   },
+   {
+    "data": "2021-08-16",
+    "tipo": "escritura",
+    "assunto": "Segundo Aditamento da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE120820210104442411-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=894007&numSequencia=418741&numVersao=1"
+   },
+   {
+    "data": "2025-05-02",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da Primeira Emissão de Debêntures",
+    "protocolo": "025283IPE280320250127352138-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1371346&numSequencia=896058&numVersao=1"
+   },
+   {
+    "data": "2025-05-02",
+    "tipo": "escritura",
+    "assunto": "Terceiro Aditamento da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE280320250179099367-29",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1371350&numSequencia=896062&numVersao=1"
+   },
+   {
+    "data": "2026-11-04",
+    "tipo": "comunicado",
+    "assunto": "Pedido de recuperação extrajudicial",
+    "protocolo": "025283IPE031120260116101863-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583619&numSequencia=1108325&numVersao=1"
+   },
+   {
+    "data": "2026-11-05",
+    "tipo": "plano_rj",
+    "assunto": "Minuta do Plano de Recuperação Extrajudicial",
+    "protocolo": "025283IPE031120260160763554-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584655&numSequencia=1109361&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 91599,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 9806,
+   "output_tokens_details": {
+    "thinking_tokens": 5691
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "12528708000107_1-2"
+ }
+}

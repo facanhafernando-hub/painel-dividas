@@ -1,0 +1,144 @@
+{
+ "series": [
+  {
+   "codigo": "CCLS11",
+   "emissao": 1,
+   "serie": "1",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [
+    {
+     "data": null,
+     "descricao": "Prêmio (waiver fee) de 0,50% flat sobre o saldo devedor das Debêntures, calculado na data da AGD de 2ª convocação (2025-10-23), a ser pago em até 5 Dias Úteis da data de conclusão da Operação (transferência efetiva das ações da Ciclus Ambiental S.A. à Padova/AEGEA). Data de pagamento ainda indefinida: depende da conclusão da Operação. Condicionado à aprovação integral das matérias da ordem do dia."
+    }
+   ],
+   "fonte": "Documento 3 (ata de AGD em 2ª convocação, 2025-10-23), cláusula do prêmio; Documento 1 (proposta da administração), item 10. Nenhum dos trechos contém cronograma de juros ou amortização.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2031-01-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  },
+  {
+   "codigo": "CCLS21",
+   "emissao": 1,
+   "serie": "2",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": null
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [
+    {
+     "data": null,
+     "descricao": "Prêmio (waiver fee) de 0,50% flat sobre o saldo devedor das Debêntures, calculado na data da AGD de 2ª convocação (2025-10-23), a ser pago em até 5 Dias Úteis da data de conclusão da Operação. Data de pagamento ainda indefinida: depende da conclusão da Operação. Condicionado à aprovação integral das matérias da ordem do dia."
+    }
+   ],
+   "fonte": "Documento 3 (ata de AGD em 2ª convocação, 2025-10-23), cláusula do prêmio; Documento 1 (proposta da administração), item 10. Nenhum dos trechos contém cronograma de juros ou amortização.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 1,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2031-07-15"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "1ª emissão (CCLS11 e CCLS21), emissora Regenera Rio S.A. (nos documentos, Ciclus Ambiental Rio S.A.; escritura de 2021-12-22, agente fiduciário Pentágono, fiadora Simpar). Não há vencimento antecipado declarado, nem RJ/RE ou novação. Em 2025-09-23 a administração propôs à AGD: (i) anuência prévia à alteração de controle (venda de 100% da Ciclus Ambiental S.A. da Simpar/CS Brasil para Padova/AEGEA); (ii) substituição da fiança Simpar pela AEGEA; (iii) não apuração dos Índices Financeiros (cláusula 5.2(n)) do exercício da conclusão da Operação até o período findo em 2030-09-30 (exclusive), com índice financeiro temporário da AEGEA; (iv) prêmio de 0,50%. A AGD de 1ª convocação de 2025-10-10 não foi instalada (termo de não instalação). A AGD de 2ª convocação foi instalada em 2025-10-23; o trecho da ata indica prêmio em contrapartida à aprovação integral das matérias, mas não traz o resultado das votações. Alteração de controle e anuência dependem da conclusão da Operação, ainda não confirmada nos trechos.",
+ "lacunas": "Os trechos não trazem a escritura de emissão, seus aditamentos nem anexos de cronograma. Para ambas as séries não foi possível determinar: data de emissão, vencimento, VNE, remuneração (indexador, taxa e base), periodicidade e datas de juros, carência, incorporação de juros e amortizações (datas, percentuais e base). Também não constam os resultados das votações da AGD de 2025-10-23 (quóruns e aprovação ou rejeição) nem a data de conclusão da Operação, que define a data do prêmio. Os códigos CCLS11 (série 1) e CCLS21 (série 2) vêm do cabeçalho da solicitação e não foram confirmados nos trechos.",
+ "meta": {
+  "emissora": "REGENERA RIO S.A",
+  "cnpj": "10319900000150",
+  "emissao": "1",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-09-23",
+    "tipo": "proposta_agd",
+    "assunto": "Ciclus - Modelo de Instruc¸a~o de Voto (MF 19.09)(50154918.1)",
+    "protocolo": "026921IPE101020250132634850-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1426006&numSequencia=950718&numVersao=1"
+   },
+   {
+    "data": "2025-10-10",
+    "tipo": "ata_agd",
+    "assunto": "Ciclus Ambienta Rio - AGD 31 10 2025 (Termo de Na~o Instalac¸a~o)",
+    "protocolo": "026921IPE101020250196631907-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1432011&numSequencia=956723&numVersao=1"
+   },
+   {
+    "data": "2025-10-23",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas",
+    "protocolo": "026921IPE231020250158828024-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1435294&numSequencia=960006&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 17875,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1717,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "10319900000150_1"
+ }
+}

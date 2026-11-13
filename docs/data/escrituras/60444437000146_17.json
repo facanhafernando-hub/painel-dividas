@@ -1,0 +1,114 @@
+{
+ "series": [
+  {
+   "codigo": "LIGHC7",
+   "emissao": 17,
+   "serie": "2",
+   "data_emissao": null,
+   "vencimento": "2024-10-15",
+   "vne": null,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.75,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "Só consta 100% da Taxa DI + 1,75% a.a. (2ª série), em tabela de 'outras emissões' da escritura da 24ª emissão (Doc. 1). Nenhum documento recebido trata de alteração ou repactuação desta série."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documento 1 (escritura da 24ª emissão, entregue em 2022-03-29), tabela do Agente Fiduciário sobre outras emissões: '17ª Emissão ... Valor Total R$ 700.000.000,00; Quantidade 500.400 (1ª série) / 50.000 (2ª série) / 149.600 (3ª série); Garantia: Fiança; Vencimento 15/10/2024 (2ª série); 100% da Taxa DI + 1,75% a.a. (2ª série)'. Não é o instrumento da própria 17ª emissão.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 20,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2028-05-15",
+     "2028-11-13",
+     "2029-05-14",
+     "2029-11-13",
+     "2030-05-13",
+     "2030-11-13",
+     "2031-05-13",
+     "2031-11-13",
+     "2032-05-13",
+     "2032-11-16",
+     "2033-05-13",
+     "2033-11-14"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "17ª emissão (série 2, LIGHC7): nenhum documento recebido declara vencimento antecipado, suspensão de pagamentos ou renegociação desta série. O Doc. 3 menciona recuperação judicial da Light e um plano com repactuação, mas esse aditamento trata de outra emissão (ver lacunas). O vencimento original (2024-10-15) já passou e não há evidência de pagamento ou de prorrogação.",
+ "lacunas": "Nenhum documento recebido é a escritura ou aditamento da 17ª emissão. Doc. 1 é a escritura da 24ª emissão (série única, DI+1,95%, venc. 2024-04-15) e só cita a 17ª em tabela de outras emissões. Doc. 2 é emissão de debêntures vinculadas a CRI (IPCA, venc. 2029-11-13), outra emissão. Doc. 3 tem título inconsistente: o cabeçalho diz 'Segundo Aditamento ... 17ª emissão' e o corpo diz 'Terceiro Aditamento ... 22ª emissão'. Seus dados (emissão 2021-04-15, R$ 850 mi, 916.381 debêntures, repactuação em 3 séries com IPCA, vencimentos 2032, 2037 e 2027) não batem com a 17ª (R$ 700 mi, 700.000 debêntures, 2ª série DI+1,75% com venc. 2024-10-15). O próprio Doc. 3 cita os titulares da 17ª emissão como terceiros na garantia compartilhada. Por isso não o apliquei ao LIGHC7. Doc. 4 são Notas Comerciais de 2026 (DI+4,75%, venc. 2029-09-30), outro instrumento. Indeterminados para LIGHC7: data de emissão, VNE (R$ 1.000 é só inferência de 700 mi / 700.000, não escrita), base de cálculo do DI, periodicidade e datas de juros, amortizações e eventual repactuação. Recomenda-se obter a escritura da 17ª emissão e seus aditamentos para completar o cronograma.",
+ "meta": {
+  "emissora": "LIGHT SERVICOS DE ELETRICIDADE S/A",
+  "cnpj": "60444437000146",
+  "emissao": "17",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-03-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE250320220104464908-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=960025&numSequencia=484759&numVersao=1"
+   },
+   {
+    "data": "2022-12-08",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE301120220104490311-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039491&numSequencia=564221&numVersao=1"
+   },
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "COM GARANTIA FIDEJUSSÓRIA ADICIONAL, PARA DISTRIBUIÇÃO PÚBLICA COM ESFORÇOS RESTRITOS||SEGUNDO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 17ª (DÉCIMA SÉTIMA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM ATÉ 4 (QUATRO) SÉRIES, DA ESPÉCIE QUIROGRAFÁRIA",
+    "protocolo": "008036IPE281120240104563512-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313153&numSequencia=837879&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "008036IPE240920260184023869-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571394&numSequencia=1096100&numVersao=1"
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 129142,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 3153,
+   "output_tokens_details": {
+    "thinking_tokens": 1843
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "60444437000146_17"
+ }
+}
