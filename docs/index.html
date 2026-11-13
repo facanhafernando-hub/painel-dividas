@@ -32,13 +32,13 @@
          font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
   header { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--border); }
-  .top { max-width: 1240px; margin: 0 auto; padding: 12px 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .top { max-width: 1840px; margin: 0 auto; padding: 12px 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   h1 { font-size: 16px; margin: 0; font-weight: 650; letter-spacing: -.01em; }
   .ref { color: var(--text-muted); font-size: 12px; }
-  nav { max-width: 1240px; margin: 0 auto; padding: 0 20px; display: flex; gap: 22px; }
+  nav { max-width: 1840px; margin: 0 auto; padding: 0 20px; display: flex; gap: 22px; }
   nav a { padding: 10px 0 9px; color: var(--text-secondary); font-weight: 550; border-bottom: 2px solid transparent; }
   nav a.on { color: var(--text-primary); border-bottom-color: var(--text-primary); }
-  main { max-width: 1240px; margin: 0 auto; padding: 16px 20px 60px; }
+  main { max-width: 1840px; margin: 0 auto; padding: 16px 20px 60px; }
   .sub { color: var(--text-secondary); font-size: 12.5px; }
   .mut { color: var(--text-muted); }
   .neg { color: var(--neg); } .pos { color: var(--pos); } .amb { color: var(--amb); }
@@ -432,7 +432,7 @@ async function telaMercado() {
       <div class="chips" id="cM">${["Todos", "DEB", "CRI", "CRA", "Outros"].map(t => `<button class="chip" data-t="${t}" aria-pressed="${t === st.tipoM}">${t}</button>`).join("")}</div>
       <select id="vM"><option value="neg">Negociados no dia</option><option value="alerta">Só com alerta</option><option value="todos">Todos (inclui só ANBIMA)</option></select>
     </div>
-    <div class="card tw" style="max-height:calc(100vh - 290px)"><table id="tM"><thead></thead><tbody></tbody></table></div>
+    <div class="card tw" style="max-height:calc(100vh - 250px)"><table id="tM"><thead></thead><tbody></tbody></table></div>
     <div class="nota">Fontes: B3 (negociação consolidada de balcão), ANBIMA (debêntures e CRI/CRA) e SND (PU de curva). Volume e PU médio somam todas as liquidações e classificações. * % do par indicativo ANBIMA quando não houve negócio. Garantia: lida nos documentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. Gerado em ${new Date(st.dia.gerado_em).toLocaleString("pt-BR")}.</div>`;
   document.getElementById("vM").value = st.visM;
   document.getElementById("bM").oninput = e => { st.buscaM = e.target.value; tabelaMercado(); };
