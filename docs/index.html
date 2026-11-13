@@ -153,13 +153,28 @@ const ALERTAS = {
 };
 const ESSENCIAIS = ["vencida_antecipadamente", "salto_volume"];
 const tagsE = al => tags((al || []).filter(k => ESSENCIAIS.includes(k)));
-const tags = al => (al || []).map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
+const tags = al => (al || []).filter(k => k !== "desvio_anbima").map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
 const CR = { va: ["Venc. antecipado", "t-crit", 4], rj: ["RJ", "t-crit", 3], re: ["RE", "t-crit", 2], rp: ["Reperfilada", "t-warn", 1] };
 const crTag = (cr, crr) => cr ? `<span class="tag ${CR[cr][1]}" title="${esc(crr || "")}">${CR[cr][0]}</span>` : "";
 const crGrave = cr => cr === "va" || cr === "rj" || cr === "re";
 // garantias lidas nos documentos: rótulo curto (Fiança + AF + CF) com o resumo no title
 const GAB = { "fiança": "Fiança", "aval": "Aval", "alienação fiduciária": "AF", "cessão fiduciária": "CF", "hipoteca": "Hipoteca",
   "penhor": "Penhor", "conta vinculada": "Conta vinc.", "fundo de reserva": "Fundo res.", "coobrigação": "Coobrig.", "outra": "Outra" };
+const G_REAL = new Set(["alienação fiduciária", "cessão fiduciária", "hipoteca", "penhor", "conta vinculada"]);
+const G_FID = new Set(["fiança", "aval", "coobrigação"]);
+function garTipo(i) {
+  if (!i) return { t: "–", o: -1, c: "mut", f: "" };
+  if (i.gn != null && !i.gind) {
+    const tp = i.gtip || [], real = tp.some(x => G_REAL.has(x)), fid = tp.some(x => G_FID.has(x));
+    const r = real && fid ? ["Real + fiança", 5, "pos"] : real ? ["Real", 4, "pos"] : fid ? ["Quiro + fiança", 3, ""]
+      : i.gn === 0 ? ["Quiro", 1, "mut"] : ["Quiro + outras", 2, ""];
+    return { t: r[0], o: r[1], c: r[2], f: "lida nos documentos da CVM: " + (i.gres || "") };
+  }
+  const m = { "Real": ["Real", 4, "pos"], "Quirografária": ["Quiro", 1, "mut"], "Flutuante": ["Flutuante", 2, ""], "Subordinada": ["Subordinada", 0, "neg"] }[i.gar];
+  if (!m) return { t: "–", o: -1, c: "mut", f: "" };
+  return { t: m[0] + (i.gind ? " ?" : "*"), o: m[1], c: m[2], f: "espécie informada no SND, que não registra fiança/aval; documentos ainda não lidos" + (i.gind ? "; garantia não identificada nos documentos" : "") };
+}
+const garTipoTxt = i => { const g = garTipo(i); return `<span class="${g.c}" title="${esc(g.f)}">${esc(g.t)}</span>`; };
 const garCurta = i => i.gn == null ? esc(i.gar || "–")
   : i.gind ? `<span title="Garantia não identificada nos documentos lidos. ${esc(i.gres || "")}">${esc(i.gar || "?")} <span class="tag t-warn">não identificada</span></span>`
   : i.gn === 0 ? `<span title="${esc(i.gres || "")}">Sem garantia</span>`
@@ -340,9 +355,10 @@ async function telaMercado() {
   if (!st.dia) {
     const d = await getJSON(`data/daily/${st.idx.ultima}.json`);
     await carregarCatalogo();
-    const nomes = {}; (st.cat?.itens || []).forEach(i => { if (i.n) nomes[i.c] = i.n; });
+    const cat = {}; (st.cat?.itens || []).forEach(i => { cat[i.c] = i; });
     d.ativos.forEach(r => {
-      r._nome = nomes[r.c] || null;
+      r._cat = cat[r.c] || null;
+      r._nome = r._cat?.n || null;
       const n = r.n || {}, a = r.a || {}, p = r.p || {};
       r._vol = n.volume || 0; r._neg = n.n_neg || 0; r._pmed = n.pu_med ?? null; r._panb = a.pu ?? null;
       r._desv = r._pmed && r._panb ? (r._pmed / r._panb - 1) * 100 : null;
@@ -360,7 +376,7 @@ async function telaMercado() {
       <select id="vM"><option value="neg">Negociados no dia</option><option value="alerta">Só com alerta</option><option value="todos">Todos (inclui só ANBIMA)</option></select>
     </div>
     <div class="card tw" style="max-height:calc(100vh - 290px)"><table id="tM"><thead></thead><tbody></tbody></table></div>
-    <div class="nota">Fontes: B3 (negociação consolidada de balcão), ANBIMA (debêntures e CRI/CRA) e SND (PU de curva). Volume e PU médio somam todas as liquidações e classificações. * % do par indicativo ANBIMA quando não houve negócio. Gerado em ${new Date(st.dia.gerado_em).toLocaleString("pt-BR")}.</div>`;
+    <div class="nota">Fontes: B3 (negociação consolidada de balcão), ANBIMA (debêntures e CRI/CRA) e SND (PU de curva). Volume e PU médio somam todas as liquidações e classificações. * % do par indicativo ANBIMA quando não houve negócio. Garantia: lida nos documentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. Gerado em ${new Date(st.dia.gerado_em).toLocaleString("pt-BR")}.</div>`;
   document.getElementById("vM").value = st.visM;
   document.getElementById("bM").oninput = e => { st.buscaM = e.target.value; tabelaMercado(); };
   document.getElementById("vM").onchange = e => { st.visM = e.target.value; tabelaMercado(); };
@@ -376,13 +392,13 @@ const COLS = [
   ["y", "Yield implícito", r => r.p?.y ?? -999, r => yieldTxt(r.p?.y, r.p?.y_base, r.p?.y_est, r.p?.pct_par_neg)],
   ["tir", "TIR nominal", r => r.p?.tir ?? -999, r => tirTxt(r.p?.tir, r.p?.pct_par_neg)],
   ["moic", "MOIC", r => r.p?.moic ?? -1, r => moicTxt(r.p?.moic)],
-  ["desv", "Δ vs ANBIMA", r => r._desv ?? -999, r => r._desv === null ? '<span class="mut">–</span>' : `<span class="${r._desv < 0 ? "neg" : "pos"}">${r._desv > 0 ? "+" : ""}${f2.format(r._desv)}%</span>`],
+  ["ven", "Vencimento", r => ordVen(r.a?.vencimento || r._cat?.ven), r => esc(r.a?.vencimento || r._cat?.ven || "–")],
+  ["gar", "Garantia", r => garTipo(r._cat).o, r => garTipoTxt(r._cat), "l"],
   ["neg", "Negócios", r => r._neg, r => r._neg ? f0.format(r._neg) : '<span class="mut">–</span>'],
   ["pmin", "PU mín", r => r.n?.pu_min ?? -1, r => fmt(r.n?.pu_min)],
   ["pmax", "PU máx", r => r.n?.pu_max ?? -1, r => fmt(r.n?.pu_max)],
   ["panb", "PU ANBIMA", r => r._panb ?? -1, r => fmt(r._panb)],
   ["tx", "Taxa ANBIMA", r => r.a?.tx_ind ?? -999, r => taxaAnb(r.a?.tx_ind, r.a?.indice)],
-  ["ven", "Vencimento", r => ordVen(r.a?.vencimento), r => esc(r.a?.vencimento || "–")],
   ["al", "Alertas", r => r.al.length, r => tags(r.al), "l"],
 ];
 function tabelaMercado() {
