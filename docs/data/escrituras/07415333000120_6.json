@@ -1,0 +1,44 @@
+{
+ "series": [],
+ "meta": {
+  "emissora": "SIMPAR S.A.",
+  "cnpj": "07415333000120",
+  "emissao": "6"
+ },
+ "garantias": {
+  "SIMH16": {
+   "codigo": "SIMH16",
+   "emissao": 6,
+   "especie": "quirografária (sem garantia real, flutuante ou fidejussória)",
+   "garantias": [],
+   "resumo": "Quirografária, série única, sem garantias; risco de crédito da Simpar S.A."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-12-06",
+    "tipo": "escritura",
+    "assunto": "6ª (sexta) Emissão de Debêntures Simples",
+    "protocolo": "025003IPE281120220104490111-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1038686&numSequencia=563416&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-30",
+    "tipo": "comunicado",
+    "assunto": "6ª Emissão de Debêntures - SIMH16",
+    "protocolo": "025003IPE311220250102065048-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1514173&numSequencia=1038879&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "SIMPAR S.A. (CNPJ 07.415.333/0001-20), emissora de todas as séries analisadas",
+  "lacunas": "Nenhuma garantia foi identificada nos documentos para as três séries. Fontes: Doc. 1, cláusulas 4.1.3 e 4.1.3.1 (3ª emissão); Doc. 3, cláusulas 4.1.3 e 4.1.3.1 (6ª emissão); Doc. 4 (JSMLA5: 'As Debêntures não contam com garantias'); Doc. 5 (SIMH16: espécie quirografária; Anexo II sem garantias descritas). O Doc. 2 (1º aditivo) só trata do resultado do bookbuilding e das datas de remuneração, sem alterar espécie ou garantias. Nos documentos fornecidos não há comunicado específico para JSMLB5 nem ata de AGD; a ausência de garantia nessa série vem da escritura (3ª emissão, 2 séries quirografárias), e nada indica reforço posterior. A escritura prevê reorganização societária autorizada em que a Simpar ou a Holding permaneceria coobrigada solidária se a emissão fosse transferida a uma controlada elegível. É só uma condição futura, sem indício de ocorrência, e não foi tratada como garantia vigente. A 3ª emissão consta nos documentos como de SIMPAR S.A., não de 'JSL S.A.'. O Doc. 3 indica que a Simpar era antiga JSL S.A. ('2ª emissão da Simpar, antiga 14ª da JSL S.A.'). Não há registro de migração de emissora nas séries analisadas. Os quadros de outras emissões do grupo (Movida, Vamos, CS Brasil etc.) nos Docs. 1 e 3 não se referem às séries analisadas e foram ignorados."
+ }
+}

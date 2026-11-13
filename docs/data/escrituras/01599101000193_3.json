@@ -134,5 +134,60 @@
    "data": null,
    "resumo": "Plano de RE protocolado em out/2024. Cláusula 6.1.1.1(ii)(d) prevê vencimento antecipado automático. Sem waiver nos trechos. Data exata não informada."
   }
+ },
+ "garantias": {},
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-10-11",
+    "tipo": "plano_rj",
+    "assunto": "Pedido de Homologação de Plano de Recuperação",
+    "protocolo": "025160IPE111020240104557614-00",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1291156&numSequencia=815882&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE171120220172367310-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567223&numSequencia=1091929&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE281120220164884769-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567227&numSequencia=1091933&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "SEGUNDO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE241020230188383976-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567228&numSequencia=1091934&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "TERCEIRO ADITAMENTO DO INSTRUMENTO PARTICULAR DE ESCRITURA DA 3ª (TERCEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025160IPE070520250198743437-53",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567229&numSequencia=1091935&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": null,
+  "lacunas": null
  }
 }

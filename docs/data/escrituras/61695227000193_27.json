@@ -116,5 +116,41 @@
    "data": null,
    "resumo": "Sem informação sobre vencimento antecipado, suspensão, RJ/RE ou renegociação na 27ª emissão. Anexo II da 29ª a lista como ativa, sem inadimplementos."
   }
+ },
+ "garantias": {
+  "ELPLA7": {
+   "codigo": "ELPLA7",
+   "emissao": 27,
+   "especie": null,
+   "garantias": [],
+   "resumo": "Sem documentos da 27ª emissão; garantias não determináveis"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-03-31",
+    "tipo": "escritura",
+    "assunto": "Escritura da 27ª Emissão de Debêntures Eletropaulo",
+    "protocolo": "014176IPE260420220104501607-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1080743&numSequencia=605472&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-03-31",
+    "tipo": "escritura",
+    "assunto": "Primeiro aditamento à escritura da 27ª emissão de debêntures Eletropaulo",
+    "protocolo": "014176IPE050520220104501607-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1080772&numSequencia=605501&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Eletropaulo Metropolitana Eletricidade de São Paulo S.A.",
+  "lacunas": "Não há documentos da 27ª emissão (ELPLA7), então espécie e garantias não puderam ser determinadas. O trecho 'Garantias: (i) Quirografária' no Documento 3 faz parte de uma lista de outras emissões do agente fiduciário e não está identificado com nenhuma emissão; não foi atribuído à ELPLA7. O Documento 3 também lista outras emissões (25ª da Eletropaulo e emissões de Enel Green Power, com penhor e cessão fiduciária), que não pertencem às séries pedidas. A correspondência do código ELPLB9 com a 29ª emissão foi assumida pelo enunciado. Não há informação sobre a ocorrência da Condição Resolutiva nem sobre o aditamento de liberação da fiança. O Primeiro Aditamento (02/10/2025) ratifica o bookbuilding, e os trechos não mostram alteração das garantias. Não há indício de migração de emissora."
  }
 }

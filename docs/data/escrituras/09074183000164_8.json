@@ -101,5 +101,70 @@
    "data": null,
    "resumo": "Sem vencimento antecipado declarado, suspensão de pagamentos, RJ/RE ou novação. Menções ao vencimento antecipado são apenas cláusulas genéricas contratuais."
   }
+ },
+ "garantias": {
+  "TBCR18": {
+   "codigo": "TBCR18",
+   "emissao": 8,
+   "especie": "com garantia real, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "TPI – Triunfo Participações e Investimentos S.A. (CNPJ 03.014.553/0001-91)",
+     "condicoes": "Qualificada como uma das \"Fiadoras\". Os trechos recebidos não trazem as cláusulas da fiança, então não é possível confirmar se é solidária, se há renúncia ao benefício de ordem, limite de valor ou outras condições. Na arbitragem, a Companhia e as Fiadoras integram o mesmo polo.",
+     "situacao": "vigente",
+     "fonte": "Terceiro Aditamento (2024) e Quarto Aditamento (2025), qualificação das partes (item II, \"na qualidade de fiadoras\") e cláusula de arbitragem; fiança originária na Escritura de 25/03/2022 (cláusula não transcrita)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "BRVias Holding TBR S.A.",
+     "condicoes": "Qualificada como uma das \"Fiadoras\". O trecho recebido não traz o CNPJ nem as cláusulas da fiança, e não permite confirmar solidariedade, renúncia ao benefício de ordem ou limite. O texto também define \"Juno\" como uma fiadora, com sigla ambígua (a definição \"BRVias\" aparece omitida).",
+     "situacao": "vigente",
+     "fonte": "Terceiro e Quarto Aditamentos, qualificação das partes (item II) e cláusula de arbitragem"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Fiadora identificada pela sigla \"Juno\" (nome completo não legível nos trechos; NIRE 35.300.453.441)",
+     "condicoes": "A sigla \"Juno\" aparece como a terceira Fiadora (\"Juno\" e, em conjunto com a TPI e a BRVias, as \"Fiadoras\"). O NIRE 35.300.453.441 aparece logo após a qualificação da BRVias Holding TBR S.A., podendo ser da mesma sociedade (possível renomeação), mas o trecho está cortado e não permite afirmar. Sem detalhes das condições da fiança.",
+     "situacao": "desconhecida",
+     "fonte": "Terceiro e Quarto Aditamentos, qualificação das partes (item II)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Garantia real não especificada nos trechos",
+     "condicoes": "A espécie é \"com garantia real\", mas os trechos não descrevem o objeto (por exemplo, alienação fiduciária de ações, cessão fiduciária de direitos creditórios ou direitos emergentes da concessão), o contrato de garantia nem o prestador.",
+     "situacao": "desconhecida",
+     "fonte": "Título e considerandos do Terceiro e do Quarto Aditamentos (espécie \"com garantia real\")"
+    }
+   ],
+   "resumo": "Garantia real (objeto não descrito) + fiança de TPI e BRVias Holding TBR (e \"Juno\"); condições não visíveis"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-03-19",
+    "tipo": "escritura",
+    "assunto": "TERCEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 8ª (OITAVA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "022225IPE190320240104537011-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1209431&numSequencia=734157&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-03-24",
+    "tipo": "escritura",
+    "assunto": "QUARTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 8ª (OITAVA) EMISSÃO DE DEBÊNTURES SIMPLES,",
+    "protocolo": "022225IPE240320250104574013-90",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1350854&numSequencia=875580&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Transbrasiliana Concessionária de Rodovia S.A.",
+  "lacunas": "Os trechos são parciais e não incluem as cláusulas de garantia da Escritura original (25/03/2022). Não há como confirmar: (i) o objeto, o contrato e o prestador da garantia real; (ii) as condições da fiança (solidariedade, renúncia ao benefício de ordem, limites, vigência); (iii) a identidade da fiadora \"Juno\" em relação à BRVias Holding TBR S.A. (provável mesma entidade ou renomeação, não confirmado); (iv) se houve liberação ou substituição de garantias. O Terceiro e o Quarto Aditamentos tratam de alteração da Remuneração e, pelo que se vê, mantêm a espécie e as fiadoras. Nenhum documento indica cessão da emissão para outra emissora. O Agente Fiduciário é a VX Pavarini DTVM Ltda. (antiga Simplific Pavarini)."
  }
 }

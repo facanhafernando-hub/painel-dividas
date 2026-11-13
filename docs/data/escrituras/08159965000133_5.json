@@ -214,5 +214,151 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, RJ ou RE. Waivers de covenants e conta reserva aprovados em 03/12/2024, sem mudar datas, amortização ou remuneração."
   }
+ },
+ "garantias": {
+  "IGSN15": {
+   "codigo": "IGSN15",
+   "emissao": 5,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios das 620.486 debêntures da 2ª emissão da Águas Cuiabá S.A. – Concessionária de Serviços Públicos de Água e Esgoto (R$ 620.486.000,00), de titularidade da Iguá Saneamento S.A., incluindo as garantias e demais direitos a elas vinculados ('Cessão Fiduciária Debêntures Cuiabá'). Essas debêntures contam com cessão fiduciária de direitos creditórios emergentes do contrato de concessão, entre outros.",
+     "condicoes": "Constituída pelo Contrato de Cessão Fiduciária (24/07/2020; Iguá, Agente Fiduciário Vórtx e Cuiabá), com registro em RTD-SP e RTD-MT. A cessão sobre os direitos creditórios emergentes da concessão (aditamento nº 03 ao contrato nº 14.2.0424.2) é compartilhada com o BNDES. A eficácia desse aditamento e do aditamento ao compartilhamento está sujeita à condição suspensiva descrita na linha seguinte.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3 (Escritura 5ª emissão), cláusulas 2.5, 5.4.1(i), 5.4.2 e 5.4.3; Docs. 7, 8 e 10 (referência ao Contrato de Cessão Fiduciária Debts Iguá)"
+    },
+    {
+     "tipo": "penhor",
+     "prestador_ou_objeto": "Totalidade das ações ordinárias nominativas da Águas Cuiabá S.A., de titularidade da Iguá Saneamento S.A. e da PCT Participações Ltda. ('Penhor Cuiabá')",
+     "condicoes": "Formalizado pelo aditamento nº 03 ao Contrato de Penhor de Ações nº 14.2.0424.3 (Iguá, PCT, BNDES, Pentágono DTVM e Agente Fiduciário). Compartilhado com o BNDES nos termos do aditamento ao Contrato de Compartilhamento de Garantias nº 14.2.0424.4. Sujeito a condição suspensiva: quitação da dívida da Cuiabá com os debenturistas da 1ª emissão 476 de Cuiabá, por resgate antecipado em até 1 Dia Útil da última integralização, com liberação dos ativos onerados em favor deles. O termo de quitação deve ser entregue em até 20 Dias Úteis. O não implemento da condição é evento de vencimento antecipado.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3 (Escritura 5ª emissão), cláusulas 2.5.1, 5.4.1(ii), 5.4.2, 5.4.3 e 7.1"
+    },
+    {
+     "tipo": "conta vinculada",
+     "prestador_ou_objeto": "Conta Reserva Debêntures prevista no Contrato de Cessão Fiduciária e Outras Avenças (Contrato de Cessão Fiduciária Debts Iguá), de 24/07/2020",
+     "condicoes": "A AGD de 03/12/2024 aprovou a substituição da Conta Reserva por fiança bancária (linha seguinte), com waiver da obrigação de mantê-la até o Último Período de Suspensão (exercício de 2032).",
+     "situacao": "vigente",
+     "fonte": "Docs. 7, 8, 10 e 11 (menções à Conta Reserva Debêntures)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Fiança bancária a ser prestada por instituição financeira não identificada, a critério da Iguá, em substituição à Conta Reserva Debêntures",
+     "condicoes": "A instituição deve ter rating local AAA e notória solvência. A carta de fiança deve ter prazo mínimo de 24 meses e ser renovada ou substituída até 60 dias antes do vencimento. O waiver vale até o Último Período de Suspensão (exercício encerrado em 31/12/2032). A liberação foi condicionada a aportes de capital da Iguá na Águas Cuiabá de no mínimo R$ 200.000.000,00, entre 01/01/2024 e 31/12/2025.",
+     "situacao": "proposta",
+     "fonte": "Doc. 10 (ata da AGD de 03/12/2024, 2ª convocação, item I) e Doc. 11 (comunicado). A 1ª convocação, de 22/11/2024, não foi instalada (Doc. 9)."
+    }
+   ],
+   "resumo": "Cessão fiduciária de debêntures da Águas Cuiabá e penhor de suas ações (cond. suspensiva); conta reserva → fiança"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2017-05-18",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023175IPE050520170204287010-34",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=565366&numSequencia=108114&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2019-05-23",
+    "tipo": "escritura",
+    "assunto": "Aditivo a Escritura de Debênture",
+    "protocolo": "023175IPE140520190104360811-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=692199&numSequencia=218887&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2020-08-04",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023175IPE240720200104404710-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=780955&numSequencia=305696&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2020-08-04",
+    "tipo": "escritura",
+    "assunto": "Aditamento",
+    "protocolo": "023175IPE300720200104404710-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=780956&numSequencia=305697&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-08-02",
+    "tipo": "ata_agd",
+    "assunto": "(a) a não declaração do vencimento antecipado das Debêntures e (b) o pedido de liberação temporária do cumprimento (waiver prévio)",
+    "protocolo": "023175IPE310720240104550609-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1266092&numSequencia=790818&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-08-05",
+    "tipo": "ata_agd",
+    "assunto": "(a) a não declaração do vencimento antecipado das Debêntures e (b) o pedido de liberação temporária do cumprimento (waiver prévio)",
+    "protocolo": "023175IPE310720240204533009-51",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1266616&numSequencia=791342&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-01",
+    "tipo": "proposta_agd",
+    "assunto": "5ª emissão de debêntures simples",
+    "protocolo": "023175IPE221120240204530209-55",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1297313&numSequencia=822039&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2024-11-01",
+    "tipo": "proposta_agd",
+    "assunto": "5ª emissão de debêntures simples",
+    "protocolo": "023175IPE221120240304559709-55",
+    "versao": "3",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1297419&numSequencia=822145&numVersao=3",
+    "explicito": true
+   },
+   {
+    "data": "2024-11-22",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - 5ª emissão",
+    "protocolo": "023175IPE221120240104561810-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1307258&numSequencia=831984&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-12-04",
+    "tipo": "ata_agd",
+    "assunto": "Mudanças de critério",
+    "protocolo": "023175IPE031220240104563007-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311149&numSequencia=835875&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-12-04",
+    "tipo": "comunicado",
+    "assunto": "APROVAÇÃO INTEGRAL DAS PROPOSTAS DA COMPANHIA EM ASSEMBLEIA GERAL DE DEBENTURISTAS DE SUA QUINTA EMISSÃO DE DEBÊNTURES (\"IGSN15\")",
+    "protocolo": "023175IPE041220240104563012-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311433&numSequencia=836159&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Iguá Saneamento S.A. (não há migração de emissora nos documentos)",
+  "lacunas": "1) Os documentos não confirmam se a condição suspensiva do Penhor Cuiabá e do aditamento da Cessão Fiduciária de Direitos Creditórios Cuiabá foi implementada (resgate das debêntures 476 de Cuiabá e liberação dos ativos). A Cessão Fiduciária das Debêntures Cuiabá, sem condição, e a Conta Reserva constam como vigentes por referências posteriores, mas sem confirmação expressa. 2) O Primeiro Aditamento (Doc. 4) veio truncado, sem as cláusulas que o alteram. 3) Não há prova de que a fiança bancária substitutiva tenha sido emitida nem se identifica o banco fiador. 4) Os documentos 2, 5 e 6 tratam da 4ª emissão da Iguá (garantia da Agreste), e foram desconsiderados. A menção à Paranaguá Saneamento no Doc. 3 parece ser uma lista de outras emissões, sem relação com garantias da IGSN15. 5) Não constam as cláusulas do Contrato de Cessão Fiduciária Debts Iguá sobre o valor da Conta Reserva. 6) Não há informação sobre o resultado de AGDs posteriores a 12/2024."
  }
 }

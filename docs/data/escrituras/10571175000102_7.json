@@ -120,5 +120,67 @@
    "data": null,
    "resumo": "7ª emissão sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. Enquadramento de adimplência na lista do Doc. 4 não é evento."
   }
+ },
+ "garantias": {
+  "URBS17": {
+   "codigo": "URBS17",
+   "emissao": 7,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "MRV Engenharia e Participações S.A. (CNPJ 08.343.492/0001-20)",
+     "condicoes": "solidária com a Emissora; fiadora e principal pagadora; irrevogável e irretratável; renúncia expressa aos benefícios de ordem e demais direitos de exoneração (arts. 277, 333 p.ú., 364, 366, 368, 821, 824, 827, 830, 834, 835, 837, 838 e 839 do Código Civil e arts. 130, 131 e 794 do CPC); cobre todas as Obrigações Garantidas (principal, acessórios, Encargos Moratórios, indenizações e custos de cobrança); pagamento em até 3 Dias Úteis após notificação do Agente Fiduciário; sem limite de valor; vigência até o pagamento integral das Obrigações Garantidas; patrimônio líquido consolidado da Fiadora de R$ 7.564.642.000,00 (31/12/2023)",
+     "situacao": "vigente",
+     "fonte": "Escritura da 7ª Emissão (entregue em 2024-03-15), cláusulas 4.5, 4.5.1 a 4.5.6"
+    }
+   ],
+   "resumo": "Fiança da MRV Engenharia e Participações (solidária, principal pagadora, sem benefício de ordem)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-05-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE220420220104468405-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=975773&numSequencia=500507&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-05-25",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE180520230104507106-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1106078&numSequencia=630807&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-03-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE130320240104536606-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1207933&numSequencia=732659&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-28",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "025437IPE261120240104562411-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1309071&numSequencia=833797&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "URBA Desenvolvimento Urbano S.A.",
+  "lacunas": "Os documentos fornecidos não incluem aditamentos, atas de AGD ou comunicados posteriores à escritura da 7ª emissão, então não é possível confirmar alterações ou liberação da fiança. Os documentos 1, 2 e 4 tratam das 5ª, 6ª e 8ª emissões e não se aplicam à URBS17. O código URBS17 não aparece nos trechos; a associação com a 7ª emissão vem da indicação do usuário. Não há indício de cessão da emissão para outra emissora."
  }
 }

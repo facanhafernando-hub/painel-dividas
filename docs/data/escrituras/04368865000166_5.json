@@ -133,5 +133,86 @@
    "data": "2026-04-27",
    "resumo": "Reperfilamento aprovado em 27/04/2026, vigente só após fechamento do M&A com a BST: novas datas, desconto de 7% e suspensão da parcela de set/2026."
   }
+ },
+ "garantias": {
+  "CPTM15": {
+   "codigo": "CPTM15",
+   "emissao": 5,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Objeto não especificado nos trechos. Há referência a um \"Contrato de Cessão Fiduciária\" vinculado à emissão, cujos bens e direitos cedidos não aparecem nos trechos.",
+     "condicoes": "Garantia real da emissão, prestada pela Emissora (Ligga Telecomunicações S.A., CNPJ 04.368.865/0001-66), conforme inferência dos trechos. O Contrato de Cessão Fiduciária pode ser aditado conforme as deliberações das AGDs de 22/09/2026 e seguintes. Não há detalhes sobre percentual mínimo de cobertura, compartilhamento ou condição suspensiva.",
+     "situacao": "vigente",
+     "fonte": "Docs 1 a 6 (denominação da espécie \"com garantia real\" e menção ao Contrato de Cessão Fiduciária nos Docs 2 a 6)"
+    }
+   ],
+   "resumo": "Garantia real: cessão fiduciária (Contrato de Cessão Fiduciária); objeto não detalhado nos trechos",
+   "observacao": "A espécie \"com garantia real\" consta no título da Escritura de 05/09/2022. Não há fiança ou aval nos trechos."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-08-26",
+    "tipo": "proposta_agd",
+    "assunto": "Waiver p/ não pagamento da parcela da Remuneração das Debêntures (15/09/26), diante da necessidade de prorrogar o prazo de fechamento da Operação de M&ampA com a Brasil TecPar",
+    "protocolo": "027367IPE150920260170743991-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561441&numSequencia=1086147&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-16",
+    "tipo": "proposta_agd",
+    "assunto": "Concessão de desconto adicional em relação ao valor devido no âmbito das Debêntures",
+    "protocolo": "027367IPE220920260102111494-41",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1568904&numSequencia=1093610&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-04",
+    "tipo": "ata_agd",
+    "assunto": "Alterção de características das debêntures",
+    "protocolo": "027367IPE220920260195338711-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574062&numSequencia=1098768&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-04",
+    "tipo": "ata_agd",
+    "assunto": "Alteração de características das debêntures",
+    "protocolo": "027367IPE280920260160906057-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574063&numSequencia=1098769&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-22",
+    "tipo": "ata_agd",
+    "assunto": "Alteração de características das debêntures",
+    "protocolo": "027367IPE290920260195061679-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579453&numSequencia=1104159&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-22",
+    "tipo": "ata_agd",
+    "assunto": "Alteração de características das debêntures",
+    "protocolo": "027367IPE051020260145523754-65",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579454&numSequencia=1104160&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Ligga Telecomunicações S.A. (CNPJ 04.368.865/0001-66)",
+  "lacunas": "Os trechos não trazem o texto da Escritura nem do Contrato de Cessão Fiduciária, então o objeto da cessão (recebíveis, contas etc.) e as condições de cobertura não são conhecidos. As deliberações das AGDs de 22/09, 28/09, 29/09 e 05/10/2026 (desconto adicional, waiver da remuneração de 15/09/2026, alterações de características e eventuais aditamentos ao Contrato de Cessão Fiduciária) foram cortadas, e não é possível dizer se houve liberação, substituição ou reforço de garantias. A Operação de M&A (venda de ativos de fibra ótica à Brasil TecPar Serviços de Telecomunicações S.A.) foi aprovada pelos debenturistas na AGD de 27/04/2026 (texto cortado), e seus efeitos sobre as garantias não constam. Não há indicação de migração de emissora."
  }
 }

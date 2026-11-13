@@ -176,5 +176,75 @@
    "data": "2026-08-24",
    "resumo": "Braskem em recuperação extrajudicial, plano protocolado em 24/08/2026 e processamento deferido. Exigibilidade suspensa por 90 dias. Sem vencimento antecipado declarado."
   }
+ },
+ "garantias": {
+  "BRKMA8": {
+   "codigo": "BRKMA8",
+   "emissao": 18,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária (título da escritura); sem garantia identificada nos trechos"
+  },
+  "BRKMB8": {
+   "codigo": "BRKMB8",
+   "emissao": 18,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária (título da escritura); sem garantia identificada nos trechos"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-11-22",
+    "tipo": "escritura",
+    "assunto": "Escritura da 18ª Emissão de Debêntures",
+    "protocolo": "004820IPE091120220104488706-27",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1034748&numSequencia=559478&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-08-24",
+    "tipo": "comunicado",
+    "assunto": "Braskem comunica sobre informações compartilhadas com investidores no contexto do plano de Recuperação Extrajudicial",
+    "protocolo": "004820IPE240820260195595414-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560756&numSequencia=1085462&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-24",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "004820IPE240820260165245183-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1560753&numSequencia=1085459&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-28",
+    "tipo": "comunicado",
+    "assunto": "Braskem comunica sobre deferimento do processamento da recuperação extrajudicial",
+    "protocolo": "004820IPE280820260116704749-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562270&numSequencia=1086976&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-25",
+    "tipo": "comunicado",
+    "assunto": "Braskem comunica que foi informada de decisão proferida no âmbito da Recuperação Extrajudicial da Braskem e de determinadas controladas",
+    "protocolo": "004820IPE250920260160400829-75",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571421&numSequencia=1096127&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Braskem S.A.",
+  "lacunas": "16ª emissão: a Escritura (cláusula 4.5) e o 1º Aditamento a definem como quirografária. Os trechos não mostram fiança, aval, garantia real nem fundo de reserva (a cláusula 3.7.6 afasta fundo de liquidez e a 4.23.1 afasta fundo de amortização). As menções a 'Garantias N/A' referem-se a emissões da Petrobras, listadas em quadros de outras emissões, e não à Braskem. O 1º Aditamento reitera as garantias prestadas na Escritura, mas não cria nenhuma nova. O vencimento da 2ª série é de 10 anos contados da emissão (cerca de 2032); o trecho está cortado. 18ª emissão: o único trecho disponível é a página de assinaturas, cujo título a descreve como 'Espécie Quirografário em Até 2 Séries' (OCR). As cláusulas de garantia, de séries e de vencimentos não foram fornecidas. A relação de credores do plano de recuperação extrajudicial indica a 18ª emissão (data de 09/11/2022, vencimento 09/11/2029, saldo de R$ 1,153 bi) como 'Créditos Financeiros' da Braskem S.A.. Não é possível confirmar se há garantia nem o vencimento de cada série. Recuperação extrajudicial (2026): o plano e os comunicados de agosto e setembro de 2026 tratam de Plano Atualizado, que pode prever 'aprimoramento nas condições econômicas e de crédito dos Títulos Existentes' e 'compensação' aos credores. Não há texto que crie garantia para as debêntures da 16ª ou da 18ª. As garantias do comunicado (cessão fiduciária de recebíveis, conta vinculada e créditos da ação 'CIDE Combustíveis') referem-se à operação de suporte de acionista, de R$ 2,35 bi, com a Petrobras (termos não detalhados no trecho), e não aos debenturistas. As 16ª e 18ª emissões constam como créditos sujeitos ao plano (16ª: R$ 255,1 mi / R$ 789,5 mi em tabelas distintas, com valores divergentes). O resultado do plano e sua homologação são desconhecidos. As debêntures parecem permanecer com a Braskem S.A. (sem cessão para outra emissora). O plano é sujeito a negociação e ainda não consta como vigente. A 18ª emissão exige verificação da escritura completa."
  }
 }

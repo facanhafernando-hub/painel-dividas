@@ -131,5 +131,128 @@
    "data": null,
    "resumo": "Anexo II de 2026-09-11 lista a 8ª emissão como ativa, sem inadimplementos, vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação."
   }
+ },
+ "garantias": {
+  "SUMI18": {
+   "codigo": "SUMI18",
+   "emissao": 8,
+   "especie": "quirografária (garantia real adicionada por deliberação da AGD de 29/12/2025)",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis da Giga Mais Fibra Telecomunicações S.A. e/ou de suas subsidiárias ou sociedades do grupo, via conta vinculada com Fluxo Mínimo Mensal de R$ 10.000.000,00",
+     "condicoes": "Valor de R$ 10 mi compartilhado entre todas as emissões públicas locais vigentes da Companhia e de suas subsidiárias integrais. Prazo de constituição de 90 dias. Vigência até 31/12/2027 (fim do Prazo de Validade das Contrapartidas). Fluxo apurado mensalmente pelo Agente Fiduciário. O agente atesta a garantia como exequível: não e suficiência: não aplicável. Pode não cobrir o saldo devedor.",
+     "situacao": "vigente",
+     "fonte": "Doc. 10 (Ata da AGD de 29/12/2025, Contrapartidas para Waiver) e Doc. 12 (Relatório do Agente Fiduciário de 30/04/2026: constituída = Sim)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "100% das ações livres e desembaraçadas de emissão da Giga Mais Fibra Telecomunicações S.A., mais garantia sobre todos os recebíveis disponíveis adicionais, além da cessão fiduciária acima",
+     "condicoes": "Contrapartida Estrutural: só é formalizada em até 10 dias úteis se o Índice Financeiro do 4T26 não for observado, como alternativa ao pagamento da Parcela Condicionada do Waiver Fee. Fica dispensada se o índice for ≤ 3,00x no 4T26. Garantia compartilhada pari passu entre as emissões (minuta Anexo III).",
+     "situacao": "proposta",
+     "fonte": "Doc. 10 (Ata da AGD de 29/12/2025) e Doc. 12 (agente: constituída = Não, exequível = Não, suficiência não atestada; 'a ser constituída')"
+    }
+   ],
+   "resumo": "Quirografária; CF de recebíveis (R$10 mi/mês, compartilhada) vigente até 2027; AF de ações condicional"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-10-31",
+    "tipo": "escritura",
+    "assunto": "Escritura da 8ª Emissão de Debêntures",
+    "protocolo": "027502IPE181020240104559609-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1296726&numSequencia=821452&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-11-12",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura da 8ª Emissão",
+    "protocolo": "027502IPE121120240104560811-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1302800&numSequencia=827526&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-01",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Termo de Não Instalação SUMI18",
+    "protocolo": "027502IPE011220250163341632-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1451560&numSequencia=976272&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-18",
+    "tipo": "proposta_agd",
+    "assunto": "Edital de Convocação 8ª Emissão - SUMI18 - 2ª Convocação",
+    "protocolo": "027502IPE291220250131123231-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459051&numSequencia=983763&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-22",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da LMOV11",
+    "protocolo": "027502IPE221020250172348376-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1460412&numSequencia=985118&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-23",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da LMOV11",
+    "protocolo": "027502IPE221020250275650326-85",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1461153&numSequencia=985859&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-23",
+    "tipo": "proposta_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Proposta da Administração 8ª Emissão - 2ª Convocação",
+    "protocolo": "027502IPE291220250127597616-88",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1461354&numSequencia=986060&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-29",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da SUMI18",
+    "protocolo": "027502IPE291220250122249450-62",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462046&numSequencia=986752&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-30",
+    "tipo": "comunicado",
+    "assunto": "Comunicado ao Mercado - Conclusão das AGDs",
+    "protocolo": "027502IPE301220250125947665-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462586&numSequencia=987292&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-04-30",
+    "tipo": "comunicado",
+    "assunto": "Relatório do Agente Fiduciário SUMI18",
+    "protocolo": "027502IPE311220250146395111-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512795&numSequencia=1037501&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Giga Mais Fibra Telecomunicações S.A. (CNPJ 07.714.104/0001-07; nova denominação da Sumicity Telecomunicações S.A.)",
+  "lacunas": "1) Não há escritura da 7ª emissão nos documentos; as garantias de SUMI17 e SUMI37 vêm apenas do anexo de emissões do agente fiduciário (Doc. 14). Faltam espécie, condições da fiança, percentual de cobertura e o titular da emissão (o cabeçalho do emissor está cortado). 2) O Doc. 11 (comunicado de 30/12/2025) está truncado. Não é possível confirmar se a cessão fiduciária compartilhada de R$ 10 mi e o waiver das AGDs abrangem a 7ª emissão, nem se houve AGD para SUMI17/SUMI37. 3) Para SUMI18, a escritura é quirografária, sem fiança, embora a AGD cite 'Fiadora'; os covenants referem-se à EB Fibra e à Emissora após a incorporação reversa (que não consta como efetivada). 4) O contrato final da cessão fiduciária e a eventual excussão ou liberação da alienação fiduciária de ações não constam dos documentos. 5) Dos documentos de 2026, a 3ª emissão (DB3/MOB) e a 10ª emissão (Giga Mais, fiança EB Fibra) não são objeto desta análise."
  }
 }

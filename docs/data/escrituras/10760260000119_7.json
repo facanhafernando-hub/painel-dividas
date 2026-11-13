@@ -147,5 +147,74 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ ou RE. AGD de 2026-10-06 aprovou waiver fee de 2% sem alterar o cronograma de juros e amortização."
   }
+ },
+ "garantias": {
+  "CVCB17": {
+   "codigo": "CVCB17",
+   "emissao": 7,
+   "especie": "com garantia flutuante, com garantia real adicional (cessão fiduciária), série única",
+   "garantias": [
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Garantia flutuante sobre os ativos da CVC Brasil Operadora e Agência de Viagens S.A., com privilégio geral aos debenturistas",
+     "condicoes": "Art. 58, caput e §1º, da Lei das S.A. Alterar a Garantia Flutuante exige 75% das debêntures em circulação.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 7ª Emissão (04/09/2026), cláusula 4.22.1; 1º Aditamento (21/09/2026) e 2º Aditamento (06/10/2026), versões consolidadas"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "(i) Recebíveis de boletos da mesa de crédito (direitos de crédito de compra e venda de bens e serviços da Emissora, que atendam aos Critérios de Elegibilidade); (ii) recursos depositados na Conta Arrecadadora (conta corrente 13021216-6, agência 2271, Banco Santander (Brasil) S.A. – 033, banco administrador), com os Investimentos Permitidos; (iii) Investimentos Permitidos constituídos para formação de Cash Collateral. Cedente: CVC Brasil Operadora e Agência de Viagens S.A.",
+     "condicoes": "Em favor dos debenturistas, representados pelo Agente Fiduciário (Pentágono S.A. DTVM). Garante o VNU ou seu saldo, sem remuneração nem encargos, sempre limitado ao Montante da Cessão Fiduciária definido no Contrato de Cessão Fiduciária. O contrato deve ser registrado no RTD de Santo André, com via registrada ao Agente Fiduciário antes da 1ª Data de Integralização. É vencimento antecipado se a cessão for desconstituída, ficar ineficaz ou inexequível, se a Conta Arrecadadora não for aberta ou for resilida sem substituição, ou se o Montante da Cessão Fiduciária não for observado em 3 Datas de Verificação alternadas em 12 meses. Alterar ou reduzir a cessão exige 75% das debêntures em circulação.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 7ª Emissão, cláusulas 4.22.2, 4.22.3 e 2.4; versões consolidadas nos 1º e 2º Aditamentos (as alterações foram só do bookbuilding e da Oferta de Resgate Antecipado)"
+    }
+   ],
+   "resumo": "Garantia flutuante + cessão fiduciária de recebíveis de boletos e conta arrecadadora (Santander), limitada ao Montante da Cessão"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-09-04",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão da 7ª Emissão de Debêntures",
+    "protocolo": "023310IPE040920260199688046-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1565362&numSequencia=1090068&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-21",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura de Emissão da 7ª Emissão de Debêntures",
+    "protocolo": "023310IPE210920260144842971-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570280&numSequencia=1094986&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-06",
+    "tipo": "escritura",
+    "assunto": "Segundo Aditamento à Escritura da 7ª Emissão de Debêntures - Alteração das Condições da Oferta de Resgate Antecipado",
+    "protocolo": "023310IPE061020260118645075-65",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574869&numSequencia=1099575&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-06",
+    "tipo": "ata_agd",
+    "assunto": "Alteração das condições da Oferta de Resgate Antecipado da 7ª Emissão de Debêntures, aprovação de waiver fee e autorização para celebração do Segundo Aditamento à Escritura de Emissão.",
+    "protocolo": "023310IPE061020260108586806-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574868&numSequencia=1099574&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "CVC Brasil Operadora e Agência de Viagens S.A. (CNPJ 10.760.260/0001-19), emissora original de ambas as séries, sem migração para outra empresa",
+  "lacunas": "Os contratos de cessão fiduciária (4ª emissão: contrato e Segundo Aditamento; 7ª emissão: contrato) não foram fornecidos. Faltam o Montante da Cessão Fiduciária, os Critérios de Elegibilidade, os prazos de cura e a confirmação dos registros no RTD; as escrituras dizem que o registro será feito, sem confirmá-lo. Não consta se a cessão da 7ª emissão é compartilhada ou segregada em relação à da 4ª e da 5ª (a 7ª tem contrato próprio, e a escritura da 4ª fala em compartilhamento só com a 5ª). O documento 5 (AGD de 2024) e o 1º aditamento da 4ª emissão não foram fornecidos. O 2º aditamento da 4ª emissão (2022) era quirografária; a mudança de espécie vem do 4º aditamento (abril/2023), conhecido só pelas referências do 5º aditamento. A proposta e a ata de AGD de 2026 da 4ª emissão tratam da não declaração de vencimento antecipado, mas o motivo e as condições da deliberação não constam nos trechos. A ata afirma que não há novação nem extinção de garantias. Não há fiança, aval ou garantia fidejussória identificada em nenhuma das séries."
  }
 }

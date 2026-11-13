@@ -10,68 +10,31 @@
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
-    "data": "2017-03-22",
+    "data": "2021-09-22",
     "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "022020IPE150320170104281611-54",
+    "assunto": "3ª (terceira) Emissão de Debêntures Simples",
+    "protocolo": "025003IPE200920210104446106-06",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=553261&numSequencia=96009&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=902619&numSequencia=427353&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2017-06-29",
+    "data": "2021-10-05",
     "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "022020IPE200620170104291510-25",
+    "assunto": "3ª (Terceira) Emissão de Debêntures Simples",
+    "protocolo": "025003IPE280920210104447405-41",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=569610&numSequencia=112399&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=905344&numSequencia=430078&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2019-01-14",
-    "tipo": "escritura",
-    "assunto": "Repactuação",
-    "protocolo": "022020IPE040120190104347910-95",
+    "data": "2026-04-30",
+    "tipo": "comunicado",
+    "assunto": "1ª Série da 3ª Emissão - JSMLA5",
+    "protocolo": "025003IPE311220250137732676-67",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=660645&numSequencia=191181&numVersao=1"
-   },
-   {
-    "data": "2020-08-05",
-    "tipo": "proposta_agd",
-    "assunto": "(a) aprovação para a dispensa da solidariedade entre a Emissora e a Simpar, em relação à totalidade das obrigações representadas pelas Debêntures, após a realização de Reorganização Societária||(b) a autorização para que a Emissora e o Agente Fiduciário pratiquem todos e quaisquer atos e assinem tod",
-    "protocolo": "022020IPE200520200104404804-74",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=781173&numSequencia=305914&numVersao=1"
-   },
-   {
-    "data": "2021-06-23",
-    "tipo": "ata_agd",
-    "assunto": "Deliberar sobre: (a) aprovar ou não a modificação da Escritura de Emissão para alterar o conceito de \"Dívida Financeira Líquida\"||e (c) autorização à Emissora e ao Agente Fiduciário para a prática de todos e quaisquer atos necessários e/ou convenientes à realização da deliberação referente às matéri",
-    "protocolo": "022020IPE230620210104437011-02",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=878322&numSequencia=403059&numVersao=1"
-   },
-   {
-    "data": "2021-09-24",
-    "tipo": "ata_agd",
-    "assunto": "(a) os  juros remuneratórios||(b) a Data de Vencimento das Debêntures||(c) alterar a data de possibilidade de  realização da Amortização Extraordinária e do Resgate Antecipado||(d) as Datas de Amortização do Valor  2 SP - 23925466v1  Nominal Unitário das Debentures||(e) alterar o Prêmio a ser consid",
-    "protocolo": "022020IPE240920210104446313-80",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=903397&numSequencia=428131&numVersao=1"
-   },
-   {
-    "data": "2021-09-24",
-    "tipo": "ata_agd",
-    "assunto": "(i) aprovação da exclusão da constituição da garantia fidejussória para a totalidade da dívida representada na Escritura de Emissão, prestada pela Simpar S.A||(ii) o  aditamento da Escritura de Emissão||(iii) autorização  à Companhia e ao Agente Fiduciário para a prática dos atos necessários à reali",
-    "protocolo": "022020IPE240920210104446313-97",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=903402&numSequencia=428136&numVersao=1"
-   },
-   {
-    "data": "2021-09-27",
-    "tipo": "ata_agd",
-    "assunto": "(i) aprovação da exclusão da constituição da garantia fidejussória para a totalidade da dívida representada na Escritura de Emissão, prestada pela Simpar S.A||(ii) o  aditamento da Escritura de Emissão||(iii) autorização  à Companhia e ao Agente Fiduciário para a prática dos atos necessários à reali",
-    "protocolo": "022020IPE240920210204446313-97",
-    "versao": "2",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=903683&numSequencia=428417&numVersao=2"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1514184&numSequencia=1038890&numVersao=1",
+    "explicito": true
    }
   ],
   "uso_grupo": {
@@ -91,5 +54,57 @@
    "speed": "standard"
   },
   "grupo": "52548435000179_3"
+ },
+ "garantias": {
+  "JSMLA5": {
+   "codigo": "JSMLA5",
+   "emissao": 3,
+   "especie": "quirografária (sem garantia real, flutuante ou fidejussória)",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantias; pagamento depende só da capacidade financeira da Simpar (ex-JSL)"
+  },
+  "JSMLB5": {
+   "codigo": "JSMLB5",
+   "emissao": 3,
+   "especie": "quirografária (sem garantia real, flutuante ou fidejussória)",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantias (2ª série da 3ª emissão da Simpar, ex-JSL)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-09-22",
+    "tipo": "escritura",
+    "assunto": "3ª (terceira) Emissão de Debêntures Simples",
+    "protocolo": "025003IPE200920210104446106-06",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=902619&numSequencia=427353&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-10-05",
+    "tipo": "escritura",
+    "assunto": "3ª (Terceira) Emissão de Debêntures Simples",
+    "protocolo": "025003IPE280920210104447405-41",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=905344&numSequencia=430078&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-30",
+    "tipo": "comunicado",
+    "assunto": "1ª Série da 3ª Emissão - JSMLA5",
+    "protocolo": "025003IPE311220250137732676-67",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1514184&numSequencia=1038890&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": "07415333000120",
+  "emissora_atual": "SIMPAR S.A. (CNPJ 07.415.333/0001-20), emissora de todas as séries analisadas",
+  "lacunas": "Nenhuma garantia foi identificada nos documentos para as três séries. Fontes: Doc. 1, cláusulas 4.1.3 e 4.1.3.1 (3ª emissão); Doc. 3, cláusulas 4.1.3 e 4.1.3.1 (6ª emissão); Doc. 4 (JSMLA5: 'As Debêntures não contam com garantias'); Doc. 5 (SIMH16: espécie quirografária; Anexo II sem garantias descritas). O Doc. 2 (1º aditivo) só trata do resultado do bookbuilding e das datas de remuneração, sem alterar espécie ou garantias. Nos documentos fornecidos não há comunicado específico para JSMLB5 nem ata de AGD; a ausência de garantia nessa série vem da escritura (3ª emissão, 2 séries quirografárias), e nada indica reforço posterior. A escritura prevê reorganização societária autorizada em que a Simpar ou a Holding permaneceria coobrigada solidária se a emissão fosse transferida a uma controlada elegível. É só uma condição futura, sem indício de ocorrência, e não foi tratada como garantia vigente. A 3ª emissão consta nos documentos como de SIMPAR S.A., não de 'JSL S.A.'. O Doc. 3 indica que a Simpar era antiga JSL S.A. ('2ª emissão da Simpar, antiga 14ª da JSL S.A.'). Não há registro de migração de emissora nas séries analisadas. Os quadros de outras emissões do grupo (Movida, Vamos, CS Brasil etc.) nos Docs. 1 e 3 não se referem às séries analisadas e foram ignorados."
  }
 }

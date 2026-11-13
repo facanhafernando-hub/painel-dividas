@@ -173,5 +173,48 @@
    "data": null,
    "resumo": "Resumo da situação sem informação. Nenhum evento de crédito identificado para a série CMIN21 nos dados fornecidos."
   }
+ },
+ "garantias": {
+  "CMIN11": {
+   "codigo": "CMIN11",
+   "emissao": 1,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia real ou fidejussória (cl. 4.5.1 da Escritura)"
+  },
+  "CMIN21": {
+   "codigo": "CMIN21",
+   "emissao": 1,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia real ou fidejussória (cl. 4.5.1 da Escritura)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-07-20",
+    "tipo": "escritura",
+    "assunto": "Escritura Particular da 1ª emissão de debêntures",
+    "protocolo": "025585IPE160720210104439710-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=885095&numSequencia=409832&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-08-03",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 1ª (PRIMEIRA) EMISSÃO DE DEBÊNTURES SIMPLES,",
+    "protocolo": "025585IPE160720210104441111-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=888964&numSequencia=413700&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "CSN Mineração S.A.",
+  "lacunas": "Nenhuma das quatro séries tem garantia em vigor segundo os trechos recebidos. 1ª emissão: a cl. 4.5.1 diz que as debêntures são quirografárias e \"não contarão com qualquer preferência ou garantia\". O Primeiro Aditamento (03/08/2021) só ratificou o bookbuilding e não criou garantias. A referência a alienação fiduciária de ações da USIMINAS e cessão fiduciária de duplicatas e conta vinculada aparece no bloco de declaração do Agente Fiduciário sobre outras emissões do mesmo grupo (cl. 8.4, item sobre espécie e garantias envolvidas). Não a atribuí a estas séries, porque não é garantia da emissão da CSN Mineração. 2ª emissão: as cl. 5.3 e 5.4 dizem que as debêntures não possuem garantia adicional nem privilégio. Não foram fornecidos aditamentos, atas de AGD ou comunicados posteriores a 07/2022, então não dá para confirmar se houve alteração posterior. Os trechos enviados não mostram o texto que distingue as séries (1ª e 2ª série de cada emissão). Presumi a mesma espécie para todas, pois as escrituras tratam a emissão como um todo. Não há cessão de emissora nem migração; a emissora é a CSN Mineração S.A. (CNPJ 08.902.291/0001-15)."
  }
 }

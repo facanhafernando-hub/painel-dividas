@@ -175,5 +175,83 @@
    "data": null,
    "resumo": "Série definida no aditamento pós-bookbuilding. Não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem reperfilamento nos trechos analisados."
   }
+ },
+ "garantias": {
+  "TEPA13": {
+   "codigo": "TEPA13",
+   "emissao": 3,
+   "especie": "com garantia real, com garantia adicional fidejussória (1ª série)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Brasil Tecpar Serviços de Telecomunicações S.A. (BST, CNPJ 07.756.651/0001-55); Brasil Serviços de Tecnologia Ltda. (BSS, CNPJ 36.947.264/0001-02); Ávato Tecnologia S.A.; Blink (nome completo e CNPJ não constam nos trechos); Justweb Serviços Digitais Ltda. (CNPJ 27.851.020/0001-22)",
+     "condicoes": "Irrevogável e irretratável. Fiadores são devedores solidários com a Emissora e principais pagadores. Renunciam aos benefícios de ordem (CC arts. 333 par. único, 364, 366, 368, 821, 827, 834, 835, 837, 838 e 839; CPC arts. 130 II, 131 e 794). Pagamento em até 3 Dias Úteis após notificação do Agente Fiduciário. Vigora até a quitação integral das Obrigações Garantidas. Sem limite de valor nos trechos.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1 (Escritura 18/03/2025), cláusulas 3.4.1 a 3.4.11; ratificada pelo Doc. 2 (1º Aditamento 11/04/2025), cláusula 5.1"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis (notas fiscais, faturas e duplicatas eletrônicas de contratos comerciais) e saldos das Contas Vinculadas no Banco Santander (Brasil) S.A., de titularidade de Blink, Justweb Serviços, Nova Rede Telecomunicações Ltda. e ONNet Tecnologia Ltda.",
+     "condicoes": "Recebíveis devem representar, no mínimo, o 'Percentual Mínimo' definido no Contrato de Cessão Fiduciária (percentual não informado nos trechos). Contrato a ser celebrado entre as Cedentes, a Emissora e o Agente Fiduciário. Vigora até a quitação integral. Registro em RTD antes da 1ª integralização.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1, cláusula 3.3.1(a); mantida pelo Doc. 2 (1º Aditamento, cláusula 3.3.1)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Bens móveis (rede de cabeamento de fibra óptica e equipamentos de rede, com acessórios e rendimentos) de BST, Blink, Nova Rede, Acessoline Telecomunicações Ltda., Itelfibra Telecomunicações Ltda., GGNet Telecomunicações Ltda. e ONNet Telecomunicações",
+     "condicoes": "Bens devem representar, no mínimo, o 'Valor Mínimo de Garantia' do Contrato de Alienação Fiduciária (valor não informado nos trechos). O 1º Aditamento incluiu BST e Blink como alienantes. Na versão original, as alienantes eram Nova Rede, Acessoline, Itelfibra, GGNet e ONNet Telecomunicações.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1, cláusula 3.3.1(b), com nova redação dada pelo Doc. 2 (1º Aditamento)"
+    }
+   ],
+   "resumo": "Cessão e alienação fiduciárias (grupo) + fiança solidária de BST, BSS, Ávato, Blink e Justweb"
+  },
+  "TEPA23": {
+   "codigo": "TEPA23",
+   "emissao": 3,
+   "especie": "com garantia real, com garantia adicional fidejussória (2ª série)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Brasil Tecpar Serviços de Telecomunicações S.A. (BST, CNPJ 07.756.651/0001-55); Brasil Serviços de Tecnologia Ltda. (BSS, CNPJ 36.947.264/0001-02); Ávato Tecnologia S.A.; Blink (nome completo e CNPJ não constam nos trechos); Justweb Serviços Digitais Ltda. (CNPJ 27.851.020/0001-22)",
+     "condicoes": "Irrevogável e irretratável. Fiadores são devedores solidários com a Emissora e principais pagadores. Renunciam aos benefícios de ordem (CC arts. 333 par. único, 364, 366, 368, 821, 827, 834, 835, 837, 838 e 839; CPC arts. 130 II, 131 e 794). Pagamento em até 3 Dias Úteis após notificação do Agente Fiduciário. Vigora até a quitação integral das Obrigações Garantidas. Sem limite de valor nos trechos.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1 (Escritura 18/03/2025), cláusulas 3.4.1 a 3.4.11; ratificada pelo Doc. 2 (1º Aditamento 11/04/2025), cláusula 5.1"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis (notas fiscais, faturas e duplicatas eletrônicas de contratos comerciais) e saldos das Contas Vinculadas no Banco Santander (Brasil) S.A., de titularidade de Blink, Justweb Serviços, Nova Rede Telecomunicações Ltda. e ONNet Tecnologia Ltda.",
+     "condicoes": "Recebíveis devem representar, no mínimo, o 'Percentual Mínimo' definido no Contrato de Cessão Fiduciária (percentual não informado nos trechos). Contrato a ser celebrado entre as Cedentes, a Emissora e o Agente Fiduciário. Vigora até a quitação integral. Registro em RTD antes da 1ª integralização.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1, cláusula 3.3.1(a); mantida pelo Doc. 2 (1º Aditamento, cláusula 3.3.1)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Bens móveis (rede de cabeamento de fibra óptica e equipamentos de rede, com acessórios e rendimentos) de BST, Blink, Nova Rede, Acessoline Telecomunicações Ltda., Itelfibra Telecomunicações Ltda., GGNet Telecomunicações Ltda. e ONNet Telecomunicações",
+     "condicoes": "Bens devem representar, no mínimo, o 'Valor Mínimo de Garantia' do Contrato de Alienação Fiduciária (valor não informado nos trechos). O 1º Aditamento incluiu BST e Blink como alienantes. Na versão original, as alienantes eram Nova Rede, Acessoline, Itelfibra, GGNet e ONNet Telecomunicações.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1, cláusula 3.3.1(b), com nova redação dada pelo Doc. 2 (1º Aditamento)"
+    }
+   ],
+   "resumo": "Cessão e alienação fiduciárias (grupo) + fiança solidária de BST, BSS, Ávato, Blink e Justweb"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-04-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários||Resultado do Procedimento de Bookbuilding da 3ª Emissão de Debêntures da Companhia",
+    "protocolo": "027499IPE110420250129995073-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1360995&numSequencia=885721&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Brasil Tecnologia e Participações S.A. (CNPJ 35.764.708/0001-01); não há cessão de emissão nos trechos",
+  "lacunas": "1) Não há documentos da 1ª emissão (TEPA11) nem da 2ª emissão (TEPA12, TEPA22), então suas garantias e espécie não podem ser determinadas. 2) A 3ª emissão foi reduzida a 2 séries pelo 1º Aditamento, com cancelamento da 3ª série. O mapeamento TEPA13 = 1ª série e TEPA23 = 2ª série foi inferido, e as garantias descritas são comuns às duas séries. 3) O Doc. 3 refere-se à 4ª emissão (série única, dez/2025), com garantidores e Contratos de Garantia próprios, e não altera as garantias da 3ª emissão. 4) Nos trechos não constam os Contratos de Garantia (Percentual Mínimo, Valor Mínimo de Garantia, bens descritos), nem a confirmação de que foram celebrados e registrados. Não há registro de liberação ou substituição de garantias, de AGD, nem de recuperação judicial ou extrajudicial. 5) O nome completo e o CNPJ da Blink, e partes do texto da lista de fiadores e alienantes, estão cortados nos trechos. 6) Não há informação sobre compartilhamento das garantias com outros credores (como as notas comerciais do BTG listadas no Doc. 3)."
  }
 }

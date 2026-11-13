@@ -112,5 +112,49 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão, RJ, RE ou novação nos trechos analisados. Anexo I indica status ativo e sem inadimplementos no período."
   }
+ },
+ "garantias": {
+  "AEGE16": {
+   "codigo": "AEGE16",
+   "emissao": 6,
+   "especie": "quirografária, a ser convolada em com garantia real (garantia real sob condição suspensiva)",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Ações ordinárias de emissão da Aegea Saneamento e Participações S.A. de titularidade da Equipav Saneamento S.A., representativas de 15% das ações ordinárias da Aegea. Após o 2º aditamento: 113.125.056 ações (o 1º aditamento registrava 109.869.659). Inclui direitos, dividendos, juros sobre capital próprio, proventos e demais valores relacionados às ações.",
+     "condicoes": "Sob condição suspensiva (a garantia só passa a produzir efeitos após o atendimento da Condição Suspensiva, cujo teor não consta dos trechos). Credor fiduciário: Oliveira Trust DTVM S.A. (agente fiduciário), em favor dos debenturistas. Mantém Percentual Mínimo de 15%, com reforço por aditamento a cada aumento de capital da Aegea (o 2º aditamento decorre do aumento de capital de 09/02/2026). Há restrições de transferência, oneração e voto, sem aprovação prévia dos debenturistas. Averbação no livro de registro de ações da Aegea em até 5 dias úteis após a Condição Suspensiva e em até 10 dias úteis da assinatura de cada aditamento. Registro dos aditamentos no RTD de São Paulo/SP em até 10 dias úteis.",
+     "situacao": "vigente (sob condição suspensiva; não é possível confirmar nos trechos se a condição já foi atendida)",
+     "fonte": "Contrato de Alienação Fiduciária de Ações sob Condição Suspensiva (19/02/2024, ou 20/02/2024 conforme o 1º aditamento), conforme 1º Aditamento (cláusula 3.1) e 2º Aditamento (cláusula 3.1, versão mais recente)"
+    }
+   ],
+   "resumo": "Alienação fiduciária de 15% das ações da Aegea (113.125.056 ON), sob condição suspensiva"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-05-11",
+    "tipo": "escritura",
+    "assunto": "1º (PRIMEIRO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ALIENAÇÃO FIDUCIÁRIA DE AÇÕES SOB CONDIÇÃO SUSPENSIVA (AEGE16)",
+    "protocolo": "027642IPE020420250117148633-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519675&numSequencia=1044381&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-05-11",
+    "tipo": "escritura",
+    "assunto": "2º (SEGUNDO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ALIENAÇÃO FIDUCIÁRIA DE AÇÕES SOB CONDIÇÃO SUSPENSIVA (AEGE16)",
+    "protocolo": "027642IPE230220260117103262-65",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519681&numSequencia=1044387&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Equipav Saneamento S.A. (CNPJ 15.385.166/0001-40), emissora original das duas séries (6ª emissão, ex-Grua Investimentos S.A.). Não há indício de migração de emissora.",
+  "lacunas": "Não constam as escrituras de emissão originais nem os contratos de alienação fiduciária completos, só trechos dos aditamentos. Não é possível confirmar: (i) o teor e o cumprimento da Condição Suspensiva de AEGE16 e a convolação da espécie em garantia real; (ii) se há outras garantias (fidejussórias, contas vinculadas etc.) além das ações da Aegea; (iii) eventual liberação, AGD ou alteração posterior; (iv) as datas do contrato de AEGE16 divergem entre os documentos (19/02/2024 e 20/02/2024)."
  }
 }

@@ -128,5 +128,68 @@
    "data": null,
    "resumo": "Resumo da situação sem informação. Nenhum evento de crédito vigente identificado nos dados disponíveis para a série IRBR12."
   }
+ },
+ "garantias": {
+  "IRBR12": {
+   "codigo": "IRBR12",
+   "emissao": 2,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantias; série única após bookbuilding (2ª emissão IRB)."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2020-10-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE280920200104411913-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=800278&numSequencia=325016&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2020-11-30",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE191120200104416513-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=812066&numSequencia=336804&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2020-12-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE211220200104419411-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=819556&numSequencia=344294&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-06-07",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024180IPE010620230104508410-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1111121&numSequencia=635850&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-09-10",
+    "tipo": "comunicado",
+    "assunto": "Agência de classificação de riscos S&ampP Global Ratings (\"S&ampP\") elevou os ratings de crédito de emissor de longo prazo e de emissão atribuídos ao IRB-Brasil Resseguros S.A. e às suas debêntures||de 'brAA+' para 'brAAA' na Escala Nacional Brasil",
+    "protocolo": "024180IPE100920250100422075-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1422499&numSequencia=947211&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "IRB-Brasil Resseguros S.A. (CNPJ 33.376.989/0001-91)",
+  "lacunas": "O texto integral da escritura da 2ª emissão (19/11/2020) não foi fornecido. A espécie quirografária vem do título e dos considerandos do Primeiro Aditamento (Documento 3, 21/12/2020), que mantém todos os termos não alterados. Esse aditamento informa que a 1ª série e o saldo da 2ª série foram cancelados e que sobrou série única com 229.193 debêntures, sem citar garantia alguma. O código IRBR12 sugere a 2ª série, mas pelo aditamento a emissão ficou em série única. Não há aditamento nem AGD posterior sobre garantias. Os Documentos 1 e 2 tratam da 1ª emissão do IRB, que também é quirografária e sem garantias. O Documento 4 é a 3ª emissão, com cessão fiduciária de precatório, e não se aplica ao IRBR12. Não há indício de cessão da emissão a outra emissora."
  }
 }

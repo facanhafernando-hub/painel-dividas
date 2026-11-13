@@ -100,5 +100,41 @@
    "data": null,
    "resumo": "AGD de 14/02/2023 aprovou não decretar vencimento antecipado por falta de registro B no prazo; registro obtido em 06/01/2023. Waiver fee de 0,5% sobre VNU; cronograma mantido."
   }
+ },
+ "garantias": {
+  "MTRO12": {
+   "codigo": "MTRO12",
+   "emissao": 2,
+   "especie": "com garantia real",
+   "garantias": [],
+   "resumo": "Espécie com garantia real, mas os trechos não identificam a garantia (bem, objeto ou cláusula)."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-01-12",
+    "tipo": "proposta_agd",
+    "assunto": "Vencimento Antecipado de Debêntures",
+    "protocolo": "027065IPE310120230104493811-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1049356&numSequencia=574086&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-02-14",
+    "tipo": "ata_agd",
+    "assunto": "Vencimento Antecipado de Debêntures",
+    "protocolo": "027065IPE140220230104497112-99",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1060696&numSequencia=585426&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Companhia do Metropolitano de São Paulo - Metrô (CNPJ 62.070.362/0001-06). Não há indício de cessão para outra emissora.",
+  "lacunas": "Os documentos (proposta de AGD de 12/01/2023 e ata de AGD de 14/02/2023) dizem apenas que a 2ª emissão, em série única, é da espécie com garantia real. Os trechos não descrevem qual é a garantia real (tipo, objeto, bens ou recebíveis dados em garantia, contrato de garantia, compartilhamento). Não há menção a fiança ou aval. A ordem do dia da ata está cortada e a proposta não traz o conteúdo das matérias, que tratam de vencimento antecipado. Portanto, não é possível saber se alguma garantia foi alterada, reforçada ou liberada. A escritura de 05/04/2022 (com o Agente Fiduciário Pentágono S.A. DTVM) não foi fornecida, e seria preciso consultá-la para identificar as garantias. A situação da garantia fica desconhecida."
  }
 }

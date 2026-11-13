@@ -210,5 +210,145 @@
    "data": "2026-03-11",
    "resumo": "Vencimento antecipado automático pelo pedido de RE da Raízen em 11/03/2026, notificado pelo agente fiduciário. Plano de RE homologado e confirmado."
   }
+ },
+ "garantias": {
+  "RAIZ13": {
+   "codigo": "RAIZ13",
+   "emissao": 3,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Raízen Energia S.A. (CNPJ 08.070.508/0001-78)",
+     "condicoes": "Fiadora, devedora solidária e principal pagadora (art. 275 e 818 e ss. do Código Civil). Renúncia aos benefícios de ordem, novação e exoneração (arts. 333, p. único, 364, 366, 368, 821, 822, 824, 827, 830, 834, 835, 837, 838, 839 e 844 §1º do CC; arts. 130, II, 131 e 794 do CPC). Irrevogável e irretratável. Cobre o Valor Garantido: principal, remuneração, encargos e demais obrigações. Sem limite de valor previsto. Pagamento em até 1 Dia Útil após notificação do Agente Fiduciário (Pentágono S.A. DTVM). Vigora até a integral liquidação. Vincula sucessores. Sub-rogação da fiadora só após os debenturistas serem pagos integralmente. Permanece válida mesmo em recuperação extrajudicial ou judicial da emissora (cl. 7.22.11). Em caso de ineficácia ou insuficiência, o Agente Fiduciário convoca AGD para reforço ou substituição (cl. 7.22.12).",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª Emissão (Doc. 1), cláusulas 1.2.2 e 7.22; 1º Aditamento (Doc. 2), cláusula 7.22. Manteve-se a espécie quirografária (cláusula 7.5.1). Docs. 6, 8, 11 e 14 (AGDs de 2026) ainda tratam a emissão como quirografária com garantia adicional fidejussória."
+    }
+   ],
+   "resumo": "Fiança da Raízen Energia S.A. (solidária, principal pagadora, sem benefício de ordem)"
+  },
+  "RAIZ23": {
+   "codigo": "RAIZ23",
+   "emissao": 3,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Raízen Energia S.A. (CNPJ 08.070.508/0001-78)",
+     "condicoes": "Mesma fiança da 3ª emissão, comum às duas séries, sem distinção entre elas. Solidária, principal pagadora, com renúncia aos benefícios de ordem. Irrevogável e irretratável. Sem limite de valor previsto. Pagamento em até 1 Dia Útil após notificação do Agente Fiduciário. Vigora até a integral liquidação do Valor Garantido.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª Emissão (Doc. 1), cláusula 7.22; 1º Aditamento (Doc. 2), que ratificou a emissão em 2 séries após o bookbuilding."
+    }
+   ],
+   "resumo": "Fiança da Raízen Energia S.A. (solidária, principal pagadora, sem benefício de ordem)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-10-01",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão",
+    "protocolo": "025917IPE230920240104556609-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1286882&numSequencia=811608&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-10-07",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento à Escritura de Emissão de Debênture",
+    "protocolo": "025917IPE041020240104557210-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1289135&numSequencia=813861&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-10-07",
+    "tipo": "escritura",
+    "assunto": "Escritura da Debênture",
+    "protocolo": "025917IPE180620240104557212-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1289334&numSequencia=814060&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "025917IPE100320260206650085-07",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1532009&numSequencia=1056715&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-23",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação da Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE220620260109005551-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537736&numSequencia=1062442&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-07-03",
+    "tipo": "ata_agd",
+    "assunto": "Ata Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE030720260101935782-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1541832&numSequencia=1066538&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-07-30",
+    "tipo": "comunicado",
+    "assunto": "Homologação do Plano de Recuperação Extrajudicial",
+    "protocolo": "025917IPE300620260154824981-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549784&numSequencia=1074490&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-02",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE250820260191991805-04",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1564323&numSequencia=1089029&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-30",
+    "tipo": "comunicado",
+    "assunto": "Aprovação de Medidas Voltadas à Implementação do Plano de Recuperação Extrajudicial",
+    "protocolo": "025917IPE300920260152893847-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572701&numSequencia=1097407&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-06",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - 3ª emissão",
+    "protocolo": "025917IPE051020260158842872-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574863&numSequencia=1099569&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-11-06",
+    "tipo": "comunicado",
+    "assunto": "Aumento de Capital Privado, Instituição do Programa de Units, Programa de ADSs e Emissão de Debêntures RSA",
+    "protocolo": "025917IPE061120260230502989-03",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1585801&numSequencia=1110507&numVersao=2",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Raízen S.A. (CNPJ 33.453.598/0001-23). Não há cessão de emissão para outra empresa do grupo nos documentos.",
+  "lacunas": "Os trechos do Plano de Recuperação Extrajudicial (Doc. 5, homologado conforme Doc. 10) estão parciais e com OCR ruim. Os créditos das debêntures são Créditos Sujeitos ao Plano, e o plano prevê trocar créditos por novos títulos com garantia real (RSA/RESA), debêntures da 5ª emissão com garantia real e fidejussória, e capitalização em Units. Os trechos não dizem se a fiança da Raízen Energia S.A. foi liberada, novada ou mantida para as debêntures RAIZ13, RAIZ23 e RAIZ14. Também não dizem se o Aumento de Capital, condição suspensiva do plano, foi concluído. As AGDs de 05/10/2026 (Docs. 14 e 15) só deliberaram a alocação dos debenturistas nas Opções A ou C de pagamento do Plano de RE. Os trechos não detalham essas opções nem confirmam a manutenção ou extinção das garantias das escrituras originais. Por isso, a fiança consta como vigente com base nas escrituras e na ausência de liberação expressa. A ata do Doc. 14 menciona a 3ª emissão como 'Série Única', provável erro de redação. Não há texto sobre a segunda série (RAIZ23) além da divisão em duas séries. Não foram analisadas as atas da AGD de 03/07/2026 e demais além dos cabeçalhos, nem o Doc. 13 (ausente). O Doc. 3 refere-se à 2ª emissão (série única), que não faz parte do pedido."
  }
 }

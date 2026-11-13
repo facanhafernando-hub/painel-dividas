@@ -168,5 +168,39 @@
    "data": null,
    "resumo": "Resumo da situação sem informação; nenhum evento de crédito vigente identificado nos dados fornecidos."
   }
+ },
+ "garantias": {
+  "CMIN12": {
+   "codigo": "CMIN12",
+   "emissao": 2,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia adicional nem privilégio (cl. 5.3 e 5.4 da Escritura)"
+  },
+  "CMIN22": {
+   "codigo": "CMIN22",
+   "emissao": 2,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia adicional nem privilégio (cl. 5.3 e 5.4 da Escritura)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-07-12",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, PARA DISTRIBUIÇÃO PÚBLICA",
+    "protocolo": "025585IPE120720220104475412-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=997701&numSequencia=522435&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "CSN Mineração S.A.",
+  "lacunas": "Nenhuma das quatro séries tem garantia em vigor segundo os trechos recebidos. 1ª emissão: a cl. 4.5.1 diz que as debêntures são quirografárias e \"não contarão com qualquer preferência ou garantia\". O Primeiro Aditamento (03/08/2021) só ratificou o bookbuilding e não criou garantias. A referência a alienação fiduciária de ações da USIMINAS e cessão fiduciária de duplicatas e conta vinculada aparece no bloco de declaração do Agente Fiduciário sobre outras emissões do mesmo grupo (cl. 8.4, item sobre espécie e garantias envolvidas). Não a atribuí a estas séries, porque não é garantia da emissão da CSN Mineração. 2ª emissão: as cl. 5.3 e 5.4 dizem que as debêntures não possuem garantia adicional nem privilégio. Não foram fornecidos aditamentos, atas de AGD ou comunicados posteriores a 07/2022, então não dá para confirmar se houve alteração posterior. Os trechos enviados não mostram o texto que distingue as séries (1ª e 2ª série de cada emissão). Presumi a mesma espécie para todas, pois as escrituras tratam a emissão como um todo. Não há cessão de emissora nem migração; a emissora é a CSN Mineração S.A. (CNPJ 08.902.291/0001-15)."
  }
 }

@@ -162,5 +162,119 @@
    "data": null,
    "resumo": "Resumo da situação sem informação. Nenhum evento de crédito vigente identificado para a série ALAR23."
   }
+ },
+ "garantias": {
+  "ALAR13": {
+   "codigo": "ALAR13",
+   "emissao": 3,
+   "especie": "com garantia real, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Fiadoras da 3ª emissão: Cabo Serviços de Telecomunicações Ltda., Videomar Rede Nordeste S.A., Tecnet Provedor de Acesso as Rede de Comunicação Ltda. e Webby Participações Societárias Ltda. A definição de 'Fiadoras' também cita Starweb e Conexão Serviços de Comunicação.",
+     "condicoes": "Fiadoras e principais pagadoras, solidárias com a Emissora e entre si. Garante o Valor Garantido (principal, remuneração, encargos e demais obrigações). Renúncia aos benefícios de ordem (arts. 277, 333 par. único, 364, 366, 368, 821, 824, 827, 830, 834, 835, 837, 838 e 839 do CC). Pagamento em 2 Dias Úteis após notificação do Agente Fiduciário. Irrevogável e irretratável. Permanece válida mesmo em recuperação judicial ou falência da Emissora.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª emissão (26/04/2024), cláusula 4.23 e ss., mantida pelos 2º e 3º aditamentos (jun/2024); Relatório Anual do Agente Fiduciário (abr/2026), item 9.1: Fiança constituída 'SIM'"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis (direitos creditórios) de titularidade da Cabo Serviços de Telecomunicações Ltda. e da Videomar Rede Nordeste S.A., decorrentes da prestação de seus serviços",
+     "condicoes": "Fluxo mínimo mensal de R$ 10.000.000,00. Formalizada pelo Contrato de Cessão Fiduciária de Direitos Creditórios e Outras Avenças, com a Emissora como interveniente anuente e o Agente Fiduciário (Vórtx). Vigora até a integral liquidação do Valor Garantido. Garante as debêntures da 3ª emissão; o documento não menciona compartilhamento com outros credores.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª emissão, cláusula 4.24.1(i); Relatório Anual do Agente Fiduciário (abr/2026), item 9.1: Cessão Fiduciária constituída 'SIM'"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Equipamentos/ativos móveis de titularidade da Cabo Serviços de Telecomunicações Ltda. (lista no Contrato de Alienação Fiduciária de Equipamentos), e rendimentos ou produto de sua venda, locação ou disposição",
+     "condicoes": "Contrato de Alienação Fiduciária de Equipamentos e Outras Avenças, a ser celebrado entre a Emissora e o Agente Fiduciário antes da primeira integralização. O Agente Fiduciário a chama de 'Alienação Fiduciária de Máquinas'. Irrevogável e irretratável, vigente até a liquidação do Valor Garantido.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª emissão, cláusula 4.24.1(ii); Relatório Anual do Agente Fiduciário (abr/2026), item 9.1: Alienação Fiduciária de Máquinas constituída 'SIM'"
+    }
+   ],
+   "resumo": "Fiança solidária (Cabo, Videomar, Tecnet, Webby), cessão fiduciária de recebíveis e AF de equipamentos"
+  },
+  "ALAR23": {
+   "codigo": "ALAR23",
+   "emissao": 3,
+   "especie": "com garantia real, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Fiadoras da 3ª emissão: Cabo Serviços de Telecomunicações Ltda., Videomar Rede Nordeste S.A., Tecnet Provedor de Acesso as Rede de Comunicação Ltda. e Webby Participações Societárias Ltda. A definição de 'Fiadoras' também cita Starweb e Conexão Serviços de Comunicação.",
+     "condicoes": "Fiadoras e principais pagadoras, solidárias com a Emissora e entre si. Renúncia aos benefícios de ordem. Pagamento em 2 Dias Úteis após notificação do Agente Fiduciário. Irrevogável e irretratável. Garantia comum às duas séries da 3ª emissão.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª emissão, cláusula 4.23 e ss.; 2º aditamento (07/06/2024), que fixou a série em 28.426 debêntures; Relatório Anual do Agente Fiduciário (abr/2026), item 9.1"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis (direitos creditórios) de titularidade da Cabo Serviços de Telecomunicações Ltda. e da Videomar Rede Nordeste S.A.",
+     "condicoes": "Fluxo mínimo mensal de R$ 10.000.000,00, nos termos do Contrato de Cessão Fiduciária. Garante as obrigações das debêntures da 3ª emissão.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª emissão, cláusula 4.24.1(i); Relatório Anual do Agente Fiduciário (abr/2026), item 9.1"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Equipamentos/ativos móveis de titularidade da Cabo Serviços de Telecomunicações Ltda. (alienação fiduciária de máquinas/equipamentos)",
+     "condicoes": "Contrato de Alienação Fiduciária de Equipamentos entre a Emissora e o Agente Fiduciário. Vigora até a liquidação do Valor Garantido.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 3ª emissão, cláusula 4.24.1(ii); Relatório Anual do Agente Fiduciário (abr/2026), item 9.1"
+    }
+   ],
+   "resumo": "Fiança solidária (Cabo, Videomar, Tecnet, Webby), cessão fiduciária de recebíveis e AF de equipamentos"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-05-01",
+    "tipo": "escritura",
+    "assunto": "ESCRITURA DA 3ª EMISSAO DE DEBENTURES",
+    "protocolo": "025194IPE260420240104541312-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1230995&numSequencia=755721&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-06-10",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento Escritura 3ª Emissa~o de Debêntures",
+    "protocolo": "025194IPE070620240104545313-23",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1248738&numSequencia=773464&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-06-12",
+    "tipo": "escritura",
+    "assunto": "3º Aditamento Escritura 3ª Emissa~o de Debêntures",
+    "protocolo": "025194IPE120620240104545514-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1249619&numSequencia=774345&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-15",
+    "tipo": "escritura",
+    "assunto": "Termo de Emissa~o da 3a Emissa~o de Notas Comerciais",
+    "protocolo": "025194IPE031220250108531471-25",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1457765&numSequencia=982477&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-29",
+    "tipo": "comunicado",
+    "assunto": "Relatório Anual Agente Fiduciário ALAR13/23",
+    "protocolo": "025194IPE290420260136540157-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1511589&numSequencia=1036295&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Alares Internet Participações S.A. (CNPJ 23.438.929/0001-00), antes Triple Play Brasil Participações S.A. Não houve cessão da emissão a outra empresa: o mesmo CNPJ aparece nos documentos e as séries são listadas sob 'Alares'. A mudança de denominação é uma inferência; nenhum documento a registra formalmente. As garantias constam como mantidas nos relatórios de 2025, mas ver lacunas sobre CONX12.",
+  "lacunas": "1) CONX12: o Relatório Anual do Agente Fiduciário de 29/04/2026 diz que as debêntures 'não contam com garantias', com tabela vazia. Isso contradiz a escritura, o aditamento de 2023, o relatório de 2025 (Fianças I-VI e cessão fiduciária constituídas) e a lista de garantias do relatório ALAR13/23 de 2026 para a emissão de vencimento 15/08/2029. Não há AGD, aditamento ou comunicado de liberação, então a situação real não pode ser determinada (possível liberação ou erro do relatório). 2) A escritura da 3ª emissão (2024) define 'Fiadoras' incluindo Starweb e Conexão Serviços de Comunicação, que já tinham sido incorporadas em 2022, e a capa lista só Tecnet e Webby. Não é possível confirmar quais fiadoras efetivamente garantem ALAR13/ALAR23. Os relatórios do Agente Fiduciário não nomeiam os fiadores. 3) A escritura da 3ª emissão é ambígua quanto a quem outorga a alienação fiduciária de equipamentos: diz 'pela Emissora', mas os bens são da Cabo Serviços. 4) Não há detalhes dos contratos de garantia (descrição dos equipamentos, contas vinculadas, índice de cobertura ou fundo de reserva). 5) Não há AGD, plano de recuperação ou outro documento posterior alterando garantias. 6) O Termo de Emissão de dez/2025 (3ª emissão de Notas Comerciais, fiadoras Alares Internet S.A. e Tecnet, cessão fiduciária de recebíveis da Alares Internet S.A.) refere-se a outro instrumento e não foi considerado garantia de CONX12, ALAR13 ou ALAR23. 7) Os documentos não informam a existência de compartilhamento de garantias com outras emissões."
  }
 }

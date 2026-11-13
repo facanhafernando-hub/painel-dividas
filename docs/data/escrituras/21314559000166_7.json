@@ -108,5 +108,65 @@
    "data": null,
    "resumo": "Anexos classificam a 7ª emissão como adimplência pecuniária, sem vencimento antecipado, RJ, RE ou reperfilamento registrados nos trechos analisados."
   }
+ },
+ "garantias": {
+  "MOVI37": {
+   "codigo": "MOVI37",
+   "emissao": 7,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Movida Locação de Veículos S.A. (CNPJ 07.976.147/0001-60)",
+     "condicoes": "Fiadora e principal pagadora, solidária com a Emissora, irrevogável e irretratável; renúncia aos benefícios de ordem e de exoneração (arts. 333, 364, 366, 368, 821, 824, 827, 829 a 839 e 844 do CC e arts. 130 e 794 do CPC); limitada ao Valor Garantido (principal, remuneração, encargos moratórios e acessórios); pagamento em até 1 Dia Útil após notificação do Agente Fiduciário; vigora até a quitação integral; alterar as condições da Fiança ou as Fiadoras exige 90% das Debêntures em Circulação",
+     "situacao": "vigente",
+     "fonte": "Escritura (03/09/2021) e 1º Aditamento (17/09/2021, escritura consolidada), cláusulas 4.5 e 4.22 a 4.22.11; cláusula 9.5.2 (quórum)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Movida Locação de Veículos Premium Ltda. (CNPJ 22.397.126/0001-84)",
+     "condicoes": "Fiadora e principal pagadora, solidária com a Emissora e com a outra Fiadora, irrevogável e irretratável; renúncia ao benefício de ordem; limitada ao Valor Garantido; vigora até a quitação integral; alterar as Fiadoras ou as condições da Fiança exige 90% das Debêntures em Circulação",
+     "situacao": "vigente",
+     "fonte": "Escritura (03/09/2021) e 1º Aditamento (17/09/2021, escritura consolidada), cláusulas 4.5 e 4.22 a 4.22.11; cláusula 9.5.2 (quórum)"
+    }
+   ],
+   "resumo": "Fiança solidária de Movida Locação de Veículos S.A. e Movida Locação de Veículos Premium Ltda."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-09-15",
+    "tipo": "escritura",
+    "assunto": "Escritura 7ª Emissão de Debentures Movida Participações S.A",
+    "protocolo": "023825IPE030920210104445411-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=901185&numSequencia=425919&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-09-21",
+    "tipo": "escritura",
+    "assunto": "Aditamento de Escritura da 7ª Emissão de Debêntures",
+    "protocolo": "023825IPE170920210104446006-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=902379&numSequencia=427113&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-03-31",
+    "tipo": "ata_agd",
+    "assunto": "Alterações em itens da escritura",
+    "protocolo": "023825IPE310320260166377589-53",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1499333&numSequencia=1024039&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Movida Participações S.A.",
+  "lacunas": "Os documentos sobre a 7ª emissão são de setembro de 2021 (escritura e 1º aditamento). Não há documento posterior sobre ela, então não é possível confirmar se houve liberação, substituição ou reforço de garantias. A ata de AGD de 31/03/2026 trata da 20ª emissão (série única) e não altera a 7ª. Os trechos não trazem a tabela de séries; MOVI37 foi tomado como a 3ª série (IPCA) apenas pelo código e pelo contexto. A fiança é comum a todas as séries e não há garantia real. Não houve migração de emissora no material."
  }
 }

@@ -319,5 +319,138 @@
    "data": null,
    "resumo": "Só há propostas (waiver de 26/03/2026, AGD de reestruturação de 06/07/2026, sustação) sem resultado. Cautelar antecedente à RJ de 16/04/2026 tem alcance não confirmado."
   }
+ },
+ "garantias": {
+  "ONCO19": {
+   "codigo": "ONCO19",
+   "emissao": 9,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia (1ª série da 9ª emissão); sem garantias identificadas nos documentos"
+  },
+  "ONCO29": {
+   "codigo": "ONCO29",
+   "emissao": 9,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia (2ª série da 9ª emissão); sem garantias identificadas nos documentos"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-12-07",
+    "tipo": "escritura",
+    "assunto": "9ª Emissão de Debêntures",
+    "protocolo": "026123IPE271020220104490211-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039111&numSequencia=563841&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2022-12-07",
+    "tipo": "escritura",
+    "assunto": "1º aditamento da 9ª Emissão de Debêntures",
+    "protocolo": "026123IPE231120220104490211-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039114&numSequencia=563844&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2022-12-07",
+    "tipo": "escritura",
+    "assunto": "2º aditamento da 9ª Emissão de Debêntures",
+    "protocolo": "026123IPE301120220104490211-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039118&numSequencia=563848&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-05-25",
+    "tipo": "ata_agd",
+    "assunto": "Contratação assessor legal - 9ª emissão",
+    "protocolo": "026123IPE130520260134564863-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526608&numSequencia=1051314&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-05-25",
+    "tipo": "ata_agd",
+    "assunto": "Contratação de assessor legal - 9ª emissão",
+    "protocolo": "026123IPE150520260144502709-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1526646&numSequencia=1051352&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-06-13",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da dívida da Cia - 9ª emissão",
+    "protocolo": "026123IPE060720260188746362-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1534343&numSequencia=1059049&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-06-24",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da dívida da Cia - 9ª emissão",
+    "protocolo": "026123IPE060720260268493106-24",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1538160&numSequencia=1062866&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2026-07-08",
+    "tipo": "ata_agd",
+    "assunto": "Alterações das Características das Debêntures",
+    "protocolo": "026123IPE060720260149786920-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543086&numSequencia=1067792&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-08",
+    "tipo": "ata_agd",
+    "assunto": "Alterações das Características das Debêntures",
+    "protocolo": "026123IPE060720260116190096-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1543088&numSequencia=1067794&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-29",
+    "tipo": "comunicado",
+    "assunto": "Atualização do Plano de Recuperação Extrajudicial",
+    "protocolo": "026123IPE291020260197453981-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1581436&numSequencia=1106142&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-30",
+    "tipo": "comunicado",
+    "assunto": "Atualização de Adesão ao plano de Recuperação Extrajudicial",
+    "protocolo": "026123IPE301020260172347721-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582517&numSequencia=1107223&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-11-04",
+    "tipo": "comunicado",
+    "assunto": "Atualização adesão - Plano de Recuperação Extrajudicial",
+    "protocolo": "026123IPE041120260105093356-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584307&numSequencia=1109013&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Oncoclínicas do Brasil Serviços Médicos S.A.",
+  "lacunas": "A escritura da 9ª emissão e seus aditamentos (27/10/2022, 23/11/2022 e 30/11/2022) não constam dos trechos fornecidos. Para a 9ª emissão, a espécie quirografária e \"Garantias N/A\" vêm das tabelas de emissões do agente fiduciário nas escrituras da 11ª e da 12ª, e dos títulos das propostas e atas de AGD. Para a 11ª emissão, a escritura (cláusula 6.8.1) e o 1º aditamento (anexo I, cláusula 6.8.1) dizem \"sem garantia e sem preferência\". Para a 12ª emissão, a escritura (cláusula 6.8.1) diz o mesmo. A tabela do agente fiduciário na escritura da 12ª também registra a 11ª emissão com \"Garantias N/A\". Os documentos de 2026 (propostas e atas de AGD sobre waiver financeiro, reestruturação da dívida, sustação do vencimento antecipado e medida cautelar) aparecem apenas de forma fragmentada. O conteúdo das deliberações e dos termos da reestruturação não está nos trechos. Não foi possível verificar se as reestruturações propostas ou aprovadas criam, reforçam ou liberam garantias. Também não foi possível verificar se as propostas de 06/07/2026 foram aprovadas: as atas de 11ª e 9ª emissão do dia 06/07/2026 mostram presença de apenas 1,19% e 0,43% das debêntures em circulação, e o resultado não consta. Não há menção a fiança, aval, alienação fiduciária, cessão fiduciária, conta vinculada ou fundo de reserva em nenhuma das quatro séries. Os documentos 1 a 3, 10, 11 e 16 não foram fornecidos. Não houve cessão de emissão para outra empresa do grupo."
  }
 }

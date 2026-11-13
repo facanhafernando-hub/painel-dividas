@@ -150,5 +150,66 @@
    "data": null,
    "resumo": "Não há informação nos documentos fornecidos sobre a 17ª emissão. Nenhum evento de crédito identificado para esta série."
   }
+ },
+ "garantias": {
+  "MVLV16": {
+   "codigo": "MVLV16",
+   "emissao": 17,
+   "especie": "não determinada nos documentos fornecidos",
+   "garantias": [],
+   "resumo": "Sem documento da 17ª emissão; garantias não determináveis (desconhecida)"
+  },
+  "MVLV26": {
+   "codigo": "MVLV26",
+   "emissao": 17,
+   "especie": "não determinada nos documentos fornecidos",
+   "garantias": [],
+   "resumo": "Sem documento da 17ª emissão; garantias não determináveis (desconhecida)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2017-07-05",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE040720170104292106-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=570185&numSequencia=112980&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-06-13",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE060620250129028376-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1390512&numSequencia=915224&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE030820260113911830-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551396&numSequencia=1076102&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-22",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE210920260196203663-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570321&numSequencia=1095027&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Movida Participações S.A. (conforme indicado na solicitação; os documentos não tratam de cessão ou migração da 17ª emissão)",
+  "lacunas": "Nenhum dos 4 documentos é a escritura, aditamento ou ata da 17ª emissão. Eles tratam da 1ª emissão (quirografária, sem garantia, 2017), da 22ª emissão (quirografária com fiança da Movida Locação de Veículos S.A., 2025), da 28ª emissão (2 séries, também com fiança da Movida Locação de Veículos S.A., 2026) e da 29ª emissão (série única, também com fiança da Movida Locação de Veículos S.A., 2026). As fianças dessas três emissões são específicas de cada uma e não podem ser estendidas à 17ª. O título do contrato de distribuição da 22ª cita por erro \"22ª (décima sétima) Emissão\", mas isso não informa nada sobre as garantias da 17ª. As tabelas de emissões em circulação anexadas às escrituras da 28ª e da 29ª estão cortadas e, nos trechos visíveis, não mostram a 17ª emissão nem os códigos MVLV16/MVLV26. Não é possível determinar a espécie, as garantias, a existência de fiadores, nem a situação (vigente ou liberada) das séries MVLV16 e MVLV26. Faltam a escritura da 17ª emissão, seus aditamentos, as atas de AGD e os comunicados."
  }
 }

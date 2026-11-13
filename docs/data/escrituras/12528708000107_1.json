@@ -191,5 +191,109 @@
    "data": "2026-11-04",
    "resumo": "Pedido de RE da Emissora em 2026-11-04 é vencimento antecipado automático (cl. 4.14.1(i) e 4.14.3 da 1ª emissão). Sem declaração formal nos trechos."
   }
+ },
+ "garantias": {
+  "AERI11": {
+   "codigo": "AERI11",
+   "emissao": 1,
+   "especie": "quirografária, a ser convolada em com garantia real (após o Contrato de Garantias Compartilhadas)",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios do que sobejar de eventual excussão da garantia sobre os imóveis das matrículas 032.288 e 032.289 (RI de Caucaia-CE), já alienados fiduciariamente pela Aeris a outras obrigações (Cessão Fiduciária de Direitos Creditórios de Sobejo)",
+     "condicoes": "irrevogável e irretratável; compartilhada com outros credores via Contrato de Garantias Compartilhadas; também garante as debêntures da 2ª emissão; sujeita às condições resolutivas do aditamento",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusula 3.11.1(i) (AGD de 28/03/2025); cláusula 4.1 (condições resolutivas)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Imóveis da planta industrial: matrículas 025.487, 53.414, 019.778, 49.081, 039.862 e 5074 (RI de Caucaia-CE), com terrenos, construções e benfeitorias, desonerados",
+     "condicoes": "irrevogável e irretratável; compartilhada com outros credores; em caso de excussão, a venda deve prever arrendamento ou locação com opção de compra à Emissora",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusulas 3.11.1(ii) e 3.11.3.1"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Determinadas máquinas e equipamentos de propriedade da Aeris, desonerados",
+     "condicoes": "irrevogável e irretratável; compartilhada com outros credores",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusula 3.11.1(iii)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Estoque de pás eólicas da Aeris",
+     "condicoes": "irrevogável e irretratável; compartilhada com outros credores",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusula 3.11.1(iv)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Propriedade superveniente do imóvel da matrícula nº 32.288 (RI de Caucaia-CE)",
+     "condicoes": "incide sobre propriedade superveniente (condição suspensiva implícita); compartilhada com outros credores",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusula 3.11.1(v)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Cotas subordinadas de titularidade da Aeris no Aeris Fundo de Investimento em Direitos Creditórios – Indústria e Comércio – Responsabilidade Limitada (Garantia FIDC)",
+     "condicoes": "compartilhada com outros credores",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusula 3.11.1(vi)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios de ICMS registrados no balanço de 31/12/2024",
+     "condicoes": "compartilhada com outros credores",
+     "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+     "fonte": "1º Aditamento, cláusula 3.11.1(vii)"
+    }
+   ],
+   "resumo": "Quirografária; AGD 2025 aprovou garantias reais fiduciárias compartilhadas (imóveis, equipamentos, pás, FIDC, ICMS); formalização não confirmada"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-06-01",
+    "tipo": "escritura",
+    "assunto": "Primeira Emissão de Debêntures",
+    "protocolo": "025283IPE150120210104434809-69",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=872626&numSequencia=397363&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-05-02",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da Primeira Emissão de Debêntures",
+    "protocolo": "025283IPE280320250127352138-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1371346&numSequencia=896058&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-11-04",
+    "tipo": "comunicado",
+    "assunto": "Pedido de recuperação extrajudicial",
+    "protocolo": "025283IPE031120260116101863-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583619&numSequencia=1108325&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-11-05",
+    "tipo": "plano_rj",
+    "assunto": "Minuta do Plano de Recuperação Extrajudicial",
+    "protocolo": "025283IPE031120260160763554-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584655&numSequencia=1109361&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Aeris Indústria e Comércio de Equipamentos para Geração de Energia S.A. (sem cessão a outra empresa; emissora original mantida)",
+  "lacunas": "Os documentos não confirmam que o Contrato de Garantias Compartilhadas foi celebrado até 24/04/2025, nem que os demais eventos das condições resolutivas ocorreram (aditamentos dos empréstimos bancários listados e entrega dos documentos de garantia ao Agente Fiduciário até 16/04/2025). Também não há aditamento posterior convolando a espécie em 'com garantia real', então a espécie vigente é incerta. Se as condições resolutivas se concretizaram, a série volta a ser quirografária sem garantias. Os trechos não trazem as condições resolutivas completas, o Anexo 4.1 nem o Contrato de Garantias Compartilhadas, e não detalham procedimentos de excussão, proporção entre credores nem valores das garantias. Não há fiança ou aval. O comunicado de recuperação extrajudicial (nov/2026) abrange créditos 'não cobertos por garantias reais ou fiduciárias' e prevê possível alteração de garantias. Não está claro se as debêntures AERI11 são abrangidas pelo plano, nem se o plano alterou ou liberou garantias; as condições financeiras serão definidas em versão atualizada do plano."
  }
 }

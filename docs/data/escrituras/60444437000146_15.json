@@ -211,5 +211,54 @@
    "data": null,
    "resumo": "Fiadora Light S.A. em recuperação judicial. Emissão repactuada conforme o Plano de RJ, com Data de Repactuação em 13/11/2024 e 3 séries."
   }
+ },
+ "garantias": {
+  "LIGHC5": {
+   "codigo": "LIGHC5",
+   "emissao": 15,
+   "especie": "com garantia real, com garantia adicional fidejussória (1ª e 2ª séries, repactuadas); 3ª série quirografária",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestada pela Light Serviços de Eletricidade S.A.",
+     "condicoes": "1ª série; sem privilégio ou concorrência de terceiros, respeitados os limites legais; compartilhada com os titulares das debêntures das 9ª, 16ª, 17ª, 19ª, 20ª, 21ª, 22ª, 23ª, 24ª, 25ª e 26ª emissões e das notas first lien e second lien (NY); sobejo cedido à 2ª série após pagamento da 1ª série",
+     "situacao": "vigente",
+     "fonte": "Doc. 5 (Escritura consolidada no 3º Aditamento), cláusulas 5.6.1, 5.6.1.1(i) e 5.6.1.2(iii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletricidade S.A.",
+     "condicoes": "1ª série; recebíveis limitados a R$50 milhões, atualizados anualmente pelo IPCA (limitados a R$300 milhões por ano, corrigidos pelo IPCA, em caso de inadimplemento pecuniário); compartilhada com as demais emissões; sobejo cedido à 2ª série após pagamento da 1ª série",
+     "situacao": "vigente",
+     "fonte": "Doc. 5, cláusulas 5.6.1.1(ii) e 5.6.1.2(iv)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+     "condicoes": "Em favor dos debenturistas da 1ª e da 2ª séries; irrevogável e irretratável; fiadora e principal pagadora, solidária; renúncia aos benefícios dos arts. 333 par. único, 366, 821, 827, 830, 834 a 839 do CC e arts. 130 e 794 do CPC",
+     "situacao": "vigente",
+     "fonte": "Doc. 5, cláusula 5.7"
+    }
+   ],
+   "resumo": "1ª/2ª séries: cessões fiduciárias compartilhadas + fiança da Light S.A. (solidária); 3ª série quirografária"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "PARA DISTRIBUIÇÃO PÚBLICA||TERCEIRO ADITAMENTO À ESCRITURA PARTICULAR DA 15ª EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM DUAS SÉRIES, DA ESPÉCIE QUIROGRAFÁRIA, COM GARANTIA FIDEJUSSÓRIA ADICIONAL",
+    "protocolo": "008036IPE281120240104563511-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313128&numSequencia=837854&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Light Serviços de Eletricidade S.A. (CNPJ 60.444.437/0001-46); não houve migração de emissora nos documentos analisados",
+  "lacunas": "Os documentos não indicam a qual série (1ª, 2ª ou 3ª) corresponde cada código informado; as garantias descritas valem para as séries 1ª e 2ª repactuadas, enquanto a 3ª série é quirografária, sem garantia, e destinada à integralização das Debêntures Conversíveis Fiadora. Os Contratos de Garantia (cessões fiduciárias) são descritos como 'a serem celebrados' na data da repactuação; os trechos não confirmam a assinatura nem o registro em RTD. A data de repactuação não é informada em todos os trechos, e o plano de recuperação judicial e os contratos de garantia não foram fornecidos. Na 20ª emissão, o trecho da cláusula 5.6.1.2 e da fiança (5.7) está cortado."
  }
 }

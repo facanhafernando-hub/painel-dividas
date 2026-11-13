@@ -135,5 +135,67 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, RJ, RE ou reperfilamento. Recompra de até R$ 150 mi a preço de mercado não altera o fluxo da série."
   }
+ },
+ "garantias": {
+  "HAPV15": {
+   "codigo": "HAPV15",
+   "emissao": 5,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+     "condicoes": "Fiadora e principal pagadora, em caráter irrevogável, irretratável e incondicional, sem benefício de ordem. Renuncia aos arts. 301, 333 par. único, 364, 366, 368, 824, 827, 830, 834, 835, 837, 838, 839 e 844 do Código Civil e 130, 131 e 794 do CPC. Garante todas as Obrigações Garantidas (principal, Remuneração, encargos moratórios e demais obrigações da Emissora e da Fiadora). Deve ser honrada em até 5 Dias Úteis após notificação do Agente Fiduciário. Em atraso, incide multa de 2% e juros de 1% a.m. Autônoma e abstrata. Vigora até o pagamento integral e se mantém em Operação Societária Permitida. Alterar as cláusulas da Fiança exige 90% das Debêntures em Circulação.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 5ª Emissão (entregue em 2023-12-22), Cláusulas 2.10, 4.5.1 e 5; outorga aprovada em AGE da Fiadora de 15/12/2023 (Cláusula 1.2.1)"
+    }
+   ],
+   "resumo": "Fiança da Hapvida Assistência Médica S.A. (principal pagadora, sem benefício de ordem)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-12-22",
+    "tipo": "escritura",
+    "assunto": "5ª Emissão de Debêntures",
+    "protocolo": "024392IPE151220230104528209-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1176895&numSequencia=701621&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-04-24",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250154439325-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365044&numSequencia=889770&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE081020250101964273-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
+    "protocolo": "024392IPE250820260171572734-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Hapvida Participações e Investimentos S.A. (CNPJ 05.197.443/0001-38)",
+  "lacunas": "Os documentos não mostram cessão das emissões a outra emissora. Não há aditamento ou AGD posterior que libere ou altere a fiança dessas séries, então a vigência é presumida a partir dos documentos disponíveis. As escrituras vêm recortadas (trechos omitidos e cláusula 5.9 da 5ª emissão cortada), o que não afeta a identificação da garantia. Os códigos HAPV18 e HAPV28 foram associados às duas séries da 8ª emissão conforme o enunciado, e os documentos não indicam qual é a 1ª e qual é a 2ª. Os comunicados de 2025 (9ª e 10ª emissões) tratam de outras emissões e não alteram as garantias destas séries."
  }
 }

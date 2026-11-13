@@ -186,5 +186,83 @@
    "data": null,
    "resumo": "Renegociação de cláusulas em curso, submetida à AGD de 09/02/2026 segundo a minuta. Não altera cronograma de pagamentos nem há vencimento antecipado, RJ ou RE."
   }
+ },
+ "garantias": {
+  "ANET11": {
+   "codigo": "ANET11",
+   "emissao": 1,
+   "especie": "com garantia real, com garantia adicional fidejussória (proposta de alteração para quirografária, não aprovada)",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios cedidos pela America Net S.A. (hoje Vero S.A.) ao Agente Fiduciário Pentágono S.A. DTVM, conforme o Instrumento Particular de Cessão Fiduciária de Direitos Creditórios em Garantia e Outras Avenças de 24/03/2021 (objeto específico dos recebíveis não detalhado nos trechos).",
+     "condicoes": "A AGD de 09/02/2026 pretendia excluir a cessão fiduciária, liberar a garantia e distratar o contrato. A AGD não foi instalada em 1ª convocação (quórum de 2,82%), então a liberação não foi aprovada.",
+     "situacao": "vigente (liberação apenas proposta; resultado de eventual 2ª convocação desconhecido)",
+     "fonte": "Doc. 5 e 6 (Proposta da Administração, matéria 1); Doc. 9 (Termo de Não Instalação); Doc. 3 (quadro de características: espécie Real, garantia Cessão Fiduciária)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Vero S.A. (CNPJ 31.748.174/0001-60), como 'fiadora ingressante' pelo 2º Aditamento, com base na RCA da Vero de 14/12/2023. As demais Fiadoras originais da 1ª emissão da America Net não são identificadas nos trechos.",
+     "condicoes": "Fiança adicional (a emissão é 'com garantia adicional fidejussória'). Os termos (solidariedade, renúncia ao benefício de ordem) não aparecem nos trechos. Como a Vero é também a emissora sucessora, a fiança dela é de eficácia incerta. O texto limpo do 3º Aditamento omite a menção à garantia fidejussória, mas esse aditamento é só minuta e a AGD não foi instalada.",
+     "situacao": "desconhecida",
+     "fonte": "Doc. 6 (minuta com marcações do aditamento, cláusulas 2.2/2.3 e considerandos); títulos dos Docs. 3, 5, 6 e 9"
+    }
+   ],
+   "resumo": "Cessão fiduciária de recebíveis (liberação proposta, AGD não instalada) + fiança adicional de situação incerta"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-11-30",
+    "tipo": "escritura",
+    "assunto": "Instrumento Particular de Escritura da 1ª Emissão de Debêntures Simples",
+    "protocolo": "026409IPE301120210104453011-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=921085&numSequencia=445819&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-01-19",
+    "tipo": "escritura",
+    "assunto": "3º (TERCEIRO) ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 1ª (PRIMEIRA) EMISSÃO",
+    "protocolo": "026409IPE190120260148560878-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468352&numSequencia=993058&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-01-20",
+    "tipo": "proposta_agd",
+    "assunto": "PROPOSTA DA ADMINISTRAÇÃO PARA ASSEMBLEIA GERAL DE DEBENTURISTAS DA 1ª (PRIMEIRA) EMISSÃO",
+    "protocolo": "026409IPE090220260218182379-21",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468479&numSequencia=993185&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2026-01-20",
+    "tipo": "proposta_agd",
+    "assunto": "PROPOSTA DA ADMINISTRAÇÃO PARA ASSEMBLEIA GERAL DE DEBENTURISTAS DA 1ª (PRIMEIRA) EMISSÃO",
+    "protocolo": "026409IPE090220260320983167-27",
+    "versao": "3",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1468532&numSequencia=993238&numVersao=3",
+    "explicito": true
+   },
+   {
+    "data": "2026-02-09",
+    "tipo": "comunicado",
+    "assunto": "AGD Vero I AGD Anet 11 Termo de Não Instalação AGD",
+    "protocolo": "026409IPE090220260182094497-23",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1475101&numSequencia=999807&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Vero S.A. (CNPJ 31.748.174/0001-60), que também é sucessora por incorporação da America Net S.A. nas emissões ANET11 e ANET12. A incorporação foi aprovada em AGD de 10/10/2023 e a Vero assumiu todas as obrigações; as garantias reais continuam formalmente mantidas.",
+  "lacunas": "1) O Doc. 1 (escritura de 30/11/2021, quirografária com fiança de INB Telecom Ltda., MKAnet Serviços e Comércio de Informática Ltda. e Clic Rápido Telecomunicações Ltda.) trata de emissão própria da Vero, em série única. Ela não corresponde a ANET11, a ANET12 nem, com certeza, a VERO12, e por isso não foi atribuída a nenhuma série. 2) A lâmina (Doc. 2) tem o código de negociação em branco. Ela foi associada a VERO12 por ser a 2ª emissão da Vero (R$ 375 mi, 2023), mas essa associação é inferida. 3) Não há ata de AGD aprovando nada: as AGDs de 09/02/2026 de ANET11 e ANET12 não foram instaladas em 1ª convocação, e o resultado de eventual 2ª convocação é desconhecido. Os textos 'quirografária' dos 3ºs Aditamentos são apenas minutas. 4) O quadro de características do Doc. 4 traz vencimento e valor da 1ª emissão (15/03/2029, R$ 250 mi), enquanto a cláusula 4.6.1 indica vencimento em 15/11/2030. O texto está inconsistente. 5) As Fiadoras originais da 1ª emissão da America Net (ANET11) e os termos da fiança do 2º Aditamento não constam nos trechos. 6) Não há informação sobre a manutenção da fiança da Giganet após 2023."
  }
 }

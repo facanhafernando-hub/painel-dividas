@@ -178,5 +178,66 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação. O aditamento de 2024-03-19 apenas ajustou a escritura (valor, bookbuilding e cronograma da 2ª série)."
   }
+ },
+ "garantias": {
+  "VERO13": {
+   "codigo": "VERO13",
+   "emissao": 3,
+   "especie": "quirografária",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+     "condicoes": "Só se constitui se a emissora adquirir novas empresas e aditar a escritura (modelo do Anexo IV) em até 5 Dias Úteis após o prazo previsto na cláusula (trecho cortado). A fiadora ingressante se obrigaria como fiadora, principal pagadora e solidária, de forma irrevogável e irretratável, com renúncia aos benefícios de ordem, sem aprovação prévia dos debenturistas.",
+     "situacao": "proposta",
+     "fonte": "Doc. 1 e Doc. 2 (escritura da 3ª emissão e consolidação no 1º Aditamento), cláusula de obrigações da Emissora (trecho cortado) e Anexo IV"
+    }
+   ],
+   "resumo": "Quirografária, sem garantia constituída; fiança de empresas adquiridas só prevista de forma condicional",
+   "observacao": "O Doc. 3 lista VERO13 com 'Garantias --'."
+  },
+  "VERO23": {
+   "codigo": "VERO23",
+   "emissao": 3,
+   "especie": "quirografária",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+     "condicoes": "Só se constitui se a emissora adquirir novas empresas e aditar a escritura (modelo do Anexo IV) em até 5 Dias Úteis após o prazo previsto na cláusula (trecho cortado). A fiadora ingressante se obrigaria como fiadora, principal pagadora e solidária, de forma irrevogável e irretratável, com renúncia aos benefícios de ordem, sem aprovação prévia dos debenturistas.",
+     "situacao": "proposta",
+     "fonte": "Doc. 1 e Doc. 2 (escritura da 3ª emissão e consolidação no 1º Aditamento), cláusula de obrigações da Emissora (trecho cortado) e Anexo IV"
+    }
+   ],
+   "resumo": "Quirografária, sem garantia constituída; fiança de empresas adquiridas só prevista de forma condicional",
+   "observacao": "O Doc. 4 lista VERO23 com 'Garantias --'."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-02-26",
+    "tipo": "escritura",
+    "assunto": "3ª Emissão 12.431 - Escritura de Emissão (MF 23.02.2024 - v.assinatura)",
+    "protocolo": "026409IPE230220240104534805-96",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1198944&numSequencia=723670&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-03-19",
+    "tipo": "escritura",
+    "assunto": "Vero - 3ª Emissão 12.431 - 1º Aditamento Escritura de Emissão",
+    "protocolo": "026409IPE140320240104537010-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1209273&numSequencia=733999&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "VERO S.A. (CNPJ 31.748.174/0001-60). Não há cessão ou migração das emissões para outra empresa nos documentos.",
+  "lacunas": "Não há documentos posteriores a outubro de 2024 (AGDs, aditamentos de inclusão de fiadora, comunicados), então não dá para confirmar se alguma empresa adquirida já aderiu como fiadora. O trecho que define o gatilho e o prazo da obrigação de incluir fiadoras está cortado nas escrituras das duas emissões. Os trechos do agente fiduciário mostram 'Garantias --' para VERO13 e VERO23, enquanto a 2ª emissão (VERO12) aparece com 'Fiança'. A tabela do agente fiduciário não traz as séries da 4ª emissão. Nenhuma garantia real ou fiança de terceiro nominada foi identificada nas duas emissões."
  }
 }

@@ -134,5 +134,56 @@
    "data": null,
    "resumo": "Nos trechos analisados não há vencimento antecipado, suspensão de pagamentos, recuperação judicial ou extrajudicial, nem proposta de novação."
   }
+ },
+ "garantias": {
+  "LVTC22": {
+   "codigo": "LVTC22",
+   "emissao": 2,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios de (i) contratos de locação de equipamentos de informática, eletrônicos, telecomunicações, softwares, hardwares e equipamentos fotovoltaicos, entre outros; (ii) notas fiscais eletrônicas de compra e venda de softwares, hardwares, produtos de informática, componentes e equipamentos fotovoltaicos, cobradas por boleto; (iii) boletos bancários de vendas e locações, liquidados na Conta Vinculada Fluxo, excluídos os já abrangidos nos itens (i) e (ii). Cedente: Livetech da Bahia Indústria e Comércio S.A.",
+     "condições": "Garante todas as obrigações da Emissora nas Debêntures, na Escritura e no Contrato de Cessão Fiduciária, incluindo encargos moratórios e despesas do Agente Fiduciário e dos debenturistas. Há um Valor Mínimo a ser mantido, de 50% do saldo do Valor Nominal Unitário acrescido da Remuneração de cada série. O texto está truncado por OCR, e a verificação segue o Contrato de Cessão Fiduciária. Constituída por Contrato de Cessão Fiduciária entre a Emissora, o Itaú Unibanco S.A. (banco depositário) e o Agente Fiduciário. O contrato deve ser registrado nos RTDs de Ilhéus/BA e São Paulo/SP. Reforço, substituição e liberação seguem esse contrato. A Emissora não pode constituir outros ônus sobre os bens dados em garantia sem anuência dos debenturistas. Modificação da Garantia Real exige aprovação de 90% das Debêntures em Circulação.",
+     "situacao": "vigente",
+     "fonte": "Escritura 2ª emissão (21/06/2022), cláusulas 2.5, 3.5.1, 3.5.2, 4.4.1 e 9.4"
+    },
+    {
+     "tipo": "cessão fiduciária / conta vinculada",
+     "prestador_ou_objeto": "Direitos creditórios inerentes à titularidade das contas vinculadas (Conta Vinculada Fluxo e Conta Vinculada Retenção) abertas no Itaú Unibanco S.A., de titularidade da Emissora e não movimentáveis por ela",
+     "condicoes": "Pela Conta Vinculada Fluxo transitam os recursos dos contratos de locação, das notas fiscais eletrônicas e dos boletos. Na Conta Vinculada Retenção são depositados os recursos líquidos da integralização das Debêntures, liberados conforme o Contrato de Cessão Fiduciária.",
+     "situacao": "vigente",
+     "fonte": "Escritura 2ª emissão, cláusulas 3.5.1 e 3.8.1"
+    }
+   ],
+   "resumo": "Cessão fiduciária de recebíveis (locações, NFs, boletos) e contas vinculadas no Itaú; sem fiança identificada"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-06-21",
+    "tipo": "escritura",
+    "assunto": "Escritura de Emissão das Debêntures",
+    "protocolo": "025895IPE010620220104473312-13",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=992190&numSequencia=516924&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2022-06-22",
+    "tipo": "escritura",
+    "assunto": "WDC Livetech - 1º Aditamento Escritura de Emissão de Debentures",
+    "protocolo": "025895IPE010620220104473411-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=992406&numSequencia=517140&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Livetech da Bahia Indústria e Comércio S.A.",
+  "lacunas": "Os trechos não dizem se LVTC22 é a 1ª ou a 2ª série da 2ª emissão. O 1º Aditamento (22/06/2022, pós-bookbuilding) vem sem o corpo das cláusulas, então não se sabe o resultado do bookbuilding nem eventual alteração de garantia. A tabela do Anexo I (R$120 mi, 'garantia real com garantia adicional fidejussória', Fiança, vencimento 2022/2024) parece descrever outra emissão, provavelmente a 1ª, e não foi atribuída à 2ª emissão. Na 2ª emissão a espécie é só 'com garantia real', e não há fiança. O texto do contrato de cessão fiduciária não foi fornecido, nem a lista de contratos cedidos. Não há registro de que o contrato tenha sido registrado nos RTDs, nem de aditamentos, AGDs ou liberações posteriores. O percentual de 50% do Valor Mínimo está truncado por OCR. Não há indício de cessão da emissão para outra emissora."
  }
 }

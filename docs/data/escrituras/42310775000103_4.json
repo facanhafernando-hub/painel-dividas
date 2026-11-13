@@ -322,5 +322,166 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação nos trechos disponíveis. As AGDs de 2026 tratam da 3ª emissão."
   }
+ },
+ "garantias": {
+  "RISP14": {
+   "codigo": "RISP14",
+   "emissao": 4,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações atuais e futuras da Emissora (Águas do Rio 1 SPE S.A.), com direitos e proventos, alienadas pela Nova Acionista, Águas do Rio Investimentos S.A. (CNPJ 50.875.903/0001-94)",
+     "condicoes": "Compartilhada com os Credores Seniores da Emissora (BNDES, BTG, IDB Invest, Proparco e debenturistas da 2ª e 3ª emissões) e os Bancos Fiadores, via Acordo entre Credores (4º Aditamento de 19/03/2024). Agente de Garantias: TMF Brasil Administração e Gestão de Ativos Ltda. Contrato: 3º Aditamento à AF de Ações de 19/03/2024.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3 (Escritura 4ª emissão), cláusulas 3.4.1(i) e 3.4.2(i); Doc. 4 (1º Aditamento), cláusulas 2.3 e 3.4"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A., alienadas por AEGEA, Colibri Verde FIP-IE, Angelo Investment Private Limited e Itaúsa S.A. (Acionistas Indiretos)",
+     "condicoes": "Compartilhada entre os Credores Seniores das SPEs (Emissora e Águas do Rio 4 SPE S.A.) e os Bancos Fiadores das SPEs, via Acordo entre Credores.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusulas 3.4.1(ii) e 3.4.2(ii); Doc. 4, cláusula 3.4.1(ii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Emissora: Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas (Itaú Unibanco como banco depositário), outras contas e direitos residuais da excussão",
+     "condicoes": "Compartilhada com os Credores Seniores da Emissora; 3º Aditamento à CF de Recebíveis e ao Contrato de Administração de Contas Vinculadas, ambos de 19/03/2024.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 3.4.1(iii); Doc. 4, cláusula 3.4.1(iii)"
+    },
+    {
+     "tipo": "conta vinculada",
+     "prestador_ou_objeto": "Cessão fiduciária dos direitos da Nova Acionista contra o Banco Depositário sobre contas vinculadas, recursos e investimentos permitidos",
+     "condicoes": "Compartilhada entre os Credores Seniores das SPEs e os Bancos Fiadores das SPEs; contrato aditado em 19/03/2024.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 3.4.1(iv); Doc. 4, cláusula 3.4.1(iv)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios de mútuos subordinados: Nova Acionista e AEGEA com a Emissora (cessão fiduciária de créditos subordinados – Emissora) e AEGEA com a Nova Acionista (– Nova Acionista)",
+     "condicoes": "Compartilhada, via Acordo entre Credores; contratos aditados em 19/03/2024.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusulas 3.4.1(v) e (vi); Doc. 4, cláusulas 3.4.1(v) e (vi)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Contrato de Aporte de Capital: obrigações de aporte de recursos da AEGEA e da Nova Acionista na Emissora e na Nova Acionista",
+     "condicoes": "Valores e limites (caps) não constam nos trechos.",
+     "situacao": "vigente (aditamento de 19/03/2024)",
+     "fonte": "Doc. 3, cláusula 3.4.1(vii); Doc. 4, cláusula 3.4.1(vii)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Cessão Condicional – Emissora: cessão da posição contratual da Emissora no Contrato de EPC com a AESAN Engenharia e Participações Ltda. (CNPJ 19.190.773/0001-06)",
+     "condicoes": "Sob condição suspensiva; 3º Aditamento de 19/03/2024; Emissora como devedora e Credores Seniores, Bancos Fiadores e Agente de Garantias como partes garantidas.",
+     "situacao": "vigente sob condição suspensiva",
+     "fonte": "Doc. 3, cláusula 3.4.1(viii); Doc. 4, cláusula 3.4.1(viii)"
+    }
+   ],
+   "resumo": "Garantia real compartilhada: AF de ações (Emissora e Nova Acionista), CF de recebíveis, contas e mútuos; sem fiança"
+  },
+  "RISP24": {
+   "codigo": "RISP24",
+   "emissao": 4,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações atuais e futuras da Emissora (Águas do Rio 1 SPE S.A.), alienadas pela Nova Acionista, Águas do Rio Investimentos S.A.",
+     "condicoes": "Compartilhada com os Credores Seniores da Emissora e os Bancos Fiadores, via Acordo entre Credores (4º Aditamento de 19/03/2024); Agente de Garantias: TMF Brasil Administração e Gestão de Ativos Ltda.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusulas 3.4.1(i) e 3.4.2(i); Doc. 4, cláusula 3.4"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A., alienadas por AEGEA, Colibri Verde FIP-IE, Angelo Investment Private Limited e Itaúsa S.A.",
+     "condicoes": "Compartilhada entre os Credores Seniores das SPEs e os Bancos Fiadores das SPEs, via Acordo entre Credores.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusulas 3.4.1(ii) e 3.4.2(ii); Doc. 4, cláusula 3.4.1(ii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Emissora: Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas (Itaú Unibanco como banco depositário), outras contas e direitos residuais da excussão",
+     "condicoes": "Compartilhada com os Credores Seniores da Emissora; contratos aditados em 19/03/2024.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 3.4.1(iii); Doc. 4, cláusula 3.4.1(iii)"
+    },
+    {
+     "tipo": "conta vinculada",
+     "prestador_ou_objeto": "Cessão fiduciária dos direitos da Nova Acionista contra o Banco Depositário sobre contas vinculadas, recursos e investimentos permitidos",
+     "condicoes": "Compartilhada entre os Credores Seniores das SPEs e os Bancos Fiadores das SPEs.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 3.4.1(iv); Doc. 4, cláusula 3.4.1(iv)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios de mútuos subordinados: Nova Acionista e AEGEA com a Emissora e AEGEA com a Nova Acionista",
+     "condicoes": "Compartilhada, via Acordo entre Credores.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusulas 3.4.1(v) e (vi); Doc. 4, cláusulas 3.4.1(v) e (vi)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Contrato de Aporte de Capital: obrigações de aporte da AEGEA e da Nova Acionista",
+     "condicoes": "Valores e limites não constam nos trechos.",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 3.4.1(vii); Doc. 4, cláusula 3.4.1(vii)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Cessão Condicional – Emissora: cessão da posição contratual no Contrato de EPC com a AESAN Engenharia e Participações Ltda.",
+     "condicoes": "Sob condição suspensiva; 3º Aditamento de 19/03/2024.",
+     "situacao": "vigente sob condição suspensiva",
+     "fonte": "Doc. 3, cláusula 3.4.1(viii); Doc. 4, cláusula 3.4.1(viii)"
+    }
+   ],
+   "resumo": "Garantia real compartilhada: AF de ações (Emissora e Nova Acionista), CF de recebíveis, contas e mútuos; sem fiança"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-02-20",
+    "tipo": "escritura",
+    "assunto": "Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries",
+    "protocolo": "026735IPE190220240104534209-24",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1196559&numSequencia=721285&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-04-02",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries, da Águas do Rio",
+    "protocolo": "026735IPE020420240104538410-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1216932&numSequencia=741658&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026735IPE270520260132983386-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542312&numSequencia=1067018&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026735IPE290420260194942548-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542313&numSequencia=1067019&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Águas do Rio 1 SPE S.A. (CNPJ 42.310.775/0001-03); não há cessão ou migração de emissora nos documentos",
+  "lacunas": "Sobre a 2ª emissão (RISP12/RISP22): (a) não consta que a Quitação das Debêntures Existentes tenha ocorrido, então não se sabe se a Fiança AEGEA e a fiança bancária foram liberadas nem se as garantias reais, sujeitas a condição suspensiva, já são plenamente eficazes; (b) os bancos fiadores e as renovações das cartas de fiança não constam nos trechos; (c) o trecho da escritura está cortado após o item (iv) da cláusula 3.6.1, e itens como a Cessão Condicional do EPC podem existir para a 2ª emissão sem constar dos trechos; (d) o Doc. 2 data a escritura original de 28/06/2022, provável erro de OCR, pois o Doc. 1 indica 28/06/2023. Sobre a 4ª emissão (RISP14/RISP24): a escritura não prevê fiança da AEGEA nem fiança bancária própria; as fianças bancárias citadas garantem a 3ª emissão e subcréditos do BNDES, sem ligação direta com estas séries. Os trechos 'Garantias: Fiança AEGEA' dos anexos de dívidas existentes pertencem a outros emissores ou emissões e não foram atribuídos a estas séries. Os trechos da cláusula 3.4.2 estão cortados, sem a lista completa das dívidas compartilhadas. As ATAs de AGD de 2026 (Docs. 5 e 6) tratam apenas da 3ª emissão (Banco SMBC substituindo o Itaú nas fianças bancárias) e não alteram as séries consultadas. Não há informação sobre liberações posteriores, AGDs das 2ª e 4ª emissões, recuperação judicial ou inadimplemento."
  }
 }

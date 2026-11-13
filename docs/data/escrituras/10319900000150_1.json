@@ -152,5 +152,87 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, RJ ou RE. Proposta de waiver de índices até 2030 e troca de fiador foi à AGD de 2ª convocação (23/10/2025); resultado das votações não consta."
   }
+ },
+ "garantias": {
+  "CCLS11": {
+   "codigo": "CCLS11",
+   "emissao": 1,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Simpar S.A. (Fiadora atual)",
+     "condicoes": "Válida até o pagamento integral do Valor Garantido (Cláusulas 4.17.5 e 4.17.6 da Escritura). Segundo a AGD de 23/10/2025, será substituída pela Aegea, com exoneração da Simpar, somente após a conclusão da Operação. Os trechos não mostram se a fiança é solidária nem se há renúncia ao benefício de ordem.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 22/12/2021 (Cláusulas 4.17.5 e 4.17.6, conforme citadas na Proposta da Administração de 19/09/2025); Ata da AGD de 23/10/2025"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Aegea Saneamento e Participações S.A. (Nova Fiadora)",
+     "condicoes": "Assume todos os direitos e obrigações da Simpar, nos mesmos termos da Escritura, e será a única fiadora após a substituição. Condição suspensiva: conclusão da Operação (efetiva transferência das ações da Ciclus Ambiental S.A. à Padova Participações S.A., subsidiária integral da Aegea). Condição adicional: envio pela Companhia ao Agente Fiduciário da documentação solicitada, em até 30 dias após a conclusão da Operação (art. 11, X, Resolução CVM 17). A formalização será feita por 5º aditamento à Escritura, também em até 30 dias após a conclusão. Contrapartida aprovada: índice financeiro temporário Dívida Financeira Líquida/EBITDA ≤ 4,00x, apurado anualmente, de 31/12/2025 a 31/12/2029, sobre as demonstrações da Aegea; os índices originais voltam a ser apurados a partir do trimestre findo em 30/09/2030.",
+     "situacao": "proposta",
+     "fonte": "Proposta da Administração de 19/09/2025 (itens I a III); Ata da AGD de 23/10/2025, 2ª convocação, deliberação sobre a substituição de fiador"
+    }
+   ],
+   "resumo": "Fiança da Simpar vigente; troca pela Aegea aprovada em AGD, sujeita à conclusão da Operação"
+  },
+  "CCLS21": {
+   "codigo": "CCLS21",
+   "emissao": 1,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Simpar S.A. (Fiadora atual)",
+     "condicoes": "Válida até o pagamento integral do Valor Garantido (Cláusulas 4.17.5 e 4.17.6 da Escritura). Segundo a AGD de 23/10/2025, será substituída pela Aegea, com exoneração da Simpar, somente após a conclusão da Operação. Os trechos não mostram se a fiança é solidária nem se há renúncia ao benefício de ordem.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 22/12/2021 (Cláusulas 4.17.5 e 4.17.6, conforme citadas na Proposta da Administração de 19/09/2025); Ata da AGD de 23/10/2025"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Aegea Saneamento e Participações S.A. (Nova Fiadora)",
+     "condicoes": "Assume todos os direitos e obrigações da Simpar, nos mesmos termos da Escritura, e será a única fiadora após a substituição. Condição suspensiva: conclusão da Operação (efetiva transferência das ações da Ciclus Ambiental S.A. à Padova Participações S.A., subsidiária integral da Aegea). Condição adicional: envio pela Companhia ao Agente Fiduciário da documentação solicitada, em até 30 dias após a conclusão da Operação (art. 11, X, Resolução CVM 17). A formalização será feita por 5º aditamento à Escritura, também em até 30 dias após a conclusão. Contrapartida aprovada: índice financeiro temporário Dívida Financeira Líquida/EBITDA ≤ 4,00x, apurado anualmente, de 31/12/2025 a 31/12/2029, sobre as demonstrações da Aegea; os índices originais voltam a ser apurados a partir do trimestre findo em 30/09/2030.",
+     "situacao": "proposta",
+     "fonte": "Proposta da Administração de 19/09/2025 (itens I a III); Ata da AGD de 23/10/2025, 2ª convocação, deliberação sobre a substituição de fiador"
+    }
+   ],
+   "resumo": "Fiança da Simpar vigente; troca pela Aegea aprovada em AGD, sujeita à conclusão da Operação"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-09-23",
+    "tipo": "proposta_agd",
+    "assunto": "Ciclus - Modelo de Instruc¸a~o de Voto (MF 19.09)(50154918.1)",
+    "protocolo": "026921IPE101020250132634850-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1426006&numSequencia=950718&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-10",
+    "tipo": "ata_agd",
+    "assunto": "Ciclus Ambienta Rio - AGD 31 10 2025 (Termo de Na~o Instalac¸a~o)",
+    "protocolo": "026921IPE101020250196631907-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1432011&numSequencia=956723&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-23",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas",
+    "protocolo": "026921IPE231020250158828024-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1435294&numSequencia=960006&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Ciclus Ambiental Rio S.A. (CNPJ 10.319.900/0001-50), anteriormente denominada Ciclus Ambiental do Brasil S.A.",
+  "lacunas": "1) Os documentos tratam da Ciclus Ambiental Rio S.A. e não mencionam 'Regenera Rio S.A.' nem os códigos CCLS11 e CCLS21. Presumi tratar-se da mesma emissora com nova denominação, mas isso precisa ser confirmado. 2) Os documentos não dizem qual série corresponde a cada código. Os trechos descrevem a fiança como comum às duas séries da 1ª emissão. 3) Faltam o texto integral da Escritura e dos aditamentos anteriores, então não dá para confirmar solidariedade, renúncia ao benefício de ordem, limite ou definição de 'Valor Garantido'. 4) Na Ata de 23/10/2025, o percentual de aprovação do item da substituição de fiadora não aparece nos trechos, apenas o do item (ii), com 92,18% das Debêntures em Circulação presentes (35,26% do total presentes). Não aparece que a deliberação tenha sido rejeitada. 5) Não há comprovação de que a Operação tenha sido concluída nem de que o 5º aditamento tenha sido assinado. Portanto, a fiança da Simpar segue como vigente e a da Aegea como proposta/condicionada. 6) O Termo de Não Instalação de 10/10/2025 (1ª convocação) não decidiu nada, e a AGD foi instalada em 2ª convocação em 23/10/2025."
  }
 }

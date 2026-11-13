@@ -179,5 +179,131 @@
    "data": "2026-10-07",
    "resumo": "Recuperação extrajudicial homologada. Créditos da 18ª emissão novados pelo plano, com bloqueio na B3 até substituição por Novas Debêntures em até 60 dias."
   }
+ },
+ "garantias": {
+  "CBRDB8": {
+   "codigo": "CBRDB8",
+   "emissao": 18,
+   "especie": "quirografária, sem garantia real ou fidejussória",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantias reais ou fidejussórias; nenhuma garantia incluída por AGD ou aditamento"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-05-13",
+    "tipo": "escritura",
+    "assunto": "Escritura 18 emissão de debêntures",
+    "protocolo": "014826IPE050520210104432912-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=867308&numSequencia=392045&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-05-13",
+    "tipo": "escritura",
+    "assunto": "Aditamento 18 emissão de debêntures",
+    "protocolo": "014826IPE120520210104432912-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=867312&numSequencia=392049&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2022-12-08",
+    "tipo": "ata_agd",
+    "assunto": "",
+    "protocolo": "014826IPE071220220104490311-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1039516&numSequencia=564246&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2022-12-12",
+    "tipo": "ata_agd",
+    "assunto": "Ata da assembleia geral dos titulares de debêntures da 18ª (décima oitava) emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, em até duas séries",
+    "protocolo": "014826IPE121220220104490710-98",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1040601&numSequencia=565331&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-09-30",
+    "tipo": "proposta_agd",
+    "assunto": "18ª Emissão - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE021020250257291686-02",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1427814&numSequencia=952526&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-07",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "014826IPE021020250144049583-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1430204&numSequencia=954916&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-28",
+    "tipo": "proposta_agd",
+    "assunto": "18ª emissão - 2ª convocação - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE051120250141824612-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436728&numSequencia=961440&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-11-10",
+    "tipo": "ata_agd",
+    "assunto": "18ª Emissão - Ata - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE051120250109336175-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1442435&numSequencia=967147&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-05-05",
+    "tipo": "plano_rj",
+    "assunto": "Nova Versão do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE050520260140531175-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516387&numSequencia=1041093&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-07",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260194351299-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574980&numSequencia=1099686&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-08",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260295440636-17",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575329&numSequencia=1100035&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Publicac¸a~o da Homologac¸a~o do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE211020260137121682-38",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578908&numSequencia=1103614&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Companhia Brasileira de Distribuição (CNPJ 47.508.411/0001-56). Não há cessão de emissão para outra empresa do grupo nos documentos.",
+  "lacunas": "18ª emissão (CBRDB8, 2ª série): a escritura (cl. 4.5.1 e 4.8.1) diz que as debêntures são quirografárias e 'não contarão com quaisquer garantias reais ou fidejussórias'. O 1º aditamento e as atas/propostas de AGD (dez/2022 e 2025) tratam de outros assuntos (waiver de covenants, operação com ações do Éxito) e não incluem garantias. A AGD de 05/11/2025 teve 56,58% de presença, e o trecho recortado não mostra o resultado da votação. 20ª emissão (PCARD0): a escritura (cl. 4.5.1), anexa ao 1º aditamento, diz 'quirografária, sem garantia'. A AGD de 23/09/2025 tratou só de waiver de covenant financeiro. Os documentos não informam qual série da 20ª emissão (1ª, 2ª ou 3ª) corresponde ao código PCARD0, mas as três têm a mesma espécie. Plano de Recuperação Extrajudicial (versão de 05/05/2026, ainda proposta/em homologação): as debêntures das 18ª e 20ª emissões são Créditos Sujeitos, e as Novas Debêntures Emissão A e B seriam quirografárias, sem garantia real ou fidejussória (cl. 6.1.3 e 6.2.3). A cessão fiduciária de recebíveis de cartões de crédito e a conta vinculada (cl. 7.1.8) garantem apenas os Novos Recursos, compartilhadas entre os credores que os disponibilizarem. Não foram atribuídas às debêntures existentes nem às Novas Debêntures Emissão A e B. Os documentos fornecidos não incluem a escritura original da 20ª emissão com todas as cláusulas, mas o texto anexado ao aditamento é suficiente para a espécie. Não há informação sobre homologação do plano."
  }
 }

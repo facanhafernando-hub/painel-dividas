@@ -217,5 +217,121 @@
    "data": "2026-03-11",
    "resumo": "Emissora e Raízen S.A. pediram RE em 11/03/2026; AGDs declaram vencimento antecipado automático, com notificação ao agente fiduciário na mesma data."
   }
+ },
+ "garantias": {
+  "RESA15": {
+   "codigo": "RESA15",
+   "emissao": 5,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Raízen Combustíveis S.A. (CNPJ 33.453.598/0001-23), qualificada como \"Fiadora\" no 1º Aditamento de 10.06.2020. Na 7ª emissão (2022), o mesmo CNPJ e NIRE aparecem como Raízen S.A.",
+     "condicoes": "Os trechos da escritura original da 5ª emissão não foram fornecidos, então os termos da fiança (solidariedade, renúncia ao benefício de ordem) não aparecem. Em fevereiro de 2022, a tabela de garantias na escritura da 7ª emissão registra a 5ª emissão da Raízen Energia (R$ 169.518.000,00; 169.518 debêntures; vencimento 15.06.2030; IPCA + 5,80% a.a.) com \"Garantias: fiança\". O 1º Aditamento ratifica as declarações da Fiadora e não altera a garantia.",
+     "situacao": "vigente",
+     "fonte": "Doc. 2 (1º Aditamento, preâmbulo e cláusula 4.2); Doc. 4 e 5 (tabela de emissões do grupo); Doc. 9, 12, 14, 18 (título da emissão)"
+    }
+   ],
+   "resumo": "Fiança da Raízen Combustíveis S.A. (hoje Raízen S.A., mesmo CNPJ); termos não visíveis"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2019-11-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE311020190104378011-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=720707&numSequencia=245530&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2020-07-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE100620200104404113-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=779310&numSequencia=304051&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2020-07-29",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE120620200104404113-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=779311&numSequencia=304052&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2022-03-25",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023230IPE250320220104464512-98",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=958895&numSequencia=483629&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-11",
+    "tipo": "comunicado",
+    "assunto": "Pedido de Recuperação Extrajudicial Raízen S.A.",
+    "protocolo": "023230IPE110320260195736967-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1488697&numSequencia=1013403&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-12",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do Processo de Recuperação Extrajudicial",
+    "protocolo": "023230IPE120320260148659598-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489896&numSequencia=1014602&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-29",
+    "tipo": "ata_agd",
+    "assunto": "Ata Assembleia Geral de Debenturistas - 5ª emissão - 26.06.2026",
+    "protocolo": "023230IPE260620260190445249-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1539495&numSequencia=1064201&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-07-15",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas - 5ª emissão",
+    "protocolo": "023230IPE140720260138260835-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1545281&numSequencia=1069987&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-29",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - Assembleia de Debenturistas 5ª emissão",
+    "protocolo": "023230IPE290920260132073190-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1572620&numSequencia=1097326&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-15",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - 5ª emissão",
+    "protocolo": "023230IPE131020260141065742-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577592&numSequencia=1102298&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Raízen Energia S.A. (em Recuperação Extrajudicial, processo nº 4037759-13.2026.8.26.0100). Não há cessão ou migração de emissora nos trechos.",
+  "lacunas": "(1) Não foram fornecidas as escrituras originais da 4ª e da 5ª emissões, então faltam as cláusulas de fiança delas (identificação do fiador da 4ª emissão, solidariedade, renúncia ao benefício de ordem, limites). (2) Na tabela de garantias das escrituras da 7ª emissão, o item de R$ 900 milhões (venc. 15.11.2029) está sem cabeçalho legível; sua ligação à 4ª emissão da Raízen Energia é apenas provável. (3) O fiador da 5ª emissão consta como Raízen Combustíveis S.A. em 2020. O CNPJ e o NIRE coincidem com os da Raízen S.A. (fiadora da 7ª emissão em 2022), o que sugere mudança de denominação, mas os documentos não confirmam. (4) Os efeitos do Plano de Recuperação Extrajudicial sobre as fianças não aparecem nos trechos fornecidos. O plano e as decisões das AGDs de 2026 não estão incluídos, e há apenas menção a \"Opção de Pagamento\" individual e à implementação do plano pelo Agente Fiduciário. Não é possível dizer se as fianças foram mantidas, modificadas ou liberadas. (5) Os trechos das AGDs não mostram deliberações sobre garantias (incluídas, reforçadas ou liberadas). (6) O título da 5ª emissão alterna entre \"em até 2 séries\" e \"série única\" nos documentos."
  }
 }

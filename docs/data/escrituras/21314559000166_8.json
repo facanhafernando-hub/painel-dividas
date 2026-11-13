@@ -152,5 +152,66 @@
    "data": null,
    "resumo": "Anexo II classifica a 8ª emissão como adimplência pecuniária. Nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação registrado nos documentos."
   }
+ },
+ "garantias": {
+  "MOVI18": {
+   "codigo": "MOVI18",
+   "emissao": 8,
+   "especie": null,
+   "garantias": [],
+   "resumo": "Indeterminável: nenhum documento fornecido trata da 8ª emissão (escrituras da 1ª, 22ª, 28ª e 29ª)"
+  },
+  "MOVI28": {
+   "codigo": "MOVI28",
+   "emissao": 8,
+   "especie": null,
+   "garantias": [],
+   "resumo": "Indeterminável: nenhum documento fornecido trata da 8ª emissão (escrituras da 1ª, 22ª, 28ª e 29ª)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2017-07-05",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE040720170104292106-31",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=570185&numSequencia=112980&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-06-13",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE060620250129028376-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1390512&numSequencia=915224&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE030820260113911830-80",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1551396&numSequencia=1076102&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-22",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023825IPE210920260196203663-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1570321&numSequencia=1095027&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Movida Participações S.A. (CNPJ 21.314.559/0001-66), conforme indicado no enunciado. Nenhum documento fornecido confirma ou nega cessão da 8ª emissão para outra empresa do grupo.",
+  "lacunas": "Os quatro documentos fornecidos não tratam da 8ª emissão (MOVI18/MOVI28). São as escrituras da 1ª emissão (2017, quirografária, sem garantia, 3 séries), da 22ª emissão (2025, quirografária com fiança da Movida Locação de Veículos S.A.), da 28ª emissão (2026, 2 séries, fiança da Movida Locação de Veículos S.A.) e da 29ª emissão (2026, série única, fiança da Movida Locação de Veículos S.A.). Essas fianças valem apenas para as respectivas emissões e não podem ser atribuídas à 8ª. As tabelas de outras emissões nas escrituras da 28ª e da 29ª (anexos de OCR, com espécie e garantias de emissões do grupo) também não listam a 8ª emissão da Movida Participações. Faltam a escritura da 8ª emissão, seus aditamentos, atas de AGD e comunicados, e sem eles não é possível determinar a espécie, as garantias, a situação (vigente, liberada ou proposta) nem eventual migração de emissora."
  }
 }

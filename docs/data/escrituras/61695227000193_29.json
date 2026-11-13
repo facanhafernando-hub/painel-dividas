@@ -123,5 +123,49 @@
    "data": null,
    "resumo": "29ª emissão, emitida em set/out 2025, sem vencimento antecipado, RJ/RE ou renegociação nos trechos analisados. Fiança sujeita a condição resolutiva."
   }
+ },
+ "garantias": {
+  "ELPLB9": {
+   "codigo": "ELPLB9",
+   "emissao": 29,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Enel Brasil S.A. (CNPJ 07.523.555/0001-67)",
+     "condicoes": "Outorgada em favor dos Debenturistas, representados pelo Agente Fiduciário. Irrevogável e irretratável; fiadora garantidora e principal pagadora, de forma solidária. Renúncia aos benefícios de ordem e à exoneração (arts. 277, 333, 364, 366, 368, 821, 824, 827, 834, 835, 837, 838 e 839 do Código Civil; arts. 130, 131 e 794 do CPC). Cobre o VNU Atualizado, a Remuneração, os Encargos Moratórios, despesas, custos e tributos, e os custos do Agente Fiduciário e dos Debenturistas. Pagamento em 2 Dias Úteis após notificação do Agente Fiduciário. Sujeita a Condição Resolutiva: a fiança se extingue se forem comprovadas, cumulativamente, (i) a renovação da Concessão por aditamento ao Contrato de Concessão com prazo até, no mínimo, a Data de Vencimento e (ii) a manutenção de rating AAA (escala local) pela S&P ou Fitch, ou equivalente da Moody's, sem considerar a fiança. Verificada a condição, as partes celebram em até 10 Dias Úteis o Aditamento para Liberação da Fiança, sem AGD. Há evento de vencimento antecipado não automático se, havendo mudança de controle com a fiança ainda vigente, ela não for substituída por fiança do novo controlador (AAA) ou fiança bancária AAA.",
+     "situacao": "vigente (sujeita à Condição Resolutiva)",
+     "fonte": "Escritura da 29ª Emissão (15/09/2025), cláusulas 5.11.1 e 5.34; confirmada no Primeiro Aditamento (02/10/2025), que mantém a espécie e a fiança"
+    }
+   ],
+   "resumo": "Fiança da Enel Brasil S.A. (solidária), com condição resolutiva (renovação da concessão + rating AAA)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-09-16",
+    "tipo": "escritura",
+    "assunto": "Escritura 29a Emissão",
+    "protocolo": "014176IPE150920250167724228-67",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1424153&numSequencia=948865&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-03",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da Escritura da 29ª Emissão de Debêntures",
+    "protocolo": "014176IPE021020250125191726-83",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1429575&numSequencia=954287&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Eletropaulo Metropolitana Eletricidade de São Paulo S.A.",
+  "lacunas": "Não há documentos da 27ª emissão (ELPLA7), então espécie e garantias não puderam ser determinadas. O trecho 'Garantias: (i) Quirografária' no Documento 3 faz parte de uma lista de outras emissões do agente fiduciário e não está identificado com nenhuma emissão; não foi atribuído à ELPLA7. O Documento 3 também lista outras emissões (25ª da Eletropaulo e emissões de Enel Green Power, com penhor e cessão fiduciária), que não pertencem às séries pedidas. A correspondência do código ELPLB9 com a 29ª emissão foi assumida pelo enunciado. Não há informação sobre a ocorrência da Condição Resolutiva nem sobre o aditamento de liberação da fiança. O Primeiro Aditamento (02/10/2025) ratifica o bookbuilding, e os trechos não mostram alteração das garantias. Não há indício de migração de emissora."
  }
 }

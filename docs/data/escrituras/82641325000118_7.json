@@ -59,12 +59,13 @@
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
-    "data": "2016-10-28",
-    "tipo": "escritura",
-    "assunto": "Alteração de taxa garantia condição de vencimento",
-    "protocolo": "020141IPE191020160104267110-85",
+    "data": "2025-03-27",
+    "tipo": "ata_agd",
+    "assunto": "a celebraça ó de aditamentó a s escrituras de emissa ó de CMPH14, VVEO15, VVEO16, VVEO17 e CREM17||a órientaça ó de vótó da Cómpanhia para óutórga de garantia fidejussó ria, sób a fórma de fiança, pela PróInfusión S.A., inscrita nó CNPJ sób ó nº 07.028.603/0001-40 (\"PróInfusión\" e \"Fiança\")||a óutór",
+    "protocolo": "025682IPE270320250104574314-20",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=535500&numSequencia=78248&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1352986&numSequencia=877712&numVersao=1",
+    "explicito": true
    }
   ],
   "uso_grupo": {
@@ -91,5 +92,54 @@
    "data": null,
    "resumo": "Nada consta sobre a 7ª emissão (CREM17). A suspensão de vencimento antecipado da AGD de 19/10/2016 refere-se à 4ª emissão, não à série pedida."
   }
+ },
+ "garantias": {
+  "CREM17": {
+   "codigo": "CREM17",
+   "emissao": 7,
+   "especie": "com garantia real, com garantia fidejussória adicional (a proposta de aditamento prevê quirografária após a incorporação da Cremer pela CM Hospitalar)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "CM Hospitalar S.A. (fiadora na escritura de 23/02/2024) e Proinfusion S.A. (CNPJ 07.028.603/0001-40), incluída como fiadora no aditamento de 15/04/2025.",
+     "condicoes": "Os trechos não detalham solidariedade nem renúncia ao benefício de ordem. A minuta de aditamento (Doc. 9) prevê extinguir a Fiança e a Cláusula 4.22 com a incorporação da Cremer pela CM Hospitalar, que passaria a ser a emissora.",
+     "situacao": "vigente",
+     "fonte": "Doc. 9 (ata da AGD de 11/06/2026 e minuta de aditamento); Doc. 2"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "100% das ações ordinárias da Cremer S.A. de titularidade da CM Hospitalar S.A., com frutos, dividendos e novas ações. Contrato de 15/04/2025 entre CM Hospitalar, Santander, IFC e Pentágono, com interveniência da Cremer.",
+     "condicoes": "Compartilhada com os credores de CMPH14, VVEO15, VVEO16, Contrato IFC e CCBs Santander. Antes da AGD de 11/06/2026, era liberada com a venda da Cremer, com o Índice Financeiro abaixo de 2,5x (Condição Resolutiva) ou com a quitação integral. A AGD aprovou nova redação: liberação com a venda da Cremer e uso do líquido no pré-pagamento das Dívidas Financeiras, ou com a quitação. A Condição Resolutiva de 2,5x deixa de ser gatilho de liberação. A eficácia depende das Condições Suspensiva e Resolutiva (Aprovação IFC até 30/09/2026).",
+     "situacao": "vigente",
+     "fonte": "Doc. 2 (ata de 27/03/2025, item iii); Doc. 9 (quadro 'Garantias Reais')"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis de boletos da CM Hospitalar S.A. e da Cremer S.A., com conta vinculada cedida fiduciariamente ('Cessão Fiduciária Demais Dívidas').",
+     "condicoes": "Compartilhada com o Contrato IFC e as demais Debêntures em Vigor (exceto VVEO17). Fluxo mínimo mensal de R$ 400 milhões. Recebíveis onerados: o menor entre R$ 1 bilhão menos a Cessão VVEO17 e 29,9% do saldo devedor agregado das demais dívidas.",
+     "situacao": "vigente",
+     "fonte": "Doc. 2 (ata de 27/03/2025, item v); Doc. 9 (definição de Garantias Reais)"
+    }
+   ],
+   "resumo": "Fiança CM Hospitalar e Proinfusion; AF 100% ações Cremer e CF recebíveis, compartilhadas; migração proposta"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-03-27",
+    "tipo": "ata_agd",
+    "assunto": "a celebraça ó de aditamentó a s escrituras de emissa ó de CMPH14, VVEO15, VVEO16, VVEO17 e CREM17||a órientaça ó de vótó da Cómpanhia para óutórga de garantia fidejussó ria, sób a fórma de fiança, pela PróInfusión S.A., inscrita nó CNPJ sób ó nº 07.028.603/0001-40 (\"PróInfusión\" e \"Fiança\")||a óutór",
+    "protocolo": "025682IPE270320250104574314-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1352986&numSequencia=877712&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": "12420164000157",
+  "emissora_atual": "VVEO16 e VVEO17: CM Hospitalar S.A. CREM17: Cremer S.A. Está proposta (minuta de aditamento do Doc. 9, ainda sem datas) a incorporação da Cremer pela CM Hospitalar, que passaria a emissora de CREM17 como quirografária, com extinção da Fiança. Não há confirmação de que isso já ocorreu.",
+  "lacunas": "1) Não constam as cláusulas originais de fiança (solidariedade, renúncia ao benefício de ordem, limite) das três séries. 2) As mudanças aprovadas nas AGDs de 08/06/2026 (VVEO16) e 11/06/2026 (VVEO17 e CREM17) dependem da Condição Suspensiva (aprovação das demais debêntures em vigor) e da Aprovação IFC até 30/09/2026, sem confirmação de cumprimento. Até lá, valem as redações anteriores. 3) A minuta de aditamento de CREM17 que extingue a fiança, torna a emissão quirografária e transfere a emissora está em branco ([•]), e não se sabe se a incorporação ocorreu. Seu efeito sobre a alienação fiduciária das ações da Cremer e sobre as cessões não é tratado. 4) Há divergências: a data do aditamento de VVEO16 aparece como 01/09/2023 ou 14/11/2023. Docs. 3 e 5 dizem que a Proinfusion substituiu a Expressa em VVEO16, enquanto o Doc. 7 diz que foi incluída e cita apenas a Cremer como fiadora original. As tabelas do Anexo do Doc. 10 mostram VVEO16 como 'garantia flutuante, Fiança', com aparência de redação desatualizada. 5) O Doc. 10 diz que a cessão de VVEO17 antes da AGD podia ser compartilhada com o IFC e as demais debêntures, enquanto o Doc. 2 a trata como cessão própria, com 67% do saldo. 6) Não consta que a alienação fiduciária das ações da Cremer cubra VVEO17 (o Doc. 2 não a lista). 7) A espécie de CREM17 aparece como 'quirografária' nos Docs. 6 e 7 e como 'garantia real' nos Docs. 9 e 11. Adotou-se garantia real, por ser posterior e coerente com a ata de 27/03/2025. 8) A tabela do Doc. 3 com valor total de R$ 800 mi e vencimento 10/06/2027 não pôde ser atribuída a nenhuma das séries."
  }
 }

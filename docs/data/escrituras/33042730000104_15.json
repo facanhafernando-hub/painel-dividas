@@ -194,5 +194,57 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação nos trechos. Anexo I indica série ativa e sem inadimplementos."
   }
+ },
+ "garantias": {
+  "CSNAA5": {
+   "codigo": "CSNAA5",
+   "emissao": 15,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia; 1ª série, vencimento em 15/04/2034 (escritura cl. 4.5.1 e 4.6.1)"
+  },
+  "CSNAB5": {
+   "codigo": "CSNAB5",
+   "emissao": 15,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia; 2ª série, vencimento em 15/04/2039 (escritura cl. 4.5.1 e 4.6.1)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-04-16",
+    "tipo": "escritura",
+    "assunto": "Instrumento particular de escritura da 15ª (décima quinta) emissão de debêntures",
+    "protocolo": "004030IPE120420240104539812-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1222509&numSequencia=747235&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-05-07",
+    "tipo": "escritura",
+    "assunto": "1º ADITAMENTO DA 15ª (DÉCIMA QUINTA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "004030IPE070520240104541914-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1234162&numSequencia=758888&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-07-04",
+    "tipo": "ata_agd",
+    "assunto": "Alteração da escritura de emissão",
+    "protocolo": "004030IPE300620250179744184-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1398090&numSequencia=922802&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Companhia Siderúrgica Nacional (CNPJ 33.042.730/0001-04). Os documentos não indicam cessão ou migração de emissora em nenhuma das emissões.",
+  "lacunas": "Não há nenhum documento da 12ª emissão (CSNAA2), então espécie e garantias dela não podem ser determinadas. Nas emissões 11, 14, 15 e 16, a escritura (cl. 4.5.1) diz que as debêntures são quirografárias e 'não contarão com qualquer preferência ou garantia'. Os aditamentos (1º da 11ª, 1º da 14ª, 1º da 15ª e 1º da 16ª) não alteram a espécie nem constituem garantias. As garantias que aparecem no fim das escrituras vêm do bloco do agente fiduciário sobre outras emissões e não pertencem às séries da CSN. Esse bloco cita alienação fiduciária de ações da Usiminas e cessão fiduciária de duplicatas, fiança da 'Elizabeth Cimentos S.A.' e garantias dos projetos eólicos de Ventos do Sul Energia S.A. (CSN Mineração, emissão 1, aparece só como emissora de outra série listada). A ata de AGD de 30/06/2025 trata da 13ª emissão, que não faz parte da lista, e não altera as séries pedidas. Não há AGD, comunicado ou plano de recuperação posterior que mude as garantias dessas séries. Os aditamentos vieram truncados por OCR/recorte, o que impede confirmar a distribuição final entre séries (a 14ª e a 15ª admitiam até 3 e 2 séries, e a 16ª até 2). As séries listadas partem das informações do pedido."
  }
 }

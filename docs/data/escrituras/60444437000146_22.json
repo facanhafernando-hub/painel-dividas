@@ -211,5 +211,88 @@
    "data": null,
    "resumo": "Emissora Light SESA em recuperação judicial. Série repactuada pelo Plano em 2024-11-13 com fiança da Light S.A. e garantias compartilhadas. Sem vencimento antecipado."
   }
+ },
+ "garantias": {
+  "LIGHE2": {
+   "codigo": "LIGHE2",
+   "emissao": 22,
+   "especie": "1ª e 2ª séries: com garantia real, com garantia adicional fidejussória; 3ª série: quirografária (após a repactuação do Plano de RJ). Originalmente: quirografária, com garantia adicional fidejussória, série única",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (cedente: Light Serviços de Eletricidade S.A.)",
+     "condicoes": "Garantia da 1ª série. Compartilhada com os titulares das debêntures da 9ª, 15ª, 16ª, 17ª, 19ª, 20ª, 21ª, 23ª, 24ª, 25ª e 26ª emissões e com os titulares das notas first lien e second lien (The Bank of New York Mellon). Sem privilégio ou concorrência de terceiros, respeitados os limites legais. Constituída mediante registro do contrato em Cartório de RTD.",
+     "situacao": "vigente (contrato 'a ser celebrado' na data do aditamento; registro em RTD não confirmado nos trechos)",
+     "fonte": "Doc. 4, cláusulas 5.6.1, 5.6.1.1(i) e 3.1.5"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios que transitam por conta vinculada (Light Serviços de Eletricidade S.A.)",
+     "condicoes": "Garantia da 1ª série. Compartilhada com as mesmas emissões e notas. Recebíveis destinados à conta limitados a R$50 milhões, atualizados anualmente pelo IPCA. Em caso de inadimplemento pecuniário, o limite é de R$300 milhões por ano, corrigidos pelo IPCA. Sem privilégio ou concorrência de terceiros.",
+     "situacao": "vigente (contrato 'a ser celebrado' na data do aditamento; registro em RTD não confirmado nos trechos)",
+     "fonte": "Doc. 4, cláusula 5.6.1.1(ii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Sobejo (excedente) da cessão fiduciária sobre a indenização líquida e da cessão fiduciária sobre os direitos creditórios, após o pagamento das debêntures da 1ª série",
+     "condicoes": "Garantia da 2ª série. Sem privilégio ou concorrência de terceiros, respeitados os limites legais. Compartilhada com as demais emissões e notas listadas.",
+     "situacao": "vigente (nos termos do aditamento de 2024)",
+     "fonte": "Doc. 4, cláusula 5.6.1.2(iii) e (iv)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+     "condicoes": "Solidária, principal pagadora, irrevogável e irretratável. Renuncia aos benefícios dos arts. 333 p.ú., 366, 821, 827, 830, 834 a 839 do Código Civil e 130 e 794 do CPC. Cobre as Obrigações Garantidas das debêntures da 1ª e da 2ª séries (a 3ª série é quirografária, sem fiança mencionada). Pagamento em até 2 Dias Úteis após notificação do Agente Fiduciário. Vale até o integral cumprimento das obrigações. Na redação original (2021) cobria a série única, de acordo com a escritura de 05/04/2021.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1, cláusulas 5.6.1 a 5.6.12 e 5.12; Doc. 4, cláusula 5.7.1 a 5.7.3"
+    }
+   ],
+   "resumo": "1ª/2ª séries: cessões fiduciárias (indenização BRR e recebíveis) + fiança Light S.A.; 3ª quirografária"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-04-05",
+    "tipo": "escritura",
+    "assunto": "22ª Emissão Debêntures Light SESA",
+    "protocolo": "008036IPE050420210104429113-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=850601&numSequencia=375338&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-05-31",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento à Escritura de Emissão - 22ª Emissão Debêntures Light SESA",
+    "protocolo": "008036IPE200520210104434705-23",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=872233&numSequencia=396970&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-05-31",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento à Escritura de Emissão - 22ª Emissão Debêntures Light SESA",
+    "protocolo": "008036IPE280520210104434705-24",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=872234&numSequencia=396971&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "PARA DISTRIBUIÇÃO PÚBLICA||TERCEIRO ADITAMENTO À ESCRITURA PARTICULAR DA 22ª EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM SÉRIE ÚNICA, DA ESPÉCIE QUIROGRAFÁRIA, COM GARANTIA FIDEJUSSÓRIA ADICIONAL",
+    "protocolo": "008036IPE281120240104563512-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313161&numSequencia=837887&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Light Serviços de Eletricidade S.A. (CNPJ 60.444.437/0001-46); não houve migração de emissora. A fiadora é a Light S.A. – Em Recuperação Judicial, e os efeitos da recuperação judicial foram estendidos à emissora.",
+  "lacunas": "1) Não foi fornecido documento da 17ª emissão (LIGHC7). Sua espécie e a existência de fiança própria são desconhecidas. Só se sabe que seus titulares são beneficiários das garantias reais compartilhadas nas escrituras da 22ª e da 9ª. 2) Os trechos não indicam a que série repactuada (1ª, 2ª ou 3ª) corresponde cada ticker (LIGHE2 e LSVE39), nem se as séries originais foram convertidas em séries novas. Por isso as garantias foram descritas por série. 3) A 3ª série da 22ª e da 9ª é quirografária. Os trechos não mostram fiança nem garantia real para ela, e a fiança é prestada só em favor das séries 1 e 2. 4) Os contratos de cessão fiduciária estavam 'a ser celebrados' na data dos aditamentos de dez/2024. A formalização, o registro em RTD e o conteúdo integral dos contratos não constam dos trechos. 5) A escritura original da 9ª (2013) não foi fornecida. Seus detalhes só aparecem via o 6º aditamento consolidado. 6) Há inconsistências nos documentos, possivelmente por erro de OCR ou de redação. O 'Terceiro Aditamento' da 22ª traz a escritura consolidada. Nele, a data do 3º aditamento aparece como 28/05/2021 e a definição de 'Escritura' ainda menciona série única."
  }
 }

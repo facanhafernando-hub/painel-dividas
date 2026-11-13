@@ -211,5 +211,54 @@
    "data": null,
    "resumo": "Fiadora Light S.A. em recuperação judicial, o que afeta a fiança da 2ª série. Não há vencimento antecipado declarado para a série. Repactuação de 13/11/2024 decorre do plano de RJ."
   }
+ },
+ "garantias": {
+  "LIGHC0": {
+   "codigo": "LIGHC0",
+   "emissao": 20,
+   "especie": "com garantia real, com garantia adicional fidejussória (1ª e 2ª séries, repactuadas); 3ª série quirografária",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestada pela Light Serviços de Eletricidade S.A.",
+     "condicoes": "1ª série; sem privilégio ou concorrência de terceiros, respeitados os limites legais; compartilhada com os titulares das debêntures das 9ª, 15ª, 16ª, 17ª, 19ª, 21ª, 22ª, 23ª, 24ª, 25ª e 26ª emissões e das notas first lien e second lien (NY); sobejo cedido à 2ª série após pagamento da 1ª série",
+     "situacao": "vigente",
+     "fonte": "Doc. 3 (Escritura consolidada no 2º Aditamento), cláusulas 5.6.1, 5.6.1.1(i) e 5.6.1.2(iii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletricidade S.A.",
+     "condicoes": "1ª série; recebíveis limitados a R$50 milhões, atualizados anualmente pelo IPCA (limitados a R$300 milhões por ano, corrigidos pelo IPCA, em caso de inadimplemento pecuniário); compartilhada com as demais emissões; sobejo cedido à 2ª série",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 5.6.1.1(ii) (sobejo da 2ª série em 5.6.1.2, trecho parcialmente cortado)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+     "condicoes": "Em favor dos debenturistas da 1ª e da 2ª séries; irrevogável e irretratável; fiadora e principal pagadora, solidária; renúncia a benefícios do Código Civil e do CPC (texto da cláusula 5.7 consta apenas parcialmente neste trecho; termos idênticos aos das demais emissões)",
+     "situacao": "vigente",
+     "fonte": "Doc. 3, cláusula 5.7 (trecho cortado; fiança confirmada pelas definições, pela cláusula 2.2 e pelas declarações da cláusula 12.2)"
+    }
+   ],
+   "resumo": "1ª/2ª séries: cessões fiduciárias compartilhadas + fiança da Light S.A. (solidária); 3ª série quirografária"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "COM GARANTIA FIDEJUSSÓRIA ADICIONAL, PARA DISTRIBUIÇÃO PÚBLICA COM ESFORÇOS RESTRITOS||SEGUNDO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 20ª (VIGÉSIMA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM SÉRIE ÚNICA, DA ESPÉCIE QUIROGRAFÁRIA",
+    "protocolo": "008036IPE281120240104563512-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313157&numSequencia=837883&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Light Serviços de Eletricidade S.A. (CNPJ 60.444.437/0001-46); não houve migração de emissora nos documentos analisados",
+  "lacunas": "Os documentos não indicam a qual série (1ª, 2ª ou 3ª) corresponde cada código informado; as garantias descritas valem para as séries 1ª e 2ª repactuadas, enquanto a 3ª série é quirografária, sem garantia, e destinada à integralização das Debêntures Conversíveis Fiadora. Os Contratos de Garantia (cessões fiduciárias) são descritos como 'a serem celebrados' na data da repactuação; os trechos não confirmam a assinatura nem o registro em RTD. A data de repactuação não é informada em todos os trechos, e o plano de recuperação judicial e os contratos de garantia não foram fornecidos. Na 20ª emissão, o trecho da cláusula 5.6.1.2 e da fiança (5.7) está cortado."
  }
 }

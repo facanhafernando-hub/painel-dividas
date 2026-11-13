@@ -1,0 +1,81 @@
+{
+ "series": [],
+ "meta": {
+  "emissora": "INTERCEMENT BRASIL S.A.",
+  "cnpj": "62258884000136",
+  "emissao": "4"
+ },
+ "garantias": {},
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-06-15",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento à 4ª Emissão e 3º Aditamento à 3ª Emissão de Debêntures",
+    "protocolo": "025992IPE230320230204511309-02",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1113867&numSequencia=638596&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2023-09-06",
+    "tipo": "escritura",
+    "assunto": "4º Aditamento à 3ª Emissão de Debêntures e 2º Aditamento à 4ª Emissão",
+    "protocolo": "025992IPE020820230104517513-62",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1141095&numSequencia=665823&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-10-31",
+    "tipo": "escritura",
+    "assunto": "5º Aditamento à 3ª Emissão de Debêntures e 3º Aditamento à 4ª Emissão",
+    "protocolo": "025992IPE231020230104523010-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1156085&numSequencia=680811&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-05",
+    "tipo": "plano_rj",
+    "assunto": "Novo Plano de Recuperação Judicial - MOVER",
+    "protocolo": "025992IPE051020250216662539-76",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1429650&numSequencia=954362&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-04-06",
+    "tipo": "escritura",
+    "assunto": "6º Aditamento à 3ª Emissão de Debêntures e 4º Aditamento à 4ª Emissão",
+    "protocolo": "025992IPE310320260271606119-80",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1501738&numSequencia=1026444&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-06",
+    "tipo": "ata_agd",
+    "assunto": "(i) Ratificação do saldo devedor consolidado das Debêntures da 4ª Emissão de Debêntures||(ii) Aprovação da alteração dos termos e condições da Escritura de Emissão, das Debêntures e demais documentos relacionados às Debêntures||(iii) Aprovação da autorização ao Agente Fiduciário e à Companhia.",
+    "protocolo": "025992IPE310320260118062079-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1501735&numSequencia=1026441&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-06",
+    "tipo": "comunicado",
+    "assunto": "Fechamento - Segunda Etapa do Plano de Recuperação",
+    "protocolo": "025992IPE060420260157130560-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1501482&numSequencia=1026188&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": null,
+  "lacunas": null
+ }
+}

@@ -322,5 +322,131 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, RJ, RE ou reperfilamento nos trechos analisados. AGDs de 2026 tratam só das Cartas de Fiança da 3ª emissão, sem alterar o cronograma."
   }
+ },
+ "garantias": {
+  "RIS414": {
+   "codigo": "RIS414",
+   "emissao": 4,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações atuais e futuras da Águas do Rio 4 SPE S.A., de titularidade da Águas do Rio Investimentos S.A. (Nova Acionista), com todos os direitos e proventos",
+     "condicoes": "Compartilhada com os Credores Seniores da Emissora e os Bancos Fiadores da Emissora (BNDES, BTG, IDB Invest, Proparco, debenturistas da 2ª e da 3ª emissões e outros), conforme o Acordo entre Credores. Agente de Garantias: TMF Brasil Administração e Gestão de Ativos Ltda. Formalizada no 3º Aditamento ao contrato de AF de Ações (19/03/2024).",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão (19/02/2024), cláusulas 3.4.1(i) e 3.4.2; 1º Aditamento (02/04/2024), cláusula 2.3 e Anexo A"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações da Águas do Rio Investimentos S.A., dadas por AEGEA, Colibri Verde FIP em Infraestrutura, Angelo Investment Private Limited e Itaúsa S.A. (Acionistas Indiretos)",
+     "condicoes": "Compartilhada com os Credores Seniores das SPEs (SPE 4 e SPE 1) e os Bancos Fiadores das SPEs, via Agente de Garantias.",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão, cláusulas 3.4.1(ii) e 3.4.2(ii); 1º Aditamento"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Pela Emissora: direitos creditórios do Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas e demais contas (Banco Depositário: Itaú Unibanco S.A.) e direitos residuais da excussão das Garantias Reais",
+     "condicoes": "Compartilhada com os Credores Seniores da Emissora (Acordo entre Credores, 4º Aditamento de 19/03/2024).",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(iii); 1º Aditamento"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Pela Nova Acionista: direitos sobre contas vinculadas contra o Banco Depositário e recursos depositados",
+     "condicoes": "Compartilhada entre Credores Seniores das SPEs e bancos fiadores.",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(iv)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Créditos de mútuos subordinados da Nova Acionista e da AEGEA contra a Emissora e a Nova Acionista (Cessão Fiduciária de Créditos Subordinados)",
+     "condicoes": "Ligada ao Contrato de Aporte de Capital; compartilhada.",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(v)-(vi)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Contrato de Aporte de Capital (AEGEA e Nova Acionista se obrigam a aportar recursos na Emissora e na Nova Acionista); e Cessão Condicional da posição contratual da Emissora no Contrato de EPC com a AESAN Engenharia e Participações Ltda.",
+     "condicoes": "Cessão do EPC sob condição suspensiva. As garantias reais são compartilhadas com as Dívidas e Garantias Sênior Autorizadas da Emissora.",
+     "situacao": "vigente (cessão do EPC sob condição suspensiva)",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(vii)-(viii)"
+    }
+   ],
+   "resumo": "Garantia real compartilhada: AF de ações da SPE e da Nova Acionista, cessões fiduciárias; sem fiança AEGEA"
+  },
+  "RIS424": {
+   "codigo": "RIS424",
+   "emissao": 4,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Ações da Águas do Rio 4 SPE S.A. (dadas pela Águas do Rio Investimentos S.A.) e ações da Águas do Rio Investimentos S.A. (dadas por AEGEA, Colibri Verde FIP, Angelo Investment Private Limited e Itaúsa S.A.)",
+     "condicoes": "Mesmas garantias da 1ª série. Compartilhadas com os Credores Seniores e Bancos Fiadores das SPEs, conforme o Acordo entre Credores, via Agente de Garantias (TMF Brasil Administração e Gestão de Ativos Ltda.).",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(i)-(ii); 1º Aditamento (02/04/2024)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Emissora (Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas); direitos da Nova Acionista sobre contas vinculadas; créditos de mútuos subordinados (AEGEA e Nova Acionista)",
+     "condicoes": "Compartilhadas entre Credores Seniores da Emissora e das SPEs.",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(iii)-(vi)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Contrato de Aporte de Capital (AEGEA e Nova Acionista) e Cessão Condicional do Contrato de EPC (AESAN) pela Emissora",
+     "condicoes": "Cessão do EPC sob condição suspensiva.",
+     "situacao": "vigente (cessão do EPC sob condição suspensiva)",
+     "fonte": "Escritura 4ª emissão, cláusula 3.4.1(vii)-(viii)"
+    }
+   ],
+   "resumo": "Garantia real compartilhada: AF de ações da SPE e da Nova Acionista, cessões fiduciárias; sem fiança AEGEA"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-02-20",
+    "tipo": "escritura",
+    "assunto": "Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries",
+    "protocolo": "026743IPE190220240104534209-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1196560&numSequencia=721286&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-04-02",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento à Escritura da 4ª (quarta) emissão de debêntures simples, não conversíveis em ações, da espécie com garantia real, em 2 (duas) séries, da Águas do Rio",
+    "protocolo": "026743IPE020420240104538410-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1216926&numSequencia=741652&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026743IPE270520260106384635-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542315&numSequencia=1067021&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-07",
+    "tipo": "ata_agd",
+    "assunto": "Renovação Cartas de Fiança",
+    "protocolo": "026743IPE290420260161160050-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542317&numSequencia=1067023&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Águas do Rio 4 SPE S.A. (CNPJ 42.644.220/0001-06); nenhum documento indica cessão ou migração de emissora",
+  "lacunas": "1) Não há documento posterior à escritura (nem AGD) tratando da 2ª e da 4ª emissões; as atas de 2026 dizem respeito só à 3ª emissão. 2) Quitação das Debêntures Existentes: não confirmada, logo não se sabe se a fiança AEGEA e a fiança bancária da 2ª emissão foram liberadas nem se as garantias reais condicionadas passaram a ser eficazes. 3) Os bancos fiadores e a renovação das cartas de fiança da 2ª emissão não constam nos trechos. 4) Os trechos da 2ª emissão (cláusulas 3.6.1(iv) a (viii) e 3.6.2) e da 4ª (itens (b) a (d) e parte final da cláusula 3.4.2) estão truncados, e o detalhe dos contratos de garantia e das contas vinculadas fica incompleto. 5) Os anexos com 'Garantias: Fiança AEGEA' e série 2 da emissão 4 (vencimento 15/05/2037, 190.683 ativos) referem-se a outros emissores/emissões do grupo, e não foram atribuídos às séries analisadas. 6) A 4ª emissão não tem fiança AEGEA nem fiança bancária nos trechos disponíveis. 7) Não constam percentuais de cobertura mínima nem valores de fundo de reserva. 8) Os documentos não diferenciam as garantias entre 1ª e 2ª série; ambas foram tratadas como idênticas."
  }
 }

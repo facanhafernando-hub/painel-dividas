@@ -179,5 +179,104 @@
    "data": "2026-03-10",
    "resumo": "RE pedida em 10/03/2026 e homologada em out/2026. Créditos novados e pagos por Opções A, B ou C; debêntures bloqueadas na B3 até substituição pelas Novas Debêntures."
   }
+ },
+ "garantias": {
+  "PCARD0": {
+   "codigo": "PCARD0",
+   "emissao": 20,
+   "especie": "quirografária, sem garantia",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia; sem preferência sobre os demais quirografários (art. 58 da LSA)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-11-28",
+    "tipo": "escritura",
+    "assunto": "Aditamento - 20ª Emissão de Debêntures",
+    "protocolo": "014826IPE281120240104562410-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1308998&numSequencia=833724&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-09-02",
+    "tipo": "proposta_agd",
+    "assunto": "20ª Emissão - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE230920250174490182-87",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1419431&numSequencia=944143&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-09-18",
+    "tipo": "proposta_agd",
+    "assunto": "20ª Emissão - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE230920250274298419-97",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1424846&numSequencia=949558&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2025-09-29",
+    "tipo": "ata_agd",
+    "assunto": "20ª Emissão - Ata - Concessão de anuência prévia para que sejam suspensos temporariamente a verificação da Emissão do respectivo Índice e Limite Financeiro",
+    "protocolo": "014826IPE230920250131286416-53",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1427447&numSequencia=952159&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-07",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "014826IPE021020250144049583-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1430204&numSequencia=954916&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-05-05",
+    "tipo": "plano_rj",
+    "assunto": "Nova Versão do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE050520260140531175-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516387&numSequencia=1041093&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-07",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260194351299-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574980&numSequencia=1099686&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-08",
+    "tipo": "comunicado",
+    "assunto": "Homologação Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE071020260295440636-17",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1575329&numSequencia=1100035&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Publicac¸a~o da Homologac¸a~o do Plano de Recuperação Extrajudicial",
+    "protocolo": "014826IPE211020260137121682-38",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578908&numSequencia=1103614&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Companhia Brasileira de Distribuição (CNPJ 47.508.411/0001-56). Não há cessão de emissão para outra empresa do grupo nos documentos.",
+  "lacunas": "18ª emissão (CBRDB8, 2ª série): a escritura (cl. 4.5.1 e 4.8.1) diz que as debêntures são quirografárias e 'não contarão com quaisquer garantias reais ou fidejussórias'. O 1º aditamento e as atas/propostas de AGD (dez/2022 e 2025) tratam de outros assuntos (waiver de covenants, operação com ações do Éxito) e não incluem garantias. A AGD de 05/11/2025 teve 56,58% de presença, e o trecho recortado não mostra o resultado da votação. 20ª emissão (PCARD0): a escritura (cl. 4.5.1), anexa ao 1º aditamento, diz 'quirografária, sem garantia'. A AGD de 23/09/2025 tratou só de waiver de covenant financeiro. Os documentos não informam qual série da 20ª emissão (1ª, 2ª ou 3ª) corresponde ao código PCARD0, mas as três têm a mesma espécie. Plano de Recuperação Extrajudicial (versão de 05/05/2026, ainda proposta/em homologação): as debêntures das 18ª e 20ª emissões são Créditos Sujeitos, e as Novas Debêntures Emissão A e B seriam quirografárias, sem garantia real ou fidejussória (cl. 6.1.3 e 6.2.3). A cessão fiduciária de recebíveis de cartões de crédito e a conta vinculada (cl. 7.1.8) garantem apenas os Novos Recursos, compartilhadas entre os credores que os disponibilizarem. Não foram atribuídas às debêntures existentes nem às Novas Debêntures Emissão A e B. Os documentos fornecidos não incluem a escritura original da 20ª emissão com todas as cláusulas, mas o texto anexado ao aditamento é suficiente para a espécie. Não há informação sobre homologação do plano."
  }
 }

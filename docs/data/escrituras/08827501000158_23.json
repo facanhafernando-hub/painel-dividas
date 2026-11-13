@@ -108,5 +108,59 @@
    "data": null,
    "resumo": "Resumo não menciona vencimento antecipado, suspensão de pagamentos, RJ, RE ou renegociação para a 23ª emissão. Status da série não foi informado nos trechos."
   }
+ },
+ "garantias": {
+  "AEGPB3": {
+   "codigo": "AEGPB3",
+   "emissao": 23,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, série única, até R$ 3,2 bi, 7 anos; sem garantia indicada (só comunicado)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2018-07-31",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE020720180104331211-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=634741&numSequencia=168506&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE270220260122150224-55",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484930&numSequencia=1009636&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE120320260181007461-94",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489707&numSequencia=1014413&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE230320260117741981-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494171&numSequencia=1018877&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "AEGEA SANEAMENTO E PARTICIPAÇÕES S.A. (sem cessão para outra empresa do grupo nos documentos)",
+  "lacunas": "1) Os quadros de ativos do agente fiduciário (Oliveira Trust) trazem emissões de outros emissores (Itaúsa, Águas do Rio, CORSAN, Parsan etc.) com fianças e garantias reais. Não foram atribuídos às séries analisadas. 2) AEGPA0: não é possível saber se o ticker corresponde à Série 1 ou à Série 2 após o desmembramento de 28/10/2025. A garantia corporativa da Aegea Finance foi atribuída à Série 1 por inferência, pela posição no quadro, e não há documento que a constitua. O texto da AGD de 28/10/2025 e as demais cláusulas do 2º Aditamento estão omitidos nos trechos. 3) AEGPB3 (23ª emissão): só há o comunicado de 07/08/2025 (quirografária, série única, até R$ 3,2 bi, 7 anos). A escritura não foi fornecida e a emissão não aparece nos quadros. 4) AEGPB5 (25ª emissão): a espécie quirografária vem apenas do quadro de ativos do Doc. 9; a escritura não foi fornecida. 5) AEGPA8: o 1º aditamento tem erros de referência (data de registro e citação à 10ª emissão), sem efeito sobre as garantias."
  }
 }

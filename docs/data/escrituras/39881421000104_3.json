@@ -488,5 +488,138 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, RJ, RE ou suspensão de pagamentos. Os aditamentos 1º e 2º não alteram o cronograma de pagamentos."
   }
+ },
+ "garantias": {
+  "CGEE13": {
+   "codigo": "CGEE13",
+   "emissao": 3,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações, presentes e futuras, de emissão da CEEE-G, de titularidade da Companhia Florestal do Brasil (CNPJ 18.368.414/0001-33), com direitos acessórios (frutos, lucros, dividendos, JCP)",
+     "condicoes": "Garantia real compartilhada entre as séries; a ser formalizada por Contrato de Alienação Fiduciária de Ações entre a Acionista, o Agente Fiduciário e a Emissora (interveniente anuente)",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusula 4.27.1 (i); ratificada pelo Doc. 3 (1º Aditamento)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Determinadas máquinas e equipamentos relacionados ao Projeto e às CGHs, de propriedade da CEEE-G",
+     "condicoes": "Compartilhada entre as séries; formalizada por Contrato de Alienação Fiduciária de Equipamentos entre a Emissora e o Agente Fiduciário",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusula 4.27.1 (ii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios presentes e futuros do Contrato de Concessão nº 004/2022-ANEEL (inclusive indenizações), contratos de arrendamento, locação, O&M, EPC e fornecimento, apólices de seguro, mútuos permitidos, boletins de subscrição da Emissora e da Acionista, e créditos bancários das contas (Centralizadora, Reserva, Pagamento Debêntures, Aportes e Investimentos Permitidos)",
+     "condicoes": "Cedentes fiduciantes: CEEE-G, Companhia Florestal do Brasil e Companhia Siderúrgica Nacional (CSN); compartilhada; inclui conta reserva com saldo mínimo e conta pagamento debêntures",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusula 4.27.1 (iii), alíneas (a) a (q)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Compromisso de Suporte (aportes de recursos) da Companhia Florestal do Brasil e da CSN em favor da Emissora",
+     "condicoes": "Integra os Contratos de Garantia; descumprimento dos Aportes de Recursos é evento de vencimento antecipado automático; termos detalhados no contrato, fora dos trechos",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusulas 4.27.1 e 6.1 (b)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "CSN (Fiança CSN), hipótese de outorga futura",
+     "condicoes": "Previsão de hipótese de outorga via aditamento (Anexo XI), em trecho cortado; condições não determináveis",
+     "situacao": "desconhecida",
+     "fonte": "Documento 2, trecho cortado antes da Cláusula 9.8"
+    }
+   ],
+   "resumo": "Garantia real compartilhada: AF de ações da CEEE-G, AF de equipamentos e cessão fiduciária de recebíveis/contas; suporte da CSN"
+  },
+  "CGEE23": {
+   "codigo": "CGEE23",
+   "emissao": 3,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações, presentes e futuras, de emissão da CEEE-G, de titularidade da Companhia Florestal do Brasil (CNPJ 18.368.414/0001-33), com direitos acessórios (frutos, lucros, dividendos, JCP)",
+     "condicoes": "Garantia real compartilhada entre as séries; a ser formalizada por Contrato de Alienação Fiduciária de Ações entre a Acionista, o Agente Fiduciário e a Emissora (interveniente anuente)",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusula 4.27.1 (i); ratificada pelo Doc. 3 (1º Aditamento)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Determinadas máquinas e equipamentos relacionados ao Projeto e às CGHs, de propriedade da CEEE-G",
+     "condicoes": "Compartilhada entre as séries; formalizada por Contrato de Alienação Fiduciária de Equipamentos entre a Emissora e o Agente Fiduciário",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusula 4.27.1 (ii)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios presentes e futuros do Contrato de Concessão nº 004/2022-ANEEL (inclusive indenizações), contratos de arrendamento, locação, O&M, EPC e fornecimento, apólices de seguro, mútuos permitidos, boletins de subscrição da Emissora e da Acionista, e créditos bancários das contas (Centralizadora, Reserva, Pagamento Debêntures, Aportes e Investimentos Permitidos)",
+     "condicoes": "Cedentes fiduciantes: CEEE-G, Companhia Florestal do Brasil e Companhia Siderúrgica Nacional (CSN); compartilhada; inclui conta reserva com saldo mínimo e conta pagamento debêntures",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusula 4.27.1 (iii), alíneas (a) a (q)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Compromisso de Suporte (aportes de recursos) da Companhia Florestal do Brasil e da CSN em favor da Emissora",
+     "condicoes": "Integra os Contratos de Garantia; descumprimento dos Aportes de Recursos é evento de vencimento antecipado automático; termos detalhados no contrato, fora dos trechos",
+     "situacao": "vigente",
+     "fonte": "Documento 2, Cláusulas 4.27.1 e 6.1 (b)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "CSN (Fiança CSN), hipótese de outorga futura",
+     "condicoes": "Previsão de hipótese de outorga via aditamento (Anexo XI), em trecho cortado; condições não determináveis",
+     "situacao": "desconhecida",
+     "fonte": "Documento 2, trecho cortado antes da Cláusula 9.8"
+    }
+   ],
+   "resumo": "Garantia real compartilhada: AF de ações da CEEE-G, AF de equipamentos e cessão fiduciária de recebíveis/contas; suporte da CSN"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-02-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027154IPE230120250104569110-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1329735&numSequencia=854461&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-02-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027154IPE240120250104569110-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1329736&numSequencia=854462&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-03-01",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027154IPE280220250104571707-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1341767&numSequencia=866493&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-04",
+    "tipo": "escritura",
+    "assunto": "2º Adiatamento da Escritura de Debenture",
+    "protocolo": "027154IPE280720250126695806-35",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1407312&numSequencia=932024&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Companhia Estadual de Geração de Energia Elétrica – CEEE-G",
+  "lacunas": "Trechos cortados; não foi possível confirmar a distribuição das debêntures entre séries (CGEE13 como 1ª série e CGEE23 como 2ª série é inferência, apenas pela ordem dos códigos). A Fiança CSN (Anexo XI) aparece só como hipótese de outorga futura, sem condições ou confirmação. Termos do Compromisso de Suporte, lista completa dos direitos cedidos e registro dos contratos de garantia não constam. Documentos 3 e 4 só ratificam a escritura, sem alterar garantias. Fiança da CSN no Documento 1 refere-se à 2ª emissão (série única), não à 3ª. Sem informação sobre liberação das garantias."
  }
 }

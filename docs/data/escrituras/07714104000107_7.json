@@ -169,5 +169,110 @@
    "data": null,
    "resumo": "Série ativa no Anexo II de 2026-09-11, sem inadimplementos, vencimento antecipado, RJ/RE ou renegociação. Cronograma original."
   }
+ },
+ "garantias": {
+  "SUMI17": {
+   "codigo": "SUMI17",
+   "emissao": 7,
+   "especie": "não expressa nos trechos; as garantias listadas são reais e fidejussória (provavelmente com garantia real e fiança adicional)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "EB Fibra Participações S.A. (CNPJ 31.599.370/0001-10)",
+     "condicoes": "Cláusulas de solidariedade, renúncia ao benefício de ordem e limite de valor não constam dos trechos da 7ª emissão.",
+     "situacao": "vigente",
+     "fonte": "Doc. 14 (Escritura da 10ª emissão, anexo de emissões do agente fiduciário; 7ª emissão, série 1)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Equipamentos integrantes da rede de fibra ótica",
+     "condicoes": "Percentual mínimo de cobertura não informado.",
+     "situacao": "vigente",
+     "fonte": "Doc. 14 (anexo de emissões; 7ª emissão, série 1)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis da conta corrente nº 82858-1, ag. 8541, Banco Itaú (conta vinculada), na qual transita a totalidade do fluxo das receitas das vendas das cedentes, à vista e/ou a prazo (notas fiscais, faturas e duplicatas eletrônicas)",
+     "condicoes": "Não informado se é compartilhada com outras emissões.",
+     "situacao": "vigente",
+     "fonte": "Doc. 14 (anexo de emissões; 7ª emissão, série 1)"
+    }
+   ],
+   "resumo": "Fiança EB Fibra + AF equipamentos da rede de fibra + CF de recebíveis (conta Itaú)"
+  },
+  "SUMI37": {
+   "codigo": "SUMI37",
+   "emissao": 7,
+   "especie": "não expressa nos trechos; as garantias listadas são reais e fidejussória (provavelmente com garantia real e fiança adicional)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "EB Fibra Participações S.A. (CNPJ 31.599.370/0001-10)",
+     "condicoes": "Cláusulas de solidariedade, renúncia ao benefício de ordem e limite de valor não constam dos trechos da 7ª emissão.",
+     "situacao": "vigente",
+     "fonte": "Doc. 14 (anexo de emissões; 7ª emissão, série 3, 213.780 ativos)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Equipamentos integrantes da rede de fibra ótica",
+     "condicoes": "Percentual mínimo de cobertura não informado.",
+     "situacao": "vigente",
+     "fonte": "Doc. 14 (anexo de emissões; 7ª emissão, série 3)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis da conta corrente nº 82858-1, ag. 8541, Banco Itaú (conta vinculada), na qual transita a totalidade do fluxo das receitas das vendas das cedentes, à vista e/ou a prazo (notas fiscais, faturas e duplicatas eletrônicas)",
+     "condicoes": "Não informado se é compartilhada com outras emissões.",
+     "situacao": "vigente",
+     "fonte": "Doc. 14 (anexo de emissões; 7ª emissão, série 3)"
+    }
+   ],
+   "resumo": "Fiança EB Fibra + AF equipamentos da rede de fibra + CF de recebíveis (conta Itaú)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-05-26",
+    "tipo": "escritura",
+    "assunto": "Amortização",
+    "protocolo": "027502IPE220520250142261652-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1383104&numSequencia=907816&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-05-26",
+    "tipo": "escritura",
+    "assunto": "Amortização",
+    "protocolo": "027502IPE220520250161570862-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1383107&numSequencia=907819&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-06",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027502IPE260620260180008043-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542112&numSequencia=1066818&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027502IPE100920260162738140-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567712&numSequencia=1092418&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Giga Mais Fibra Telecomunicações S.A. (CNPJ 07.714.104/0001-07; nova denominação da Sumicity Telecomunicações S.A.)",
+  "lacunas": "1) Não há escritura da 7ª emissão nos documentos; as garantias de SUMI17 e SUMI37 vêm apenas do anexo de emissões do agente fiduciário (Doc. 14). Faltam espécie, condições da fiança, percentual de cobertura e o titular da emissão (o cabeçalho do emissor está cortado). 2) O Doc. 11 (comunicado de 30/12/2025) está truncado. Não é possível confirmar se a cessão fiduciária compartilhada de R$ 10 mi e o waiver das AGDs abrangem a 7ª emissão, nem se houve AGD para SUMI17/SUMI37. 3) Para SUMI18, a escritura é quirografária, sem fiança, embora a AGD cite 'Fiadora'; os covenants referem-se à EB Fibra e à Emissora após a incorporação reversa (que não consta como efetivada). 4) O contrato final da cessão fiduciária e a eventual excussão ou liberação da alienação fiduciária de ações não constam dos documentos. 5) Dos documentos de 2026, a 3ª emissão (DB3/MOB) e a 10ª emissão (Giga Mais, fiança EB Fibra) não são objeto desta análise."
  }
 }

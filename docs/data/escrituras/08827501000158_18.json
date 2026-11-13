@@ -106,5 +106,50 @@
    "data": null,
    "resumo": "Sem menção a vencimento antecipado, RJ, RE ou reperfilamento na 18ª emissão. Status não informado nos trechos analisados."
   }
+ },
+ "garantias": {
+  "AEGPA8": {
+   "codigo": "AEGPA8",
+   "emissao": 18,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, série única, sem garantia real ou fidejussória (venc. 15/01/2031)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-10-03",
+    "tipo": "escritura",
+    "assunto": "Escritura da 18ª Emissão de debêntures simples, não conversíveis em ações, em série única, da espécie quirografária",
+    "protocolo": "023396IPE021020230104520210-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1148259&numSequencia=672985&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-07-02",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento ao Instrumento Particular de Escritura da 18ª Emissão de Debêntures Simples da AEGEA",
+    "protocolo": "023396IPE061020230104547511-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256093&numSequencia=780819&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-08-07",
+    "tipo": "comunicado",
+    "assunto": "Debêntures Exchange",
+    "protocolo": "023396IPE070820250120257705-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1409192&numSequencia=933904&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "AEGEA SANEAMENTO E PARTICIPAÇÕES S.A. (sem cessão para outra empresa do grupo nos documentos)",
+  "lacunas": "1) Os quadros de ativos do agente fiduciário (Oliveira Trust) trazem emissões de outros emissores (Itaúsa, Águas do Rio, CORSAN, Parsan etc.) com fianças e garantias reais. Não foram atribuídos às séries analisadas. 2) AEGPA0: não é possível saber se o ticker corresponde à Série 1 ou à Série 2 após o desmembramento de 28/10/2025. A garantia corporativa da Aegea Finance foi atribuída à Série 1 por inferência, pela posição no quadro, e não há documento que a constitua. O texto da AGD de 28/10/2025 e as demais cláusulas do 2º Aditamento estão omitidos nos trechos. 3) AEGPB3 (23ª emissão): só há o comunicado de 07/08/2025 (quirografária, série única, até R$ 3,2 bi, 7 anos). A escritura não foi fornecida e a emissão não aparece nos quadros. 4) AEGPB5 (25ª emissão): a espécie quirografária vem apenas do quadro de ativos do Doc. 9; a escritura não foi fornecida. 5) AEGPA8: o 1º aditamento tem erros de referência (data de registro e citação à 10ª emissão), sem efeito sobre as garantias."
  }
 }

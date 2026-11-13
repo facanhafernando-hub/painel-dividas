@@ -257,5 +257,97 @@
    "data": null,
    "resumo": "6º Aditamento implementa AGD 2026: prorroga vencimento para 2029, novo cronograma de amortização e remuneração. Condição suspensiva no título."
   }
+ },
+ "garantias": {
+  "MEAL14": {
+   "codigo": "MEAL14",
+   "emissao": 4,
+   "especie": "com garantia real, com garantia adicional fidejussória (conforme 6º Aditamento, sob condição suspensiva; até então, quirografária com garantia adicional fidejussória)",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Pimenta Verde Alimentos Ltda. (CNPJ 09.060.964/0001-08)",
+     "condicoes": "Irrevogável e irretratável; solidária entre as fiadoras e com a Emissora; principal pagadora; renúncia aos benefícios de ordem e de exoneração (arts. 333 par. único, 364, 366, 368, 821, 827, 830, 834, 835, 837, 838 e 839 do CC e arts. 130, II, e 794 do CPC); pagamento em até 5 Dias Úteis após notificação do Agente Fiduciário; vigora até a liquidação integral das Obrigações Garantidas. Se a fiança do Frango Assado for exonerada, a Pimenta Verde permanece como única fiadora.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 4ª Emissão, cláusula 3.8.1; 2º Aditamento (27/02/2025); Doc. 3 e Doc. 4 (escritura consolidada pelo 6º Aditamento, cláusula 3.8.1)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Centro de Serviços Frango Assado Norte Ltda. (CNPJ 02.896.671/0001-08)",
+     "condicoes": "Solidária; principal pagadora; mesmas condições da fiança da Pimenta Verde. Considera-se exonerada se (a) a Emissora comunicar a celebração de documentação vinculante de venda ou alienação de ativos (cláusula 6.1.2, xi) e (b) o Frango Assado deixar de integrar o grupo econômico da Emissora. A exoneração dispensa AGD.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 4ª Emissão, cláusula 3.8.1 (xi); 2º Aditamento; Doc. 4 (6º Aditamento, cláusula 3.8.1)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Horizonte (razão social completa não consta dos trechos; incluída como fiadora pelo 4º Aditamento de 26/05/2025)",
+     "condicoes": "Solidária com a Emissora e as demais fiadoras; principal pagadora; limitada à participação societária nela detida pelas empresas do grupo da Emissora e da Pimenta Verde. O 5º Aditamento (18/02/2026) prevê a liberação, sob condição suspensiva: transferência da participação minoritária à Saboroso Internacional Ltda. até 30/03/2026. Até a verificação, a fiança permanece vigente.",
+     "situacao": "desconhecida (liberação condicionada; a escritura consolidada pelo 6º Aditamento já não cita a Horizonte, o que indica liberação, sem confirmação expressa)",
+     "fonte": "4º Aditamento, cláusulas 1.2, 1.2.1 e 3.8.1 (xii); 5º Aditamento, cláusulas 3.1 a 3.3; Doc. 4 (partes e cláusula 3.8.1)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Quotas do Centro de Serviços Frango Assado Norte Ltda. (100% do capital social) detidas pela Emissora e pela Pimenta Verde, mais quotas futuras, desdobramentos, bonificações, direitos de subscrição, frutos e rendimentos",
+     "condicoes": "Garantia real adicional à fiança. Compartilhada, sem ordem de preferência e proporcional aos saldos devedores, com outra emissão de debêntures com garantia real, por meio de Acordo Entre Credores a ser celebrado. O Contrato de Alienação Fiduciária de Quotas consta como \"a ser assinado\". Onerização aprovada pela RCA da Emissora (16/09/2026) e pela ARS da Pimenta Verde (22/08/2026). O 6º Aditamento é celebrado \"sob condição suspensiva\", sem que o trecho indique a condição.",
+     "situacao": "proposta (aprovada em AGD de 21/09/2026; constituição e condição suspensiva pendentes de confirmação)",
+     "fonte": "Doc. 4: 6º Aditamento, considerando (vi) e escritura consolidada, cláusulas 3.8.2, 3.8.3 e 4.5"
+    }
+   ],
+   "resumo": "Fianças solidárias de Pimenta Verde e Frango Assado; AF de quotas do Frango Assado (compartilhada) sob condição"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-02-28",
+    "tipo": "escritura",
+    "assunto": "2º ADITAMENTO -  ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "023574IPE270220250104571612-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1341548&numSequencia=866274&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-06-24",
+    "tipo": "escritura",
+    "assunto": "4º ADITAMENTO - ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "023574IPE260520250178373627-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1393710&numSequencia=918422&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-02-20",
+    "tipo": "escritura",
+    "assunto": "QUINTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "023574IPE190220260162897268-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1479818&numSequencia=1004524&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-01",
+    "tipo": "escritura",
+    "assunto": "Escrituras e Adiantamentos de Debêntures - - - - -  6º SEXTO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 4ª (QUARTA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "023574IPE230920260148849917-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573401&numSequencia=1098107&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-01",
+    "tipo": "ata_agd",
+    "assunto": "ATA DA ASSEMBLEIA GERAL DE DEBENTURISTAS",
+    "protocolo": "023574IPE290920260144337552-48",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1573405&numSequencia=1098111&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "International Meal Company Alimentação S.A. (sem migração de emissora; garantias mantidas)",
+  "lacunas": "1) A condição suspensiva do 6º Aditamento (21/09/2026 e escritura consolidada) não aparece nos trechos; não se sabe se a espécie com garantia real e a alienação fiduciária de quotas já estão em vigor. 2) Não há prova do fechamento da Transação com a Saboroso nem da liberação efetiva da fiança da Horizonte. 3) A razão social completa e o CNPJ da Horizonte não constam dos trechos. 4) A ata do Doc. 5 (AGD de 29/09/2026) trata da 5ª Emissão, não da 4ª. Ela substitui a fiança do Frango Assado pela PHSR Master Franquia Ltda. (CNPJ 30.231.176/0001-15) e eleva a razão mínima da cessão fiduciária de recebíveis para 17%. Essas deliberações não foram aplicadas ao MEAL14, e nada nos trechos indica cessão fiduciária de recebíveis na 4ª Emissão. 5) A cláusula 3.8.3 da escritura consolidada cita a 'quinta emissão' junto com a 'Escritura da 3ª Emissão', o que é inconsistente; a emissão com que a garantia real é compartilhada não ficou clara. 6) O Acordo Entre Credores e o Contrato de Alienação Fiduciária de Quotas não foram apresentados."
  }
 }

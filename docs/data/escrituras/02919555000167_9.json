@@ -159,5 +159,113 @@
    "data": null,
    "resumo": "Waiver aprovado em AGD de 2ª convocação, sem alterar o cronograma de pagamentos. Vencimento antecipado só hipotético, caso descumpridas as condições da AGD."
   }
+ },
+ "garantias": {
+  "ARTR19": {
+   "codigo": "ARTR19",
+   "emissao": 9,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantias identificadas nos trechos; documento original da 9ª emissão não fornecido"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2015-07-01",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "019771IPE190620150104218609-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=476057&numSequencia=18804&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-04-16",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "019771IPE260320240104539806-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1222151&numSequencia=746877&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-05-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "019771IPE120520250172500754-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1376165&numSequencia=900877&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-06-02",
+    "tipo": "escritura",
+    "assunto": "Procedimento de Bookbuilding e Rerratificação da RCA",
+    "protocolo": "019771IPE020620250122371920-17",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1385954&numSequencia=910666&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-01-26",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - 9ª Emissão - Arteris",
+    "protocolo": "019771IPE220120260115016544-23",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1470117&numSequencia=994823&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-01-27",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação - 9ª Emissão - Arteris",
+    "protocolo": "019771IPE220120260282660631-66",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1470336&numSequencia=995042&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2026-02-25",
+    "tipo": "proposta_agd",
+    "assunto": "Arteris 9ª Emissão l Proposta da Administração - AGD 2ª Convocação",
+    "protocolo": "019771IPE270220260156006745-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1481892&numSequencia=1006598&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-02-25",
+    "tipo": "proposta_agd",
+    "assunto": "Arteris 9ª Emissão l Proposta da Administração - AGD",
+    "protocolo": "019771IPE220120260543532950-32",
+    "versao": "5",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1481940&numSequencia=1006646&numVersao=5",
+    "explicito": true
+   },
+   {
+    "data": "2026-02-27",
+    "tipo": "ata_agd",
+    "assunto": "Arteris 9ª Emissão l Ata da AGD",
+    "protocolo": "019771IPE270220260198966437-66",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1483517&numSequencia=1008223&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-03-02",
+    "tipo": "ata_agd",
+    "assunto": "Arteris 9ª Emissão l Ata da AGD",
+    "protocolo": "019771IPE270220260288196108-16",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484071&numSequencia=1008777&numVersao=2",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Arteris S.A.",
+  "lacunas": "A escritura original da 9ª emissão (22/09/2020, Pentágono DTVM como agente fiduciário) e seus aditamentos não foram fornecidos. A espécie quirografária consta apenas dos títulos dos documentos 5 a 10 (termo de não instalação, propostas de AGD e atas), sem cláusula de garantias. Esses documentos descrevem a série como quirografária, mas os trechos recortados não detalham o conteúdo da escritura. A matéria da AGD é uma \"anuência prévia\" cujo conteúdo não aparece nos trechos, e o resultado da deliberação de 27/02/2026 também não aparece. Os documentos 2 a 4 tratam das emissões 15ª, 16ª e 17ª, não da 9ª. A única menção à 9ª é a lista de emissões existentes (Docs. 3 e 4). Pelo Doc. 2, a 2ª série da 9ª emissão seria paga integralmente com recursos da 15ª emissão. Isso não alteraria a 1ª série, mas há dúvida sobre qual série corresponde ao código ARTR19. Não há indicação de cessão da emissão a outra emissora; a Arteris S.A. segue como emissora nos documentos de 2026. A quirografária não conta com garantias reais ou fidejussórias segundo o que se pode inferir, mas isso não foi confirmado em cláusula da escritura da 9ª emissão."
  }
 }

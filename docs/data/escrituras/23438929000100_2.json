@@ -133,5 +133,74 @@
    "data": null,
    "resumo": "O resumo da situação não traz informação sobre eventos de crédito vigentes para a série CONX12 ou para a emissora."
   }
+ },
+ "garantias": {
+  "CONX12": {
+   "codigo": "CONX12",
+   "emissao": 2,
+   "especie": "com garantia real e com garantia adicional fidejussória (conforme a escritura); o relatório de abr/2026 informa que as debêntures não contam com garantias",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Fiadoras: Tecnet Provedor de Acesso as Rede de Comunicação Ltda. (CNPJ 07.054.341/0001-99), Videomar Rede Nordeste S.A. e Cabo Serviços de Telecomunicações Ltda. Após as incorporações de dez/2022, Conexão Serviços de Comunicação, Starweb, Direta Comunicações e Center deixaram de ser fiadoras, sucedidas por Videomar e Cabo Serviços.",
+     "condicoes": "Fiadoras e principais pagadoras, solidárias com a Emissora e entre si. Renúncia aos benefícios de ordem. Pagamento em 2 Dias Úteis após notificação. Irrevogável e irretratável. Válida mesmo em recuperação judicial ou falência da Emissora.",
+     "situacao": "desconhecida",
+     "fonte": "Escritura da 2ª emissão (08/08/2022), cláusula 3.4; 2º aditamento (27/10/2023), cláusulas 3.2-3.3. O Relatório do Agente Fiduciário (abr/2025) indica Fianças I a VI constituídas. O Relatório CONX12 (abr/2026), item 9.1, afirma que as debêntures não contam com garantias."
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios de titularidade de Tecnet, Videomar e Cabo Serviços, decorrentes da prestação de seus serviços",
+     "condicoes": "Montante mínimo mensal de R$ 10.000.000,00. Contrato de Cessão Fiduciária de Direitos Creditórios e Outras Avenças, com o Agente Fiduciário (Vórtx) e a Emissora como interveniente anuente. Irrevogável e irretratável, vigente até a liquidação do Valor Garantido.",
+     "situacao": "desconhecida",
+     "fonte": "Escritura da 2ª emissão, cláusula 3.3.1, com a redação do 2º aditamento (27/10/2023). Relatório do Agente Fiduciário (abr/2025): constituída 'SIM'. Relatório CONX12 (abr/2026): informa ausência de garantias."
+    }
+   ],
+   "resumo": "Fiança (Tecnet, Videomar, Cabo) e cess. fid. de recebíveis; relatório abr/2026 diz sem garantias"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-10-27",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento Escritura 2ª Emissão Debêntures (CONX12) - Refletindo Incorporações Societárias",
+    "protocolo": "025194IPE220920230104522612-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1155377&numSequencia=680103&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-10-27",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento Escritura 2ª Emissão Debêntures (CONX12) - Remuneração",
+    "protocolo": "025194IPE260820220104522612-51",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1155381&numSequencia=680107&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-04-30",
+    "tipo": "comunicado",
+    "assunto": "Relatório Anual Agente Fiduciário 2024 - CONX12",
+    "protocolo": "025194IPE300420250197311270-69",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1368736&numSequencia=893461&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-29",
+    "tipo": "comunicado",
+    "assunto": "Relatório Anual Agente Fiduciário CONX12",
+    "protocolo": "025194IPE290420260108098769-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1511432&numSequencia=1036138&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Alares Internet Participações S.A. (CNPJ 23.438.929/0001-00), antes Triple Play Brasil Participações S.A. Não houve cessão da emissão a outra empresa: o mesmo CNPJ aparece nos documentos e as séries são listadas sob 'Alares'. A mudança de denominação é uma inferência; nenhum documento a registra formalmente. As garantias constam como mantidas nos relatórios de 2025, mas ver lacunas sobre CONX12.",
+  "lacunas": "1) CONX12: o Relatório Anual do Agente Fiduciário de 29/04/2026 diz que as debêntures 'não contam com garantias', com tabela vazia. Isso contradiz a escritura, o aditamento de 2023, o relatório de 2025 (Fianças I-VI e cessão fiduciária constituídas) e a lista de garantias do relatório ALAR13/23 de 2026 para a emissão de vencimento 15/08/2029. Não há AGD, aditamento ou comunicado de liberação, então a situação real não pode ser determinada (possível liberação ou erro do relatório). 2) A escritura da 3ª emissão (2024) define 'Fiadoras' incluindo Starweb e Conexão Serviços de Comunicação, que já tinham sido incorporadas em 2022, e a capa lista só Tecnet e Webby. Não é possível confirmar quais fiadoras efetivamente garantem ALAR13/ALAR23. Os relatórios do Agente Fiduciário não nomeiam os fiadores. 3) A escritura da 3ª emissão é ambígua quanto a quem outorga a alienação fiduciária de equipamentos: diz 'pela Emissora', mas os bens são da Cabo Serviços. 4) Não há detalhes dos contratos de garantia (descrição dos equipamentos, contas vinculadas, índice de cobertura ou fundo de reserva). 5) Não há AGD, plano de recuperação ou outro documento posterior alterando garantias. 6) O Termo de Emissão de dez/2025 (3ª emissão de Notas Comerciais, fiadoras Alares Internet S.A. e Tecnet, cessão fiduciária de recebíveis da Alares Internet S.A.) refere-se a outro instrumento e não foi considerado garantia de CONX12, ALAR13 ou ALAR23. 7) Os documentos não informam a existência de compartilhamento de garantias com outras emissões."
  }
 }

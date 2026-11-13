@@ -175,5 +175,115 @@
    "data": null,
    "resumo": "Waiver do covenant Dívida Líquida/EBITDA de 2023 proposto em AGD de 2024; votação não consta. Sem vencimento antecipado, RJ ou RE declarados."
   }
+ },
+ "garantias": {
+  "VBRR11": {
+   "codigo": "VBRR11",
+   "emissao": 1,
+   "especie": "com garantia real, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "CONASA INFRAESTRUTURA S.A. (CNPJ 08.837.556/0001-49), acionista da Emissora",
+     "condicoes": "Garantia adicional fidejussória, outorgada na Escritura (Cláusulas 4.6.1 e 5.2, esta última não transcrita nos trechos). A Escritura prevê registro nos Cartórios de RTD de Sinop/MT, Londrina/PR e São Paulo/SP. Termos como solidariedade e renúncia ao benefício de ordem não constam nos trechos recebidos. Outorga aprovada em RCA da Conasa de 20/04/2022.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 24/06/2022, Cláusulas 1.2, 2.5.1, 4.6.1 e 5.2; 1º Aditamento (jul/2022); Ata da AGD de 28/03/2024 (Conasa mantida como Fiadora)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Ações da Emissora (Via Brasil BR 163), de titularidade da Conasa, conforme Contrato de Alienação Fiduciária de Ações",
+     "condicoes": "Constitui Garantia Real, outorgada pela Conasa. Averbada no Livro de Registro de Ações Nominativas da Emissora (Cláusula 2.5.3). O Contrato de Garantia deve ser registrado nos RTDs competentes. A ANTT autorizou as Garantias Reais pela Decisão SUROD nº 101, de 22/06/2022. O percentual de ações e outros termos não constam dos trechos.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 24/06/2022, Cláusulas 1.2, 2.5.2, 2.5.3 e 2.8.1; 1º Aditamento, cláusula 1.2"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos Creditórios da Emissora (Cessão Fiduciária de Direitos Creditórios, conforme Contrato de Cessão Fiduciária), incluindo a Conta Reserva",
+     "condicoes": "Constitui Garantia Real, aprovada na AGE da Emissora de 22/06/2022. Exige Saldo Mínimo da Conta Reserva, a ser recomposto em até 3 Dias Úteis após o uso. A não recomposição é vencimento antecipado automático (Cláusula 4.17.1.1, item (t)). Os direitos creditórios específicos não são detalhados nos trechos.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 24/06/2022, Cláusulas 1.1, 2.5.2, 2.8.1 e 4.17.1.1(t); 1º Aditamento, cláusula 1.1"
+    },
+    {
+     "tipo": "conta vinculada",
+     "prestador_ou_objeto": "Conta Reserva, com Saldo Mínimo, vinculada ao Contrato de Cessão Fiduciária",
+     "condicoes": "Usada para pagamento de Amortização e/ou Juros Remuneratórios, com recomposição do Saldo Mínimo em 3 Dias Úteis. O valor do Saldo Mínimo não consta dos trechos.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 24/06/2022, Cláusula 4.17.1.1(t)"
+    }
+   ],
+   "resumo": "Alienação fiduciária de ações e cessão fiduciária de recebíveis/Conta Reserva; fiança da Conasa Infraestrutura"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-06-27",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "094480IPE240620220104473913-11",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=993412&numSequencia=518146&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2022-07-27",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "094480IPE260720220104476911-66",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1000816&numSequencia=525550&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-02-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração - Waiver",
+    "protocolo": "026913IPE190320240104534813-88",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1199341&numSequencia=724067&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-03-21",
+    "tipo": "ata_agd",
+    "assunto": "Termo de Não Instalação",
+    "protocolo": "026913IPE190320240104537210-92",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1210472&numSequencia=735198&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-03-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração - Waiver",
+    "protocolo": "026913IPE280320240104537713-01",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1212956&numSequencia=737682&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-04-01",
+    "tipo": "ata_agd",
+    "assunto": "ATA da AGD - Waiver",
+    "protocolo": "026913IPE280320240104538311-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1216378&numSequencia=741104&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-01-22",
+    "tipo": "comunicado",
+    "assunto": "Repactuação - TCU",
+    "protocolo": "026913IPE220120260142019930-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1469192&numSequencia=993898&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "VIA BRASIL BR 163 CONCESSIONÁRIA DE RODOVIAS S.A. (CNPJ 44.067.725/0001-72); não há cessão para outra emissora nos documentos",
+  "lacunas": "Faltam as Cláusulas 5.1 e 5.2 da Escritura e os Contratos de Garantia. Por isso não constam objeto exato, percentual de ações, direitos creditórios cedidos, valor do Saldo Mínimo da Conta Reserva, nem se a fiança é solidária, com renúncia ao benefício de ordem ou com limite. A AGD de 28/03/2024 concedeu waiver do índice Dívida Líquida/EBITDA de 2023 e exigiu aporte de capital pela Fiadora até 31/12/2024. Nos trechos, não há liberação, substituição ou inclusão de garantias. O resultado do waiver (Documento 6) está parcialmente cortado. Os trechos não mostram o cumprimento do aporte, e a situação após 2024 é desconhecida."
  }
 }

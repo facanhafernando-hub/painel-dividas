@@ -323,5 +323,124 @@
    "data": null,
    "resumo": "Waiver proposto sobre conta reserva, trocando saldo mínimo por fiança bancária, sem alterar datas, juros ou amortizações. Resultado da AGD de 04/12/2025 não informado."
   }
+ },
+ "garantias": {
+  "IRJS14": {
+   "codigo": "IRJS14",
+   "emissao": 4,
+   "especie": "com garantia real, com garantia fidejussória adicional",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Iguá Saneamento S.A. (CNPJ 08.159.965/0001-33), Fiadora da 1ª série (Fiança Corporativa)",
+     "condicoes": "Irrevogável e irretratável; fiadora, principal pagadora e solidária. Renuncia aos benefícios de ordem, novação e exoneração (CC arts. 333, 364, 366, 368, 827, 834, 835, 837, 838, 839; CPC arts. 130 e 794). Pagamento em até 2 Dias Úteis após notificação do Agente Fiduciário. Vigora até o primeiro entre: (i) pagamento integral das Obrigações Garantidas da 1ª Série, (ii) Completion da Primeira Série ou (iii) substituição por fiança bancária de banco AAA, que pode ser revertida. Se substituída, o banco se sub-roga, inclusive nas Garantias Reais, e adere ao Contrato de Compartilhamento.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 12/05/2023, cláusulas 4.23 e 4.23.1 e seguintes; mantida no 1º Aditamento (31/05/2023); Iguá Saneamento segue como Fiadora no edital de 24/10/2025 e na ata de 04/12/2025"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Iguá Rio de Janeiro S.A., conforme o 'Instrumento Particular de Cessão Fiduciária de Direitos Creditórios e Outras Avenças' (02/08/2021, aditado), em favor do Agente Fiduciário (Vórtx DTVM Ltda.). Inclui a Conta Reserva Primeira Série da Quarta Emissão, com Saldo Mínimo, e a estrutura de cascata de contas.",
+     "condicoes": "Garantia real prestada pela Emissora. Compartilhada conforme o Contrato de Compartilhamento (adesão do banco fiador em caso de substituição da fiança). Os trechos não detalham quais recebíveis compõem o objeto.",
+     "situacao": "vigente",
+     "fonte": "Escritura 4ª emissão (cláusulas 1.1(c), 2.6, 4.23); atas e editais de 2025 (Contrato de Cessão Fiduciária, cláusulas 3.2.2(iii) e 3.4.1)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Alienação Fiduciária de Ações, objeto do 'Contrato de Alienação Fiduciária de Ações'. A outorga foi aprovada pelo Conselho de Administração da Iguá Saneamento S.A. em 08/05/2023. As ações alienadas não são identificadas nos trechos.",
+     "condicoes": "Garantia real constituída nos Contratos de Garantia, a serem registrados em RTD. O quadro da escritura lista para a 3ª emissão (IRJS12): alienação fiduciária de ações, cessão fiduciária de direitos creditórios e fiança.",
+     "situacao": "vigente",
+     "fonte": "Escritura de 12/05/2023, cláusulas 1.2 e 2.6"
+    },
+    {
+     "tipo": "conta vinculada",
+     "prestador_ou_objeto": "Conta Reserva Primeira Série da Quarta Emissão (Saldo Mínimo), dentro da cessão fiduciária de direitos creditórios",
+     "condicoes": "Proposta de substituir o Saldo Mínimo por Cartas de Fiança Bancária até 31/12/2033 ou até o Completion Total da Segunda Série. As cartas teriam prazo mínimo de 2 anos e seriam emitidas por Instituições Financeiras Autorizadas. Há vedação de sub-rogação dos bancos antes da quitação integral e de garantia da Emissora aos bancos. As cartas seriam excutidas se não renovadas ou substituídas até 30 dias antes do vencimento. Contrapartida: aporte da Fiadora de no mínimo R$ 50 milhões na Emissora até 31/12/2026. A AGD de 2ª convocação (04/12/2025) aprovou a matéria com condições: as cartas não podem ser substituídas por dinheiro nos primeiros 2 anos da primeira carta, e só 14 bancos listados são admitidos (ABC, BB, BNDES, BNP Paribas, Bocom BBM, Bradesco, BTG, Caixa, Citibank, HSBC, Itaú, Santander, Votorantim, XP). O quórum de aprovação está truncado no texto.",
+     "situacao": "proposta",
+     "fonte": "Edital de 24/10/2025; Proposta da Administração de 26/11/2025; Termo de não instalação de 24/11/2025; Ata da AGD de 04/12/2025"
+    }
+   ],
+   "resumo": "Cessão fiduc. de recebíveis e AF de ações; fiança da Iguá Saneamento até o Completion; reserva por fiança bancária"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-05-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026727IPE120520230104505813-94",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1101961&numSequencia=626690&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-05-31",
+    "tipo": "escritura",
+    "assunto": "Alterações dos termos e condições da Escritura de Emissão.",
+    "protocolo": "026727IPE300520230104507705-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1108040&numSequencia=632769&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-08-27",
+    "tipo": "ata_agd",
+    "assunto": "Consolidar as características das Debêntures, a fim de refletir a alteração a ser realizada no âmbito do 2º Aditamento",
+    "protocolo": "026727IPE070820240104553108-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1275941&numSequencia=800667&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-05-12",
+    "tipo": "ata_agd",
+    "assunto": "Waiver Conta Reserva",
+    "protocolo": "026727IPE120520250133161960-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1376536&numSequencia=901248&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-24",
+    "tipo": "proposta_agd",
+    "assunto": "IRJS14 - Edital de convocação",
+    "protocolo": "026727IPE241120250133155616-88",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1435679&numSequencia=960391&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-11-24",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "026727IPE241120250107573591-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1448920&numSequencia=973632&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-11-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração 2° convocação",
+    "protocolo": "026727IPE041220250174449464-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1450162&numSequencia=974874&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-04",
+    "tipo": "ata_agd",
+    "assunto": "Examinar, discutir e deliberar sobre a aprovação da autorização prévia para que a Emissora possa, nos termos das Cláusulas 3.2.2(iii) e 3.4.1 do \"Instrumento Particular de Cessão Fiduciária de ...",
+    "protocolo": "026727IPE041220250144701149-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1453107&numSequencia=977819&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Iguá Rio de Janeiro S.A. (CNPJ 42.353.180/0001-35); não há cessão para outra emissora nos documentos",
+  "lacunas": "Os trechos não identificam o código da série por ticker, mas o edital de 24/10/2025 vincula IRJS14 à 1ª série da 4ª emissão. Não constam o texto integral dos Contratos de Garantia nem a lista das ações alienadas e dos recebíveis cedidos. Não há comprovação de que o Completion da Primeira Série tenha ocorrido, e a Fiança Corporativa foi tratada como vigente até esse evento. A ata de 04/12/2025 está truncada: o quórum e o resultado final não são totalmente legíveis, mas indicam aprovação com condições, e não se sabe se as Cartas de Fiança Bancária já foram emitidas ou se o Saldo Mínimo continua em dinheiro. O 1º Aditamento e o resultado do bookbuilding (ratificação das séries) não aparecem integralmente. A AGD de 12/05/2025 trata só da 2ª série (IRJS24, inferido), que tem fiança bancária própria."
  }
 }

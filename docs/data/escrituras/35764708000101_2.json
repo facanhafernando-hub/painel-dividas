@@ -142,5 +142,48 @@
    "data": null,
    "resumo": "Nenhum evento de crédito identificado nos trechos analisados. Não há informação de situação para a 2ª emissão, e a 3ª e a 4ª emissões estão fora do escopo."
   }
+ },
+ "garantias": {
+  "TEPA12": {
+   "codigo": "TEPA12",
+   "emissao": 2,
+   "especie": "indeterminada (sem documentos da 2ª emissão)",
+   "garantias": [],
+   "resumo": "Sem documento da 2ª emissão nos trechos; garantias não determinadas"
+  },
+  "TEPA22": {
+   "codigo": "TEPA22",
+   "emissao": 2,
+   "especie": "indeterminada (sem documentos da 2ª emissão)",
+   "garantias": [],
+   "resumo": "Sem documento da 2ª emissão nos trechos; garantias não determinadas"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-03-19",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027499IPE180320250104573511-43",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1348878&numSequencia=873604&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-12",
+    "tipo": "escritura",
+    "assunto": "Aditamento Escritura de Emissa~o",
+    "protocolo": "027499IPE111220250137145582-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1456489&numSequencia=981201&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Brasil Tecnologia e Participações S.A. (CNPJ 35.764.708/0001-01); não há cessão de emissão nos trechos",
+  "lacunas": "1) Não há documentos da 1ª emissão (TEPA11) nem da 2ª emissão (TEPA12, TEPA22), então suas garantias e espécie não podem ser determinadas. 2) A 3ª emissão foi reduzida a 2 séries pelo 1º Aditamento, com cancelamento da 3ª série. O mapeamento TEPA13 = 1ª série e TEPA23 = 2ª série foi inferido, e as garantias descritas são comuns às duas séries. 3) O Doc. 3 refere-se à 4ª emissão (série única, dez/2025), com garantidores e Contratos de Garantia próprios, e não altera as garantias da 3ª emissão. 4) Nos trechos não constam os Contratos de Garantia (Percentual Mínimo, Valor Mínimo de Garantia, bens descritos), nem a confirmação de que foram celebrados e registrados. Não há registro de liberação ou substituição de garantias, de AGD, nem de recuperação judicial ou extrajudicial. 5) O nome completo e o CNPJ da Blink, e partes do texto da lista de fiadores e alienantes, estão cortados nos trechos. 6) Não há informação sobre compartilhamento das garantias com outros credores (como as notas comerciais do BTG listadas no Doc. 3)."
  }
 }

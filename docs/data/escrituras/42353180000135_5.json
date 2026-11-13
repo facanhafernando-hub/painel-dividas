@@ -352,5 +352,108 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ ou RE na 5ª emissão. A cláusula 4.18 afasta repactuação programada."
   }
+ },
+ "garantias": {
+  "IRJS15": {
+   "codigo": "IRJS15",
+   "emissao": 5,
+   "especie": "com garantia real, com garantia fidejussória adicional",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Iguá Saneamento S.A. (CNPJ 08.159.965/0001-33), a \"Fiança Corporativa\"",
+     "condicoes": "Irrevogável e irretratável; fiadora principal pagadora e solidariamente responsável; renúncia aos benefícios de ordem, novação e exoneração (CC arts. 333 par. único, 364, 366, 368, 827, 834, 835, 837, 838 e 839; CPC arts. 130 e 794). Garante as Obrigações Garantidas (principal, remuneração, encargos e despesas). Pagamento em até 2 Dias Úteis após notificação do Agente Fiduciário. A Fiadora deve pagar durante o prazo de cura para evitar vencimento antecipado. Prazo determinado: vigora até o primeiro entre (i) pagamento integral das obrigações, (ii) Completion do Projeto ou (iii) substituição por fiança bancária de banco de 1ª linha (rating AAA). Pode ser substituída por fiança bancária, e vice-versa, sem aprovação em AGD. Se o Completion não ocorrer até 90 dias antes do vencimento da fiança bancária, ela deve ser renovada por no mínimo 6 meses ou a fiança corporativa deve ser restabelecida. A fiança é mantida em caso de recuperação judicial ou extrajudicial da Emissora. Completion do Projeto exige, entre outros, liquidação da 2ª Emissão (IRJS12) e liberação das garantias reais dela.",
+     "situacao": "vigente",
+     "fonte": "Escritura 5ª emissão (20/03/2024), cláusulas 4.22 e 4.22.1.1 a 4.22.1.19; mantida pelo 1º Aditamento (cl. 3.1 e 3.2)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Ações de emissão da Iguá Rio de Janeiro S.A. detidas pela Iguá Saneamento S.A. (100% do capital social), com direitos econômicos e políticos, dividendos, JCP e ações futuras ou adicionais",
+     "condicoes": "Compartilhada com os credores das Dívidas Existentes. Poderá ser compartilhada com credores dos Financiamentos de Longo Prazo e, em caso de honra, com o Banco Emissor e os emissores de cartas de fiança bancária. Formalizada pelo \"Segundo Aditamento ao Instrumento Particular de Alienação Fiduciária de Ações\", a ser celebrado antes da Primeira Data de Integralização. Constituída em favor dos Debenturistas, representados pelo Agente Fiduciário Vórtx DTVM. Registro em RTD.",
+     "situacao": "vigente",
+     "fonte": "Escritura 5ª emissão, cláusula 4.23.1(i); cláusulas 2.6 e 2.6.1"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Emissora (Iguá Rio de Janeiro S.A.): (a) decorrentes do Contrato de Concessão, a serem pagos nas Contas Centralizadoras e Contas Receitas Adicionais e transferidos à Conta Vinculada Credores; (b) decorrentes dos seguros contratados no âmbito do Contrato de Concessão, tendo a Emissora como beneficiária; demais itens cortados no trecho",
+     "condicoes": "Ressalvadas as retenções previstas no Contrato de Concessão. Formalizada em Contrato de Cessão Fiduciária de Direitos Creditórios, com contas vinculadas. O compartilhamento é regido por Contrato de Compartilhamento, ao qual o Banco Emissor deve aderir em caso de substituição da fiança.",
+     "situacao": "vigente",
+     "fonte": "Escritura 5ª emissão, cláusula 4.23.1(ii) (trecho cortado); cláusulas 4.22.1.18 e 2.6.1"
+    }
+   ],
+   "resumo": "Fiança da Iguá Saneamento (até Completion) + AF 100% ações da Emissora + cessão fiduciária de recebíveis"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-03-28",
+    "tipo": "escritura",
+    "assunto": "Escritura 5ª emissão",
+    "protocolo": "026727IPE200320240104537910-24",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1214453&numSequencia=739179&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-03-28",
+    "tipo": "escritura",
+    "assunto": "Primeiro aditamento da 5ª emissão",
+    "protocolo": "026727IPE270320240104537910-53",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1214457&numSequencia=739183&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-08-27",
+    "tipo": "ata_agd",
+    "assunto": "Consolidar as características das Debêntures, a fim de refletir a alteração a ser realizada no âmbito do 2º Aditamento",
+    "protocolo": "026727IPE070820240104553108-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1275941&numSequencia=800667&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-05-12",
+    "tipo": "ata_agd",
+    "assunto": "Waiver Conta Reserva",
+    "protocolo": "026727IPE120520250133161960-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1376536&numSequencia=901248&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-11-24",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "026727IPE241120250107573591-12",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1448920&numSequencia=973632&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-11-26",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração 2° convocação",
+    "protocolo": "026727IPE041220250174449464-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1450162&numSequencia=974874&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-04",
+    "tipo": "ata_agd",
+    "assunto": "Examinar, discutir e deliberar sobre a aprovação da autorização prévia para que a Emissora possa, nos termos das Cláusulas 3.2.2(iii) e 3.4.1 do \"Instrumento Particular de Cessão Fiduciária de ...",
+    "protocolo": "026727IPE041220250144701149-03",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1453107&numSequencia=977819&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Iguá Rio de Janeiro S.A.",
+  "lacunas": "O trecho da cessão fiduciária (cl. 4.23.1(ii)) está cortado. Faltam o restante do objeto, as demais contas e a eventual lista de garantias adicionais. As condições do Completion do Projeto estão truncadas após o item (ii). O 1º Aditamento só refletiu o bookbuilding, e seu conteúdo específico não aparece nos trechos. Não há evidência de registro dos contratos de garantia, da assinatura do Segundo Aditamento à AF de Ações, do Completion do Projeto nem de substituição da fiança por fiança bancária. Os documentos 3 a 7 referem-se à 3ª e à 4ª emissões (séries IRJS14/IRJS24) e não alteram a 5ª emissão. Não há informação sobre migração de emissora."
  }
 }

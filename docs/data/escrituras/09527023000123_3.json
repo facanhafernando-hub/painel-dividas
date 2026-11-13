@@ -108,5 +108,59 @@
    "data": "2025-10-30",
    "resumo": "RJ em curso, deferida em 30/10/2025. Plano apresentado em 19/12/2025, ainda sujeito a alterações. Sem vencimento antecipado da EESG13 nos trechos."
   }
+ },
+ "garantias": {
+  "EESG13": {
+   "codigo": "EESG13",
+   "emissao": 3,
+   "especie": "não determinada nos documentos fornecidos (tratada como crédito quirografário no plano de RJ, sem reconhecimento de garantia real)",
+   "garantias": [],
+   "resumo": "Garantias da série não identificadas; plano de RJ não reconhece credores com garantia real (tratamento quirografário)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-10-27",
+    "tipo": "comunicado",
+    "assunto": "Antecipação da tutela recursal para processamento do pedido de recuperação judicial",
+    "protocolo": "026271IPE271020250184076525-28",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436270&numSequencia=960982&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-30",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do Pedido de Recuperação Judicial",
+    "protocolo": "026271IPE301020250132015835-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1437840&numSequencia=962552&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "comunicado",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "026271IPE191220250137959204-59",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459943&numSequencia=984649&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "026271IPE191220250113622362-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459942&numSequencia=984648&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Environmental ESG Participações S.A. (em recuperação judicial, no âmbito do Grupo Ambipar); não há indicação de cessão ou migração da emissão para outra empresa",
+  "lacunas": "Os trechos não trazem a escritura, aditamentos nem AGDs da 3ª emissão (EESG13). Não foi possível determinar a espécie nem as garantias contratadas (fiança, aval, alienação ou cessão fiduciária etc.) nem a situação de cada uma. O Documento 1 (comunicado de 27/10/2025) só menciona, em termos genéricos, decisão que impede credores de excutir garantias fiduciárias, inclusive cessão fiduciária de direitos creditórios, sem vincular isso à série. O Documento 4 (plano de RJ, 19/12/2025), na cláusula 6.2, afirma que a Recuperanda não reconhece Credores com Garantia Real. Se algum for reconhecido judicialmente, será pago conforme a Condição B da Classe III (cláusula 6.3.3). A cláusula 6.3.1 refere-se à suspensão da exigibilidade de garantias (cláusula 4.5.1.2 do PRJ), cujo texto não foi apresentado. O plano também não nomeia a série EESG13 nos trechos fornecidos. Não foi possível confirmar se há garantia fidejussória de outras empresas do Grupo Ambipar. Os Documentos 2 e 3 não foram fornecidos."
  }
 }

@@ -1,0 +1,118 @@
+```json
+{
+  "series": [
+    {
+      "codigo": "CCCI13",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem (arts. 333, 366, 827, 829, 830, 834, 835, 837, 838 e 839 do CC); caráter universal (VNU atualizado, remuneração e acessórios)", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A, Escritura consolidada), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; contrato com o Agente Fiduciário (on demand guarantee agreement); somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (lei argentina)", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; AGD de 31/03/2026 retirou a desvinculação e a liberação automáticas (cláusulas 5.2.2 a 5.2.5)", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos (lei espanhola)", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; agente de garantias local representa os debenturistas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e); 6º Aditamento"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)",
+      "_nota": "idêntica para as 9 séries da 3ª emissão"
+    },
+    {
+      "codigo": "CCCI23",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI33",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI43",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI53",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI63",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI73",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI83",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia sobre Recursos Líquidos da Venda de Ativos Operacionais; Índice de Cobertura de Garantias)", "prestador_ou_objeto": "Recursos líquidos da venda de ativos operacionais (cláusulas 5.3 e 5.4 da escritura original)", "condicoes": "obrigações excluídas por deliberação da AGD de 31/03/2026", "situacao": "liberada", "fonte": "AGD 31/03/2026, item 6(e)"}
+      ],
+      "resumo": "Fiança de ICP, ICT e ICT Argentina + penhor de ações Loma Negra e ICT Argentina (1º grau, compartilhado)"
+    },
+    {
+      "codigo": "CCCI93",
+      "emissao": 3,
+      "especie": "quirografária, com garantias adicionais reais e fidejussórias",
+      "garantias": [
+        {"tipo": "fiança", "prestador_ou_objeto": "Intercement Participações S.A. (ICP); InterCement Trading e Inversiones, S.A. (ICT); InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "fiadoras e principais pagadoras, solidárias entre si e com a Emissora; renúncia aos benefícios de ordem; caráter universal", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusulas 5.1.1 a 5.1.2"},
+        {"tipo": "outra (garantia corporativa à primeira demanda, lei espanhola - garantía a requerimiento)", "prestador_ou_objeto": "InterCement Trading e Inversiones, S.A. (ICT) e InterCement Trading e Inversiones Argentina, S.L. (ICT Argentina)", "condicoes": "caráter universal sobre as Obrigações Garantidas; somada às Fianças", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.1.1"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão; sem desvinculação/liberação automáticas", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(i); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "penhor", "prestador_ou_objeto": "Ações da ICT Argentina (100% do capital social) de titularidade direta ou indireta da ICP, com dividendos e rendimentos", "condicoes": "1º grau, compartilhado com a 1ª série da 4ª emissão ICB; 2º grau (subordinado) para a 2ª série da 4ª emissão", "situacao": "vigente", "fonte": "6º Aditamento (Anexo A), cláusula 5.2.1(ii); AGD 31/03/2026, item 6(d)"},
+        {"tipo": "outra (garantia s

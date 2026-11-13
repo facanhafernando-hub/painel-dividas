@@ -172,5 +172,145 @@
    "data": null,
    "resumo": "Trechos da 2ª emissão trazem só cláusulas de vencimento antecipado como previsão contratual, sem evento vigente. Não há aditamento, ata de AGD ou plano posterior a 2025-08-13."
   }
+ },
+ "garantias": {
+  "ORIG11": {
+   "codigo": "ORIG11",
+   "emissao": 1,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Origem Energia S.A.: dividendos, JCP, lucros e demais distribuições devidos pelas ações da Origem Energia Alagoas S.A. (OGAL), da Origem Energia Canoas S.A., da Origem Energia Pilar S.A. e da Alpha LNG Ltda., a serem depositados na Conta Dividendos",
+     "condicoes": "Garantia de eficácia imediata. O contrato seria celebrado até a Data da Primeira Integralização, entre a Emissora (cedente), o Agente Fiduciário Vórtx DTVM Ltda. (credor fiduciário) e as subsidiárias (intervenientes anuentes). Garantia irrevogável e irretratável, válida até a liquidação das Obrigações Garantidas.",
+     "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+     "fonte": "Doc. 1, Escritura da 1ª emissão, cláusulas 4.25.1 (i), 4.25.2 e 4.25.5"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos e créditos da Origem Energia S.A. sobre o lucro de operações de derivativos (opções flexíveis, termo de moeda e swaps cambiais) contratadas para o descasamento cambial da emissão",
+     "condicoes": "Garantia de eficácia imediata. O contrato seria celebrado até a Data da Primeira Integralização, entre a Emissora (cedente) e o Agente Fiduciário. A cessão incide apenas sobre variação positiva.",
+     "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (ii) e 4.25.2"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações da Origem Energia Alagoas S.A. (OGAL) detidas pela Origem Energia S.A., incluindo ações derivadas, dividendos e proventos",
+     "condicoes": "Sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). A condição é a quitação integral das Emissões da OGAL e do Contrato de Swap Existente com o Banco Bradesco S.A., ou a anuência formal dos debenturistas dessas emissões e do Agente de Swap. O contrato seria celebrado em até 5 dias úteis após a condição. O Agente Fiduciário tem procuração irrevogável para formalizar a garantia.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusulas 4.25.1 (iii), 4.25.2 e 4.25.3"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Máquinas, equipamentos e ativos em estoque do Projeto Alagoas, atuais e futuros, de titularidade da OGAL",
+     "condicoes": "Sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). Prestada pela OGAL.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (iv)"
+    },
+    {
+     "tipo": "penhor",
+     "prestador_ou_objeto": "Direitos emergentes das participações da OGAL nos Contratos de Concessão (Penhor das Concessões)",
+     "condicoes": "Sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). Prestado pela OGAL.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (v)"
+    },
+    {
+     "tipo": "penhor",
+     "prestador_ou_objeto": "Direitos, títulos e interesses da OGAL no petróleo e no gás produzidos no Projeto Alagoas",
+     "condicoes": "Sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). Prestado pela OGAL.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (vi)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da OGAL: contratos de venda de óleo e gás, receitas acessórias, seguros, mútuos com partes relacionadas, ajustes positivos de derivativos e a Conta Centralizadora com seus recursos e rendimentos",
+     "condicoes": "Sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). A Conta Centralizadora é titularidade da OGAL, mas não movimentável por ela. Devem passar por ela, no mínimo, R$ 250.000.000,00 por ano.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (vii)"
+    },
+    {
+     "tipo": "outra",
+     "prestador_ou_objeto": "Cessão condicional das posições contratuais da OGAL no Contrato de Comodato de Ativos no Estado de Alagoas (OPMAC) e em contratos de locação, comodato, arrendamento, fornecimento e serviços de natureza similar",
+     "condicoes": "Sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). A eficácia da cessão depende de Evento de Excussão e de anuência das contrapartes. Cedente: OGAL. Cessionário: Agente Fiduciário.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (viii) e Modelo F (contrato de cessão condicional)"
+    }
+   ],
+   "resumo": "Garantia real: CF de dividendos das subsidiárias e de swap; garantias da OGAL sob condição suspensiva"
+  },
+  "ORIG21": {
+   "codigo": "ORIG21",
+   "emissao": 1,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Origem Energia S.A.: dividendos, JCP, lucros e demais distribuições devidos pelas ações da OGAL, da Origem Energia Canoas S.A., da Origem Energia Pilar S.A. e da Alpha LNG Ltda., a serem depositados na Conta Dividendos",
+     "condicoes": "Garantia de eficácia imediata. O contrato seria celebrado até a Data da Primeira Integralização, com o Agente Fiduciário Vórtx DTVM Ltda. como credor fiduciário. Os trechos não distinguem as séries, então a garantia é comum às Debêntures da emissão.",
+     "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+     "fonte": "Doc. 1, cláusulas 4.25.1 (i), 4.25.2 e 4.25.5"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos e créditos da Origem Energia S.A. sobre o lucro de operações de derivativos (opções flexíveis, termo de moeda e swaps cambiais) ligadas à emissão",
+     "condicoes": "Garantia de eficácia imediata. O contrato seria celebrado até a Data da Primeira Integralização. A cessão incide apenas sobre variação positiva.",
+     "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+     "fonte": "Doc. 1, cláusula 4.25.1 (ii) e 4.25.2"
+    },
+    {
+     "tipo": "alienação fiduciária / penhor / cessão fiduciária / cessão condicional",
+     "prestador_ou_objeto": "Pacote da OGAL: ações da OGAL, equipamentos do Projeto Alagoas, penhor das concessões, penhor de petróleo e gás, cessão fiduciária de recebíveis e da Conta Centralizadora (mínimo de R$ 250 milhões por ano) e cessão condicional de contratos",
+     "condicoes": "Todas sob condição suspensiva (Liberação das Garantias da 1ª Emissão da OGAL). A condição é a quitação das Emissões da OGAL e do Swap Existente, ou a anuência formal dos respectivos credores. O contrato seria celebrado em até 5 dias úteis após a condição. Prestadas pela Emissora e pela OGAL.",
+     "situacao": "proposta (sob condição suspensiva)",
+     "fonte": "Doc. 1, cláusulas 4.25.1 (iii) a (viii), 4.25.2 e 4.25.6"
+    }
+   ],
+   "resumo": "Garantia real: CF de dividendos das subsidiárias e de swap; garantias da OGAL sob condição suspensiva"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-12-14",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027227IPE041220230104527409-52",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1173538&numSequencia=698264&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-12-27",
+    "tipo": "escritura",
+    "assunto": "Aditamento à Escritura de Emissão",
+    "protocolo": "027227IPE271220230104528707-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1177615&numSequencia=702341&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-07-21",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "027227IPE200720250168229812-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1402374&numSequencia=927086&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-13",
+    "tipo": "escritura",
+    "assunto": "Alterações para refletir o Resultado do Procedimento de Bookbuilding,",
+    "protocolo": "027227IPE120820250157574790-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1412919&numSequencia=937631&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Origem Energia S.A.",
+  "lacunas": "Os Docs. 3 e 4 tratam da 2ª emissão da Origem Energia S.A. (espécie quirografária, a ser convolada em garantia real, com AF de ações da Origem Infra e outras garantias) e não foram aplicados às séries ORIG11 e ORIG21. A 2ª emissão prevê o compartilhamento das garantias da Emissora (cessão fiduciária de dividendos) com a 2ª emissão, condicionado à anuência dos debenturistas da 1ª emissão. Não há documento confirmando essa anuência nem o compartilhamento. Não constam os contratos de garantia assinados, os registros, o cumprimento da condição de liberação das garantias da OGAL nem o aditamento previsto na cláusula 4.25.6. O Doc. 2 (Segundo Aditamento) apenas corrige a quantidade de debêntures e não altera garantias. Não há detalhamento de qual série é ORIG11 e qual é ORIG21, nem se existem uma ou duas séries efetivamente emitidas. Não há aval, fiança ou fundo de liquidez; a escritura diz que não haverá fundo de sustentação de liquidez. Os trechos não registram migração de emissora."
  }
 }

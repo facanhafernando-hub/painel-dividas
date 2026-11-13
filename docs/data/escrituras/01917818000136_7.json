@@ -210,5 +210,100 @@
    "data": null,
    "resumo": "Fiadora Light S.A. em recuperação judicial em curso. Não há declaração de vencimento antecipado nos trechos analisados; a AGD de 2023-07-10 não deliberou sobre isso."
   }
+ },
+ "garantias": {
+  "LGTE17": {
+   "codigo": "LGTE17",
+   "emissao": 7,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Light S.A. (CNPJ 03.378.521/0001-75)",
+     "condicoes": "Irrevogável e irretratável; fiadora e principal pagadora, solidariamente responsável com a Emissora. Cobre todas as obrigações principais e acessórias (Valor Nominal Unitário, Remuneração, Encargos Moratórios, honorários do Agente Fiduciário e despesas). Pagamento em até 2 Dias Úteis após notificação do Agente Fiduciário. Sub-rogação da Fiadora só após a quitação integral dos Debenturistas. Vigora da Data de Emissão até o integral cumprimento das obrigações. A escritura cita artigos do Código Civil sobre benefício de ordem, mas o trecho disponível não mostra o texto da renúncia.",
+     "situacao": "vigente",
+     "fonte": "Documento 1 (Escritura, cláusulas 3.9 a 3.9.12 e 4.1.6.1); Documento 5 (Ata AGD de 10/07/2023) confirma a espécie e a qualidade de Fiadora da Light S.A."
+    }
+   ],
+   "resumo": "Fiança da Light S.A. (solidária, principal pagadora); espécie quirografária"
+  },
+  "LGTE27": {
+   "codigo": "LGTE27",
+   "emissao": 7,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Light S.A. (CNPJ 03.378.521/0001-75)",
+     "condicoes": "Irrevogável e irretratável; fiadora e principal pagadora, solidariamente responsável com a Emissora. Cobre todas as obrigações principais e acessórias (Valor Nominal Unitário, Remuneração, Encargos Moratórios, honorários do Agente Fiduciário e despesas). Pagamento em até 2 Dias Úteis após notificação do Agente Fiduciário. Sub-rogação da Fiadora só após a quitação integral dos Debenturistas. Vigora da Data de Emissão até o integral cumprimento das obrigações. A escritura cita artigos do Código Civil sobre benefício de ordem, mas o trecho disponível não mostra o texto da renúncia.",
+     "situacao": "vigente",
+     "fonte": "Documento 1 (Escritura, cláusulas 3.9 a 3.9.12 e 4.1.6.1); Documento 5 (Ata AGD de 10/07/2023) confirma a espécie e a qualidade de Fiadora da Light S.A."
+    }
+   ],
+   "resumo": "Fiança da Light S.A. (solidária, principal pagadora); espécie quirografária"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-08-11",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023000IPE110820210104441911-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=892354&numSequencia=417088&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-03-17",
+    "tipo": "ata_agd",
+    "assunto": "Rebaixamento de rating do emissor",
+    "protocolo": "023000IPE150320230104500210-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1074283&numSequencia=599013&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-03-23",
+    "tipo": "ata_agd",
+    "assunto": "Rebaixamento de rating do emissor",
+    "protocolo": "023000IPE220320230104500810-75",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1076264&numSequencia=600994&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-03-29",
+    "tipo": "ata_agd",
+    "assunto": "Resgate antecipado de dêbentures",
+    "protocolo": "023000IPE280320230104501406-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1079300&numSequencia=604030&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2023-07-10",
+    "tipo": "ata_agd",
+    "assunto": "Discutir e deliberar sobre a atuação de cada Debenturista nos autos da Recuperação Judicial da fiadora",
+    "protocolo": "023000IPE100720230104511710-83",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1121305&numSequencia=646034&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-25",
+    "tipo": "comunicado",
+    "assunto": "Aditamento e Emissão de Debêntures da Light SESA e Reestruturação de Notas da Light SESA e Energia",
+    "protocolo": "023000IPE251120240104562112-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1307815&numSequencia=832541&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Light Energia S.A.",
+  "lacunas": "Não há aditamentos nem deliberações que liberem ou alterem a fiança da 7ª emissão. Os Documentos 2 a 4 tratam da 3ª emissão e não se aplicam a LGTE17/LGTE27. O Documento 5 informa que a fiadora Light S.A. está em recuperação judicial (processo nº 0843430-58.2023.8.19.0001), e os debenturistas decidiram atuar individualmente, sem o Agente Fiduciário. Não consta o plano de recuperação, então não é possível saber se a fiança foi novada, reduzida ou afetada. A fiança continua formalmente vigente, mas sua exequibilidade está sujeita à recuperação judicial. O texto sobre renúncia ao benefício de ordem está cortado. Não há indício de cessão da emissão a outra emissora."
  }
 }

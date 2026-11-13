@@ -239,5 +239,144 @@
    "data": "2026-04-29",
    "resumo": "Plano de RE proposto em 29/04/2026 configurou vencimento antecipado automático (cl. 6.1.1 iii), registrado nas AGDs; sustação pendente para 21/01/2027."
   }
+ },
+ "garantias": {
+  "KRSA12": {
+   "codigo": "KRSA12",
+   "emissao": 2,
+   "especie": "com garantia real, com garantia adicional fidejussória (1ª série da 2ª emissão). A AGD de 27/07/2026 aprovou a conversão para quirografária, condicionada ao fechamento da Operação de Reestruturação.",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Participações societárias, em dois contratos: o Contrato de Alienação Fiduciária Kora e o Contrato de Alienação Fiduciária de Controladas. Ações da Emissora: (i) 62.050.150 ações ordinárias do Hospital Meridional S.A. (CNPJ 00.625.711/0001-51), 93,25% do capital votante; (ii) 30.763.912 ações ordinárias do Hospital Anchieta S.A., 49% do capital votante; (iii) 32.019.582 ações ordinárias do Hospital Anchieta, 51% do capital votante, sob Condição Suspensiva. Também há alienação fiduciária de ações/quotas prestadas por Hospital Anchieta, Ilha do Boi Participações S.A., Itapuã, Camburi Participações S.A. e Centro de Cardiologia e Radiologia Intervencionista Ltda. (CCRI, CNPJ 02.780.488/0001-42). Entre as Fiadoras, as quotas de Otoclínica, Gastroclínica e HSMF também estão alienadas.",
+     "condicoes": "Compartilhada com os debenturistas da 2ª emissão do Hospital Anchieta (HSPA12), com Contrato de Compartilhamento de Garantias. Parte das ações do Hospital Anchieta (51%) está sob Condição Suspensiva. As alienações fiduciárias de Otoclínica, Gastroclínica e HSMF, somadas às suas fianças, ficam conjuntamente limitadas a um percentual do valor da emissão (Anexo III, texto cortado; consta 6,00%). Garante as Obrigações Garantidas da emissão, incluindo o Agente Fiduciário e demais prestadores.",
+     "situacao": "vigente; liberação aprovada em AGD, mas só se efetiva no fechamento da Operação de Reestruturação",
+     "fonte": "Escritura (25/11/2024), cláusulas 1.2 a 1.13, 4.22.1 e 4.22.1.1 e Anexo III; 1º Aditamento (06/12/2024); AGD de 27/07/2026"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Imóveis: (i) matrículas 64.899, 38.821 e 85.927 (1º RI de Hidrolândia/GO) e (ii) matrículas 225.081 e 195.473 (1º RI de Aparecida de Goiânia/GO), ambas de propriedade da CCIR (grafia do documento); (iii) matrículas 176.346, 115.345 e 223.894 (1º RI de Aparecida de Goiânia/GO), do Hospital Encore Ltda.; (iv) matrículas 81.215, 51.834, 32.120, 39.244, 140.838, 22.708 e 148.546 (1º RI de Goiânia/GO), do ING; (v) matrículas 17.283 e 46.683 (6º RI de Ceilândia/DF), da Serviços Hospitalares Yuge S.A.",
+     "condicoes": "Compartilhada com os debenturistas da 2ª emissão do Hospital Anchieta (HSPA12). O 1º Aditamento passou a prever instrumentos particulares em vez de escrituras públicas. A Emissora e as proprietárias são partes dos contratos.",
+     "situacao": "vigente; liberação aprovada em AGD, mas só se efetiva no fechamento da Operação de Reestruturação",
+     "fonte": "Escritura, cláusula 4.22.2; 1º Aditamento, nova redação da cláusula 4.22.2; AGD de 27/07/2026"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Hospital Anchieta S.A. (CNPJ 02.560.878/0001-07); Hospital e Maternidade São Mateus Ltda. (HMSMC); Ilha do Boi Participações S.A.; Serviços Hospitalares Yuge S.A.; Itapuã; ING; Hospital Encore Ltda.; Camburi Participações S.A.; Gastroclínica (provavelmente Clínica de Endoscopia e Cirurgia Digestiva Doutor Edgard Nadra Ary Ltda.); Hospital Otoclínica Ltda.; HSMF (Fortaleza/CE, CNPJ 41.580.077/0001-65)",
+     "condicoes": "Anexo III: Hospital Anchieta, HMSMC, Ilha do Boi e Encore afiançam 100% do Valor Total da Oferta. As fianças de Camburi, Otoclínica, Gastroclínica e HSMF, junto com as alienações fiduciárias sobre as quotas de Otoclínica, Gastroclínica e HSMF, ficam conjuntamente limitadas a um percentual do valor da emissão (consta 6,00%, texto cortado). Os trechos recebidos não trazem os termos de solidariedade nem de renúncia ao benefício de ordem.",
+     "situacao": "vigente; liberação aprovada em AGD, mas só se efetiva no fechamento da Operação de Reestruturação",
+     "fonte": "Escritura, cláusulas 1.2 a 1.12, 4.5.1 e Anexo III; 1º Aditamento; AGD de 27/07/2026"
+    }
+   ],
+   "resumo": "AF de ações e imóveis + fiança de 11 Fiadoras; liberação aprovada em AGD, só no fechamento da reestruturação"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-03",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES",
+    "protocolo": "025879IPE251120240104562914-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1310909&numSequencia=835635&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-12-06",
+    "tipo": "escritura",
+    "assunto": "1º ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025879IPE061220240104563212-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1312433&numSequencia=837159&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-12-06",
+    "tipo": "comunicado",
+    "assunto": "COMUNICADO AO MERCADO REFERENTE AO RESULTADO DO PROCEDIMENTO DE BOOKBUILDING NO ÂMBITO DA OFERTA PÚBLICA DE DISTRIBUIÇÃO, DA 2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "025879IPE061220240104563212-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1312434&numSequencia=837160&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-12-12",
+    "tipo": "comunicado",
+    "assunto": "Conclusão do Reperfilamento",
+    "protocolo": "025879IPE121220240104563812-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1315150&numSequencia=839876&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-26",
+    "tipo": "comunicado",
+    "assunto": "Aprovação em AGD da prorrogação do prazo para o pagamento da parcela da Remuneração das Debêntures da Primeira e Segunda Séries da Segunda Emissão pelo prazo de 30 dias corridos",
+    "protocolo": "025879IPE260320260195869120-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1496126&numSequencia=1020832&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-05-05",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial KORA SAÚDE",
+    "protocolo": "025879IPE290420260153963139-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516342&numSequencia=1041048&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-17",
+    "tipo": "proposta_agd",
+    "assunto": "Aditamento escritura",
+    "protocolo": "025879IPE270720260165886506-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1546111&numSequencia=1070817&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-27",
+    "tipo": "ata_agd",
+    "assunto": "Exchange debêntures",
+    "protocolo": "025879IPE270720260163016538-76",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548554&numSequencia=1073260&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-28",
+    "tipo": "ata_agd",
+    "assunto": "Exchange debêntures",
+    "protocolo": "025879IPE270720260230886330-20",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1548682&numSequencia=1073388&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-14",
+    "tipo": "ata_agd",
+    "assunto": "AGD 2ª emissão Kora",
+    "protocolo": "025879IPE130820260189504749-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557758&numSequencia=1082464&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-09-09",
+    "tipo": "ata_agd",
+    "assunto": "AGD da 2ª Emissão de Debêntures",
+    "protocolo": "025879IPE080920260181991909-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566187&numSequencia=1090893&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Kora Saúde Participações S.A. (CNPJ 13.270.520/0001-66). Não houve migração de emissora.",
+  "lacunas": "1) Os trechos de OCR estão cortados: a lista completa das ações e quotas alienadas fiduciariamente (item iii e seguintes da cláusula 4.22.1.1) e o limite exato das fianças de Camburi, Otoclínica, Gastroclínica e HSMF (consta 6,00%, ambíguo) não aparecem por inteiro. 2) Não constam as cláusulas de fiança (cláusula 4.23), então solidariedade, renúncia ao benefício de ordem e valor garantido não puderam ser confirmados. 3) Os nomes completos de Itapuã, ING e Gastroclínica não estão nos trechos. 4) Não há prova de que o fechamento da Operação de Reestruturação ocorreu, então a liberação das garantias aprovada na AGD de 27/07/2026 deve ser tratada como pendente. 5) As AGDs de 13/08 e 08/09/2026 suspenderam as matérias iv a vi sem deliberação e reabrem em 21/01/2027. A ata de 08/09/2026 informa que não há novação nem extinção das garantias, exceto o deliberado na AGD. 6) KRSA12 foi identificado como a 1ª série da 2ª emissão, a partir do plano e do desdobramento KRSA12E/KRSA12Q. A AGD aprovou o desdobramento em uma parcela extraconcursal (KRSA12E) e outra quirografária sujeita ao plano (KRSA12Q), mas o tratamento das garantias em cada parcela não está claro. 7) Não há informação sobre aditamento formal pós-AGD nem sobre as novas séries e garantias da reestruturação (Debêntures Securitizadas, FIP Kora)."
  }
 }

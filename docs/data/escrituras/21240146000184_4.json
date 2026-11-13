@@ -180,5 +180,41 @@
    "data": null,
    "resumo": "Emissora em recuperação judicial em curso; debêntures emitidas para implementar o plano. Sem vencimento antecipado declarado nem suspensão de pagamentos."
   }
+ },
+ "garantias": {
+  "AGXY14": {
+   "codigo": "AGXY14",
+   "emissao": 4,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, série única, sem garantia (cláusula 6.4.1)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-04-11",
+    "tipo": "plano_rj",
+    "assunto": "Novo PRJ Aprovado em AGC de 09/04/25",
+    "protocolo": "025658IPE090420250104575811-29",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1360838&numSequencia=885564&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-29",
+    "tipo": "escritura",
+    "assunto": "ESCRITURA DA 04ª (QUARTA) EMISSÃO DE DEBÊNTURES, NÃO CONVERSÍVEIS EM AÇÕES, EM SÉRIE ÚNICA, PARA DISTRIBUIÇÃO PÚBLICA",
+    "protocolo": "025658IPE231220250169992975-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462035&numSequencia=986741&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "AGROGALAXY PARTICIPAÇÕES S.A. EM RECUPERAÇÃO JUDICIAL",
+  "lacunas": "Os trechos mostram 5 séries na 3ª emissão (1ª a 5ª), mas a lista pedida tem AGXY13, 23, 33, 43. Assumi que o sufixo corresponde ao número da série (AGXY13 = 1ª, AGXY23 = 2ª, AGXY33 = 3ª, AGXY43 = 4ª), o que não está confirmado nos documentos. Se for outro mapeamento, as garantias mudam. A 5ª série (sem garantia) não está na lista. O Contrato de Cessão Fiduciária de 13/11/2023 não foi fornecido, então faltam o cedente, o detalhamento dos direitos creditórios, a conta vinculada, o percentual de cobertura e as regras de compartilhamento. Ele é descrito como garantia existente em favor dos Credores Financeiros com Fluxo de Grãos, com aditamento previsto, sem confirmação de que foi aditado. O 1º Aditamento informa que as debêntures ainda não haviam sido subscritas e integralizadas em 12/11/2025. Não há informação sobre fiança ou aval de terceiros nem sobre migração de emissora."
  }
 }

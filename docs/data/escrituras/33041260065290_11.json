@@ -323,5 +323,138 @@
    "data": "2026-08-16",
    "resumo": "AGD de 14/09/2026 ratificou vencimento antecipado automático (Cl. 8.1(b)) com data em 16/08/2026, após pedido de RJ. Alcance da tutela não verificado."
   }
+ },
+ "garantias": {
+  "BHIAA1": {
+   "codigo": "BHIAA1",
+   "emissao": 11,
+   "especie": "com garantia real (1ª série, não conversível em ações)",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com os direitos e ativos a elas relacionados (dividendos, JCP, distribuições, direitos de subscrição, etc.)",
+     "condicoes": "Sob Condição Suspensiva: a eficácia depende de o Agente Fiduciário verificar a liberação da garantia equivalente dada aos debenturistas da 10ª emissão (art. 125 do Código Civil). Garante exclusivamente as Debêntures não Conversíveis (1ª e 4ª séries). Em favor dos debenturistas da 1ª série, representados pelo Agente Fiduciário. Os bens não podem ser vendidos, cedidos ou transferidos sem anuência de debenturistas que representem 50% mais uma das Debêntures da 1ª Série em Circulação. Só é liberada após a liquidação integral das Obrigações Garantidas.",
+     "situacao": "vigente (sob condição suspensiva; implemento não confirmado nos documentos)",
+     "fonte": "Escritura da 11ª emissão, cláusulas 4.7.1(i)(a), 4.7.2, 4.7.4 e 4.7.9, conforme reproduzida nos Aditamentos 1º, 2º e 3º (docs. 2 a 4)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Parte do estoque de produtos localizado nos centros de distribuição da Grupo Casas Bahia S.A., descrito no Anexo II do Contrato de Alienação Fiduciária de Bens Móveis (Alienação Fiduciária de Estoque)",
+     "condicoes": "Propriedade fiduciária e posse indireta com o agente fiduciário, com a Emissora na posse direta. A escritura não prevê Condição Suspensiva para esta garantia. Os bens não podem ser vendidos, cedidos ou transferidos sem anuência de 50% mais uma das Debêntures da 1ª Série em Circulação. Garante apenas as Debêntures não Conversíveis.",
+     "situacao": "vigente (a AGD de 14/09/2026 refere pedido de tutela da Emissora para impedir a excussão das garantias fiduciárias sobre o estoque)",
+     "fonte": "Escritura da 11ª emissão, cláusulas 4.7.1(i)(b) e 4.7.4 (docs. 2 a 4); ata da AGD, considerandos (b) (doc. 6)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos da Emissora sobre a conta vinculada nº 1.005.289-5, agência 3400-2, no Banco do Brasil S.A. (recursos existentes e futuros, inclusive PIX, e direitos creditórios decorrentes)",
+     "condicoes": "Sob Condição Suspensiva: depende da liberação da garantia existente da 10ª emissão. Garante exclusivamente as Debêntures não Conversíveis. Anuência de 50% mais uma das Debêntures da 1ª Série em Circulação para disposição dos bens.",
+     "situacao": "vigente (sob condição suspensiva; implemento não confirmado nos documentos)",
+     "fonte": "Escritura da 11ª emissão, cláusulas 4.7.1(i)(c), 4.7.2 e 4.7.4 (docs. 2 a 4)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos da Emissora sobre a conta vinculada nº 6.289-8, agência 3070-8, no Banco do Brasil S.A. (recursos existentes e futuros, inclusive vendas com cartão de crédito, e direitos creditórios decorrentes)",
+     "condicoes": "Sob Condição Suspensiva: depende da liberação da garantia existente da 10ª emissão. Garante exclusivamente as Debêntures não Conversíveis. Anuência de 50% mais uma das Debêntures da 1ª Série em Circulação para disposição dos bens.",
+     "situacao": "vigente (sob condição suspensiva; implemento não confirmado nos documentos)",
+     "fonte": "Escritura da 11ª emissão, cláusulas 4.7.1(i)(d), 4.7.2 e 4.7.4 (docs. 2 a 4)"
+    }
+   ],
+   "resumo": "Alien. fid. ações Cnova, estoque e cessão fid. de 2 contas no BB (parte sob condição suspensiva)"
+  },
+  "BHIAB1": {
+   "codigo": "BHIAB1",
+   "emissao": 11,
+   "especie": "quirografária (2ª série, mandatoriamente conversível em ações)",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia real ou fidejussória; conversível em ações"
+  },
+  "BHIAC1": {
+   "codigo": "BHIAC1",
+   "emissao": 11,
+   "especie": "quirografária (3ª série, facultativamente conversível em ações)",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia real ou fidejussória; conversível em ações"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-04-29",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "006505IPE280420240104541111-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1228505&numSequencia=753231&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-22",
+    "tipo": "escritura",
+    "assunto": "Aditamento 11ª emissão de Debentures",
+    "protocolo": "006505IPE221220250167937260-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1460703&numSequencia=985409&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-30",
+    "tipo": "escritura",
+    "assunto": "Segundo Aditamento à escritura da 11ª emissão de debentures",
+    "protocolo": "006505IPE291229250197548132-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462259&numSequencia=986965&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-07",
+    "tipo": "escritura",
+    "assunto": "Terceiro Aditamento de Escritura da 11ª Emissão de Debentures",
+    "protocolo": "006505IPE010420260149301803-93",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1502105&numSequencia=1026811&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-08-31",
+    "tipo": "comunicado",
+    "assunto": "Deferimento de Tutela de Urgência na Recuperação Judicial",
+    "protocolo": "006505IPE310820260170920575-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562849&numSequencia=1087555&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-17",
+    "tipo": "ata_agd",
+    "assunto": "Ata da Assembleia Geral de Debenturistas da 11ª emissão de debentures",
+    "protocolo": "006505IPE140920260112146369-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569126&numSequencia=1093832&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-19",
+    "tipo": "comunicado",
+    "assunto": "Ratificação do Pedido de Recuperação Judicial",
+    "protocolo": "006505IPE191020260101192350-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578469&numSequencia=1103175&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do pedido de Recuperação Judicial",
+    "protocolo": "006505IPE211020260116241989-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579129&numSequencia=1103835&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Grupo Casas Bahia S.A.",
+  "lacunas": "1) O mapeamento BHIAA1/BHIAB1/BHIAC1 para 1ª/2ª/3ª série é inferido do padrão dos códigos da 10ª emissão (BHIAA0 = 1ª série, BHIAC0 = 3ª série); os documentos não trazem os códigos da 11ª emissão. 2) Os documentos não confirmam se a Condição Suspensiva (liberação das garantias da 10ª emissão) foi verificada, nem se os Contratos de Garantia Real foram assinados e registrados. 3) Os contratos de garantia, o documento 5 e o plano de recuperação não foram fornecidos. 4) A Grupo Casas Bahia S.A. ajuizou recuperação judicial (nº 4152930-18.2026.8.26.0100). O ingresso do pedido é Evento de Vencimento Antecipado Automático (cláusula 8.1(b) da escritura, citada na AGD de 14/09/2026). Há tutela de urgência de 28/08/2026 contra declarações de vencimento antecipado baseadas só no ajuizamento e contra a excussão das garantias sobre o estoque. Em 19/10/2026 o juízo ainda não havia decidido sobre o processamento. Não há informação sobre o tratamento das garantias no plano. 5) A 4ª série (cessão fiduciária da conta Bradesco 0040269/9) não faz parte das séries consultadas. As garantias da 10ª emissão (docs. 2 a 4) são as existentes a serem liberadas e não foram atribuídas à 11ª emissão. Não foram identificadas cessão de emissão nem migração de emissora."
  }
 }

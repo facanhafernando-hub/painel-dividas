@@ -131,5 +131,50 @@
    "data": null,
    "resumo": "11ª emissão sem vencimento antecipado, suspensão, RJ/RE ou renegociação nos trechos. Anexo do agente fiduciário (2024-11-05) informa série ativa e sem inadimplementos."
   }
+ },
+ "garantias": {
+  "CSNAA1": {
+   "codigo": "CSNAA1",
+   "emissao": 11,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantia real ou fidejussória; escritura veda preferência ou garantia (cl. 4.5.1)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-10-26",
+    "tipo": "escritura",
+    "assunto": "Escritura Particular da 11ª emissão de debêntures",
+    "protocolo": "004030IPE211020210104449511-00",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=910142&numSequencia=434876&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2021-11-12",
+    "tipo": "escritura",
+    "assunto": "PRIMEIRO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 11ª(DÉCIMA PRIMEIRA) EMISSÃO DE DEBÊNTURES",
+    "protocolo": "004030IPE211020210104451212-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=916875&numSequencia=441609&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-07-04",
+    "tipo": "ata_agd",
+    "assunto": "Alteração da escritura de emissão",
+    "protocolo": "004030IPE300620250179744184-50",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1398090&numSequencia=922802&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Companhia Siderúrgica Nacional (CNPJ 33.042.730/0001-04). Os documentos não indicam cessão ou migração de emissora em nenhuma das emissões.",
+  "lacunas": "Não há nenhum documento da 12ª emissão (CSNAA2), então espécie e garantias dela não podem ser determinadas. Nas emissões 11, 14, 15 e 16, a escritura (cl. 4.5.1) diz que as debêntures são quirografárias e 'não contarão com qualquer preferência ou garantia'. Os aditamentos (1º da 11ª, 1º da 14ª, 1º da 15ª e 1º da 16ª) não alteram a espécie nem constituem garantias. As garantias que aparecem no fim das escrituras vêm do bloco do agente fiduciário sobre outras emissões e não pertencem às séries da CSN. Esse bloco cita alienação fiduciária de ações da Usiminas e cessão fiduciária de duplicatas, fiança da 'Elizabeth Cimentos S.A.' e garantias dos projetos eólicos de Ventos do Sul Energia S.A. (CSN Mineração, emissão 1, aparece só como emissora de outra série listada). A ata de AGD de 30/06/2025 trata da 13ª emissão, que não faz parte da lista, e não altera as séries pedidas. Não há AGD, comunicado ou plano de recuperação posterior que mude as garantias dessas séries. Os aditamentos vieram truncados por OCR/recorte, o que impede confirmar a distribuição final entre séries (a 14ª e a 15ª admitiam até 3 e 2 séries, e a 16ª até 2). As séries listadas partem das informações do pedido."
  }
 }

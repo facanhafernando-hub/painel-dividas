@@ -117,5 +117,47 @@
    "data": null,
    "resumo": "Emissora Light S/A citada em recuperação judicial em curso. Sem vencimento antecipado declarado. Vencimento de 2024-10-15 passou sem evidência de pagamento ou prorrogação."
   }
+ },
+ "garantias": {
+  "LIGHC7": {
+   "codigo": "LIGHC7",
+   "emissao": 17,
+   "especie": "não determinada nos documentos fornecidos (consta apenas como beneficiária das garantias reais compartilhadas)",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Light Serviços de Eletricidade S.A.)",
+     "condicoes": "Compartilhada entre os titulares das debêntures da 9ª, 15ª, 16ª, 17ª, 19ª, 20ª, 21ª, 22ª, 23ª, 24ª, 25ª e 26ª emissões e os titulares das notas first lien e second lien (The Bank of New York Mellon). Sem privilégio ou concorrência de terceiros, respeitados os limites legais e regulamentares. A ordem de preferência entre as séries da 17ª não está nos trechos.",
+     "situacao": "vigente (informada nas escrituras da 22ª e da 9ª, de 2024; escritura da 17ª não fornecida)",
+     "fonte": "Doc. 4, cláusula 5.6.1 e 5.6.1.1(i); Doc. 5, cláusula 4.24.1 e 4.24.2(i)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios (recebíveis) que transitam por conta vinculada (Light Serviços de Eletricidade S.A.)",
+     "condicoes": "Compartilhada com as mesmas emissões e notas listadas acima. Recebíveis destinados à conta limitados a R$50 milhões, atualizados anualmente pelo IPCA. Em caso de inadimplemento pecuniário, o limite é de R$300 milhões por ano, corrigidos pelo IPCA.",
+     "situacao": "vigente (informada nas escrituras da 22ª e da 9ª, de 2024; escritura da 17ª não fornecida)",
+     "fonte": "Doc. 4, cláusula 5.6.1.1(ii); Doc. 5, cláusula 4.24.2(ii)"
+    }
+   ],
+   "resumo": "17ª listada como beneficiária das cessões fiduciárias compartilhadas; escritura própria não fornecida"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-09",
+    "tipo": "escritura",
+    "assunto": "COM GARANTIA FIDEJUSSÓRIA ADICIONAL, PARA DISTRIBUIÇÃO PÚBLICA COM ESFORÇOS RESTRITOS||SEGUNDO ADITAMENTO AO INSTRUMENTO PARTICULAR DE ESCRITURA DA 17ª (DÉCIMA SÉTIMA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, EM ATÉ 4 (QUATRO) SÉRIES, DA ESPÉCIE QUIROGRAFÁRIA",
+    "protocolo": "008036IPE281120240104563512-36",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1313153&numSequencia=837879&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Light Serviços de Eletricidade S.A. (CNPJ 60.444.437/0001-46); não houve migração de emissora. A fiadora é a Light S.A. – Em Recuperação Judicial, e os efeitos da recuperação judicial foram estendidos à emissora.",
+  "lacunas": "1) Não foi fornecido documento da 17ª emissão (LIGHC7). Sua espécie e a existência de fiança própria são desconhecidas. Só se sabe que seus titulares são beneficiários das garantias reais compartilhadas nas escrituras da 22ª e da 9ª. 2) Os trechos não indicam a que série repactuada (1ª, 2ª ou 3ª) corresponde cada ticker (LIGHE2 e LSVE39), nem se as séries originais foram convertidas em séries novas. Por isso as garantias foram descritas por série. 3) A 3ª série da 22ª e da 9ª é quirografária. Os trechos não mostram fiança nem garantia real para ela, e a fiança é prestada só em favor das séries 1 e 2. 4) Os contratos de cessão fiduciária estavam 'a ser celebrados' na data dos aditamentos de dez/2024. A formalização, o registro em RTD e o conteúdo integral dos contratos não constam dos trechos. 5) A escritura original da 9ª (2013) não foi fornecida. Seus detalhes só aparecem via o 6º aditamento consolidado. 6) Há inconsistências nos documentos, possivelmente por erro de OCR ou de redação. O 'Terceiro Aditamento' da 22ª traz a escritura consolidada. Nele, a data do 3º aditamento aparece como 28/05/2021 e a definição de 'Escritura' ainda menciona série única."
  }
 }

@@ -105,5 +105,79 @@
    "data": null,
    "resumo": "AGD de 2023-12-29 não foi instalada por falta de quórum. Não há vencimento antecipado, RJ ou RE. Aviso de 2024-11-14 informa pagamento ordinário em 2024-11-18."
   }
+ },
+ "garantias": {
+  "NTEN11": {
+   "codigo": "NTEN11",
+   "emissao": 1,
+   "especie": "com garantia real, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos, contas e outras avenças nos termos do Contrato de Cessão Fiduciária de Direitos, Administração de Contas e Outras Avenças, incluindo a Conta Reserva de Operação e Manutenção (O&M), cujo saldo mínimo e base de cálculo seriam alterados",
+     "condicoes": "Garantia compartilhada com a emissão (e com outros credores, ao que parece). A proposta de AGD previa aditamento ao contrato em até 180 dias da assinatura da assembleia, para nova composição da base de cálculo da Conta Reserva O&M. A Companhia informa que não haverá diminuição nem alteração das garantias prestadas na emissão. Sem detalhamento do restante do pacote de garantias reais no trecho.",
+     "situacao": "vigente (aditamento proposto)",
+     "fonte": "Documento 1 – Termo de Não Instalação da AGD convocada para 29/12/2023, pauta (a) e (b)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Contas Reserva do BNDES e Reserva de Repasse, previstas no Contrato de Cessão Fiduciária, com substituição de 2/3 do saldo por fiança bancária até 31/12/2024",
+     "condicoes": "Garantias específicas NÃO compartilhadas com a emissão. O Agente Fiduciário é parte signatária e assinaria o aditivo. A prorrogação do prazo foi concedida pelo BNDES e demais Agentes Repassadores.",
+     "situacao": "desconhecida (aditamento proposto; assembleia não instalada)",
+     "fonte": "Documento 1 – pauta (b)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Vale S.A. (fiadora no Contrato de Compra e Venda de Energia – CCVE, de 10/12/2012, com a Norte Energia)",
+     "condicoes": "Proposta: Vale figuraria no CCVE como fiadora, responsável até a liquidação pelo cumprimento das obrigações de Salobo Metais S.A. e Mineração Onça Puma S.A., que seriam incluídas como compradoras/autoprodutoras. Os contratos de garantia da emissão seriam aditados para incluir Salobo e Onça Puma apenas como Intervenientes Anuentes, sem alteração nas garantias. A ligação com a emissão (garantia fidejussória adicional) não está explícita no trecho.",
+     "situacao": "desconhecida (proposta; assembleia não instalada)",
+     "fonte": "Documento 1 – pauta (c)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Ações da Aliança Norte Participações S.A. de titularidade da Vale S.A. (20.974.660.022 ações, 50% do capital), cuja transferência para Salobo Metais S.A. (10.634.152.631 ações, 25,35%) e Mineração Onça Puma S.A. (10.340.507.391 ações, 24,65%) foi submetida à anuência",
+     "condicoes": "O trecho não diz expressamente que as ações são objeto de garantia, mas indica que a operação exigiria aditamento aos contratos de garantia vigentes na emissão, sem qualquer alteração nas garantias prestadas. Natureza exata (alienação fiduciária ou penhor) não identificada.",
+     "situacao": "desconhecida",
+     "fonte": "Documento 1 – pauta (c)"
+    }
+   ],
+   "resumo": "Garantia real (cessão fiduciária de direitos/contas, compartilhada) + garantia adicional fidejussória; detalhes omitidos"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-01-02",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não Instalação da Assembleia Geral de Debenturistas",
+    "protocolo": "025097IPE291220230104529310-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1179315&numSequencia=704041&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-14",
+    "tipo": "comunicado",
+    "assunto": "Aviso aos Debenturistas | Pagamento de Principal e Juros de 1ª Emissão de Debêntures",
+    "protocolo": "025097IPE141120240104561010-99",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1304429&numSequencia=829155&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-11-17",
+    "tipo": "comunicado",
+    "assunto": "Pagamento aos Debenturistas | NTEN11 | Juros e Principal",
+    "protocolo": "025097IPE171120250101875160-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1446428&numSequencia=971140&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Norte Energia S.A.",
+  "lacunas": "O trecho é um Termo de Não Instalação da AGD de 29/12/2023: não há deliberação, apenas a pauta proposta, então as alterações não foram aprovadas por essa assembleia. A escritura e aditamentos originais não foram fornecidos. Faltam, portanto: lista completa das garantias reais; o fiador ou garantidor fidejussório (não identificado); a identificação exata de quem presta cada garantia; e se há compartilhamento com BNDES e outros credores, além do percentual/valor de cobertura. O trecho também omite a parte que fala do 'Saldo Mínimo da Conta Reserva O&M' (texto cortado). Não há indício de migração de emissora."
  }
 }

@@ -123,5 +123,68 @@
    "data": null,
    "resumo": "Resumo da situação sem informação; não há evento de crédito identificado para a série ARML26 nos dados disponíveis."
   }
+ },
+ "garantias": {
+  "ARML26": {
+   "codigo": "ARML26",
+   "emissao": 6,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, sem garantias (6ª emissão; vencimento 05/11/2030)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-11-25",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE031120210104452511-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=920333&numSequencia=445067&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-09-16",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE160920240104555113-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1282696&numSequencia=807422&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-10-10",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE081020240104557510-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1290444&numSequencia=815170&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "026069IPE151020250188039301-76",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433110&numSequencia=957822&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "comunicado",
+    "assunto": "6a Emissão de Debentures",
+    "protocolo": "026069IPE151020250106065379-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433120&numSequencia=957832&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "ARMAC Locação, Logística e Serviços S.A. (CNPJ 00.242.184/0001-04). Não há cessão ou migração de emissora nos documentos.",
+  "lacunas": "1) A escritura da 4ª emissão (ARML14) não foi fornecida. A espécie e a ausência de garantias vêm só do quadro de emissões do agente fiduciário nas escrituras da 5ª emissão (Doc. 2 e 3) e da 6ª emissão (Doc. 4), que registram 'Quirografária' e 'Garantias: N/A', vencimento 15/03/2032. 2) Nas escrituras da 5ª emissão, cláusula 4.5, e da 6ª emissão, cláusula 4.5, a espécie é quirografária. O quadro de emissões da escritura da 6ª emissão (Doc. 4) também registra 'Garantias: N/A' para a 5ª emissão. O 1º Aditamento da 5ª emissão (Doc. 3) apenas ratifica as condições e não cria nem altera garantias. 3) A relação entre os códigos e as séries da 5ª emissão (ARML15 = 1ª série, 2032; ARML25 = 2ª série, 2034) é presumida pela ordem dos códigos e pelos vencimentos. Os documentos não trazem o mapeamento. 4) A 6ª emissão é em 2 séries, mas só ARML26 foi informado. A escritura indica um único vencimento (05/11/2030) e não permite saber a qual série o código corresponde nem o código da outra série. 5) Os documentos não trazem aditamentos posteriores, atas de AGD nem plano de recuperação, então não é possível confirmar mudanças após 15/10/2025. 6) O Doc. 1 trata da 2ª emissão (quirografária, sem garantias, cláusula 6.9), que não faz parte das séries solicitadas. Seu quadro de emissões cita uma emissão de 300.000 debêntures com 'Garantia Real – Alienação Fiduciária de Equipamentos e Veículos' e vencimento em 28/04/2026, que não corresponde a nenhuma das séries analisadas. 7) As menções a 'Ônus' e ao índice de 1,25x de equipamentos desonerados são apenas cláusulas de vencimento antecipado e não constituem garantia."
  }
 }

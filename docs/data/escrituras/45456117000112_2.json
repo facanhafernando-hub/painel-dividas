@@ -342,5 +342,97 @@
    "data": "2026-09-23",
    "resumo": "Reperfilamento aprovado em AGD: carência até 2028, remuneração incorporada ao VNU, vencimento prorrogado para 2049. Condições suspensiva e resolutiva pendentes."
   }
+ },
+ "garantias": {
+  "ASER12": {
+   "codigo": "ASER12",
+   "emissao": 2,
+   "especie": "com garantia real, com garantia fidejussória adicional",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Conasa Infraestrutura S.A. (Fiadora)",
+     "condicoes": "Fiança corporativa (Cláusula 4.22.11 da Escritura, citada na ata). A Fiadora também assumiu o dever de aportar no mínimo R$ 45.000.000,00 na Emissora até 08/12/2026 (Aporte Adicional, cláusula 7.1(xl)). Os textos de solidariedade, renúncia ao benefício de ordem e limite de valor não aparecem nos trechos.",
+     "situacao": "vigente",
+     "fonte": "Doc. 1 (Proposta da Administração, preâmbulo); Doc. 2; Doc. 5 (ata da AGD de 23/09/2026, cláusulas 7.1(xl) e referência à Cláusula 4.22.11)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios da Águas do Sertão S.A. decorrentes do Contrato de Concessão (Receita de Exploração, indenizações do Poder Concedente, etc.); direitos de crédito da Fiadora contra a Emissora nos Contratos de Mútuo; direitos creditórios contra o Banco Depositário nas Contas Vinculadas, com rendimentos e Investimentos Permitidos; produto de eventual excussão",
+     "condicoes": "A cessão dos direitos do Contrato de Concessão tem eficácia sujeita à implementação da Condição Suspensiva. Constituída por Emissora e Fiadora, conforme aplicável, em favor dos Debenturistas representados pelo Agente Fiduciário (Oliveira Trust DTVM S.A.). Existe um Contrato de Compartilhamento, cujas partes não aparecem nos trechos. O Contrato de Cessão Fiduciária foi celebrado em 16/01/2024.",
+     "situacao": "vigente",
+     "fonte": "Doc. 5 (ata de 23/09/2026, Cláusula 4.23.1(ii) da Escritura); Doc. 1 (Contrato de Cessão Fiduciária)"
+    },
+    {
+     "tipo": "conta vinculada",
+     "prestador_ou_objeto": "Conta Reserva Debêntures e Conta Pagamento Debêntures (Contas Vinculadas, mantidas no Banco Depositário), com Saldos Mínimos",
+     "condicoes": "A Proposta de 25/08/2026 pedia (a) liberar todo o saldo da Conta Reserva Debêntures para a Conta de Livre Movimento, (b) dispensar o Saldo Mínimo e a Fiança Bancária Saldo Mínimo até 15/12/2028 e (c) adiar a próxima verificação para 14/12/2028, com o Saldo Mínimo completo até 14/06/2029. A ata de 23/09/2026 registra a aprovação sem reprovações ou abstenções. As deliberações estão sujeitas a condições suspensivas até 30/11/2026, e o texto final aprovado está truncado.",
+     "situacao": "vigente; liberação do saldo e dispensa do Saldo Mínimo aprovadas aparentemente sob condição suspensiva",
+     "fonte": "Doc. 1 (itens 2 e Anexo B); Doc. 5 (ata de 23/09/2026); Doc. 4 (menção às condições suspensivas da AGD 2ª Emissão)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Fiança bancária (Banco Fiador não identificado) para completar o Saldo Mínimo da Conta Reserva Debêntures",
+     "condicoes": "Modelo de carta de fiança: solidária, com renúncia aos benefícios dos arts. 333, 364, 366, 368, 821, 824, 827, 834 a 839 do CC. Paga mediante depósito direto na Conta Reserva em 2 Dias Úteis. Pode ser exigida uma única vez e na integralidade. A Proposta pretende dispensar a apresentação até 15/12/2028.",
+     "situacao": "proposta (dispensa) / desconhecida: não se sabe se há carta emitida",
+     "fonte": "Doc. 1 (item 2.a.i); Doc. 5 (anexo com modelo de carta de fiança)"
+    }
+   ],
+   "resumo": "Cessão fiduciária de recebíveis da concessão e contas + fiança da Conasa Infraestrutura; reserva liberada sob condição"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-08-25",
+    "tipo": "proposta_agd",
+    "assunto": "Reperfilamento",
+    "protocolo": "027359IPE260820260138120270-10",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561440&numSequencia=1086146&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-10",
+    "tipo": "ata_agd",
+    "assunto": "Reperfilamento (Suspensão)",
+    "protocolo": "027359IPE090920260169082343-77",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1566640&numSequencia=1091346&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-23",
+    "tipo": "ata_agd",
+    "assunto": "Reperfilamento",
+    "protocolo": "027359IPE210920260106640966-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571018&numSequencia=1095724&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-25",
+    "tipo": "ata_agd",
+    "assunto": "Postergação Vencimento",
+    "protocolo": "027359IPE230920260109529851-06",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571439&numSequencia=1096145&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-25",
+    "tipo": "ata_agd",
+    "assunto": "Reperfilamento",
+    "protocolo": "027359IPE230920260179748060-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571440&numSequencia=1096146&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Águas do Sertão S.A.",
+  "lacunas": "Os documentos não incluem a Escritura original nem a redação final dos aditamentos. Não constam a solidariedade, a renúncia ao benefício de ordem e o limite da fiança da Conasa, mas só a renúncia genérica aos arts. 366, 827 etc. na ratificação da 1ª emissão (Doc. 4). O Doc. 4 refere-se à 1ª emissão da mesma emissora e não foi usado como garantia da 2ª. Não se sabe quais são os demais credores do Contrato de Compartilhamento, nem se a Condição Suspensiva da cessão do Contrato de Concessão já foi implementada. Também não se sabe se a liberação da Conta Reserva já produziu efeitos, já que as deliberações dependem de condições suspensivas até 30/11/2026. A Fiança BNB (R$ 800 milhões) aparece como condição ligada ao Contrato de Financiamento BNB, sem ficar claro se beneficia os debenturistas da 2ª emissão. Os trechos de OCR estão truncados."
  }
 }

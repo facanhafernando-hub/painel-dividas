@@ -116,5 +116,68 @@
    "data": "2025-10-30",
    "resumo": "Emissora em recuperação judicial (proc. 3014764-58.2025.8.19.0001), com pedido deferido em 30/10/2025. Plano divulgado, sem vínculo identificado com a série."
   }
+ },
+ "garantias": {
+  "AMBP16": {
+   "codigo": "AMBP16",
+   "emissao": 6,
+   "especie": null,
+   "garantias": [],
+   "resumo": "Indeterminado: documentos tratam da 3ª emissão, não da 6ª"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-01-10",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "024961IPE141220210104457108-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=932121&numSequencia=456855&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-27",
+    "tipo": "comunicado",
+    "assunto": "Antecipação da tutela recursal para processamento do pedido de recuperação judicial",
+    "protocolo": "024961IPE271020250195334488-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436258&numSequencia=960970&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-30",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do Pedido de Recuperação Judicial",
+    "protocolo": "024961IPE301020250114124154-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1437836&numSequencia=962548&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "comunicado",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "024961IPE191220250191095083-90",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459940&numSequencia=984646&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-19",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Judicial",
+    "protocolo": "024961IPE191220250143463475-42",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459937&numSequencia=984643&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Ambipar Participações e Empreendimentos S.A. (conforme o cadastro das séries; nenhum documento indica cessão ou migração)",
+  "lacunas": "Nenhum documento fornecido trata da 5ª (AMBP15) ou da 6ª emissão (AMBP16). (1) A escritura do Documento 1 é da 3ª emissão, série única, quirografária com garantia adicional fidejussória. A fiança é solidária, com renúncia ao benefício de ordem, e foi prestada pela Environmental ESG Participações S.A. e pela Emergência Participações S.A. Essa garantia não pode ser atribuída às séries pedidas. (2) O Documento 1 traz trechos do relatório do agente fiduciário sobre outras emissões, sem número de emissão ou código de série. Um deles descreve alienação fiduciária de ações da Ambipar Participações, alienação fiduciária de ações das Targets e cessão fiduciária de aplicações financeiras (R$ 50 milhões, Bradesco) e conta vinculada. Outro descreve a 2ª emissão, com fiança da Environmental ESG e de outro fiador cujo nome foi cortado. Não é possível vincular esses trechos às emissões 5ª ou 6ª. (3) O Documento 2 (comunicado) e o Documento 5 (plano de RJ) não identificam garantias por série. O plano afirma que a Recuperanda não reconhece credores com garantia real e menciona a suspensão de exigibilidade de garantias. Faltam as escrituras, aditamentos e atas de AGD da 5ª e da 6ª emissões para determinar espécie, garantias e situação. Também não há informação sobre eventual liberação de garantias ou migração de emissora."
  }
 }

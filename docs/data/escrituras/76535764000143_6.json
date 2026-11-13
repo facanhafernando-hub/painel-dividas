@@ -125,5 +125,68 @@
    "data": null,
    "resumo": "Emissora Oi S/A (sucessora da Telemar por incorporação em 2021) está em recuperação judicial em curso. Não há vencimento antecipado declarado nos trechos."
   }
+ },
+ "garantias": {
+  "TLNL16": {
+   "codigo": "TLNL16",
+   "emissao": 6,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, série única (ex-Telemar, hoje Oi); sem garantia identificada nos trechos. Venc. 25/02/2035"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2018-07-19",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "011312IPE130720180104330009-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=633430&numSequencia=167350&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-07-02",
+    "tipo": "plano_rj",
+    "assunto": "Aditamento RJ Oi Protocolado",
+    "protocolo": "011312IPE010720250127062562-58",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1396770&numSequencia=921482&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-16",
+    "tipo": "comunicado",
+    "assunto": "Convolação da Recuperação Judicial da Serede em Falência",
+    "protocolo": "011312IPE160320260118868831-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1490738&numSequencia=1015444&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Continuidade do julgamento dos Agravos de Instrumento referentes à decisão que convolou a recuperação judicial do Grupo Oi em falência",
+    "protocolo": "011312IPE250820260135039982-74",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561017&numSequencia=1085723&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-22",
+    "tipo": "comunicado",
+    "assunto": "Homologação do Plano de Recuperação Judicial da Tahto",
+    "protocolo": "011312IPE221020260173223241-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579598&numSequencia=1104304&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "OI S.A. – EM RECUPERAÇÃO JUDICIAL (CNPJ 76.535.764/0001-43). Ela é a emissora original da 12ª emissão. Sucedeu a Telemar Norte Leste S.A., emissora original da 6ª emissão, por incorporação em maio de 2021.",
+  "lacunas": "1) A 6ª emissão só aparece em uma declaração do agente fiduciário no Doc. 1: quirografária, série única, R$ 2.324.344.000, vencimento em 25/02/2035. A escritura da 6ª emissão não foi fornecida. Não há como confirmar se existe fiança, solidariedade das Recuperandas ou outra garantia, nem se a incorporação da Telemar tem tratamento específico para essas debêntures. 2) Os nomes das 'Recuperandas' solidárias da 12ª emissão não constam do trecho da Escritura. A lista citada vem do Doc. 2, e várias dessas empresas foram incorporadas pela Oi. Não se sabe quais ainda existem. 3) O Doc. 2 (Aditamento ao Plano, protocolado em 2025) apenas propõe garantias para Novo Financiamento, Dívida Roll-Up e Dívida ToP, com imóveis e ações da V.tal. Essas garantias não beneficiam OIBRA2 nem TLNL16, e o aditamento não está homologado nos documentos. Também não se sabe se as debêntures foram objeto de opção de reestruturação (I ou II). 4) Não há aditamentos da escritura, atas de AGD ou comunicados posteriores a 2018 sobre essas séries, então não é possível confirmar liberação ou reforço de garantias."
  }
 }

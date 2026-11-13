@@ -147,5 +147,67 @@
    "data": null,
    "resumo": "Nenhum evento de crédito nos trechos. Programa facultativo de recompra (até R$ 150 mi, sem prêmio, inclui HAPV19) não altera o cronograma da série."
   }
+ },
+ "garantias": {
+  "HAPV19": {
+   "codigo": "HAPV19",
+   "emissao": 9,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+     "condicoes": "fiadora e principal pagadora; irrevogável, irretratável e incondicional; sem benefício de ordem, com renúncia aos arts. 301, 333 parágrafo único, 364, 366, 368, 824, 827, 830, 834-839 e 844 do Código Civil e 130, 131 e 794 do CPC; garante todas as Obrigações Garantidas (principal, remuneração, encargos e demais obrigações); deve ser honrada em até 5 Dias Úteis após o inadimplemento, mediante notificação do Agente Fiduciário; multa de 2% e juros de 1% a.m. sobre o atraso; promessa de pagamento autônoma e abstrata; direito de regresso/sub-rogação da fiadora subordinado à liquidação integral dos debenturistas; mantida em reorganizações societárias permitidas; alteração das cláusulas da Fiança exige quórum de 90% das debêntures em circulação; sem limite de valor mencionado",
+     "situacao": "vigente",
+     "fonte": "Documento 1 (Escritura da 9ª emissão), Cláusulas 2.10, 4.6.1 e 5.1 a 5.7; 4.20.3(f); 8.4.3"
+    }
+   ],
+   "resumo": "Fiança da Hapvida Assistência Médica S.A. (solidária, principal pagadora, sem benefício de ordem)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2025-04-24",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250151163146-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE071020250184374491-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE081020250101964273-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
+    "protocolo": "024392IPE250820260171572734-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Hapvida Participações e Investimentos S.A. (emissora de ambas as séries; sem aditamento de transferência efetivado nos documentos)",
+  "lacunas": "O texto integral da Cláusula 5 (Fiança) da 10ª emissão não veio nos trechos; foi tomada como equivalente à da 9ª apenas por inferência e não confirmada. Não há aditamento celebrado da Transferência Permitida (apenas modelo no Anexo III), então a emissora e a fiadora seguem as originais. O modelo do Anexo III cita 3.650.000 debêntures/R$ 3,65 bilhões, mas as condições de remuneração e vencimento do comunicado diferem de dados de outras partes (ex.: Doc. 2 não traz a remuneração da 10ª). Não há atas de AGD ou documentos posteriores sobre liberação ou reforço de garantias."
  }
 }

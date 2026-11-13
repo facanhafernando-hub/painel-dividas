@@ -139,5 +139,69 @@
    "data": null,
    "resumo": "Nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação encontrado para a 11ª emissão. As AGDs tratam de outras emissões."
   }
+ },
+ "garantias": {
+  "VAMOA1": {
+   "codigo": "VAMOA1",
+   "emissao": 11,
+   "especie": "quirografária",
+   "garantias": [],
+   "resumo": "Quirografária, série única, sem garantia; covenant de ônus sobre a Frota (pari passu se < 1,25x)",
+   "observacoes_garantias": "A Escritura da 11ª emissão (cl. 5.5.1) estabelece a espécie quirografária e não prevê fiança, aval nem garantia real. O covenant de ônus sobre a Frota é restrição: se a Frota desonerada ficar abaixo de 1,25x o saldo devedor, o ônus deve ser compartilhado pari passu com os debenturistas em até 30 Dias Úteis, salvo aprovação de 2/3 mais um em AGD. Fonte: Documento 3."
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-06-21",
+    "tipo": "escritura",
+    "assunto": "Escritura da 11ª emissão de debentures",
+    "protocolo": "024716IPE190620240104546406-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1252336&numSequencia=777062&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-10-22",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a concessão de anuência prévia pelos Debenturistas para a realização da cisão da Emissora e incorporação, pela Simpar, da parcela cindida.",
+    "protocolo": "024716IPE211120240104558706-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1293431&numSequencia=818157&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-10-23",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a concessão de anuência prévia pelos Debenturistas para a realização da cisão da Emissora e incorporação, pela Simpar, da parcela cindida.",
+    "protocolo": "024716IPE211120240204558706-20",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1293904&numSequencia=818630&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-13",
+    "tipo": "ata_agd",
+    "assunto": "I. A concessão de anuência prévia pelos Debenturistas para a realização da cisão da Companhia.||II. a autorização para que a Companhia, em conjunto com o Agente Fiduciário, pratique todos os ato nas matérias eventualmente aprovadas na AGD.",
+    "protocolo": "024716IPE131120240104560911-78",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1303662&numSequencia=828388&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-14",
+    "tipo": "ata_agd",
+    "assunto": "Deliberação, pelos Debenturistas, sobre as matérias informadas na Proposta de Administração disponibilizada nas páginas eletrônicas da  Companhia (https://ri.grupovamos.com.br/)",
+    "protocolo": "024716IPE141120240104561011-02",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1304518&numSequencia=829244&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Vamos Locação de Caminhões, Máquinas e Equipamentos S.A. (CNPJ 23.373.000/0001-32 conforme Documento 1), emissora original da 3ª e da 11ª emissões; não há indicação de cessão para outra empresa do grupo",
+  "lacunas": "1) Não há escritura nem aditamento da 4ª emissão (VAMO34); espécie, garantias e emissora não podem ser determinados. 2) Os Documentos 2 (9ª emissão), 4 e 5 (propostas da AGD da 2ª emissão), 6 (ata da AGD da 2ª emissão) e 7 (ata da AGD da 7ª emissão) tratam de outras emissões; a cisão da Emissora com incorporação pela Simpar não é vinculada a essas séries. 3) Não há aditamentos ou AGDs da 3ª e da 11ª emissões, então não se pode descartar inclusão ou liberação posterior de garantias. 4) O mapeamento VAMO23/VAMO33 para a 2ª/3ª séries da 3ª emissão e VAMOA1 para a 11ª emissão não está expresso nos trechos. 5) Trechos em [...] e possíveis erros de OCR limitam a verificação."
  }
 }

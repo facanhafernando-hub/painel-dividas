@@ -129,5 +129,85 @@
    "data": null,
    "resumo": "Resumo da situação sem informação disponível. Nenhum evento de crédito identificado para a série QUAL18 nos dados fornecidos."
   }
+ },
+ "garantias": {
+  "QUAL18": {
+   "codigo": "QUAL18",
+   "emissao": 8,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Qualicorp Administradora de Benefícios S.A. (CNPJ 07.658.098/0001-18)",
+     "condicoes": "Fiadora, principal pagadora e solidariamente responsável com a Emissora. Irrevogável e irretratável, com renúncia aos benefícios de ordem e de exoneração (arts. 333, par. único, 364, 365, 366, 368, 821, 824, 827, 829, 830, 834 a 839 do Código Civil e arts. 130, 131 e 794 do CPC). Valor Garantido: principal, remuneração, encargos moratórios, honorários do Agente Fiduciário e custos de cobrança. Sem limite de valor. Pagamento em 2 Dias Úteis após comunicação do Agente Fiduciário (Oliveira Trust DTVM S.A.). Vale até o pagamento integral. Sub-rogação e regresso só após os Debenturistas serem pagos integralmente. O 1º Aditamento descreve a fiança como \"condicionada à implementação da Condição Suspensiva (conforme definida na Escritura de Emissão)\".",
+     "situacao": "vigente",
+     "fonte": "Escritura da 8ª emissão (17/09/2025), cláusulas 4.5.1 e 11; 1º Aditamento (15/10/2025), considerando (B) e cláusula 2.6.1; Anúncios de Início e Encerramento (15 e 20/10/2025)"
+    }
+   ],
+   "resumo": "Fiança da Qualicorp Administradora de Benefícios (solidária, sem benefício de ordem)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2015-05-07",
+    "tipo": "escritura",
+    "assunto": "Alteração da data de vencimento.||Inclusão de data de pagamento de remuneração em carater extraordinário.||Inclusão de obrigação adicional a emissora referente a contratação de agência classificadora de risco.||Inclusão de pagamento de premio na hipótese de resgate antecipado",
+    "protocolo": "022497IPE270420150104213106-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=469756&numSequencia=12503&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2022-06-10",
+    "tipo": "escritura",
+    "assunto": "",
+    "protocolo": "022497IPE310520220204459811-92",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=989986&numSequencia=514720&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2025-09-17",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "022497IPE170920250197153950-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1424431&numSequencia=949143&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "escritura",
+    "assunto": "Definição do fee",
+    "protocolo": "022497IPE151020250188433088-95",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433104&numSequencia=957816&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-15",
+    "tipo": "comunicado",
+    "assunto": "QUAL18",
+    "protocolo": "022497IPE151020250177911539-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1433103&numSequencia=957815&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-20",
+    "tipo": "comunicado",
+    "assunto": "QUAL18",
+    "protocolo": "022497IPE201020250138352606-40",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1434191&numSequencia=958903&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Qualicorp Consultoria e Corretora de Seguros S.A. (CNPJ 11.992.680/0001-93)",
+  "lacunas": "Os trechos não trazem a definição da \"Condição Suspensiva\" a que o 1º Aditamento condiciona a fiança, nem dizem se ela foi implementada. A cláusula 11.6 da Escritura diz que a fiança vigora desde a Data de Emissão (15/10/2025), e os anúncios de 15 e 20/10/2025 mencionam a fiança sem ressalva. Por isso a situação foi marcada como vigente. Não há documentos posteriores a 20/10/2025 (aditamentos ou AGDs) que indiquem liberação ou alteração. Os Documentos 1 e 2 tratam de outras emissões (1ª e 6ª) e não foram usados para esta série."
  }
 }

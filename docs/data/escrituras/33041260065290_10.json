@@ -278,5 +278,184 @@
    "data": null,
    "resumo": "RJ ajuizada (proc. 4152930-18.2026.8.26.0100). Ingresso do pedido é VA automático (cl. 8.1b). Tutela obsta declarações. AGD sem quórum."
   }
+ },
+ "garantias": {
+  "BHIAA0": {
+   "codigo": "BHIAA0",
+   "emissao": 10,
+   "especie": "quirografária (originalmente com garantia real; garantias reais liberadas e espécie alterada no 4º Aditamento, de 30/12/2025)",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com direitos, dividendos, JCP e demais rendimentos a elas associados",
+     "condicoes": "Constituída em favor dos Debenturistas, representados pelo Agente Fiduciário (Oliveira Trust). A ordem de prioridade entre as séries seria regida nos Contratos de Garantia Real. A venda ou cessão dos bens dependia de aprovação de 50% mais uma das Debêntures em Circulação.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(a). Liberação: 4º Aditamento (Doc. 4), cláusulas 3.2 e Considerandos (AGDs aprovaram a Exclusão das Garantias Reais); mantida na consolidação do 5º Aditamento (Doc. 5)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos sobre a conta vinculada nº 1.005.289-5, ag. 3400-2, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A., incluindo recursos depositados (inclusive via PIX)",
+     "condicoes": "Contrato de Cessão Fiduciária I; em favor dos Debenturistas, representados pelo Agente Fiduciário.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(b); liberação pelo 4º Aditamento (Doc. 4), cláusula 3.2"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos sobre a conta vinculada nº 6.289-8, ag. 3070-8, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A., incluindo recursos de vendas com cartão de crédito",
+     "condicoes": "Contrato de Cessão Fiduciária II; em favor dos Debenturistas, representados pelo Agente Fiduciário.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(c); liberação pelo 4º Aditamento (Doc. 4), cláusula 3.2"
+    }
+   ],
+   "resumo": "Quirografária: garantias reais (AF ações Cnova e CF de 2 contas) liberadas em dez/2025"
+  },
+  "BHIAB0": {
+   "codigo": "BHIAB0",
+   "emissao": 10,
+   "especie": "quirografária (originalmente com garantia real; garantias reais liberadas e espécie alterada no 4º Aditamento, de 30/12/2025)",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com direitos, dividendos, JCP e demais rendimentos a elas associados",
+     "condicoes": "Constituída em favor dos Debenturistas, representados pelo Agente Fiduciário (Oliveira Trust), de forma compartilhada entre as séries. A ordem de prioridade entre as séries seria regida nos Contratos de Garantia Real.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusulas 4.7.1(a) e 4.7.2. Liberação: 4º Aditamento (Doc. 4), cláusula 3.2"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos sobre a conta vinculada nº 1.005.289-5, ag. 3400-2, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A.",
+     "condicoes": "Contrato de Cessão Fiduciária I; compartilhada entre as séries, com ordem de prioridade nos Contratos de Garantia Real.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(b); liberação pelo 4º Aditamento (Doc. 4), cláusula 3.2"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos sobre a conta vinculada nº 6.289-8, ag. 3070-8, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A. (recebíveis de cartão de crédito)",
+     "condicoes": "Contrato de Cessão Fiduciária II; compartilhada entre as séries, com ordem de prioridade nos Contratos de Garantia Real.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(c); liberação pelo 4º Aditamento (Doc. 4), cláusula 3.2"
+    }
+   ],
+   "resumo": "Quirografária (conversível): garantias reais (AF ações Cnova e CF de 2 contas) liberadas em dez/2025"
+  },
+  "BHIAC0": {
+   "codigo": "BHIAC0",
+   "emissao": 10,
+   "especie": "quirografária (originalmente com garantia real; garantias reais liberadas e espécie alterada no 4º Aditamento, de 30/12/2025)",
+   "garantias": [
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com direitos, dividendos, JCP e demais rendimentos a elas associados",
+     "condicoes": "Constituída em favor dos Debenturistas, representados pelo Agente Fiduciário (Oliveira Trust), de forma compartilhada entre as séries. A ordem de prioridade entre as séries seria regida nos Contratos de Garantia Real.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusulas 4.7.1(a) e 4.7.2. Liberação: 4º Aditamento (Doc. 4), cláusula 3.2"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos sobre a conta vinculada nº 1.005.289-5, ag. 3400-2, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A.",
+     "condicoes": "Contrato de Cessão Fiduciária I; compartilhada entre as séries, com ordem de prioridade nos Contratos de Garantia Real.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(b); liberação pelo 4º Aditamento (Doc. 4), cláusula 3.2"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos sobre a conta vinculada nº 6.289-8, ag. 3070-8, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A. (recebíveis de cartão de crédito)",
+     "condicoes": "Contrato de Cessão Fiduciária II; compartilhada entre as séries, com ordem de prioridade nos Contratos de Garantia Real.",
+     "situacao": "liberada",
+     "fonte": "Escritura (Doc. 2), cláusula 4.7.1(c); liberação pelo 4º Aditamento (Doc. 4), cláusula 3.2"
+    }
+   ],
+   "resumo": "Quirografária: garantias reais (AF ações Cnova e CF de 2 contas) liberadas em dez/2025"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-04-29",
+    "tipo": "plano_rj",
+    "assunto": "Plano de Recuperação Extrajudicial",
+    "protocolo": "006505IPE280420240104541111-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1228505&numSequencia=753231&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-08-06",
+    "tipo": "escritura",
+    "assunto": "Escritura 10° emissão de debentures",
+    "protocolo": "006505IPE060820240104551013-01",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1267642&numSequencia=792368&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-07-14",
+    "tipo": "escritura",
+    "assunto": "Aditamento ao Instrumento Particular da Escritura da 10ª emissão de debentures",
+    "protocolo": "006505IPE100720250149854139-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1400707&numSequencia=925419&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-30",
+    "tipo": "escritura",
+    "assunto": "Quarto aditamento à escritura da 10ª emissão de debentures",
+    "protocolo": "006505IPE291220250181311255-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462260&numSequencia=986966&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-01-13",
+    "tipo": "escritura",
+    "assunto": "5 Aditamento à escritura da 10ª emissão de debentures",
+    "protocolo": "006505IPE090120260177444565-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1466861&numSequencia=991567&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-08-31",
+    "tipo": "comunicado",
+    "assunto": "Deferimento de Tutela de Urgência na Recuperação Judicial",
+    "protocolo": "006505IPE310820260170920575-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562849&numSequencia=1087555&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-09-17",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação da Assembleia Geral de Debenturistas da 10ª emissão de debentures",
+    "protocolo": "006505IPE150920260194788226-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1569125&numSequencia=1093831&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-19",
+    "tipo": "comunicado",
+    "assunto": "Ratificação do Pedido de Recuperação Judicial",
+    "protocolo": "006505IPE191020260101192350-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578469&numSequencia=1103175&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-21",
+    "tipo": "comunicado",
+    "assunto": "Deferimento do pedido de Recuperação Judicial",
+    "protocolo": "006505IPE211020260116241989-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579129&numSequencia=1103835&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Grupo Casas Bahia S.A. (não houve cessão ou migração de emissora nos documentos analisados)",
+  "lacunas": "1) Os Documentos 1 e 6 não foram fornecidos, e a numeração sugere que haja outros aditamentos e atas de AGD. 2) O mapeamento dos códigos para as séries (BHIAA0=1ª, BHIAB0=2ª, BHIAC0=3ª) é inferido, pois não consta nos trechos. 3) Os Contratos de Garantia Real não foram fornecidos, então não se sabe se foram efetivamente assinados e registrados antes da liberação, nem a ordem de prioridade entre as séries. 4) Os trechos das AGDs e do 4º Aditamento estão recortados. Não é possível confirmar se a liberação dependia de condição suspensiva, nem a data de eficácia (a cláusula de vigência está truncada). 5) O Termo de Não Instalação de 15/09/2026 (Doc. 7) ainda traz no título 'espécie com garantia real', provavelmente por manter o título original da emissão, o que contradiz o 4º e o 5º Aditamentos, que prevalecem por serem os atos de alteração. 6) O Comunicado de 19/10/2026 (Doc. 8) informa pedido de recuperação judicial, ainda sem deferimento do processamento e com tutela de urgência deferida em 28/08/2026. Não há plano de recuperação nos documentos, então não se sabe o tratamento das debêntures. 7) Não há fiança, aval ou outra garantia fidejussória em nenhum documento."
  }
 }
