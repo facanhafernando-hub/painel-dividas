@@ -465,9 +465,9 @@ async function carregarCronograma(i) {
   const tot = linhas.reduce((s, l) => s + (l.cx || 0), 0);
   const nA = c.ev.filter(e => e[1] === "A").length, nI = c.ev.filter(e => e[1] === "I").length;
   el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Cronograma (agenda SND)</h4>
-    <div class="sub" style="margin-bottom:6px">${c.ev.filter(e => e[1] === "J").length} pagamentos de juros · ${nA ? nA + " amortizações" : "principal no vencimento (bullet)"}${nI ? ` · <span class="neg">${nI} incorporações de juros (PIK)</span>` : ""}${tot ? ` · total projetado R$ ${f2.format(tot)} por debênture` : ""}</div>
-    <div class="card tw" style="max-height:300px"><table><thead><tr><th class="l">Pagamento</th><th class="l">Evento</th><th title="Projeção com a curva ANBIMA de ${dbr(c.curva)}">Caixa projetado (R$)</th></tr></thead>
-    <tbody>${linhas.map(l => `<tr style="cursor:default"><td class="l">${l.d}</td><td class="l">${esc(l.desc)}</td><td>${l.pik && !l.cx ? '<span class="mut">incorporado</span>' : l.cx ? (l.amort ? "<b>" + f2.format(l.cx) + "</b>" : f2.format(l.cx)) : "–"}</td></tr>`).join("")}</tbody></table></div>
+    <div class="sub" style="margin-bottom:6px">${c.ev.filter(e => e[1] === "J").length} pagamentos de juros · ${nA ? nA + (nA > 1 ? " amortizações" : " amortização") : "principal no vencimento (bullet)"}${nI ? ` · <span class="neg">${nI} incorporações de juros (PIK)</span>` : ""}${tot ? ` · total projetado R$ ${f2.format(tot)} por debênture` : ""}</div>
+    <div class="card tw" style="max-height:300px"><table><thead><tr><th class="l">Pagamento</th><th class="l">Evento</th><th title="Projeção com a curva ANBIMA de ${dbr(c.curva)}">Caixa proj. (R$)</th></tr></thead>
+    <tbody>${linhas.map(l => `<tr style="cursor:default"><td class="l">${l.d}</td><td class="l" style="white-space:normal;min-width:140px">${esc(l.desc)}</td><td>${l.pik && !l.cx ? '<span class="mut">incorporado</span>' : l.cx ? (l.amort ? "<b>" + f2.format(l.cx) + "</b>" : f2.format(l.cx)) : "–"}</td></tr>`).join("")}</tbody></table></div>
     <div class="nota" style="margin-top:4px">Caixa projetado por debênture, supondo pagamento integral: DI futuro e inflação implícita da curva ANBIMA de ${dbr(c.curva)}, escalado para o PU par de hoje (R$ ${fmt(c.par)}).</div>`;
 }
 
