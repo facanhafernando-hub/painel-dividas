@@ -1,0 +1,6 @@
+{
+  "_nota": "Códigos CETIP cujo devedor no informe mensal da CVM está errado. Aplicado depois da leitura do informe.",
+  "CRA020002GZ": {"cnpj": "01838723000127", "nome": "BRF S.A.", "motivo": "Vert 46ª emissão (BRF S.A.); informe mensal traz o CNPJ da Klabin"},
+  "CRA020002H1": {"cnpj": "01838723000127", "nome": "BRF S.A.", "motivo": "Vert 46ª emissão (BRF S.A.); informe mensal traz o CNPJ da Klabin"},
+  "CRA0210013B": {"cnpj": "01838723000127", "nome": "BRF S.A.", "motivo": "Vert 60ª emissão (BRF III), lastro 3ª emissão de debêntures da BRF; informe mensal traz o CNPJ da Klabin"}
+}

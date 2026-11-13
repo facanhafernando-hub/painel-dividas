@@ -44,7 +44,7 @@ def ler_csv(z, sufixo):
 
 
 def informes():
-    classe, cd = [], []
+    classe, cd, geral = [], [], []
     ano = date.today().year
     for tipo in ("cri", "cra"):
         for a in (ano - 1, ano):
@@ -55,8 +55,21 @@ def informes():
                 continue
             classe += ler_csv(z, f"_classe_{a}.csv")
             cd += ler_csv(z, f"_cedente_devedor_{a}.csv")
-    log(f"linhas: classe {len(classe)} | cedente/devedor {len(cd)}")
-    return classe, cd
+            geral += ler_csv(z, f"_geral_{a}.csv")
+    log(f"linhas: classe {len(classe)} | cedente/devedor {len(cd)} | geral {len(geral)}")
+    return classe, cd, geral
+
+
+# Palavras que não identificam empresa no "Nome_Emissao" do informe
+GENERICAS = set("""S A SA LTDA CRA CRI SERIE SERIES EMISSAO EMISSOES UNICA I II III IV V VI VII VIII IX X DE DA DO DAS DOS E
+  COMPANHIA CIA GRUPO HOLDING PARTICIPACOES AGRO AGRONEGOCIO AGRICOLA RECEBIVEIS CERTIFICADOS CREDITO IMOBILIARIO IMOBILIARIOS
+  SECURITIZADORA SECURITIZACAO BRASIL BRASILEIRA DEBENTURE DEBENTURES PULVERIZADO PULVERIZADA OPERACAO CR CPR NC CCB""".split())
+
+
+def tokens(t):
+    import unicodedata
+    t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode().upper()
+    return [w for w in re.findall(r"[A-Z0-9]+", t) if len(w) >= 3 and w not in GENERICAS and not w.isdigit()]
 
 
 def nomes_cnpj(cnpjs, cache):
@@ -97,7 +110,12 @@ def nomes_cnpj(cnpjs, cache):
 
 
 def main():
-    classe, cd = informes()
+    classe, cd, geral = informes()
+    nome_em = {}
+    for r in geral:
+        k, ref = r["Codigo_Identificacao_Certificado"], r.get("Data_Referencia") or ""
+        if k not in nome_em or ref > nome_em[k][1]:
+            nome_em[k] = (r.get("Nome_Emissao") or "", ref)
     # certificado -> devedores do informe mais recente
     ult = {}
     for r in cd:
@@ -136,12 +154,29 @@ def main():
     cnpjs = sorted({escolha[c]["cnpj"] for c, _ in cod_cert.values() if escolha[c]["cnpj"]})
     cache = nomes_cnpj(cnpjs, cache)
     cache_p.write_text(json.dumps(dict(sorted(cache.items())), ensure_ascii=False, indent=0), encoding="utf-8")
-    out = {}
+    out, conflitos = {}, []
     for cod, (cert, _) in cod_cert.items():
         e = dict(escolha[cert])
         if e["cnpj"]:
             e["nome"] = cache.get(e["cnpj"])
+            # conferência: o nome da emissão no informe precisa citar o devedor informado
+            ne = (nome_em.get(cert) or ("",))[0]
+            tn, td = set(tokens(ne)), set(tokens(e["nome"]))
+            if tn and td and not (tn & td):
+                conflitos.append({"codigo": cod, "certificado": cert, "nome_emissao": ne, "cnpj_informado": e["cnpj"], "nome_cnpj": e["nome"]})
         out[cod] = e
+    # correções manuais: securitizadora informou o CNPJ errado no informe mensal
+    corr_p = Path(__file__).with_name("devedores_correcoes.json")
+    corr = json.load(open(corr_p)) if corr_p.exists() else {}
+    for cod, c in corr.items():
+        if cod.startswith("_"):
+            continue
+        out[cod] = {**out.get(cod, {}), "cnpj": c["cnpj"], "nome": c["nome"], "pct": c.get("pct", 100.0), "tipo": "devedor",
+                    "corrigido": c.get("motivo", "correção manual")}
+    (DADOS / "_debug").mkdir(exist_ok=True)
+    (DADOS / "_debug" / "devedores_conflitos.json").write_text(json.dumps(
+        [c for c in conflitos if c["codigo"] not in corr], ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"conflitos nome da emissão × devedor: {len(conflitos)} ({sum(1 for c in conflitos if c['codigo'] in corr)} já corrigidos)")
     (DADOS / "devedores_cricra.json").write_text(json.dumps(dict(sorted(out.items())), ensure_ascii=False, indent=0), encoding="utf-8")
     from collections import Counter
     log("códigos:", len(out), Counter(v["tipo"] for v in out.values()), "| com nome:", sum(1 for v in out.values() if v.get("nome")))
