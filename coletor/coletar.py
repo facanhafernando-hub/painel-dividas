@@ -21,6 +21,7 @@ Só biblioteca padrão: nada para instalar, um modo de falha a menos.
 from __future__ import annotations
 
 import argparse
+import collections
 import math
 import hashlib
 import json
