@@ -549,8 +549,10 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
                            snd: dict | None, curva: dict | None) -> dict:
     """% do par e yield implícito (HTM) do PU negociado."""
     pmed = (neg or {}).get("pu_med")
-    pu_par = (curva or {}).get("pu_par") or (anb or {}).get("pu_par")
-    fonte_par = "SND" if (curva or {}).get("pu_par") else ("ANBIMA" if (anb or {}).get("pu_par") else None)
+    # ANBIMA primeiro (calcula o par com VNA atualizado); SND como alternativa, pois em
+    # alguns papéis o PU do SND vem igual ao valor de emissão, sem atualização
+    pu_par = (anb or {}).get("pu_par") or (curva or {}).get("pu_par")
+    fonte_par = "ANBIMA" if (anb or {}).get("pu_par") else ("SND" if (curva or {}).get("pu_par") else None)
     out = {"pu_par": pu_par, "fonte_par": fonte_par, "pct_par_neg": None, "y": None,
            "y_base": None, "y_est": False}
     if pmed and pu_par:
@@ -564,17 +566,21 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
     if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration"):
         base = base_indexador(anb.get("indice"))
         if base and base != "%DI":
-            out.update(y=yield_implicito(pmed, anb["pu"], anb["tx_ind"], anb["duration"]), y_base=base)
+            y = yield_implicito(pmed, anb["pu"], anb["tx_ind"], anb["duration"])
+            if y is not None and -5 <= y <= 40:
+                out.update(y=y, y_base=base)
             return out
     # 2) referência contratual: no par, o papel rende o próprio cupom (estimativa)
-    if snd and pu_par:
+    if snd and pu_par and pct is not None and 90 <= pct <= 110:
         base = base_indexador(snd.get("indice"), snd.get("mult"))
         if base and base != "%DI" and snd.get("taxa") is not None:
             du = du_ate(snd.get("venc"), d)
             if du:
                 total = (snd["taxa"] / 100) + (CDI_APROX if base == "DI+" else 0.05 if base != "PRE" else 0)
                 dur = duration_estimada(du, total) * (0.6 if snd.get("amort") else 1.0)
-                out.update(y=yield_implicito(pmed, pu_par, snd["taxa"], dur), y_base=base, y_est=True)
+                y = yield_implicito(pmed, pu_par, snd["taxa"], dur)
+                if y is not None and -1 <= y <= 25 and du > 120:
+                    out.update(y=y, y_base=base, y_est=True)
     return out
 
 
@@ -672,8 +678,9 @@ def processar(d: date, forcar: bool = False) -> bool:
         antigo = json.loads(destino.read_text(encoding="utf-8"))
         f = antigo["fontes"]
         # completo = tem B3, SND e (ANBIMA ou a ANBIMA já não guarda mais essa data)
-        recente = (datetime.now(BRT).date() - d).days <= 4
-        if f.get("b3") and f.get("snd_pu") and (f.get("anbima") or not recente):
+        idade = (datetime.now(BRT).date() - d).days
+        # hoje e ontem sempre são refeitos: a B3 consolida o pregão só na manhã seguinte
+        if idade >= 2 and f.get("b3") and f.get("snd_pu") and (f.get("anbima") or idade > 4):
             log("  já completo; pulando")
             return False
     neg = coletar_b3(d)
