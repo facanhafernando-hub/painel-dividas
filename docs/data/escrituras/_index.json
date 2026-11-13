@@ -4,32 +4,38 @@
    "codigos": [
     "CMPH14"
    ],
-   "status": "sem_documentos_cvm"
+   "status": "ok",
+   "assinatura": "ec2ce119ab15",
+   "bate_snd": false,
+   "situacao": "Reestruturação em curso e ainda não confirmada para a 4ª emissão. A AGD de 08/06/2026, 9h30, foi convocada para aprovar o cronograma proposto, e o Fato Relevante de 13/05/2026 informa tratativas para repactuar as dívidas financeiras. A proposta (Doc 3) prevê: (a) vencimento em 2034-01-30; (b) juros semestrais até 2026-07-05 e trimestrais, nos dias 30 de jan/abr/jul/out, de 2026-07-30 até o vencimento; (c) amortização do saldo remanescente em 10 parcelas semestrais, de 2029-07-30 a 2034-01-30, com percentuais do saldo de 7,5000%, 8,1081%, 8,8235%, 9,6774%, 12,0000% (2032-01-30), 13,6364%, 15,7895% e 100% no vencimento; (d) prêmio extraordinário de 0,50% a.a. de 2029-07-30 a 2030-07-30 e de 1,00% a.a. de 2030-07-30 até o vencimento, pago trimestralmente; (e) resgate antecipado facultativo total e amortização extraordinária facultativa. As atas das AGDs da 5ª, 6ª e 7ª emissões tratam a aprovação da CMPH14 como condição suspensiva, e há condição resolutiva de aprovação do IFC e aditamento da alienação fiduciária até 2026-09-30. Os trechos não trazem ata da AGD da 4ª emissão, então o cronograma acima é o vigente antes da AGD. Não há vencimento antecipado, RJ ou RE declarados."
   },
   "12420164000157_6": {
    "codigos": [
     "VVEO16"
    ],
-   "status": "sem_documentos_cvm"
+   "status": "ok",
+   "assinatura": "764e033ba8a4",
+   "bate_snd": false,
+   "situacao": "Não há vencimento antecipado, suspensão de pagamentos, RJ ou RE nos trechos. Há repactuação aprovada na AGD de 08/06/2026, por 99,19% das debêntures em circulação, sem rejeições ou abstenções. As alterações são: vencimento de 27/10/2027 para 30/01/2034, carência de amortização até 30/07/2029, spread de 1,60% para 1,70% a partir de 30/07/2026, juros trimestrais a partir de 30/07/2026, Prêmio Extraordinário, resgate antecipado facultativo e amortização extraordinária facultativa, novos covenants e novas obrigações. A eficácia está condicionada (i) à aprovação das reestruturações das debêntures da 4ª emissão (CMPH14), da 5ª (VVEO15), da 7ª da Companhia (VVEO17) e da 7ª da Cremer (CREM17) e (ii) à aprovação do IFC e ao aditamento da alienação fiduciária até 30/09/2026. Se a aprovação do IFC não vier no prazo, as aprovações perdem eficácia automaticamente. Os aditamentos à escritura ainda estão por ser celebrados. Se as condições não forem cumpridas, vale o cronograma original: vencimento em 27/10/2027, juros semestrais em 27/04 e 27/10, amortização de 50% do saldo em 27/10/2026 e 100% do saldo remanescente no vencimento, e DI + 1,60% a.a."
   },
   "09053134000145_2": {
    "codigos": [
     "ELFA12"
    ],
    "status": "ok",
-   "assinatura": "5be0a46f28cb",
+   "assinatura": "898bd5873906",
    "bate_snd": false,
-   "situacao": "Não há vencimento antecipado declarado, RJ/RE ou novação nos trechos. A emissão está em reperfilamento contínuo por AGDs: a AGD de 2025-10-08 (6º Aditamento) alongou o vencimento de 2028-12-13 para 2031-12-13 e concedeu waiver do covenant Dívida Líquida/EBITDA para 2025. A AGD de 2026-03-19 (7º Aditamento) estendeu até 2026-12-31 o prazo do Aumento de Capital e o prazo para envio de documentos pendentes."
+   "situacao": "Vencimento antecipado declarado. O comunicado de 2026-11-03 informa que o agente fiduciário (Pentágono) declarou o vencimento antecipado das debêntures na AGD de 2026-10-30, com base na Cláusula 8.1.1, item (xi), ao fim do Período de Suspensão Adicional e em razão da Medida Cautelar, ressalvada eventual decisão judicial em contrário. Antes disso, AGDs de 2026-07-13 e 2026-08-10 (textos não fornecidos) concederam suspensão temporária de obrigações. As propostas de 2026-09-24 e 2026-10-05 pediam mais 120 dias de suspensão. A AGD iniciada em 2026-10-01 foi suspensa e reaberta em 10-09, 10-16, 10-23 e 10-30. Durante a suspensão, o pagamento da Remuneração é prorrogado para a data subsequente ao término do período. Está em negociação uma reestruturação por repactuação, dação em pagamento, venda de ativos ou alteração de garantias. Os trechos não mostram essa reestruturação aprovada nem novação. Não há RJ/RE nos trechos. Com a aceleração, o cronograma acima é o contratual vigente, mas todo o saldo está exigível."
   },
   "12420164000157_5": {
    "codigos": [
     "VVEO15"
    ],
    "status": "ok",
-   "assinatura": "11a22fb5bd3c",
+   "assinatura": "a0c3ba025410",
    "bate_snd": false,
-   "situacao": null
+   "situacao": "Repactuação em curso, sem vencimento antecipado, RJ/RE ou suspensão de pagamentos nos trechos. Em 2026-05-13 a Companhia informou em fato relevante que estava renegociando suas dívidas financeiras. A AGD de 2026-06-08 aprovou a reestruturação com 96,54% das debêntures em circulação, sem rejeições ou abstenções. A eficácia depende de condição suspensiva e de condição resolutiva. A condição suspensiva é a aprovação e formalização da reestruturação pelos debenturistas da 4ª emissão (CMPH14), da 6ª (VVEO16), da 7ª da CM Hospitalar (VVEO17) e da 7ª da Cremer (CREM17). A condição resolutiva é a obtenção da aprovação do IFC, com assinatura do aditamento da alienação fiduciária e protocolo em cartório, até 2026-09-30; se não obtida, as aprovações perdem a eficácia automaticamente. O aditamento à Escritura ainda precisa ser celebrado. A AGD também incluiu resgate antecipado facultativo total e amortização extraordinária facultativa (até 98% do saldo), nova curva de covenants e outras alterações."
   }
  },
- "gasto_usd": 0.4016
+ "gasto_usd": 2.1036
 }

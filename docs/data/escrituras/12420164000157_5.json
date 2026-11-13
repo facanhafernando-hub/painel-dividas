@@ -4,57 +4,90 @@
    "codigo": "VVEO15",
    "serie": "UNI",
    "data_emissao": "2022-07-22",
-   "vencimento": null,
+   "vencimento": "2034-01-30",
    "vne": 1000.0,
    "remuneracao": {
     "indexador": "DI+",
-    "taxa": null,
+    "taxa": 1.7,
     "base": "252 du",
-    "vigente_desde": null,
-    "historico": "A escritura original prevê 100% da Taxa DI + spread de 1,60% a.a. (1ª série) ou 1,70% a.a. (2ª série), base 252 dias úteis. Os trechos não dizem qual regra vale para a série única. O spread final depende do Procedimento de Bookbuilding, a ser ratificado por aditamento que não foi fornecido."
+    "vigente_desde": "2026-07-30",
+    "historico": "100% da Taxa DI + 1,60% a.a. desde a primeira integralização (Data de Emissão 2022-07-22) até 2026-07-30 (exclusive). Passa a DI + 1,70% a.a. de 2026-07-30 (inclusive) até o vencimento, conforme AGD de 2026-06-08 (aprovação condicionada)."
    },
    "juros": {
-    "periodicidade_meses": 6,
-    "primeira_data": "2023-01-22",
-    "ultima_data": null,
-    "datas_irregulares": [],
+    "periodicidade_meses": 3,
+    "primeira_data": "2026-07-30",
+    "ultima_data": "2034-01-30",
+    "datas_irregulares": [
+     "2026-07-22"
+    ],
     "carencia_ate": null
    },
    "incorporacao_juros": [],
-   "amortizacoes": [],
-   "premios": [
+   "amortizacoes": [
     {
-     "data": null,
-     "descricao": "Prêmio de 0,35% a.a. sobre o valor de resgate, pelo prazo remanescente até o vencimento, no Resgate Antecipado Facultativo Total (cláusula 5.1.3). O resgate é permitido a partir de 2024-07-23 (1ª série) ou 2025-07-23 (2ª série). Não é uma data de pagamento do cronograma."
+     "data": "2029-07-30",
+     "percentual": 7.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-30",
+     "percentual": 8.1081,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-30",
+     "percentual": 8.8235,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-01-30",
+     "percentual": 9.6774,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-07-30",
+     "percentual": 10.7143,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-01-30",
+     "percentual": 100.0,
+     "base": "saldo"
     }
    ],
-   "fonte": "Documento 1, Escritura da 5ª Emissão, entregue em 2022-07-07 (cláusulas 4.1.1, 4.6.1, 4.7.1, 4.11, 4.12.1, 4.13 e 5.1.3). É a escritura original, e não uma versão consolidada.",
-   "confianca": "baixa",
+   "premios": [
+    {
+     "data": "2029-07-30",
+     "descricao": "Prêmio Extraordinário de 0,50% a.a. (base 252 du, pro rata, sobre VNU ou saldo), devido a partir de 2029-07-30 (exclusive) até 2030-07-30 (inclusive), pago trimestralmente nas Datas de Pagamento da Remuneração. Não é devido em pagamento antecipado ocorrido até 2029-07-30 (inclusive)."
+    },
+    {
+     "data": "2030-07-30",
+     "descricao": "Prêmio Extraordinário de 1,00% a.a. (base 252 du, pro rata), devido a partir de 2030-07-30 (exclusive) até a Data de Vencimento (2034-01-30), pago trimestralmente nas Datas de Pagamento da Remuneração."
+    }
+   ],
+   "fonte": "Ata de AGD de 2026-06-08 (Doc. 5), quadro-resumo 'Antes/Após a AGD': cláusulas 4.11.1/4.11.2 (remuneração e Prêmio Extraordinário), 4.13 (pagamento de remuneração, com tabela de 39 parcelas), 4.14.1 (amortização) e Data de Vencimento. A proposta da administração de 2026-06-03 (Doc. 4) traz o mesmo quadro. Para o cronograma original: Escritura de 2022-07-07 (Doc. 1), cláusulas 4.6, 4.11, 4.12 e 4.13.",
+   "confianca": "media",
    "conferencia_snd": {
     "snd": true,
-    "amort_snd": 10,
-    "amort_doc": 0,
-    "datas_iguais": 0,
+    "amort_snd": 9,
+    "amort_doc": 6,
+    "datas_iguais": 5,
     "so_snd": [
-     "2029-07-30",
-     "2030-01-30",
-     "2030-07-30",
-     "2031-01-30",
-     "2031-07-30",
      "2032-01-30",
      "2032-07-30",
      "2033-01-31",
-     "2033-08-01",
+     "2033-08-01"
+    ],
+    "so_doc": [
      "2034-01-30"
     ],
-    "so_doc": [],
     "pct_diferente": [],
     "ok": false
    }
   }
  ],
- "situacao": null,
- "lacunas": "A escritura prevê até 2 séries (1ª: 5 anos; 2ª: 7 anos), e o resultado do Bookbuilding seria ratificado por aditamento. Esse aditamento não está nos trechos, então não dá para saber se a 'série UNI' (VVEO15) segue as condições da 1ª ou da 2ª série. Por isso deixei em branco vencimento, spread, última data de juros e amortizações, em vez de adivinhar.\n\nAlternativa A (condições da 1ª série): vencimento 2027-07-22; DI + 1,60% a.a., base 252 du; juros semestrais de 2023-01-22 a 2027-07-22, sempre nos dias 22 de janeiro e julho; amortização de 50% do saldo do VNU em 2026-07-22 e 100% do saldo remanescente em 2027-07-22.\n\nAlternativa B (condições da 2ª série): vencimento 2029-07-22; DI + 1,70% a.a., base 252 du; juros semestrais de 2023-01-22 a 2029-07-22; amortização de 50% do saldo do VNU em 2028-07-22 e 100% do saldo remanescente em 2029-07-22.\n\nNos dois casos o VNU é de R$ 1.000,00 na Data de Emissão (2022-07-22), sem atualização monetária. Os pagamentos que caírem em dia não útil são prorrogados para o dia útil seguinte (cláusula 4.15.1). A data de início da rentabilidade é a primeira Data de Integralização, que não consta dos trechos. Não há documentos posteriores (aditamentos, AGD, plano de recuperação), então não é possível confirmar mudanças de cronograma, carência, incorporação de juros ou eventos de inadimplência. Os trechos também omitem partes das cláusulas 4.6.1(i), 4.13 e 5.1.4, mas as datas relevantes aparecem nas tabelas.",
+ "situacao": "Repactuação em curso, sem vencimento antecipado, RJ/RE ou suspensão de pagamentos nos trechos. Em 2026-05-13 a Companhia informou em fato relevante que estava renegociando suas dívidas financeiras. A AGD de 2026-06-08 aprovou a reestruturação com 96,54% das debêntures em circulação, sem rejeições ou abstenções. A eficácia depende de condição suspensiva e de condição resolutiva. A condição suspensiva é a aprovação e formalização da reestruturação pelos debenturistas da 4ª emissão (CMPH14), da 6ª (VVEO16), da 7ª da CM Hospitalar (VVEO17) e da 7ª da Cremer (CREM17). A condição resolutiva é a obtenção da aprovação do IFC, com assinatura do aditamento da alienação fiduciária e protocolo em cartório, até 2026-09-30; se não obtida, as aprovações perdem a eficácia automaticamente. O aditamento à Escritura ainda precisa ser celebrado. A AGD também incluiu resgate antecipado facultativo total e amortização extraordinária facultativa (até 98% do saldo), nova curva de covenants e outras alterações.",
+ "lacunas": "1) Condicionalidade: o cronograma acima é o aprovado na AGD de 2026-06-08, mas ainda não está comprovado que as condições foram cumpridas, nem que o aditamento foi assinado. Se não forem cumpridas, vale o cronograma original: vencimento 2027-07-22; DI + 1,60% a.a., base 252 du; juros semestrais nos dias 22 de janeiro e julho, de 2023-01-22 a 2027-07-22; amortização de 50% do saldo em 2026-07-22 e de 100% do saldo em 2027-07-22. Os documentos 7 e 10 (comunicados) apenas resumem as aprovações. 2) Percentuais de amortização das parcelas 6 a 9 (datas semestrais prováveis: 2032-01-30, 2032-07-30, 2033-01-30 e 2033-07-30) não aparecem nos trechos desta emissão por truncamento. O percentual de 12,0000% para 2032-01-30 aparece apenas na ata da 7ª emissão (Doc. 9), e por isso não o incluí. Os percentuais da 1ª à 5ª parcela batem com 7,5% do VNE por parcela, mas não extrapolei para as demais. 3) A tabela de 39 parcelas de juros/prêmio está truncada. Inferi a regra trimestral a partir do texto da cláusula: dias 30 de janeiro, abril, julho e outubro, de 2026-07-30 a 2034-01-30. O texto prevê pagamentos semestrais até 2026-07-22 e trimestrais a partir de 2026-07-30; em datas_irregulares listei só 2026-07-22, a última semestral ainda futura, e as semestrais anteriores já passaram (primeira em 2023-01-22). 4) A escritura original previa até 2 séries; os documentos posteriores tratam a emissão como série única (1.000.000 de debêntures, R$ 1 bilhão), com vencimento 2027-07-22 e remuneração DI + 1,60%, que correspondem às características da 1ª série. O aditamento de 2022-07-22, que ratificaria o bookbuilding, e o aditamento de 2025-04-15, que trocou a fiadora Expressa pela Proinfusion, não estão nos trechos. Não há indicação de que alterem datas ou valores, mas isso não foi verificado. 5) Não há trecho com a data de integralização, que define o início da rentabilidade (a escritura diz apenas 'primeira Data de Integralização'); considerei 2022-07-22 como data de emissão. 6) O VNE de R$ 1.000,00 vem da escritura original; não há informação sobre amortizações já pagas antes de 2026 (a primeira amortização original era em 2026-07-22), portanto o saldo atual presumido é de 100% do VNE.",
  "meta": {
   "emissora": "CM HOSPITALAR S.A.",
   "cnpj": "12420164000157",
@@ -69,19 +102,91 @@
     "protocolo": "025682IPE070720220104474911-51",
     "versao": "1",
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=996305&numSequencia=521039&numVersao=1"
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 5ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260178232473-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521711&numSequencia=1046417&numVersao=1"
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "comunicado",
+    "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE130520260105651273-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
+   },
+   {
+    "data": "2026-06-03",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 5ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260294782634-42",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530616&numSequencia=1055322&numVersao=2"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260108581623-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260196876480-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE080620260135810552-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260143830448-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260114936476-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE110620260158538370-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1"
    }
   ],
   "uso": {
-   "input_tokens": 42390,
+   "input_tokens": 214796,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 2148,
+   "output_tokens": 5898,
    "output_tokens_details": {
-    "thinking_tokens": 790
+    "thinking_tokens": 3331
    },
    "service_tier": "standard",
    "inference_geo": "global",

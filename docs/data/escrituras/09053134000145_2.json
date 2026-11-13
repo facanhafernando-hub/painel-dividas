@@ -11,7 +11,7 @@
     "taxa": 3.4,
     "base": "252 du",
     "vigente_desde": "2024-12-13",
-    "historico": "100% da Taxa DI-Over + spread de 2,80% a.a. desde a Primeira Data de Integralização até 2024-12-13 (exclusive). Spread de 3,40% a.a. a partir de 2024-12-13 (inclusive), conforme o 5º Aditamento e mantido na escritura consolidada. Há possibilidade de step-up de 0,30% ou 0,60% a.a. se o controle da Emissora mudar (cláusula 5.18). O VNU passou de R$ 1.000,00 para R$ 1.060,04 em 2024-02-22 (incorporação do waiver fee, 4º Aditamento)."
+    "historico": "100% da Taxa DI-Over + spread. O spread máximo na escritura original era de 3,10% a.a., a ser definido no bookbuilding, e o 5º aditamento o fixa em 2,80% a.a. até 2024-12-13 (exclusive). A partir de 2024-12-13 (inclusive), o spread passou a 3,40% a.a. A versão consolidada do 7º aditamento mantém 2,80% e 3,40%. Há possibilidade de step-up de +0,30% ou +0,60% a.a. em caso de mudança de controle com rebaixamento de rating. Os trechos não mostram esse evento como ocorrido."
    },
    "juros": {
     "periodicidade_meses": 1,
@@ -269,49 +269,30 @@
      "base": "saldo"
     }
    ],
-   "premios": [],
-   "fonte": "7º Aditamento (entregue em 2026-08-10), Anexo A (escritura consolidada), cláusulas 5.8.1 (vencimento), 5.17.1 (remuneração), 5.19.1 (pagamento da remuneração) e 5.20.1 (amortização). O texto é idêntico ao 6º Aditamento (entregue em 2025-11-07), que substituiu o cronograma do 5º Aditamento.",
-   "confianca": "alta",
+   "premios": [
+    {
+     "data": "2025-04-13",
+     "descricao": "A partir desta data (36º mês), a amortização extraordinária facultativa e o resgate antecipado total pagam prêmio de i = 0,60% a.a. sobre o prazo remanescente (DU/252). A amortização extraordinária M&A fica dispensada desse prêmio."
+    }
+   ],
+   "fonte": "7º Aditamento (entregue em 2026-08-10), Anexo A (escritura consolidada): cláusulas 5.4.1, 5.8.1, 5.17.1, 5.19.1, 5.20.1 e 5.22. Essas cláusulas foram alteradas pelo 6º Aditamento (AGD de 2025-10-08), que substituiu o cronograma do 5º Aditamento.",
+   "confianca": "media",
    "conferencia_snd": {
     "snd": true,
-    "amort_snd": 48,
+    "amort_snd": 47,
     "amort_doc": 48,
-    "datas_iguais": 33,
-    "so_snd": [
-     "2028-02-14",
-     "2028-05-15",
-     "2028-08-14",
-     "2029-01-15",
-     "2029-02-14",
-     "2029-05-14",
-     "2029-10-15",
-     "2030-01-14",
-     "2030-04-15",
-     "2030-07-15",
-     "2030-10-14",
-     "2031-04-14"
-    ],
+    "datas_iguais": 47,
+    "so_snd": [],
     "so_doc": [
-     "2028-02-13",
-     "2028-05-13",
-     "2028-08-13",
-     "2029-01-13",
-     "2029-02-13",
-     "2029-05-13",
-     "2029-10-13",
-     "2030-01-13",
-     "2030-04-13",
-     "2030-07-13",
-     "2030-10-13",
-     "2031-04-13"
+     "2031-12-13"
     ],
     "pct_diferente": [],
     "ok": false
    }
   }
  ],
- "situacao": "Não há vencimento antecipado declarado, RJ/RE ou novação nos trechos. A emissão está em reperfilamento contínuo por AGDs: a AGD de 2025-10-08 (6º Aditamento) alongou o vencimento de 2028-12-13 para 2031-12-13 e concedeu waiver do covenant Dívida Líquida/EBITDA para 2025. A AGD de 2026-03-19 (7º Aditamento) estendeu até 2026-12-31 o prazo do Aumento de Capital e o prazo para envio de documentos pendentes.",
- "lacunas": "1) A tabela de datas de pagamento da Remuneração está truncada nos trechos (de 2025-04-13 até 2031-09-13). A regra mensal no dia 13, do primeiro pagamento mensal em 2024-11-13 até o vencimento, foi inferida da cláusula 5.19.1 e do início e fim da tabela. 2) A cláusula 5.19.1 foi alterada de 2024-12-13 (5º Aditamento) para 2024-11-13 (6º Aditamento) como início dos pagamentos mensais. Usei a versão mais recente. 3) O campo 'vne' traz o VNU original de R$ 1.000,00. O VNU vigente após o waiver fee é R$ 1.060,04 desde 2024-02-22. As amortizações são percentuais do saldo do VNU, e o saldo atual é desconhecido porque os trechos não informam amortizações extraordinárias já pagas nem a recompra de debêntures aprovada na AGD de 2025-10. 4) O 5º Aditamento previa amortizações de 2025-10-13 a 2027-12-13. Elas foram substituídas pelo cronograma do 6º Aditamento, que começa em 2028-01-13. Os trechos não esclarecem se houve pagamento de principal antes disso. 5) Amortizações extraordinárias obrigatórias e contingentes, sem datas fixas, não foram lançadas no cronograma: M&A (40% dos recursos líquidos, mínimo de R$ 40 mi até 2026-12-31, com prêmio dispensado); DRS (50% dos recursos líquidos, R$ 21 mi até 2026-01-27); e Aumento de Capital (10% do Saldo Devedor, mais 1,40% se houver liberação de depósitos judiciais). Segundo o 6º Aditamento, o aporte é de USD 70 a 100 mi. O 7º Aditamento estendeu o prazo do Aumento de Capital até 2026-12-31. O trecho com o texto da AGD de 2026-03-19 está cortado, então a mudança de cláusulas é inferida do preâmbulo. 6) A amortização extraordinária facultativa e o resgate antecipado total têm prêmio de 0,60% a.a. sobre o prazo remanescente (cláusulas 5.22.1 e 5.22.2). Não é um prêmio com data fixa e por isso não foi listado.",
+ "situacao": "Vencimento antecipado declarado. O comunicado de 2026-11-03 informa que o agente fiduciário (Pentágono) declarou o vencimento antecipado das debêntures na AGD de 2026-10-30, com base na Cláusula 8.1.1, item (xi), ao fim do Período de Suspensão Adicional e em razão da Medida Cautelar, ressalvada eventual decisão judicial em contrário. Antes disso, AGDs de 2026-07-13 e 2026-08-10 (textos não fornecidos) concederam suspensão temporária de obrigações. As propostas de 2026-09-24 e 2026-10-05 pediam mais 120 dias de suspensão. A AGD iniciada em 2026-10-01 foi suspensa e reaberta em 10-09, 10-16, 10-23 e 10-30. Durante a suspensão, o pagamento da Remuneração é prorrogado para a data subsequente ao término do período. Está em negociação uma reestruturação por repactuação, dação em pagamento, venda de ativos ou alteração de garantias. Os trechos não mostram essa reestruturação aprovada nem novação. Não há RJ/RE nos trechos. Com a aceleração, o cronograma acima é o contratual vigente, mas todo o saldo está exigível.",
+ "lacunas": "1) Os textos das AGDs de 2026-07-13 e 2026-08-10 e a ata de 2026-10-30 não foram fornecidos. As atas de 10-09, 10-16 e 10-23 estão truncadas, então o resultado das votações e as datas exatas da suspensão não puderam ser confirmados. 2) O saldo atual do VNU e os pagamentos efetivamente realizados não constam nos trechos. Isso inclui as parcelas de 2025-10-13 em diante do cronograma anterior, a prorrogação de 30 dias do pagamento do VNU (AGD de 2025-10-08), as recompras de debêntures e as amortizações extraordinárias M&A, DRS e aumento de capital. 3) O VNU é de R$ 1.000,00 na emissão e de R$ 1.060,04 desde 2024-02-22, quando o waiver fee foi incorporado. O campo 'vne' traz o valor original, e as amortizações em % são sobre o saldo do VNU. 4) As datas mensais de pagamento da Remuneração de 2025-05 a 2031-10 estão omitidas nos trechos, e foram inferidas pela regra mensal no dia 13, com último pagamento em 2031-12-13. 5) Os trechos não mostram incorporação de juros (PIK) nem carência formal de juros. A suspensão de 2026 apenas prorroga a Remuneração. 6) O 6º Aditamento fala em pagamento mensal da Remuneração desde 2024-11-13, enquanto o 5º dizia 2024-12-13. Foi adotada a versão mais recente (6º e 7º aditamentos). 7) A taxa de 3,40% é a vigente, mas pode haver step-up por evento de controle e rating, que não aparece nos trechos.",
  "meta": {
   "emissora": "ELFA MEDICAMENTOS SA",
   "cnpj": "09053134000145",
@@ -350,19 +331,91 @@
     "protocolo": "025348IPE170420260170392825-18",
     "versao": "1",
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555405&numSequencia=1080111&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "proposta_agd",
+    "assunto": "1. Aprovar a extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debenturistas da Emissora, realizadas em 13 de julho de 2026 e 10 de agosto de 2026.||2. Aprovar a extensão do prazo concedido nas deliberações em AGD 13/07 e AGD 10/08 para cumprimento das Aquisiçõ",
+    "protocolo": "025348IPE011020260106110558-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571368&numSequencia=1096074&numVersao=1"
+   },
+   {
+    "data": "2026-10-05",
+    "tipo": "proposta_agd",
+    "assunto": "A. Aprovar a suspensão temporária de obrigações das debêntures por 120 dias após 09.10.2026, proibindo execuções e vencimento antecipado, e adiando pagamentos sem extinguir direitos dos credores.||B. Aprovar a suspensão do prazo das Aquisições Facultativas, vedando execuções e vencimento antecipado ",
+    "protocolo": "025348IPE091020260156793005-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574507&numSequencia=1099213&numVersao=1"
+   },
+   {
+    "data": "2026-10-09",
+    "tipo": "ata_agd",
+    "assunto": "1- A extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debenturistas da Emissora, realizadas em 13 de julho de 2026 e 10 de agosto de 2026||2 -  Extensão do prazo concedido na deliberação (c) da AGD 13/07 e na deliberação (d) da AGD 10/08 para cumprimento das A",
+    "protocolo": "025348IPE091020260113597790-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576339&numSequencia=1101045&numVersao=1"
+   },
+   {
+    "data": "2026-10-16",
+    "tipo": "ata_agd",
+    "assunto": "(a) a extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debenturistas da Emissora, realizadas em 13 de julho de 2026 e 10 de agosto de 2026||(b) a extensão do prazo concedido na deliberação (c) da AGD 13/07 e na deliberação (d) da AGD 10/08 para cumprimento das",
+    "protocolo": "025348IPE161020260100654798-27",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577835&numSequencia=1102541&numVersao=1"
+   },
+   {
+    "data": "2026-10-19",
+    "tipo": "comunicado",
+    "assunto": "Suspensão AGD",
+    "protocolo": "025348IPE191020260182511606-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578375&numSequencia=1103081&numVersao=1"
+   },
+   {
+    "data": "2026-10-23",
+    "tipo": "ata_agd",
+    "assunto": "(\"AGD 13/07\" e \"AGD 10/08\", respectivamente), autorizando o não cumprimento, pela Emissora, de todas e quaisquer obrigações contratuais previstas na Escritura de Emissão e no \"Instrumento Particular|| (a) a extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debe",
+    "protocolo": "025348IPE231020260114621547-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579931&numSequencia=1104637&numVersao=1"
+   },
+   {
+    "data": "2026-10-26",
+    "tipo": "comunicado",
+    "assunto": "Suspensão AGD.",
+    "protocolo": "025348IPE261020260116001806-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580093&numSequencia=1104799&numVersao=1"
+   },
+   {
+    "data": "2026-10-30",
+    "tipo": "ata_agd",
+    "assunto": "4ª Suspensão",
+    "protocolo": "025348IPE301020260138221888-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582443&numSequencia=1107149&numVersao=1"
+   },
+   {
+    "data": "2026-11-03",
+    "tipo": "comunicado",
+    "assunto": "Vencimento Antecipado das Debêntures",
+    "protocolo": "025348IPE031120260143307675-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582913&numSequencia=1107619&numVersao=1"
    }
   ],
   "uso": {
-   "input_tokens": 122312,
+   "input_tokens": 182120,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5071,
+   "output_tokens": 5600,
    "output_tokens_details": {
-    "thinking_tokens": 1731
+    "thinking_tokens": 2098
    },
    "service_tier": "standard",
    "inference_geo": "global",

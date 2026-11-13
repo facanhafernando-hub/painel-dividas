@@ -1,0 +1,175 @@
+{
+ "series": [
+  {
+   "codigo": "CMPH14",
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2028-11-05",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.7,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + 1,70% a.a. conforme a lista de dívidas do Anexo da AGD da 7ª emissão (Docs 7 e 8). A base de 252 dias úteis foi inferida das cláusulas 4.11.2 e 4.12. Não há histórico de mudança nos trechos. A alteração da forma de remuneração consta da pauta da AGD da 4ª emissão, mas os trechos não mostram mudança no spread da 4ª. O comunicado de 08/06/2026 cita alteração de spread só para a 5ª e a 6ª."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-05-05",
+    "ultima_data": "2028-11-05",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2025-11-05",
+     "percentual": 25.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2026-11-05",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2027-11-05",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-11-05",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Doc 3 (Proposta da Administração de 03/06/2026), quadro-resumo, coluna 'Antes da AGD': cláusulas 4.12.1 (juros semestrais, dias 05 de maio e novembro, de 05/05/2022 até o vencimento) e 4.13.1 (4 parcelas anuais, primeira em 05/11/2025). A data da 3ª parcela (2027-11-05) foi inferida da periodicidade anual. O texto 'Após a AGD' do mesmo documento confirma que houve amortização parcial em 05/11/2025. Taxa e vencimento também aparecem na lista de dívidas do Anexo da AGD da 7ª emissão (Docs 7 e 8).",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 9,
+    "amort_doc": 4,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2029-07-30",
+     "2030-01-30",
+     "2030-07-30",
+     "2031-01-30",
+     "2031-07-30",
+     "2032-01-30",
+     "2032-07-30",
+     "2033-01-31",
+     "2033-08-01"
+    ],
+    "so_doc": [
+     "2025-11-05",
+     "2026-11-05",
+     "2027-11-05",
+     "2028-11-05"
+    ],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "Reestruturação em curso e ainda não confirmada para a 4ª emissão. A AGD de 08/06/2026, 9h30, foi convocada para aprovar o cronograma proposto, e o Fato Relevante de 13/05/2026 informa tratativas para repactuar as dívidas financeiras. A proposta (Doc 3) prevê: (a) vencimento em 2034-01-30; (b) juros semestrais até 2026-07-05 e trimestrais, nos dias 30 de jan/abr/jul/out, de 2026-07-30 até o vencimento; (c) amortização do saldo remanescente em 10 parcelas semestrais, de 2029-07-30 a 2034-01-30, com percentuais do saldo de 7,5000%, 8,1081%, 8,8235%, 9,6774%, 12,0000% (2032-01-30), 13,6364%, 15,7895% e 100% no vencimento; (d) prêmio extraordinário de 0,50% a.a. de 2029-07-30 a 2030-07-30 e de 1,00% a.a. de 2030-07-30 até o vencimento, pago trimestralmente; (e) resgate antecipado facultativo total e amortização extraordinária facultativa. As atas das AGDs da 5ª, 6ª e 7ª emissões tratam a aprovação da CMPH14 como condição suspensiva, e há condição resolutiva de aprovação do IFC e aditamento da alienação fiduciária até 2026-09-30. Os trechos não trazem ata da AGD da 4ª emissão, então o cronograma acima é o vigente antes da AGD. Não há vencimento antecipado, RJ ou RE declarados.",
+ "lacunas": "1) Não há ata da AGD da 4ª emissão (CMPH14) nos trechos, então não é possível confirmar se a proposta foi aprovada, em que quórum, nem se as condições foram cumpridas. 2) A data de emissão não consta nos trechos. A escritura foi celebrada em 2021-10-28, e a primeira data de juros é 2022-05-05. 3) A data da 3ª amortização (2027-11-05) foi inferida, pois o trecho da tabela está cortado. 4) A taxa de 1,70% e a base de 252 dias úteis vêm de uma lista de dívidas em anexo e das cláusulas de prêmio, não da cláusula de remuneração da 4ª emissão, que não aparece nos trechos. 5) A 9ª parcela do cronograma proposto não aparece nos trechos, e a 5ª aparece apenas em outras atas (10,7143%). 6) Os documentos não informam se os pagamentos já vencidos (juros até 2026-05-05 e amortização de 2025-11-05) foram efetivamente realizados.",
+ "meta": {
+  "emissora": "CM HOSPITALAR S.A.",
+  "cnpj": "12420164000157",
+  "emissao": "4",
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-05-13",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260164867820-40",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521705&numSequencia=1046411&numVersao=1"
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "comunicado",
+    "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE130520260105651273-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
+   },
+   {
+    "data": "2026-06-03",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260288479481-38",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530615&numSequencia=1055321&numVersao=2"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260108581623-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260196876480-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE080620260135810552-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260143830448-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260114936476-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE110620260158538370-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1"
+   }
+  ],
+  "uso": {
+   "input_tokens": 173108,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 4230,
+   "output_tokens_details": {
+    "thinking_tokens": 2393
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard"
+  }
+ }
+}
