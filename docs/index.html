@@ -42,7 +42,13 @@
   .sub { color: var(--text-secondary); font-size: 12.5px; }
   .mut { color: var(--text-muted); }
   .neg { color: var(--neg); } .pos { color: var(--pos); } .amb { color: var(--amb); }
-  .barra { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+  .barra { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; position: relative; }
+  .ac { position: absolute; z-index: 30; background: var(--surface-1); border: 1px solid var(--border, rgba(127,127,127,.25)); border-radius: 10px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.18); max-height: 360px; overflow-y: auto; display: none; }
+  .ac a { display: flex; justify-content: space-between; gap: 10px; padding: 9px 12px; color: var(--text-primary); text-decoration: none; font-size: 14px; cursor: pointer; }
+  .ac a:hover, .ac a.on { background: var(--surface-2, rgba(127,127,127,.12)); }
+  .ac a .sub { white-space: nowrap; }
+  .ac b { font-weight: 600; }
   input[type=search], select { background: var(--surface-1); color: var(--text-primary);
          border: 1px solid var(--border); border-radius: 9px; padding: 9px 12px; font: inherit; }
   input[type=search] { flex: 1 1 260px; max-width: 420px; }
@@ -254,6 +260,55 @@ async function rota() {
   window.scrollTo(0, 0);
 }
 
+// sugestões enquanto digita: empresas (nome curto, razão social) e códigos de títulos; clique abre a página
+function sugerir(q) {
+  const Q = semAc(q.trim());
+  if (Q.length < 2 || !st.empresas) return [];
+  const out = [];
+  for (const e of st.empresas) {
+    const n = semAc(e.nome), r = semAc(e.razao);
+    let sc = n.startsWith(Q) ? 0 : n.split(/[^A-Z0-9]+/).some(w => w.startsWith(Q)) ? 1 : r.startsWith(Q) ? 2
+      : r.split(/[^A-Z0-9]+/).some(w => w.startsWith(Q)) ? 3 : null;
+    if (sc !== null) out.push({ sc, e, vol: e.vol || 0 });
+    else if (Q.length >= 3) {
+      const it = e.itens.find(i => i.c.startsWith(Q));
+      if (it) out.push({ sc: 4, e, it, vol: e.vol || 0 });
+    }
+  }
+  // busca curta: ordem alfabética (fácil de achar na lista); mais longa: relevância e volume
+  out.sort(Q.length <= 2 ? (a, b) => a.sc - b.sc || a.e.nome.localeCompare(b.e.nome, "pt-BR")
+                         : (a, b) => a.sc - b.sc || b.vol - a.vol || a.e.nome.localeCompare(b.e.nome, "pt-BR"));
+  return out.slice(0, 30);
+}
+function destacar(txt, q) {
+  const T = semAc(txt), Q = semAc(q.trim()); let k = T.startsWith(Q) ? 0 : T.search(new RegExp("(^|[^A-Z0-9])" + Q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  if (k < 0) return esc(txt); if (k > 0 || !T.startsWith(Q)) k = T.indexOf(Q, k);
+  return esc(txt.slice(0, k)) + "<b>" + esc(txt.slice(k, k + Q.length)) + "</b>" + esc(txt.slice(k + Q.length));
+}
+function autocompletar(inp) {
+  const box = document.createElement("div"); box.className = "ac"; inp.parentNode.appendChild(box);
+  let L = [], sel = -1;
+  const ir = x => { box.style.display = "none"; if (x.it) st.abrirCod = x.it.c; location.hash = "#/e/" + encodeURIComponent(x.e.k); };
+  const pinta = () => {
+    if (!L.length) { box.style.display = "none"; return; }
+    box.style.left = inp.offsetLeft + "px"; box.style.top = (inp.offsetTop + inp.offsetHeight + 4) + "px";
+    box.style.width = Math.max(inp.offsetWidth, 300) + "px"; box.style.display = "block";
+    box.innerHTML = L.map((x, n) => `<a data-n="${n}" class="${n === sel ? "on" : ""}"><span>${x.it ? `<b>${esc(x.it.c)}</b> · ${esc(x.e.nome)}` : destacar(x.e.nome, inp.value)}</span>
+      <span class="sub">${x.it ? esc(x.it.t) : `${x.e.itens.length} título${x.e.itens.length > 1 ? "s" : ""}`}</span></a>`).join("");
+    box.querySelectorAll("a").forEach(a => a.onmousedown = ev => { ev.preventDefault(); ir(L[+a.dataset.n]); });
+  };
+  inp.addEventListener("input", () => { L = sugerir(inp.value); sel = -1; pinta(); });
+  inp.addEventListener("focus", () => { L = sugerir(inp.value); pinta(); });
+  inp.addEventListener("blur", () => setTimeout(() => box.style.display = "none", 150));
+  inp.addEventListener("keydown", ev => {
+    if (box.style.display !== "block") return;
+    if (ev.key === "ArrowDown") { sel = Math.min(L.length - 1, sel + 1); pinta(); ev.preventDefault(); }
+    else if (ev.key === "ArrowUp") { sel = Math.max(0, sel - 1); pinta(); ev.preventDefault(); }
+    else if (ev.key === "Enter" && L.length) { ir(L[Math.max(0, sel)]); ev.preventDefault(); }
+    else if (ev.key === "Escape") box.style.display = "none";
+  });
+}
+
 async function telaEmpresas() {
   await carregarCatalogo();
   const app = document.getElementById("app");
@@ -271,6 +326,7 @@ async function telaEmpresas() {
     <div class="nota">Agrupado pelo emissor (debêntures) ou pelo devedor (CRI/CRA precificados pela ANBIMA; nos demais aparece a securitizadora). "Pior % do par" usa o último negócio dos últimos 30 pregões ou, sem negócio, o indicativo ANBIMA.</div>`;
   const oE = document.getElementById("oE"); oE.value = st.ordE;
   document.getElementById("bE").oninput = e => { st.busca = e.target.value; listaEmpresas(); };
+  autocompletar(document.getElementById("bE"));
   oE.onchange = e => { st.ordE = e.target.value; listaEmpresas(); };
   document.querySelectorAll("#fE .chip").forEach(b => b.onclick = () => { st.filtroE = b.dataset.k; document.querySelectorAll("#fE .chip").forEach(x => x.setAttribute("aria-pressed", x === b)); listaEmpresas(); });
   listaEmpresas();
@@ -320,6 +376,7 @@ async function telaEmpresa(k) {
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
     <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 5% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato. Selos de situação (venc. antecipado, RJ, RE, reperfilada) vêm da leitura automática de escrituras, aditamentos, atas de AGD e comunicados na CVM; † = TIR contratual de título com evento de crédito, só como referência.</div>`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
+  if (st.abrirCod) { const it = itens.find(i => i.c === st.abrirCod); st.abrirCod = null; if (it) abrirTitulo(it); }
 }
 // TIR contratual perde sentido com evento de crédito grave: mostra esmaecida, com aviso
 function tirCr(i) {
@@ -379,6 +436,7 @@ async function telaMercado() {
     <div class="nota">Fontes: B3 (negociação consolidada de balcão), ANBIMA (debêntures e CRI/CRA) e SND (PU de curva). Volume e PU médio somam todas as liquidações e classificações. * % do par indicativo ANBIMA quando não houve negócio. Garantia: lida nos documentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. Gerado em ${new Date(st.dia.gerado_em).toLocaleString("pt-BR")}.</div>`;
   document.getElementById("vM").value = st.visM;
   document.getElementById("bM").oninput = e => { st.buscaM = e.target.value; tabelaMercado(); };
+  carregarCatalogo().then(() => autocompletar(document.getElementById("bM")));
   document.getElementById("vM").onchange = e => { st.visM = e.target.value; tabelaMercado(); };
   document.querySelectorAll("#cM .chip").forEach(b => b.onclick = () => { st.tipoM = b.dataset.t; document.querySelectorAll("#cM .chip").forEach(x => x.setAttribute("aria-pressed", x === b)); tabelaMercado(); });
   tabelaMercado();
