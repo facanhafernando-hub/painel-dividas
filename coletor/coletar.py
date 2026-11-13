@@ -21,6 +21,7 @@ Só biblioteca padrão: nada para instalar, um modo de falha a menos.
 from __future__ import annotations
 
 import argparse
+import math
 import hashlib
 import json
 import re
@@ -552,6 +553,88 @@ CDI_APROX = 0.14  # só para estimar duration de papéis DI+ sem duration ANBIMA
 YIELD_PCT_MIN, YIELD_PCT_MAX = 20.0, 150.0   # faixa de % do par em que o yield é calculado
 
 
+# ----------------------------------------------------------------------------- curva de juros (ETTJ ANBIMA)
+
+ETTJ_URL = "https://www.anbima.com.br/informacoes/est-termo/CZ-down.asp"
+
+
+def coletar_ettj(d: date) -> dict | None:
+    corpo = urllib.parse.urlencode({"Idioma": "PT", "Dt_Ref": d.strftime("%d/%m/%Y"), "saida": "csv"}).encode()
+    hdr = {"User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded"}
+    raw = None
+    for i in range(3):
+        try:
+            req = urllib.request.Request(ETTJ_URL, data=corpo, headers=hdr)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                raw = r.read()
+            break
+        except Exception as e:
+            log(f"  ETTJ: {type(e).__name__} (tentativa {i + 1})")
+            time.sleep(3)
+    if not raw:
+        return None
+    ls = raw.decode("latin-1", errors="replace").replace("\r", "").split("\n")
+    par = {}
+    vert = []
+    for l in ls:
+        p = l.split(";")
+        if p[0].strip().upper() in ("PREFIXADOS", "IPCA") and len(p) >= 7:
+            par["pre" if p[0].strip().upper() == "PREFIXADOS" else "ipca"] = [num(x) for x in p[1:7]]
+        elif len(p) >= 2 and re.fullmatch(r"[\d.]+", p[0].strip() or "x"):
+            vert.append([num(p[0]), num(p[1]), num(p[2]) if len(p) > 2 else None, num(p[3]) if len(p) > 3 else None])
+    if "pre" not in par or "ipca" not in par or None in par["pre"] + par["ipca"]:
+        return None
+    return {"data": d.isoformat(), "pre": par["pre"], "ipca": par["ipca"], "vertices": vert}
+
+
+def obter_curva(d: date, baixar: bool = True) -> dict | None:
+    pasta = DADOS / "curva"
+    f = pasta / f"{d.isoformat()}.json"
+    if f.exists():
+        return json.loads(f.read_text(encoding="utf-8"))
+    if baixar:
+        c = coletar_ettj(d)
+        if c:
+            escrever_json(f, c)
+            escrever_json(DADOS / "curva.json", c) if d >= max([date.fromisoformat(x.stem) for x in pasta.glob("*.json")] + [d]) else None
+            log(f"  ETTJ: curva de {d} salva")
+            return c
+    # sem curva da data: usa a mais próxima disponível (anterior, senão posterior)
+    arqs = sorted(pasta.glob("*.json")) if pasta.exists() else []
+    if not arqs:
+        return None
+    ant = [a for a in arqs if a.stem <= d.isoformat()]
+    escolha = ant[-1] if ant else arqs[0]
+    return json.loads(escolha.read_text(encoding="utf-8"))
+
+
+def _svensson(p, t):
+    b1, b2, b3, b4, l1, l2 = p
+    t = max(t, 1e-4)
+    x1, x2 = l1 * t, l2 * t
+    f1 = (1 - math.exp(-x1)) / x1
+    f2_ = (1 - math.exp(-x2)) / x2
+    return b1 + b2 * f1 + b3 * (f1 - math.exp(-x1)) + b4 * (f2_ - math.exp(-x2))
+
+
+class Curva:
+    def __init__(self, c: dict):
+        self.p_pre, self.p_ipca = c["pre"], c["ipca"]
+        self.data = c.get("data")
+
+    def pre(self, t):
+        return _svensson(self.p_pre, t)
+
+    def ipca(self, t):
+        return _svensson(self.p_ipca, t)
+
+    def fator_di(self, t):          # DI acumulado de hoje até t (anos)
+        return (1 + self.pre(t)) ** t if t > 0 else 1.0
+
+    def fator_ipca(self, t):        # inflação implícita acumulada de hoje até t
+        return ((1 + self.pre(t)) / (1 + self.ipca(t))) ** t if t > 0 else 1.0
+
+
 def _data(txt):
     try:
         return datetime.strptime((txt or "").strip(), "%d/%m/%Y").date()
@@ -649,8 +732,83 @@ def ytm_pela_razao(cf, cupom: float, pct_par: float) -> float | None:
     return round(mid * 100, 2)
 
 
+def fluxo_nominal(d: date, venc: date, base: str, c: float, mult: float | None,
+                  juros_datas: list[date], amort_datas: list[date], cv: "Curva"):
+    """Fluxo nominal projetado (DI futuro e inflação implícita da curva) por 1 unidade de principal,
+    e o fator de desconto contratual de cada data (para escalar até o PU par)."""
+    futuras_j = [x for x in juros_datas if x > d]
+    passadas_j = [x for x in juros_datas if x <= d]
+    futuras_a = [x for x in amort_datas if x > d] or [venc]
+    eventos = sorted(set(futuras_j) | set(futuras_a) | {venc})
+    anterior = passadas_j[-1] if passadas_j else d
+    di_curto = cv.pre(0.01)
+    m = (mult or 100) / 100
+
+    def acum_di(t):  # DI acumulado desde 'anterior' (passado aproximado pela taxa curta) até t (anos a partir de d)
+        return cv.fator_di(t)
+
+    saldo, parcela, out = 1.0, 1.0 / len(futuras_a), []
+    t_ant = (anterior - d).days / 365.25  # <= 0
+    for x in eventos:
+        t = (x - d).days / 365.25
+        juros = 0.0
+        if x in futuras_j or x == venc:
+            per = t - t_ant
+            if base in ("DI+", "%DI"):
+                passado = (1 + di_curto) ** max(-t_ant, 0) if t_ant < 0 else 1.0
+                f_di = passado * acum_di(t) / (acum_di(t_ant) if t_ant > 0 else 1.0)
+                g = f_di * (1 + c) ** per if base == "DI+" else f_di ** m
+            else:
+                g = (1 + c) ** per
+            juros = saldo * (g - 1)
+            t_ant = t
+        amort = min(parcela if x in futuras_a else 0.0, saldo)
+        saldo -= amort
+        v = juros + amort
+        if base in ("IPCA+", "IGPM+"):
+            v *= cv.fator_ipca(t)
+        # desconto contratual (taxa do papel sobre o indexador projetado)
+        if base == "DI+":
+            dc = 1 / (cv.fator_di(t) * (1 + c) ** t)
+        elif base == "%DI":
+            dc = 1 / (cv.fator_di(t) ** m)
+        elif base in ("IPCA+", "IGPM+"):
+            dc = 1 / (cv.fator_ipca(t) * (1 + c) ** t)
+        else:
+            dc = 1 / (1 + c) ** t
+        out.append((t, v, dc))
+    return out
+
+
+def tir_moic(fluxo, pu_par: float, preco: float) -> dict:
+    """Escala o fluxo unitário até o PU par e calcula TIR nominal, MOIC e retorno total para quem paga 'preco'."""
+    pv_c = sum(v * dc for t, v, dc in fluxo)
+    if pv_c <= 0 or not preco:
+        return {}
+    k = pu_par / pv_c
+    cfs = [(t, v * k) for t, v, _ in fluxo]
+    total = sum(v for _, v in cfs)
+    lo, hi = -0.9, 50.0
+
+    def pv(i):
+        return sum(v / (1 + i) ** t for t, v in cfs)
+
+    if not (pv(hi) <= preco <= pv(lo)):
+        return {"moic": round(total / preco, 3), "ret": round((total / preco - 1) * 100, 1)}
+    for _ in range(120):
+        mid = (lo + hi) / 2
+        if pv(mid) > preco:
+            lo = mid
+        else:
+            hi = mid
+    prazo = sum(t * v for t, v in cfs) / total if total else None
+    return {"tir": round(mid * 100, 2), "moic": round(total / preco, 3),
+            "ret": round((total / preco - 1) * 100, 1), "recebe": round(total, 2),
+            "prazo": round(prazo, 2) if prazo else None}
+
+
 def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict | None,
-                           snd: dict | None, curva: dict | None) -> dict:
+                           snd: dict | None, curva: dict | None, cv: "Curva | None" = None) -> dict:
     """% do par e yield implícito (hold to maturity, pagando tudo no vencimento) do PU negociado."""
     pmed = (neg or {}).get("pu_med")
     # ANBIMA primeiro (calcula o par com VNA atualizado); SND como alternativa, pois em
@@ -658,10 +816,15 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
     pu_par = (anb or {}).get("pu_par") or (curva or {}).get("pu_par")
     fonte_par = "ANBIMA" if (anb or {}).get("pu_par") else ("SND" if (curva or {}).get("pu_par") else None)
     out = {"pu_par": pu_par, "fonte_par": fonte_par, "pct_par_neg": None, "y": None,
-           "y_base": None, "y_est": False, "y_met": None}
+           "y_base": None, "y_est": False, "y_met": None, "tir": None, "moic": None, "ret": None,
+           "prazo": None}
     if pmed and pu_par:
         out["pct_par_neg"] = round(pmed / pu_par * 100, 2)
-    pct = out["pct_par_neg"]
+    out["ref"] = "B3"
+    if not pmed and (anb or {}).get("pu") and pu_par:
+        pmed = anb["pu"]          # sem negócio: métricas no PU indicativo da ANBIMA
+        out["ref"] = "ANBIMA"
+    pct = round(pmed / pu_par * 100, 2) if pmed and pu_par else None
     if not pmed or pct is None or not (YIELD_PCT_MIN <= pct <= YIELD_PCT_MAX):
         return out
     # 1) debênture com cadastro SND: fluxo de caixa contratual (juros + amortização)
@@ -679,7 +842,22 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
             y = ytm_pela_razao(cf, snd["taxa"] / 100, pct)
             if y is not None:
                 out.update(y=y, y_base=base, y_met="fluxo")
+            if cv:
+                out.update(tir_moic(fluxo_nominal(d, venc, base, snd["taxa"] / 100, snd.get("mult"), jd, ad, cv),
+                                    pu_par, pmed))
+            if y is not None:
                 return out
+        elif base == "%DI" and venc and venc > d and cv:
+            # % do DI: sem spread contratual, mas a curva permite TIR/MOIC
+            jm = _meses(snd.get("juros_cada"), snd.get("juros_un")) or 6
+            jd = _datas(_data(snd.get("juros_car")), jm, venc, d)
+            ad = [venc]
+            if snd.get("amort"):
+                am = _meses(snd.get("amort_cada"), snd.get("amort_un"))
+                ad = _datas(_data(snd.get("amort_car")), am, venc, d) if am else [venc]
+            out.update(tir_moic(fluxo_nominal(d, venc, "%DI", 0.0, snd.get("mult"), jd, ad, cv), pu_par, pmed),
+                       y_base="%DI")
+            return out
     # 2) referência ANBIMA (taxa indicativa + PU + duration), boa perto do par
     if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration") and 70 <= pct <= 130:
         base = base_indexador(anb.get("indice"))
@@ -687,17 +865,29 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
             y = yield_implicito(pmed, anb["pu"], anb["tx_ind"], anb["duration"])
             if y is not None:
                 out.update(y=y, y_base=base, y_met="duration")
+                cup = taxa_do_texto(anb.get("indice"))
+                venc = _data(anb.get("vencimento"))
+                if cv and cup is not None and venc and venc > d:
+                    out.update(tir_moic(fluxo_nominal(d, venc, base, cup / 100, None, [venc], [venc], cv), pu_par, pmed))
                 return out
     # 3) CRI/CRA sem cronograma: cupom do indexador ANBIMA, supondo pagamento bullet (estimativa)
     if anb and anb.get("indice") and anb.get("vencimento"):
         base = base_indexador(anb.get("indice"))
         cup = taxa_do_texto(anb.get("indice")) if base in ("DI+", "IPCA+", "IGPM+") else None
         venc = _data(anb.get("vencimento"))
+        if base == "%DI" and cv and venc and venc > d:
+            mm = re.search(r"([\d.,]+)\s*%", anb.get("indice") or "")
+            mult = num(mm.group(1)) if mm else 100.0
+            out.update(tir_moic(fluxo_nominal(d, venc, "%DI", 0.0, mult, [venc], [venc], cv), pu_par, pmed),
+                       y_base="%DI", y_est=True)
+            return out
         if base and base != "%DI" and cup is not None and venc and venc > d:
             cf = fluxo_caixa(d, venc, cup / 100, [venc], [venc])
             y = ytm_pela_razao(cf, cup / 100, pct)
             if y is not None:
                 out.update(y=y, y_base=base, y_est=True, y_met="bullet")
+            if cv:
+                out.update(tir_moic(fluxo_nominal(d, venc, base, cup / 100, None, [venc], [venc], cv), pu_par, pmed))
     return out
 
 
@@ -725,7 +915,7 @@ def atualizar_serie(cod: str, d: str, neg: dict | None, anb: dict | None, py: di
         anb.get("pu") if anb else None,
         anb.get("tx_ind") if anb else None,
         anb.get("pct_par") if anb else None,
-        py.get("pu_par"), py.get("pct_par_neg"), py.get("y"),
+        py.get("pu_par"), py.get("pct_par_neg"), py.get("y"), py.get("tir"),
     ])
     pts.sort(key=lambda p: p[0])
     pts = pts[-SERIE_MAX_PONTOS:]
@@ -807,6 +997,8 @@ def processar(d: date, forcar: bool = False) -> bool:
     anb_cc = coletar_anbima_cricra(d)
     curva = coletar_snd_pu(d)
     snd = snd_cadastro()
+    cj = obter_curva(d)
+    cv = Curva(cj) if cj else None
     if not neg and not anb and not anb_cc:
         log("  sem dados (feriado, fim de semana ou ainda não publicado)")
         return False
@@ -822,8 +1014,8 @@ def processar(d: date, forcar: bool = False) -> bool:
         t = (n or {}).get("tipo") or ("DEB" if a_deb else ("CRA" if cod.startswith("CRA") else "CRI") if a_cc else None)
         a = a_deb or a_cc  # referência ANBIMA (mesmos campos-chave)
         s = snd.get(cod) if t == "DEB" else None
-        cv = curva.get(cod) if t == "DEB" else None
-        py = calcular_preco_e_yield(t, d, n, a, s, cv)
+        cvp = curva.get(cod) if t == "DEB" else None
+        py = calcular_preco_e_yield(t, d, n, a, s, cvp, cv)
         serie = atualizar_serie(cod, ds, n, a, py)
         emp, sec = empresa_do_ativo(t, cod, n, a_cc, s, a_deb)
         reg = {
@@ -844,7 +1036,7 @@ def processar(d: date, forcar: bool = False) -> bool:
         "data": ds,
         "gerado_em": datetime.now(BRT).isoformat(timespec="seconds"),
         "fontes": {"b3": len(neg), "anbima": len(anb), "anbima_cricra": len(anb_cc),
-                   "snd_pu": len(curva)},
+                   "snd_pu": len(curva), "curva": (cj or {}).get("data")},
         "ativos": ativos,
     })
     atualizar_indice()
@@ -868,11 +1060,13 @@ def recalcular() -> None:
     for f in arquivos:
         dd = json.loads(f.read_text(encoding="utf-8"))
         d = date.fromisoformat(dd["data"])
+        cj = obter_curva(d)
+        cv = Curva(cj) if cj else None
         for a in dd["ativos"]:
             p_ant = a.get("p") or {}
-            cv = {"pu_par": p_ant.get("pu_par")} if p_ant.get("fonte_par") == "SND" else None
+            cvp = {"pu_par": p_ant.get("pu_par")} if p_ant.get("fonte_par") == "SND" else None
             s = snd.get(a["c"]) if a.get("t") == "DEB" else None
-            py = calcular_preco_e_yield(a.get("t"), d, a.get("n"), a.get("a"), s, cv)
+            py = calcular_preco_e_yield(a.get("t"), d, a.get("n"), a.get("a"), s, cvp, cv)
             a["p"] = py
             serie = atualizar_serie(a["c"], dd["data"], a.get("n"), a.get("a"), py)
             a["al"] = alertas(a.get("n"), a.get("a"), py, serie, dd["data"])
@@ -896,9 +1090,10 @@ def construir_catalogo() -> None:
         for a in json.loads((DADOS / "daily" / f"{ds}.json").read_text(encoding="utf-8"))["ativos"]:
             info[a["c"]] = a
             if a.get("n"):
+                pp_ = a.get("p") or {}
                 ultimo_neg[a["c"]] = (ds, a["n"].get("pu_med"), a["n"].get("volume"),
-                                      (a.get("p") or {}).get("pct_par_neg"), (a.get("p") or {}).get("y"),
-                                      (a.get("p") or {}).get("y_base"), (a.get("p") or {}).get("y_est"))
+                                      pp_.get("pct_par_neg"), pp_.get("y"), pp_.get("y_base"), pp_.get("y_est"),
+                                      pp_.get("tir"), pp_.get("moic"), pp_.get("ret"), pp_.get("prazo"))
     cods = {c for c, s in snd.items() if (s.get("qtd_mercado") or 0) > 0} | set(info)
     itens = []
     for c in sorted(cods):
@@ -930,10 +1125,20 @@ def construir_catalogo() -> None:
             "ud": un[0] if un else None, "up": un[1] if un else None, "uv": un[2] if un else None,
             "upp": un[3] if un else None, "uy": un[4] if un else None,
             "uyb": un[5] if un else None, "uye": un[6] if un else None,
+            "utir": un[7] if un else (h.get("p") or {}).get("tir"),
+            "umoic": un[8] if un else (h.get("p") or {}).get("moic"),
+            "uret": un[9] if un else (h.get("p") or {}).get("ret"),
+            "uprz": un[10] if un else (h.get("p") or {}).get("prazo"),
+            "uind": not un and (h.get("p") or {}).get("ref") == "ANBIMA",
+            "uy": un[4] if un else (h.get("p") or {}).get("y"),
+            "uyb": un[5] if un else (h.get("p") or {}).get("y_base"),
             "vh": (h.get("n") or {}).get("volume"),
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
         })
+    cur = sorted((DADOS / "curva").glob("*.json")) if (DADOS / "curva").exists() else []
+    if cur:
+        escrever_json(DADOS / "curva.json", json.loads(cur[-1].read_text(encoding="utf-8")))
     escrever_json(DADOS / "catalogo.json", {"data": datas[-1], "itens": itens})
     log(f"Catálogo: {len(itens)} títulos, {len({i['k'] for i in itens})} empresas")
 

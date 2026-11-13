@@ -88,9 +88,9 @@
   .tc { padding: 12px 14px; border-bottom: 1px solid var(--border); cursor: pointer; }
   .tc:last-child { border-bottom: 0; }
   .tc .l1 { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-  .tc .l2 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 6px; margin-top: 8px; }
+  .tc .l2 { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 6px; margin-top: 8px; }
   .tc .l2 div span { display: block; font-size: 11px; color: var(--text-muted); }
-  .tc .l2 div b { font-weight: 600; font-size: 13.5px; white-space: nowrap; }
+  .tc .l2 div b { font-weight: 600; font-size: 13px; white-space: nowrap; }
   #det { position: fixed; inset: 0 0 0 auto; width: min(620px, 100vw); background: var(--surface-1);
          border-left: 1px solid var(--border); box-shadow: -8px 0 24px rgba(0,0,0,.12);
          transform: translateX(100%); transition: transform .2s ease; overflow-y: auto; z-index: 10; }
@@ -124,7 +124,7 @@
 <body>
 <header>
   <div class="top"><h1>Painel de Dívidas · Mercado Secundário</h1><span class="ref" id="ref"></span></div>
-  <nav><a href="#/" id="nEmp">Empresas</a><a href="#/mercado" id="nMer">Mercado do dia</a></nav>
+  <nav><a href="#/" id="nEmp">Empresas</a><a href="#/mercado" id="nMer">Mercado do dia</a><a href="#/curva" id="nCur">Curva de juros</a></nav>
 </header>
 <main id="app"><div class="vazio">Carregando…</div></main>
 <aside id="det" aria-hidden="true">
@@ -161,11 +161,13 @@ function pctPar(v, extra = "") {
   return `<span class="${cl}"${extra}>${f1.format(v)}%</span>`;
 }
 function yieldTxt(y, base, est, pct) {
-  if (nada(y) || !base) return '<span class="mut">–</span>';
+  if (nada(y) || !base) return base === "%DI" ? '<span class="mut" title="Papel em % do DI: veja a TIR nominal">% DI</span>' : '<span class="mut">–</span>';
   const t = base === "PRE" ? `${f2.format(y)}%` : `${base.replace("+", "")} + ${f2.format(y)}%`;
   const cor = !nada(pct) && pct < 80 ? ' class="neg"' : "";
   return est ? `<span${cor} title="Estimativa: CRI/CRA sem cronograma, supõe pagamento único no vencimento">≈ ${t}</span>` : `<span${cor}>${t}</span>`;
 }
+const tirTxt = (v, pct) => nada(v) ? '<span class="mut">–</span>' : `<span${!nada(pct) && pct < 80 ? ' class="neg"' : ""}>${f1.format(v)}%</span>`;
+const moicTxt = v => nada(v) ? '<span class="mut">–</span>' : `${f2.format(v)}x`;
 function taxaAnb(t, idx) {
   if (nada(t)) return '<span class="mut">–</span>';
   const s = semAc(idx);
@@ -208,10 +210,12 @@ window.addEventListener("hashchange", rota);
 async function rota() {
   fecharDet();
   const h = location.hash.replace(/^#\/?/, "");
-  document.getElementById("nEmp").classList.toggle("on", !h.startsWith("mercado"));
+  document.getElementById("nEmp").classList.toggle("on", !h.startsWith("mercado") && !h.startsWith("curva"));
   document.getElementById("nMer").classList.toggle("on", h.startsWith("mercado"));
+  document.getElementById("nCur").classList.toggle("on", h.startsWith("curva"));
   try {
     if (h.startsWith("mercado")) await telaMercado();
+    else if (h.startsWith("curva")) await telaCurva();
     else if (h.startsWith("e/")) await telaEmpresa(decodeURIComponent(h.slice(2)));
     else await telaEmpresas();
   } catch (e) {
@@ -281,10 +285,10 @@ async function telaEmpresa(k) {
     </div>
     <div class="card tw tabela-titulos"><table><thead><tr>
       <th class="l">Título</th><th>Vencimento</th><th class="l">Remuneração</th><th>Último negócio</th><th>PU negociado</th>
-      <th>% do par</th><th>Yield implícito</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
+      <th>% do par</th><th title="Spread/juro real implícito, pagando tudo no vencimento">Yield implícito</th><th title="TIR nominal com DI futuro e inflação implícita da curva ANBIMA">TIR nominal</th><th title="Total a receber ÷ preço pago">MOIC</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
     </tr></thead><tbody>${itens.map((i, n) => linhaTitulo(i, n)).join("")}</tbody></table></div>
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
-    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (juros e amortizações do cadastro SND), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). Calculado entre 20% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
+    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (juros e amortizações do cadastro SND), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 20% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
 }
 function linhaTitulo(i, n) {
@@ -295,19 +299,20 @@ function linhaTitulo(i, n) {
     <td>${i.ud ? dbr(i.ud) : '<span class="mut">sem negócio</span>'}</td>
     <td>${fmt(i.up)}</td>
     <td>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</td>
-    <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
+    <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</td><td>${tirTxt(i.utir, i.upp ?? i.ppa)}${i.uind ? '<span class="mut" title="no PU indicativo ANBIMA">*</span>' : ""}</td><td>${moicTxt(i.umoic)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
     <td>${i.vh ? mi(i.vh) : '<span class="mut">–</span>'}</td>
     <td class="l ell">${esc(i.gar || "–")}</td><td class="l">${tagsE(i.al)}</td></tr>`;
 }
 function cartaoTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<div class="tc" data-i="${n}">
-    <div class="l1"><div><span style="font-weight:650">${esc(i.c)}</span> <span class="mut" style="font-size:11px;font-weight:600">${esc(i.t)}</span></div><div class="sub">venc. ${esc(i.ven || "–")}</div></div>
+    <div class="l1"><div><span style="font-weight:650">${esc(i.c)}</span> <span class="mut" style="font-size:11px;font-weight:600">${esc(i.t)}</span></div><div class="sub">venc. ${esc(i.ven || "–")}${i.ud ? " · neg. " + dbr(i.ud).slice(0, 5) : ""}</div></div>
     <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${tagsE(i.al)}</div>
     <div class="l2">
-      <div><span>% do par</span><b>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</b></div>
-      <div><span>Yield implícito</span><b>${yieldTxt(i.uy, i.uyb, i.uye, i.upp)}</b></div>
-      <div><span>Último negócio</span><b>${i.ud ? dbr(i.ud).slice(0, 5) : "–"}</b></div>
+      <div><span>% do par${ind ? " (ind.)" : ""}</span><b>${pctPar(p)}</b></div>
+      <div><span>Yield</span><b>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</b></div>
+      <div><span>TIR nominal${i.uind ? " (ind.)" : ""}</span><b>${tirTxt(i.utir, i.upp ?? i.ppa)}</b></div>
+      <div><span>MOIC</span><b>${moicTxt(i.umoic)}</b></div>
     </div></div>`;
 }
 
@@ -346,6 +351,8 @@ const COLS = [
   ["pmed", "PU médio", r => r._pmed ?? -1, r => `<b>${fmt(r._pmed)}</b>`],
   ["ppar", "% do par", r => r._ppar ?? 999, r => pctPar(r._ppar) + (r._ppar != null && !r._parNeg ? '<span class="mut">*</span>' : "")],
   ["y", "Yield implícito", r => r.p?.y ?? -999, r => yieldTxt(r.p?.y, r.p?.y_base, r.p?.y_est, r.p?.pct_par_neg)],
+  ["tir", "TIR nominal", r => r.p?.tir ?? -999, r => tirTxt(r.p?.tir, r.p?.pct_par_neg)],
+  ["moic", "MOIC", r => r.p?.moic ?? -1, r => moicTxt(r.p?.moic)],
   ["desv", "Δ vs ANBIMA", r => r._desv ?? -999, r => r._desv === null ? '<span class="mut">–</span>' : `<span class="${r._desv < 0 ? "neg" : "pos"}">${r._desv > 0 ? "+" : ""}${f2.format(r._desv)}%</span>`],
   ["neg", "Negócios", r => r._neg, r => r._neg ? f0.format(r._neg) : '<span class="mut">–</span>'],
   ["pmin", "PU mín", r => r.n?.pu_min ?? -1, r => fmt(r.n?.pu_min)],
@@ -389,7 +396,9 @@ async function abrirTitulo(i) {
     i.s && i.s !== i.e ? "securitizadora: " + esc(titulo(i.s)) : null].filter(Boolean).join(" · ");
   const p = i.upp ?? i.ppa;
   const dest = [["% do par", pctPar(p) + (i.upp == null && i.ppa != null ? ' <span class="mut" style="font-size:12px">indicativo</span>' : "")],
-                ["Yield implícito", yieldTxt(i.uy, i.uyb, i.uye, i.upp)], ["Último negócio", i.ud ? dbr(i.ud) : "–"]];
+                ["Yield implícito", yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)], ["TIR nominal" + (i.uind ? " (no indicativo)" : ""), tirTxt(i.utir, i.upp ?? i.ppa)],
+                ["MOIC", moicTxt(i.umoic)], ["Retorno total nominal", nada(i.uret) ? "–" : f1.format(i.uret) + "%"],
+                ["Último negócio", i.ud ? dbr(i.ud) : "–"]];
   const dados = [
     ["PU negociado", fmt(i.up)], ["PU par (curva)", fmt(i.par)], ["Volume hoje", i.vh ? "R$ " + mi(i.vh) : "–"],
     ["Vencimento", esc(i.ven || "–")], ["Remuneração", esc(i.idx || "–")], ["Taxa ANBIMA", taxaAnb(i.ta, i.idx)],
@@ -401,19 +410,74 @@ async function abrirTitulo(i) {
   document.getElementById("detCorpo").innerHTML = (i.al?.length ? `<div style="margin-bottom:10px">${tags(i.al)}</div>` : "") +
     `<div class="grade">${dest.map(([l, v]) => `<div class="dest"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      <div class="grade">${dados.filter(([l, v]) => !/^(–|<span class="mut">–<\/span>)$/.test(v)).map(([l, v]) => `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
+     ${(i.up || i.pa) && i.par ? simulador(i) : ""}
      <div class="graf" id="graf"><span class="mut">Carregando histórico…</span></div>`;
+  if ((i.up || i.pa) && i.par) ligarSimulador(i);
   det.classList.add("aberto"); det.setAttribute("aria-hidden", "false");
   try { desenhar((await getJSON(`data/series/${encodeURIComponent(i.c)}.json`)).p); }
   catch { document.getElementById("graf").innerHTML = '<span class="mut">Sem histórico de negócios ainda.</span>'; }
 }
 
-// ponto: [data, pu_med, qtd, volume, n_neg, pu_anb, tx_ind, pct_par_anb, pu_par, pct_par_neg, y]
+function simulador(i) {
+  const anos = venData(i.ven) ? Math.max(0.25, (venData(i.ven) - new Date()) / 3.156e10) : 3;
+  return `<div class="card" style="padding:12px 14px;margin:4px 0 8px">
+    <div style="font-weight:600;font-size:13px;margin-bottom:6px">Simular recuperação</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:end">
+      <label class="sub">Recupera (% do par atual)<br><input id="sRec" type="number" value="100" min="0" step="5" style="width:110px;padding:7px 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface-1);color:var(--text-primary);font:inherit"></label>
+      <label class="sub">Em quantos anos<br><input id="sAnos" type="number" value="${anos.toFixed(1)}" min="0.25" step="0.5" style="width:90px;padding:7px 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface-1);color:var(--text-primary);font:inherit"></label>
+      <div id="sRes" style="flex:1;min-width:180px"></div>
+    </div>
+    <div class="nota" style="margin-top:6px">Recebimento único de X% do PU par de hoje (R$ ${fmt(i.par)}) daqui a Y anos, sem correção adicional. Preço de entrada: ${i.up ? "último PU negociado" : "PU indicativo ANBIMA"} (R$ ${fmt(i.up || i.pa)}).</div></div>`;
+}
+function ligarSimulador(i) {
+  const calc = () => {
+    const r = +document.getElementById("sRec").value / 100, a = +document.getElementById("sAnos").value;
+    const moic = r * i.par / (i.up || i.pa), tir = a > 0 && moic > 0 ? (Math.pow(moic, 1 / a) - 1) * 100 : null;
+    document.getElementById("sRes").innerHTML = `<div class="sub">MOIC <b style="color:var(--text-primary);font-size:16px">${f2.format(moic)}x</b> · TIR <b style="color:var(--text-primary);font-size:16px">${tir === null ? "–" : f1.format(tir) + "%"}</b> · retorno ${f1.format((moic - 1) * 100)}%</div>`;
+  };
+  document.getElementById("sRec").oninput = calc; document.getElementById("sAnos").oninput = calc; calc();
+}
+
+// ------------------------------------------------------------------ tela: curva de juros
+async function telaCurva() {
+  const c = await getJSON("data/curva.json");
+  const sv = (p, t) => { const [b1, b2, b3, b4, l1, l2] = p, x1 = l1 * t, x2 = l2 * t, f1_ = (1 - Math.exp(-x1)) / x1, f2_ = (1 - Math.exp(-x2)) / x2;
+    return (b1 + b2 * f1_ + b3 * (f1_ - Math.exp(-x1)) + b4 * (f2_ - Math.exp(-x2))) * 100; };
+  const T = []; for (let t = 0.25; t <= 15.001; t += 0.25) T.push(t);
+  const pre = T.map(t => sv(c.pre, t)), ipca = T.map(t => sv(c.ipca, t)), inf = T.map((t, k) => ((1 + pre[k] / 100) / (1 + ipca[k] / 100) - 1) * 100);
+  const W = Math.max(320, Math.min(760, document.getElementById("app").clientWidth - 30)), H = W < 450 ? 230 : 300, m = { l: 40, r: 12, t: 14, b: 26 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const hi = Math.ceil(Math.max(...pre) + 1), lo = 0;
+  const x = t => m.l + (t - 0.25) / (15 - 0.25) * iw, y = v => m.t + (1 - (v - lo) / (hi - lo)) * ih;
+  const linha = (arr, cor, dash) => `<path d="${arr.map((v, k) => (k ? "L" : "M") + x(T[k]).toFixed(1) + "," + y(v).toFixed(1)).join("")}" fill="none" stroke="${cor}" stroke-width="2" ${dash ? 'stroke-dasharray="5 4"' : ""}/>`;
+  const grid = [0, 4, 8, 12, 16].filter(v => v <= hi).map(v => `<line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/><text class="eixo" x="${m.l - 6}" y="${y(v) + 3}" text-anchor="end">${v}%</text>`).join("");
+  const xt = (W < 450 ? [1, 3, 5, 10, 15] : [1, 2, 3, 5, 7, 10, 15]).map(t => `<text class="eixo" x="${x(t)}" y="${H - 8}" text-anchor="middle">${t}a</text>`).join("");
+  const tab = [0.5, 1, 2, 3, 5, 10].map(t => { const a = sv(c.pre, t), b = sv(c.ipca, t); return `<tr><td class="l">${t < 1 ? "6 meses" : t + (t > 1 ? " anos" : " ano")}</td><td>${f2.format(a)}%</td><td>${f2.format(b)}%</td><td>${f2.format(((1 + a / 100) / (1 + b / 100) - 1) * 100)}%</td></tr>`; }).join("");
+  document.getElementById("app").innerHTML = `
+    <h2>Curva de juros</h2><div class="sub">Estrutura a termo ANBIMA de ${dbr(c.data)} (Svensson). Usada para projetar o DI futuro e a inflação implícita nos fluxos dos títulos.</div>
+    <div class="card graf" style="padding:12px 14px;margin-top:14px">
+      <div class="legenda"><span><i style="background:var(--series-1)"></i>Prefixada (≈ DI futuro)</span><span><i style="background:var(--series-2)"></i>IPCA (juro real)</span><span><i style="background:var(--text-muted)"></i>Inflação implícita</span></div>
+      <svg viewBox="0 0 ${W} ${H}" id="svgC">${grid}${xt}${linha(pre, "var(--series-1)")}${linha(ipca, "var(--series-2)")}${linha(inf, "var(--text-muted)", true)}
+        <line id="crossC" y1="${m.t}" y2="${m.t + ih}" stroke="var(--text-muted)" style="display:none"/><rect id="hitC" x="${m.l}" y="${m.t}" width="${iw}" height="${ih}" fill="transparent"/></svg>
+    </div>
+    <div class="card tw" style="margin-top:12px"><table><thead><tr><th class="l">Prazo</th><th>Prefixada</th><th>IPCA (real)</th><th>Inflação implícita</th></tr></thead><tbody>${tab}</tbody></table></div>
+    <div class="nota">Taxas ao ano, base 252. Fonte: ANBIMA, ETTJ, atualizada nos dias úteis junto com a coleta.</div>`;
+  const svg = document.getElementById("svgC"), hit = document.getElementById("hitC"), cr = document.getElementById("crossC"), tip = document.getElementById("tip");
+  const mv = ev => { const pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY; const sx = pt.matrixTransform(svg.getScreenCTM().inverse()).x;
+    const k = Math.max(0, Math.min(T.length - 1, Math.round((sx - m.l) / iw * (T.length - 1))));
+    cr.setAttribute("x1", x(T[k])); cr.setAttribute("x2", x(T[k])); cr.style.display = "";
+    tip.innerHTML = `<b>${f2.format(T[k])} anos</b><br>Pré: ${f2.format(pre[k])}%<br>IPCA: ${f2.format(ipca[k])}%<br>Inflação: ${f2.format(inf[k])}%`;
+    tip.style.display = "block"; tip.style.left = Math.min(ev.clientX + 14, innerWidth - 150) + "px"; tip.style.top = (ev.clientY - 10) + "px"; };
+  hit.addEventListener("mousemove", mv); hit.addEventListener("click", mv);
+  hit.addEventListener("mouseleave", () => { cr.style.display = "none"; tip.style.display = "none"; });
+}
+
+// ponto: [data, pu_med, qtd, volume, n_neg, pu_anb, tx_ind, pct_par_anb, pu_par, pct_par_neg, y, tir]
 function desenhar(pts) {
   const g = document.getElementById("graf");
   if (!pts.length) { g.innerHTML = '<span class="mut">Sem histórico ainda.</span>'; return; }
   const temPar = pts.some(p => p[9] != null || p[7] != null);
   const kN = temPar ? 9 : 1, kA = temPar ? 7 : 5;
-  const W = 600, H = 220, HV = 100, m = { l: 56, r: 12, t: 10, b: 22 };
+  const W = Math.max(320, Math.min(600, g.clientWidth || 600)), H = W < 450 ? 200 : 220, HV = 100, m = { l: 52, r: 10, t: 10, b: 22 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b, ihv = HV - m.t - m.b, N = pts.length;
   const x = i => m.l + (N === 1 ? iw / 2 : i / (N - 1) * iw);
   const vals = pts.flatMap(p => [p[kN], p[kA]]).filter(v => v != null);
@@ -441,8 +505,8 @@ function desenhar(pts) {
     ${pts.some(p => p[3]) ? `<h4>Volume negociado (R$)</h4>
     <svg viewBox="0 0 ${W} ${HV}"><line class="grid" x1="${m.l}" x2="${W - m.r}" y1="${m.t + ihv}" y2="${m.t + ihv}"/><text class="eixo" x="${m.l - 6}" y="${m.t + 6}" text-anchor="end">${mi(vmax)}</text>${barras}</svg>` : ""}
     <h4>Últimos pregões</h4>
-    <div class="card tw" style="max-height:260px"><table><thead><tr><th class="l">Data</th><th>PU médio</th><th>% par</th><th>Yield</th><th>PU ANBIMA</th><th>Volume</th><th>Negócios</th></tr></thead>
-    <tbody>${pts.slice(-30).reverse().map(p => `<tr><td class="l">${dbr(p[0])}</td><td>${fmt(p[1])}</td><td>${pctPar(p[9] ?? null)}</td><td>${nada(p[10]) ? "–" : f2.format(p[10]) + "%"}</td><td>${fmt(p[5])}</td><td>${p[3] ? mi(p[3]) : "–"}</td><td>${p[4] ? f0.format(p[4]) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
+    <div class="card tw" style="max-height:260px"><table><thead><tr><th class="l">Data</th><th>PU médio</th><th>% par</th><th>Yield</th><th>TIR</th><th>PU ANBIMA</th><th>Volume</th><th>Negócios</th></tr></thead>
+    <tbody>${pts.slice(-30).reverse().map(p => `<tr><td class="l">${dbr(p[0])}</td><td>${fmt(p[1])}</td><td>${pctPar(p[9] ?? null)}</td><td>${nada(p[10]) ? "–" : f2.format(p[10]) + "%"}</td><td>${nada(p[11]) ? "–" : f1.format(p[11]) + "%"}</td><td>${fmt(p[5])}</td><td>${p[3] ? mi(p[3]) : "–"}</td><td>${p[4] ? f0.format(p[4]) : "–"}</td></tr>`).join("")}</tbody></table></div>`;
   const svg = document.getElementById("svgP"), hit = document.getElementById("hit"), cross = document.getElementById("cross"), tip = document.getElementById("tip");
   const mover = ev => {
     const pt = svg.createSVGPoint(); pt.x = ev.clientX; pt.y = ev.clientY;
