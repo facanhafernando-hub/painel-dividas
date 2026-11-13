@@ -5,52 +5,106 @@
    "emissao": 7,
    "serie": "UNI",
    "data_emissao": null,
-   "vencimento": null,
+   "vencimento": "2034-01-30",
    "vne": null,
    "remuneracao": {
-    "indexador": null,
-    "taxa": null,
-    "base": null,
-    "vigente_desde": null,
-    "historico": null
+    "indexador": "DI+",
+    "taxa": 1.7,
+    "base": "252 du",
+    "vigente_desde": "2026-07-30",
+    "historico": "100% da Taxa DI + 1,60% a.a. (base 252 du) desde a Data de Emissão até 2026-07-30 (exclusive). Pela AGD de 2026-06-11, passa a 100% da Taxa DI + 1,70% a.a. (base 252 du) de 2026-07-30 (inclusive) até o vencimento."
    },
    "juros": {
-    "periodicidade_meses": null,
-    "primeira_data": null,
-    "ultima_data": null,
-    "datas_irregulares": [],
+    "periodicidade_meses": 3,
+    "primeira_data": "2026-07-30",
+    "ultima_data": "2034-01-30",
+    "datas_irregulares": [
+     "2024-08-28",
+     "2025-02-28",
+     "2025-08-28",
+     "2026-02-28"
+    ],
     "carencia_ate": null
    },
    "incorporacao_juros": [],
-   "amortizacoes": [],
-   "premios": [],
-   "fonte": "Nenhum trecho fornecido trata da 7ª emissão (CREM17). O único documento é o Primeiro Aditamento à escritura da 4ª emissão da Cremer S.A.",
-   "confianca": "baixa",
+   "amortizacoes": [
+    {
+     "data": "2029-07-30",
+     "percentual": 7.5,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-01-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2030-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-01-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-01-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-01-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2033-07-30",
+     "percentual": null,
+     "base": "saldo"
+    },
+    {
+     "data": "2034-01-30",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2029-07-30",
+     "descricao": "Prêmio Extraordinário de 0,50% a.a. (base 252 du, pro rata temporis) sobre o VNU ou saldo, de 2029-07-30 (exclusive) até 2030-07-30 (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração. Não é devido em pagamento antecipado até 2029-07-30 (inclusive)."
+    },
+    {
+     "data": "2030-07-30",
+     "descricao": "Prêmio Extraordinário de 1,00% a.a. (base 252 du, pro rata temporis) de 2030-07-30 (exclusive) até a Data de Vencimento (inclusive). Pago trimestralmente nas Datas de Pagamento da Remuneração."
+    }
+   ],
+   "fonte": "Documento 6 (ata de AGD de 2026-06-11, 7ª emissão da Cremer, quadro 'Antes/Após a AGD'): cláusulas 4.11.1 (remuneração), 4.11.2 (Prêmio Extraordinário, em 'Inclusões'), 4.12.1 (pagamento da remuneração) e 4.13.1 (amortização do saldo do VNU). Cronograma anterior, superado: juros semestrais em 28/02 e 28/08 (primeiro em 2024-08-28), amortização em 2 parcelas (50% em 2028-02-28 e 100% em 2029-02-28) e vencimento em 2029-02-28. Juros: até 2026-02-28 semestrais, em 28/02 e 28/08. A partir de 2026-07-30, trimestrais, nos dias 30 de jan/abr/jul/out (primeira em 2026-07-30, última no vencimento). A de 2026-08-28 deixa de existir. Amortização: 10 parcelas semestrais consecutivas, de 2029-07-30 a 2034-01-30. Apenas a 1ª (7,5000% do saldo) e a 10ª (100% do saldo) constam nos trechos. As datas das parcelas 2 a 9 foram derivadas da regra 'semestrais consecutivas'. Os Documentos 5 e 8 (comunicados) confirmam vencimento em 2034-01-30, carência de amortização até 2029-07-30 e CDI+1,70% desde 2026-07-30.",
+   "confianca": "media",
    "conferencia_snd": {
     "snd": true,
     "amort_snd": 10,
-    "amort_doc": 0,
-    "datas_iguais": 0,
-    "so_snd": [
-     "2029-07-30",
-     "2030-01-30",
-     "2030-07-30",
-     "2031-01-30",
-     "2031-07-30",
-     "2032-01-30",
-     "2032-07-30",
-     "2033-01-31",
-     "2033-08-01",
-     "2034-01-30"
-    ],
+    "amort_doc": 10,
+    "datas_iguais": 10,
+    "so_snd": [],
     "so_doc": [],
     "pct_diferente": [],
-    "ok": false
+    "ok": true
    }
   }
  ],
- "situacao": "Nada consta sobre a 7ª emissão (CREM17). Sobre a 4ª emissão, que não é a série pedida, o documento registra que a AGD de 19/10/2016 aprovou a suspensão dos efeitos do vencimento antecipado decorrente da Venda do Ativo e da Redução do Capital.",
- "lacunas": "O documento fornecido (Primeiro Aditamento, entregue em 2016-10-28) refere-se exclusivamente à 4ª emissão de debêntures da Cremer S.A., série única, escritura de 11/04/2014, 20.000 debêntures e R$ 200.000.000,00. Não há trecho da escritura, de aditamento ou de ata da 7ª emissão (CREM17). Por isso, data de emissão, vencimento, VNE, remuneração, juros, amortizações, prêmios e situação da CREM17 não puderam ser determinados e ficaram null. Não extrapolei os dados da 4ª emissão para a 7ª. Para essa emissão, o aditamento traz apenas: DI + sobretaxa de 1,75% a.a. até 2016-10-19 (exclusive) e 2,00% a.a. (base 252 du) de 2016-10-19 (inclusive) até o vencimento; incorporação ao VNU da remuneração acumulada de 2016-04-15 a 2016-10-19; e inclusão de cessão fiduciária de recebíveis como garantia. A data de vencimento e o cronograma de juros e amortização da 4ª emissão não constam dos trechos. Para extrair a CREM17, é preciso enviar os documentos da 7ª emissão.",
+ "situacao": "7ª emissão (CREM17, Cremer S.A.): não há vencimento antecipado declarado, suspensão de pagamentos, RJ ou RE nos trechos. Há repactuação (reestruturação) das dívidas financeiras da CM Hospitalar/Viveo em curso (Fato Relevante de 2026-05-13). A AGD de 2026-06-11 aprovou, com 100% das debêntures em circulação, a alteração de vencimento, amortização, remuneração, datas de pagamento e vencimentos antecipados, além do resgate antecipado facultativo e da amortização extraordinária facultativa (até 98% do VNU ou saldo). A eficácia depende de Condição Suspensiva (e de uma Condição Resolutiva, cujo teor não consta nos trechos), isto é, da formalização mediante o aditamento à Escritura. O modelo de aditamento constante da ata ainda está em branco ([•]) e não há aditamento assinado nos documentos. O Documento 5 informa que a eficácia das alterações das emissões 5ª e 6ª da CM Hospitalar também depende das aprovações da 7ª emissão da Cremer e da 7ª emissão da CM Hospitalar. Está prevista ainda a possível incorporação da Cremer pela CM Hospitalar, que assumiria a posição de Emissora (Anexo III da ata). Os trechos mencionam waiver temporário do índice financeiro, sem detalhes. Novo covenant (Dívida Líquida/EBITDA): 4,75x de 30/06/26 a 31/03/27; 4,50x de 30/06/27 a 31/03/28; 4,00x de 30/06/28 a 31/03/29; 3,75x de 30/06/29 a 31/03/30; 3,50x de 30/06/30 até o vencimento. O EBITDA passa a deduzir pagamentos de arrendamento mercantil.",
+ "lacunas": "1) Data de emissão e VNE da 7ª emissão da Cremer não constam nos trechos (a data da primeira integralização e o valor nominal não aparecem). 2) Percentuais das amortizações 2 a 9 não aparecem nos trechos da ata da Cremer (Documento 6). As tabelas das 5ª e 6ª emissões da CM Hospitalar mostram 8,1081%, 8,8235% e 9,6774% do saldo nas parcelas 2 a 4, o que equivale a 7,5% do VNU original por parcela. Isso não está confirmado para CREM17 e, por extrapolação, a 10ª parcela corresponderia a 32,5% do VNU original. Não incluí esses valores por não constarem nos trechos desta série. 3) O aditamento assinado e a Escritura consolidada não estão nos trechos, então o cronograma é o aprovado em AGD, sujeito às Condições Suspensiva e Resolutiva; a taxa de 1,70% só vale a partir de 2026-07-30 e depende dessa condição. 4) Os pagamentos de juros de 2024-08-28 a 2026-02-28 são do regime semestral anterior (listados como datas_irregulares); não há informação se foram pagos. 5) Identifiquei o Documento 6 como a ata da 7ª emissão da Cremer, porque Cremer é a Emissora, as Fiadoras são a CM Hospitalar e outras, os juros caem em 28/02 e 28/08 e o arquivamento é na JUCESC. O Documento 7, de outra 7ª emissão, da CM Hospitalar, não foi usado: seus juros caem em 08/05 e 08/11, o vencimento anterior era 2029-02-28, após alteração de 08/05/2029 para 28/02/2029, e a Cremer figura como fiadora. Isso deve ser confirmado contra a Escritura, pois o código CREM17 não aparece nos trechos. 6) Os Documentos 1 a 5 e 8 tratam de emissões da CM Hospitalar (4ª, 5ª e 6ª) ou são comunicados genéricos, e não foram usados para os dados da série.",
  "meta": {
   "emissora": "CREMER S/A",
   "cnpj": "82641325000118",
@@ -59,28 +113,91 @@
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
-    "data": "2025-03-27",
-    "tipo": "ata_agd",
-    "assunto": "a celebraça ó de aditamentó a s escrituras de emissa ó de CMPH14, VVEO15, VVEO16, VVEO17 e CREM17||a órientaça ó de vótó da Cómpanhia para óutórga de garantia fidejussó ria, sób a fórma de fiança, pela PróInfusión S.A., inscrita nó CNPJ sób ó nº 07.028.603/0001-40 (\"PróInfusión\" e \"Fiança\")||a óutór",
-    "protocolo": "025682IPE270320250104574314-20",
+    "data": "2024-12-05",
+    "tipo": "proposta_agd",
+    "assunto": "",
+    "protocolo": "025682IPE261220240104563105-86",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1352986&numSequencia=877712&numVersao=1",
-    "explicito": true
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311601&numSequencia=836327&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "comunicado",
+    "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE130520260105651273-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260108581623-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260196876480-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE080620260135810552-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260143830448-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260114936476-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE110620260158538370-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1",
+    "explicito": false
    }
   ],
   "uso_grupo": {
-   "input_tokens": 6858,
+   "input_tokens": 73302,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 1246,
+   "output_tokens": 8352,
    "output_tokens_details": {
-    "thinking_tokens": 339
+    "thinking_tokens": 5369
    },
-   "service_tier": "batch",
+   "service_tier": "standard",
    "inference_geo": "global",
    "speed": "standard"
   },
@@ -88,58 +205,9 @@
  },
  "eventos": {
   "CREM17": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Nada consta sobre a 7ª emissão (CREM17). A suspensão de vencimento antecipado da AGD de 19/10/2016 refere-se à 4ª emissão, não à série pedida."
+   "evento": "reperfilamento",
+   "data": "2026-06-11",
+   "resumo": "AGD aprovou repactuação (vencimento, amortização, remuneração), ainda sem eficácia: depende de aditamento e condições. Waiver temporário de covenant."
   }
- },
- "garantias": {
-  "CREM17": {
-   "codigo": "CREM17",
-   "emissao": 7,
-   "especie": "com garantia real, com garantia fidejussória adicional (a proposta de aditamento prevê quirografária após a incorporação da Cremer pela CM Hospitalar)",
-   "garantias": [
-    {
-     "tipo": "fiança",
-     "prestador_ou_objeto": "CM Hospitalar S.A. (fiadora na escritura de 23/02/2024) e Proinfusion S.A. (CNPJ 07.028.603/0001-40), incluída como fiadora no aditamento de 15/04/2025.",
-     "condicoes": "Os trechos não detalham solidariedade nem renúncia ao benefício de ordem. A minuta de aditamento (Doc. 9) prevê extinguir a Fiança e a Cláusula 4.22 com a incorporação da Cremer pela CM Hospitalar, que passaria a ser a emissora.",
-     "situacao": "vigente",
-     "fonte": "Doc. 9 (ata da AGD de 11/06/2026 e minuta de aditamento); Doc. 2"
-    },
-    {
-     "tipo": "alienação fiduciária",
-     "prestador_ou_objeto": "100% das ações ordinárias da Cremer S.A. de titularidade da CM Hospitalar S.A., com frutos, dividendos e novas ações. Contrato de 15/04/2025 entre CM Hospitalar, Santander, IFC e Pentágono, com interveniência da Cremer.",
-     "condicoes": "Compartilhada com os credores de CMPH14, VVEO15, VVEO16, Contrato IFC e CCBs Santander. Antes da AGD de 11/06/2026, era liberada com a venda da Cremer, com o Índice Financeiro abaixo de 2,5x (Condição Resolutiva) ou com a quitação integral. A AGD aprovou nova redação: liberação com a venda da Cremer e uso do líquido no pré-pagamento das Dívidas Financeiras, ou com a quitação. A Condição Resolutiva de 2,5x deixa de ser gatilho de liberação. A eficácia depende das Condições Suspensiva e Resolutiva (Aprovação IFC até 30/09/2026).",
-     "situacao": "vigente",
-     "fonte": "Doc. 2 (ata de 27/03/2025, item iii); Doc. 9 (quadro 'Garantias Reais')"
-    },
-    {
-     "tipo": "cessão fiduciária",
-     "prestador_ou_objeto": "Recebíveis de boletos da CM Hospitalar S.A. e da Cremer S.A., com conta vinculada cedida fiduciariamente ('Cessão Fiduciária Demais Dívidas').",
-     "condicoes": "Compartilhada com o Contrato IFC e as demais Debêntures em Vigor (exceto VVEO17). Fluxo mínimo mensal de R$ 400 milhões. Recebíveis onerados: o menor entre R$ 1 bilhão menos a Cessão VVEO17 e 29,9% do saldo devedor agregado das demais dívidas.",
-     "situacao": "vigente",
-     "fonte": "Doc. 2 (ata de 27/03/2025, item v); Doc. 9 (definição de Garantias Reais)"
-    }
-   ],
-   "resumo": "Fiança CM Hospitalar e Proinfusion; AF 100% ações Cremer e CF recebíveis, compartilhadas; migração proposta"
-  }
- },
- "garantias_meta": {
-  "lido_em": "2026-11-13",
-  "modelo": "claude-sonnet-5-5",
-  "documentos": [
-   {
-    "data": "2025-03-27",
-    "tipo": "ata_agd",
-    "assunto": "a celebraça ó de aditamentó a s escrituras de emissa ó de CMPH14, VVEO15, VVEO16, VVEO17 e CREM17||a órientaça ó de vótó da Cómpanhia para óutórga de garantia fidejussó ria, sób a fórma de fiança, pela PróInfusión S.A., inscrita nó CNPJ sób ó nº 07.028.603/0001-40 (\"PróInfusión\" e \"Fiança\")||a óutór",
-    "protocolo": "025682IPE270320250104574314-20",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1352986&numSequencia=877712&numVersao=1",
-    "explicito": true
-   }
-  ],
-  "cnpj_documental": "12420164000157",
-  "emissora_atual": "VVEO16 e VVEO17: CM Hospitalar S.A. CREM17: Cremer S.A. Está proposta (minuta de aditamento do Doc. 9, ainda sem datas) a incorporação da Cremer pela CM Hospitalar, que passaria a emissora de CREM17 como quirografária, com extinção da Fiança. Não há confirmação de que isso já ocorreu.",
-  "lacunas": "1) Não constam as cláusulas originais de fiança (solidariedade, renúncia ao benefício de ordem, limite) das três séries. 2) As mudanças aprovadas nas AGDs de 08/06/2026 (VVEO16) e 11/06/2026 (VVEO17 e CREM17) dependem da Condição Suspensiva (aprovação das demais debêntures em vigor) e da Aprovação IFC até 30/09/2026, sem confirmação de cumprimento. Até lá, valem as redações anteriores. 3) A minuta de aditamento de CREM17 que extingue a fiança, torna a emissão quirografária e transfere a emissora está em branco ([•]), e não se sabe se a incorporação ocorreu. Seu efeito sobre a alienação fiduciária das ações da Cremer e sobre as cessões não é tratado. 4) Há divergências: a data do aditamento de VVEO16 aparece como 01/09/2023 ou 14/11/2023. Docs. 3 e 5 dizem que a Proinfusion substituiu a Expressa em VVEO16, enquanto o Doc. 7 diz que foi incluída e cita apenas a Cremer como fiadora original. As tabelas do Anexo do Doc. 10 mostram VVEO16 como 'garantia flutuante, Fiança', com aparência de redação desatualizada. 5) O Doc. 10 diz que a cessão de VVEO17 antes da AGD podia ser compartilhada com o IFC e as demais debêntures, enquanto o Doc. 2 a trata como cessão própria, com 67% do saldo. 6) Não consta que a alienação fiduciária das ações da Cremer cubra VVEO17 (o Doc. 2 não a lista). 7) A espécie de CREM17 aparece como 'quirografária' nos Docs. 6 e 7 e como 'garantia real' nos Docs. 9 e 11. Adotou-se garantia real, por ser posterior e coerente com a ata de 27/03/2025. 8) A tabela do Doc. 3 com valor total de R$ 800 mi e vencimento 10/06/2027 não pôde ser atribuída a nenhuma das séries."
  }
 }
