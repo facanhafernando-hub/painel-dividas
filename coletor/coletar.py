@@ -29,6 +29,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 import unicodedata
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -367,6 +368,216 @@ def coletar_anbima(d: date) -> dict[str, dict]:
     return r
 
 
+# ----------------------------------------------------------------------------- SND (debentures.com.br)
+
+SND_BASE = "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/"
+
+
+def _snd_tsv(url: str, marcador: str) -> tuple[list[str], list[list[str]]]:
+    raw = http(url, tentativas=3, timeout=120)
+    if not raw:
+        return [], []
+    linhas = raw.decode("latin-1", errors="replace").replace("\r", "").split("\n")
+    i = next((k for k, l in enumerate(linhas[:30]) if l.startswith(marcador)), None)
+    if i is None:
+        log(f"  SND: cabeçalho '{marcador}' não encontrado em {url}")
+        return [], []
+    cab = [c.strip() for c in linhas[i].split("\t")]
+    rows = [[c.strip() for c in l.split("\t")] for l in linhas[i + 1:] if l.count("\t") > 3]
+    return cab, rows
+
+
+def coletar_snd_cadastro() -> dict[str, dict]:
+    """Características de todas as debêntures registradas no SND (vencimento, remuneração...)."""
+    cab, rows = _snd_tsv(SND_BASE + "caracteristicas_e.asp?tip_deb=publicas&selecao=", "Codigo do Ativo")
+    if not rows:
+        return {}
+    ix = {norm(c): k for k, c in enumerate(cab)}
+
+    def g(r, nome):
+        k = ix.get(norm(nome))
+        return r[k] if k is not None and k < len(r) else ""
+
+    out = {}
+    for r in rows:
+        cod = g(r, "Codigo do Ativo").upper()
+        if not cod or g(r, "Situacao") != "Registrado":
+            continue
+        qm = num(g(r, "Quantidade em Mercado")) or 0
+        venc = g(r, "Data de Saida / Novo Vencimento") or g(r, "Data de Vencimento")
+        out[cod] = {
+            "empresa": g(r, "Empresa"), "serie": g(r, "Serie"), "emissao": g(r, "Emissao").lstrip("0"),
+            "isin": g(r, "ISIN"), "dt_emissao": g(r, "Data de Emissao"), "venc": venc,
+            "garantia": g(r, "Garantia/Especie"), "qtd_emitida": num(g(r, "Quantidade Emitida")),
+            "qtd_mercado": qm, "vne": num(g(r, "Valor Nominal na Emissao")),
+            "indice": g(r, "indice"), "mult": num(g(r, "Percentual Multiplicador/Rentabilidade")),
+            "taxa": num(g(r, "Juros Criterio Novo - Taxa")),
+            "amort": g(r, "Tipo de Amortizacao") not in ("", "-"),
+            "incentivada": g(r, "Deb. Incent. (Lei 12.431)") == "S",
+            "resgate_antecipado": g(r, "Resgate Antecipado") == "S",
+            "cnpj": g(r, "CNPJ"), "fiduciario": g(r, "Agente Fiduciario"),
+        }
+    log(f"  SND cadastro: {len(out)} debêntures registradas")
+    return out
+
+
+def coletar_snd_pu(d: date) -> dict[str, dict]:
+    """PU de curva (valor nominal atualizado + juros) de todas as debêntures na data."""
+    ds = urllib.parse.quote(d.strftime("%d/%m/%Y"))
+    cab, rows = _snd_tsv(SND_BASE + f"puhistorico_e.asp?op_exc=False&ativo=&dt_ini={ds}&dt_fim={ds}",
+                         "Data do PU")
+    out = {}
+    for r in rows:
+        if len(r) < 6:
+            continue
+        pu = num(r[5])
+        if pu:
+            out[r[1].upper()] = {"vna": num(r[2]), "juros": num(r[3]), "pu_par": pu}
+    log(f"  SND PU de curva: {len(out)} debêntures")
+    return out
+
+
+# ----------------------------------------------------------------------------- ANBIMA CRI/CRA
+
+ANBIMA_CRICRA_URL = ("https://www.anbima.com.br/pt_br/anbima/TaxasCriCraExport/exportarCSV"
+                     "?filtroTermo=&filtroData={d}")
+
+
+def coletar_anbima_cricra(d: date) -> dict[str, dict]:
+    raw = http(ANBIMA_CRICRA_URL.format(d=urllib.parse.quote(d.strftime("%d/%m/%Y"))),
+               tentativas=3, timeout=60)
+    if not raw or len(raw) < 200:
+        return {}
+    try:
+        txt = raw.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        txt = raw.decode("latin-1")
+    ls = [l for l in txt.replace("\r", "").split("\n") if l.strip()]
+    i = next((k for k, l in enumerate(ls[:5]) if "digo" in l and ";" in l), None)
+    if i is None:
+        return {}
+    cab = [norm(c) for c in ls[i].split(";")]
+
+    def col(*nomes):
+        for n in nomes:
+            for k, c in enumerate(cab):
+                if c == n or (len(n) > 4 and n in c):
+                    return k
+        return None
+
+    k = {"cod": col("codigo"), "dev": col("riscodecredito"), "sec": col("emissor"),
+         "serie": col("serie"), "emissao": col("emissao"), "venc": col("vencimento"),
+         "idx": col("indicecorrecao"), "txc": col("taxacompra"), "txv": col("taxavenda"),
+         "tx": col("taxaindicativa"), "pu": col("pu"), "pct": col("pupar"), "dur": col("duration")}
+    out = {}
+    for l in ls[i + 1:]:
+        p = [x.strip() for x in l.split(";")]
+
+        def g(n):
+            j = k.get(n)
+            return p[j] if j is not None and j < len(p) else ""
+
+        cod = g("cod").upper()
+        if not cod:
+            continue
+        pu, pct = num(g("pu")), num(g("pct"))
+        out[cod] = {
+            "devedor": g("dev"), "securitizadora": g("sec"), "serie": g("serie"),
+            "emissao": g("emissao"), "vencimento": g("venc"), "indice": g("idx"),
+            "tx_compra": num(g("txc")), "tx_venda": num(g("txv")), "tx_ind": num(g("tx")),
+            "pu": pu, "pct_par": pct, "duration": num(g("dur")),
+            "pu_par": round(pu / (pct / 100), 6) if pu and pct else None,
+        }
+    log(f"  ANBIMA CRI/CRA: {len(out)} certificados")
+    return out
+
+
+# ----------------------------------------------------------------------------- yield implícito
+
+def base_indexador(txt: str | None, mult: float | None = None) -> str | None:
+    """'DI+' (spread), 'IPCA+', 'IGPM+', 'PRE', '%DI' a partir do texto do indexador."""
+    t = norm(txt or "")
+    if not t:
+        return None
+    if "doDI".lower() in t or (t.startswith("di") and mult not in (None, 100.0)):
+        return "%DI"
+    if t.startswith("di") or "cdi" in t:
+        return "DI+"
+    if "ipca" in t:
+        return "IPCA+"
+    if "igp" in t:
+        return "IGPM+"
+    if "pre" in t:
+        return "PRE"
+    return None
+
+
+def taxa_do_texto(txt: str | None) -> float | None:
+    m = re.search(r"\+\s*([\d.,]+)\s*%", txt or "")
+    return num(m.group(1)) if m else None
+
+
+def du_ate(venc: str | None, d: date) -> int | None:
+    try:
+        v = datetime.strptime(venc, "%d/%m/%Y").date()
+    except (TypeError, ValueError):
+        return None
+    dias = (v - d).days
+    return max(int(dias * 252 / 365), 1) if dias > 0 else None
+
+
+def duration_estimada(du: int, taxa_total: float) -> float:
+    """Macaulay de um título com cupom = taxa, sem amortização (aproximação), em dias úteis."""
+    T, y = du / 252, max(taxa_total, 0.01)
+    return ((1 + y) / y * (1 - (1 + y) ** -T)) * 252
+
+
+def yield_implicito(pu_neg, pu_ref, y_ref_pct, dur_du):
+    """(1+y) = (1+y_ref) * (PU_ref/PU_neg)^(252/duration)."""
+    if not (pu_neg and pu_ref and dur_du and y_ref_pct is not None) or dur_du < 5:
+        return None
+    try:
+        return round(((1 + y_ref_pct / 100) * (pu_ref / pu_neg) ** (252 / dur_du) - 1) * 100, 2)
+    except (OverflowError, ZeroDivisionError):
+        return None
+
+
+CDI_APROX = 0.14  # só para estimar duration de papéis DI+ sem duration ANBIMA
+
+
+def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict | None,
+                           snd: dict | None, curva: dict | None) -> dict:
+    """% do par e yield implícito (HTM) do PU negociado."""
+    pmed = (neg or {}).get("pu_med")
+    pu_par = (curva or {}).get("pu_par") or (anb or {}).get("pu_par")
+    fonte_par = "SND" if (curva or {}).get("pu_par") else ("ANBIMA" if (anb or {}).get("pu_par") else None)
+    out = {"pu_par": pu_par, "fonte_par": fonte_par, "pct_par_neg": None, "y": None,
+           "y_base": None, "y_est": False}
+    if pmed and pu_par:
+        out["pct_par_neg"] = round(pmed / pu_par * 100, 2)
+    if not pmed:
+        return out
+    pct = out["pct_par_neg"]
+    if pct is not None and not (70 <= pct <= 130):
+        return out  # fora dessa faixa o yield não diz nada (recuperação, não carrego)
+    # 1) referência ANBIMA: taxa indicativa + PU + duration
+    if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration"):
+        base = base_indexador(anb.get("indice"))
+        if base and base != "%DI":
+            out.update(y=yield_implicito(pmed, anb["pu"], anb["tx_ind"], anb["duration"]), y_base=base)
+            return out
+    # 2) referência contratual: no par, o papel rende o próprio cupom (estimativa)
+    if snd and pu_par:
+        base = base_indexador(snd.get("indice"), snd.get("mult"))
+        if base and base != "%DI" and snd.get("taxa") is not None:
+            du = du_ate(snd.get("venc"), d)
+            if du:
+                total = (snd["taxa"] / 100) + (CDI_APROX if base == "DI+" else 0.05 if base != "PRE" else 0)
+                dur = duration_estimada(du, total) * (0.6 if snd.get("amort") else 1.0)
+                out.update(y=yield_implicito(pmed, pu_par, snd["taxa"], dur), y_base=base, y_est=True)
+    return out
+
+
 # ----------------------------------------------------------------------------- séries e alertas
 
 def carregar_serie(cod: str) -> list[list]:
@@ -379,8 +590,8 @@ def carregar_serie(cod: str) -> list[list]:
     return []
 
 
-# ponto da série: [data, pu_med, qtd, volume, n_neg, pu_anbima, tx_ind, pct_par]
-def atualizar_serie(cod: str, d: str, neg: dict | None, anb: dict | None) -> list[list]:
+# ponto: [data, pu_med, qtd, volume, n_neg, pu_anbima, tx_ind, pct_par_anbima, pu_par, pct_par_neg, y]
+def atualizar_serie(cod: str, d: str, neg: dict | None, anb: dict | None, py: dict) -> list[list]:
     pts = [p for p in carregar_serie(cod) if p[0] != d]
     pts.append([
         d,
@@ -391,6 +602,7 @@ def atualizar_serie(cod: str, d: str, neg: dict | None, anb: dict | None) -> lis
         anb.get("pu") if anb else None,
         anb.get("tx_ind") if anb else None,
         anb.get("pct_par") if anb else None,
+        py.get("pu_par"), py.get("pct_par_neg"), py.get("y"),
     ])
     pts.sort(key=lambda p: p[0])
     pts = pts[-SERIE_MAX_PONTOS:]
@@ -398,16 +610,15 @@ def atualizar_serie(cod: str, d: str, neg: dict | None, anb: dict | None) -> lis
     return pts
 
 
-def alertas(neg: dict | None, anb: dict | None, serie: list[list], ds: str) -> list[str]:
+def alertas(neg: dict | None, anb: dict | None, py: dict, serie: list[list], ds: str) -> list[str]:
     out = []
     if anb and anb.get("categoria") and "VENCID" in anb["categoria"]:
         out.append("vencida_antecipadamente")
-    pu_par = anb.get("pu_par") if anb else None
-    pmed = neg.get("pu_med") if neg else None
-    if pmed and pu_par and pmed / pu_par * 100 < ALERTA_PCT_PAR:
+    if py.get("pct_par_neg") is not None and py["pct_par_neg"] < ALERTA_PCT_PAR:
         out.append("negociado_abaixo_par")
     elif anb and anb.get("pct_par") is not None and anb["pct_par"] < ALERTA_PCT_PAR:
         out.append("indicativo_abaixo_par")
+    pmed = neg.get("pu_med") if neg else None
     if pmed and anb and anb.get("pu"):
         if abs(pmed / anb["pu"] - 1) * 100 > ALERTA_DESVIO_ANBIMA:
             out.append("desvio_anbima")
@@ -421,56 +632,95 @@ def alertas(neg: dict | None, anb: dict | None, serie: list[list], ds: str) -> l
     return out
 
 
+# ----------------------------------------------------------------------------- empresas
+
+SUFIXOS = re.compile(r"\b(S\.?\s?/?A\.?|LTDA\.?|CIA\.?|COMPANHIA|EM RECUPERACAO JUDICIAL|- EM RECUPERACAO JUDICIAL)\b")
+
+
+def chave_empresa(nome: str | None) -> str:
+    s = unicodedata.normalize("NFKD", (nome or "").upper()).encode("ascii", "ignore").decode()
+    s = SUFIXOS.sub(" ", s)
+    s = re.sub(r"[^A-Z0-9 ]", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def empresa_do_ativo(t, cod, neg, anb_cc, snd, anb_deb) -> tuple[str | None, str | None]:
+    """(empresa devedora, securitizadora). CRI/CRA: devedor vem da ANBIMA quando há."""
+    if t in ("CRI", "CRA"):
+        sec = (neg or {}).get("emissor") or (anb_cc or {}).get("securitizadora")
+        dev = (anb_cc or {}).get("devedor")
+        return (dev or sec), sec
+    return ((snd or {}).get("empresa") or (neg or {}).get("emissor") or (anb_deb or {}).get("nome")), None
+
+
 # ----------------------------------------------------------------------------- orquestração
+
+_CACHE: dict = {}
+
+
+def snd_cadastro() -> dict:
+    if "snd" not in _CACHE:
+        _CACHE["snd"] = coletar_snd_cadastro()
+    return _CACHE["snd"]
+
 
 def processar(d: date, forcar: bool = False) -> bool:
     ds = d.isoformat()
     destino = DADOS / "daily" / f"{ds}.json"
     log(f"Data {ds}")
     if destino.exists() and not forcar:
-        f = json.loads(destino.read_text(encoding="utf-8"))["fontes"]
-        # completo = tem B3 e (tem ANBIMA ou a ANBIMA já não guarda mais essa data)
+        antigo = json.loads(destino.read_text(encoding="utf-8"))
+        f = antigo["fontes"]
+        # completo = tem B3, SND e (ANBIMA ou a ANBIMA já não guarda mais essa data)
         recente = (datetime.now(BRT).date() - d).days <= 4
-        if f.get("b3") and (f.get("anbima") or not recente):
+        if f.get("b3") and f.get("snd_pu") and (f.get("anbima") or not recente):
             log("  já completo; pulando")
             return False
     neg = coletar_b3(d)
     if neg is None:
         return False
     anb = coletar_anbima(d)
-    if not neg and not anb:
+    anb_cc = coletar_anbima_cricra(d)
+    curva = coletar_snd_pu(d)
+    snd = snd_cadastro()
+    if not neg and not anb and not anb_cc:
         log("  sem dados (feriado, fim de semana ou ainda não publicado)")
         return False
     if destino.exists() and not forcar:
-        antigo = json.loads(destino.read_text(encoding="utf-8"))
-        # não regredir: se uma fonte falhou agora mas existia antes, mantém o anterior
-        if (not neg and antigo["fontes"]["b3"]) or (not anb and antigo["fontes"]["anbima"]):
+        f = json.loads(destino.read_text(encoding="utf-8"))["fontes"]
+        if (not neg and f.get("b3")) or (not anb and f.get("anbima")):
             log("  uma fonte veio vazia e o arquivo existente é mais completo; mantendo")
             return False
 
     ativos = []
-    for cod in sorted(set(neg) | set(anb)):
-        n, a = neg.get(cod), anb.get(cod)
-        serie = atualizar_serie(cod, ds, n, a)
+    for cod in sorted(set(neg) | set(anb) | set(anb_cc)):
+        n, a_deb, a_cc = neg.get(cod), anb.get(cod), anb_cc.get(cod)
+        t = (n or {}).get("tipo") or ("DEB" if a_deb else ("CRA" if cod.startswith("CRA") else "CRI") if a_cc else None)
+        a = a_deb or a_cc  # referência ANBIMA (mesmos campos-chave)
+        s = snd.get(cod) if t == "DEB" else None
+        cv = curva.get(cod) if t == "DEB" else None
+        py = calcular_preco_e_yield(t, d, n, a, s, cv)
+        serie = atualizar_serie(cod, ds, n, a, py)
+        emp, sec = empresa_do_ativo(t, cod, n, a_cc, s, a_deb)
         reg = {
-            "c": cod,
-            "t": (n or {}).get("tipo") or ("DEB" if a else None),
-            "e": (n or {}).get("emissor") or (a or {}).get("nome"),
-            "i": (n or {}).get("isin"),
+            "c": cod, "t": t, "e": emp, "s": sec,
+            "i": (n or {}).get("isin") or (s or {}).get("isin"),
             "n": {k: n[k] for k in ("qtd", "volume", "n_neg", "pu_min", "pu_med", "pu_max",
                                     "pu_ult", "pu_ref", "oscilacao", "vol_extragrupo",
                                     "vol_intragrupo")} if n else None,
             "a": {k: a.get(k) for k in ("vencimento", "indice", "tx_compra", "tx_venda",
                                         "tx_ind", "int_min", "int_max", "pu", "pct_par",
                                         "pu_par", "duration", "categoria")} if a else None,
+            "p": py,
         }
-        reg["al"] = alertas(n, a, serie, ds)
+        reg["al"] = alertas(n, a, py, serie, ds)
         ativos.append(reg)
 
     escrever_json(destino, {
         "data": ds,
         "gerado_em": datetime.now(BRT).isoformat(timespec="seconds"),
-        "fontes": {"b3": len(neg), "anbima": len(anb)},
+        "fontes": {"b3": len(neg), "anbima": len(anb), "anbima_cricra": len(anb_cc),
+                   "snd_pu": len(curva)},
         "ativos": ativos,
     })
     atualizar_indice()
@@ -485,6 +735,68 @@ def atualizar_indice() -> None:
         "datas": datas,
         "atualizado_em": datetime.now(BRT).isoformat(timespec="seconds"),
     })
+
+
+def construir_catalogo() -> None:
+    """Universo por empresa: todas as debêntures em mercado (SND) + CRI/CRA vistos,
+    com a foto de mercado mais recente de cada título."""
+    datas = sorted((p.stem for p in (DADOS / "daily").glob("*.json")))
+    if not datas:
+        return
+    ult = json.loads((DADOS / "daily" / f"{datas[-1]}.json").read_text(encoding="utf-8"))
+    hoje = {a["c"]: a for a in ult["ativos"]}
+    snd = snd_cadastro()
+    # último negócio de cada título nos últimos 30 pregões
+    ultimo_neg: dict[str, tuple] = {}
+    info: dict[str, dict] = {}
+    for ds in datas[-30:]:
+        for a in json.loads((DADOS / "daily" / f"{ds}.json").read_text(encoding="utf-8"))["ativos"]:
+            info[a["c"]] = a
+            if a.get("n"):
+                ultimo_neg[a["c"]] = (ds, a["n"].get("pu_med"), a["n"].get("volume"),
+                                      (a.get("p") or {}).get("pct_par_neg"), (a.get("p") or {}).get("y"),
+                                      (a.get("p") or {}).get("y_base"), (a.get("p") or {}).get("y_est"))
+    cods = {c for c, s in snd.items() if (s.get("qtd_mercado") or 0) > 0} | set(info)
+    itens = []
+    for c in sorted(cods):
+        s, a = snd.get(c), info.get(c) or {}
+        h = hoje.get(c) or {}
+        t = a.get("t") or ("DEB" if s else None)
+        if t not in TIPOS_INCLUIR:
+            continue
+        anb = (h.get("a") or a.get("a")) or {}
+        un = ultimo_neg.get(c)
+        emp = a.get("e") or (s or {}).get("empresa")
+        idx_txt = anb.get("indice")
+        if not idx_txt and s:
+            base = base_indexador(s.get("indice"), s.get("mult"))
+            if base == "%DI":
+                idx_txt = f"{f2(s.get('mult'))}% do DI"
+            elif base == "PRE":
+                idx_txt = f"{f2(s.get('taxa'))}% a.a."
+            elif base:
+                idx_txt = f"{base[:-1]} + {f2(s.get('taxa'))}%"
+        itens.append({
+            "c": c, "t": t, "e": emp, "k": chave_empresa(emp), "s": a.get("s"),
+            "ven": anb.get("vencimento") or (s or {}).get("venc"),
+            "idx": idx_txt, "gar": (s or {}).get("garantia"), "inc": (s or {}).get("incentivada"),
+            "em": (s or {}).get("emissao"), "se": (s or {}).get("serie"),
+            "qm": (s or {}).get("qtd_mercado"), "vne": (s or {}).get("vne"),
+            "cnpj": (s or {}).get("cnpj"), "ra": (s or {}).get("resgate_antecipado"),
+            "par": (h.get("p") or {}).get("pu_par"),
+            "ud": un[0] if un else None, "up": un[1] if un else None, "uv": un[2] if un else None,
+            "upp": un[3] if un else None, "uy": un[4] if un else None,
+            "uyb": un[5] if un else None, "uye": un[6] if un else None,
+            "vh": (h.get("n") or {}).get("volume"),
+            "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
+            "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
+        })
+    escrever_json(DADOS / "catalogo.json", {"data": datas[-1], "itens": itens})
+    log(f"Catálogo: {len(itens)} títulos, {len({i['k'] for i in itens})} empresas")
+
+
+def f2(v) -> str:
+    return "" if v is None else f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
 def main() -> int:
@@ -506,6 +818,10 @@ def main() -> int:
     # do mais antigo para o mais novo, para os alertas de volume enxergarem o histórico
     ok = [processar(dd, args.forcar) for dd in sorted(datas)]
     log(f"Fim: {sum(ok)}/{len(ok)} datas gravadas")
+    try:
+        construir_catalogo()
+    except Exception as e:  # catálogo nunca derruba a coleta
+        log(f"  erro ao montar catálogo: {type(e).__name__}: {e}")
     return 0
 
 
