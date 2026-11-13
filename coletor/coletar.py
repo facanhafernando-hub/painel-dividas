@@ -1199,6 +1199,26 @@ def devedores_cricra() -> dict:
     return _CACHE["dev"]
 
 
+def garantias_lidas() -> dict:
+    """Garantias por código, lidas nos documentos da CVM (campo "garantias" de docs/data/escrituras/<cnpj>_<em>.json)."""
+    if "gar" in _CACHE:
+        return _CACHE["gar"]
+    out = {}
+    d = DADOS / "escrituras"
+    for p in sorted(d.glob("[0-9]*_*.json")) if d.exists() else []:
+        try:
+            j = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for c, g in (j.get("garantias") or {}).items():
+            gs = g.get("garantias") or []
+            out[c.upper()] = {"res": g.get("resumo"), "esp": g.get("especie"), "n": len(gs), "arq": p.stem,
+                              "tip": sorted({(x.get("tipo") or "outra").split("/")[0].strip().lower() for x in gs
+                                             if (x.get("situacao") or "") != "liberada"})}
+    _CACHE["gar"] = out
+    return out
+
+
 def nomes_empresas() -> dict:
     """Nome curto pelo qual cada empresa é conhecida (docs/data/nomes_empresas.json, gerado por coletor/nomes.py)."""
     if "nomes" not in _CACHE:
@@ -1465,6 +1485,9 @@ def construir_catalogo() -> None:
                     itens[-1]["cnpj"] = dv["cnpj"]
             elif dv.get("tipo") == "pulverizado" and itens[-1]["e"] == itens[-1].get("s"):
                 itens[-1]["pulv"] = True
+        gl = garantias_lidas().get(c.upper())
+        if gl:
+            itens[-1].update(gres=gl["res"], gesp=gl["esp"], gn=gl["n"], gtip=gl["tip"], garq=gl["arq"])
         nm = nomes_empresas().get(itens[-1]["k"])
         if nm:
             itens[-1]["n"] = nm

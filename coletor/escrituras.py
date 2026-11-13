@@ -365,8 +365,41 @@ def params(prompt):
 
 
 def ler_json(txt):
-    m = re.search(r"\{.*\}", txt, re.S)
-    return json.loads(m.group(0)) if m else None
+    """JSON da resposta; se vier truncado ou sem fechar colchetes, corta no último objeto completo e fecha."""
+    i0 = txt.find("{")
+    if i0 < 0:
+        return None
+    t = txt[i0:]
+    m = re.search(r"\{.*\}", t, re.S)
+    if m:
+        try:
+            return json.loads(m.group(0))
+        except Exception:
+            pass
+    pilha, em_str, esc_, ult_ok, pilha_ok = [], False, False, None, None
+    for k, ch in enumerate(t):
+        if em_str:
+            if esc_:
+                esc_ = False
+            elif ch == "\\":
+                esc_ = True
+            elif ch == '"':
+                em_str = False
+            continue
+        if ch == '"':
+            em_str = True
+        elif ch in "{[":
+            pilha.append("}" if ch == "{" else "]")
+        elif ch in "}]":
+            if pilha:
+                pilha.pop()
+            ult_ok, pilha_ok = k, list(pilha)
+    if ult_ok is None:
+        return None
+    try:
+        return json.loads(t[:ult_ok + 1] + "".join(reversed(pilha_ok)))
+    except Exception:
+        return None
 
 
 def custo(uso, modo):
@@ -616,7 +649,7 @@ def ler_garantias(a, idx, idx_p):
     log(f"pedidos: {len(corpo)} | ~{est / 1e6:.2f} MTok | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
     if idx["gasto_usd"] + est_usd > a.limite_usd:
         sys.exit(f"ABORTADO: passaria do teto de US$ {a.limite_usd}")
-    prm = lambda t: {"model": MODELO, "max_tokens": 12000, "system": GARANTIAS, "messages": [{"role": "user", "content": t}]}
+    prm = lambda t: {"model": MODELO, "max_tokens": 24000, "system": GARANTIAS, "messages": [{"role": "user", "content": t}]}
     res = {}
     if modo == "direto":
         for k, g, sel, t in corpo:

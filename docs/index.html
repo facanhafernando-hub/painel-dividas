@@ -157,6 +157,12 @@ const tags = al => (al || []).map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t
 const CR = { va: ["Venc. antecipado", "t-crit", 4], rj: ["RJ", "t-crit", 3], re: ["RE", "t-crit", 2], rp: ["Reperfilada", "t-warn", 1] };
 const crTag = (cr, crr) => cr ? `<span class="tag ${CR[cr][1]}" title="${esc(crr || "")}">${CR[cr][0]}</span>` : "";
 const crGrave = cr => cr === "va" || cr === "rj" || cr === "re";
+// garantias lidas nos documentos: rótulo curto (Fiança + AF + CF) com o resumo no title
+const GAB = { "fiança": "Fiança", "aval": "Aval", "alienação fiduciária": "AF", "cessão fiduciária": "CF", "hipoteca": "Hipoteca",
+  "penhor": "Penhor", "conta vinculada": "Conta vinc.", "fundo de reserva": "Fundo res.", "coobrigação": "Coobrig.", "outra": "Outra" };
+const garCurta = i => i.gn == null ? esc(i.gar || "–")
+  : i.gn === 0 ? `<span title="${esc(i.gres || "")}">Sem garantia</span>`
+  : `<span title="${esc(i.gres || "")}">${esc((i.gtip || []).map(t => GAB[t] || t).join(" + ") || i.gar || "–")}</span>`;
 
 function pctPar(v, extra = "") {
   if (nada(v)) return '<span class="mut">–</span>';
@@ -307,14 +313,14 @@ function tirCr(i) {
 function linhaTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<tr data-i="${n}">
-    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
+    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.leg ? `<div class="sub">${i.t === "DEB" ? "emissora" : "devedora"}: ${esc(i.leg)}${i.legr ? " (" + esc(i.legr) + ")" : ""}</div>` : ""}${i.gn != null || i.gar ? `<div class="sub">garantia: ${garCurta(i)}</div>` : ""}${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
     <td>${esc(i.ven || "–")}</td><td class="l">${esc(i.idx || "–")}</td>
     <td>${i.ud ? dbr(i.ud) : '<span class="mut">sem negócio</span>'}</td>
     <td>${fmt(i.up)}</td>
     <td>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</td>
     <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</td><td>${tirCr(i)}${i.uind ? '<span class="mut" title="no PU indicativo ANBIMA">*</span>' : ""}</td><td>${moicTxt(i.umoic)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
     <td>${i.vh ? mi(i.vh) : '<span class="mut">–</span>'}</td>
-    <td class="l ell">${esc(i.gar || "–")}</td><td class="l">${tagsE(i.al)}</td></tr>`;
+    <td class="l ell">${garCurta(i)}</td><td class="l">${tagsE(i.al)}</td></tr>`;
 }
 function cartaoTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
@@ -421,7 +427,7 @@ async function abrirTitulo(i) {
   const dados = [
     ["PU negociado", fmt(i.up)], ["PU par (curva)", fmt(i.par)], ["Volume hoje", i.vh ? "R$ " + mi(i.vh) : "–"],
     ["Vencimento", esc(i.ven || "–")], ["Remuneração", esc(i.idx || "–")], ["Taxa ANBIMA", taxaAnb(i.ta, i.idx)],
-    ["PU ANBIMA", fmt(i.pa)], ["Duration (d.u.)", fmt(i.du, f0)], ["Garantia", esc(i.gar || "–")],
+    ["PU ANBIMA", fmt(i.pa)], ["Duration (d.u.)", fmt(i.du, f0)], ["Garantia", garCurta(i)],
     ["Emissão / série", i.em ? `${esc(i.em)}ª / ${esc(i.se || "–")}` : "–"], ["Qtd. em mercado", i.qm ? f0.format(i.qm) : "–"],
     ["Incentivada (12.431)", i.inc == null ? "–" : i.inc ? "Sim" : "Não"], ["Resgate antecipado", i.ra == null ? "–" : i.ra ? "Previsto" : "Não"],
     ["Categoria ANBIMA", esc((i.cat || "–").replace(/_/g, " "))],
@@ -437,12 +443,14 @@ async function abrirTitulo(i) {
     `<div class="grade">${dest.map(([l, v]) => `<div class="dest"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      <div class="grade">${dados.filter(([l, v]) => !/^(–|<span class="mut">–<\/span>)$/.test(v)).map(([l, v]) => `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      ${crGrave(i.cr) ? "" : sim}
+     <div id="gars"></div>
      <div id="crono"></div>
      <div id="docs"></div>
      <div class="graf" id="graf"><span class="mut">Carregando histórico…</span></div>`;
   if ((i.up || i.pa) && i.par) ligarSimulador(i);
   carregarCronograma(i);
   carregarDocumentos(i);
+  carregarGarantias(i);
   det.classList.add("aberto"); det.setAttribute("aria-hidden", "false");
   try { desenhar((await getJSON(`data/series/${encodeURIComponent(i.c)}.json`)).p); }
   catch { document.getElementById("graf").innerHTML = '<span class="mut">Sem histórico de negócios ainda.</span>'; }
@@ -466,6 +474,22 @@ function ligarSimulador(i) {
     document.getElementById("sRes").innerHTML = `<div class="sub">MOIC <b style="color:var(--text-primary);font-size:16px">${f2.format(moic)}x</b> · TIR <b style="color:var(--text-primary);font-size:16px">${tir === null ? "–" : f1.format(tir) + "%"}</b> · retorno ${f1.format((moic - 1) * 100)}%</div>`;
   };
   document.getElementById("sRec").oninput = calc; document.getElementById("sAnos").oninput = calc; calc();
+}
+
+async function carregarGarantias(i) {
+  const el = document.getElementById("gars");
+  if (!i.garq) { el.innerHTML = i.gar ? `<h4 style="font-size:13px;margin:14px 0 4px">Garantias</h4><div class="sub">Espécie no SND: ${esc(i.gar)}. Garantias ainda não lidas nos documentos.</div>` : ""; return; }
+  let j; try { j = await getJSON(`data/escrituras/${i.garq}.json`); } catch { el.innerHTML = ""; return; }
+  const g = (j.garantias || {})[i.c] || {};
+  const gm = j.garantias_meta || {};
+  const lst = g.garantias || [];
+  const cor = s => s === "vigente" ? "t-info" : s === "liberada" ? "t-neu" : "t-warn";
+  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Garantias (documentos CVM)</h4>
+    <div class="sub" style="margin-bottom:6px">Espécie: ${esc(g.especie || i.gar || "–")}${gm.emissora_atual ? ` · emissora atual: ${esc(gm.emissora_atual)}` : ""}</div>
+    ${lst.length ? `<div class="card tw"><table><tbody>${lst.map(x => `<tr style="cursor:default"><td class="l" style="white-space:normal;width:28%"><b>${esc(x.tipo || "–")}</b><div><span class="tag ${cor(x.situacao)}">${esc(x.situacao || "?")}</span></div></td>
+      <td class="l" style="white-space:normal">${esc(x.prestador_ou_objeto || "–")}<div class="sub">${esc(x.condicoes || "")}</div>${x.fonte ? `<div class="sub mut">fonte: ${esc(x.fonte)}</div>` : ""}</td></tr>`).join("")}</tbody></table></div>`
+      : `<div class="nota" style="margin:0">Nenhuma garantia nos documentos lidos: ${esc(g.resumo || "quirografária")}.</div>`}
+    ${gm.lacunas ? `<details style="margin-top:6px"><summary class="sub" style="cursor:pointer">Lacunas da leitura</summary><div class="nota">${esc(gm.lacunas)}</div></details>` : ""}`;
 }
 
 async function carregarDocumentos(i) {
