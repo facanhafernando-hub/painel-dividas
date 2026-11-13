@@ -418,6 +418,7 @@ def coletar_snd_cadastro() -> dict[str, dict]:
             "amort_un": g(r, "Amortizacao - Unidade"), "amort_car": g(r, "Amortizacao - Carencia"),
             "juros_cada": g(r, "Juros Criterio Novo - Cada"), "juros_un": g(r, "Juros Criterio Novo - Unidade"),
             "juros_car": g(r, "Juros Criterio Novo - Carencia"),
+            "inicio_rent": g(r, "Data do Inicio da Rentabilidade"),
             "incentivada": g(r, "Deb. Incent. (Lei 12.431)") == "S",
             "resgate_antecipado": g(r, "Resgate Antecipado") == "S",
             "cnpj": g(r, "CNPJ"), "fiduciario": g(r, "Agente Fiduciario"),
@@ -689,14 +690,17 @@ def _datas(primeira: date | None, passo: int | None, venc: date, ref: date) -> l
     return ds
 
 
-def fluxo_caixa(d: date, venc: date, cupom: float, juros_datas: list[date], amort_datas: list[date]):
+def fluxo_caixa(d: date, venc: date, cupom: float, juros_datas: list[date], amort_datas: list[date],
+                inicio: date | None = None):
     """Fluxo por 1 unidade de principal em aberto em d. Juros compostos (base 252 ~ dias corridos/365.25).
     Amortizações futuras dividem o saldo em partes iguais (aproximação do cronograma)."""
     futuras_j = [x for x in juros_datas if x > d]
     passadas_j = [x for x in juros_datas if x <= d]
     futuras_a = [x for x in amort_datas if x > d] or [venc]
     eventos = sorted(set(futuras_j) | set(futuras_a) | {venc})
-    ult = passadas_j[-1] if passadas_j else None
+    # período corrente começa no último pagamento de juros; em carência (nenhum pagamento ainda),
+    # começa no início da rentabilidade: os juros acumulados são pagos na primeira data
+    ult = passadas_j[-1] if passadas_j else (inicio if inicio and inicio < d else None)
     saldo, cf = 1.0, []
     parcela = 1.0 / len(futuras_a)
     anterior = ult or d
@@ -733,14 +737,14 @@ def ytm_pela_razao(cf, cupom: float, pct_par: float) -> float | None:
 
 
 def fluxo_nominal(d: date, venc: date, base: str, c: float, mult: float | None,
-                  juros_datas: list[date], amort_datas: list[date], cv: "Curva"):
+                  juros_datas: list[date], amort_datas: list[date], cv: "Curva", inicio: date | None = None):
     """Fluxo nominal projetado (DI futuro e inflação implícita da curva) por 1 unidade de principal,
     e o fator de desconto contratual de cada data (para escalar até o PU par)."""
     futuras_j = [x for x in juros_datas if x > d]
     passadas_j = [x for x in juros_datas if x <= d]
     futuras_a = [x for x in amort_datas if x > d] or [venc]
     eventos = sorted(set(futuras_j) | set(futuras_a) | {venc})
-    anterior = passadas_j[-1] if passadas_j else d
+    anterior = passadas_j[-1] if passadas_j else (inicio if inicio and inicio < d else d)
     di_curto = cv.pre(0.01)
     m = (mult or 100) / 100
 
@@ -838,12 +842,13 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
             if snd.get("amort"):
                 am = _meses(snd.get("amort_cada"), snd.get("amort_un"))
                 ad = _datas(_data(snd.get("amort_car")), am, venc, d) if am else [venc]
-            cf = fluxo_caixa(d, venc, snd["taxa"] / 100, jd, ad)
+            ini = _data(snd.get("inicio_rent")) or _data(snd.get("dt_emissao"))
+            cf = fluxo_caixa(d, venc, snd["taxa"] / 100, jd, ad, ini)
             y = ytm_pela_razao(cf, snd["taxa"] / 100, pct)
             if y is not None:
                 out.update(y=y, y_base=base, y_met="fluxo")
             if cv:
-                out.update(tir_moic(fluxo_nominal(d, venc, base, snd["taxa"] / 100, snd.get("mult"), jd, ad, cv),
+                out.update(tir_moic(fluxo_nominal(d, venc, base, snd["taxa"] / 100, snd.get("mult"), jd, ad, cv, ini),
                                     pu_par, pmed))
             if y is not None:
                 return out
@@ -855,7 +860,8 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
             if snd.get("amort"):
                 am = _meses(snd.get("amort_cada"), snd.get("amort_un"))
                 ad = _datas(_data(snd.get("amort_car")), am, venc, d) if am else [venc]
-            out.update(tir_moic(fluxo_nominal(d, venc, "%DI", 0.0, snd.get("mult"), jd, ad, cv), pu_par, pmed),
+            ini = _data(snd.get("inicio_rent")) or _data(snd.get("dt_emissao"))
+            out.update(tir_moic(fluxo_nominal(d, venc, "%DI", 0.0, snd.get("mult"), jd, ad, cv, ini), pu_par, pmed),
                        y_base="%DI")
             return out
     # 2) referência ANBIMA (taxa indicativa + PU + duration), boa perto do par
