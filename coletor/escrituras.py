@@ -408,7 +408,7 @@ def classificar(forcar=False):
     for p in arqs:
         j = json.load(open(p))
         cods = [s.get("codigo") for s in j.get("series", []) if s.get("codigo")]
-        if not cods or (j.get("eventos") and not forcar):
+        if not cods or (all(c in (j.get("eventos") or {}) for c in cods) and not forcar):
             continue
         fila.append((p, j, cods))
     gasto = 0.0
@@ -418,7 +418,7 @@ def classificar(forcar=False):
         out, c = {}, 0.0
         for _ in range(2):
             try:
-                r = json.loads(api("/v1/messages", {"model": "claude-haiku-5-5", "max_tokens": 1000, "system": CLASSIFICA,
+                r = json.loads(api("/v1/messages", {"model": "claude-haiku-5-5", "max_tokens": 1500, "system": CLASSIFICA,
                                                     "messages": [{"role": "user", "content": txt}]}))
                 u = r.get("usage", {})
                 c += (u.get("input_tokens", 0) * 0.10 + u.get("output_tokens", 0) * 0.50) / 1e6
