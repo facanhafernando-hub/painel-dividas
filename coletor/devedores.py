@@ -82,12 +82,14 @@ def nomes_cnpj(cnpjs, cache):
     faltam = [c for c in cnpjs if c not in cache]
     log(f"CNPJs sem nome após SND/CVM: {len(faltam)} (consultando BrasilAPI)")
     for n, c in enumerate(faltam):
-        try:
-            j = json.loads(get(f"https://brasilapi.com.br/api/cnpj/v1/{c}", timeout=30, tentativas=2))
-            if j.get("razao_social"):
-                cache[c] = j["razao_social"]
-        except Exception:
-            pass
+        for u in (f"https://brasilapi.com.br/api/cnpj/v1/{c}", f"https://minhareceita.org/{c}"):
+            try:
+                j = json.loads(get(u, timeout=30, tentativas=2))
+                if j.get("razao_social"):
+                    cache[c] = j["razao_social"]
+                    break
+            except Exception:
+                pass
         time.sleep(0.6)
         if n and n % 50 == 0:
             log(f"  {n}/{len(faltam)}")

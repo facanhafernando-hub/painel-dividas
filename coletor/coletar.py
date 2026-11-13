@@ -1459,7 +1459,7 @@ def construir_catalogo() -> None:
                 itens[-1]["dvf"] = "ANBIMA"
             elif dv.get("tipo") in ("devedor", "cedente") and dv.get("nome"):
                 itens[-1].update(dvf="CVM", dvp=dv.get("pct"), dvt=dv["tipo"])
-            elif dv.get("tipo") == "pulverizado":
+            elif dv.get("tipo") == "pulverizado" and itens[-1]["e"] == itens[-1].get("s"):
                 itens[-1]["pulv"] = True
         nm = nomes_empresas().get(itens[-1]["k"])
         if nm:
