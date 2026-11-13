@@ -1096,34 +1096,9 @@
    "status": "ok",
    "assinatura": "34cf58517f3f",
    "bate_snd": false
-  },
-  "05197443000138_6": {
-   "codigos": [
-    "BCBF16"
-   ],
-   "status": "ok",
-   "assinatura": "c7ac8b7711dd",
-   "bate_snd": true
-  },
-  "52548435000179_3": {
-   "codigos": [
-    "JSMLA5",
-    "JSMLB5"
-   ],
-   "status": "ok",
-   "assinatura": "0ad98c8b3745",
-   "bate_snd": true
-  },
-  "82641325000118_7": {
-   "codigos": [
-    "CREM17"
-   ],
-   "status": "ok",
-   "assinatura": "d96a925a75e4",
-   "bate_snd": true
   }
  },
- "gasto_usd": 18.0479,
+ "gasto_usd": 18.2994,
  "garantias": {
   "12528708000107_2": {
    "status": "ok",
@@ -1531,7 +1506,7 @@
   },
   "82641325000118_7": {
    "status": "ok",
-   "assinatura": "4736c33c3058",
+   "assinatura": "d96a925a75e4",
    "codigos": [
     "CREM17"
    ]

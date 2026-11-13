@@ -111,5 +111,49 @@
    "data": null,
    "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação. O Segundo Aditamento apenas migra a emissora para a Hapvida, que a sucede nas obrigações."
   }
+ },
+ "garantias": {
+  "BCBF16": {
+   "codigo": "BCBF16",
+   "emissao": 6,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Notre Dame Intermédica Saúde S.A. (CNPJ 44.649.812/0001-38)",
+     "condicoes": "Solidária, como fiadora e principal pagadora das Obrigações Garantidas (valor nominal, remuneração, multa e encargos moratórios, despesas acessórias). Renúncia aos benefícios de ordem e de exoneração (CC arts. 333, par. único, 364, 366, 368, 821, 824, 827, 834 a 839; CPC arts. 130 e 794). Irrevogável e irretratável; pagamento em até 2 Dias Úteis após notificação do Agente Fiduciário; livre de tributos. Sem limite de valor. A Fiadora só pode cobrar a Emissora depois que os Debenturistas receberem tudo. Evento de vencimento antecipado em caso de questionamento judicial da Fiança não substituída em 20 dias.",
+     "situacao": "vigente",
+     "fonte": "Escritura (Doc. 1), cláusulas 6.9 e 6.10; Segundo Aditamento (Doc. 2), que mantém a Notre Dame Intermédica Saúde S.A. como fiadora e partes do aditamento"
+    }
+   ],
+   "resumo": "Fiança da Notre Dame Intermédica Saúde (solidária, principal pagadora, sem benefício de ordem)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-10-08",
+    "tipo": "escritura",
+    "assunto": "Escritura da 6ª Emissão de Debenture",
+    "protocolo": "024775IPE071020210104447712-62",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=906851&numSequencia=431585&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-04-28",
+    "tipo": "escritura",
+    "assunto": "BCBF 16 - Migração para HAPV",
+    "protocolo": "024775IPE200420230104504410-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1092999&numSequencia=617728&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "cnpj_documental": "19276528000116",
+  "emissora_atual": "Hapvida Participações e Investimentos S.A. (CNPJ 05.197.443/0001-38), sucessora da BCBF Participações S.A. por cessão aprovada em AGD de 20/03/2023 e formalizada no Segundo Aditamento de 20/04/2023",
+  "lacunas": "O Segundo Aditamento aparece em trechos parciais; não consta cláusula expressa de manutenção da fiança, mas a Notre Dame Intermédica Saúde S.A. figura como fiadora e parte do aditamento, e os trechos mostrados não alteram a Cláusula 6.10. O Primeiro Aditamento (citado como celebrado em 'outubro de 2023', provável erro de OCR para 2021) não foi fornecido; seu conteúdo é desconhecido. Não há informação sobre eventual inclusão da Hapvida Participações como fiadora adicional (prevista na definição de Incorporação Permitida) nem sobre liberação da fiança."
  }
 }

@@ -209,5 +209,124 @@
    "data": "2026-06-11",
    "resumo": "AGD aprovou repactuação (vencimento, amortização, remuneração), ainda sem eficácia: depende de aditamento e condições. Waiver temporário de covenant."
   }
+ },
+ "garantias": {
+  "CREM17": {
+   "codigo": "CREM17",
+   "emissao": 7,
+   "especie": "com garantia real, com garantia adicional fidejussória (conforme as AGDs de 11/06/2026). A escritura original era quirografária com fiança, e a minuta de aditamento prevê voltar a quirografária sem fiança após a incorporação.",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "CM Hospitalar S.A. (CNPJ 12.420.164/0001-57), fiadora na Escritura de 23/02/2024",
+     "condicoes": "Os trechos não detalham as condições (solidariedade, renúncia ao benefício de ordem, limite). A minuta de aditamento sujeita à Incorporação Autorizada extingue a Fiança e a Cláusula 4.22 da Escritura (cláusula 2.3 da minuta).",
+     "situacao": "vigente; extinção proposta, sob condição (minuta de aditamento com campos em branco)",
+     "fonte": "Doc. 6 (ata AGD CREM17, 11/06/2026): qualificação da Escritura e minuta de aditamento, cl. 2.3"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Proinfusion S.A.",
+     "condicoes": "Incluída como fiadora no aditamento de 15/04/2025. Os trechos não detalham as condições. A minuta de aditamento extingue a Fiança como um todo, o que alcançaria também esta fiadora.",
+     "situacao": "vigente; extinção proposta, sob condição",
+     "fonte": "Doc. 6 (qualificação da Escritura, aditada em 15/04/2025; minuta de aditamento, cl. 2.3)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "100% das ações ordinárias de emissão da Cremer S.A. de titularidade da CM Hospitalar S.A., mais novas ações, frutos, rendimentos, dividendos e demais direitos sobre elas (Cláusula 4.23.1(ii))",
+     "condicoes": "Constituída pelo 'Instrumento Particular de Alienação Fiduciária de Ações em Garantia e Outras Avenças' de 15/04/2025. As partes são CM Hospitalar S.A., Banco Santander (Brasil) S.A., International Finance Corporation – IFC e Pentágono S.A. DTVM, com anuência da Cremer. A garantia é compartilhada com Santander e IFC. Regra antes da AGD: liberação total se a Cremer for alienada (parcial se a alienação for parcial), se o Índice Financeiro ficar abaixo de 2,5x (Condição Resolutiva) ou se houver cumprimento integral das obrigações. Regra aprovada na AGD: liberação total se a Cremer for alienada e os recursos líquidos forem integralmente usados no pré-pagamento das Dívidas Financeiras (parcial se a alienação for parcial) ou se houver quitação integral. A gatilho do Índice Financeiro < 2,5x sai. Garantias Adicionais válidas até o integral cumprimento das obrigações (Cl. 4.23.3).",
+     "situacao": "vigente. As alterações aprovadas em 11/06/2026 dependem das Condições Suspensiva (aprovação das demais Debêntures em Vigor) e Resolutiva (aprovação do IFC e aditamento do contrato de alienação fiduciária, com protocolo em cartório, até 30/09/2026).",
+     "fonte": "Doc. 6 (ata AGD CREM17 de 11/06/2026, quadro 'Garantias Reais', Cl. 4.23.1 e 4.23.3)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Não identificado nos trechos desta emissão. O Doc. 6 define as 'Garantias Reais' como Alienação Fiduciária em conjunto com a Cessão Fiduciária e cita os 'Contratos de Garantia Real'.",
+     "condicoes": "O objeto e os termos da cessão fiduciária de CREM17 não aparecem nos trechos. A descrição detalhada de cessão fiduciária de recebíveis e contas vinculadas (Doc. 7) refere-se à 7ª emissão da CM Hospitalar (VVEO17), série distinta, e não foi atribuída a CREM17.",
+     "situacao": "desconhecida",
+     "fonte": "Doc. 6 (definição de 'Garantias Reais' e 'Contratos de Garantia Real')"
+    }
+   ],
+   "resumo": "AF de 100% das ações da Cremer (CM Hospitalar) e fiança de CM Hospitalar/Proinfusion; fiança a extinguir na incorporação"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-12-05",
+    "tipo": "proposta_agd",
+    "assunto": "",
+    "protocolo": "025682IPE261220240104563105-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1311601&numSequencia=836327&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "comunicado",
+    "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE130520260105651273-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260108581623-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260196876480-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE080620260135810552-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260143830448-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260114936476-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE110620260158538370-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": "12420164000157",
+  "emissora_atual": "Cremer S.A. Está prevista a sucessão por CM Hospitalar S.A. após a 'Incorporação Autorizada' da Cremer, que consta apenas da minuta de aditamento com campos em branco; a efetivação não está confirmada. Se ocorrer, a Escritura passa a ser da CM Hospitalar S.A., na espécie quirografária, sem fiança.",
+  "lacunas": "1) Os trechos não trazem a escritura original da 7ª emissão da Cremer nem o aditamento de 15/04/2025, o que impede confirmar cláusulas, condições e percentuais da fiança. 2) A espécie é inconsistente entre os documentos: as ATAs de 2026 da 5ª e 6ª emissões citam CREM17 como 'quirografária', enquanto a ata de 11/06/2026 e o comunicado a citam como 'com garantia real, com garantia adicional fidejussória'. 3) Não há objeto nem termos da cessão fiduciária de CREM17. 4) O trecho do Doc. 6 que descreve o evento societário da incorporação está cortado, então a direção da incorporação (CM Hospitalar incorporando a Cremer) é inferida da minuta. Não foi possível determinar o destino da alienação fiduciária das ações da Cremer após a incorporação. 5) A eficácia das alterações é condicionada à conclusão das aprovações das demais Debêntures em Vigor e à aprovação do IFC até 30/09/2026. Os trechos não confirmam o cumprimento dessas condições. 6) Os Docs. 1 a 5 e 7 tratam de outras séries (CM Hospitalar 5ª, 6ª e 7ª) e só servem de contexto."
  }
 }
