@@ -4876,7 +4876,8 @@
  },
  "MARFRIG GLOBAL FOODS": {
   "nome": "MBRF",
-  "razao": "MBRF Global Foods Company S.A. (antiga Marfrig Global Foods)",
+  "razao": "MARFRIG GLOBAL FOODS S.A.",
+  "razao_exibir": "MBRF Global Foods Company S.A. (antiga Marfrig)",
   "fonte": "manual"
  },
  "MARGEM DE MINERACAO": {

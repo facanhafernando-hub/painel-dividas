@@ -1224,9 +1224,11 @@ def nomes_empresas() -> dict:
     if "nomes" not in _CACHE:
         p = DADOS / "nomes_empresas.json"
         try:
-            _CACHE["nomes"] = {k: v["nome"] for k, v in json.loads(p.read_text(encoding="utf-8")).items() if v.get("nome")}
+            raw = json.loads(p.read_text(encoding="utf-8"))
+            _CACHE["nomes"] = {k: v["nome"] for k, v in raw.items() if v.get("nome")}
+            _CACHE["razao_exibir"] = {k: v["razao_exibir"] for k, v in raw.items() if v.get("razao_exibir")}
         except Exception:
-            _CACHE["nomes"] = {}
+            _CACHE["nomes"], _CACHE["razao_exibir"] = {}, {}
     return _CACHE["nomes"]
 
 
@@ -1543,6 +1545,11 @@ def construir_catalogo() -> None:
                 it["legr"] = g.get("relacao")
                 it["k"] = g["grupo"]
                 it["n"] = nome_k[g["grupo"]][1] or it.get("n")
+    # razão social atual quando a das fontes está desatualizada (ex.: Marfrig → MBRF Global Foods Company)
+    rx = _CACHE.get("razao_exibir") or {}
+    for it in itens:
+        if it.get("k") in rx and not it.get("leg"):
+            it["e"] = rx[it["k"]]
     try:
         lista = json.loads((RAIZ / "coletor" / "lista_acompanhamento.json").read_text(encoding="utf-8"))["empresas"]
     except Exception:

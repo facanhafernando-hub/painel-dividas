@@ -312,14 +312,14 @@ async function carregarCatalogo() {
   for (const i of c.itens) {
     if (!i.k) continue;
     let e = g.get(i.k);
-    if (!e) { e = { k: i.k, nomes: {}, itens: [], vol: 0, negHoje: 0, pior: null, alerta: false, cnpj: i.cnpj }; g.set(i.k, e); }
+    if (!e) { e = { k: i.k, nomes: {}, itens: [], vol: 0, negHoje: 0, pior: null, alerta: false, cnpj: i.leg ? null : i.cnpj }; g.set(i.k, e); }
     e.itens.push(i); if (!i.leg) { e.nomes[i.e] = (e.nomes[i.e] || 0) + 1; if (i.n) e.curto = i.n; }
     if (i.vh) { e.vol += i.vh; e.negHoje++; }
     const p = i.upp ?? i.ppa;
     if (!nada(p) && (e.pior === null || p < e.pior)) e.pior = p;
     if ((i.al || []).some(k => ESSENCIAIS.includes(k)) || (i.cat || "").includes("VENCID")) e.alerta = true;
     if (i.t === "CRI" || i.t === "CRA") { if (i.s && i.s === i.e) e.secs = (e.secs || 0) + 1; } else e.naoSec = true;
-    if (!e.cnpj && i.cnpj) e.cnpj = i.cnpj;
+    if (!e.cnpj && i.cnpj && !i.leg) e.cnpj = i.cnpj;   // CNPJ da controladora, não o da controlada
     if (i.w) { e.lista = i.w; e.situacao = i.ws; }
     if (i.cr && (!e.cr || CR[i.cr][2] > CR[e.cr][2])) e.cr = i.cr;
   }
@@ -457,7 +457,7 @@ async function telaEmpresa(k) {
     <a class="voltar" href="#/">← Empresas</a>
     <div class="cab">
       <h2>${esc(e.nome)}${crTag(e.cr, e.situacao)}${e.lista ? '<span class="tag t-info">Minha lista</span>' : ""}</h2>
-      ${e.curto ? `<div class="sub">${esc(titulo(e.razao))}</div>` : ""}${cnpj ? `<div class="sub mut">CNPJ ${cnpj}</div>` : ""}
+      ${e.curto ? `<div class="sub">${esc(/[a-z]/.test(e.razao) ? e.razao : titulo(e.razao))}</div>` : ""}${cnpj ? `<div class="sub mut">CNPJ ${cnpj}</div>` : ""}
       ${e.situacao ? `<div class="situ">${esc(e.situacao)}</div>` : ""}
       ${rel.length ? `<div class="rel">Mesmo grupo: ${rel.map(r => `<a href="#/e/${encodeURIComponent(r.k)}">${esc(r.nome)}</a>`).join("")}</div>` : ""}
     </div>
