@@ -161,10 +161,10 @@ function pctPar(v, extra = "") {
   return `<span class="${cl}"${extra}>${f1.format(v)}%</span>`;
 }
 function yieldTxt(y, base, est, pct) {
-  if (!nada(pct) && (pct < 70 || pct > 130)) return '<span class="mut" title="Fora de 70%–130% do par o preço reflete expectativa de recuperação, não yield">n.s.</span>';
   if (nada(y) || !base) return '<span class="mut">–</span>';
   const t = base === "PRE" ? `${f2.format(y)}%` : `${base.replace("+", "")} + ${f2.format(y)}%`;
-  return est ? `<span title="Estimativa: duration aproximada a partir do vencimento e do cupom (sem fluxo completo)">≈ ${t}</span>` : t;
+  const cor = !nada(pct) && pct < 80 ? ' class="neg"' : "";
+  return est ? `<span${cor} title="Estimativa: CRI/CRA sem cronograma, supõe pagamento único no vencimento">≈ ${t}</span>` : `<span${cor}>${t}</span>`;
 }
 function taxaAnb(t, idx) {
   if (nada(t)) return '<span class="mut">–</span>';
@@ -284,7 +284,7 @@ async function telaEmpresa(k) {
       <th>% do par</th><th>Yield implícito</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
     </tr></thead><tbody>${itens.map((i, n) => linhaTitulo(i, n)).join("")}</tbody></table></div>
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
-    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado, partindo da taxa indicativa e da duration da ANBIMA; "≈" indica estimativa com duration aproximada pelo vencimento, quando o papel não tem preço ANBIMA. Fora de 70%–130% do par mostramos "n.s.": o preço reflete recuperação esperada, não yield.</div>`;
+    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (juros e amortizações do cadastro SND), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). Calculado entre 20% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
 }
 function linhaTitulo(i, n) {

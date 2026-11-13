@@ -413,6 +413,10 @@ def coletar_snd_cadastro() -> dict[str, dict]:
             "indice": g(r, "indice"), "mult": num(g(r, "Percentual Multiplicador/Rentabilidade")),
             "taxa": num(g(r, "Juros Criterio Novo - Taxa")),
             "amort": g(r, "Tipo de Amortizacao") not in ("", "-"),
+            "amort_taxa": num(g(r, "Amortizacao - Taxa")), "amort_cada": g(r, "Amortizacao - Cada"),
+            "amort_un": g(r, "Amortizacao - Unidade"), "amort_car": g(r, "Amortizacao - Carencia"),
+            "juros_cada": g(r, "Juros Criterio Novo - Cada"), "juros_un": g(r, "Juros Criterio Novo - Unidade"),
+            "juros_car": g(r, "Juros Criterio Novo - Carencia"),
             "incentivada": g(r, "Deb. Incent. (Lei 12.431)") == "S",
             "resgate_antecipado": g(r, "Resgate Antecipado") == "S",
             "cnpj": g(r, "CNPJ"), "fiduciario": g(r, "Agente Fiduciario"),
@@ -545,42 +549,155 @@ def yield_implicito(pu_neg, pu_ref, y_ref_pct, dur_du):
 CDI_APROX = 0.14  # só para estimar duration de papéis DI+ sem duration ANBIMA
 
 
+YIELD_PCT_MIN, YIELD_PCT_MAX = 20.0, 150.0   # faixa de % do par em que o yield é calculado
+
+
+def _data(txt):
+    try:
+        return datetime.strptime((txt or "").strip(), "%d/%m/%Y").date()
+    except ValueError:
+        return None
+
+
+def _meses(cada, un) -> int | None:
+    n = num(cada)
+    if not n:
+        return None
+    u = norm(un)
+    if u.startswith("ano"):
+        return int(n * 12)
+    if u.startswith("dia"):
+        return max(int(round(n / 30)), 1)
+    return int(n)
+
+
+def _soma_meses(d0: date, m: int) -> date:
+    a, mm = divmod(d0.month - 1 + m, 12)
+    ano, mes = d0.year + a, mm + 1
+    for dia in (d0.day, 30, 29, 28):
+        try:
+            return date(ano, mes, dia)
+        except ValueError:
+            continue
+    return date(ano, mes, 28)
+
+
+def _datas(primeira: date | None, passo: int | None, venc: date, ref: date) -> list[date]:
+    """Datas de evento de 'primeira' até 'venc', a cada 'passo' meses, desde a última antes de ref."""
+    if not passo or passo <= 0:
+        return [venc]
+    if not primeira:
+        # sem data de carência: conta para trás a partir do vencimento
+        ds, x = [], venc
+        while x > ref - timedelta(days=400):
+            ds.append(x)
+            x = _soma_meses(venc, -passo * len(ds))
+        return sorted(ds)
+    ds, k = [], 0
+    while True:
+        x = _soma_meses(primeira, passo * k)
+        if x >= venc:
+            break
+        ds.append(x)
+        k += 1
+        if k > 1200:
+            break
+    ds.append(venc)
+    return ds
+
+
+def fluxo_caixa(d: date, venc: date, cupom: float, juros_datas: list[date], amort_datas: list[date]):
+    """Fluxo por 1 unidade de principal em aberto em d. Juros compostos (base 252 ~ dias corridos/365.25).
+    Amortizações futuras dividem o saldo em partes iguais (aproximação do cronograma)."""
+    futuras_j = [x for x in juros_datas if x > d]
+    passadas_j = [x for x in juros_datas if x <= d]
+    futuras_a = [x for x in amort_datas if x > d] or [venc]
+    eventos = sorted(set(futuras_j) | set(futuras_a) | {venc})
+    ult = passadas_j[-1] if passadas_j else None
+    saldo, cf = 1.0, []
+    parcela = 1.0 / len(futuras_a)
+    anterior = ult or d
+    for x in eventos:
+        juros = 0.0
+        if x in futuras_j or x == venc:
+            per = (x - anterior).days / 365.25
+            juros = saldo * ((1 + cupom) ** per - 1)
+            anterior = x
+        amort = parcela if x in futuras_a else 0.0
+        amort = min(amort, saldo)
+        saldo -= amort
+        cf.append(((x - d).days / 365.25, juros + amort))
+    return cf
+
+
+def _pv(cf, y):
+    return sum(v / (1 + y) ** t for t, v in cf)
+
+
+def ytm_pela_razao(cf, cupom: float, pct_par: float) -> float | None:
+    """Taxa s tal que PV(s)/PV(cupom) = % do par. O DI (ou IPCA) se cancela: s sai como spread/juro real."""
+    alvo = pct_par / 100 * _pv(cf, cupom)
+    lo, hi = -0.5, 20.0
+    if not (_pv(cf, hi) <= alvo <= _pv(cf, lo)):
+        return None
+    for _ in range(100):
+        mid = (lo + hi) / 2
+        if _pv(cf, mid) > alvo:
+            lo = mid
+        else:
+            hi = mid
+    return round(mid * 100, 2)
+
+
 def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict | None,
                            snd: dict | None, curva: dict | None) -> dict:
-    """% do par e yield implícito (HTM) do PU negociado."""
+    """% do par e yield implícito (hold to maturity, pagando tudo no vencimento) do PU negociado."""
     pmed = (neg or {}).get("pu_med")
     # ANBIMA primeiro (calcula o par com VNA atualizado); SND como alternativa, pois em
     # alguns papéis o PU do SND vem igual ao valor de emissão, sem atualização
     pu_par = (anb or {}).get("pu_par") or (curva or {}).get("pu_par")
     fonte_par = "ANBIMA" if (anb or {}).get("pu_par") else ("SND" if (curva or {}).get("pu_par") else None)
     out = {"pu_par": pu_par, "fonte_par": fonte_par, "pct_par_neg": None, "y": None,
-           "y_base": None, "y_est": False}
+           "y_base": None, "y_est": False, "y_met": None}
     if pmed and pu_par:
         out["pct_par_neg"] = round(pmed / pu_par * 100, 2)
-    if not pmed:
-        return out
     pct = out["pct_par_neg"]
-    if pct is not None and not (70 <= pct <= 130):
-        return out  # fora dessa faixa o yield não diz nada (recuperação, não carrego)
-    # 1) referência ANBIMA: taxa indicativa + PU + duration
-    if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration"):
+    if not pmed or pct is None or not (YIELD_PCT_MIN <= pct <= YIELD_PCT_MAX):
+        return out
+    # 1) debênture com cadastro SND: fluxo de caixa contratual (juros + amortização)
+    if snd and snd.get("taxa") is not None:
+        base = base_indexador(snd.get("indice"), snd.get("mult"))
+        venc = _data(snd.get("venc"))
+        if base and base != "%DI" and venc and venc > d:
+            jm = _meses(snd.get("juros_cada"), snd.get("juros_un")) or 6
+            jd = _datas(_data(snd.get("juros_car")), jm, venc, d)
+            ad = [venc]
+            if snd.get("amort"):
+                am = _meses(snd.get("amort_cada"), snd.get("amort_un"))
+                ad = _datas(_data(snd.get("amort_car")), am, venc, d) if am else [venc]
+            cf = fluxo_caixa(d, venc, snd["taxa"] / 100, jd, ad)
+            y = ytm_pela_razao(cf, snd["taxa"] / 100, pct)
+            if y is not None:
+                out.update(y=y, y_base=base, y_met="fluxo")
+                return out
+    # 2) referência ANBIMA (taxa indicativa + PU + duration), boa perto do par
+    if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration") and 70 <= pct <= 130:
         base = base_indexador(anb.get("indice"))
         if base and base != "%DI":
             y = yield_implicito(pmed, anb["pu"], anb["tx_ind"], anb["duration"])
-            if y is not None and -5 <= y <= 40:
-                out.update(y=y, y_base=base)
-            return out
-    # 2) referência contratual: no par, o papel rende o próprio cupom (estimativa)
-    if snd and pu_par and pct is not None and 90 <= pct <= 110:
-        base = base_indexador(snd.get("indice"), snd.get("mult"))
-        if base and base != "%DI" and snd.get("taxa") is not None:
-            du = du_ate(snd.get("venc"), d)
-            if du:
-                total = (snd["taxa"] / 100) + (CDI_APROX if base == "DI+" else 0.05 if base != "PRE" else 0)
-                dur = duration_estimada(du, total) * (0.6 if snd.get("amort") else 1.0)
-                y = yield_implicito(pmed, pu_par, snd["taxa"], dur)
-                if y is not None and -1 <= y <= 25 and du > 120:
-                    out.update(y=y, y_base=base, y_est=True)
+            if y is not None:
+                out.update(y=y, y_base=base, y_met="duration")
+                return out
+    # 3) CRI/CRA sem cronograma: cupom do indexador ANBIMA, supondo pagamento bullet (estimativa)
+    if anb and anb.get("indice") and anb.get("vencimento"):
+        base = base_indexador(anb.get("indice"))
+        cup = taxa_do_texto(anb.get("indice")) if base in ("DI+", "IPCA+", "IGPM+") else None
+        venc = _data(anb.get("vencimento"))
+        if base and base != "%DI" and cup is not None and venc and venc > d:
+            cf = fluxo_caixa(d, venc, cup / 100, [venc], [venc])
+            y = ytm_pela_razao(cf, cup / 100, pct)
+            if y is not None:
+                out.update(y=y, y_base=base, y_est=True, y_met="bullet")
     return out
 
 
@@ -744,6 +861,25 @@ def atualizar_indice() -> None:
     })
 
 
+def recalcular() -> None:
+    """Refaz % do par, yield e alertas de todos os dias já coletados, sem baixar a B3 de novo."""
+    snd = snd_cadastro()
+    arquivos = sorted((DADOS / "daily").glob("*.json"))
+    for f in arquivos:
+        dd = json.loads(f.read_text(encoding="utf-8"))
+        d = date.fromisoformat(dd["data"])
+        for a in dd["ativos"]:
+            p_ant = a.get("p") or {}
+            cv = {"pu_par": p_ant.get("pu_par")} if p_ant.get("fonte_par") == "SND" else None
+            s = snd.get(a["c"]) if a.get("t") == "DEB" else None
+            py = calcular_preco_e_yield(a.get("t"), d, a.get("n"), a.get("a"), s, cv)
+            a["p"] = py
+            serie = atualizar_serie(a["c"], dd["data"], a.get("n"), a.get("a"), py)
+            a["al"] = alertas(a.get("n"), a.get("a"), py, serie, dd["data"])
+        escrever_json(f, dd)
+    log(f"Recalculado: {len(arquivos)} dias")
+
+
 def construir_catalogo() -> None:
     """Universo por empresa: todas as debêntures em mercado (SND) + CRI/CRA vistos,
     com a foto de mercado mais recente de cada título."""
@@ -812,7 +948,12 @@ def main() -> int:
     ap.add_argument("--backfill", type=int, default=0,
                     help="também processa os N dias úteis anteriores")
     ap.add_argument("--forcar", action="store_true", help="sobrescreve o arquivo do dia")
+    ap.add_argument("--recalcular", action="store_true", help="só refaz par/yield dos dias já coletados")
     args = ap.parse_args()
+    if args.recalcular:
+        recalcular()
+        construir_catalogo()
+        return 0
 
     d = date.fromisoformat(args.data) if args.data else datetime.now(BRT).date()
     datas = []
