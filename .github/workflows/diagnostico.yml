@@ -15,7 +15,3 @@ jobs:
       - run: python coletor/diagnostico.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_KEY }}
-          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
-          API_KEY: ${{ secrets.API_KEY }}
-          CLAUDE_KEY: ${{ secrets.CLAUDE_KEY }}
