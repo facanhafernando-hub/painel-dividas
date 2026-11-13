@@ -422,7 +422,7 @@ async function abrirTitulo(i) {
   const sim = (i.up || i.pa) && i.par ? simulador(i) : "";
   document.getElementById("detCorpo").innerHTML = (i.al?.length ? `<div style="margin-bottom:10px">${tags(i.al)}</div>` : "") +
     (i.cr ? `<div class="card" style="padding:10px 14px;margin:0 0 10px;border-left:3px solid var(--${crGrave(i.cr) ? "crit" : "warn"}-fg)">
-       <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">${crTag(i.cr)}<span class="sub">${i.crd ? "desde " + dbr(i.crd) : ""}</span></div>
+       <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">${crTag(i.cr)}<span class="sub">${i.crd ? "desde " + dbr(i.crd) : ""}${i.crf === "lista" ? " · informado na Minha lista" : " · lido nos documentos da CVM"}</span></div>
        <div style="margin-top:4px;font-size:13px">${esc(i.crr || "")}</div>
        ${crGrave(i.cr) ? '<div class="nota" style="margin-top:4px">Com evento de crédito, o retorno depende da recuperação, não do cronograma original. Use o simulador abaixo; a TIR contratual fica só como referência.</div>' : ""}</div>` : "") +
     (crGrave(i.cr) ? sim : "") +

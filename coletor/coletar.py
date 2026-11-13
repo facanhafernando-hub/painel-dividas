@@ -1402,6 +1402,10 @@ def construir_catalogo() -> None:
                    for t in emp["termos"]):
                 it["w"] = emp["nome"]
                 it["ws"] = emp.get("situacao")
+                # evento informado na lista: "substitui" corrige a leitura dos documentos; "completa" só preenche quem ficou sem selo
+                if emp.get("evento") and (emp.get("evento_modo") == "substitui" or not it.get("cr")):
+                    it["cr"] = emp["evento"] if emp["evento"] != "nenhum" else None
+                    it["crd"], it["crr"], it["crf"] = emp.get("evento_data"), emp.get("evento_resumo"), "lista"
                 break
     escrever_cronogramas(itens, snd, datas[-1])
     cur = sorted((DADOS / "curva").glob("*.json")) if (DADOS / "curva").exists() else []
