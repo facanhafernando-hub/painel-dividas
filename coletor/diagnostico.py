@@ -1,6 +1,9 @@
 """Diagnóstico: testa a chave da API (sem imprimir a chave)."""
 import json, os, urllib.request, urllib.error
-k = os.environ.get("ANTHROPIC_API_KEY", "")
+import re
+k0 = os.environ.get("ANTHROPIC_API_KEY", "")
+k = re.sub(r"\s", "", k0)
+print("tinha espaços/quebras:", k0 != k, "| tamanho limpo:", len(k))
 print("presente:", bool(k), "| prefixo ok:", k.startswith("sk-ant-"))
 if k:
     for modelo in ("claude-haiku-5-5", "claude-sonnet-5-5"):
