@@ -257,5 +257,27 @@
    "speed": "standard"
   },
   "grupo": "31748174000160_4"
+ },
+ "eventos": {
+  "VERO14": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Trechos da 4ª emissão não mencionam vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação. Outras emissões constam como adimplentes."
+  },
+  "VERO24": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Trechos da 4ª emissão não mencionam vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação. Outras emissões constam como adimplentes."
+  },
+  "VERO34": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Trechos da 4ª emissão não mencionam vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação. Outras emissões constam como adimplentes."
+  },
+  "VERO44": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Trechos da 4ª emissão não mencionam vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação. Outras emissões constam como adimplentes."
+  }
  }
 }

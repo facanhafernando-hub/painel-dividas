@@ -184,5 +184,12 @@
    "speed": "standard"
   },
   "grupo": "10760260000119_4"
+ },
+ "eventos": {
+  "CVCB14": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "AGD de 05/05/2026 não declarou vencimento antecipado. Sem RJ/RE. Troca por 7ª emissão, com liquidação prevista em 24/09/2026, ainda não concretizada."
+  }
  }
 }

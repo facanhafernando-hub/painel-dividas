@@ -170,5 +170,12 @@
    "speed": "standard"
   },
   "grupo": "33453598000123_4"
+ },
+ "eventos": {
+  "RAIZ14": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-03-11",
+   "resumo": "Vencimento antecipado automático notificado pelo agente fiduciário após pedido de RE da Raízen; plano de RE homologado em 30/07/2026."
+  }
  }
 }

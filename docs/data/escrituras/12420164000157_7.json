@@ -215,5 +215,12 @@
    "speed": "standard"
   },
   "grupo": "12420164000157_6-7"
+ },
+ "eventos": {
+  "VVEO17": {
+   "evento": "reperfilamento",
+   "data": "2026-06-11",
+   "resumo": "AGD de 11/06/2026 aprovou repactuação com 100% das debêntures, condicionada a Condições Suspensiva e Resolutiva e a Segundo Aditamento ainda em modelo. Sem vencimento antecipado, RJ ou RE."
+  }
  }
 }

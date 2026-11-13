@@ -161,5 +161,17 @@
    "speed": "standard"
   },
   "grupo": "08902291000115_1-2"
+ },
+ "eventos": {
+  "CMIN11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação. Nenhum evento de crédito identificado para a série CMIN11 nos dados fornecidos."
+  },
+  "CMIN21": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação. Nenhum evento de crédito identificado para a série CMIN21 nos dados fornecidos."
+  }
  }
 }

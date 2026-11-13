@@ -192,5 +192,17 @@
    "speed": "standard"
   },
   "grupo": "31748174000160_2"
+ },
+ "eventos": {
+  "VERO12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum evento de crédito vigente nos trechos analisados: sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação."
+  },
+  "ANET12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "AGD convocada para 2026-02-09 para aprovar o 3º Aditamento, ainda não confirmado, sem alterar o fluxo de pagamentos. Sem vencimento antecipado, RJ, RE ou novação."
+  }
  }
 }

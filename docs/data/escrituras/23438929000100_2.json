@@ -126,5 +126,12 @@
    "speed": "standard"
   },
   "grupo": "23438929000100_2-3"
+ },
+ "eventos": {
+  "CONX12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "O resumo da situação não traz informação sobre eventos de crédito vigentes para a série CONX12 ou para a emissora."
+  }
  }
 }

@@ -164,5 +164,17 @@
    "speed": "standard"
   },
   "grupo": "42150391000170_16-18"
+ },
+ "eventos": {
+  "BRKMA8": {
+   "evento": "re",
+   "data": "2026-08-24",
+   "resumo": "Braskem em recuperação extrajudicial, plano protocolado em 24/08/2026 e processamento deferido. Exigibilidade suspensa por 90 dias. Sem vencimento antecipado declarado."
+  },
+  "BRKMB8": {
+   "evento": "re",
+   "data": "2026-08-24",
+   "resumo": "Braskem em recuperação extrajudicial, plano protocolado em 24/08/2026 e processamento deferido. Exigibilidade suspensa por 90 dias. Sem vencimento antecipado declarado."
+  }
  }
 }

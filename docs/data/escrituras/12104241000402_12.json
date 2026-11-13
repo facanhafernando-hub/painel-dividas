@@ -281,5 +281,12 @@
    "speed": "standard"
   },
   "grupo": "12104241000402_11-12-9"
+ },
+ "eventos": {
+  "ONCOA2": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Proposta de AGD de 10/03/2026 para sustar vencimento antecipado e adiar juros de 16/03 para 01/06/2026. Sem ata de resultado nem confirmação de inadimplemento ou pagamento."
+  }
  }
 }

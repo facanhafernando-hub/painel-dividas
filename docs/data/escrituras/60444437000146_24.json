@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_24"
+ },
+ "eventos": {
+  "LIGHC4": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora e fiadora sujeitas à recuperação judicial da Light. Série 2 repactuada em 13/11/2024 conforme o plano. Sem vencimento antecipado declarado."
+  }
  }
 }

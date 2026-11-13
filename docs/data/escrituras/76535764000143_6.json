@@ -118,5 +118,12 @@
    "speed": "standard"
   },
   "grupo": "76535764000143_12-6"
+ },
+ "eventos": {
+  "TLNL16": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora Oi S/A (sucessora da Telemar por incorporação em 2021) está em recuperação judicial em curso. Não há vencimento antecipado declarado nos trechos."
+  }
  }
 }

@@ -101,5 +101,12 @@
    "speed": "standard"
   },
   "grupo": "08827501000158_10-18-23-25"
+ },
+ "eventos": {
+  "AEGPB3": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo não menciona vencimento antecipado, suspensão de pagamentos, RJ, RE ou renegociação para a 23ª emissão. Status da série não foi informado nos trechos."
+  }
  }
 }

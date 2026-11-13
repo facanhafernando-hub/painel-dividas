@@ -137,5 +137,12 @@
    "speed": "standard"
   },
   "grupo": "05197443000138_10-5-6"
+ },
+ "eventos": {
+  "HAPVA0": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ ou RE. Elegível à recompra de 2026, sem dados de tesouraria. Pré-pagamentos e reperfilamentos citados são planos ainda não implementados."
+  }
  }
 }

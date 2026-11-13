@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_21"
+ },
+ "eventos": {
+  "LIGH2B": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora em recuperação judicial. Repactuação do plano vigente desde 13/11/2024, com emissão dividida em 3 séries e 2ª série com garantias e fiança."
+  }
  }
 }

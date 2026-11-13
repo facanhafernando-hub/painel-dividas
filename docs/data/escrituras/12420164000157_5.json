@@ -223,5 +223,12 @@
    "speed": "standard"
   },
   "grupo": "12420164000157_4-5"
+ },
+ "eventos": {
+  "VVEO15": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "AGD de 08/06/2026 aprovou repactuação, mas ela depende de condições suspensivas pendentes. Cronograma original (vencimento 2027-07-22) segue vigente. Sem RJ/RE."
+  }
  }
 }

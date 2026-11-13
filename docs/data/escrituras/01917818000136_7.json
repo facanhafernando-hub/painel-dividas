@@ -198,5 +198,17 @@
    "speed": "standard"
   },
   "grupo": "01917818000136_7"
+ },
+ "eventos": {
+  "LGTE17": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Fiadora Light S.A. em recuperação judicial em curso. Não há declaração de vencimento antecipado nos trechos analisados; a AGD de 2023-07-10 não deliberou sobre isso."
+  },
+  "LGTE27": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Fiadora Light S.A. em recuperação judicial em curso. Não há declaração de vencimento antecipado nos trechos analisados; a AGD de 2023-07-10 não deliberou sobre isso."
+  }
  }
 }

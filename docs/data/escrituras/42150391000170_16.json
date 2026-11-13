@@ -198,5 +198,17 @@
    "speed": "standard"
   },
   "grupo": "42150391000170_16-18"
+ },
+ "eventos": {
+  "BRKMA6": {
+   "evento": "re",
+   "data": "2026-08-24",
+   "resumo": "Braskem em RE com plano protocolado e processamento deferido. Debêntures da 16ª são créditos sujeitos. Sem vencimento antecipado declarado."
+  },
+  "BRKMB6": {
+   "evento": "re",
+   "data": "2026-08-24",
+   "resumo": "Braskem em RE com plano protocolado e processamento deferido. Debêntures da 16ª são créditos sujeitos. Sem vencimento antecipado declarado."
+  }
  }
 }

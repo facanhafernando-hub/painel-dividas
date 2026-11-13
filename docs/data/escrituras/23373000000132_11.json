@@ -132,5 +132,12 @@
    "speed": "standard"
   },
   "grupo": "23373000000132_11-3-4"
+ },
+ "eventos": {
+  "VAMOA1": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação encontrado para a 11ª emissão. As AGDs tratam de outras emissões."
+  }
  }
 }

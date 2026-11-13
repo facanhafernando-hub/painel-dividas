@@ -107,5 +107,12 @@
    "speed": "standard"
   },
   "grupo": "12648266000124_5-6"
+ },
+ "eventos": {
+  "AMBP15": {
+   "evento": "rj",
+   "data": "2025-10-30",
+   "resumo": "Emissora em recuperação judicial, com processamento deferido em 30/10/2025. Sem vencimento antecipado ou suspensão de pagamentos informados para a série."
+  }
  }
 }

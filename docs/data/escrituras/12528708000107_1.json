@@ -184,5 +184,12 @@
    "speed": "standard"
   },
   "grupo": "12528708000107_1-2"
+ },
+ "eventos": {
+  "AERI11": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-11-04",
+   "resumo": "Pedido de RE da Emissora em 2026-11-04 é vencimento antecipado automático (cl. 4.14.1(i) e 4.14.3 da 1ª emissão). Sem declaração formal nos trechos."
+  }
  }
 }

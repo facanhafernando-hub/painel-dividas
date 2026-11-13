@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_20"
+ },
+ "eventos": {
+  "LIGHC0": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Fiadora Light S.A. em recuperação judicial, o que afeta a fiança da 2ª série. Não há vencimento antecipado declarado para a série. Repactuação de 13/11/2024 decorre do plano de RJ."
+  }
  }
 }

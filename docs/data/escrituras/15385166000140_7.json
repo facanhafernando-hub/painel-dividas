@@ -128,5 +128,12 @@
    "speed": "standard"
   },
   "grupo": "15385166000140_6-7"
+ },
+ "eventos": {
+  "AEGE17": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum vencimento antecipado, RJ, RE ou reperfilamento nos trechos da 7ª emissão. Menção a possível resgate da 6ª é mera possibilidade, sem data ou confirmação."
+  }
  }
 }

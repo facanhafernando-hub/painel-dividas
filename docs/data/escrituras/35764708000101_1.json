@@ -88,5 +88,12 @@
    "speed": "standard"
   },
   "grupo": "35764708000101_1-2-3"
+ },
+ "eventos": {
+  "TEPA11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "1ª emissão: os trechos analisados não trazem informação de situação de crédito. Não há RJ, RE, vencimento antecipado ou reperfilamento citados para esta série."
+  }
  }
 }

@@ -121,5 +121,12 @@
    "speed": "standard"
   },
   "grupo": "33376989000191_2"
+ },
+ "eventos": {
+  "IRBR12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação. Nenhum evento de crédito vigente identificado nos dados disponíveis para a série IRBR12."
+  }
  }
 }

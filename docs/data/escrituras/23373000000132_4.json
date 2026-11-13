@@ -125,5 +125,12 @@
    "speed": "standard"
   },
   "grupo": "23373000000132_11-3-4"
+ },
+ "eventos": {
+  "VAMO34": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Não há vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação na 4ª emissão. As AGDs sobre cisão tratam de outras emissões."
+  }
  }
 }

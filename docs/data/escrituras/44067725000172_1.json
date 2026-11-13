@@ -168,5 +168,12 @@
    "speed": "standard"
   },
   "grupo": "44067725000172_1"
+ },
+ "eventos": {
+  "VBRR11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Waiver do covenant Dívida Líquida/EBITDA de 2023 proposto em AGD de 2024; votação não consta. Sem vencimento antecipado, RJ ou RE declarados."
+  }
  }
 }

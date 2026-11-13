@@ -234,5 +234,12 @@
    "speed": "standard"
   },
   "grupo": "76535764000143_12-6"
+ },
+ "eventos": {
+  "OIBRA2": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Oi em recuperação judicial em curso (segunda RJ). Sem vencimento antecipado declarado. Aditamento ao plano, protocolado em 2025, ainda sem homologação nos trechos."
+  }
  }
 }

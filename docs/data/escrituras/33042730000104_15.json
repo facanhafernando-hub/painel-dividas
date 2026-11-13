@@ -182,5 +182,17 @@
    "speed": "standard"
   },
   "grupo": "33042730000104_15-16"
+ },
+ "eventos": {
+  "CSNAA5": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação nos trechos. Anexo I indica série ativa e sem inadimplementos."
+  },
+  "CSNAB5": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação nos trechos. Anexo I indica série ativa e sem inadimplementos."
+  }
  }
 }

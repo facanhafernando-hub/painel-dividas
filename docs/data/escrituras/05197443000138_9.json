@@ -140,5 +140,12 @@
    "speed": "standard"
   },
   "grupo": "05197443000138_8-9"
+ },
+ "eventos": {
+  "HAPV19": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum evento de crédito nos trechos. Programa facultativo de recompra (até R$ 150 mi, sem prêmio, inclui HAPV19) não altera o cronograma da série."
+  }
  }
 }

@@ -99,5 +99,12 @@
    "speed": "standard"
   },
   "grupo": "08827501000158_10-18-23-25"
+ },
+ "eventos": {
+  "AEGPA0": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "10ª emissão com status ativo nos anexos da CVM. Não há menção a vencimento antecipado, suspensão de pagamentos, RJ, RE ou reperfilamento."
+  }
  }
 }

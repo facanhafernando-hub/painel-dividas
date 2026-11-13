@@ -124,5 +124,12 @@
    "speed": "standard"
   },
   "grupo": "07714104000107_7-8-9"
+ },
+ "eventos": {
+  "SUMI18": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Anexo II de 2026-09-11 lista a 8ª emissão como ativa, sem inadimplementos, vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação."
+  }
  }
 }

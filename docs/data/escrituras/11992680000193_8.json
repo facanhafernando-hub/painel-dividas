@@ -122,5 +122,12 @@
    "speed": "standard"
   },
   "grupo": "11992680000193_8"
+ },
+ "eventos": {
+  "QUAL18": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação disponível. Nenhum evento de crédito identificado para a série QUAL18 nos dados fornecidos."
+  }
  }
 }

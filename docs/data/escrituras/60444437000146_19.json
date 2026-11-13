@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_19"
+ },
+ "eventos": {
+  "LIGHB9": {
+   "evento": "reperfilamento",
+   "data": "2024-11-13",
+   "resumo": "Repactuada em 13/11/2024 pelo plano de RJ da Light; 2ª série reestrutura créditos sujeitos à RJ, com fiança da Light S.A. Sem vencimento antecipado."
+  }
  }
 }

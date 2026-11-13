@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_9"
+ },
+ "eventos": {
+  "LSVE39": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Light SESA em recuperação judicial em curso; repactuação no Plano de RJ desde 13/11/2024 via Sexto Aditamento. Sem vencimento antecipado na 2ª série."
+  }
  }
 }

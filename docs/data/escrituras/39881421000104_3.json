@@ -476,5 +476,17 @@
    "speed": "standard"
   },
   "grupo": "39881421000104_3"
+ },
+ "eventos": {
+  "CGEE13": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou suspensão de pagamentos. Os aditamentos 1º e 2º não alteram o cronograma de pagamentos."
+  },
+  "CGEE23": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou suspensão de pagamentos. Os aditamentos 1º e 2º não alteram o cronograma de pagamentos."
+  }
  }
 }

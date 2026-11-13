@@ -140,5 +140,12 @@
    "speed": "standard"
   },
   "grupo": "10760260000119_7"
+ },
+ "eventos": {
+  "CVCB17": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ ou RE. AGD de 2026-10-06 aprovou waiver fee de 2% sem alterar o cronograma de juros e amortização."
+  }
  }
 }

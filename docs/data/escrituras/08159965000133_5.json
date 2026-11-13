@@ -207,5 +207,12 @@
    "speed": "standard"
   },
   "grupo": "08159965000133_5"
+ },
+ "eventos": {
+  "IGSN15": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ ou RE. Waivers de covenants e conta reserva aprovados em 03/12/2024, sem mudar datas, amortização ou remuneração."
+  }
  }
 }

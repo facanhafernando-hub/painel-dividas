@@ -160,5 +160,17 @@
    "speed": "standard"
   },
   "grupo": "32021201000161_1"
+ },
+ "eventos": {
+  "ORIG11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum vencimento antecipado, suspensão, RJ, RE ou novação nos trechos da 1ª emissão. Não há aditamento, ata de AGD ou plano posterior a 2025-08-13."
+  },
+  "ORIG21": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Trechos da 2ª emissão trazem só cláusulas de vencimento antecipado como previsão contratual, sem evento vigente. Não há aditamento, ata de AGD ou plano posterior a 2025-08-13."
+  }
  }
 }

@@ -205,5 +205,12 @@
    "speed": "standard"
   },
   "grupo": "12420164000157_6-7"
+ },
+ "eventos": {
+  "VVEO16": {
+   "evento": "reperfilamento",
+   "data": "2026-06-08",
+   "resumo": "AGD de 2026-06-08 aprovou repactuação (99,19%) com carência de principal até 2029 e nova curva de covenant; eficácia condicionada e aditamento pendente."
+  }
  }
 }

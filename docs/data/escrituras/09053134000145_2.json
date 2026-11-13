@@ -421,5 +421,12 @@
    "speed": "standard"
   },
   "grupo": "09053134000145_2"
+ },
+ "eventos": {
+  "ELFA12": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-10-30",
+   "resumo": "Agente fiduciário declarou vencimento antecipado na AGD de 30/10/2026 (cláusula 8.1.1, xi), por Medida Cautelar, ressalvada decisão judicial em contrário."
+  }
  }
 }

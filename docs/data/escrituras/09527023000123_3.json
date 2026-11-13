@@ -101,5 +101,12 @@
    "speed": "standard"
   },
   "grupo": "09527023000123_3"
+ },
+ "eventos": {
+  "EESG13": {
+   "evento": "rj",
+   "data": "2025-10-30",
+   "resumo": "RJ em curso, deferida em 30/10/2025. Plano apresentado em 19/12/2025, ainda sujeito a alterações. Sem vencimento antecipado da EESG13 nos trechos."
+  }
  }
 }

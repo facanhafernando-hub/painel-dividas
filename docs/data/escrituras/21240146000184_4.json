@@ -173,5 +173,12 @@
    "speed": "standard"
   },
   "grupo": "21240146000184_3-4"
+ },
+ "eventos": {
+  "AGXY14": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora em recuperação judicial em curso; debêntures emitidas para implementar o plano. Sem vencimento antecipado declarado nem suspensão de pagamentos."
+  }
  }
 }

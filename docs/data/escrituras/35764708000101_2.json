@@ -130,5 +130,17 @@
    "speed": "standard"
   },
   "grupo": "35764708000101_1-2-3"
+ },
+ "eventos": {
+  "TEPA12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum evento de crédito identificado nos trechos analisados. Não há informação de situação para a 2ª emissão, e a 3ª e a 4ª emissões estão fora do escopo."
+  },
+  "TEPA22": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nenhum evento de crédito identificado nos trechos analisados. Não há informação de situação para a 2ª emissão, e a 3ª e a 4ª emissões estão fora do escopo."
+  }
  }
 }

@@ -169,5 +169,17 @@
    "speed": "standard"
   },
   "grupo": "31748174000160_5"
+ },
+ "eventos": {
+  "VERO25": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "5ª emissão sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou proposta de novação nos trechos analisados."
+  },
+  "VERO35": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "5ª emissão sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou proposta de novação nos trechos analisados."
+  }
  }
 }

@@ -157,5 +157,17 @@
    "speed": "standard"
   },
   "grupo": "07714104000107_7-8-9"
+ },
+ "eventos": {
+  "SUMI17": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Série ativa no Anexo II de 2026-09-11, sem inadimplementos, vencimento antecipado, RJ/RE ou renegociação. Cronograma original."
+  },
+  "SUMI37": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Série ativa no Anexo II de 2026-09-11, sem inadimplementos, vencimento antecipado, RJ/RE ou renegociação. Cronograma original."
+  }
  }
 }

@@ -310,5 +310,17 @@
    "speed": "standard"
   },
   "grupo": "42310775000103_2-4"
+ },
+ "eventos": {
+  "RISP14": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação nos trechos disponíveis. As AGDs de 2026 tratam da 3ª emissão."
+  },
+  "RISP24": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação nos trechos disponíveis. As AGDs de 2026 tratam da 3ª emissão."
+  }
  }
 }

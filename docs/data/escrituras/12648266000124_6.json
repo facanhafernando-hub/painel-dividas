@@ -109,5 +109,12 @@
    "speed": "standard"
   },
   "grupo": "12648266000124_5-6"
+ },
+ "eventos": {
+  "AMBP16": {
+   "evento": "rj",
+   "data": "2025-10-30",
+   "resumo": "Emissora em recuperação judicial (proc. 3014764-58.2025.8.19.0001), com pedido deferido em 30/10/2025. Plano divulgado, sem vínculo identificado com a série."
+  }
  }
 }

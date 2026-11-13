@@ -310,5 +310,17 @@
    "speed": "standard"
   },
   "grupo": "42644220000106_2-4"
+ },
+ "eventos": {
+  "RIS412": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou reperfilamento nos trechos analisados. As AGDs de 2026 tratam só das Cartas de Fiança da 3ª emissão."
+  },
+  "RIS422": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou reperfilamento nos trechos analisados. As AGDs de 2026 não alteram o cronograma desta 4ª emissão."
+  }
  }
 }

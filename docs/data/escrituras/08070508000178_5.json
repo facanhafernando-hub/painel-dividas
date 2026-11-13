@@ -210,5 +210,12 @@
    "speed": "standard"
   },
   "grupo": "08070508000178_4-5-7"
+ },
+ "eventos": {
+  "RESA15": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-03-11",
+   "resumo": "Emissora e Raízen S.A. pediram RE em 11/03/2026; AGDs declaram vencimento antecipado automático, com notificação ao agente fiduciário na mesma data."
+  }
  }
 }

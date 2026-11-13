@@ -105,5 +105,12 @@
    "speed": "standard"
   },
   "grupo": "15385166000140_6-7"
+ },
+ "eventos": {
+  "AEGE16": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão, RJ, RE ou novação nos trechos analisados. Anexo I indica status ativo e sem inadimplementos no período."
+  }
  }
 }

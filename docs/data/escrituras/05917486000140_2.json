@@ -127,5 +127,12 @@
    "speed": "standard"
   },
   "grupo": "05917486000140_2"
+ },
+ "eventos": {
+  "LVTC22": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nos trechos analisados não há vencimento antecipado, suspensão de pagamentos, recuperação judicial ou extrajudicial, nem proposta de novação."
+  }
  }
 }

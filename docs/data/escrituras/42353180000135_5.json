@@ -345,5 +345,12 @@
    "speed": "standard"
   },
   "grupo": "42353180000135_5"
+ },
+ "eventos": {
+  "IRJS15": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ ou RE na 5ª emissão. A cláusula 4.18 afasta repactuação programada."
+  }
  }
 }

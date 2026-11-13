@@ -119,5 +119,12 @@
    "speed": "standard"
   },
   "grupo": "33042730000104_15-16"
+ },
+ "eventos": {
+  "CSNAA6": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação nos trechos analisados. A AGD de 30/06/2025 trata só da 13ª emissão."
+  }
  }
 }
