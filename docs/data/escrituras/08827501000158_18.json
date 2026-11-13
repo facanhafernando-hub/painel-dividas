@@ -99,5 +99,12 @@
    "speed": "standard"
   },
   "grupo": "08827501000158_10-18-23-25"
+ },
+ "eventos": {
+  "AEGPA8": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem menção a vencimento antecipado, RJ, RE ou reperfilamento na 18ª emissão. Status não informado nos trechos analisados."
+  }
  }
 }

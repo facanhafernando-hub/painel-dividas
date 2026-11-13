@@ -225,5 +225,22 @@
    "speed": "standard"
   },
   "grupo": "33042730000104_11-12-14"
+ },
+ "eventos": {
+  "CSNAA4": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem eventos de crédito relatados na 14ª emissão. Anexo do agente fiduciário (Doc. 5, 2024-11-05) informa série ativa e sem inadimplementos."
+  },
+  "CSNAB4": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem eventos de crédito relatados na 14ª emissão. Anexo do agente fiduciário (Doc. 5, 2024-11-05) informa série ativa e sem inadimplementos."
+  },
+  "CSNAC4": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem eventos de crédito relatados na 14ª emissão. Anexo do agente fiduciário (Doc. 5, 2024-11-05) informa série ativa e sem inadimplementos."
+  }
  }
 }

@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_15"
+ },
+ "eventos": {
+  "LIGHC5": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Fiadora Light S.A. em recuperação judicial. Emissão repactuada conforme o Plano de RJ, com Data de Repactuação em 13/11/2024 e 3 séries."
+  }
  }
 }

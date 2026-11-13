@@ -196,5 +196,12 @@
    "speed": "standard"
   },
   "grupo": "12420164000157_4-5"
+ },
+ "eventos": {
+  "CMPH14": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Repactuação proposta, sem ata de aprovação; cronograma original segue vigente (amortizações em 2026 e vencimento em 2027). Sem vencimento antecipado, RJ ou RE."
+  }
  }
 }

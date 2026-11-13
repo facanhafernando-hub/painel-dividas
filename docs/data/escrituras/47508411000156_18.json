@@ -172,5 +172,12 @@
    "speed": "standard"
   },
   "grupo": "47508411000156_18"
+ },
+ "eventos": {
+  "CBRDB8": {
+   "evento": "re",
+   "data": "2026-10-07",
+   "resumo": "Recuperação extrajudicial homologada. Créditos da 18ª emissão novados pelo plano, com bloqueio na B3 até substituição por Novas Debêntures em até 60 dias."
+  }
  }
 }

@@ -156,5 +156,17 @@
    "speed": "standard"
   },
   "grupo": "08902291000115_1-2"
+ },
+ "eventos": {
+  "CMIN12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação; nenhum evento de crédito vigente identificado nos dados fornecidos."
+  },
+  "CMIN22": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação; nenhum evento de crédito vigente identificado nos dados fornecidos."
+  }
  }
 }

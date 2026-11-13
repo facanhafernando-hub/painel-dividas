@@ -166,5 +166,17 @@
    "speed": "standard"
   },
   "grupo": "31748174000160_3"
+ },
+ "eventos": {
+  "VERO13": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação. O aditamento de 2024-03-19 apenas ajustou a escritura (valor, bookbuilding e cronograma da 2ª série)."
+  },
+  "VERO23": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação. O aditamento de 2024-03-19 apenas ajustou a escritura (valor, bookbuilding e cronograma da 2ª série)."
+  }
  }
 }

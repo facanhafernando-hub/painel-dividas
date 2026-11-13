@@ -138,5 +138,12 @@
    "speed": "standard"
   },
   "grupo": "05197443000138_7"
+ },
+ "eventos": {
+  "HAPV17": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou reperfilamento. Recompra no secundário (R$ 149,9 mi de R$ 150 mi em 2026-08-25) não altera o cronograma das debêntures em circulação."
+  }
  }
 }

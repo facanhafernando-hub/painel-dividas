@@ -204,5 +204,17 @@
    "speed": "standard"
   },
   "grupo": "05197443000138_8-9"
+ },
+ "eventos": {
+  "HAPV18": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou renegociação. Programa de recompra facultativa de até R$ 150 mi não altera o cronograma."
+  },
+  "HAPV28": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou renegociação. Programa de recompra facultativa de até R$ 150 mi não altera o cronograma."
+  }
  }
 }

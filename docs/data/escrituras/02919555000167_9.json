@@ -152,5 +152,12 @@
    "speed": "standard"
   },
   "grupo": "02919555000167_9"
+ },
+ "eventos": {
+  "ARTR19": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Waiver aprovado em AGD de 2ª convocação, sem alterar o cronograma de pagamentos. Vencimento antecipado só hipotético, caso descumpridas as condições da AGD."
+  }
  }
 }

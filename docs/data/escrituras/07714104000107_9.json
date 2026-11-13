@@ -192,5 +192,17 @@
    "speed": "standard"
   },
   "grupo": "07714104000107_7-8-9"
+ },
+ "eventos": {
+  "SUMI19": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Anexo II de 2026-09-11 lista a série como ativa, sem inadimplementos. Não há vencimento antecipado, RJ, RE nem reperfilamento nos trechos analisados."
+  },
+  "SUMI39": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Anexo II de 2026-09-11 lista a série como ativa, sem inadimplementos. Não há vencimento antecipado, RJ, RE nem reperfilamento nos trechos analisados."
+  }
  }
 }

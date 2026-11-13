@@ -179,5 +179,12 @@
    "speed": "standard"
   },
   "grupo": "31748174000160_1"
+ },
+ "eventos": {
+  "ANET11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Renegociação de cláusulas em curso, submetida à AGD de 09/02/2026 segundo a minuta. Não altera cronograma de pagamentos nem há vencimento antecipado, RJ ou RE."
+  }
  }
 }

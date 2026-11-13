@@ -113,5 +113,12 @@
    "speed": "standard"
   },
   "grupo": "10571175000102_7"
+ },
+ "eventos": {
+  "URBS17": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "7ª emissão sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. Enquadramento de adimplência na lista do Doc. 4 não é evento."
+  }
  }
 }

@@ -140,5 +140,17 @@
    "speed": "standard"
   },
   "grupo": "10319900000150_1"
+ },
+ "eventos": {
+  "CCLS11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ ou RE. Proposta de waiver de índices até 2030 e troca de fiador foi à AGD de 2ª convocação (23/10/2025); resultado das votações não consta."
+  },
+  "CCLS21": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ ou RE. Proposta de waiver de índices até 2030 e troca de fiador foi à AGD de 2ª convocação (23/10/2025); resultado das votações não consta."
+  }
  }
 }

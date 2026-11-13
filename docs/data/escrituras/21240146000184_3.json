@@ -414,5 +414,27 @@
    "speed": "standard"
   },
   "grupo": "21240146000184_3-4"
+ },
+ "eventos": {
+  "AGXY13": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora em recuperação judicial em curso. Debêntures emitidas para implementar o plano; sem vencimento antecipado declarado nem suspensão de pagamentos."
+  },
+  "AGXY23": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora em recuperação judicial em curso. Debêntures emitidas para implementar o plano; sem vencimento antecipado declarado nem suspensão de pagamentos."
+  },
+  "AGXY33": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora em recuperação judicial em curso. Aditamento de 12/11/2025 trocou carência por datas fixas de remuneração; sem vencimento antecipado declarado."
+  },
+  "AGXY43": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora em recuperação judicial em curso. Debêntures emitidas para implementar o plano; sem vencimento antecipado declarado nem suspensão de pagamentos."
+  }
  }
 }

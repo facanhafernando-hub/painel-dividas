@@ -271,5 +271,12 @@
    "speed": "standard"
   },
   "grupo": "12104241000402_11-12-9"
+ },
+ "eventos": {
+  "ONCOA1": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-04-14",
+   "resumo": "Agente Fiduciário notificou vencimento antecipado automático em 14/04/2026; cautelar de 16/04 suspende efeitos judicialmente e AGD discute reestruturação."
+  }
  }
 }

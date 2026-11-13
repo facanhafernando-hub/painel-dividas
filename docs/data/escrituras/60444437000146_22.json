@@ -204,5 +204,12 @@
    "speed": "standard"
   },
   "grupo": "60444437000146_22"
+ },
+ "eventos": {
+  "LIGHE2": {
+   "evento": "rj",
+   "data": null,
+   "resumo": "Emissora Light SESA em recuperação judicial. Série repactuada pelo Plano em 2024-11-13 com fiança da Light S.A. e garantias compartilhadas. Sem vencimento antecipado."
+  }
  }
 }

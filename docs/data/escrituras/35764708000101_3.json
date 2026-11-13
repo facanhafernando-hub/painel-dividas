@@ -163,5 +163,17 @@
    "speed": "standard"
   },
   "grupo": "35764708000101_1-2-3"
+ },
+ "eventos": {
+  "TEPA13": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Série definida no aditamento pós-bookbuilding. Não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem reperfilamento nos trechos analisados."
+  },
+  "TEPA23": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Série definida no aditamento pós-bookbuilding. Não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem reperfilamento nos trechos analisados."
+  }
  }
 }

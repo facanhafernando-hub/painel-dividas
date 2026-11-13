@@ -150,5 +150,17 @@
    "speed": "standard"
   },
   "grupo": "23438929000100_2-3"
+ },
+ "eventos": {
+  "ALAR13": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação. Nenhum evento de crédito vigente identificado para a série ALAR13."
+  },
+  "ALAR23": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Resumo da situação sem informação. Nenhum evento de crédito vigente identificado para a série ALAR23."
+  }
  }
 }

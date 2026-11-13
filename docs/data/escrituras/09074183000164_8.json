@@ -94,5 +94,12 @@
    "speed": "standard"
   },
   "grupo": "09074183000164_8"
+ },
+ "eventos": {
+  "TBCR18": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado declarado, suspensão de pagamentos, RJ/RE ou novação. Menções ao vencimento antecipado são apenas cláusulas genéricas contratuais."
+  }
  }
 }

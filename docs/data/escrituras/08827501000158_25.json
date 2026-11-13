@@ -99,5 +99,12 @@
    "speed": "standard"
   },
   "grupo": "08827501000158_10-18-23-25"
+ },
+ "eventos": {
+  "AEGPB5": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Trechos analisados da 25ª emissão não trazem informação de status. Não há menção a vencimento antecipado, RJ, RE ou reperfilamento para a série."
+  }
  }
 }

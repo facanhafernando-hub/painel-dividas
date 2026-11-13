@@ -98,5 +98,12 @@
    "speed": "standard"
   },
   "grupo": "12300288000107_1"
+ },
+ "eventos": {
+  "NTEN11": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "AGD de 2023-12-29 não foi instalada por falta de quórum. Não há vencimento antecipado, RJ ou RE. Aviso de 2024-11-14 informa pagamento ordinário em 2024-11-18."
+  }
  }
 }

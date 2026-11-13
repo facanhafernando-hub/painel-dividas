@@ -93,5 +93,12 @@
    "speed": "standard"
   },
   "grupo": "62070362000106_2"
+ },
+ "eventos": {
+  "MTRO12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "AGD de 14/02/2023 aprovou não decretar vencimento antecipado por falta de registro B no prazo; registro obtido em 06/01/2023. Waiver fee de 0,5% sobre VNU; cronograma mantido."
+  }
  }
 }

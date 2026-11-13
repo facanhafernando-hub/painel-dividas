@@ -250,5 +250,12 @@
    "speed": "standard"
   },
   "grupo": "17314329000120_4"
+ },
+ "eventos": {
+  "MEAL14": {
+   "evento": "reperfilamento",
+   "data": null,
+   "resumo": "6º Aditamento implementa AGD 2026: prorroga vencimento para 2029, novo cronograma de amortização e remuneração. Condição suspensiva no título."
+  }
  }
 }

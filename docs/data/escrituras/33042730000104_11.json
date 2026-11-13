@@ -124,5 +124,12 @@
    "speed": "standard"
   },
   "grupo": "33042730000104_11-12-14"
+ },
+ "eventos": {
+  "CSNAA1": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "11ª emissão sem vencimento antecipado, suspensão, RJ/RE ou renegociação nos trechos. Anexo do agente fiduciário (2024-11-05) informa série ativa e sem inadimplementos."
+  }
  }
 }

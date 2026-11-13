@@ -310,5 +310,17 @@
    "speed": "standard"
   },
   "grupo": "42310775000103_2-4"
+ },
+ "eventos": {
+  "RISP12": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nos trechos disponíveis não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem novação. As atas de AGD tratam da 3ª emissão."
+  },
+  "RISP22": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Nos trechos disponíveis não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem novação. As atas de AGD tratam da 3ª emissão."
+  }
  }
 }

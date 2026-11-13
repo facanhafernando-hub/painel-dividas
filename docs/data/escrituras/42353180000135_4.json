@@ -316,5 +316,12 @@
    "speed": "standard"
   },
   "grupo": "42353180000135_4"
+ },
+ "eventos": {
+  "IRJS14": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Waiver proposto sobre conta reserva, trocando saldo mínimo por fiança bancária, sem alterar datas, juros ou amortizações. Resultado da AGD de 04/12/2025 não informado."
+  }
  }
 }

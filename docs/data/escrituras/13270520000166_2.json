@@ -232,5 +232,12 @@
    "speed": "standard"
   },
   "grupo": "13270520000166_2"
+ },
+ "eventos": {
+  "KRSA12": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-04-29",
+   "resumo": "Plano de RE proposto em 29/04/2026 configurou vencimento antecipado automático (cl. 6.1.1 iii), registrado nas AGDs; sustação pendente para 21/01/2027."
+  }
  }
 }

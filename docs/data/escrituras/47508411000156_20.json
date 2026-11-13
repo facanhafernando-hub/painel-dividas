@@ -172,5 +172,12 @@
    "speed": "standard"
   },
   "grupo": "47508411000156_20"
+ },
+ "eventos": {
+  "PCARD0": {
+   "evento": "re",
+   "data": "2026-03-10",
+   "resumo": "RE pedida em 10/03/2026 e homologada em out/2026. Créditos novados e pagos por Opções A, B ou C; debêntures bloqueadas na B3 até substituição pelas Novas Debêntures."
+  }
  }
 }

@@ -128,5 +128,12 @@
    "speed": "standard"
   },
   "grupo": "05197443000138_10-5-6"
+ },
+ "eventos": {
+  "HAPV15": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou reperfilamento. Recompra de até R$ 150 mi a preço de mercado não altera o fluxo da série."
+  }
  }
 }

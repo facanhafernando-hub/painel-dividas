@@ -140,5 +140,17 @@
    "speed": "standard"
   },
   "grupo": "21314559000166_17-7-8"
+ },
+ "eventos": {
+  "MOVI18": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Anexo II classifica a 8ª emissão como adimplência pecuniária. Nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação registrado nos documentos."
+  },
+  "MOVI28": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Anexo II classifica a 8ª emissão como adimplência pecuniária. Nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação registrado nos documentos."
+  }
  }
 }
