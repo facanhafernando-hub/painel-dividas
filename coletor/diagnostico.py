@@ -1,18 +1,15 @@
-"""Diagnóstico: arquivo de cadastro de balcão da B3, tabela CRI/CRA da ANBIMA, SND."""
-import collections, csv, io, json, re, time, urllib.request, urllib.error, zipfile
+"""Diagnóstico: CSV CRI/CRA ANBIMA (com data) e características de debêntures no SND."""
+import collections, re, time, urllib.request, urllib.error, html as H
 from datetime import date, timedelta
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 
-def req(url, corpo=None, timeout=30, tent=5):
-    h = {"User-Agent": UA, "Accept": "*/*"}
-    if corpo is not None:
-        h["Content-Type"] = "application/json"
+def req(url, timeout=60, tent=3):
     err = ""
     for i in range(tent):
         try:
-            r = urllib.request.urlopen(urllib.request.Request(url, data=corpo, headers=h), timeout=timeout)
+            r = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=timeout)
             return r.status, r.read()
         except urllib.error.HTTPError as e:
             return e.code, e.read()[:300]
@@ -26,55 +23,45 @@ d = date.today() - timedelta(days=1)
 while d.weekday() >= 5:
     d -= timedelta(days=1)
 
-print("=" * 80, "\nB3 arquivo de cadastro (api/download)")
-for nome in ("OTCInstrumentsConsolidatedFile", "OTCInstrumentsConsolidated", "InstrumentsConsolidatedFile"):
-    st, b = req(f"https://arquivos.b3.com.br/api/download/requestname?fileName={nome}&date={d}")
-    print(nome, st, b[:300])
-    if st != 200:
-        continue
-    try:
-        tok = json.loads(b)["token"]
-    except Exception:
-        continue
-    st, f = req(f"https://arquivos.b3.com.br/api/download/?token={tok}", timeout=120)
-    print("  download", st, len(f), f[:4])
-    if st != 200:
-        continue
-    if f[:2] == b"PK":
-        z = zipfile.ZipFile(io.BytesIO(f)); f = z.read(z.namelist()[0])
-    txt = f.decode("latin-1")
-    ls = txt.splitlines()
-    print("  linhas:", len(ls))
-    for l in ls[:3]:
-        print("   ", l[:700])
-    hdr_i = next(i for i, l in enumerate(ls[:5]) if l.count(";") > 5)
-    rd = list(csv.reader(ls[hdr_i:], delimiter=";"))
-    cab = rd[0]
-    print("  cabeçalho:", cab)
-    for ti, c in enumerate(cab):
-        cnt = collections.Counter(r[ti] for r in rd[1:] if len(r) > ti)
-        if 2 < len(cnt) < 80 and ("DEB" in cnt or "CRA" in cnt):
-            print("  tipos em", c, cnt.most_common(30))
-    n = 0
-    for r in rd[1:]:
-        lin = ";".join(r).upper()
-        if "RAIZEN" in lin and n < 3:
-            print("   raizen:", dict(zip(cab, r))); n += 1
-    break
+print("=" * 80, "\nANBIMA CRI/CRA CSV")
+for fd in (d.strftime("%d/%m/%Y"), d.strftime("%Y-%m-%d"), d.strftime("%d%m%Y")):
+    st, b = req(f"https://www.anbima.com.br/pt_br/anbima/TaxasCriCraExport/exportarCSV?filtroTermo=&filtroData={urllib.request.quote(fd)}")
+    print(fd, st, len(b))
+    if st == 200 and len(b) > 200:
+        t = b.decode("utf-8-sig", errors="replace")
+        if "Ã" in t[:3000] or "�" in t[:3000]:
+            t = b.decode("latin-1")
+        ls = t.splitlines()
+        print("  linhas:", len(ls))
+        for l in ls[:6] + ls[len(ls)//2:len(ls)//2+2]:
+            print("   ", l[:600])
+        break
 
-print("=" * 80, "\nANBIMA CRI/CRA (HTML)")
-st, b = req("https://www.anbima.com.br/pt_br/informar/precos-e-indices/precos/taxas-de-cri-e-cra/taxas-de-cri-e-cra.htm", timeout=60, tent=2)
-h = b.decode("utf-8", errors="replace")
-print("status", st, len(h), "tabelas:", h.count("<table"))
-i = h.find("<table")
-if i >= 0:
-    trecho = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "|", h[i:i + 8000]))
-    print(re.sub(r"\|( ?\|)+", "|", trecho)[:2500])
-for m in re.findall(r".{0,250}exportarCSV.{0,250}", h)[:3]:
-    print("ctx export:", re.sub(r"\s+", " ", m))
+print("=" * 80, "\nSND características")
+st, b = req("https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/caracteristicas_r.asp?tip_deb=publicas&selecao=RAIZ", timeout=90)
+t = b.decode("latin-1")
+print("status", st, len(t))
+rows = re.findall(r"<tr[^>]*>(.*?)</tr>", t, re.S | re.I)
+print("linhas <tr>:", len(rows))
+def cells(r):
+    return [H.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", c))).strip() for c in re.findall(r"<t[dh][^>]*>(.*?)</t[dh]>", r, re.S | re.I)]
+for r in rows[:6]:
+    print("   ", cells(r)[:40])
+ncol = collections.Counter(len(cells(r)) for r in rows)
+print("colunas por linha:", ncol.most_common(5))
+for r in rows:
+    c = cells(r)
+    if any("RAIZ" in x for x in c[:3]):
+        print("   raizen:", c[:60]); break
+for m in re.findall(r'href="([^"]+\.(?:xls|csv|txt|asp)[^"]*)"', t)[:15]:
+    print("   link:", m)
 
-print("=" * 80, "\nSND debentures.com.br")
-for u in ("https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/caracteristicas_r.asp?tip_deb=publicas&selecao=RAIZ",
-          "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/puhistorico_r.asp"):
-    st, b = req(u, timeout=30, tent=2)
-    print(u, st, len(b), b[:200])
+print("=" * 80, "\nSND PU histórico (curva)")
+for u in ("https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/puhistorico_r.asp?op_exc=False&ativo=RAIZ15&dt_ini=&dt_fim=&Submit.x=1",
+          "https://www.debentures.com.br/exploreosnd/consultaadados/emissoesdedebentures/puhistorico_e.asp?op_exc=False&ativo=RAIZ15"):
+    st, b = req(u, timeout=90, tent=2)
+    t = b.decode("latin-1")
+    print(u, st, len(t))
+    rr = re.findall(r"<tr[^>]*>(.*?)</tr>", t, re.S | re.I)
+    for r in rr[:8]:
+        print("   ", cells(r)[:12])
