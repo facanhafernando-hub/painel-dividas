@@ -307,14 +307,6 @@
    "assinatura": "d30a43167f03",
    "bate_snd": true
   },
-  "05197443000138_6": {
-   "codigos": [
-    "BCBF16"
-   ],
-   "status": "ok",
-   "assinatura": "d30a43167f03",
-   "bate_snd": false
-  },
   "05197443000138_7": {
    "codigos": [
     "HAPV17"
@@ -1123,5 +1115,42 @@
    "bate_snd": false
   }
  },
- "gasto_usd": 12.491
+ "gasto_usd": 13.0939,
+ "garantias": {
+  "12528708000107_2": {
+   "status": "ok",
+   "assinatura": "5f43070d970b",
+   "codigos": [
+    "AERI12"
+   ]
+  },
+  "05197443000138_6": {
+   "status": "ok",
+   "assinatura": "73ac6ddb9aff",
+   "codigos": [
+    "BCBF16"
+   ]
+  },
+  "12420164000157_4": {
+   "status": "sem_series",
+   "assinatura": "ec2ce119ab15",
+   "codigos": [
+    "CMPH14"
+   ]
+  },
+  "12420164000157_5": {
+   "status": "sem_series",
+   "assinatura": "a0c3ba025410",
+   "codigos": [
+    "VVEO15"
+   ]
+  },
+  "09053134000145_2": {
+   "status": "ok",
+   "assinatura": "898bd5873906",
+   "codigos": [
+    "ELFA12"
+   ]
+  }
+ }
 }

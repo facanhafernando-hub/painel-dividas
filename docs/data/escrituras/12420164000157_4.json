@@ -203,5 +203,87 @@
    "data": null,
    "resumo": "Repactuação proposta, sem ata de aprovação; cronograma original segue vigente (amortizações em 2026 e vencimento em 2027). Sem vencimento antecipado, RJ ou RE."
   }
+ },
+ "garantias": {},
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2026-05-13",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260164867820-40",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521705&numSequencia=1046411&numVersao=1"
+   },
+   {
+    "data": "2026-05-13",
+    "tipo": "comunicado",
+    "assunto": "Fato Relevante - Convocação das Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE130520260105651273-61",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521729&numSequencia=1046435&numVersao=1"
+   },
+   {
+    "data": "2026-06-03",
+    "tipo": "proposta_agd",
+    "assunto": "(1) Alteração de determinados termos e condições da 4ª Emissão de Debentures||(2) Autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260288479481-38",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1530615&numSequencia=1055321&numVersao=2"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260108581623-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531994&numSequencia=1056700&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE080620260196876480-22",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531996&numSequencia=1056702&numVersao=1"
+   },
+   {
+    "data": "2026-06-08",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE080620260135810552-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1531987&numSequencia=1056693&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260143830448-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533894&numSequencia=1058600&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "ata_agd",
+    "assunto": "Deliberar sobre a alteração de determinados termos e condições das Debêntures||Deliberar sobre a autorização para que a Companhia e o Agente Fiduciário possam praticar todos os atos necessários à realização, formalização, implementação e aperfeiçoamento das deliberações",
+    "protocolo": "025682IPE110620260114936476-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533895&numSequencia=1058601&numVersao=1"
+   },
+   {
+    "data": "2026-06-11",
+    "tipo": "comunicado",
+    "assunto": "Assembleias Gerais de Debenturistas",
+    "protocolo": "025682IPE110620260158538370-54",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1533902&numSequencia=1058608&numVersao=1"
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": null,
+  "lacunas": null
  }
 }

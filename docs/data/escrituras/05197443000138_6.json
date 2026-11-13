@@ -50,44 +50,36 @@
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
-    "data": "2023-12-22",
+    "data": "2020-11-03",
     "tipo": "escritura",
-    "assunto": "5ª Emissão de Debêntures",
-    "protocolo": "024392IPE151220230104528209-56",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024775IPE291020200104413812-37",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1176895&numSequencia=701621&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=804621&numSequencia=329359&numVersao=1"
    },
    {
-    "data": "2025-04-24",
+    "data": "2023-04-28",
     "tipo": "escritura",
-    "assunto": "Oferta de Debêntures",
-    "protocolo": "024392IPE240420250151163146-49",
+    "assunto": "BCBF15 - Migração para HAPV",
+    "protocolo": "024775IPE200420230104504410-79",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1092996&numSequencia=617725&numVersao=1"
    },
    {
-    "data": "2025-10-08",
+    "data": "2023-04-28",
     "tipo": "escritura",
-    "assunto": "Oferta de Debêntures",
-    "protocolo": "024392IPE071020250184374491-09",
+    "assunto": "BCBF 16 - Migração para HAPV",
+    "protocolo": "024775IPE200420230104504410-85",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1092999&numSequencia=617728&numVersao=1"
    },
    {
-    "data": "2025-10-08",
-    "tipo": "comunicado",
-    "assunto": "Oferta de Debêntures",
-    "protocolo": "024392IPE081020250101964273-32",
+    "data": "2023-05-05",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento da 7° Escritura de Debêntures",
+    "protocolo": "024775IPE100120230104505108-38",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1"
-   },
-   {
-    "data": "2026-08-25",
-    "tipo": "comunicado",
-    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
-    "protocolo": "024392IPE250820260171572734-05",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1097632&numSequencia=622361&numVersao=1"
    }
   ],
   "uso_grupo": {
@@ -114,5 +106,63 @@
    "data": null,
    "resumo": "Sem eventos de crédito nos trechos. Elegível ao programa de recompra de até R$ 150 mi de 2026, sem dados de tesouraria para esta série."
   }
+ },
+ "garantias": {
+  "BCBF16": {
+   "codigo": "BCBF16",
+   "emissao": 6,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Notre Dame Intermédica Saúde S.A. (CNPJ 44.649.812/0001-38)",
+     "condicoes": "Fiança em favor dos debenturistas, representados pelo Agente Fiduciário. As condições detalhadas da 6ª emissão (solidariedade, renúncia ao benefício de ordem, limite) não constam dos trechos recebidos. A cláusula 2.2.2, conforme alterada pelo 2º Aditamento, prevê o registro da escritura nos RTD de São Paulo e de Fortaleza por causa da Fiança.",
+     "situacao": "vigente",
+     "fonte": "Documento 3 (2º Aditamento à Escritura da 6ª Emissão, de 20/04/2023): título e cabeçalho, qualificação da Fiadora e cláusula 2.2.2 alterada. O aditamento não libera nem altera a Fiança."
+    }
+   ],
+   "resumo": "Fiança da Notre Dame Intermédica Saúde S.A., mantida após a cessão da emissão à Hapvida Participações"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2020-11-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "024775IPE291020200104413812-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=804621&numSequencia=329359&numVersao=1"
+   },
+   {
+    "data": "2023-04-28",
+    "tipo": "escritura",
+    "assunto": "BCBF15 - Migração para HAPV",
+    "protocolo": "024775IPE200420230104504410-79",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1092996&numSequencia=617725&numVersao=1"
+   },
+   {
+    "data": "2023-04-28",
+    "tipo": "escritura",
+    "assunto": "BCBF 16 - Migração para HAPV",
+    "protocolo": "024775IPE200420230104504410-85",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1092999&numSequencia=617728&numVersao=1"
+   },
+   {
+    "data": "2023-05-05",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento da 7° Escritura de Debêntures",
+    "protocolo": "024775IPE100120230104505108-38",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1097632&numSequencia=622361&numVersao=1"
+   }
+  ],
+  "cnpj_documental": "19276528000116",
+  "emissora_atual": "Hapvida Participações e Investimentos S.A. (emissora ingressante, sucedeu a BCBF Participações S.A. nos direitos e obrigações da 6ª emissão)",
+  "lacunas": "Dos trechos da 6ª emissão, só se tem o 2º Aditamento (Documento 3), que muda a emissora, o local de registro e o objeto social. A escritura original da 6ª emissão (07/10/2021) e o 1º Aditamento não foram fornecidos, então os termos da Fiança (solidária, principal pagadora, renúncia ao benefício de ordem, valor) não são confirmados. A escritura da 5ª emissão (Documento 1) prevê fiança solidária, com principal pagadora e renúncia ao benefício de ordem, mas não se pode presumir que a 6ª seja igual. A manutenção da Fiança após a cessão é inferida: o aditamento não a libera e a Notre Dame figura como fiadora e parte do ato. O texto traz inconsistência de data: o 1º Aditamento é citado como de 13/10/2023, posterior ao 2º Aditamento (20/04/2023), possivelmente erro de OCR ou de digitação. O Documento 2 (5ª emissão, BCBF15) e o Documento 4 (7ª emissão, com fiança da Hapvida) não dizem respeito ao BCBF16. A AGD de 20/03/2023, que aprovou a cessão, não foi fornecida."
  }
 }

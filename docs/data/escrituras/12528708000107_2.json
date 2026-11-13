@@ -195,5 +195,121 @@
    "data": "2026-11-04",
    "resumo": "Pedido de RE pela Emissora é vencimento antecipado automático (cl. 4.15.2 I da 2ª emissão). Trechos não trazem declaração nem deliberação de AGD."
   }
+ },
+ "garantias": {
+  "AERI12": {
+   "codigo": "AERI12",
+   "emissao": 2,
+   "especie": "quirografária na origem; o 3º Aditamento (28/03/2025) prevê convolação para espécie com garantia real após a celebração do Contrato de Garantias Compartilhadas, sujeita a condições resolutivas",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios decorrentes do que sobejar de eventual excussão da garantia sobre os imóveis das matrículas 032.288 e 032.289 (Ofício de Registro de Imóveis de Caucaia-CE), já alienados fiduciariamente pela Emissora a outras obrigações (Cessão Fiduciária de Direitos Creditórios de Sobejo)",
+     "condicoes": "irrevogável e irretratável; compartilhada com outros credores via Contrato de Garantias Compartilhadas; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusula 3.11.1(i)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Imóveis das matrículas 025.487, 53.414, 019.778, 49.081, 039.862 e 5074 (Registro de Imóveis de Caucaia-CE), com terrenos, construções, edificações, acessões e benfeitorias (Alienação Fiduciária Planta Industrial)",
+     "condicoes": "irrevogável e irretratável; imóveis desonerados; compartilhada com outros credores; o edital ou contrato de venda deve exigir do comprador a celebração de arrendamento/locação ou outra forma de disposição da posse; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusulas 3.11.1(ii) e 3.11.3.1"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Determinadas máquinas e equipamentos de propriedade da Emissora (Alienação Fiduciária de Equipamentos)",
+     "condicoes": "irrevogável e irretratável; bens desonerados; compartilhada; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusula 3.11.1(iii)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Estoque de pás eólicas (Alienação Fiduciária de Pás Eólicas)",
+     "condicoes": "irrevogável e irretratável; compartilhada; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusula 3.11.1(iv)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Propriedade superveniente do imóvel de matrícula nº 32.288 (Ofício de Registro de Imóveis de Caucaia-CE) (Alienação Fiduciária Superveniente)",
+     "condicoes": "incide sobre a propriedade superveniente do imóvel; compartilhada; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusula 3.11.1(v)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Cotas subordinadas de titularidade da Emissora no Aeris Fundo de Investimento em Direitos Creditórios – Indústria e Comércio – Responsabilidade Limitada (Garantia FIDC)",
+     "condicoes": "compartilhada; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusula 3.11.1(vi)"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios decorrentes de ICMS registrados no balanço de 31/12/2024 (Cessão Fiduciária de Direitos Creditórios ICMS)",
+     "condicoes": "compartilhada; sob condições resolutivas do aditamento",
+     "situacao": "desconhecida",
+     "fonte": "3º Aditamento, Cláusula 3.11.1(vii)"
+    }
+   ],
+   "resumo": "Quirografária; 3º Adit. (2025) prevê garantias reais fiduciárias compartilhadas, sob condições resolutivas; vigência não confirmada"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2021-08-16",
+    "tipo": "escritura",
+    "assunto": "Escritura da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE150720210104442411-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=894005&numSequencia=418739&numVersao=1"
+   },
+   {
+    "data": "2021-08-16",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE060820210104442412-14",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=894006&numSequencia=418740&numVersao=1"
+   },
+   {
+    "data": "2021-08-16",
+    "tipo": "escritura",
+    "assunto": "Segundo Aditamento da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE120820210104442411-86",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=894007&numSequencia=418741&numVersao=1"
+   },
+   {
+    "data": "2025-05-02",
+    "tipo": "escritura",
+    "assunto": "Terceiro Aditamento da Segunda Emissão de Debêntures",
+    "protocolo": "025283IPE280320250179099367-29",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1371350&numSequencia=896062&numVersao=1"
+   },
+   {
+    "data": "2026-11-04",
+    "tipo": "comunicado",
+    "assunto": "Pedido de recuperação extrajudicial",
+    "protocolo": "025283IPE031120260116101863-20",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1583619&numSequencia=1108325&numVersao=1"
+   },
+   {
+    "data": "2026-11-05",
+    "tipo": "plano_rj",
+    "assunto": "Minuta do Plano de Recuperação Extrajudicial",
+    "protocolo": "025283IPE031120260160763554-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1584655&numSequencia=1109361&numVersao=1"
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Aeris Indústria e Comércio de Equipamentos para Geração de Energia S.A.",
+  "lacunas": "Não há prova de que o Contrato de Garantias Compartilhadas (prazo até 24/04/2025) foi celebrado, de que as condições resolutivas do 3º Aditamento não se verificaram, nem de que as garantias foram constituídas e registradas. Também não consta o aditamento que converteria a espécie em garantia real, de modo que a espécie vigente segue quirografária. Não foram fornecidos os demais credores do compartilhamento, os anexos nem o Contrato de Garantias Compartilhadas. O texto é um recorte, e as cláusulas 3.11.1 a 3.11.3 podem estar incompletas. O pedido de recuperação extrajudicial (comunicado de 04/11/2026) abrange créditos não cobertos por garantias reais ou fiduciárias e prevê eventual alteração de garantias. Os trechos não dizem se a série está sujeita ao plano nem se houve alteração das garantias. Não consta fiança ou aval. Não houve migração de emissora."
  }
 }

@@ -428,5 +428,156 @@
    "data": "2026-10-30",
    "resumo": "Agente fiduciário declarou vencimento antecipado na AGD de 30/10/2026 (cláusula 8.1.1, xi), por Medida Cautelar, ressalvada decisão judicial em contrário."
   }
+ },
+ "garantias": {
+  "ELFA12": {
+   "codigo": "ELFA12",
+   "emissao": 2,
+   "especie": "com garantia real, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Direitos creditórios decorrentes das vendas da Elfa Medicamentos S.A. e das demais Cedentes a seus clientes, e contas vinculadas de titularidade da Emissora e das Cedentes mantidas no Banco Depositário das Debêntures, por onde circulam os recursos desses direitos",
+     "condicoes": "Domínio resolúvel e posse indireta em favor dos Debenturistas, representados pelo Agente Fiduciário; irrevogável e irretratável; sujeita a Valor Mínimo da Garantia (montante/volume mínimo) previsto no Contrato de Cessão Fiduciária; há Contrato de Cobrança com o Banco Depositário. O Contrato foi celebrado em 17 ou 31/03/2022 (as atas divergem). A partir do 5º aditamento, as Cedentes Liberadas (DRS Administração de Estoques Ltda., DRS Courier Ltda., DRS Importadora e Serviços Ltda., Suportemed Distribuidora Comércio e Representação Ltda.) saíram da garantia; permanecem as demais Cedentes Originais.",
+     "situacao": "vigente (parcialmente liberada quanto às 4 Cedentes Liberadas)",
+     "fonte": "Doc. 1 cl. 6.1.1; Doc. 2 (5º Aditamento: cl. 6.1.1(ii), cl. 1.1 consolidada e item 1.7, AGD de 01/11/2024); Docs. 3 e 4 cl. 6.1.1(ii)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "100% das quotas de emissão da Descarpack Descartáveis do Brasil Ltda. (CNPJ 01.057.428/0001-33), de titularidade da Elfa Medicamentos S.A.",
+     "condicoes": "Em favor dos Debenturistas, representados pelo Agente Fiduciário; incluída pelo 3º Aditamento (09/02/2023); Contrato de Alienação Fiduciária de Quotas firmado entre Emissora, Agente Fiduciário e Descarpack; vigora até o vencimento ou o adimplemento das Obrigações Garantidas.",
+     "situacao": "vigente",
+     "fonte": "Doc. 2 (considerando D e cl. 6.1.1(i)); Docs. 3 e 4 cl. 6.1.1(i)"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "50% das ações de emissão da Surya Dental Comércio de Produtos Odontológicos e Farmacêuticos S.A., de titularidade da Elfa Medicamentos S.A.",
+     "condicoes": "Em favor dos Debenturistas, representados pelo Agente Fiduciário; incluída pelo 5º Aditamento; Contrato de Alienação Fiduciária de Ações firmado entre Emissora, Agente Fiduciário e Surya.",
+     "situacao": "vigente",
+     "fonte": "Doc. 2 (5º Aditamento, cl. 1.6 e 6.1.1(iii)); Docs. 3 e 4 cl. 6.1.1(iii)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Descarpack Descartáveis do Brasil Ltda. (CNPJ 01.057.428/0001-33)",
+     "condicoes": "Fiadora e principal pagadora, solidariamente responsável com a Emissora; irrevogável e irretratável; renúncia aos benefícios de ordem e demais direitos previstos nos arts. 277, 333, par. único, 364, 366, 368, 821, 824, 827, 829, 830, 834, 835, 837, 838 e 839 do Código Civil e arts. 130, 131 e 794 do CPC; pagamento em até 1 Dia Útil após comunicação do Agente Fiduciário; vale até o pagamento integral das Obrigações Garantidas; pagamentos livres e líquidos de tributos; sem limite de valor mencionado nos trechos. Incluída pelo 2º Aditamento (13/06/2022).",
+     "situacao": "vigente",
+     "fonte": "Doc. 1 cl. 6.2 e Anexo I (aditamento de inclusão da fiança); Docs. 2, 3 e 4 cl. 6.2.1 a 6.2.7"
+    }
+   ],
+   "resumo": "Cessão fiduciária de recebíveis/contas, AF de quotas da Descarpack e de 50% da Surya, fiança da Descarpack"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-13",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-04-13",
+    "tipo": "escritura",
+    "assunto": "INSTRUMENTO PARTICULAR DE ESCRITURA DA  2ª (SEGUNDA) EMISSÃO DE DEBÊNTURES SIMPLES, NÃO CONVERSÍVEIS EM AÇÕES, DA ESPÉCIE COM  GARANTIA REAL,  EM SÉRIE ÚNICA",
+    "protocolo": "025348IPE170320220104466411-67",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=967164&numSequencia=491898&numVersao=1"
+   },
+   {
+    "data": "2024-12-02",
+    "tipo": "escritura",
+    "assunto": "Quinto Aditamento ao Instrumento Particular de Escritura da 2ª (Segunda) Emissão de Debêntures Simples, Não Conversíveis em Ações",
+    "protocolo": "025348IPE021220240104562811-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1310152&numSequencia=834878&numVersao=1"
+   },
+   {
+    "data": "2025-11-07",
+    "tipo": "escritura",
+    "assunto": "Sexto Aditamento ao Instrumento Particular de Escritura da 2ª (Segunda) Emissão de Debêntures Simples, Não Conversíveis em Ações",
+    "protocolo": "025348IPE071120250160431275-63",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1442017&numSequencia=966729&numVersao=1"
+   },
+   {
+    "data": "2026-08-10",
+    "tipo": "escritura",
+    "assunto": "7º (Sétimo) Aditamento ao Instrumento Particular de Escritura da 2ª (Segunda) Emissão de Debêntures Simples.",
+    "protocolo": "025348IPE170420260170392825-18",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555405&numSequencia=1080111&numVersao=1"
+   },
+   {
+    "data": "2026-09-24",
+    "tipo": "proposta_agd",
+    "assunto": "1. Aprovar a extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debenturistas da Emissora, realizadas em 13 de julho de 2026 e 10 de agosto de 2026.||2. Aprovar a extensão do prazo concedido nas deliberações em AGD 13/07 e AGD 10/08 para cumprimento das Aquisiçõ",
+    "protocolo": "025348IPE011020260106110558-89",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1571368&numSequencia=1096074&numVersao=1"
+   },
+   {
+    "data": "2026-10-05",
+    "tipo": "proposta_agd",
+    "assunto": "A. Aprovar a suspensão temporária de obrigações das debêntures por 120 dias após 09.10.2026, proibindo execuções e vencimento antecipado, e adiando pagamentos sem extinguir direitos dos credores.||B. Aprovar a suspensão do prazo das Aquisições Facultativas, vedando execuções e vencimento antecipado ",
+    "protocolo": "025348IPE091020260156793005-34",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1574507&numSequencia=1099213&numVersao=1"
+   },
+   {
+    "data": "2026-10-09",
+    "tipo": "ata_agd",
+    "assunto": "1- A extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debenturistas da Emissora, realizadas em 13 de julho de 2026 e 10 de agosto de 2026||2 -  Extensão do prazo concedido na deliberação (c) da AGD 13/07 e na deliberação (d) da AGD 10/08 para cumprimento das A",
+    "protocolo": "025348IPE091020260113597790-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576339&numSequencia=1101045&numVersao=1"
+   },
+   {
+    "data": "2026-10-16",
+    "tipo": "ata_agd",
+    "assunto": "(a) a extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debenturistas da Emissora, realizadas em 13 de julho de 2026 e 10 de agosto de 2026||(b) a extensão do prazo concedido na deliberação (c) da AGD 13/07 e na deliberação (d) da AGD 10/08 para cumprimento das",
+    "protocolo": "025348IPE161020260100654798-27",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1577835&numSequencia=1102541&numVersao=1"
+   },
+   {
+    "data": "2026-10-19",
+    "tipo": "comunicado",
+    "assunto": "Suspensão AGD",
+    "protocolo": "025348IPE191020260182511606-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1578375&numSequencia=1103081&numVersao=1"
+   },
+   {
+    "data": "2026-10-23",
+    "tipo": "ata_agd",
+    "assunto": "(\"AGD 13/07\" e \"AGD 10/08\", respectivamente), autorizando o não cumprimento, pela Emissora, de todas e quaisquer obrigações contratuais previstas na Escritura de Emissão e no \"Instrumento Particular|| (a) a extensão do período de suspensão temporária, conforme descrito nas Assembleias Gerais de Debe",
+    "protocolo": "025348IPE231020260114621547-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1579931&numSequencia=1104637&numVersao=1"
+   },
+   {
+    "data": "2026-10-26",
+    "tipo": "comunicado",
+    "assunto": "Suspensão AGD.",
+    "protocolo": "025348IPE261020260116001806-30",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1580093&numSequencia=1104799&numVersao=1"
+   },
+   {
+    "data": "2026-10-30",
+    "tipo": "ata_agd",
+    "assunto": "4ª Suspensão",
+    "protocolo": "025348IPE301020260138221888-72",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582443&numSequencia=1107149&numVersao=1"
+   },
+   {
+    "data": "2026-11-03",
+    "tipo": "comunicado",
+    "assunto": "Vencimento Antecipado das Debêntures",
+    "protocolo": "025348IPE031120260143307675-64",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582913&numSequencia=1107619&numVersao=1"
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Elfa Medicamentos S.A. (CNPJ 09.053.134/0001-45). Não há indício de cessão da emissão a outra empresa do grupo.",
+  "lacunas": "1) Os trechos não trazem a íntegra da cláusula 6.2.8 (sub-rogação) nem do restante da cláusula 6.2. 2) Não há o texto do 3º Aditamento, do 4º Aditamento nem dos contratos de garantia. 3) A AGD de 08/10/2025 aprovou alterações de vencimento e amortização, mas nada que libere garantias. 4) As propostas e atas de AGD de 2026 (01, 09, 16, 23 e 30/10) preveem a possível \"renúncia, substituição, liberação, alteração ou repactuação\" das garantias numa reestruturação futura, ainda sem termos definitivos nem aprovação nos trechos; por isso as garantias seguem vigentes. 5) A AGD de 13/07 e 10/08/2026 e as suspensões temporárias de exigibilidade não liberam garantias; o Agente Fiduciário informou em 30/10/2026 o vencimento antecipado automático por questionamento judicial (Medida Cautelar), sem efeito sobre a existência das garantias. 6) As atas divergem quanto à data de celebração do Contrato de Cessão Fiduciária (17/03/2022 ou 31/03/2022). 7) Não é possível confirmar o registro/perfeição de cada garantia, o Valor Mínimo da Garantia nem a lista completa de Cedentes, que está truncada nos trechos."
  }
 }
