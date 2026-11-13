@@ -184,10 +184,11 @@ def texto_documento(doc):
         raise RuntimeError(f"formato inesperado {b[:16]!r}")
     partes = []
     for pdf in pdfs:
-        tmp = CACHE / "tmp.pdf"
+        tmp = CACHE / f"tmp_{doc['protocolo']}_{len(partes)}.pdf"
         tmp.write_bytes(pdf)
         out = subprocess.run(["pdftotext", "-layout", str(tmp), "-"], capture_output=True, timeout=300)
         partes.append(out.stdout.decode("utf-8", "replace"))
+        tmp.unlink(missing_ok=True)
     t = "\n".join(partes)
     p.write_text(t)
     return t
@@ -309,11 +310,13 @@ def conferir(serie):
             return datetime.strptime(d, "%d/%m/%Y").strftime("%Y-%m-%d")
         except Exception:
             return d
+    hoje = date.today().isoformat()
     snd = {iso(e[0]): e[2] for e in ev if e[1] == "A" and (e[2] or 0) > 0}
     for e in ev:
         if e[1] == "V":
             snd.setdefault(iso(e[0]), 100.0)
-    doc = {a["data"]: a.get("percentual") for a in serie.get("amortizacoes") or [] if a.get("data")}
+    snd = {d: v for d, v in snd.items() if d >= hoje}
+    doc = {a["data"]: a.get("percentual") for a in serie.get("amortizacoes") or [] if a.get("data") and a["data"] >= hoje}
     par, livres = {}, set(snd)
     for d in sorted(doc):          # casa cada data do documento com a do SND (que já vem ajustada para dia útil)
         try:
@@ -330,119 +333,8 @@ def conferir(serie):
             "ok": len(par) == len(snd) == len(doc) and not dif_pct}
 
 
-# ---------------------------------------------------------------- orquestração
-def chave_emissao(e):
-    return f"{e[0]}_{e[1]}"
-
-
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--codigos", default="")
-    ap.add_argument("--direto", action="store_true")
-    ap.add_argument("--lote", action="store_true")
-    ap.add_argument("--limite-usd", type=float, default=20.0)
-    ap.add_argument("--forcar", action="store_true")
-    a = ap.parse_args()
-    if not CHAVE:
-        sys.exit("ANTHROPIC_API_KEY ausente")
-    SAIDA.mkdir(parents=True, exist_ok=True)
-    idx_p = SAIDA / "_index.json"
-    idx = json.load(open(idx_p)) if idx_p.exists() else {"emissoes": {}, "gasto_usd": 0.0}
-
-    emissoes = lista_alvo()
-    if a.codigos:
-        cods = {c.strip().upper() for c in a.codigos.split(",")}
-        emissoes = {k: v for k, v in emissoes.items() if any(i["c"] in cods for i in v)}
-    log("emissões-alvo:", len(emissoes))
-    linhas = ipe(range(2010, date.today().year + 1))
-    docs = documentos(emissoes, linhas)
-
-    # agrupa por empresa: documentos compartilhados (atas, comunicados, planos) são lidos uma vez só
-    por_cnpj = collections.defaultdict(list)
-    for e, itens in sorted(emissoes.items()):
-        por_cnpj[e[0]].append((e, itens))
-    pendentes = []
-    for cnpj, ems in por_cnpj.items():
-        sel_por = {e: selecionar(docs.get(e, [])) for e, _ in ems}
-        for e, itens in ems:
-            if not sel_por[e]:
-                idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "sem_documentos_cvm"}
-        ems = [x for x in ems if sel_por[x[0]]]
-        # fatia em grupos que caibam num pedido (~320 mil caracteres)
-        grupos, atual, tam = [], [], 0
-        for e, itens in ems:
-            t = sum(LIMITE_TIPO.get(d["tipo"], 60000) for d in sel_por[e])
-            if atual and tam + t > 320000:
-                grupos.append(atual); atual, tam = [], 0
-            atual.append((e, itens)); tam += t
-        if atual:
-            grupos.append(atual)
-        for grupo in grupos:
-            vistos, sel = set(), []
-            for e, _ in grupo:
-                for d in sel_por[e]:
-                    if d["protocolo"] not in vistos:
-                        vistos.add(d["protocolo"]); sel.append(d)
-            sel.sort(key=lambda d: d["data"])
-            k = cnpj + "_" + "-".join(e[1] for e, _ in grupo)
-            ass = hashlib.sha1(json.dumps([d["protocolo"] + "_" + str(d["versao"]) for d in sel]).encode()).hexdigest()[:12]
-            if not a.forcar and all(idx["emissoes"].get(chave_emissao(e), {}).get("assinatura") == ass and
-                                    idx["emissoes"][chave_emissao(e)].get("status") == "ok" for e, _ in grupo):
-                continue
-            docs_txt = []
-            for d in sel:
-                try:
-                    docs_txt.append((d, recortar(texto_documento(d), LIMITE_TIPO.get(d["tipo"], 60000))))
-                except Exception as ex:
-                    log("  download falhou", k, d["protocolo"], ex)
-            if sum(len(t) for _, t in docs_txt) < 500:
-                for e, itens in grupo:
-                    idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "texto_vazio"}
-                continue
-            prompt = montar_prompt(grupo, docs_txt)
-            pendentes.append((k, grupo, sel, ass, prompt))
-            log(f"  {k} {[i['c'] for _, its in grupo for i in its]}: {len(sel)} docs, {len(prompt):,} caracteres")
-
-    modo = "lote" if a.lote else "direto"
-    est = sum(len(p[4]) / 2.6 for p in pendentes)
-    est_usd = (est * PRECO[modo][0] + len(pendentes) * 7000 * PRECO[modo][1]) / 1e6
-    log(f"pendentes: {len(pendentes)} | ~{est / 1e6:.2f} MTok de entrada | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
-    if idx["gasto_usd"] + est_usd > a.limite_usd:
-        sys.exit(f"ABORTADO: estimativa passaria do teto de US$ {a.limite_usd}")
-    if not pendentes:
-        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
-        return
-
-    resultados = {}
-    if modo == "direto":
-        for k, grupo, sel, ass, prompt in pendentes:
-            r = json.loads(api("/v1/messages", params(prompt)))
-            resultados[k] = ("".join(b.get("text", "") for b in r["content"]), r.get("usage", {}))
-    else:
-        req = [{"custom_id": p[0], "params": params(p[4])} for p in pendentes]
-        b = json.loads(api("/v1/messages/batches", {"requests": req}))
-        idx["lote_em_andamento"] = b["id"]
-        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
-        log("lote enviado:", b["id"])
-        t0 = time.time()
-        while True:
-            st = json.loads(api(f"/v1/messages/batches/{b['id']}"))
-            log("  status:", st["processing_status"], st.get("request_counts"))
-            if st["processing_status"] == "ended":
-                break
-            if time.time() - t0 > 2 * 3600:
-                sys.exit("lote ainda em processamento; rode de novo para coletar")
-            time.sleep(60)
-        for l in api(f"/v1/messages/batches/{b['id']}/results").decode().splitlines():
-            r = json.loads(l)
-            if r["result"]["type"] == "succeeded":
-                m = r["result"]["message"]
-                resultados[r["custom_id"]] = ("".join(x.get("text", "") for x in m["content"]), m.get("usage", {}))
-            else:
-                log("  falhou:", r["custom_id"], r["result"])
-        idx.pop("lote_em_andamento", None)
-
-    for k, grupo, sel, ass, prompt in pendentes:
+def processar(idx, pendentes, resultados, modo):
+    for k, grupo, sel, ass in pendentes:
         if k not in resultados:
             continue
         txt, uso = resultados[k]
@@ -469,6 +361,161 @@ def main():
             idx["emissoes"][chave_emissao(e)] = {"codigos": sorted(cods), "status": "ok" if series else "sem_series", "assinatura": ass,
                                                  "bate_snd": all(oks) if oks else None}
             log(f"  {chave_emissao(e)}: {len(series)} séries | bate com SND: {oks}")
+
+
+def coletar_lote(idx, idx_p, espera_max=2 * 3600):
+    lote = idx["lote"]
+    t0 = time.time()
+    while True:
+        st = json.loads(api(f"/v1/messages/batches/{lote['id']}"))
+        log("  lote", lote["id"], st["processing_status"], st.get("request_counts"))
+        if st["processing_status"] == "ended":
+            break
+        if time.time() - t0 > espera_max:
+            return False
+        time.sleep(60)
+    resultados = {}
+    for l in api(f"/v1/messages/batches/{lote['id']}/results").decode().splitlines():
+        r = json.loads(l)
+        if r["result"]["type"] == "succeeded":
+            m = r["result"]["message"]
+            resultados[r["custom_id"]] = ("".join(x.get("text", "") for x in m["content"]), m.get("usage", {}))
+        else:
+            log("  falhou:", r["custom_id"], str(r["result"])[:300])
+    pend = [(k, [((c, em), [{"c": x, "e": emp} for x in cods]) for c, em, cods, emp in v["grupo"]], v["sel"], v["ass"])
+            for k, v in lote["itens"].items()]
+    processar(idx, pend, resultados, "lote")
+    idx.pop("lote", None)
+    return True
+
+
+# ---------------------------------------------------------------- orquestração
+def chave_emissao(e):
+    return f"{e[0]}_{e[1]}"
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--codigos", default="")
+    ap.add_argument("--direto", action="store_true")
+    ap.add_argument("--lote", action="store_true")
+    ap.add_argument("--limite-usd", type=float, default=20.0)
+    ap.add_argument("--forcar", action="store_true")
+    a = ap.parse_args()
+    if not CHAVE:
+        sys.exit("ANTHROPIC_API_KEY ausente")
+    SAIDA.mkdir(parents=True, exist_ok=True)
+    idx_p = SAIDA / "_index.json"
+    idx = json.load(open(idx_p)) if idx_p.exists() else {"emissoes": {}, "gasto_usd": 0.0}
+
+    if idx.get("lote"):
+        log("coletando lote pendente", idx["lote"]["id"])
+        ok = coletar_lote(idx, idx_p)
+        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
+        if not ok:
+            sys.exit("lote anterior ainda em processamento")
+    emissoes = lista_alvo()
+    if a.codigos:
+        cods = {c.strip().upper() for c in a.codigos.split(",")}
+        emissoes = {k: v for k, v in emissoes.items() if any(i["c"] in cods for i in v)}
+    log("emissões-alvo:", len(emissoes))
+    linhas = ipe(range(2010, date.today().year + 1))
+    docs = documentos(emissoes, linhas)
+
+    # agrupa por empresa: documentos compartilhados (atas, comunicados, planos) são lidos uma vez só
+    # baixa e extrai em paralelo tudo o que vai ser lido (fica em cache entre execuções)
+    from concurrent.futures import ThreadPoolExecutor
+    todos = {d["protocolo"]: d for e in emissoes for d in selecionar(docs.get(e, []))}
+    log("documentos a baixar/extrair:", len(todos))
+    def baixa(d):
+        try:
+            texto_documento(d)
+        except Exception as ex:
+            return d["protocolo"], str(ex)[:120]
+        return d["protocolo"], None
+    with ThreadPoolExecutor(8) as ex:
+        falhas = [r for r in ex.map(baixa, todos.values()) if r[1]]
+    log("falhas de download:", len(falhas), falhas[:5])
+    por_cnpj = collections.defaultdict(list)
+    for e, itens in sorted(emissoes.items()):
+        por_cnpj[e[0]].append((e, itens))
+    pendentes = []
+    for cnpj, ems in por_cnpj.items():
+        sel_por = {e: selecionar(docs.get(e, [])) for e, _ in ems}
+        for e, itens in ems:
+            if not sel_por[e]:
+                idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "sem_documentos_cvm"}
+        ems = [x for x in ems if sel_por[x[0]]]
+        txt = {}
+        for e, _ in ems:
+            for d in sel_por[e]:
+                if d["protocolo"] in txt:
+                    continue
+                try:
+                    txt[d["protocolo"]] = recortar(texto_documento(d), LIMITE_TIPO.get(d["tipo"], 60000))
+                except Exception as ex:
+                    txt[d["protocolo"]] = ""
+                    log("  download falhou", cnpj, d["protocolo"], ex)
+        # fatia em grupos que caibam num pedido (~330 mil caracteres de documentos distintos)
+        grupos, atual, vistos = [], [], set()
+        for e, itens in ems:
+            novos = {d["protocolo"] for d in sel_por[e]} - vistos
+            if atual and sum(len(txt[p]) for p in vistos | novos) > 330000:
+                grupos.append(atual); atual, vistos = [], set()
+                novos = {d["protocolo"] for d in sel_por[e]}
+            atual.append((e, itens)); vistos |= novos
+        if atual:
+            grupos.append(atual)
+        for grupo in grupos:
+            vistos, sel = set(), []
+            for e, _ in grupo:
+                for d in sel_por[e]:
+                    if d["protocolo"] not in vistos:
+                        vistos.add(d["protocolo"]); sel.append(d)
+            sel.sort(key=lambda d: d["data"])
+            k = cnpj + "_" + "-".join(e[1] for e, _ in grupo)
+            ass = hashlib.sha1(json.dumps([d["protocolo"] + "_" + str(d["versao"]) for d in sel]).encode()).hexdigest()[:12]
+            if not a.forcar and all(idx["emissoes"].get(chave_emissao(e), {}).get("assinatura") == ass and
+                                    idx["emissoes"][chave_emissao(e)].get("status") == "ok" for e, _ in grupo):
+                continue
+            docs_txt = [(d, txt[d["protocolo"]]) for d in sel if txt.get(d["protocolo"])]
+            if sum(len(t) for _, t in docs_txt) < 500:
+                for e, itens in grupo:
+                    idx["emissoes"][chave_emissao(e)] = {"codigos": [i["c"] for i in itens], "status": "texto_vazio"}
+                continue
+            prompt = montar_prompt(grupo, docs_txt)
+            pendentes.append((k, grupo, sel, ass, prompt))
+            log(f"  {k} {[i['c'] for _, its in grupo for i in its]}: {len(sel)} docs, {len(prompt):,} caracteres")
+
+    modo = "lote" if a.lote else "direto"
+    est = sum(len(p[4]) / 2.6 for p in pendentes)
+    est_usd = (est * PRECO[modo][0] + len(pendentes) * 7000 * PRECO[modo][1]) / 1e6
+    log(f"pendentes: {len(pendentes)} | ~{est / 1e6:.2f} MTok de entrada | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
+    if idx["gasto_usd"] + est_usd > a.limite_usd:
+        sys.exit(f"ABORTADO: estimativa passaria do teto de US$ {a.limite_usd}")
+    if not pendentes:
+        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
+        return
+
+    resultados = {}
+    if modo == "direto":
+        for k, grupo, sel, ass, prompt in pendentes:
+            r = json.loads(api("/v1/messages", params(prompt)))
+            resultados[k] = ("".join(b.get("text", "") for b in r["content"]), r.get("usage", {}))
+    else:
+        req = [{"custom_id": p[0], "params": params(p[4])} for p in pendentes]
+        b = json.loads(api("/v1/messages/batches", {"requests": req}))
+        idx["lote"] = {"id": b["id"], "itens": {k: {"grupo": [[e[0], e[1], [i["c"] for i in its], its[0]["e"]] for e, its in g],
+                                                     "sel": sel, "ass": ass} for k, g, sel, ass, _ in pendentes}}
+        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
+        log("lote enviado:", b["id"])
+        if not coletar_lote(idx, idx_p):
+            sys.exit("lote ainda em processamento; a próxima execução coleta")
+        json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
+        log(f"gasto acumulado: US$ {idx['gasto_usd']:.2f}")
+        return
+
+    processar(idx, [(k, g, sel, ass) for k, g, sel, ass, _ in pendentes], resultados, modo)
     json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
     log(f"gasto acumulado: US$ {idx['gasto_usd']:.2f}")
 
