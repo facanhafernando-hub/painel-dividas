@@ -135,7 +135,37 @@
    "resumo": "Plano de RE protocolado em out/2024. Cláusula 6.1.1.1(ii)(d) prevê vencimento antecipado automático. Sem waiver nos trechos. Data exata não informada."
   }
  },
- "garantias": {},
+ "garantias": {
+  "SEQL13": {
+   "codigo": "SEQL13",
+   "emissao": 3,
+   "especie": "quirografária, com garantia adicional fidejussória",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Transportadora Americana Ltda. (CNPJ 43.244.631/0001-69)",
+     "condicoes": "Fiança corporativa; devedora solidária e principal pagadora das Obrigações Garantidas; renúncia expressa aos benefícios de ordem (CC arts. 333 par. único, 364, 366, 368, 821, 824, 827, 829, 830, 834, 835, 837, 838, 839; CPC arts. 130 e 794); pagamentos livres e líquidos de tributos; pagamento em até 2 Dias Úteis após comunicação; permanece válida mesmo em caso de recuperação judicial/extrajudicial ou falência da Emissora; vigora até a quitação integral; sem limite de valor. Constituída mediante registro da Escritura nos RTD competentes. A Fiadora assumiu também a posição das fiadoras originais por incorporação (ver abaixo).",
+     "situacao": "vigente",
+     "fonte": "Escritura (3ª emissão), cláusula 4.27; Segundo Aditamento (versão consolidada), cláusulas 4.27.1 a 4.27.10 e 2.6; Terceiro Aditamento, cláusula 4.1 (ratificação)"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Transportadora Plimor Ltda. (CNPJ 88.085.485/0001-04) e Direcional Transporte e Logística S.A.",
+     "condicoes": "Eram fiadoras solidárias, em conjunto com a Transportadora Americana, na escritura original. Segundo o Segundo Aditamento, ambas foram incorporadas pela Transportadora Americana (registro na JUCESP em 27/01/2023); a versão consolidada passa a ter apenas uma Fiadora (Transportadora Americana).",
+     "situacao": "liberada",
+     "fonte": "Escritura original, cláusula 4.27.1; Segundo Aditamento, Considerando (C) e cláusula 2.6"
+    },
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Lithium Software Ltda. (CNPJ 05.009.138/0001-75) e/ou SF 350 Ltda. (CNPJ 42.312.518/0001-00)",
+     "condicoes": "Condicional: devem ingressar como fiadoras solidárias, nos mesmos termos, caso passem a representar individualmente 10% ou mais do EBITDA da Emissora; inclusão por aditamento, sem nova aprovação societária ou AGD. Não há informação no material de que o gatilho tenha ocorrido.",
+     "situacao": "desconhecida",
+     "fonte": "Escritura, cláusulas 4.27.11 e 4.27.12 (mantidas na versão consolidada)"
+    }
+   ],
+   "resumo": "Fiança da Transportadora Americana Ltda. (solidária; incorporou as fiadoras Plimor e Direcional)"
+  }
+ },
  "garantias_meta": {
   "lido_em": "2026-11-13",
   "modelo": "claude-sonnet-5-5",
@@ -187,7 +217,7 @@
    }
   ],
   "cnpj_documental": null,
-  "emissora_atual": null,
-  "lacunas": null
+  "emissora_atual": "Sequoia Logística e Transportes S.A. (não houve migração de emissora; sede atual em Barueri/SP, conforme Terceiro Aditamento)",
+  "lacunas": "1) A AGD de 09/08/2023 aprovou garantias adicionais, cujo conteúdo não consta nos documentos; a AGD de 04/10/2023 desobrigou a Emissora de constituí-las, sem que isso configure vencimento antecipado. Nenhuma garantia real adicional aparece como constituída. 2) A escritura prevê que as debêntures não contam com garantia real (cláusula 4.27.14). 3) O gatilho de inclusão de Lithium Software e SF 350 como fiadoras (10% do EBITDA) não pode ser verificado. 4) O plano de RJ (outubro de 2024) diz que não altera garantias prestadas por terceiros e que as previsões do plano não afetam garantias das Requerentes; os trechos não permitem identificar se a Sequoia ou a SEQL13 integram o plano, nem se a Transportadora Americana é Requerente. 5) O Terceiro Aditamento (2025) altera apenas a cláusula 7.1(d), sobre auditor independente. A data de vencimento foi prorrogada para 20/11/2029 (Segundo Aditamento). 6) Os documentos estão em trechos parciais, e o Terceiro Aditamento não traz o nome completo da fiadora no trecho recebido."
  }
 }

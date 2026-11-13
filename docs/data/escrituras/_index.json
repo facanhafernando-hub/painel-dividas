@@ -1098,7 +1098,7 @@
    "bate_snd": false
   }
  },
- "gasto_usd": 17.234,
+ "gasto_usd": 17.5522,
  "garantias": {
   "12528708000107_2": {
    "status": "ok",
@@ -1443,7 +1443,7 @@
    ]
   },
   "62258884000136_3": {
-   "status": "sem_series",
+   "status": "ok",
    "assinatura": "95efa8549428",
    "codigos": [
     "CCCI13",
@@ -1458,7 +1458,7 @@
    ]
   },
   "62258884000136_4": {
-   "status": "sem_series",
+   "status": "ok",
    "assinatura": "67a81e49af67",
    "codigos": [
     "ICBR14",
@@ -1920,7 +1920,7 @@
    ]
   },
   "01599101000193_3": {
-   "status": "sem_series",
+   "status": "ok",
    "assinatura": "b5c2eab8e28b",
    "codigos": [
     "SEQL13"
