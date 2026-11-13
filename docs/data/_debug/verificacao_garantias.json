@@ -1,0 +1,2416 @@
+{
+ "resumo": {
+  "ancorado": 296,
+  "nome não encontrado": 5
+ },
+ "itens": [
+  {
+   "c": "SEQL13",
+   "tipo": "fiança",
+   "alvo": "Transportadora Americana Ltda. (CNPJ 43.244.631/0001-69)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SEQL13",
+   "tipo": "fiança",
+   "alvo": "Transportadora Plimor Ltda. (CNPJ 88.085.485/0001-04) e Direcional Transporte e Logística S.A.",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SEQL13",
+   "tipo": "fiança",
+   "alvo": "Lithium Software Ltda. (CNPJ 05.009.138/0001-75) e/ou SF 350 Ltda. (CNPJ 42.312.518/0001-00)",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LGTE17",
+   "tipo": "fiança",
+   "alvo": "Light S.A. (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LGTE27",
+   "tipo": "fiança",
+   "alvo": "Light S.A. (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CPTM15",
+   "tipo": "cessão fiduciária",
+   "alvo": "Objeto não especificado nos trechos. Há referência a um \"Contrato de Cessão Fiduciária\" vinculado à emissão, cujos bens e direitos cedidos n",
+   "situacao": "vigente",
+   "st": "nome não encontrado",
+   "frac": 0.0
+  },
+  {
+   "c": "HAPVA0",
+   "tipo": "fiança",
+   "alvo": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98), subsidiária integral da emissora",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "HAPV15",
+   "tipo": "fiança",
+   "alvo": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BCBF16",
+   "tipo": "fiança",
+   "alvo": "Notre Dame Intermédica Saúde S.A. (CNPJ 44.649.812/0001-38)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "HAPV17",
+   "tipo": "fiança",
+   "alvo": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "HAPV18",
+   "tipo": "fiança",
+   "alvo": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "HAPV28",
+   "tipo": "fiança",
+   "alvo": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "HAPV19",
+   "tipo": "fiança",
+   "alvo": "Hapvida Assistência Médica S.A. (CNPJ 63.554.067/0001-98)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LVTC22",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de (i) contratos de locação de equipamentos de informática, eletrônicos, telecomunicações, softwares, hardwares e equip",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.87
+  },
+  {
+   "c": "LVTC22",
+   "tipo": "cessão fiduciária / conta vinculada",
+   "alvo": "Direitos creditórios inerentes à titularidade das contas vinculadas (Conta Vinculada Fluxo e Conta Vinculada Retenção) abertas no Itaú Uniba",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI17",
+   "tipo": "fiança",
+   "alvo": "EB Fibra Participações S.A. (CNPJ 31.599.370/0001-10)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI17",
+   "tipo": "alienação fiduciária",
+   "alvo": "Equipamentos integrantes da rede de fibra ótica",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI17",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis da conta corrente nº 82858-1, ag. 8541, Banco Itaú (conta vinculada), na qual transita a totalidade do fluxo das receitas das ven",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "SUMI37",
+   "tipo": "fiança",
+   "alvo": "EB Fibra Participações S.A. (CNPJ 31.599.370/0001-10)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI37",
+   "tipo": "alienação fiduciária",
+   "alvo": "Equipamentos integrantes da rede de fibra ótica",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI37",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis da conta corrente nº 82858-1, ag. 8541, Banco Itaú (conta vinculada), na qual transita a totalidade do fluxo das receitas das ven",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "SUMI18",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis da Giga Mais Fibra Telecomunicações S.A. e/ou de suas subsidiárias ou sociedades do grupo, via conta vinculada com Fluxo Mínimo M",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI18",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações livres e desembaraçadas de emissão da Giga Mais Fibra Telecomunicações S.A., mais garantia sobre todos os recebíveis disponív",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI19",
+   "tipo": "fiança",
+   "alvo": "EB Fibra Participações S.A. (CNPJ 31.599.370/0001-10)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI19",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis da Emissora e/ou de suas subsidiárias ou sociedades do grupo econômico, no valor de R$ 10.000.000,00",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI19",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações livres e desembaraçadas de emissão da Companhia, além de todos os recebíveis disponíveis adicionais",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI39",
+   "tipo": "fiança",
+   "alvo": "EB Fibra Participações S.A. (CNPJ 31.599.370/0001-10)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI39",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis da Emissora e/ou de suas subsidiárias ou sociedades do grupo econômico, no valor de R$ 10.000.000,00",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "SUMI39",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações livres e desembaraçadas de emissão da Companhia, além de todos os recebíveis disponíveis adicionais",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RESA14",
+   "tipo": "fiança",
+   "alvo": "Fiador não identificado nominalmente nos trechos da 4ª emissão. As atas de 2026 falam em \"Fiadora\" sem nomeá-la.",
+   "situacao": "vigente",
+   "st": "nome não encontrado",
+   "frac": 0.33
+  },
+  {
+   "c": "RESA15",
+   "tipo": "fiança",
+   "alvo": "Raízen Combustíveis S.A. (CNPJ 33.453.598/0001-23), qualificada como \"Fiadora\" no 1º Aditamento de 10.06.2020. Na 7ª emissão (2022), o mesmo",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.8
+  },
+  {
+   "c": "RESA17",
+   "tipo": "fiança",
+   "alvo": "Raízen S.A. (CNPJ 33.453.598/0001-23)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RESA27",
+   "tipo": "fiança",
+   "alvo": "Raízen S.A. (CNPJ 33.453.598/0001-23)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IGSN15",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios das 620.486 debêntures da 2ª emissão da Águas Cuiabá S.A. – Concessionária de Serviços Públicos de Água e Esgoto (R$ 62",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.91
+  },
+  {
+   "c": "IGSN15",
+   "tipo": "penhor",
+   "alvo": "Totalidade das ações ordinárias nominativas da Águas Cuiabá S.A., de titularidade da Iguá Saneamento S.A. e da PCT Participações Ltda. ('Pen",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IGSN15",
+   "tipo": "conta vinculada",
+   "alvo": "Conta Reserva Debêntures prevista no Contrato de Cessão Fiduciária e Outras Avenças (Contrato de Cessão Fiduciária Debts Iguá), de 24/07/202",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IGSN15",
+   "tipo": "fiança",
+   "alvo": "Fiança bancária a ser prestada por instituição financeira não identificada, a critério da Iguá, em substituição à Conta Reserva Debêntures",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.89
+  },
+  {
+   "c": "AEGPA0",
+   "tipo": "outra",
+   "alvo": "Aegea Finance (garantia corporativa; nome completo e CNPJ não constam dos trechos)",
+   "situacao": "desconhecida",
+   "st": "nome não encontrado",
+   "frac": 0.33
+  },
+  {
+   "c": "ELFA12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios decorrentes das vendas da Elfa Medicamentos S.A. e das demais Cedentes a seus clientes, e contas vinculadas de titulari",
+   "situacao": "vigente (parcialmente liberada quanto às 4 Cedentes Liberadas)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ELFA12",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das quotas de emissão da Descarpack Descartáveis do Brasil Ltda. (CNPJ 01.057.428/0001-33), de titularidade da Elfa Medicamentos S.A.",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ELFA12",
+   "tipo": "alienação fiduciária",
+   "alvo": "50% das ações de emissão da Surya Dental Comércio de Produtos Odontológicos e Farmacêuticos S.A., de titularidade da Elfa Medicamentos S.A.",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ELFA12",
+   "tipo": "fiança",
+   "alvo": "Descarpack Descartáveis do Brasil Ltda. (CNPJ 01.057.428/0001-33)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "TBCR18",
+   "tipo": "fiança",
+   "alvo": "TPI – Triunfo Participações e Investimentos S.A. (CNPJ 03.014.553/0001-91)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "TBCR18",
+   "tipo": "fiança",
+   "alvo": "BRVias Holding TBR S.A.",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "TBCR18",
+   "tipo": "fiança",
+   "alvo": "Fiadora identificada pela sigla \"Juno\" (nome completo não legível nos trechos; NIRE 35.300.453.441)",
+   "situacao": "desconhecida",
+   "st": "nome não encontrado",
+   "frac": 0.5
+  },
+  {
+   "c": "TBCR18",
+   "tipo": "outra",
+   "alvo": "Garantia real não especificada nos trechos",
+   "situacao": "desconhecida",
+   "st": "nome não encontrado",
+   "frac": 0.5
+  },
+  {
+   "c": "CCLS11",
+   "tipo": "fiança",
+   "alvo": "Simpar S.A. (Fiadora atual)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCLS11",
+   "tipo": "fiança",
+   "alvo": "Aegea Saneamento e Participações S.A. (Nova Fiadora)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCLS21",
+   "tipo": "fiança",
+   "alvo": "Simpar S.A. (Fiadora atual)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCLS21",
+   "tipo": "fiança",
+   "alvo": "Aegea Saneamento e Participações S.A. (Nova Fiadora)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "URBS17",
+   "tipo": "fiança",
+   "alvo": "MRV Engenharia e Participações S.A. (CNPJ 08.343.492/0001-20)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CVCB14",
+   "tipo": "outra",
+   "alvo": "Garantia flutuante sobre os ativos da CVC Brasil Operadora e Agência de Viagens S.A. (CNPJ 10.760.260/0001-19), com privilégio geral aos deb",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CVCB14",
+   "tipo": "cessão fiduciária",
+   "alvo": "(a) Recebíveis de boletos da mesa de crédito (direitos de crédito de compra e venda de bens e serviços da Emissora, que atendam aos Critério",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CVCB17",
+   "tipo": "outra",
+   "alvo": "Garantia flutuante sobre os ativos da CVC Brasil Operadora e Agência de Viagens S.A., com privilégio geral aos debenturistas",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CVCB17",
+   "tipo": "cessão fiduciária",
+   "alvo": "(i) Recebíveis de boletos da mesa de crédito (direitos de crédito de compra e venda de bens e serviços da Emissora, que atendam aos Critério",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "QUAL18",
+   "tipo": "fiança",
+   "alvo": "Qualicorp Administradora de Benefícios S.A. (CNPJ 07.658.098/0001-18)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "NTEN11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos, contas e outras avenças nos termos do Contrato de Cessão Fiduciária de Direitos, Administração de Contas e Outras Avenças, incluin",
+   "situacao": "vigente (aditamento proposto)",
+   "st": "ancorado",
+   "frac": 0.75
+  },
+  {
+   "c": "NTEN11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Contas Reserva do BNDES e Reserva de Repasse, previstas no Contrato de Cessão Fiduciária, com substituição de 2/3 do saldo por fiança bancár",
+   "situacao": "desconhecida (aditamento proposto; assembleia não instalada)",
+   "st": "ancorado",
+   "frac": 0.83
+  },
+  {
+   "c": "NTEN11",
+   "tipo": "fiança",
+   "alvo": "Vale S.A. (fiadora no Contrato de Compra e Venda de Energia – CCVE, de 10/12/2012, com a Norte Energia)",
+   "situacao": "desconhecida (proposta; assembleia não instalada)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "NTEN11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações da Aliança Norte Participações S.A. de titularidade da Vale S.A. (20.974.660.022 ações, 50% do capital), cuja transferência para Salob",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.83
+  },
+  {
+   "c": "CMPH14",
+   "tipo": "fiança",
+   "alvo": "Cremer S.A. e Proinfusion S.A. (esta substituiu a Expressa Distribuidora de Medicamentos Ltda. no aditamento de 15/04/2025)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CMPH14",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações ordinárias da Cremer S.A. de titularidade da CM Hospitalar S.A. (emissora), mais ações futuras, frutos, dividendos, JCP e dir",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CMPH14",
+   "tipo": "cessão fiduciária",
+   "alvo": "Objeto não detalhado nos trechos da 4ª emissão (definida como \"Cessão Fiduciária\" e integrante das \"Garantias Reais\"; há um \"Contrato de Ces",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VVEO15",
+   "tipo": "fiança",
+   "alvo": "Cremer S.A. (CNPJ 82.641.325/0001-18) e Proinfusion S.A. (substituiu a Expressa Distribuidora de Medicamentos Ltda. no aditamento de 15/04/2",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VVEO15",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações ordinárias da Cremer S.A. de titularidade da CM Hospitalar S.A. (emissora), mais ações futuras, frutos, dividendos, JCP e dir",
+   "situacao": "vigente (alterações aprovadas em AGD, sujeitas a condições suspensiva e resolutiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VVEO15",
+   "tipo": "cessão fiduciária",
+   "alvo": "Objeto não detalhado nos trechos da 5ª emissão (definida como \"Cessão Fiduciária\" e integrante das \"Garantias Reais\"; há um \"Contrato de Ces",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VVEO16",
+   "tipo": "fiança",
+   "alvo": "Cremer S.A. (fiadora desde a escritura de 19/10/2022) e Proinfusion S.A. (CNPJ 07.028.603/0001-40), que entrou como fiadora no aditamento de",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.91
+  },
+  {
+   "c": "VVEO16",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações ordinárias de emissão da Cremer S.A. (CNPJ 82.641.325/0001-18) de titularidade da CM Hospitalar S.A., mais novas ações, fruto",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VVEO16",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis de boletos de titularidade da CM Hospitalar S.A. e da Cremer S.A., cujos pagamentos transitam por conta vinculada também cedida f",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.64
+  },
+  {
+   "c": "VVEO17",
+   "tipo": "fiança",
+   "alvo": "Cremer S.A. (fiadora na escritura de 30/04/2024) e Proinfusion S.A. (CNPJ 07.028.603/0001-40), incluída como fiadora no aditamento de 15/04/",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.83
+  },
+  {
+   "c": "VVEO17",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios (boletos de vendas a clientes) da CM Hospitalar S.A. e da Cremer S.A., até o Valor Mínimo da Cessão, e as Contas Vincul",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "AERI11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios do que sobejar de eventual excussão da garantia sobre os imóveis das matrículas 032.288 e 032.289 (RI de Caucaia-CE), j",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Imóveis da planta industrial: matrículas 025.487, 53.414, 019.778, 49.081, 039.862 e 5074 (RI de Caucaia-CE), com terrenos, construções e be",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Determinadas máquinas e equipamentos de propriedade da Aeris, desonerados",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Estoque de pás eólicas da Aeris",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Propriedade superveniente do imóvel da matrícula nº 32.288 (RI de Caucaia-CE)",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Cotas subordinadas de titularidade da Aeris no Aeris Fundo de Investimento em Direitos Creditórios – Indústria e Comércio – Responsabilidade",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de ICMS registrados no balanço de 31/12/2024",
+   "situacao": "aprovada em AGD; constituição sob condição resolutiva e não confirmada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios decorrentes do que sobejar de eventual excussão da garantia sobre os imóveis das matrículas 032.288 e 032.289 (Ofício d",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Imóveis das matrículas 025.487, 53.414, 019.778, 49.081, 039.862 e 5074 (Registro de Imóveis de Caucaia-CE), com terrenos, construções, edif",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Determinadas máquinas e equipamentos de propriedade da Emissora (Alienação Fiduciária de Equipamentos)",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Estoque de pás eólicas (Alienação Fiduciária de Pás Eólicas)",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Propriedade superveniente do imóvel de matrícula nº 32.288 (Ofício de Registro de Imóveis de Caucaia-CE) (Alienação Fiduciária Superveniente",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Cotas subordinadas de titularidade da Emissora no Aeris Fundo de Investimento em Direitos Creditórios – Indústria e Comércio – Responsabilid",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AERI12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios decorrentes de ICMS registrados no balanço de 31/12/2024 (Cessão Fiduciária de Direitos Creditórios ICMS)",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "KRSA12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Participações societárias, em dois contratos: o Contrato de Alienação Fiduciária Kora e o Contrato de Alienação Fiduciária de Controladas. A",
+   "situacao": "vigente; liberação aprovada em AGD, mas só se efetiva no fechamento da Operação de Reestruturação",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "KRSA12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Imóveis: (i) matrículas 64.899, 38.821 e 85.927 (1º RI de Hidrolândia/GO) e (ii) matrículas 225.081 e 195.473 (1º RI de Aparecida de Goiânia",
+   "situacao": "vigente; liberação aprovada em AGD, mas só se efetiva no fechamento da Operação de Reestruturação",
+   "st": "ancorado",
+   "frac": 0.9
+  },
+  {
+   "c": "KRSA12",
+   "tipo": "fiança",
+   "alvo": "Hospital Anchieta S.A. (CNPJ 02.560.878/0001-07); Hospital e Maternidade São Mateus Ltda. (HMSMC); Ilha do Boi Participações S.A.; Serviços ",
+   "situacao": "vigente; liberação aprovada em AGD, mas só se efetiva no fechamento da Operação de Reestruturação",
+   "st": "ancorado",
+   "frac": 0.96
+  },
+  {
+   "c": "AEGE16",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações ordinárias de emissão da Aegea Saneamento e Participações S.A. de titularidade da Equipav Saneamento S.A., representativas de 15% das ",
+   "situacao": "vigente (sob condição suspensiva; não é possível confirmar nos trechos se a condição já foi atendida)",
+   "st": "ancorado",
+   "frac": 0.89
+  },
+  {
+   "c": "AEGE17",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações ordinárias de emissão da Aegea Saneamento e Participações S.A. de titularidade da Equipav Saneamento S.A., representativas de 5% das a",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.89
+  },
+  {
+   "c": "MEAL14",
+   "tipo": "fiança",
+   "alvo": "Pimenta Verde Alimentos Ltda. (CNPJ 09.060.964/0001-08)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "MEAL14",
+   "tipo": "fiança",
+   "alvo": "Centro de Serviços Frango Assado Norte Ltda. (CNPJ 02.896.671/0001-08)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "MEAL14",
+   "tipo": "fiança",
+   "alvo": "Horizonte (razão social completa não consta dos trechos; incluída como fiadora pelo 4º Aditamento de 26/05/2025)",
+   "situacao": "desconhecida (liberação condicionada; a escritura consolidada pelo 6º Aditamento já não cita a Horizonte, o que indica liberação, sem confirmação expressa)",
+   "st": "ancorado",
+   "frac": 0.62
+  },
+  {
+   "c": "MEAL14",
+   "tipo": "alienação fiduciária",
+   "alvo": "Quotas do Centro de Serviços Frango Assado Norte Ltda. (100% do capital social) detidas pela Emissora e pela Pimenta Verde, mais quotas futu",
+   "situacao": "proposta (aprovada em AGD de 21/09/2026; constituição e condição suspensiva pendentes de confirmação)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AGXY13",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios e contas vinculadas, nos termos do Instrumento Particular de Cessão Fiduciária de Direitos Creditórios e Contas Vincula",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "AGXY33",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios e contas vinculadas, nos termos do Instrumento Particular de Cessão Fiduciária de Direitos Creditórios e Contas Vincula",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "MOVI37",
+   "tipo": "fiança",
+   "alvo": "Movida Locação de Veículos S.A. (CNPJ 07.976.147/0001-60)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "MOVI37",
+   "tipo": "fiança",
+   "alvo": "Movida Locação de Veículos Premium Ltda. (CNPJ 22.397.126/0001-84)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CONX12",
+   "tipo": "fiança",
+   "alvo": "Fiadoras: Tecnet Provedor de Acesso as Rede de Comunicação Ltda. (CNPJ 07.054.341/0001-99), Videomar Rede Nordeste S.A. e Cabo Serviços de T",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.89
+  },
+  {
+   "c": "CONX12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de titularidade de Tecnet, Videomar e Cabo Serviços, decorrentes da prestação de seus serviços",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ALAR13",
+   "tipo": "fiança",
+   "alvo": "Fiadoras da 3ª emissão: Cabo Serviços de Telecomunicações Ltda., Videomar Rede Nordeste S.A., Tecnet Provedor de Acesso as Rede de Comunicaç",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.95
+  },
+  {
+   "c": "ALAR13",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis (direitos creditórios) de titularidade da Cabo Serviços de Telecomunicações Ltda. e da Videomar Rede Nordeste S.A., decorrentes d",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ALAR13",
+   "tipo": "alienação fiduciária",
+   "alvo": "Equipamentos/ativos móveis de titularidade da Cabo Serviços de Telecomunicações Ltda. (lista no Contrato de Alienação Fiduciária de Equipame",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ALAR23",
+   "tipo": "fiança",
+   "alvo": "Fiadoras da 3ª emissão: Cabo Serviços de Telecomunicações Ltda., Videomar Rede Nordeste S.A., Tecnet Provedor de Acesso as Rede de Comunicaç",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.95
+  },
+  {
+   "c": "ALAR23",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis (direitos creditórios) de titularidade da Cabo Serviços de Telecomunicações Ltda. e da Videomar Rede Nordeste S.A.",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ALAR23",
+   "tipo": "alienação fiduciária",
+   "alvo": "Equipamentos/ativos móveis de titularidade da Cabo Serviços de Telecomunicações Ltda. (alienação fiduciária de máquinas/equipamentos)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ANET11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios cedidos pela America Net S.A. (hoje Vero S.A.) ao Agente Fiduciário Pentágono S.A. DTVM, conforme o Instrumento Particu",
+   "situacao": "vigente (liberação apenas proposta; resultado de eventual 2ª convocação desconhecido)",
+   "st": "ancorado",
+   "frac": 0.8
+  },
+  {
+   "c": "ANET11",
+   "tipo": "fiança",
+   "alvo": "Vero S.A. (CNPJ 31.748.174/0001-60), como 'fiadora ingressante' pelo 2º Aditamento, com base na RCA da Vero de 14/12/2023. As demais Fiadora",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ANET12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios cedidos fiduciariamente ao Agente Fiduciário Pentágono S.A. DTVM, conforme o Instrumento Particular de Cessão Fiduciári",
+   "situacao": "vigente (liberação apenas proposta)",
+   "st": "ancorado",
+   "frac": 0.92
+  },
+  {
+   "c": "ANET12",
+   "tipo": "fiança",
+   "alvo": "Fit Telecomunicações America Net Ltda. (CNPJ 10.310.323/0001-35), Rede Informática e Internet S.A. (CNPJ 06.353.249/0001-67), Ultrawave Tele",
+   "situacao": "desconhecida (formalmente prevista na escritura; exclusão proposta, não aprovada)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VERO12",
+   "tipo": "fiança",
+   "alvo": "Giganet Serviços de Internet Ltda. (CNPJ 08.218.558/0001-50)",
+   "situacao": "vigente (sem documento posterior que a altere)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VERO13",
+   "tipo": "fiança",
+   "alvo": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "VERO23",
+   "tipo": "fiança",
+   "alvo": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "VERO14",
+   "tipo": "fiança",
+   "alvo": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "VERO24",
+   "tipo": "fiança",
+   "alvo": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "VERO34",
+   "tipo": "fiança",
+   "alvo": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "VERO44",
+   "tipo": "fiança",
+   "alvo": "Eventuais empresas adquiridas pela Vero S.A. (nenhuma fiadora identificada nos documentos)",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "VERO25",
+   "tipo": "fiança",
+   "alvo": "Nenhuma fiadora identificada. Prevista apenas a inclusão futura, por aditamento, de empresas que a Vero S.A. venha a adquirir (modelo de adi",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.87
+  },
+  {
+   "c": "VERO35",
+   "tipo": "fiança",
+   "alvo": "Nenhuma fiadora identificada. Prevista apenas a inclusão futura, por aditamento, de empresas que a Vero S.A. venha a adquirir (modelo de adi",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 0.87
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Origem Energia S.A.: dividendos, JCP, lucros e demais distribuições devidos pelas ações da Origem Energia Alagoas S.",
+   "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos e créditos da Origem Energia S.A. sobre o lucro de operações de derivativos (opções flexíveis, termo de moeda e swaps cambiais) con",
+   "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações da Origem Energia Alagoas S.A. (OGAL) detidas pela Origem Energia S.A., incluindo ações derivadas, dividendos e provent",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Máquinas, equipamentos e ativos em estoque do Projeto Alagoas, atuais e futuros, de titularidade da OGAL",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "penhor",
+   "alvo": "Direitos emergentes das participações da OGAL nos Contratos de Concessão (Penhor das Concessões)",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "penhor",
+   "alvo": "Direitos, títulos e interesses da OGAL no petróleo e no gás produzidos no Projeto Alagoas",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da OGAL: contratos de venda de óleo e gás, receitas acessórias, seguros, mútuos com partes relacionadas, ajustes positi",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG11",
+   "tipo": "outra",
+   "alvo": "Cessão condicional das posições contratuais da OGAL no Contrato de Comodato de Ativos no Estado de Alagoas (OPMAC) e em contratos de locação",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG21",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Origem Energia S.A.: dividendos, JCP, lucros e demais distribuições devidos pelas ações da OGAL, da Origem Energia C",
+   "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ORIG21",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos e créditos da Origem Energia S.A. sobre o lucro de operações de derivativos (opções flexíveis, termo de moeda e swaps cambiais) lig",
+   "situacao": "vigente (celebração do contrato não confirmada nos trechos)",
+   "st": "ancorado",
+   "frac": 0.93
+  },
+  {
+   "c": "ORIG21",
+   "tipo": "alienação fiduciária / penhor / cessão fiduciária / cessão condicional",
+   "alvo": "Pacote da OGAL: ações da OGAL, equipamentos do Projeto Alagoas, penhor das concessões, penhor de petróleo e gás, cessão fiduciária de recebí",
+   "situacao": "proposta (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.93
+  },
+  {
+   "c": "BHIAA0",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com direitos, dividendos, JCP e demais rendiment",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAA0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos sobre a conta vinculada nº 1.005.289-5, ag. 3400-2, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A., incluindo recursos ",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAA0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos sobre a conta vinculada nº 6.289-8, ag. 3070-8, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A., incluindo recursos de v",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAB0",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com direitos, dividendos, JCP e demais rendiment",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAB0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos sobre a conta vinculada nº 1.005.289-5, ag. 3400-2, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A.",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAB0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos sobre a conta vinculada nº 6.289-8, ag. 3070-8, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A. (recebíveis de cartão de",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAC0",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com direitos, dividendos, JCP e demais rendiment",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAC0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos sobre a conta vinculada nº 1.005.289-5, ag. 3400-2, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A.",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAC0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos sobre a conta vinculada nº 6.289-8, ag. 3070-8, Banco do Brasil, de titularidade da Grupo Casas Bahia S.A. (recebíveis de cartão de",
+   "situacao": "liberada",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAA1",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações da Cnova Comércio Eletrônico S.A. detidas pela Grupo Casas Bahia S.A., com os direitos e ativos a elas relacionados (di",
+   "situacao": "vigente (sob condição suspensiva; implemento não confirmado nos documentos)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAA1",
+   "tipo": "alienação fiduciária",
+   "alvo": "Parte do estoque de produtos localizado nos centros de distribuição da Grupo Casas Bahia S.A., descrito no Anexo II do Contrato de Alienação",
+   "situacao": "vigente (a AGD de 14/09/2026 refere pedido de tutela da Emissora para impedir a excussão das garantias fiduciárias sobre o estoque)",
+   "st": "ancorado",
+   "frac": 0.92
+  },
+  {
+   "c": "BHIAA1",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos da Emissora sobre a conta vinculada nº 1.005.289-5, agência 3400-2, no Banco do Brasil S.A. (recursos existentes e futuros, inclusi",
+   "situacao": "vigente (sob condição suspensiva; implemento não confirmado nos documentos)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "BHIAA1",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos da Emissora sobre a conta vinculada nº 6.289-8, agência 3070-8, no Banco do Brasil S.A. (recursos existentes e futuros, inclusive v",
+   "situacao": "vigente (sob condição suspensiva; implemento não confirmado nos documentos)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RAIZ13",
+   "tipo": "fiança",
+   "alvo": "Raízen Energia S.A. (CNPJ 08.070.508/0001-78)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RAIZ23",
+   "tipo": "fiança",
+   "alvo": "Raízen Energia S.A. (CNPJ 08.070.508/0001-78)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RAIZ14",
+   "tipo": "fiança",
+   "alvo": "Raízen Energia S.A. (CNPJ 08.070.508/0001-78)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "TEPA13",
+   "tipo": "fiança",
+   "alvo": "Brasil Tecpar Serviços de Telecomunicações S.A. (BST, CNPJ 07.756.651/0001-55); Brasil Serviços de Tecnologia Ltda. (BSS, CNPJ 36.947.264/00",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "TEPA13",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis (notas fiscais, faturas e duplicatas eletrônicas de contratos comerciais) e saldos das Contas Vinculadas no Banco Santander (Bras",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "TEPA13",
+   "tipo": "alienação fiduciária",
+   "alvo": "Bens móveis (rede de cabeamento de fibra óptica e equipamentos de rede, com acessórios e rendimentos) de BST, Blink, Nova Rede, Acessoline T",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "TEPA23",
+   "tipo": "fiança",
+   "alvo": "Brasil Tecpar Serviços de Telecomunicações S.A. (BST, CNPJ 07.756.651/0001-55); Brasil Serviços de Tecnologia Ltda. (BSS, CNPJ 36.947.264/00",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "TEPA23",
+   "tipo": "cessão fiduciária",
+   "alvo": "Recebíveis (notas fiscais, faturas e duplicatas eletrônicas de contratos comerciais) e saldos das Contas Vinculadas no Banco Santander (Bras",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.94
+  },
+  {
+   "c": "TEPA23",
+   "tipo": "alienação fiduciária",
+   "alvo": "Bens móveis (rede de cabeamento de fibra óptica e equipamentos de rede, com acessórios e rendimentos) de BST, Blink, Nova Rede, Acessoline T",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE13",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações, presentes e futuras, de emissão da CEEE-G, de titularidade da Companhia Florestal do Brasil (CNPJ 18.368.414/0001-33),",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE13",
+   "tipo": "alienação fiduciária",
+   "alvo": "Determinadas máquinas e equipamentos relacionados ao Projeto e às CGHs, de propriedade da CEEE-G",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE13",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios presentes e futuros do Contrato de Concessão nº 004/2022-ANEEL (inclusive indenizações), contratos de arrendamento, loc",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE13",
+   "tipo": "outra",
+   "alvo": "Compromisso de Suporte (aportes de recursos) da Companhia Florestal do Brasil e da CSN em favor da Emissora",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE13",
+   "tipo": "fiança",
+   "alvo": "CSN (Fiança CSN), hipótese de outorga futura",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.67
+  },
+  {
+   "c": "CGEE23",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações, presentes e futuras, de emissão da CEEE-G, de titularidade da Companhia Florestal do Brasil (CNPJ 18.368.414/0001-33),",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE23",
+   "tipo": "alienação fiduciária",
+   "alvo": "Determinadas máquinas e equipamentos relacionados ao Projeto e às CGHs, de propriedade da CEEE-G",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE23",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios presentes e futuros do Contrato de Concessão nº 004/2022-ANEEL (inclusive indenizações), contratos de arrendamento, loc",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE23",
+   "tipo": "outra",
+   "alvo": "Compromisso de Suporte (aportes de recursos) da Companhia Florestal do Brasil e da CSN em favor da Emissora",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CGEE23",
+   "tipo": "fiança",
+   "alvo": "CSN (Fiança CSN), hipótese de outorga futura",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.67
+  },
+  {
+   "c": "RISP12",
+   "tipo": "fiança",
+   "alvo": "AEGEA Saneamento e Participações S.A. (CNPJ 08.827.501/0001-58)",
+   "situacao": "vigente (sujeita à liberação automática pela Quitação das Debêntures Existentes; não consta que tenha ocorrido)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP12",
+   "tipo": "fiança",
+   "alvo": "Fiança(s) bancária(s) a serem contratadas pela Emissora com instituições financeiras de rating mínimo AA+ (S&P ou equivalente) ou o rating d",
+   "situacao": "vigente (renovações e identidade dos bancos desconhecidas)",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "RISP12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Emissora (Águas do Rio 1 SPE S.A.), com direitos e proventos, alienadas pela Nova Acionista, Águas ",
+   "situacao": "vigente sob condição suspensiva (atualização do cumprimento da condição desconhecida)",
+   "st": "ancorado",
+   "frac": 0.9
+  },
+  {
+   "c": "RISP12",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A. (Nova Acionista), com direitos e proventos, alienadas pelos Acionis",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 0.95
+  },
+  {
+   "c": "RISP12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Emissora: Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas (Itaú Unibanco como banco depositá",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP12",
+   "tipo": "conta vinculada",
+   "alvo": "Conta Desembolso Debêntures: cessão fiduciária dos direitos creditórios da conta e dos recursos depositados. Os recursos líquidos da emissão",
+   "situacao": "vigente (condições de liberação a verificar)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de mútuos subordinados com a Emissora e a Nova Acionista (cedentes: Nova Acionista e AEGEA) e com a Nova Acionista (ced",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP12",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital: obrigações de aporte da AEGEA e da Nova Acionista na Emissora",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP22",
+   "tipo": "fiança",
+   "alvo": "AEGEA Saneamento e Participações S.A. (CNPJ 08.827.501/0001-58)",
+   "situacao": "vigente (sujeita à liberação automática pela Quitação das Debêntures Existentes; não consta que tenha ocorrido)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP22",
+   "tipo": "fiança",
+   "alvo": "Fiança(s) bancária(s) a serem contratadas pela Emissora com instituições financeiras de rating mínimo AA+ (S&P ou equivalente) ou o rating d",
+   "situacao": "vigente (renovações e identidade dos bancos desconhecidas)",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "RISP22",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Emissora (Águas do Rio 1 SPE S.A.), alienadas pela Nova Acionista, Águas do Rio Investimentos S.A.",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 0.89
+  },
+  {
+   "c": "RISP22",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A., alienadas por AEGEA, Colibri Verde FIP-IE, Angelo Investment Priva",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 0.92
+  },
+  {
+   "c": "RISP22",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Emissora: Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas (Itaú Unibanco como banco depositá",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP22",
+   "tipo": "conta vinculada",
+   "alvo": "Conta Desembolso Debêntures (cessão fiduciária dos direitos creditórios da conta e dos recursos depositados)",
+   "situacao": "vigente (condições de liberação a verificar)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP22",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de mútuos subordinados (Nova Acionista e AEGEA com a Emissora; AEGEA com a Nova Acionista), no âmbito do Contrato de Ap",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP22",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital: obrigações de aporte da AEGEA e da Nova Acionista na Emissora",
+   "situacao": "vigente sob condição suspensiva (atualização desconhecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Emissora (Águas do Rio 1 SPE S.A.), com direitos e proventos, alienadas pela Nova Acionista, Águas ",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A., alienadas por AEGEA, Colibri Verde FIP-IE, Angelo Investment Priva",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Emissora: Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas (Itaú Unibanco como banco depositá",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "conta vinculada",
+   "alvo": "Cessão fiduciária dos direitos da Nova Acionista contra o Banco Depositário sobre contas vinculadas, recursos e investimentos permitidos",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de mútuos subordinados: Nova Acionista e AEGEA com a Emissora (cessão fiduciária de créditos subordinados – Emissora) e",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital: obrigações de aporte de recursos da AEGEA e da Nova Acionista na Emissora e na Nova Acionista",
+   "situacao": "vigente (aditamento de 19/03/2024)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP14",
+   "tipo": "outra",
+   "alvo": "Cessão Condicional – Emissora: cessão da posição contratual da Emissora no Contrato de EPC com a AESAN Engenharia e Participações Ltda. (CNP",
+   "situacao": "vigente sob condição suspensiva",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Emissora (Águas do Rio 1 SPE S.A.), alienadas pela Nova Acionista, Águas do Rio Investimentos S.A.",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A., alienadas por AEGEA, Colibri Verde FIP-IE, Angelo Investment Priva",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Emissora: Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas (Itaú Unibanco como banco depositá",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "conta vinculada",
+   "alvo": "Cessão fiduciária dos direitos da Nova Acionista contra o Banco Depositário sobre contas vinculadas, recursos e investimentos permitidos",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios de mútuos subordinados: Nova Acionista e AEGEA com a Emissora e AEGEA com a Nova Acionista",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital: obrigações de aporte da AEGEA e da Nova Acionista",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RISP24",
+   "tipo": "outra",
+   "alvo": "Cessão Condicional – Emissora: cessão da posição contratual no Contrato de EPC com a AESAN Engenharia e Participações Ltda.",
+   "situacao": "vigente sob condição suspensiva",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IRJS14",
+   "tipo": "fiança",
+   "alvo": "Iguá Saneamento S.A. (CNPJ 08.159.965/0001-33), Fiadora da 1ª série (Fiança Corporativa)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IRJS14",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Iguá Rio de Janeiro S.A., conforme o 'Instrumento Particular de Cessão Fiduciária de Direitos Creditórios e Outras A",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.95
+  },
+  {
+   "c": "IRJS14",
+   "tipo": "alienação fiduciária",
+   "alvo": "Alienação Fiduciária de Ações, objeto do 'Contrato de Alienação Fiduciária de Ações'. A outorga foi aprovada pelo Conselho de Administração ",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IRJS14",
+   "tipo": "conta vinculada",
+   "alvo": "Conta Reserva Primeira Série da Quarta Emissão (Saldo Mínimo), dentro da cessão fiduciária de direitos creditórios",
+   "situacao": "proposta",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IRJS15",
+   "tipo": "fiança",
+   "alvo": "Iguá Saneamento S.A. (CNPJ 08.159.965/0001-33), a \"Fiança Corporativa\"",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IRJS15",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações de emissão da Iguá Rio de Janeiro S.A. detidas pela Iguá Saneamento S.A. (100% do capital social), com direitos econômicos e políticos",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "IRJS15",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Emissora (Iguá Rio de Janeiro S.A.): (a) decorrentes do Contrato de Concessão, a serem pagos nas Contas Centralizado",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.9
+  },
+  {
+   "c": "RIS412",
+   "tipo": "fiança",
+   "alvo": "AEGEA Saneamento e Participações S.A. (CNPJ 08.827.501/0001-58)",
+   "situacao": "vigente (sujeita à Condição Resolutiva; não há documento confirmando a liberação)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS412",
+   "tipo": "fiança",
+   "alvo": "Fiança bancária de bancos fiadores a contratar pela Emissora (rating mínimo AA+ ou o rating das Debêntures, se maior). Os nomes dos bancos n",
+   "situacao": "vigente (prevista; sem comprovação nos trechos de renovação, de bancos ou de exoneração)",
+   "st": "ancorado",
+   "frac": 0.86
+  },
+  {
+   "c": "RIS412",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio 4 SPE S.A. (Emissora), de titularidade da Águas do Rio Investimentos S.A. (Nova Acioni",
+   "situacao": "vigente (sob condição suspensiva até a Quitação das Debêntures Existentes)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS412",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio Investimentos S.A. (Nova Acionista), dadas pelos Acionistas Indiretos: AEGEA, Colibri ",
+   "situacao": "vigente (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.95
+  },
+  {
+   "c": "RIS412",
+   "tipo": "cessão fiduciária",
+   "alvo": "Pela Emissora: direitos creditórios presentes e futuros do Contrato de Concessão, dos seguros exigidos, dos Contratos do Projeto e garantias",
+   "situacao": "vigente (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.89
+  },
+  {
+   "c": "RIS412",
+   "tipo": "cessão fiduciária",
+   "alvo": "Pela Emissora: direitos creditórios da Conta Desembolso Debêntures (recursos da integralização das Debêntures e depósitos efetuados nela)",
+   "situacao": "vigente (leitura parcial)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS412",
+   "tipo": "cessão fiduciária",
+   "alvo": "Pela Nova Acionista: direitos contra o Banco Depositário sobre contas vinculadas e recursos depositados; e, pela Nova Acionista e pela AEGEA",
+   "situacao": "vigente (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.96
+  },
+  {
+   "c": "RIS412",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital: AEGEA e Nova Acionista se obrigam a aportar recursos na Emissora e na Nova Acionista (suporte de capital)",
+   "situacao": "vigente (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.9
+  },
+  {
+   "c": "RIS422",
+   "tipo": "fiança",
+   "alvo": "AEGEA Saneamento e Participações S.A. (CNPJ 08.827.501/0001-58)",
+   "situacao": "vigente (sujeita à Condição Resolutiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS422",
+   "tipo": "fiança",
+   "alvo": "Fiança bancária de bancos fiadores a contratar (rating mínimo AA+ ou o das Debêntures, se maior). Os bancos não são nomeados nos trechos des",
+   "situacao": "vigente (prevista; sem comprovação de renovação)",
+   "st": "ancorado",
+   "frac": 0.91
+  },
+  {
+   "c": "RIS422",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações da Águas do Rio 4 SPE S.A. (dadas pela Águas do Rio Investimentos S.A.) e ações da Águas do Rio Investimentos S.A. (dadas por AEGEA, C",
+   "situacao": "vigente (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "RIS422",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios do Contrato de Concessão, seguros, Contratos do Projeto e contas vinculadas da Emissora (Banco Depositário: Itaú Uniban",
+   "situacao": "vigente (sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS414",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações atuais e futuras da Águas do Rio 4 SPE S.A., de titularidade da Águas do Rio Investimentos S.A. (Nova Acionista), com t",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS414",
+   "tipo": "alienação fiduciária",
+   "alvo": "Totalidade das ações da Águas do Rio Investimentos S.A., dadas por AEGEA, Colibri Verde FIP em Infraestrutura, Angelo Investment Private Lim",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.93
+  },
+  {
+   "c": "RIS414",
+   "tipo": "cessão fiduciária",
+   "alvo": "Pela Emissora: direitos creditórios do Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas e demais contas (Banco Deposi",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS414",
+   "tipo": "cessão fiduciária",
+   "alvo": "Pela Nova Acionista: direitos sobre contas vinculadas contra o Banco Depositário e recursos depositados",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS414",
+   "tipo": "cessão fiduciária",
+   "alvo": "Créditos de mútuos subordinados da Nova Acionista e da AEGEA contra a Emissora e a Nova Acionista (Cessão Fiduciária de Créditos Subordinado",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS414",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital (AEGEA e Nova Acionista se obrigam a aportar recursos na Emissora e na Nova Acionista); e Cessão Condicional d",
+   "situacao": "vigente (cessão do EPC sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 0.86
+  },
+  {
+   "c": "RIS424",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações da Águas do Rio 4 SPE S.A. (dadas pela Águas do Rio Investimentos S.A.) e ações da Águas do Rio Investimentos S.A. (dadas por AEGEA, C",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "RIS424",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Emissora (Contrato de Concessão, seguros, Contratos do Projeto, contas vinculadas); direitos da Nova Acionista sobre",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "RIS424",
+   "tipo": "outra",
+   "alvo": "Contrato de Aporte de Capital (AEGEA e Nova Acionista) e Cessão Condicional do Contrato de EPC (AESAN) pela Emissora",
+   "situacao": "vigente (cessão do EPC sob condição suspensiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VBRR11",
+   "tipo": "fiança",
+   "alvo": "CONASA INFRAESTRUTURA S.A. (CNPJ 08.837.556/0001-49), acionista da Emissora",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VBRR11",
+   "tipo": "alienação fiduciária",
+   "alvo": "Ações da Emissora (Via Brasil BR 163), de titularidade da Conasa, conforme Contrato de Alienação Fiduciária de Ações",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VBRR11",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos Creditórios da Emissora (Cessão Fiduciária de Direitos Creditórios, conforme Contrato de Cessão Fiduciária), incluindo a Conta Rese",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "VBRR11",
+   "tipo": "conta vinculada",
+   "alvo": "Conta Reserva, com Saldo Mínimo, vinculada ao Contrato de Cessão Fiduciária",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ASER12",
+   "tipo": "fiança",
+   "alvo": "Conasa Infraestrutura S.A. (Fiadora)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ASER12",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios da Águas do Sertão S.A. decorrentes do Contrato de Concessão (Receita de Exploração, indenizações do Poder Concedente, ",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ASER12",
+   "tipo": "conta vinculada",
+   "alvo": "Conta Reserva Debêntures e Conta Pagamento Debêntures (Contas Vinculadas, mantidas no Banco Depositário), com Saldos Mínimos",
+   "situacao": "vigente; liberação do saldo e dispensa do Saldo Mínimo aprovadas aparentemente sob condição suspensiva",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ASER12",
+   "tipo": "fiança",
+   "alvo": "Fiança bancária (Banco Fiador não identificado) para completar o Saldo Mínimo da Conta Reserva Debêntures",
+   "situacao": "proposta (dispensa) / desconhecida: não se sabe se há carta emitida",
+   "st": "ancorado",
+   "frac": 0.75
+  },
+  {
+   "c": "LIGHC5",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestad",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC5",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletri",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC5",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC7",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Light Serviços de Eletricidade S.A.)",
+   "situacao": "vigente (informada nas escrituras da 22ª e da 9ª, de 2024; escritura da 17ª não fornecida)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC7",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios (recebíveis) que transitam por conta vinculada (Light Serviços de Eletricidade S.A.)",
+   "situacao": "vigente (informada nas escrituras da 22ª e da 9ª, de 2024; escritura da 17ª não fornecida)",
+   "st": "ancorado",
+   "frac": 0.75
+  },
+  {
+   "c": "LIGHB9",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestad",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHB9",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletri",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHB9",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestad",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC0",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletri",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC0",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGH2B",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestad",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGH2B",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletri",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGH2B",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHE2",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (cedente: Light Serviços de Eletricidade S.A.)",
+   "situacao": "vigente (contrato 'a ser celebrado' na data do aditamento; registro em RTD não confirmado nos trechos)",
+   "st": "ancorado",
+   "frac": 0.92
+  },
+  {
+   "c": "LIGHE2",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitam por conta vinculada (Light Serviços de Eletricidade S.A.)",
+   "situacao": "vigente (contrato 'a ser celebrado' na data do aditamento; registro em RTD não confirmado nos trechos)",
+   "st": "ancorado",
+   "frac": 0.75
+  },
+  {
+   "c": "LIGHE2",
+   "tipo": "cessão fiduciária",
+   "alvo": "Sobejo (excedente) da cessão fiduciária sobre a indenização líquida e da cessão fiduciária sobre os direitos creditórios, após o pagamento d",
+   "situacao": "vigente (nos termos do aditamento de 2024)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHE2",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC4",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (Cessão Fiduciária sobre Indenização Líquida), prestad",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC4",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitarão por conta vinculada (Cessão Fiduciária de Direitos Creditórios), prestada pela Light Serviços de Eletri",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LIGHC4",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LSVE39",
+   "tipo": "cessão fiduciária",
+   "alvo": "Indenização líquida dos ativos elétricos referentes à Base de Remuneração Regulatória (cedente: Light Serviços de Eletricidade S.A.)",
+   "situacao": "vigente (contrato 'a ser celebrado' na data do aditamento; registro em RTD não confirmado nos trechos)",
+   "st": "ancorado",
+   "frac": 0.92
+  },
+  {
+   "c": "LSVE39",
+   "tipo": "cessão fiduciária",
+   "alvo": "Direitos creditórios que transitam por conta vinculada (Light Serviços de Eletricidade S.A.)",
+   "situacao": "vigente (contrato 'a ser celebrado' na data do aditamento; registro em RTD não confirmado nos trechos)",
+   "st": "ancorado",
+   "frac": 0.75
+  },
+  {
+   "c": "LSVE39",
+   "tipo": "cessão fiduciária",
+   "alvo": "Sobejo (excedente) da cessão fiduciária sobre a indenização líquida e da cessão fiduciária sobre os direitos creditórios, após o pagamento d",
+   "situacao": "vigente (nos termos do aditamento)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "LSVE39",
+   "tipo": "fiança",
+   "alvo": "Light S.A. – Em Recuperação Judicial (CNPJ 03.378.521/0001-75)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ELPLB9",
+   "tipo": "fiança",
+   "alvo": "Enel Brasil S.A. (CNPJ 07.523.555/0001-67)",
+   "situacao": "vigente (sujeita à Condição Resolutiva)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI13",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI13",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), regida por leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI13",
+   "tipo": "penhor",
+   "alvo": "Totalidade das ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimento",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI13",
+   "tipo": "penhor",
+   "alvo": "Ações de emissão da ICT Argentina de titularidade direta ou indireta da ICP, correspondentes a 100% do seu capital social, com dividendos e ",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI23",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI23",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI23",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI23",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI33",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI33",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI33",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI33",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI43",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI43",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI43",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI43",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI53",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI53",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI53",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI53",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI63",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI63",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI63",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI63",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI73",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI73",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI73",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI73",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI83",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI83",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI83",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI83",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI93",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras: Intercement Participações S.A. (ICP), InterCement Trading e Inversiones S.A. (ICT) e InterCement Trading e Inve",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI93",
+   "tipo": "outra",
+   "alvo": "Garantia corporativa à primeira demanda (garantía a requerimiento), leis espanholas, prestada pela ICT e pela ICT Argentina",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI93",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis argenti",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CCCI93",
+   "tipo": "penhor",
+   "alvo": "100% das ações da ICT Argentina de titularidade direta ou indireta da ICP, com dividendos e rendimentos (leis espanholas)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ICBR14",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. (Penhor de Ações Loma Negra)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ICBR14",
+   "tipo": "penhor",
+   "alvo": "Ações de emissão da ICT Argentina (Penhor de Ações ICT Argentina)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ICBR14",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras (nomes não detalhados nos trechos da 4ª emissão; presumivelmente ICP, ICT e ICT Argentina, como na 3ª emissão)",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.71
+  },
+  {
+   "c": "ICBR24",
+   "tipo": "penhor",
+   "alvo": "Ações de Loma Negra Compañía Industrial Argentina S.A. (Penhor de Ações Loma Negra)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ICBR24",
+   "tipo": "penhor",
+   "alvo": "Ações de emissão da ICT Argentina (Penhor de Ações ICT Argentina)",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "ICBR24",
+   "tipo": "fiança",
+   "alvo": "Intervenientes Garantidoras (nomes não detalhados nos trechos da 4ª emissão; presumivelmente ICP, ICT e ICT Argentina)",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.67
+  },
+  {
+   "c": "OIBRA2",
+   "tipo": "coobrigação",
+   "alvo": "Recuperandas do Grupo Oi, solidariamente responsáveis com a emissora OI S.A. – Em Recuperação Judicial (CNPJ 76.535.764/0001-43). A Escritur",
+   "situacao": "vigente",
+   "st": "ancorado",
+   "frac": 0.88
+  },
+  {
+   "c": "CREM17",
+   "tipo": "fiança",
+   "alvo": "CM Hospitalar S.A. (CNPJ 12.420.164/0001-57), fiadora na Escritura de 23/02/2024",
+   "situacao": "vigente; extinção proposta, sob condição (minuta de aditamento com campos em branco)",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CREM17",
+   "tipo": "fiança",
+   "alvo": "Proinfusion S.A.",
+   "situacao": "vigente; extinção proposta, sob condição",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CREM17",
+   "tipo": "alienação fiduciária",
+   "alvo": "100% das ações ordinárias de emissão da Cremer S.A. de titularidade da CM Hospitalar S.A., mais novas ações, frutos, rendimentos, dividendos",
+   "situacao": "vigente. As alterações aprovadas em 11/06/2026 dependem das Condições Suspensiva (aprovação das demais Debêntures em Vigor) e Resolutiva (aprovação do IFC e aditamento do contrato de alienação fiduciária, com protocolo em cartório, até 30/09/2026).",
+   "st": "ancorado",
+   "frac": 1.0
+  },
+  {
+   "c": "CREM17",
+   "tipo": "cessão fiduciária",
+   "alvo": "Não identificado nos trechos desta emissão. O Doc. 6 define as 'Garantias Reais' como Alienação Fiduciária em conjunto com a Cessão Fiduciár",
+   "situacao": "desconhecida",
+   "st": "ancorado",
+   "frac": 0.88
+  }
+ ]
+}
