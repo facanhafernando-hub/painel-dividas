@@ -9,6 +9,7 @@ BrasilAPI (Receita), com cache em docs/data/cnpj_nomes.json.
 Saída: docs/data/devedores_cricra.json  {codigo: {"cnpj", "nome", "pct", "tipo", "ref"}}  (tipo "pulverizado" sem cnpj)
 """
 import csv, io, json, re, sys, time, urllib.error, urllib.request, zipfile
+csv.field_size_limit(10**9)
 from datetime import date
 from pathlib import Path
 
