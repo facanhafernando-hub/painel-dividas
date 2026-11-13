@@ -154,6 +154,9 @@ const ALERTAS = {
 const ESSENCIAIS = ["vencida_antecipadamente", "salto_volume"];
 const tagsE = al => tags((al || []).filter(k => ESSENCIAIS.includes(k)));
 const tags = al => (al || []).map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
+const CR = { va: ["Venc. antecipado", "t-crit", 4], rj: ["RJ", "t-crit", 3], re: ["RE", "t-crit", 2], rp: ["Reperfilada", "t-warn", 1] };
+const crTag = (cr, crr) => cr ? `<span class="tag ${CR[cr][1]}" title="${esc(crr || "")}">${CR[cr][0]}</span>` : "";
+const crGrave = cr => cr === "va" || cr === "rj" || cr === "re";
 
 function pctPar(v, extra = "") {
   if (nada(v)) return '<span class="mut">–</span>';
@@ -198,6 +201,7 @@ async function carregarCatalogo() {
     if (i.t === "CRI" || i.t === "CRA") { if (i.s && i.s === i.e) e.secs = (e.secs || 0) + 1; } else e.naoSec = true;
     if (!e.cnpj && i.cnpj) e.cnpj = i.cnpj;
     if (i.w) { e.lista = i.w; e.situacao = i.ws; }
+    if (i.cr && (!e.cr || CR[i.cr][2] > CR[e.cr][2])) e.cr = i.cr;
   }
   for (const e of g.values()) {
     e.nome = Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0][0];
@@ -233,7 +237,7 @@ async function telaEmpresas() {
     <div class="barra">
       <input type="search" id="bE" placeholder="Buscar empresa, código ou securitizadora" value="${esc(st.busca)}">
       <div class="chips" id="fE">
-        ${[["todas", "Todas"], ["lista", "Minha lista"], ["hoje", "Negociadas hoje"], ["desc", "Abaixo de 80% do par"]].map(([k, l]) => `<button class="chip" data-k="${k}" aria-pressed="${st.filtroE === k}">${l}</button>`).join("")}
+        ${[["todas", "Todas"], ["lista", "Minha lista"], ["cred", "Evento de crédito"], ["hoje", "Negociadas hoje"], ["desc", "Abaixo de 80% do par"]].map(([k, l]) => `<button class="chip" data-k="${k}" aria-pressed="${st.filtroE === k}">${l}</button>`).join("")}
       </div>
       <select id="oE">
         <option value="vol">Mais negociadas</option><option value="desc">Mais descontadas</option><option value="nome">A–Z</option><option value="tit">Mais títulos</option>
@@ -250,7 +254,7 @@ async function telaEmpresas() {
 function listaEmpresas() {
   const q = semAc(st.busca.trim());
   let L = st.empresas.filter(e => (!q || e.busca.includes(q)) &&
-    (st.filtroE === "todas" || (st.filtroE === "lista" ? !!e.lista : st.filtroE === "hoje" ? e.negHoje > 0 : (e.pior !== null && e.pior < 80))));
+    (st.filtroE === "todas" || (st.filtroE === "lista" ? !!e.lista : st.filtroE === "cred" ? !!e.cr : st.filtroE === "hoje" ? e.negHoje > 0 : (e.pior !== null && e.pior < 80))));
   const S = { vol: (a, b) => b.vol - a.vol || b.itens.length - a.itens.length, desc: (a, b) => (a.pior ?? 999) - (b.pior ?? 999),
               nome: (a, b) => a.nome.localeCompare(b.nome), tit: (a, b) => b.itens.length - a.itens.length };
   L.sort(S[st.ordE]);
@@ -258,7 +262,7 @@ function listaEmpresas() {
   document.getElementById("listaE").innerHTML = !L.length ? '<div class="vazio">Nenhuma empresa encontrada.</div>' :
     `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? " (mostrando 200; refine a busca)" : ""}</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
     L.map(e => `<a class="emp" href="#/e/${encodeURIComponent(e.k)}">
-      <div><div class="n">${esc(titulo(e.nome))} ${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
+      <div><div class="n">${esc(titulo(e.nome))} ${crTag(e.cr)}${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
       <div class="sub">${e.situacao ? `<span style="color:var(--text-primary)">${esc(e.situacao)}</span> · ` : ""}${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
       <div class="v hide-m"><b>${pctPar(e.pior)}</b><span>pior título</span></div>
       <div class="v"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b><span>${e.vol ? "negociado" : "sem negócio"}</span></div></a>`).join("");
@@ -290,18 +294,23 @@ async function telaEmpresa(k) {
       <th>% do par</th><th title="Spread/juro real implícito, pagando tudo no vencimento">Yield implícito</th><th title="TIR nominal com DI futuro e inflação implícita da curva ANBIMA">TIR nominal</th><th title="Total a receber ÷ preço pago">MOIC</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
     </tr></thead><tbody>${itens.map((i, n) => linhaTitulo(i, n)).join("")}</tbody></table></div>
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
-    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 5% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
+    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 5% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato. Selos de situação (venc. antecipado, RJ, RE, reperfilada) vêm da leitura automática de escrituras, aditamentos, atas de AGD e comunicados na CVM; † = TIR contratual de título com evento de crédito, só como referência.</div>`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
+}
+// TIR contratual perde sentido com evento de crédito grave: mostra esmaecida, com aviso
+function tirCr(i) {
+  const t = tirTxt(i.utir, i.upp ?? i.ppa);
+  return crGrave(i.cr) && !nada(i.utir) ? `<span style="opacity:.55" title="Contratual: supõe pagamento pelo cronograma original, que deixou de valer com o evento de crédito. Use o simulador de recuperação.">${t}†</span>` : t;
 }
 function linhaTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<tr data-i="${n}">
-    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
+    <td class="l"><span class="cod">${esc(i.c)}</span><span class="tp">${esc(i.t)}</span>${crTag(i.cr, i.crr)}${i.inc ? '<span class="tag t-neu" style="margin-left:6px">12.431</span>' : ""}</td>
     <td>${esc(i.ven || "–")}</td><td class="l">${esc(i.idx || "–")}</td>
     <td>${i.ud ? dbr(i.ud) : '<span class="mut">sem negócio</span>'}</td>
     <td>${fmt(i.up)}</td>
     <td>${pctPar(p)}${ind ? '<span class="mut">*</span>' : ""}</td>
-    <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</td><td>${tirTxt(i.utir, i.upp ?? i.ppa)}${i.uind ? '<span class="mut" title="no PU indicativo ANBIMA">*</span>' : ""}</td><td>${moicTxt(i.umoic)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
+    <td>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</td><td>${tirCr(i)}${i.uind ? '<span class="mut" title="no PU indicativo ANBIMA">*</span>' : ""}</td><td>${moicTxt(i.umoic)}</td><td>${taxaAnb(i.ta, i.idx)}</td>
     <td>${i.vh ? mi(i.vh) : '<span class="mut">–</span>'}</td>
     <td class="l ell">${esc(i.gar || "–")}</td><td class="l">${tagsE(i.al)}</td></tr>`;
 }
@@ -309,11 +318,11 @@ function cartaoTitulo(i, n) {
   const p = i.upp ?? i.ppa, ind = i.upp == null && i.ppa != null;
   return `<div class="tc" data-i="${n}">
     <div class="l1"><div><span style="font-weight:650">${esc(i.c)}</span> <span class="mut" style="font-size:11px;font-weight:600">${esc(i.t)}</span></div><div class="sub">venc. ${esc(i.ven || "–")}${i.ud ? " · neg. " + dbr(i.ud).slice(0, 5) : ""}</div></div>
-    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${tagsE(i.al)}</div>
+    <div class="sub" style="margin-top:2px">${esc(i.idx || "–")}${i.inc ? " · incentivada" : ""} ${crTag(i.cr, i.crr)}${tagsE(i.al)}</div>
     <div class="l2">
       <div><span>% do par${ind ? " (ind.)" : ""}</span><b>${pctPar(p)}</b></div>
       <div><span>Yield</span><b>${yieldTxt(i.uy, i.uyb, i.uye, i.upp ?? i.ppa)}</b></div>
-      <div><span>TIR nominal${i.uind ? " (ind.)" : ""}</span><b>${tirTxt(i.utir, i.upp ?? i.ppa)}</b></div>
+      <div><span>TIR nominal${i.uind ? " (ind.)" : ""}</span><b>${tirCr(i)}</b></div>
       <div><span>MOIC</span><b>${moicTxt(i.umoic)}</b></div>
     </div></div>`;
 }
@@ -409,14 +418,23 @@ async function abrirTitulo(i) {
     ["Incentivada (12.431)", i.inc == null ? "–" : i.inc ? "Sim" : "Não"], ["Resgate antecipado", i.ra == null ? "–" : i.ra ? "Previsto" : "Não"],
     ["Categoria ANBIMA", esc((i.cat || "–").replace(/_/g, " "))],
   ];
+  if (crGrave(i.cr)) dest[2][0] = "TIR contratual †";
+  const sim = (i.up || i.pa) && i.par ? simulador(i) : "";
   document.getElementById("detCorpo").innerHTML = (i.al?.length ? `<div style="margin-bottom:10px">${tags(i.al)}</div>` : "") +
+    (i.cr ? `<div class="card" style="padding:10px 14px;margin:0 0 10px;border-left:3px solid var(--${crGrave(i.cr) ? "crit" : "warn"}-fg)">
+       <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">${crTag(i.cr)}<span class="sub">${i.crd ? "desde " + dbr(i.crd) : ""}</span></div>
+       <div style="margin-top:4px;font-size:13px">${esc(i.crr || "")}</div>
+       ${crGrave(i.cr) ? '<div class="nota" style="margin-top:4px">Com evento de crédito, o retorno depende da recuperação, não do cronograma original. Use o simulador abaixo; a TIR contratual fica só como referência.</div>' : ""}</div>` : "") +
+    (crGrave(i.cr) ? sim : "") +
     `<div class="grade">${dest.map(([l, v]) => `<div class="dest"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      <div class="grade">${dados.filter(([l, v]) => !/^(–|<span class="mut">–<\/span>)$/.test(v)).map(([l, v]) => `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
-     ${(i.up || i.pa) && i.par ? simulador(i) : ""}
+     ${crGrave(i.cr) ? "" : sim}
      <div id="crono"></div>
+     <div id="docs"></div>
      <div class="graf" id="graf"><span class="mut">Carregando histórico…</span></div>`;
   if ((i.up || i.pa) && i.par) ligarSimulador(i);
   carregarCronograma(i);
+  carregarDocumentos(i);
   det.classList.add("aberto"); det.setAttribute("aria-hidden", "false");
   try { desenhar((await getJSON(`data/series/${encodeURIComponent(i.c)}.json`)).p); }
   catch { document.getElementById("graf").innerHTML = '<span class="mut">Sem histórico de negócios ainda.</span>'; }
@@ -440,6 +458,21 @@ function ligarSimulador(i) {
     document.getElementById("sRes").innerHTML = `<div class="sub">MOIC <b style="color:var(--text-primary);font-size:16px">${f2.format(moic)}x</b> · TIR <b style="color:var(--text-primary);font-size:16px">${tir === null ? "–" : f1.format(tir) + "%"}</b> · retorno ${f1.format((moic - 1) * 100)}%</div>`;
   };
   document.getElementById("sRec").oninput = calc; document.getElementById("sAnos").oninput = calc; calc();
+}
+
+async function carregarDocumentos(i) {
+  const el = document.getElementById("docs");
+  if (!i.esc) { el.innerHTML = ""; return; }
+  let j; try { j = await getJSON(`data/escrituras/${i.esc}.json`); } catch { el.innerHTML = ""; return; }
+  const sr = (j.series || []).find(x => x.codigo === i.c) || {};
+  const nomeT = { escritura: "Escritura / aditamento", ata_agd: "Ata de AGD", proposta_agd: "Proposta de AGD", comunicado: "Comunicado / fato relevante", plano_rj: "Plano de RJ/RE" };
+  const r = sr.remuneracao || {};
+  const docs = (j.meta?.documentos || []).slice().reverse();
+  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Documentos lidos (CVM)</h4>
+    <div class="sub" style="margin-bottom:6px">Leitura automática em ${dbr(j.meta?.lido_em)} · confiança ${esc(sr.confianca || "–")}${r.indexador ? ` · remuneração vigente: ${esc(r.indexador)} ${r.taxa != null ? f2.format(r.taxa) + "%" : ""}${r.vigente_desde ? " desde " + dbr(r.vigente_desde) : ""}` : ""}</div>
+    ${sr.fonte ? `<div class="nota" style="margin:0 0 6px">Fonte do cronograma: ${esc(sr.fonte)}</div>` : ""}
+    <div class="card tw" style="max-height:220px"><table><tbody>${docs.map(d => `<tr style="cursor:default"><td class="l">${dbr(d.data)}</td><td class="l" style="white-space:normal">${esc(nomeT[d.tipo] || d.tipo)}<div class="sub">${esc((d.assunto || "").slice(0, 120))}</div></td><td class="l"><a href="${esc(d.url)}" target="_blank" rel="noopener" style="text-decoration:underline">abrir</a></td></tr>`).join("")}</tbody></table></div>
+    ${j.lacunas ? `<details style="margin-top:6px"><summary class="sub" style="cursor:pointer">O que a leitura não conseguiu determinar</summary><div class="nota">${esc(j.lacunas)}</div></details>` : ""}`;
 }
 
 async function carregarCronograma(i) {
@@ -466,7 +499,10 @@ async function carregarCronograma(i) {
   });
   const tot = linhas.reduce((s, l) => s + (l.cx || 0), 0);
   const nA = c.ev.filter(e => e[1] === "A").length, nI = c.ev.filter(e => e[1] === "I").length;
-  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Cronograma (agenda SND)</h4>
+  const conf = c.escok === true ? ' <span class="tag t-info" title="Datas e percentuais de amortização iguais aos da escritura/aditamento lidos na CVM">conferido com a escritura</span>'
+    : c.escok === false ? ' <span class="tag t-warn" title="A escritura/aditamento lido traz datas ou percentuais diferentes da agenda do SND">diverge da escritura</span>' : "";
+  const aj = c.aj?.length ? `<div class="nota" style="margin:0 0 6px">Agenda do SND ajustada pela escritura: ${c.aj.map(x => x === "base" ? "base das amortizações (% do saldo × % do valor de emissão)" : "percentuais de amortização que o SND não informa").join(" e ")}.</div>` : "";
+  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Cronograma (agenda SND)${conf}</h4>${aj}
     <div class="sub" style="margin-bottom:6px">${c.ev.filter(e => e[1] === "J").length} pagamentos de juros · ${nA ? nA + (nA > 1 ? " amortizações" : " amortização") : "principal no vencimento (bullet)"}${nI ? ` · <span class="neg">${nI} incorporações de juros (PIK)</span>` : ""}${tot ? ` · total projetado R$ ${f2.format(tot)} por debênture` : ""}</div>
     <div class="card tw" style="max-height:300px"><table><thead><tr><th class="l">Pagamento</th><th class="l">Evento</th><th title="Projeção com a curva ANBIMA de ${dbr(c.curva)}">Caixa proj. (R$)</th></tr></thead>
     <tbody>${linhas.map(l => `<tr style="cursor:default"><td class="l">${l.d}</td><td class="l" style="white-space:normal;min-width:140px">${esc(l.desc)}</td><td>${l.pik && !l.cx ? '<span class="mut">incorporado</span>' : l.cx ? (l.amort ? "<b>" + f2.format(l.cx) + "</b>" : f2.format(l.cx)) : "–"}</td></tr>`).join("")}</tbody></table></div>

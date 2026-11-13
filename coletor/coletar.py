@@ -1131,8 +1131,81 @@ _CACHE: dict = {}
 
 def snd_agenda() -> dict:
     if "agenda" not in _CACHE:
-        _CACHE["agenda"] = coletar_snd_agenda(datetime.now(BRT).date())
+        ag = coletar_snd_agenda(datetime.now(BRT).date())
+        _CACHE["ajustes"] = ajustar_pelas_escrituras(ag)
+        _CACHE["agenda"] = ag
     return _CACHE["agenda"]
+
+
+def escrituras() -> dict:
+    """Leituras de escrituras/aditamentos/atas (docs/data/escrituras), por código: série extraída, evento de crédito,
+    conferência com o SND e arquivo de origem."""
+    if "esc" in _CACHE:
+        return _CACHE["esc"]
+    out = {}
+    for p in sorted((DADOS / "escrituras").glob("*_*.json")) if (DADOS / "escrituras").exists() else []:
+        try:
+            j = json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        evs = j.get("eventos") or {}
+        for sr in j.get("series", []):
+            c = sr.get("codigo")
+            if not c:
+                continue
+            out[c] = {"serie": sr, "evento": evs.get(c) or {}, "conf": sr.get("conferencia_snd") or {},
+                      "arq": p.stem, "lido": (j.get("meta") or {}).get("lido_em")}
+    _CACHE["esc"] = out
+    return out
+
+
+def ajustar_pelas_escrituras(agenda: dict) -> dict:
+    """Corrige a agenda do SND com o cronograma lido nos documentos, só quando as datas batem (±5 dias) e a leitura
+    não é de confiança baixa: (1) percentual ausente/zero no SND e presente no documento; (2) base da amortização
+    (FIX = % do VNE; VAR = % do saldo) diferente da indicada no documento, com os mesmos percentuais."""
+    hoje = datetime.now(BRT).date()
+    ajustes = {}
+    for c, x in escrituras().items():
+        ev, sr = agenda.get(c), x["serie"]
+        if not ev or sr.get("confianca") == "baixa":
+            continue
+        doc = []
+        for a in sr.get("amortizacoes") or []:
+            try:
+                dd = date.fromisoformat(a["data"])
+            except Exception:
+                continue
+            if dd > hoje and a.get("percentual") is not None:
+                doc.append((dd, float(a["percentual"]), a.get("base")))
+        if not doc:
+            continue
+        notas, usados = [], set()
+        for k, e in enumerate(ev):
+            if e[1] != "A":
+                continue
+            de = datetime.strptime(e[0], "%d/%m/%Y").date()
+            if de <= hoje:
+                continue
+            cand = [(abs((dd - de).days), n) for n, (dd, _, _) in enumerate(doc) if n not in usados and abs((dd - de).days) <= 5]
+            if not cand:
+                continue
+            n = min(cand)[1]
+            usados.add(n)
+            _, pct, bs = doc[n]
+            base_doc = "VAR" if bs == "saldo" else "FIX" if bs == "vne" else None
+            novo = list(e)
+            if not e[2] and pct:
+                novo[2] = pct
+                notas.append("percentual")
+            if base_doc and base_doc != (e[3] or "VAR") and abs((e[2] or 0) - pct) < 0.05:
+                novo[3] = base_doc
+                notas.append("base")
+            ev[k] = novo
+        if notas:
+            ajustes[c] = sorted(set(notas))
+    if ajustes:
+        log(f"  agenda ajustada pelas escrituras: {len(ajustes)} títulos")
+    return ajustes
 
 
 def snd_cadastro() -> dict:
@@ -1307,6 +1380,17 @@ def construir_catalogo() -> None:
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
         })
+        x = escrituras().get(c)
+        if x:
+            ev_ = x["evento"]
+            sig = {"vencimento_antecipado": "va", "rj": "rj", "re": "re", "reperfilamento": "rp"}.get(ev_.get("evento"))
+            cf = x["conf"]
+            itens[-1].update({
+                "cr": sig, "crd": ev_.get("data") if sig else None, "crr": ev_.get("resumo") if sig else None,
+                "esc": x["arq"],
+                "escok": True if cf.get("ok") else (False if cf.get("snd") and cf.get("amort_doc") and cf.get("amort_snd") else None),
+                "aj": (_CACHE.get("ajustes") or {}).get(c),
+            })
     try:
         lista = json.loads((RAIZ / "coletor" / "lista_acompanhamento.json").read_text(encoding="utf-8"))["empresas"]
     except Exception:
@@ -1350,7 +1434,8 @@ def escrever_cronogramas(itens: list, snd: dict, ds: str) -> None:
             if pv_c > 0:
                 k = i["par"] / pv_c
                 fluxo = [[(d + timedelta(days=round(t * 365.25))).isoformat(), round(v * k, 4)] for t, v, _ in fl]
-        obj = {"c": i["c"], "base": base, "ev": ev, "fluxo": fluxo, "curva": (cj or {}).get("data"), "par": i.get("par")}
+        obj = {"c": i["c"], "base": base, "ev": ev, "fluxo": fluxo, "curva": (cj or {}).get("data"), "par": i.get("par"),
+               "aj": (_CACHE.get("ajustes") or {}).get(i["c"]), "escok": i.get("escok")}
         f = pasta / f"{i['c']}.json"
         novo = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
         if not f.exists() or f.read_text(encoding="utf-8") != novo:
