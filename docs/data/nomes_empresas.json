@@ -1,4 +1,9 @@
 {
+ "23 DE MAIO EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "23 de Maio",
+  "razao": "23 DE MAIO EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "2W ECOBANK": {
   "nome": "2W Ecobank",
   "razao": "2W ECOBANK S.A.",
@@ -42,6 +47,11 @@
  "ACO VERDE DO BRASIL": {
   "nome": "Aço Verde do Brasil",
   "razao": "ACO VERDE DO BRASIL S/A",
+  "fonte": "modelo"
+ },
+ "ACP AGRO": {
+  "nome": "ACP Agro",
+  "razao": "ACP AGRO LTDA",
   "fonte": "modelo"
  },
  "ACQUAVIAS SP PARTICIPACOES": {
@@ -159,6 +169,16 @@
   "razao": "AGRO INDUSTRIAS DO VALE DO SAO FRANCISCO SA - AGROVALE",
   "fonte": "modelo"
  },
+ "AGRO QUARTZO ADMINISTRACAO E PARTICIPACOES SOCIEDADE UNIPESSOAL": {
+  "nome": "Agro Quartzo",
+  "razao": "AGRO QUARTZO ADMINISTRACAO E PARTICIPACOES SOCIEDADE UNIPESSOAL LTDA",
+  "fonte": "modelo"
+ },
+ "AGROCONFIANCA COMERCIO E REPRESENTACAO": {
+  "nome": "Agroconfiança",
+  "razao": "AGROCONFIANCA COMERCIO E REPRESENTACAO LTDA",
+  "fonte": "modelo"
+ },
  "AGROGALAXY PARTICIPACOES": {
   "nome": "Agrogalaxy",
   "razao": "AGROGALAXY PARTICIPACOES S.A. – EM RECUPERACAO JUDICIAL",
@@ -167,6 +187,16 @@
  "AGRONUTRI PARTICIPACOES": {
   "nome": "Agronutri",
   "razao": "AGRONUTRI PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
+ "AGROPECUARIA MAGGI": {
+  "nome": "Agropecuária Maggi",
+  "razao": "AGROPECUARIA MAGGI LTDA",
+  "fonte": "modelo"
+ },
+ "AGROTERENAS CANA": {
+  "nome": "Agroterenas",
+  "razao": "AGROTERENAS S.A. CANA",
   "fonte": "modelo"
  },
  "AGUA VERMELHA TRANSMISSORA DE ENERGIA": {
@@ -254,6 +284,11 @@
   "razao": "AGV LOGISTICA S.A.",
   "fonte": "modelo"
  },
+ "AIKON EMPREENDIMENTOS IMOBILIARIOS SCP": {
+  "nome": "Aikon",
+  "razao": "AIKON EMPREENDIMENTOS IMOBILIARIOS LTDA SCP",
+  "fonte": "modelo"
+ },
  "AK24 EMPREENDIMENTOS E PARTICIPACOES": {
   "nome": "AK24",
   "razao": "AK24-EMPREENDIMENTOS E PARTICIPACOES S/A",
@@ -284,6 +319,11 @@
   "razao": "ALCOESTE BIOENERGIA FERNANDOPOLIS S A",
   "fonte": "modelo"
  },
+ "ALCOOLQUIMICA NACIONAL ALCOOLQUIMICA": {
+  "nome": "Alcoolquímica",
+  "razao": "COMPANHIA ALCOOLQUIMICA NACIONAL-ALCOOLQUIMICA",
+  "fonte": "modelo"
+ },
  "ALENTEJO SECURITIZADORA CREDITOS FINANCEIROS": {
   "nome": "Alentejo Securitizadora",
   "razao": "ALENTEJO COMPANHIA SECURITIZADORA CREDITOS FINANCEIROS",
@@ -294,9 +334,24 @@
   "razao": "ALEX ENERGIA PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
+ "ALFA TRANSPORTES": {
+  "nome": "Alfa Transportes",
+  "razao": "ALFA TRANSPORTES LTDA",
+  "fonte": "modelo"
+ },
+ "ALFAMA FOODS BRASIL": {
+  "nome": "Alfama Foods",
+  "razao": "ALFAMA FOODS BRASIL S.A.",
+  "fonte": "modelo"
+ },
  "ALGAR TELECOM": {
   "nome": "Algar Telecom",
   "razao": "ALGAR TELECOM S.A.",
+  "fonte": "modelo"
+ },
+ "ALIANCA DO BRASIL SEGUROS": {
+  "nome": "Aliança do Brasil Seguros",
+  "razao": "ALIANCA DO BRASIL SEGUROS S/A.",
   "fonte": "modelo"
  },
  "ALIANCA GERACAO DE ENERGIA": {
@@ -317,6 +372,11 @@
  "ALISEO EMPREENDIMENTOS E PARTICIPACOES": {
   "nome": "Aliseo",
   "razao": "ALISEO EMPREENDIMENTOS E PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
+ "ALL WERT INCORPORACAO E URBANISMO": {
+  "nome": "All Wert",
+  "razao": "ALL WERT INCORPORACAO E URBANISMO LTDA",
   "fonte": "modelo"
  },
  "ALLIED TECNOLOGIA": {
@@ -344,6 +404,11 @@
   "razao": "ALMADA ENERGIA RENOVAVEL S.A.",
   "fonte": "modelo"
  },
+ "ALMEIDA JUNIOR SHOPPING CENTERS": {
+  "nome": "Almeida Junior Shopping Centers",
+  "razao": "ALMEIDA JUNIOR SHOPPING CENTERS S.A.",
+  "fonte": "modelo"
+ },
  "ALPARGATAS": {
   "nome": "Alpargatas",
   "razao": "ALPARGATAS S.A.",
@@ -352,6 +417,11 @@
  "ALPER CONSULTORIA E CORRETORA DE SEGUROS": {
   "nome": "Alper",
   "razao": "ALPER CONSULTORIA E CORRETORA DE SEGUROS SA",
+  "fonte": "modelo"
+ },
+ "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "Alph Tower FII",
+  "razao": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
  "ALPHAVILLE": {
@@ -419,6 +489,16 @@
   "razao": "AMERICANAS S.A. - EM RECUPERACAO JUDICIAL",
   "fonte": "modelo"
  },
+ "ANCAR IC": {
+  "nome": "Ancar IC",
+  "razao": "ANCAR IC S.A.",
+  "fonte": "modelo"
+ },
+ "ANCAR MONTANA SHOPPING CENTERS": {
+  "nome": "Ancar Montana Shopping Centers",
+  "razao": "ANCAR MONTANA SHOPPING CENTERS S.A",
+  "fonte": "modelo"
+ },
  "ANDALI": {
   "nome": "Andali",
   "razao": "ANDALI S/A",
@@ -444,6 +524,11 @@
   "razao": "AOVS SISTEMAS DE INFORMATICA S.A.",
   "fonte": "modelo"
  },
+ "APEX GROUP DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS": {
+  "nome": "Apex Group DTVM",
+  "razao": "APEX GROUP DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.",
+  "fonte": "modelo"
+ },
  "APIUNA PARTICIPACOES": {
   "nome": "Apiúna",
   "razao": "APIUNA PARTICIPACOES S/A",
@@ -462,6 +547,16 @@
  "AQUA RIO AQUARIO MARINHO DO RIO DE JANEIRO": {
   "nome": "AquaRio",
   "razao": "AQUA-RIO AQUARIO MARINHO DO RIO DE JANEIRO S/A",
+  "fonte": "modelo"
+ },
+ "AR18 INCORPORACAO E CONSTRUCAO": {
+  "nome": "AR18",
+  "razao": "AR18 INCORPORACAO E CONSTRUCAO LTDA",
+  "fonte": "modelo"
+ },
+ "ARAGUAIA": {
+  "nome": "Araguaia",
+  "razao": "ARAGUAIA S.A.",
   "fonte": "modelo"
  },
  "ARAUCARIA SANEAMENTO": {
@@ -509,6 +604,11 @@
   "razao": "ARMAC LOCACAO LOGISTICA E SERVICOS S.A.",
   "fonte": "modelo"
  },
+ "ARMAZEM MATEUS": {
+  "nome": "Armazém Mateus",
+  "razao": "ARMAZEM MATEUS S.A.",
+  "fonte": "modelo"
+ },
  "ARTEON Z TRANSMISSAO E PARTICIPACOES": {
   "nome": "Arteon Z",
   "razao": "ARTEON Z TRANSMISSAO E PARTICIPACOES S/A",
@@ -519,6 +619,11 @@
   "razao": "ARTERIS S.A.",
   "fonte": "modelo"
  },
+ "ARTESANAL RECEBIVEIS IMOBILIARIOS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE L": {
+  "nome": "Artesanal Recebíveis Imobiliários FIDC",
+  "razao": "ARTESANAL RECEBIVEIS IMOBILIARIOS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS - RESPONSABILIDADE L",
+  "fonte": "modelo"
+ },
  "ARTESANAL SECURITIZADORA DE CREDITOS": {
   "nome": "Artesanal Securitizadora",
   "razao": "ARTESANAL SECURITIZADORA DE CREDITOS S.A.",
@@ -527,6 +632,11 @@
  "ASA BRANCA HOLDING": {
   "nome": "Asa Branca",
   "razao": "ASA BRANCA HOLDING S.A.",
+  "fonte": "modelo"
+ },
+ "ASA REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIARIO FII": {
+  "nome": "ASA Real Estate FII",
+  "razao": "ASA REAL ESTATE FUNDO DE INVESTIMENTO IMOBILIARIO- FII",
   "fonte": "modelo"
  },
  "ASA RENT A CAR LOCACAO DE VEICULOS": {
@@ -634,9 +744,19 @@
   "razao": "AUTOGERACAO SOLAR COMPARTILHADA SUDESTE S.A.",
   "fonte": "modelo"
  },
+ "AUTOGERACAO SOLAR SAPUCAIA I A": {
+  "nome": "Autogeração Solar Sapucaia I-A",
+  "razao": "AUTOGERACAO SOLAR SAPUCAIA I - A LTDA",
+  "fonte": "modelo"
+ },
  "AUTOGERACAO SOLAR SPE": {
   "nome": "Autogeração Solar SPE",
   "razao": "AUTOGERACAO SOLAR SPE S.A.",
+  "fonte": "modelo"
+ },
+ "AUTOMOB": {
+  "nome": "Automob",
+  "razao": "AUTOMOB S.A.",
   "fonte": "modelo"
  },
  "AUTOPASS": {
@@ -704,6 +824,11 @@
   "razao": "AXS ENERGIA UNIDADE 02 S.A.",
   "fonte": "modelo"
  },
+ "AXS ENERGIA UNIDADE 03": {
+  "nome": "AXS Energia Unidade 03",
+  "razao": "AXS ENERGIA UNIDADE 03 LTDA",
+  "fonte": "modelo"
+ },
  "AXS ENERGIA UNIDADE 05": {
   "nome": "AXS Energia Unidade 05",
   "razao": "AXS ENERGIA UNIDADE 05 S.A",
@@ -759,6 +884,11 @@
   "razao": "B SEC COMPANHIA DE SECURITIZACAO",
   "fonte": "modelo"
  },
+ "B006 EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "B006 Empreendimento Imobiliário",
+  "razao": "B006 EMPREENDIMENTO IMOBILIARIO SPE LTDA",
+  "fonte": "modelo"
+ },
  "B3 BRASIL BOLSA BALCAO": {
   "nome": "B3",
   "razao": "B3 S.A. - BRASIL BOLSA BALCAO",
@@ -774,14 +904,49 @@
   "razao": "BAESA-ENERGETICA BARRA GRANDE S/A",
   "fonte": "modelo"
  },
+ "BALAROTI COMERCIO DE MATERIAIS DE CONSTRUCAO": {
+  "nome": "Balaroti",
+  "razao": "BALAROTI - COMERCIO DE MATERIAIS DE CONSTRUCAO S.A.",
+  "fonte": "modelo"
+ },
  "BAMBOO SECURITIZADORA": {
   "nome": "Bamboo Securitizadora",
   "razao": "BAMBOO SECURITIZADORA S.A",
   "fonte": "modelo"
  },
+ "BANCO ABC BRASIL": {
+  "nome": "Banco ABC Brasil",
+  "razao": "BANCO ABC BRASIL S/A",
+  "fonte": "modelo"
+ },
+ "BANCO AGIBANK": {
+  "nome": "Agibank",
+  "razao": "BANCO AGIBANK S.A.",
+  "fonte": "modelo"
+ },
+ "BANCO BRADESCO": {
+  "nome": "Bradesco",
+  "razao": "BANCO BRADESCO S.A.",
+  "fonte": "modelo"
+ },
  "BANCO BTG PACTUAL": {
   "nome": "BTG Pactual",
   "razao": "BANCO BTG PACTUAL S.A.",
+  "fonte": "modelo"
+ },
+ "BANCO DO BRASIL": {
+  "nome": "Banco do Brasil",
+  "razao": "BANCO DO BRASIL S.A.",
+  "fonte": "modelo"
+ },
+ "BANCO PAN": {
+  "nome": "Banco Pan",
+  "razao": "BANCO PAN SA",
+  "fonte": "modelo"
+ },
+ "BANCO VOTORANTIM": {
+  "nome": "Banco Votorantim",
+  "razao": "BANCO VOTORANTIM S.A.",
   "fonte": "modelo"
  },
  "BARI SECURITIZADORA": {
@@ -809,6 +974,11 @@
   "razao": "BASA SANEAMENTO AMBIENTAL S.A.",
   "fonte": "modelo"
  },
+ "BAUTEN CABO BRANCO MAR": {
+  "nome": "Bauten Cabo Branco Mar",
+  "razao": "BAUTEN CABO BRANCO MAR LTDA",
+  "fonte": "modelo"
+ },
  "BCBF PARTICIPACOES": {
   "nome": "BCBF",
   "razao": "BCBF PARTICIPAÇÕES S.A.",
@@ -822,6 +992,11 @@
  "BE8": {
   "nome": "BE8",
   "razao": "BE8 S.A.",
+  "fonte": "modelo"
+ },
+ "BEACH PARK HOTEIS E TURISMO": {
+  "nome": "Beach Park",
+  "razao": "BEACH PARK HOTEIS E TURISMO S/A",
   "fonte": "modelo"
  },
  "BEBIDAS POTY": {
@@ -854,6 +1029,16 @@
   "razao": "BETA PRODUTORA DE ENERGIA SPE SA.",
   "fonte": "modelo"
  },
+ "BETON 01 SPE": {
+  "nome": "Beton 01",
+  "razao": "BETON 01 SPE S.A",
+  "fonte": "modelo"
+ },
+ "BGR CIDADE JARDIM FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "BGR Cidade Jardim FII",
+  "razao": "BGR CIDADE JARDIM FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "BIOENERGETICA AROEIRA": {
   "nome": "Bioenergética Aroeira",
   "razao": "BIOENERGETICA AROEIRA S.A.",
@@ -864,9 +1049,19 @@
   "razao": "BIOENERGETICA VALE DO PARACATU S/A.",
   "fonte": "modelo"
  },
+ "BIVI HOLDING": {
+  "nome": "Bivi",
+  "razao": "BIVI HOLDING S.A.",
+  "fonte": "modelo"
+ },
  "BLAU FARMACEUTICA": {
   "nome": "Blau",
   "razao": "BLAU FARMACEUTICA  S.A.",
+  "fonte": "modelo"
+ },
+ "BLN EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "BLN Empreendimentos Imobiliários",
+  "razao": "BLN EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
   "fonte": "modelo"
  },
  "BLOCO DE ONZE AEROPORTOS DO BRASIL": {
@@ -877,6 +1072,16 @@
  "BLUEFIT ACADEMIAS DE GINASTICA E PARTICIPACOES": {
   "nome": "Bluefit",
   "razao": "BLUEFIT ACADEMIAS DE GINASTICA E PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
+ "BLVD ALTI EMPREENDIMENTO IMOBILIARIO": {
+  "nome": "BLVD Alti",
+  "razao": "BLVD ALTI EMPREENDIMENTO IMOBILIARIO LTDA",
+  "fonte": "modelo"
+ },
+ "BM VAREJO EMPREENDIMENTOS": {
+  "nome": "BM Varejo",
+  "razao": "BM VAREJO EMPREENDIMENTOS S.A.",
   "fonte": "modelo"
  },
  "BOA ESPERANCA ENERGIA RENOVAVEL": {
@@ -914,9 +1119,24 @@
   "razao": "BORBOREMA TRANSMISSAO DE ENERGIA S.A.",
   "fonte": "modelo"
  },
+ "BOW E HOLDING": {
+  "nome": "Bow-E",
+  "razao": "BOW-E HOLDING LTDA.",
+  "fonte": "modelo"
+ },
  "BPG GLORIA EMPREENDIMENTOS E PARTICIPACOES": {
   "nome": "BPG Glória",
   "razao": "BPG GLORIA EMPREENDIMENTOS E PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
+ "BPGM PDC EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "BPGM PDC",
+  "razao": "BPGM PDC EMPREENDIMENTOS E PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
+ "BPGO RJ EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "BPGO RJ",
+  "razao": "BPGO RJ EMPREENDIMENTOS E PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
  "BR MALLS PARTICIPACOES": {
@@ -927,6 +1147,11 @@
  "BR MARINAS": {
   "nome": "BR Marinas",
   "razao": "BR MARINAS S.A.",
+  "fonte": "modelo"
+ },
+ "BR PARTNERS OUTLET BRASILIA": {
+  "nome": "BR Partners Outlet Brasília",
+  "razao": "BR PARTNERS OUTLET BRASILIA S.A.",
   "fonte": "modelo"
  },
  "BR PROPERTIES": {
@@ -962,6 +1187,11 @@
  "BRASIL TECNOLOGIA E PARTICIPACAO": {
   "nome": "Brasil Tecnologia e Participação",
   "razao": "BRASIL TECNOLOGIA E PARTICIPACAO S.A.",
+  "fonte": "modelo"
+ },
+ "BRASIL TERRENOS HOLDING": {
+  "nome": "Brasil Terrenos",
+  "razao": "BRASIL TERRENOS HOLDING S.A.",
   "fonte": "modelo"
  },
  "BRASILAGRO BRASILEIRA DE PROPRIEDADES AGRICOLAS": {
@@ -1017,6 +1247,11 @@
  "BRENERGIA ENERGIAS RENOVAVEIS": {
   "nome": "Brenergia",
   "razao": "BRENERGIA ENERGIAS RENOVAVEIS S.A.",
+  "fonte": "modelo"
+ },
+ "BRESCO LOGISTICA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "Bresco Logística FII",
+  "razao": "BRESCO LOGISTICA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
  "BRF": {
@@ -1109,6 +1344,11 @@
   "razao": "BRVIAS HOLDING VRD S.A",
   "fonte": "modelo"
  },
+ "BRZ EMPREENDIMENTOS E CONSTRUCOES": {
+  "nome": "BRZ Empreendimentos e Construções",
+  "razao": "BRZ EMPREENDIMENTOS E CONSTRUÇÕES S.A.",
+  "fonte": "modelo"
+ },
  "BSB ENERGETICA": {
   "nome": "BSB Energética",
   "razao": "BSB ENERGETICA S.A",
@@ -1119,6 +1359,11 @@
   "razao": "BTG PACTUAL COMMODITIES SERTRADING SA",
   "fonte": "modelo"
  },
+ "BTG PACTUAL CORPORATE OFFICE FUND FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "BTG Pactual Corporate Office Fund",
+  "razao": "BTG PACTUAL CORPORATE OFFICE FUND - FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "BTG PACTUAL HOLDING": {
   "nome": "BTG Pactual Holding",
   "razao": "BTG PACTUAL HOLDING S.A.",
@@ -1127,6 +1372,26 @@
  "BTG PACTUAL III": {
   "nome": "BTG Pactual III",
   "razao": "BTG Pactual III",
+  "fonte": "modelo"
+ },
+ "BTG PACTUAL LOGCP FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "BTG Pactual LOGCP FII",
+  "razao": "BTG PACTUAL LOGCP FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "BTG PACTUAL RENDA METROPOLITANA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "BTG Pactual Renda Metropolitana FII",
+  "razao": "BTG PACTUAL RENDA METROPOLITANA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "BTG PACTUAL SHOPPINGS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "BTG Pactual Shoppings FII",
+  "razao": "BTG PACTUAL SHOPPINGS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "BTGI QUARTZO PARTICIPACOES": {
+  "nome": "BTGI Quartzo",
+  "razao": "BTGI QUARTZO PARTICIPAÇÕES S.A.",
   "fonte": "modelo"
  },
  "BTSA": {
@@ -1147,6 +1412,11 @@
  "BURITIRAMA TRANSMISSORA DE ENERGIA": {
   "nome": "Buritirama Transmissora",
   "razao": "BURITIRAMA TRANSMISSORA DE ENERGIA S.A.",
+  "fonte": "modelo"
+ },
+ "BWP DIASE EMPREENDIMENTO IMOBILIARIO EXTREMA": {
+  "nome": "BWP Diase Extrema",
+  "razao": "BWP DIASE EMPREENDIMENTO IMOBILIARIO EXTREMA S.A.",
   "fonte": "modelo"
  },
  "BZ EMPREENDIMENTOS E PARTICIPACOES": {
@@ -1214,6 +1484,11 @@
   "razao": "CALDEIRAO GRANDE II SOLAR S/A.",
   "fonte": "modelo"
  },
+ "CALILA ADMINISTRACAO E COMERCIO": {
+  "nome": "Calila",
+  "razao": "CALILA ADMINISTRACAO E COMERCIO S A",
+  "fonte": "modelo"
+ },
  "CAMIL ALIMENTOS": {
   "nome": "Camil",
   "razao": "CAMIL ALIMENTOS S.A.",
@@ -1264,6 +1539,31 @@
   "razao": "CASA DE PEDRA SECURITIZADORA DE CREDITO S.A",
   "fonte": "modelo"
  },
+ "CASA DO CAFE COMERCIO E REPRESENTACOES DE PRODUTOS AGRICOLAS": {
+  "nome": "Casa do Café",
+  "razao": "CASA DO CAFE COMERCIO E REPRESENTACOES DE PRODUTOS AGRICOLAS LTDA",
+  "fonte": "modelo"
+ },
+ "CASA SAO PAULO JARDINS EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "Casa São Paulo Jardins",
+  "razao": "CASA SAO PAULO JARDINS EMPREENDIMENTO IMOBILIARIO SPE LTDA",
+  "fonte": "modelo"
+ },
+ "CASAFERTIL": {
+  "nome": "Casafertil",
+  "razao": "CASAFERTIL LTDA",
+  "fonte": "modelo"
+ },
+ "CASHME SOLUCOES FINANCEIRAS": {
+  "nome": "Cashme",
+  "razao": "CASHME SOLUCOES FINANCEIRAS S.A.",
+  "fonte": "modelo"
+ },
+ "CASTOR I EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Castor I",
+  "razao": "CASTOR I EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+  "fonte": "modelo"
+ },
  "CATARATAS DO IGUACU": {
   "nome": "Cataratas do Iguaçu",
   "razao": "CATARATAS DO IGUACU S/A",
@@ -1279,9 +1579,19 @@
   "razao": "CATTALINI TERMINAIS MARITIMOS S.A.",
   "fonte": "modelo"
  },
+ "CATUAI VISTA FL FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA": {
+  "nome": "Catuaí Vista FL FII",
+  "razao": "CATUAI VISTA FL FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "CAVERNOSO II GERACAO DE ENERGIA": {
   "nome": "Cavernoso II",
   "razao": "CAVERNOSO II GERACAO DE ENERGIA S.A.",
+  "fonte": "modelo"
+ },
+ "CAVICCHIOLLI NEGOCIOS IMOBILIARIOS": {
+  "nome": "Cavicchiolli",
+  "razao": "CAVICCHIOLLI NEGOCIOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
  "CB SECURITIZADORA DE CREDITOS FINANCEIROS": {
@@ -1384,6 +1694,11 @@
   "razao": "CEREAL COMÉRCIO EXPORTAÇÃO E REPRESENTAÇÃO AGROPECUÁRIA S.A.",
   "fonte": "modelo"
  },
+ "CERES CONFINAMENTO": {
+  "nome": "Ceres Confinamento",
+  "razao": "CERES CONFINAMENTO LTDA",
+  "fonte": "modelo"
+ },
  "CERES SECURITIZADORA": {
   "nome": "Ceres Securitizadora",
   "razao": "CERES SECURITIZADORA S/A.",
@@ -1484,6 +1799,11 @@
   "razao": "COCAL RIO BRILHANTE AGROINDUSTRIAL S.A.",
   "fonte": "modelo"
  },
+ "COCARI COOPERATIVA AGROPECUARIA E INDUSTRIAL": {
+  "nome": "Cocari",
+  "razao": "COCARI - COOPERATIVA AGROPECUARIA E INDUSTRIAL",
+  "fonte": "modelo"
+ },
  "COGNA": {
   "nome": "Cogna",
   "razao": "Cogna",
@@ -1507,6 +1827,11 @@
  "COLORADO ENERGIA RENOVAVEL": {
   "nome": "Colorado Energia Renovável",
   "razao": "COLORADO ENERGIA RENOVAVEL SA",
+  "fonte": "modelo"
+ },
+ "COMBER BIOMASSA": {
+  "nome": "Comber Biomassa",
+  "razao": "COMBER BIOMASSA LTDA",
   "fonte": "modelo"
  },
  "COMBIO ENERGIA": {
@@ -1552,6 +1877,11 @@
  "CONC ROD INTEGRACAO SPE": {
   "nome": "Rodovia Integração",
   "razao": "CONC. ROD. INTEGRACAO SPE S.A.",
+  "fonte": "modelo"
+ },
+ "CONCEITO SEMENTES": {
+  "nome": "Conceito Sementes",
+  "razao": "CONCEITO SEMENTES LTDA",
   "fonte": "modelo"
  },
  "CONCESSAO METROVIARIA DO RIO DE JANEIRO": {
@@ -1844,9 +2174,24 @@
   "razao": "CONSIGNADOS I COMPANHIA SECURITIZADORA DE CREDITOS FINANCEIROS",
   "fonte": "modelo"
  },
+ "CONSORCIO MF I DE GERACAO DISTRIBUIDA": {
+  "nome": "Consórcio MF I de Geração Distribuída",
+  "razao": "CONSORCIO MF I DE GERACAO DISTRIBUIDA",
+  "fonte": "modelo"
+ },
+ "CONSTRUTORA ADOLPHO LINDENBERG": {
+  "nome": "Adolpho Lindenberg",
+  "razao": "CONSTRUTORA ADOLPHO LINDENBERG S.A.",
+  "fonte": "modelo"
+ },
  "CONSTRUTORA BARBOSA MELLO": {
   "nome": "Barbosa Mello",
   "razao": "CONSTRUTORA BARBOSA MELLO SA",
+  "fonte": "modelo"
+ },
+ "CONSTRUTORA MAXI SPE3": {
+  "nome": "Maxi SPE3",
+  "razao": "CONSTRUTORA MAXI SPE3 LTDA",
   "fonte": "modelo"
  },
  "CONSTRUTORA METROCASA": {
@@ -1862,6 +2207,26 @@
  "CONVICON CONTEINERES DE VILA DO CONDE": {
   "nome": "Convicon",
   "razao": "CONVICON CONTEINERES DE VILA DO CONDE S/A",
+  "fonte": "modelo"
+ },
+ "COOPERATIVA AGRICOLA MISTA GENERAL OSORIO": {
+  "nome": "Cotrimaio",
+  "razao": "COOPERATIVA AGRICOLA MISTA GENERAL OSORIO LTDA",
+  "fonte": "modelo"
+ },
+ "COOPERATIVA AGROINDUSTRIAL PARAGOMINENSE COOPERNORTE": {
+  "nome": "Coopernorte",
+  "razao": "COOPERATIVA AGROINDUSTRIAL PARAGOMINENSE - COOPERNORTE",
+  "fonte": "modelo"
+ },
+ "COOPERATIVA DOS PLANTADORES DE CANA DO OESTE DO ESTADO DE SAO PAULO": {
+  "nome": "Canaoeste",
+  "razao": "COOPERATIVA DOS PLANTADORES DE CANA DO OESTE DO ESTADO DE SAO PAULO",
+  "fonte": "modelo"
+ },
+ "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE COOXUPE": {
+  "nome": "Cooxupé",
+  "razao": "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE LTDA COOXUPE",
   "fonte": "modelo"
  },
  "COOXUPE COOPERATIVA REGIONAL DE": {
@@ -1934,6 +2299,11 @@
   "razao": "CPFL TRANSMISSAO S.A.",
   "fonte": "modelo"
  },
+ "CPR1 AMERICANA EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "CPR1 Americana",
+  "razao": "CPR1 AMERICANA EMPREENDIMENTO IMOBILIARIO SPE LTDA.",
+  "fonte": "modelo"
+ },
  "CPS DE PRODUCAO SUSTENTAVEL": {
   "nome": "CPS",
   "razao": "CPS CIA. DE PRODUCAO SUSTENTAVEL S.A.",
@@ -1957,6 +2327,16 @@
  "CREMER": {
   "nome": "Cremer",
   "razao": "CREMER S/A",
+  "fonte": "modelo"
+ },
+ "CRETA INCORPORACAO E PARTICIPACAO": {
+  "nome": "Creta",
+  "razao": "CRETA INCORPORACAO E PARTICIPACAO LTDA.",
+  "fonte": "modelo"
+ },
+ "CRISTAL ADMINISTRADORA E INCORPORADORA": {
+  "nome": "Cristal",
+  "razao": "CRISTAL ADMINISTRADORA E INCORPORADORA S/A",
   "fonte": "modelo"
  },
  "CRISTALCOPO": {
@@ -2052,6 +2432,11 @@
  "DA MATA ACUCAR E ALCOOL": {
   "nome": "Da Mata",
   "razao": "DA MATA S.A. - ACUCAR E ALCOOL",
+  "fonte": "modelo"
+ },
+ "DALL CONSTRUCOES": {
+  "nome": "Dall Construções",
+  "razao": "DALL CONSTRUCOES LTDA",
   "fonte": "modelo"
  },
  "DCELT DISTRIBUIDORA CATARINENSE DE ENERGIA ELETRICA": {
@@ -2164,6 +2549,11 @@
   "razao": "Dexco S.A.",
   "fonte": "modelo"
  },
+ "DIADEMA LM DESENVOLVIMENTO LOGISTICO": {
+  "nome": "Diadema LM",
+  "razao": "DIADEMA LM DESENVOLVIMENTO LOGISTICO LTDA",
+  "fonte": "modelo"
+ },
  "DIAGNOSTICAS DA AMERICA": {
   "nome": "Diagnósticas da América",
   "razao": "DIAGNÓSTICAS DA AMÉRICA S.A.",
@@ -2247,6 +2637,11 @@
  "DOURADOS II ENERGIA": {
   "nome": "Dourados II Energia",
   "razao": "DOURADOS II ENERGIA S.A",
+  "fonte": "modelo"
+ },
+ "DROGAL FARMACEUTICA": {
+  "nome": "Drogal",
+  "razao": "DROGAL FARMACEUTICA LTDA",
   "fonte": "modelo"
  },
  "DURATEX FLORESTAL": {
@@ -2359,6 +2754,11 @@
   "razao": "EDGE EMPREENDIMENTOS E PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
+ "EDIFICIO CONCETTO CAMPOLIM SPE": {
+  "nome": "Edifício Concetto Campolim",
+  "razao": "EDIFICIO CONCETTO CAMPOLIM SPE LTDA",
+  "fonte": "modelo"
+ },
  "EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA": {
   "nome": "EDP Espírito Santo",
   "razao": "EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA SA",
@@ -2464,6 +2864,11 @@
   "razao": "ELETRORIVER S.A.",
   "fonte": "modelo"
  },
+ "ELEVACOES PORTUARIAS": {
+  "nome": "Elevações Portuárias",
+  "razao": "ELEVACOES PORTUARIAS S.A",
+  "fonte": "modelo"
+ },
  "ELFA MEDICAMENTOS": {
   "nome": "Elfa Medicamentos",
   "razao": "ELFA MEDICAMENTOS SA",
@@ -2474,9 +2879,19 @@
   "razao": "EMAM PARTICIPACOES LTDA",
   "fonte": "modelo"
  },
+ "EMCCAMP RESIDENCIAL": {
+  "nome": "Emccamp Residencial",
+  "razao": "EMCCAMP RESIDENCIAL S.A.",
+  "fonte": "modelo"
+ },
  "EMERGENCIA PARTICIPACOES": {
   "nome": "Emergência Participações",
   "razao": "EMERGENCIA PARTICIPACOES S/A",
+  "fonte": "modelo"
+ },
+ "EMERGENT COLD SAO PAULO HOLDINGS": {
+  "nome": "Emergent Cold São Paulo",
+  "razao": "EMERGENT COLD SAO PAULO HOLDINGS LTDA",
   "fonte": "modelo"
  },
  "EMIVE PARTICIPACOES": {
@@ -2552,6 +2967,11 @@
  "ENAUTA ENERGIA": {
   "nome": "Enauta",
   "razao": "ENAUTA ENERGIA S.A.",
+  "fonte": "modelo"
+ },
+ "ENEBRA BRASIL ENERGIA": {
+  "nome": "Enebra",
+  "razao": "ENEBRA BRASIL ENERGIA LTDA",
   "fonte": "modelo"
  },
  "ENEL GREEN POWER DAMASCENA EOLICA": {
@@ -2679,6 +3099,11 @@
   "razao": "ENGELHART CTP",
   "fonte": "modelo"
  },
+ "ENGELHART CTP BRASIL": {
+  "nome": "Engelhart CTP",
+  "razao": "ENGELHART CTP (BRASIL) S.A.",
+  "fonte": "modelo"
+ },
  "ENGIE BRASIL ENERGIA": {
   "nome": "Engie Brasil Energia",
   "razao": "ENGIE BRASIL ENERGIA SA",
@@ -2692,6 +3117,11 @@
  "ENOPS ENGENHARIA": {
   "nome": "Enops",
   "razao": "ENOPS ENGENHARIA S/A",
+  "fonte": "modelo"
+ },
+ "ENOVA FOODS": {
+  "nome": "Enova Foods",
+  "razao": "ENOVA FOODS S.A.",
   "fonte": "modelo"
  },
  "ENSEADA ENERGIA RENOVAVEL": {
@@ -2727,6 +3157,11 @@
  "EOLICA SERRA DAS VACAS HOLDING II": {
   "nome": "Eólica Serra das Vacas Holding II",
   "razao": "EOLICA SERRA DAS VACAS HOLDING II S/A",
+  "fonte": "modelo"
+ },
+ "EPICUROS INCORPORACAO E PARTICIPACAO SPE": {
+  "nome": "Epicuros",
+  "razao": "EPICUROS INCORPORACAO E PARTICIPACAO SPE LTDA",
   "fonte": "modelo"
  },
  "EPR 5 PARTICIPACOES": {
@@ -2814,6 +3249,11 @@
   "razao": "EQUIPAV SANEAMENTO S.A.",
   "fonte": "modelo"
  },
+ "ERB ARATINGA": {
+  "nome": "ERB Aratinga",
+  "razao": "ERB ARATINGA S.A",
+  "fonte": "modelo"
+ },
  "ERBE INCORPORADORA": {
   "nome": "Erbe Incorporadora",
   "razao": "ERBE INCORPORADORA S.A.",
@@ -2869,6 +3309,11 @@
   "razao": "ETC – EMPRESA TRANSMISSORA CAPIXABA S. A.",
   "fonte": "modelo"
  },
+ "EUCATEX INDUSTRIA E COMERCIO": {
+  "nome": "Eucatex",
+  "razao": "EUCATEX INDUSTRIA E COMERCIO LTDA",
+  "fonte": "modelo"
+ },
  "EUROFARMA LABORATORIOS": {
   "nome": "Eurofarma",
   "razao": "EUROFARMA LABORATORIOS S.A",
@@ -2914,9 +3359,19 @@
   "razao": "EXES SECURITIZADORA S.A.",
   "fonte": "modelo"
  },
+ "EXPOCACER COOPERATIVA DOS CAFEICULTORES DO CERRADO": {
+  "nome": "Expocacer",
+  "razao": "EXPOCACER - COOPERATIVA DOS CAFEICULTORES DO CERRADO LTDA",
+  "fonte": "modelo"
+ },
  "EXPRESSO NEPOMUCENO": {
   "nome": "Expresso Nepomuceno",
   "razao": "EXPRESSO NEPOMUCENO SA",
+  "fonte": "modelo"
+ },
+ "EXTO INCORPORACOES E EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Exto",
+  "razao": "EXTO INCORPORACOES E EMPREENDIMENTOS IMOBILIARIOS SA",
   "fonte": "modelo"
  },
  "EZ TEC EMPREENDIMENTOS E PARTICIPACOES": {
@@ -2954,6 +3409,16 @@
   "razao": "FARO ENERGY PROJ. SOL. HOL. IV S.A (*)",
   "fonte": "modelo"
  },
+ "FARO ENERGY PROJETOS SOLARES HOLDING": {
+  "nome": "Faro Energy",
+  "razao": "FARO ENERGY PROJETOS SOLARES HOLDING S.A",
+  "fonte": "modelo"
+ },
+ "FAZENDAO INDUSTRIA E COMERCIO DE PRODUTOS AGROPECUARIOS": {
+  "nome": "Fazendão",
+  "razao": "FAZENDAO INDUSTRIA E COMERCIO DE PRODUTOS AGROPECUARIOS LTDA",
+  "fonte": "modelo"
+ },
  "FAZENDINHA ENERGIA RENOVAVEL": {
   "nome": "Fazendinha Energia Renovável",
   "razao": "FAZENDINHA ENERGIA RENOVAVEL S.A.",
@@ -2984,6 +3449,11 @@
   "razao": "FERROVIA TEREZA CRISTINA S.A.",
   "fonte": "modelo"
  },
+ "FERTI SOLO INSUMOS AGRICOLAS": {
+  "nome": "Ferti Solo",
+  "razao": "FERTI SOLO INSUMOS AGRICOLAS LTDA",
+  "fonte": "modelo"
+ },
  "FF LOCADORA DE VEICULOS": {
   "nome": "FF Locadora de Veículos",
   "razao": "FF LOCADORA DE VEICULOS SA",
@@ -2992,6 +3462,21 @@
  "FG TRUST": {
   "nome": "FG Trust",
   "razao": "FG TRUST S/A",
+  "fonte": "modelo"
+ },
+ "FGR INCORPORACOES": {
+  "nome": "FGR",
+  "razao": "FGR INCORPORAÇÕES S.A.",
+  "fonte": "modelo"
+ },
+ "FGR INCORPORACOES JARDINS GRECIA": {
+  "nome": "FGR Jardins Grécia",
+  "razao": "FGR INCORPORACOES JARDINS GRECIA LTDA",
+  "fonte": "modelo"
+ },
+ "FIAGRIL": {
+  "nome": "Fiagril",
+  "razao": "FIAGRIL LTDA",
   "fonte": "modelo"
  },
  "FIBRASIL INFRAESTRUTURA E FIBRA OTICA": {
@@ -3022,6 +3507,11 @@
  "FLEURY": {
   "nome": "Fleury",
   "razao": "FLEURY S/A",
+  "fonte": "modelo"
+ },
+ "FLFC FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA": {
+  "nome": "FLFC FII",
+  "razao": "FLFC FUNDO DE INVESTIMENTO IMOBILIARIO - FII RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
  "FLORA PRODUTOS DE HIGIENE E LIMPEZA": {
@@ -3104,6 +3594,21 @@
   "razao": "FSF TECNOLOGIA S A",
   "fonte": "modelo"
  },
+ "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS CREDITAS TEMPUS": {
+  "nome": "Creditas Tempus FIDC",
+  "razao": "FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS CREDITAS TEMPUS",
+  "fonte": "modelo"
+ },
+ "FUNDO DE INVESTIMENTO IMOBILIARIO FII ANCAR IC RESPONSABILIDADE LIMITADA": {
+  "nome": "Ancar IC FII",
+  "razao": "FUNDO DE INVESTIMENTO IMOBILIARIO - FII ANCAR IC - RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "FUNDO DE INVESTIMENTO IMOBILIARIO JK B II FII RESPONSABILIDADE LIMITADA": {
+  "nome": "JK B II FII",
+  "razao": "FUNDO DE INVESTIMENTO IMOBILIARIO JK B II - FII RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "FURNAS CENTRAIS ELETRICAS": {
   "nome": "Furnas",
   "razao": "FURNAS CENTRAIS ELETRICAS S/A",
@@ -3114,9 +3619,19 @@
   "razao": "FUTURA ENERGIA S.A",
   "fonte": "modelo"
  },
+ "FUTURA ENERGIA PROJETO ALPHA": {
+  "nome": "Futura Energia Projeto Alpha",
+  "razao": "FUTURA ENERGIA PROJETO ALPHA SA",
+  "fonte": "modelo"
+ },
  "FYP EMPREENDIMENTOS IMOBILIARIOS": {
   "nome": "FYP Empreendimentos Imobiliários",
   "razao": "FYP EMPREENDIMENTOS IMOBILIARIOS S/A",
+  "fonte": "modelo"
+ },
+ "G C PARTICIPACOES": {
+  "nome": "G.C.",
+  "razao": "G. C. PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
  "G10 TRANSPORTES": {
@@ -3132,6 +3647,11 @@
  "GASTER PARTICIPACOES": {
   "nome": "Gaster",
   "razao": "GASTER PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
+ "GAV2 EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "GAV2",
+  "razao": "GAV2 EMPREENDIMENTOS E PARTICIPACOES LTDA",
   "fonte": "modelo"
  },
  "GAZIN INDUSTRIA E COMERCIO DE MOVEIS E ELETRODOMESTICOS": {
@@ -3154,6 +3674,11 @@
   "razao": "GDM GENÉTICA DO BRASIL S.A.",
   "fonte": "modelo"
  },
+ "GDP PATRIMONIAL": {
+  "nome": "GDP Patrimonial",
+  "razao": "GDP PATRIMONIAL LTDA.",
+  "fonte": "modelo"
+ },
  "GDPAR SN PARTICIPACOES EM PROJETOS SOLARES": {
   "nome": "GDPAR SN",
   "razao": "GDPAR SN PARTICIPACOES EM PROJETOS SOLARES S/A",
@@ -3169,9 +3694,19 @@
   "razao": "GDS SUBHOLDING S.A.",
   "fonte": "modelo"
  },
+ "GENERAL SHOPPING E OUTLETS DO BRASIL FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "General Shopping e Outlets FII",
+  "razao": "GENERAL SHOPPING E OUTLETS DO BRASIL FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "GENIAL ENERGIA RENOVAVEL": {
   "nome": "Genial Energia Renovável",
   "razao": "GENIAL ENERGIA RENOVAVEL S.A.",
+  "fonte": "modelo"
+ },
+ "GERABENS ADMINISTRADORA DE BENS PROPRIOS": {
+  "nome": "Gerabens",
+  "razao": "GERABENS ADMINISTRADORA DE BENS PROPRIOS LTDA",
   "fonte": "modelo"
  },
  "GERADORA EOLICA BONS VENTOS DA SERRA 2": {
@@ -3204,6 +3739,11 @@
   "razao": "GET COMERCIALIZADORA DE ENERGIA S.A.",
   "fonte": "modelo"
  },
+ "GF PARTICIPACOES": {
+  "nome": "GF",
+  "razao": "GF PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
  "GIGA MAIS FIBRA TELECOMUNICACOES": {
   "nome": "Giga Mais Fibra",
   "razao": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
@@ -3224,6 +3764,11 @@
   "razao": "GLOBO COMUNICACOES E PARTICIPACOES S/A",
   "fonte": "modelo"
  },
+ "GNI64 RJ EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "GNI64 RJ",
+  "razao": "GNI64 RJ EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "GNL BRASIL LOGISTICA": {
   "nome": "GNL Brasil Logística",
   "razao": "GNL BRASIL LOGISTICA S.A.",
@@ -3242,6 +3787,21 @@
  "GOL LINHAS AEREAS": {
   "nome": "Gol",
   "razao": "GOL LINHAS AEREAS S/A",
+  "fonte": "modelo"
+ },
+ "GOLDEN LAGHETTO EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Golden Laghetto",
+  "razao": "GOLDEN LAGHETTO EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+  "fonte": "modelo"
+ },
+ "GONCALVES TORTOLA": {
+  "nome": "Gonçalves & Tortola",
+  "razao": "GONCALVES & TORTOLA S/A",
+  "fonte": "modelo"
+ },
+ "GR PARTICIPACOES E INVESTIMENTOS": {
+  "nome": "GR",
+  "razao": "GR PARTICIPACOES E INVESTIMENTOS S.A",
   "fonte": "modelo"
  },
  "GRANDE SERTAO I TRANSMISSORA DE ENERGIA": {
@@ -3282,6 +3842,16 @@
  "GREENYELLOW PERFORMANCE ENERGETICA": {
   "nome": "GreenYellow",
   "razao": "GREENYELLOW PERFORMANCE ENERGETICA S.A.",
+  "fonte": "modelo"
+ },
+ "GRIFFOOD BRASIL ALIMENTOS": {
+  "nome": "Griffood",
+  "razao": "GRIFFOOD BRASIL ALIMENTOS S.A.",
+  "fonte": "modelo"
+ },
+ "GRU V AIRPORT EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "GRU V Airport",
+  "razao": "GRU V AIRPORT EMPREENDIMENTOS E PARTICIPACOES S.A",
   "fonte": "modelo"
  },
  "GRUPO CASAS BAHIA": {
@@ -3354,6 +3924,11 @@
   "razao": "GY ENERGY HOLDING III S.A",
   "fonte": "modelo"
  },
+ "H BC PARTICIPACOES E EMPREENDIMENTOS": {
+  "nome": "H&BC",
+  "razao": "H&BC - PARTICIPACOES E EMPREENDIMENTOS LTDA",
+  "fonte": "modelo"
+ },
  "H2A SOLUCOES AMBIENTAIS": {
   "nome": "H2A Soluções Ambientais",
   "razao": "H2A SOLUCOES AMBIENTAIS S.A",
@@ -3384,6 +3959,16 @@
   "razao": "HAVAN S.A.",
   "fonte": "modelo"
  },
+ "HBR 3 INVESTIMENTOS IMOBILIARIOS": {
+  "nome": "HBR 3",
+  "razao": "HBR 3 - INVESTIMENTOS IMOBILIARIOS S.A.",
+  "fonte": "modelo"
+ },
+ "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "HBR Realty",
+  "razao": "HBR REALTY EMPREENDIMENTOS IMOBILIÁRIOS S.A.",
+  "fonte": "modelo"
+ },
  "HCC PPP MS01 SANESUL SPE": {
   "nome": "HCC PPP MS01 Sanesul",
   "razao": "HCC PPP MS01 SANESUL SPE S.A.",
@@ -3392,6 +3977,16 @@
  "HCC PPP MS02 SEINFRA SPE": {
   "nome": "HCC PPP MS02 Seinfra",
   "razao": "HCC PPP MS02 SEINFRA SPE S.A",
+  "fonte": "modelo"
+ },
+ "HCO OPPS AERO II FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA": {
+  "nome": "HCO Opps Aero II FII",
+  "razao": "HCO OPPS AERO II FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "HELBOR EMPREENDIMENTOS": {
+  "nome": "Helbor",
+  "razao": "HELBOR EMPREENDIMENTOS S/A",
   "fonte": "modelo"
  },
  "HELEXIA GERACAO HOLDING": {
@@ -3434,6 +4029,16 @@
   "razao": "HIGHLINE DO BRASIL II INFRAESTRUTURA DE TELECOMUNICACOES S.A",
   "fonte": "modelo"
  },
+ "HINOVE AGROCIENCIA": {
+  "nome": "Hinove",
+  "razao": "HINOVE AGROCIENCIA S.A.",
+  "fonte": "modelo"
+ },
+ "HM ENGENHARIA E CONSTRUCOES": {
+  "nome": "HM Engenharia",
+  "razao": "HM ENGENHARIA E CONSTRUCOES S.A.",
+  "fonte": "modelo"
+ },
  "HMOBI PARTICIPACOES": {
   "nome": "Hmobi",
   "razao": "HMOBI PARTICIPACOES S.A.",
@@ -3464,6 +4069,11 @@
   "razao": "HORTUS COMERCIO DE ALIMENTOS S.A. EM RECUPERACAO JUDICIAL",
   "fonte": "modelo"
  },
+ "HOSPITAL ALEMAO OSWALDO CRUZ": {
+  "nome": "Hospital Alemão Oswaldo Cruz",
+  "razao": "HOSPITAL ALEMAO OSWALDO CRUZ",
+  "fonte": "modelo"
+ },
  "HOSPITAL ANCHIETA": {
   "nome": "Hospital Anchieta",
   "razao": "HOSPITAL ANCHIETA S.A.",
@@ -3487,6 +4097,11 @@
  "HOSPITAL VERA CRUZ": {
   "nome": "Hospital Vera Cruz",
   "razao": "HOSPITAL VERA CRUZ S.A.",
+  "fonte": "modelo"
+ },
+ "HOT BEACH SUITES OLIMPIA EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "Hot Beach Suites Olímpia",
+  "razao": "HOT BEACH SUITES OLIMPIA - EMPREENDIMENTO IMOBILIARIO SPE LTDA.",
   "fonte": "modelo"
  },
  "HRZ TRANSMISSAO E PARTICIPACOES": {
@@ -3597,6 +4212,11 @@
  "INBRANDS": {
   "nome": "Inbrands",
   "razao": "INBRANDS S/A",
+  "fonte": "modelo"
+ },
+ "INDUSTRIA TEXTIL APUCARANA": {
+  "nome": "Indústria Têxtil Apucarana",
+  "razao": "INDUSTRIA TEXTIL APUCARANA LTDA",
   "fonte": "modelo"
  },
  "INDUSTRIAS COLOMBO": {
@@ -3764,6 +4384,21 @@
   "razao": "ITAREMA GERACAO DE ENERGIA S.A.",
   "fonte": "modelo"
  },
+ "ITAU UNIBANCO": {
+  "nome": "Itaú Unibanco",
+  "razao": "ITAU UNIBANCO S.A.",
+  "fonte": "modelo"
+ },
+ "ITAU UNIBANCO HOLDING": {
+  "nome": "Itaú Unibanco Holding",
+  "razao": "ITAÚ UNIBANCO HOLDING S.A.",
+  "fonte": "modelo"
+ },
+ "ITAUEIRA AGROPECUARIA": {
+  "nome": "Itaueira",
+  "razao": "ITAUEIRA AGROPECUARIA S A",
+  "fonte": "modelo"
+ },
  "ITAUSA": {
   "nome": "Itaúsa",
   "razao": "ITAUSA S/A",
@@ -3829,6 +4464,11 @@
   "razao": "JBS S.A.",
   "fonte": "modelo"
  },
+ "JF CITRUS AGROPECUARIA": {
+  "nome": "JF Citrus",
+  "razao": "JF CITRUS AGROPECUARIA S/A",
+  "fonte": "modelo"
+ },
  "JFL VHOUSE EMPREENDIMENTO IMOBILIARIO": {
   "nome": "JFL VHouse",
   "razao": "JFL VHOUSE EMPREENDIMENTO IMOBILIARIO S.A.",
@@ -3844,6 +4484,16 @@
   "razao": "JHSF PARTICIPACOES S/A",
   "fonte": "modelo"
  },
+ "JK 1455 FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA": {
+  "nome": "JK 1455 FII",
+  "razao": "JK 1455 FUNDO DE INVESTIMENTO IMOBILIARIO - FII RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "JS RURAL SOCIEDADE UNIPESSOAL LIMITADA": {
+  "nome": "JS Rural",
+  "razao": "JS RURAL SOCIEDADE UNIPESSOAL LIMITADA",
+  "fonte": "modelo"
+ },
  "JSL": {
   "nome": "JSL",
   "razao": "JSL S.A",
@@ -3852,6 +4502,16 @@
  "JUMIL JUSTINO DE MORAIS IRMAOS": {
   "nome": "Jumil",
   "razao": "JUMIL - JUSTINO DE MORAIS IRMAOS S.A",
+  "fonte": "modelo"
+ },
+ "KAHAKAI BEACH HOUSE SPE": {
+  "nome": "Kahakai Beach House",
+  "razao": "KAHAKAI BEACH HOUSE SPE LTDA",
+  "fonte": "modelo"
+ },
+ "KALLAS INCORPORACOES E CONSTRUCOES": {
+  "nome": "Kallas",
+  "razao": "KALLAS INCORPORAÇÕES E CONSTRUÇÕES S.A.",
   "fonte": "modelo"
  },
  "KAMARI PARTICIPACOES": {
@@ -3929,6 +4589,26 @@
   "razao": "LAR COOPERATIVA AGROINDUSTRIAL",
   "fonte": "modelo"
  },
+ "LASA LINHARES AGROINDUSTRIAL": {
+  "nome": "Lasa",
+  "razao": "LASA LINHARES AGROINDUSTRIAL SA",
+  "fonte": "modelo"
+ },
+ "LATICINIO DEALE": {
+  "nome": "Laticínio Deale",
+  "razao": "LATICINIO DEALE LTDA",
+  "fonte": "modelo"
+ },
+ "LATICINIOS SAO JOAO": {
+  "nome": "Laticínios São João",
+  "razao": "LATICINIOS SAO JOAO S/A",
+  "fonte": "modelo"
+ },
+ "LAVVI EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Lavvi",
+  "razao": "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A",
+  "fonte": "modelo"
+ },
  "LC ENERGIA HOLDING": {
   "nome": "LC Energia",
   "razao": "LC ENERGIA HOLDING S.A.",
@@ -3937,6 +4617,11 @@
  "LEMVIG RJ INFRAESTRUTURA E REDES DE TELECOMUNICAC0ES": {
   "nome": "Lemvig RJ",
   "razao": "LEMVIG RJ INFRAESTRUTURA E REDES DE TELECOMUNICAC0ES S.A",
+  "fonte": "modelo"
+ },
+ "LEO": {
+  "nome": "Leo",
+  "razao": "LEO S.A.",
   "fonte": "modelo"
  },
  "LEST LINHAS DE ENERGIA DO SERTAO TRANSMISSORA": {
@@ -4064,9 +4749,34 @@
   "razao": "LOJAS QUERO-QUERO S/A",
   "fonte": "modelo"
  },
+ "LOJAS RENNER": {
+  "nome": "Lojas Renner",
+  "razao": "LOJAS RENNER SA",
+  "fonte": "modelo"
+ },
+ "LONGITUDE INCORPORACAO URBANISMO": {
+  "nome": "Longitude Incorporação & Urbanismo",
+  "razao": "LONGITUDE INCORPORACAO & URBANISMO LTDA",
+  "fonte": "modelo"
+ },
+ "LONGITUDE JAGUARIUNA CVA 1 EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Longitude Jaguariúna CVA 1",
+  "razao": "LONGITUDE JAGUARIUNA CVA 1 EMPREENDIMENTOS IMOBILIARIOS SPE S.A",
+  "fonte": "modelo"
+ },
  "LORENZETTI INDUSTRIAS BRASILEIRAS ELETROMETALURGICAS": {
   "nome": "Lorenzetti",
   "razao": "LORENZETTI SA INDUSTRIAS BRASILEIRAS ELETROMETALURGICAS",
+  "fonte": "modelo"
+ },
+ "LOTE 5 DESENVOLVIMENTO URBANO": {
+  "nome": "Lote 5",
+  "razao": "LOTE 5 DESENVOLVIMENTO URBANO S.A.",
+  "fonte": "modelo"
+ },
+ "LOTEAMENTO JARDINS DE MARANGUAPE SPE": {
+  "nome": "Loteamento Jardins de Maranguape",
+  "razao": "LOTEAMENTO JARDINS DE MARANGUAPE - SPE - LTDA",
   "fonte": "modelo"
  },
  "LRC MIDIA OUT OF HOME": {
@@ -4077,6 +4787,16 @@
  "LSH BARRA EMPREENDIMENTOS IMOBILIARIOS": {
   "nome": "LSH Barra",
   "razao": "LSH BARRA EMPREENDIMENTOS IMOBILIARIOS S A",
+  "fonte": "modelo"
+ },
+ "LUDOLF 47 EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "Ludolf 47",
+  "razao": "LUDOLF 47 EMPREENDIMENTO IMOBILIARIO SPE LTDA",
+  "fonte": "modelo"
+ },
+ "LUMI EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "Lumi",
+  "razao": "LUMI EMPREENDIMENTO IMOBILIARIO SPE LTDA",
   "fonte": "modelo"
  },
  "LUZIANIA NIQUELANDIA TRANSMISSORA": {
@@ -4119,6 +4839,11 @@
   "razao": "MAGAZINE LUIZA S/A",
   "fonte": "modelo"
  },
+ "MAIS ARMAZEM": {
+  "nome": "Mais Armazém",
+  "razao": "MAIS ARMAZEM LTDA",
+  "fonte": "modelo"
+ },
  "MANAUS AMBIENTAL": {
   "nome": "Manaus Ambiental",
   "razao": "MANAUS AMBIENTAL S.A.",
@@ -4127,6 +4852,11 @@
  "MANAUS TRANSMISSORA DE ENERGIA": {
   "nome": "Manaus Transmissora de Energia",
   "razao": "MANAUS TRANSMISSORA DE ENERGIA S/A",
+  "fonte": "modelo"
+ },
+ "MANGANELI AGRO": {
+  "nome": "Manganeli Agro",
+  "razao": "MANGANELI AGRO LTDA",
   "fonte": "modelo"
  },
  "MANTIQUEIRA ALIMENTOS": {
@@ -4179,6 +4909,11 @@
   "razao": "MARLIN NAVEGACAO SA",
   "fonte": "modelo"
  },
+ "MARSELHA EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Marselha",
+  "razao": "MARSELHA EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "MARTINS COMERCIO E SERVICOS DE DISTRIBUICAO": {
   "nome": "Martins",
   "razao": "MARTINS COMERCIO E SERVICOS DE DISTRIBUICAO S.A.",
@@ -4214,9 +4949,24 @@
   "razao": "COMPANHIA MELHORAMENTOS  NORTE DO PARANA",
   "fonte": "modelo"
  },
+ "MELNICK DESENVOLVIMENTO IMOBILIARIO": {
+  "nome": "Melnick",
+  "razao": "MELNICK DESENVOLVIMENTO IMOBILIÁRIO S.A.",
+  "fonte": "modelo"
+ },
  "MENDES JUNIOR ENGENHARIA": {
   "nome": "Mendes Júnior",
   "razao": "MENDES JUNIOR ENGENHARIA S/A",
+  "fonte": "modelo"
+ },
+ "MERCADO ENVIOS SERVICOS DE LOGISTICA": {
+  "nome": "Mercado Envios",
+  "razao": "MERCADO ENVIOS SERVICOS DE LOGISTICA LTDA.",
+  "fonte": "modelo"
+ },
+ "MERCADO LIVRE BRASIL": {
+  "nome": "Mercado Livre Brasil",
+  "razao": "MERCADO LIVRE BRASIL LTDA",
   "fonte": "modelo"
  },
  "METALURGICA PRADA": {
@@ -4299,9 +5049,24 @@
   "razao": "MINUM GENCO GERADORA  S.A.",
   "fonte": "modelo"
  },
+ "MIRANTE DA SERRA": {
+  "nome": "Mirante da Serra",
+  "razao": "MIRANTE DA SERRA LTDA",
+  "fonte": "modelo"
+ },
  "MIRANTE ENERGETICA": {
   "nome": "Mirante Energética",
   "razao": "MIRANTE ENERGETICA  S.A.",
+  "fonte": "modelo"
+ },
+ "MITRE REALTY EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "Mitre Realty",
+  "razao": "MITRE REALTY EMPREENDIMENTOS E PARTICIPAÇÕES S.A.",
+  "fonte": "modelo"
+ },
+ "MONETAR DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS": {
+  "nome": "Monetar DTVM",
+  "razao": "MONETAR DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.",
   "fonte": "modelo"
  },
  "MONTEIRO ARANHA": {
@@ -4349,9 +5114,24 @@
   "razao": "MRV ENGENHARIA E PARTICIPAÇÕES S.A.",
   "fonte": "modelo"
  },
+ "MS FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA": {
+  "nome": "MS FII",
+  "razao": "MS FUNDO DE INVESTIMENTO IMOBILIARIO - FII RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "MSB SUBHOLDING": {
   "nome": "MSB Subholding",
   "razao": "MSB SUBHOLDING S.A.",
+  "fonte": "modelo"
+ },
+ "MTR 14 ADMINISTRACAO DE BENS SPE": {
+  "nome": "MTR-14",
+  "razao": "MTR-14 ADMINISTRACAO DE BENS SPE LTDA",
+  "fonte": "modelo"
+ },
+ "MTR 44 ADMINISTRACAO DE BENS SPE": {
+  "nome": "MTR-44",
+  "razao": "MTR-44 ADMINISTRACAO DE BENS SPE LTDA",
   "fonte": "modelo"
  },
  "MTX SE CAMANDUCAIA SPE": {
@@ -4379,6 +5159,16 @@
   "razao": "MULTIPLIKE SECURITIZADORA SA",
   "fonte": "modelo"
  },
+ "MULTITECNICA INDUSTRIAL": {
+  "nome": "Multitécnica",
+  "razao": "MULTITECNICA INDUSTRIAL S.A.",
+  "fonte": "modelo"
+ },
+ "MULTITRANS TRANSPORTES E ARMAZENS GERAIS": {
+  "nome": "Multitrans",
+  "razao": "MULTITRANS - TRANSPORTES E ARMAZENS GERAIS LTDA.",
+  "fonte": "modelo"
+ },
  "MV PARTICIPACOES": {
   "nome": "MV Participações",
   "razao": "MV PARTICIPACOES S.A.",
@@ -4389,9 +5179,19 @@
   "razao": "N. ZEPPONE S.A.",
   "fonte": "modelo"
  },
+ "NADIANA AGRONEGOCIOS": {
+  "nome": "Nadiana Agronegócios",
+  "razao": "NADIANA AGRONEGOCIOS LTDA",
+  "fonte": "modelo"
+ },
  "NADIR FIGUEIREDO": {
   "nome": "Nadir Figueiredo",
   "razao": "NADIR FIGUEIREDO S.A",
+  "fonte": "modelo"
+ },
+ "NARDINI AGROINDUSTRIAL": {
+  "nome": "Nardini Agroindustrial",
+  "razao": "NARDINI AGROINDUSTRIAL LTDA",
   "fonte": "modelo"
  },
  "NARDINI II": {
@@ -4399,9 +5199,24 @@
   "razao": "Nardini II",
   "fonte": "modelo"
  },
+ "NATIVA AGRICOLA": {
+  "nome": "Nativa Agrícola",
+  "razao": "NATIVA AGRICOLA LTDA",
+  "fonte": "modelo"
+ },
  "NATURA COSMETICOS": {
   "nome": "Natura",
   "razao": "NATURA COSMÉTICOS S.A.",
+  "fonte": "modelo"
+ },
+ "NATURAL ONE": {
+  "nome": "Natural One",
+  "razao": "NATURAL ONE S.A.",
+  "fonte": "modelo"
+ },
+ "NATURAL ONE GESTAO PATRIMONIAL": {
+  "nome": "Natural One Gestão Patrimonial",
+  "razao": "NATURAL ONE GESTAO PATRIMONIAL S.A",
   "fonte": "modelo"
  },
  "NECTA GAS NATURAL": {
@@ -4454,6 +5269,11 @@
   "razao": "NEXTI DESENVOLVIMENTO DE SISTEMAS SA",
   "fonte": "modelo"
  },
+ "NM KSM LOG 1 EMPREENDIMENTOS LOGISTICOS SPE": {
+  "nome": "NM KSM Log 1",
+  "razao": "NM KSM LOG 1 EMPREENDIMENTOS LOGISTICOS SPE LTDA",
+  "fonte": "modelo"
+ },
  "NORSA REFRIGERANTES": {
   "nome": "Norsa",
   "razao": "NORSA REFRIGERANTES S.A.",
@@ -4477,6 +5297,11 @@
  "NORTE ENERGIA": {
   "nome": "Norte Energia",
   "razao": "NORTE ENERGIA S/A",
+  "fonte": "modelo"
+ },
+ "NORTIS INCORPORADORA E CONSTRUTORA": {
+  "nome": "Nortis",
+  "razao": "NORTIS INCORPORADORA E CONSTRUTORA S.A.",
   "fonte": "modelo"
  },
  "NOVA MOBI PERNAMBUCO SPE": {
@@ -4659,6 +5484,11 @@
   "razao": "OURO PRETO SERVICOS DE SANEAMENTO S/A-SANEOURO",
   "fonte": "modelo"
  },
+ "OURO SAFRA": {
+  "nome": "Ouro Safra",
+  "razao": "OURO SAFRA S/A",
+  "fonte": "modelo"
+ },
  "OUTBACK STEAKHOUSE RESTAURANTES BRASIL": {
   "nome": "Outback Brasil",
   "razao": "OUTBACK STEAKHOUSE RESTAURANTES BRASIL SA",
@@ -4684,9 +5514,24 @@
   "razao": "PADUA IV PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
+ "PAFIL CONSTRUTORA E EMPREENDIMENTOS": {
+  "nome": "Pafil",
+  "razao": "PAFIL CONSTRUTORA E EMPREENDIMENTOS LTDA",
+  "fonte": "modelo"
+ },
  "PAMPA TRANSMISSAO DE ENERGIA": {
   "nome": "Pampa Transmissão",
   "razao": "PAMPA TRANSMISSAO DE ENERGIA S.A",
+  "fonte": "modelo"
+ },
+ "PANORAMA PROPERTIES FUNDO DE INVESTIMENTO IMOBILIARIO": {
+  "nome": "Panorama Properties FII",
+  "razao": "PANORAMA PROPERTIES FUNDO DE INVESTIMENTO IMOBILIARIO",
+  "fonte": "modelo"
+ },
+ "PANTANAL AGRICOLA": {
+  "nome": "Pantanal Agrícola",
+  "razao": "PANTANAL AGRICOLA S.A.",
   "fonte": "modelo"
  },
  "PARAIPABA PARTICIPACOES": {
@@ -4744,6 +5589,21 @@
   "razao": "PARSAN S.A.",
   "fonte": "modelo"
  },
+ "PASTIFICIO SELMI": {
+  "nome": "Pastifício Selmi",
+  "razao": "PASTIFICIO SELMI SA",
+  "fonte": "modelo"
+ },
+ "PATRIA TOP OFFICES FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "Patria Top Offices FII",
+  "razao": "PATRIA TOP OFFICES FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "PATRIANI INCORPORACAO 38 SPE": {
+  "nome": "Patriani Incorporação 38",
+  "razao": "PATRIANI INCORPORACAO 38 SPE LTDA",
+  "fonte": "modelo"
+ },
  "PATRIMAR ENGENHARIA": {
   "nome": "Patrimar",
   "razao": "PATRIMAR ENGENHARIA S.A.",
@@ -4774,6 +5634,11 @@
   "razao": "PCH BV II - GERACAO DE ENERGIA S.A.",
   "fonte": "modelo"
  },
+ "PDC II FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA": {
+  "nome": "PDC II FII",
+  "razao": "PDC II FUNDO DE INVESTIMENTO IMOBILIARIO - FII RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "PDG REALTY EMPREENDIMENTOS E PARTICIPACOES": {
   "nome": "PDG Realty",
   "razao": "PDG REALTY S/A EMPREENDIMENTOS E PARTICIPACOES",
@@ -4782,6 +5647,26 @@
  "PEDRA AGROINDUSTRIAL": {
   "nome": "Pedra Agroindustrial",
   "razao": "PEDRA AGROINDUSTRIAL S.A.",
+  "fonte": "modelo"
+ },
+ "PERNAMBUCO EMPREENDIMENTOS E PARTICIPACOES MY BEACH SPE": {
+  "nome": "Pernambuco My Beach",
+  "razao": "PERNAMBUCO EMPREENDIMENTOS E PARTICIPACOES MY BEACH SPE LTDA",
+  "fonte": "modelo"
+ },
+ "PERPLAN EMPREENDIMENTOS E URBANIZACAO": {
+  "nome": "Perplan",
+  "razao": "PERPLAN EMPREENDIMENTOS E URBANIZACAO LTDA",
+  "fonte": "modelo"
+ },
+ "PERSA EMPREENDIMENTOS IMOBILIAROS 06 SPE": {
+  "nome": "Persa Empreendimentos 06",
+  "razao": "PERSA EMPREENDIMENTOS IMOBILIAROS 06 SPE LTDA",
+  "fonte": "modelo"
+ },
+ "PERSA IMOBILIARIA": {
+  "nome": "Persa Imobiliária",
+  "razao": "PERSA IMOBILIARIA LTDA",
   "fonte": "modelo"
  },
  "PETROBRAS DISTRIBUIDORA": {
@@ -4809,6 +5694,11 @@
   "razao": "PGE - GUARAU GERADORA DE ENERGIA S.A.",
   "fonte": "modelo"
  },
+ "PIO DITOLVO EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "Pio Ditolvo",
+  "razao": "PIO DITOLVO EMPREENDIMENTO IMOBILIARIO SPE LTDA",
+  "fonte": "modelo"
+ },
  "PIRAPORA II SOLAR HOLDING": {
   "nome": "Pirapora II Solar",
   "razao": "PIRAPORA II SOLAR HOLDING S.A.",
@@ -4834,6 +5724,11 @@
   "razao": "PLAENGE PARTICIPACOES S/A",
   "fonte": "modelo"
  },
+ "PLANAGRI": {
+  "nome": "Planagri",
+  "razao": "PLANAGRI S A",
+  "fonte": "modelo"
+ },
  "PLANO E PLANO DESENVOLVIMENTO IMOBILIARIO": {
   "nome": "Plano&Plano",
   "razao": "PLANO E PLANO DESENVOLVIMENTO IMOBILIARIO S.A",
@@ -4844,9 +5739,19 @@
   "razao": "PLANO E PLANO II",
   "fonte": "modelo"
  },
+ "PLANTAR E COLHER REPRESENTACOES COMERCIO DE PRODUTOS AGRICOLAS": {
+  "nome": "Plantar e Colher",
+  "razao": "PLANTAR E COLHER-REPRESENTACOES & COMERCIO DE PRODUTOS AGRICOLAS LTDA",
+  "fonte": "modelo"
+ },
  "PLASCAR INDUSTRIA DE COMPONENTES PLASTICOS": {
   "nome": "Plascar",
   "razao": "PLASCAR INDUSTRIA DE COMPONENTES PLASTICOS LTDA.",
+  "fonte": "modelo"
+ },
+ "PLATAMON PARTICIPACOES E EMPREENDIMENTOS": {
+  "nome": "Platamon",
+  "razao": "PLATAMON PARTICIPACOES E EMPREENDIMENTOS LTDA EM RECUPERACAO JUDICIAL",
   "fonte": "modelo"
  },
  "PLATAO CAPITAL": {
@@ -4904,14 +5809,39 @@
   "razao": "POTENGI HOLDINGS S.A.",
   "fonte": "modelo"
  },
+ "PPP HABITACIONAL SP LOTE 1": {
+  "nome": "PPP Habitacional SP Lote 1",
+  "razao": "PPP HABITACIONAL SP LOTE 1 S/A",
+  "fonte": "modelo"
+ },
  "PRANA SECURITIZADORA": {
   "nome": "Prana Securitizadora",
   "razao": "PRANA SECURITIZADORA S/A",
   "fonte": "modelo"
  },
+ "PRATI DONADUZZI": {
+  "nome": "Prati-Donaduzzi",
+  "razao": "PRATI, DONADUZZI & CIA LTDA",
+  "fonte": "modelo"
+ },
+ "PREMIUM GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Premium Gav Resorts",
+  "razao": "PREMIUM GAV RESORTS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+  "fonte": "modelo"
+ },
+ "PRIMA EMPREENDIMENTOS INOVADORES": {
+  "nome": "Prima Empreendimentos Inovadores",
+  "razao": "PRIMA EMPREENDIMENTOS INOVADORES S/A",
+  "fonte": "modelo"
+ },
  "PRIME INCORPORACOES E CONSTRUCOES": {
   "nome": "Prime Incorporações",
   "razao": "PRIME INCORPORACOES E CONSTRUCOES S/A",
+  "fonte": "modelo"
+ },
+ "PRIMO TEDESCO": {
+  "nome": "Primo Tedesco",
+  "razao": "PRIMO TEDESCO SA",
   "fonte": "modelo"
  },
  "PRINER SERVICOS INDUSTRIAIS": {
@@ -4947,6 +5877,11 @@
  "PROLAGOS CONCESSIONARIA DE SERVICOS PUBLICOS DE AGUA E ESGOTO": {
   "nome": "Prolagos",
   "razao": "PROLAGOS S/A - CONCESSIONARIA DE SERVICOS PUBLICOS DE AGUA E ESGOTO",
+  "fonte": "modelo"
+ },
+ "PROMETEON TYRE GROUP INDUSTRIA BRASIL": {
+  "nome": "Prometeon",
+  "razao": "PROMETEON TYRE GROUP INDUSTRIA BRASIL LTDA.",
   "fonte": "modelo"
  },
  "PROTON ENERGY PARTICIPACOES": {
@@ -5019,6 +5954,11 @@
   "razao": "QUEVEDOS ENERGETICA S/A",
   "fonte": "modelo"
  },
+ "QUINTAS DE SAO JOSE DO RIO NEGRO EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "Quintas de São José do Rio Negro",
+  "razao": "QUINTAS DE SAO JOSE DO RIO NEGRO EMPREENDIMENTO IMOBILIARIO LTDA SPE",
+  "fonte": "modelo"
+ },
  "RAIA DROGASIL": {
   "nome": "RD Saúde (Raia Drogasil)",
   "razao": "RAIA DROGASIL S/A",
@@ -5054,9 +5994,24 @@
   "razao": "RDVE SUBHOLDING S.A.",
   "fonte": "modelo"
  },
+ "REALIZA CONSTRUTORA": {
+  "nome": "Realiza Construtora",
+  "razao": "REALIZA CONSTRUTORA LTDA.",
+  "fonte": "modelo"
+ },
+ "REALIZA EMPREENDIMENTO GOIANIA I SPE": {
+  "nome": "Realiza Goiânia I",
+  "razao": "REALIZA EMPREENDIMENTO GOIANIA I SPE - LTDA",
+  "fonte": "modelo"
+ },
  "REC GUARULHOS II": {
   "nome": "REC Guarulhos II",
   "razao": "REC GUARULHOS II S/A",
+  "fonte": "modelo"
+ },
+ "REC SUL ADMINISTRACAO DE BENS": {
+  "nome": "Rec Sul",
+  "razao": "REC SUL ADMINISTRACAO DE BENS LTDA.",
   "fonte": "modelo"
  },
  "RECH AGRICOLA": {
@@ -5114,9 +6069,19 @@
   "razao": "REGERA GRID HOLDING S.A.",
   "fonte": "modelo"
  },
+ "REGIONAL AGRO INSUMOS": {
+  "nome": "Regional Agro Insumos",
+  "razao": "REGIONAL AGRO INSUMOS LTDA",
+  "fonte": "modelo"
+ },
  "REIT SECURITIZADORA": {
   "nome": "REIT Securitizadora",
   "razao": "REIT SECURITIZADORA S/A",
+  "fonte": "modelo"
+ },
+ "REITER TRANSPORTES E LOGISTICA": {
+  "nome": "Reiter Transportes e Logística",
+  "razao": "REITER TRANSPORTES E LOGISTICA LTDA",
   "fonte": "modelo"
  },
  "RESERVA NOVOS PARQUES URBANOS": {
@@ -5129,6 +6094,16 @@
   "razao": "RESERVA PAULISTA ADMINISTRADORA DE PARQUES S.A.",
   "fonte": "modelo"
  },
+ "RESIDENCIAL REALIZA EMPREENDIMENTO UBERLANDIA I SPE": {
+  "nome": "Realiza Uberlândia I",
+  "razao": "RESIDENCIAL REALIZA EMPREENDIMENTO UBERLANDIA I SPE - LTDA",
+  "fonte": "modelo"
+ },
+ "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO": {
+  "nome": "Ecoagro Insumos Fiagro",
+  "razao": "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO",
+  "fonte": "modelo"
+ },
  "REUSO ITABORAI": {
   "nome": "Reuso Itaboraí",
   "razao": "REUSO ITABORAI S.A",
@@ -5137,6 +6112,11 @@
  "REVELO SECURITIZADORA DE CREDITOS FINANCEIROS": {
   "nome": "Revelo Securitizadora",
   "razao": "REVELO COMPANHIA SECURITIZADORA DE CREDITOS FINANCEIROS",
+  "fonte": "modelo"
+ },
+ "RFM E 01 EMPREENDIMENTO IMOBILIARIO": {
+  "nome": "RFM-E 01",
+  "razao": "RFM-E 01 EMPREENDIMENTO IMOBILIARIO LTDA",
   "fonte": "modelo"
  },
  "RGE SUL DISTRIBUIDORA DE ENERGIA": {
@@ -5274,6 +6254,11 @@
   "razao": "ROTA DO PARA S.A",
   "fonte": "modelo"
  },
+ "RPMEL CAM DAS ARVORES SPE": {
+  "nome": "RPMEL Cam das Árvores",
+  "razao": "RPMEL CAM DAS ARVORES SPE LTDA",
+  "fonte": "modelo"
+ },
  "RT 071 EMPREENDIMENTOS E PARTICIPACOES": {
   "nome": "RT 071",
   "razao": "RT 071 EMPREENDIMENTOS E PARTICIPACOES S.A.",
@@ -5289,6 +6274,11 @@
   "razao": "RUMO S.A.",
   "fonte": "modelo"
  },
+ "RUMO AGRONEGOCIOS": {
+  "nome": "Rumo Agronegócios",
+  "razao": "RUMO AGRONEGOCIOS LTDA",
+  "fonte": "modelo"
+ },
  "RUMO MALHA PAULISTA": {
   "nome": "Rumo Malha Paulista",
   "razao": "RUMO MALHA PAULISTA S/A",
@@ -5299,9 +6289,24 @@
   "razao": "RZK SOLAR 07 S.A.",
   "fonte": "modelo"
  },
+ "S C COMERCIO E REPRESENTACOES DE PRODUTOS AGRICOLAS": {
+  "nome": "S.C. Comércio e Representações de Produtos Agrícolas",
+  "razao": "S. C. COMERCIO E REPRESENTACOES DE PRODUTOS AGRICOLAS LTDA",
+  "fonte": "modelo"
+ },
  "S N B PARTICIPACOES": {
   "nome": "S.N.B.",
   "razao": "S.N.B.  PARTICIPACOES S/A",
+  "fonte": "modelo"
+ },
+ "SAFIRA II EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Safira II",
+  "razao": "SAFIRA II EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
+ "SAGA MALLS": {
+  "nome": "Saga Malls",
+  "razao": "SAGA MALLS S.A",
   "fonte": "modelo"
  },
  "SALTO DO GUASSUPI ENERGETICA": {
@@ -5312,6 +6317,11 @@
  "SAMAREN ENERGIA": {
   "nome": "Samaren Energia",
   "razao": "SAMAREN ENERGIA S.A.",
+  "fonte": "modelo"
+ },
+ "SANCA GTIS PARTICIPACOES": {
+  "nome": "Sanca GTIS",
+  "razao": "SANCA GTIS PARTICIPACOES LTDA.",
   "fonte": "modelo"
  },
  "SANEAMENTO AMBIENTAL AGUAS DO BRASIL": {
@@ -5327,6 +6337,11 @@
  "SANEAMENTO DE GOIAS": {
   "nome": "Saneamento de Goiás (Saneago)",
   "razao": "SANEAMENTO DE GOIAS S/A",
+  "fonte": "modelo"
+ },
+ "SANSAO FLORINDO": {
+  "nome": "Sansão & Florindo",
+  "razao": "SANSAO & FLORINDO LTDA",
   "fonte": "modelo"
  },
  "SANTA CLARA AGROCIENCIA": {
@@ -5367,6 +6382,11 @@
  "SAO BARTOLOMEU GERADORA DE ENERGIA RENOVAVEL": {
   "nome": "São Bartolomeu Geradora de Energia Renovável",
   "razao": "SAO BARTOLOMEU GERADORA DE ENERGIA RENOVAVEL  S.A.",
+  "fonte": "modelo"
+ },
+ "SAO CARLOS EMPREEND E PARTICIPACOES": {
+  "nome": "São Carlos Empreendimentos",
+  "razao": "SAO CARLOS EMPREEND E PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
  "SAO CARLOS EMPREENDIMENTOS E PARTICIPACOES": {
@@ -5524,9 +6544,19 @@
   "razao": "SETELOC S.A.",
   "fonte": "modelo"
  },
+ "SHOPPING METRO ITAQUERA PARTICIPACOES E INVESTIMENTOS": {
+  "nome": "Shopping Metrô Itaquera",
+  "razao": "SHOPPING METRO ITAQUERA PARTICIPACOES E INVESTIMENTOS LTDA",
+  "fonte": "modelo"
+ },
  "SIDERURGICA NACIONAL": {
   "nome": "CSN",
   "razao": "COMPANHIA SIDERURGICA NACIONAL",
+  "fonte": "modelo"
+ },
+ "SIG 11 EMPREENDIMENTOS": {
+  "nome": "SIG 11",
+  "razao": "SIG 11 EMPREENDIMENTOS LTDA",
   "fonte": "modelo"
  },
  "SILVANIA TRANSMISSORA DE ENERGIA": {
@@ -5594,6 +6624,11 @@
   "razao": "SOCICAM ADMINISTRACAO PROJETOS E REPRESENTACOES S.A.",
   "fonte": "modelo"
  },
+ "SOCIEDADE BENEFICENTE DE SENHORAS HOSPITAL SIRIO LIBANES": {
+  "nome": "Hospital Sírio-Libanês",
+  "razao": "SOCIEDADE BENEFICENTE DE SENHORAS - HOSPITAL SIRIO LIBANES",
+  "fonte": "modelo"
+ },
  "SOCIEDADE BENEFICENTE ISRAELITA BRASILEIRA HOSPITAL ALBERT EINSTEIN": {
   "nome": "Hospital Albert Einstein",
   "razao": "SOCIEDADE BENEFICENTE ISRAELITA BRASILEIRA HOSPITAL ALBERT EINSTEIN",
@@ -5614,9 +6649,19 @@
   "razao": "SOL MICRO SUSTENTAVEL HOLDING S.A.",
   "fonte": "modelo"
  },
+ "SOLAR 11 PARTICIPACOES": {
+  "nome": "Solar 11",
+  "razao": "SOLAR 11 PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
  "SOLARIS TRANSMISSAO DE ENERGIA": {
   "nome": "Solaris Transmissão",
   "razao": "SOLARIS TRANSMISSAO DE ENERGIA S.A.",
+  "fonte": "modelo"
+ },
+ "SOLFACIL IV FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS": {
+  "nome": "Solfácil IV FIDC",
+  "razao": "SOLFACIL IV FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS",
   "fonte": "modelo"
  },
  "SOLFACIL SECURITIZADORA CREDITO FINANCEIRO": {
@@ -5654,9 +6699,19 @@
   "razao": "SOTRAN S.A. LOGISTICA E TRANSPORTE",
   "fonte": "modelo"
  },
+ "SPACO AGRICOLA": {
+  "nome": "Spaço Agrícola",
+  "razao": "SPACO AGRICOLA S.A.",
+  "fonte": "modelo"
+ },
  "SPAR I SUBHOLDING": {
   "nome": "SPAR I Subholding",
   "razao": "SPAR I SUBHOLDING S.A.",
+  "fonte": "modelo"
+ },
+ "SPE APARECIDA LESTE": {
+  "nome": "SPE Aparecida Leste",
+  "razao": "SPE APARECIDA LESTE LTDA",
   "fonte": "modelo"
  },
  "SPE CONCESSIONARIA DO AEROPORTO DE ILHEUS": {
@@ -5669,14 +6724,34 @@
   "razao": "SPE CONCESSIONARIA VOE XAP S.A",
   "fonte": "modelo"
  },
+ "SPE II JFL 125 EMPREENDIMENTO IMOBILIARIO": {
+  "nome": "SPE II JFL 125",
+  "razao": "SPE II JFL 125 EMPREENDIMENTO IMOBILIARIO S.A.",
+  "fonte": "modelo"
+ },
+ "SPE INCORPORACAO VILA ROSA": {
+  "nome": "SPE Incorporação Vila Rosa",
+  "razao": "SPE INCORPORACAO VILA ROSA LTDA",
+  "fonte": "modelo"
+ },
  "SPE INTEGRA 2": {
   "nome": "SPE Integra 2",
   "razao": "SPE INTEGRA 2 S/A",
   "fonte": "modelo"
  },
+ "SPE JATAI EMPREENDIMENTO IMOBILIARIO": {
+  "nome": "SPE Jataí",
+  "razao": "SPE JATAI EMPREENDIMENTO IMOBILIARIO LTDA",
+  "fonte": "modelo"
+ },
  "SPE JOPE ISB INOVA CXS": {
   "nome": "SPE Jope ISB Inova CXS",
   "razao": "SPE JOPE ISB INOVA CXS S/A",
+  "fonte": "modelo"
+ },
+ "SPE MAKAI CAMPECHE": {
+  "nome": "SPE Makai Campeche",
+  "razao": "SPE MAKAI CAMPECHE LTDA",
   "fonte": "modelo"
  },
  "SPE NOVO NORTE AEROPORTOS": {
@@ -5739,6 +6814,11 @@
   "razao": "SRM SEC SECURITIZADORA SA",
   "fonte": "modelo"
  },
+ "STELLANTIS AUTOMOVEIS BRASIL": {
+  "nome": "Stellantis",
+  "razao": "STELLANTIS AUTOMOVEIS BRASIL LTDA.",
+  "fonte": "modelo"
+ },
  "SUBESTACAO AGUA AZUL SPE": {
   "nome": "Subestação Água Azul",
   "razao": "SUBESTACAO AGUA AZUL SPE S/A",
@@ -5779,9 +6859,34 @@
   "razao": "SUPERVIA-CONCESSIONARIA DE TRANSPORTE FERROVIARIO S.A",
   "fonte": "modelo"
  },
+ "SUPPLY CHAIN ARMAZENS GERAIS": {
+  "nome": "Supply Chain Armazéns Gerais",
+  "razao": "SUPPLY CHAIN ARMAZENS GERAIS LTDA",
+  "fonte": "modelo"
+ },
  "SUZANO": {
   "nome": "Suzano",
   "razao": "SUZANO S.A.",
+  "fonte": "modelo"
+ },
+ "SYAGRI AGRONEGOCIOS COMERCIO REPRESENTACOES": {
+  "nome": "Syagri",
+  "razao": "SYAGRI AGRONEGOCIOS COMERCIO & REPRESENTACOES LTDA",
+  "fonte": "modelo"
+ },
+ "TAM LINHAS AEREAS": {
+  "nome": "TAM Linhas Aéreas",
+  "razao": "TAM LINHAS AEREAS S/A.",
+  "fonte": "modelo"
+ },
+ "TANAC": {
+  "nome": "Tanac",
+  "razao": "TANAC SA EM RECUPERACAO JUDICIAL",
+  "fonte": "modelo"
+ },
+ "TAP ARP EMPREENDIMENTOS IMOBILIARIOS E PARTICIPACOES": {
+  "nome": "TAP ARP",
+  "razao": "TAP ARP EMPREENDIMENTOS IMOBILIARIOS E PARTICIPACOES LTDA",
   "fonte": "modelo"
  },
  "TAPAJOS TRANSMISSORA DE ENERGIA": {
@@ -5792,6 +6897,11 @@
  "TCC TRANSMISSORA CAMINHO DO CAFE": {
   "nome": "TCC (Transmissora Caminho do Café)",
   "razao": "TCC - TRANSMISSORA CAMINHO DO CAFE S/A",
+  "fonte": "modelo"
+ },
+ "TCMULTI EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "TCMulti",
+  "razao": "TCMULTI EMPREENDIMENTO IMOBILIARIO SPE LTDA",
   "fonte": "modelo"
  },
  "TCX RENOVAVEIS E PARTICIPACOES": {
@@ -5819,9 +6929,19 @@
   "razao": "TECSOIL AUTOMAÇÃO E SISTEMAS S.A.",
   "fonte": "modelo"
  },
+ "TEGRA INCORPORADORA": {
+  "nome": "Tegra",
+  "razao": "TEGRA INCORPORADORA S.A.",
+  "fonte": "modelo"
+ },
  "TELEFONICA BRASIL": {
   "nome": "Telefônica Brasil (Vivo)",
   "razao": "TELEFONICA BRASIL S/A",
+  "fonte": "modelo"
+ },
+ "TELLUS RIO BRAVO RENDA LOGISTICA FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA": {
+  "nome": "Tellus Rio Bravo Renda Logística FII",
+  "razao": "TELLUS RIO BRAVO RENDA LOGISTICA FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
  "TENDA ATACADO": {
@@ -5847,6 +6967,11 @@
  "TESC TERMINAL SANTA CATARINA": {
   "nome": "TESC",
   "razao": "TESC - TERMINAL SANTA CATARINA S/A",
+  "fonte": "modelo"
+ },
+ "TEX COURIER": {
+  "nome": "Tex Courier",
+  "razao": "TEX COURIER S.A",
   "fonte": "modelo"
  },
  "TEXTIL FARBE": {
@@ -5899,6 +7024,11 @@
   "razao": "TMXV EFICIENCIA HOLDING S.A",
   "fonte": "modelo"
  },
+ "TOCANTINS PARTICIPACOES E EMPREENDIMENTOS": {
+  "nome": "Tocantins Participações e Empreendimentos",
+  "razao": "TOCANTINS PARTICIPACOES E EMPREENDIMENTOS LTDA",
+  "fonte": "modelo"
+ },
  "TOP SERVICE SERVICOS E SISTEMAS": {
   "nome": "Top Service",
   "razao": "TOP SERVICE SERVICOS E SISTEMAS S/A",
@@ -5912,6 +7042,11 @@
  "TOTVS": {
   "nome": "Totvs",
   "razao": "TOTVS SA",
+  "fonte": "modelo"
+ },
+ "TPA DESENVOLVIMENTO IMOBILIARIO": {
+  "nome": "TPA Desenvolvimento Imobiliário",
+  "razao": "TPA - DESENVOLVIMENTO IMOBILIARIO LTDA.",
   "fonte": "modelo"
  },
  "TPC TRANSMISSORA PARAISO DO CAFE": {
@@ -5929,9 +7064,19 @@
   "razao": "TRACTUS CAPITAL INVESTIMENTOS E PARTICIPACOES DEBTCO S.A.",
   "fonte": "modelo"
  },
+ "TRADE CENTER PRIMAVERA SPE": {
+  "nome": "Trade Center Primavera",
+  "razao": "TRADE CENTER PRIMAVERA SPE S.A.",
+  "fonte": "modelo"
+ },
  "TRADIMAQ": {
   "nome": "Tradimaq",
   "razao": "TRADIMAQ S.A.",
+  "fonte": "modelo"
+ },
+ "TRAMONTINA CUTELARIA": {
+  "nome": "Tramontina",
+  "razao": "TRAMONTINA SA CUTELARIA",
   "fonte": "modelo"
  },
  "TRANSBRASILIANA CONCESSIONARIA DE RODOVIA": {
@@ -6064,6 +7209,11 @@
   "razao": "TRINITY NORDESTE PARTICIPACOES E ADMINISTRACAO DE BENS S.A.",
   "fonte": "modelo"
  },
+ "TRISUL": {
+  "nome": "Trisul",
+  "razao": "TRISUL S/A",
+  "fonte": "modelo"
+ },
  "TRIVIA TRENS": {
   "nome": "Trivia Trens",
   "razao": "TRIVIA TRENS S.A.",
@@ -6139,6 +7289,11 @@
   "razao": "TWO SQUARE TRANSMISSIONS PARTICIPACOES S/A.",
   "fonte": "modelo"
  },
+ "UFV GD TM LOCACAO": {
+  "nome": "UFV GD TM Locação",
+  "razao": "UFV GD TM LOCACAO LTDA",
+  "fonte": "modelo"
+ },
  "UHE JURUENA": {
   "nome": "UHE Juruena",
   "razao": "UHE JURUENA SA",
@@ -6199,9 +7354,19 @@
   "razao": "UNIPAR CARBOCLORO S/A",
   "fonte": "modelo"
  },
+ "URBA 5 LOTEAMENTOS": {
+  "nome": "Urba 5 Loteamentos",
+  "razao": "URBA 5 LOTEAMENTOS LTDA",
+  "fonte": "modelo"
+ },
  "URBA DESENVOLVIMENTO URBANO": {
   "nome": "Urba",
   "razao": "URBA DESENVOLVIMENTO URBANO S/A",
+  "fonte": "modelo"
+ },
+ "URBAN RESIDENCE INCORPORADORA SPE": {
+  "nome": "Urban Residence",
+  "razao": "URBAN RESIDENCE INCORPORADORA SPE LTDA",
   "fonte": "modelo"
  },
  "URBELUZ ENERGETICA": {
@@ -6222,6 +7387,11 @@
  "URBIA GESTAO DE PARQUES SPE": {
   "nome": "Urbia Parques",
   "razao": "URBIA GESTAO DE PARQUES SPE S.A.",
+  "fonte": "modelo"
+ },
+ "USF INCORPORADORA SPE": {
+  "nome": "USF Incorporadora",
+  "razao": "USF INCORPORADORA SPE S/A",
   "fonte": "modelo"
  },
  "USINA ACUCAREIRA S MANOEL": {
@@ -6344,6 +7514,11 @@
   "razao": "VALE S/A",
   "fonte": "modelo"
  },
+ "VALE DO PONTAL ACUCAR E ETANOL": {
+  "nome": "Vale do Pontal",
+  "razao": "VALE DO PONTAL ACUCAR E ETANOL S.A.",
+  "fonte": "modelo"
+ },
  "VALE DO SERTAO TRANSMISSORA DE ENERGIA": {
   "nome": "Vale do Sertão Transmissora",
   "razao": "VALE DO SERTAO TRANSMISSORA DE ENERGIA S.A.",
@@ -6357,6 +7532,11 @@
  "VALID SOLUCOES": {
   "nome": "Valid",
   "razao": "VALID SOLUCOES S/A",
+  "fonte": "modelo"
+ },
+ "VALKA CONSTRUCOES": {
+  "nome": "Valka Construções",
+  "razao": "VALKA CONSTRUCOES S.A.",
   "fonte": "modelo"
  },
  "VAMOS COMERCIO DE MAQUINAS LINHA AMARELA": {
@@ -6437,6 +7617,11 @@
  "VENTOS POTIGUARES COMERCIALIZADORA DE ENERGIA": {
   "nome": "Ventos Potiguares Comercializadora",
   "razao": "VENTOS POTIGUARES COMERCIALIZADORA DE ENERGIA S/A",
+  "fonte": "modelo"
+ },
+ "VERA CRUZ AGRO PECUARIA": {
+  "nome": "Vera Cruz Agropecuária",
+  "razao": "VERA CRUZ AGRO PECUARIA LTDA",
   "fonte": "modelo"
  },
  "VERDE 08 ENERGIA": {
@@ -6579,9 +7764,19 @@
   "razao": "VICUNHA TÊXTIL S.A.",
   "fonte": "modelo"
  },
+ "VIDEPLAST INDUSTRIA DE EMBALAGENS": {
+  "nome": "Videplast",
+  "razao": "VIDEPLAST INDUSTRIA DE EMBALAGENS LTDA",
+  "fonte": "modelo"
+ },
  "VIDROPORTO": {
   "nome": "Vidroporto",
   "razao": "VIDROPORTO S.A.",
+  "fonte": "modelo"
+ },
+ "VILA MADALENA RESIDENCE EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Vila Madalena Residence",
+  "razao": "VILA MADALENA RESIDENCE EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
   "fonte": "modelo"
  },
  "VILA PIAUI 1 EMPREENDIMENTOS E PARTICIPACOES": {
@@ -6604,6 +7799,21 @@
   "razao": "VILLA LOBOS SP GESTAO EMPRESARIAL S.A",
   "fonte": "modelo"
  },
+ "VILLAGE PARTICIPACOES E INVESTIMENTOS": {
+  "nome": "Village",
+  "razao": "VILLAGE PARTICIPACOES E INVESTIMENTOS LTDA",
+  "fonte": "modelo"
+ },
+ "VINCI OFFICES FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "Vinci Offices FII",
+  "razao": "VINCI OFFICES FUNDO DE INVESTIMENTO IMOBILIARIO - RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
+ "VINICOLA SALTON": {
+  "nome": "Vinícola Salton",
+  "razao": "VINICOLA SALTON S.A.",
+  "fonte": "modelo"
+ },
  "VIRTU GNL PARTICIPACOES": {
   "nome": "Virtu GNL",
   "razao": "VIRTU GNL PARTICIPACOES S.A.",
@@ -6622,6 +7832,11 @@
  "VITAL ENGENHARIA AMBIENTAL": {
   "nome": "Vital Engenharia Ambiental",
   "razao": "VITAL ENGENHARIA AMBIENTAL SA",
+  "fonte": "modelo"
+ },
+ "VITAURBANA SBH1 PARTICIPACOES": {
+  "nome": "Vitaurbana SBH1",
+  "razao": "VITAURBANA SBH1 PARTICIPACOES LTDA",
   "fonte": "modelo"
  },
  "VITRU BRASIL EMPREENDIMENTOS PARTICIPACOES E COMERCIO": {
@@ -6644,6 +7859,11 @@
   "razao": "VLI MULTIMODAL S.A.",
   "fonte": "modelo"
  },
+ "VLP EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "VLP Empreendimento Imobiliário",
+  "razao": "VLP EMPREENDIMENTO IMOBILIARIO SPE LTDA",
+  "fonte": "modelo"
+ },
  "VOKE": {
   "nome": "Voke",
   "razao": "VOKE S.A.",
@@ -6652,6 +7872,11 @@
  "VOLTALIA SAO MIGUEL DO GOSTOSO PARTICIPACOES": {
   "nome": "Voltalia São Miguel do Gostoso",
   "razao": "VOLTALIA  SAO  MIGUEL DO GOSTOSO PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
+ "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS": {
+  "nome": "Vortx DTVM",
+  "razao": "VORTX DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA",
   "fonte": "modelo"
  },
  "VOTORANTIM CIMENTOS": {
@@ -6722,6 +7947,16 @@
  "YDUQS PARTICIPACOES": {
   "nome": "Yduqs",
   "razao": "YDUQS PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
+ "YOU INC INCORPORADORA E PARTICIPACAO": {
+  "nome": "You Inc",
+  "razao": "YOU INC INCORPORADORA E PARTICIPAÇÃO S.A",
+  "fonte": "modelo"
+ },
+ "YUNY INCORPORADORA HOLDING": {
+  "nome": "Yuny",
+  "razao": "YUNY INCORPORADORA HOLDING S.A.",
   "fonte": "modelo"
  },
  "ZAMP": {
