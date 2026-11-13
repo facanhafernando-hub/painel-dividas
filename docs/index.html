@@ -161,6 +161,7 @@ const crGrave = cr => cr === "va" || cr === "rj" || cr === "re";
 const GAB = { "fiança": "Fiança", "aval": "Aval", "alienação fiduciária": "AF", "cessão fiduciária": "CF", "hipoteca": "Hipoteca",
   "penhor": "Penhor", "conta vinculada": "Conta vinc.", "fundo de reserva": "Fundo res.", "coobrigação": "Coobrig.", "outra": "Outra" };
 const garCurta = i => i.gn == null ? esc(i.gar || "–")
+  : i.gind ? `<span title="Garantia não identificada nos documentos lidos. ${esc(i.gres || "")}">${esc(i.gar || "?")} <span class="tag t-warn">não identificada</span></span>`
   : i.gn === 0 ? `<span title="${esc(i.gres || "")}">Sem garantia</span>`
   : `<span title="${esc(i.gres || "")}">${esc((i.gtip || []).map(t => GAB[t] || t).join(" + ") || i.gar || "–")}</span>`;
 

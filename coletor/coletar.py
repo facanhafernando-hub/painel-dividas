@@ -1488,6 +1488,9 @@ def construir_catalogo() -> None:
         gl = garantias_lidas().get(c.upper())
         if gl:
             itens[-1].update(gres=gl["res"], gesp=gl["esp"], gn=gl["n"], gtip=gl["tip"], garq=gl["arq"])
+            if gl["n"] == 0 and ((s or {}).get("garantia") == "Real" or
+                                 re.search(r"n[aã]o (determin|identific|localiz)|sem documento|n[aã]o h[aá] documento", gl["res"] or "", re.I)):
+                itens[-1]["gind"] = True        # leitura não identificou a garantia (não é "sem garantia")
         nm = nomes_empresas().get(itens[-1]["k"])
         if nm:
             itens[-1]["n"] = nm
