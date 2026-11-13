@@ -1185,6 +1185,17 @@ def snd_agenda() -> dict:
     return _CACHE["agenda"]
 
 
+def nomes_empresas() -> dict:
+    """Nome curto pelo qual cada empresa é conhecida (docs/data/nomes_empresas.json, gerado por coletor/nomes.py)."""
+    if "nomes" not in _CACHE:
+        p = DADOS / "nomes_empresas.json"
+        try:
+            _CACHE["nomes"] = {k: v["nome"] for k, v in json.loads(p.read_text(encoding="utf-8")).items() if v.get("nome")}
+        except Exception:
+            _CACHE["nomes"] = {}
+    return _CACHE["nomes"]
+
+
 def escrituras() -> dict:
     """Leituras de escrituras/aditamentos/atas (docs/data/escrituras), por código: série extraída, evento de crédito,
     conferência com o SND e arquivo de origem."""
@@ -1428,6 +1439,9 @@ def construir_catalogo() -> None:
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
         })
+        nm = nomes_empresas().get(itens[-1]["k"])
+        if nm:
+            itens[-1]["n"] = nm
         x = escrituras().get(c)
         if x:
             ev_ = x["evento"]

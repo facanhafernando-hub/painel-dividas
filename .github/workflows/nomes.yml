@@ -1,0 +1,40 @@
+name: Nomes das empresas
+
+on:
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: "Refazer todos os nomes (menos os manuais) (sim/não)"
+        default: "não"
+  schedule:
+    - cron: "37 10 * * 2-6"     # só empresas novas
+
+concurrency:
+  group: nomes
+  cancel-in-progress: false
+
+jobs:
+  nomes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Gerar nomes
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          [ "${{ github.event.inputs.forcar }}" = "sim" ] && python coletor/nomes.py --forcar || python coletor/nomes.py
+      - name: Salvar
+        run: |
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add docs/data/nomes_empresas.json
+          git diff --cached --quiet && exit 0
+          git commit -qm "Nomes das empresas $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs -q && git push -q && break; sleep 10; done

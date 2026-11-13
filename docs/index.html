@@ -193,7 +193,7 @@ async function carregarCatalogo() {
     if (!i.k) continue;
     let e = g.get(i.k);
     if (!e) { e = { k: i.k, nomes: {}, itens: [], vol: 0, negHoje: 0, pior: null, alerta: false, cnpj: i.cnpj }; g.set(i.k, e); }
-    e.itens.push(i); e.nomes[i.e] = (e.nomes[i.e] || 0) + 1;
+    e.itens.push(i); e.nomes[i.e] = (e.nomes[i.e] || 0) + 1; if (i.n) e.curto = i.n;
     if (i.vh) { e.vol += i.vh; e.negHoje++; }
     const p = i.upp ?? i.ppa;
     if (!nada(p) && (e.pior === null || p < e.pior)) e.pior = p;
@@ -204,8 +204,9 @@ async function carregarCatalogo() {
     if (i.cr && (!e.cr || CR[i.cr][2] > CR[e.cr][2])) e.cr = i.cr;
   }
   for (const e of g.values()) {
-    e.nome = Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0][0];
-    e.busca = semAc(e.nome + " " + e.k + " " + e.itens.map(i => i.c + " " + (i.s || "")).join(" "));
+    e.razao = Object.entries(e.nomes).sort((a, b) => b[1] - a[1])[0][0];
+    e.nome = e.curto || titulo(e.razao);
+    e.busca = semAc(e.nome + " " + e.razao + " " + e.k + " " + e.itens.map(i => i.c + " " + (i.s || "")).join(" "));
     e.grupo = e.k.split(" ")[0];
   }
   st.empresas = [...g.values()];
@@ -262,7 +263,7 @@ function listaEmpresas() {
   document.getElementById("listaE").innerHTML = !L.length ? '<div class="vazio">Nenhuma empresa encontrada.</div>' :
     `<div class="cab-emp"><div>${f0.format(tot)} empresas${tot > 200 ? " (mostrando 200; refine a busca)" : ""}</div><div class="hide-m">Pior % do par</div><div>Volume hoje</div></div>` +
     L.map(e => `<a class="emp" href="#/e/${encodeURIComponent(e.k)}">
-      <div><div class="n">${esc(titulo(e.nome))} ${crTag(e.cr)}${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
+      <div><div class="n">${esc(e.nome)} ${crTag(e.cr)}${e.lista ? '<span class="tag t-info">lista</span>' : ""}${e.secs && !e.naoSec ? '<span class="tag t-neu" title="CRI/CRA sem devedor identificado pela ANBIMA">securitizadora</span>' : ""}${e.alerta ? '<span class="tag t-crit">alerta</span>' : ""}</div>
       <div class="sub">${e.situacao ? `<span style="color:var(--text-primary)">${esc(e.situacao)}</span> · ` : ""}${e.itens.length} título${e.itens.length > 1 ? "s" : ""}${e.negHoje ? ` · ${e.negHoje} negociado${e.negHoje > 1 ? "s" : ""} hoje` : ""}</div></div>
       <div class="v hide-m"><b>${pctPar(e.pior)}</b><span>pior título</span></div>
       <div class="v"><b>${e.vol ? "R$ " + mi(e.vol) : '<span class="mut">–</span>'}</b><span>${e.vol ? "negociado" : "sem negócio"}</span></div></a>`).join("");
@@ -279,10 +280,10 @@ async function telaEmpresa(k) {
   const cnpj = e.cnpj && e.cnpj.length >= 14 ? e.cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, "$1.$2.$3/$4-$5") : null;
   app.innerHTML = `
     <a class="voltar" href="#/">← Empresas</a>
-    <h2>${esc(titulo(e.nome))}</h2>
+    <h2>${esc(e.nome)}</h2>${e.curto ? `<div class="sub" style="margin:-2px 0 4px">${esc(titulo(e.razao))}</div>` : ""}
     <div class="sub">${[cnpj ? "CNPJ " + cnpj : null, `${itens.length} título${itens.length > 1 ? "s" : ""} em mercado`].filter(Boolean).join(" · ")}</div>
     ${e.situacao ? `<div style="margin-top:6px"><span class="tag t-info">Minha lista</span> <span class="sub" style="color:var(--text-primary)">${esc(e.situacao)}</span></div>` : ""}
-    ${rel.length ? `<div class="rel">Mesmo grupo: ${rel.map(r => `<a href="#/e/${encodeURIComponent(r.k)}">${esc(titulo(r.nome))}</a>`).join("")}</div>` : ""}
+    ${rel.length ? `<div class="rel">Mesmo grupo: ${rel.map(r => `<a href="#/e/${encodeURIComponent(r.k)}">${esc(r.nome)}</a>`).join("")}</div>` : ""}
     <div class="kpis">
       <div class="card kpi"><div class="l">Títulos</div><div class="v">${itens.length}</div></div>
       <div class="card kpi"><div class="l">Negociados hoje</div><div class="v">${e.negHoje}</div></div>
@@ -330,7 +331,10 @@ function cartaoTitulo(i, n) {
 async function telaMercado() {
   if (!st.dia) {
     const d = await getJSON(`data/daily/${st.idx.ultima}.json`);
+    await carregarCatalogo();
+    const nomes = {}; (st.cat?.itens || []).forEach(i => { if (i.n) nomes[i.c] = i.n; });
     d.ativos.forEach(r => {
+      r._nome = nomes[r.c] || null;
       const n = r.n || {}, a = r.a || {}, p = r.p || {};
       r._vol = n.volume || 0; r._neg = n.n_neg || 0; r._pmed = n.pu_med ?? null; r._panb = a.pu ?? null;
       r._desv = r._pmed && r._panb ? (r._pmed / r._panb - 1) * 100 : null;
@@ -357,7 +361,7 @@ async function telaMercado() {
 }
 const COLS = [
   ["cod", "Título", r => r.c, r => `<span class="cod">${esc(r.c)}</span><span class="tp">${esc(r.t || "")}</span>`, "l"],
-  ["emp", "Empresa", r => r.e || "", r => `<span title="${esc(r.e)}">${esc(titulo(r.e) || "–")}</span>`, "l ell"],
+  ["emp", "Empresa", r => r._nome || r.e || "", r => `<span title="${esc(r.e)}">${esc(r._nome || titulo(r.e) || "–")}</span>`, "l ell"],
   ["vol", "Volume (R$)", r => r._vol, r => r._vol ? mi(r._vol) : '<span class="mut">–</span>'],
   ["pmed", "PU médio", r => r._pmed ?? -1, r => `<b>${fmt(r._pmed)}</b>`],
   ["ppar", "% do par", r => r._ppar ?? 999, r => pctPar(r._ppar) + (r._ppar != null && !r._parNeg ? '<span class="mut">*</span>' : "")],
@@ -403,7 +407,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") fecharDet();
 async function abrirTitulo(i) {
   const det = document.getElementById("det");
   document.getElementById("detTit").textContent = i.c;
-  document.getElementById("detSub").innerHTML = [esc(i.t), i.e && i.k ? `<a href="#/e/${encodeURIComponent(i.k)}" style="text-decoration:underline">${esc(titulo(i.e))}</a>` : esc(titulo(i.e)),
+  document.getElementById("detSub").innerHTML = [esc(i.t), i.e && i.k ? `<a href="#/e/${encodeURIComponent(i.k)}" style="text-decoration:underline" title="${esc(i.e)}">${esc(i.n || titulo(i.e))}</a>` : esc(i.n || titulo(i.e)),
     i.s && i.s !== i.e ? "securitizadora: " + esc(titulo(i.s)) : null].filter(Boolean).join(" · ");
   const p = i.upp ?? i.ppa;
   const dest = [["% do par", pctPar(p) + (i.upp == null && i.ppa != null ? ' <span class="mut" style="font-size:12px">indicativo</span>' : "")],
