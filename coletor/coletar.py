@@ -411,6 +411,7 @@ def coletar_snd_cadastro() -> dict[str, dict]:
             "isin": g(r, "ISIN"), "dt_emissao": g(r, "Data de Emissao"), "venc": venc,
             "garantia": g(r, "Garantia/Especie"), "qtd_emitida": num(g(r, "Quantidade Emitida")),
             "qtd_mercado": qm, "vne": num(g(r, "Valor Nominal na Emissao")),
+            "vn_atual": num(g(r, "Valor Nominal Atual")),
             "indice": g(r, "indice"), "mult": num(g(r, "Percentual Multiplicador/Rentabilidade")),
             "taxa": num(g(r, "Juros Criterio Novo - Taxa")),
             "amort": g(r, "Tipo de Amortizacao") not in ("", "-"),
@@ -441,6 +442,132 @@ def coletar_snd_pu(d: date) -> dict[str, dict]:
             out[r[1].upper()] = {"vna": num(r[2]), "juros": num(r[3]), "pu_par": pu}
     log(f"  SND PU de curva: {len(out)} debêntures")
     return out
+
+
+# ----------------------------------------------------------------------------- SND: agenda de eventos (cronograma)
+
+SND_AGENDA = ("https://www.debentures.com.br/exploreosnd/consultaadados/eventosfinanceiros/agenda_e.asp"
+              "?op_exc=False&ativo=&dt_ini={di}&dt_fim={df}&evento=")
+
+
+def coletar_snd_agenda(hoje: date) -> dict[str, list]:
+    """Todos os eventos futuros de todas as debêntures. Evento: [data_pagamento, código, taxa/percentual, base]
+    com código J (juros), A (amortização), I (incorporação de juros), P (prêmio), V (vencimento) e base
+    FIX (% do valor de emissão) ou VAR (% do saldo)."""
+    janelas = [(hoje + timedelta(days=365 * k), hoje + timedelta(days=365 * k + 364)) for k in range(8)]
+    janelas.append((hoje + timedelta(days=365 * 8), date(2099, 12, 31)))
+    out: dict[str, list] = {}
+    q = urllib.parse.quote
+    for di, df in janelas:
+        raw = http(SND_AGENDA.format(di=q(di.strftime("%d/%m/%Y")), df=q(df.strftime("%d/%m/%Y"))), tentativas=3, timeout=180)
+        if not raw:
+            log(f"  SND agenda: falhou a janela {di}..{df}")
+            return {}  # agenda parcial é pior que nenhuma: cai no modelo do cadastro
+        for l in raw.decode("cp1252", errors="replace").replace("\r", "").split("\n"):
+            r = [x.strip() for x in l.split("\t")]
+            if len(r) < 7 or not re.match(r"\d{2}/\d{2}/\d{4}", r[0]):
+                continue
+            ev = norm(r[4])
+            cod = ("J" if ev == "juros" else "I" if ev.startswith("incorporacao") else "P" if ev.startswith("premio")
+                   else "V" if ev.startswith("vencimento") else "A" if ev == "amortizacao" else None)
+            if not cod:
+                continue  # amortização extraordinária (0%), participação, resgates: fora do fluxo contratual
+            out.setdefault(r[3].upper(), []).append([r[1] or r[0], cod, num(r[6]) or 0.0,
+                                                     "FIX" if "FIX" in r[5].upper() else "VAR"])
+    for v in out.values():
+        v.sort(key=lambda e: (datetime.strptime(e[0], "%d/%m/%Y"), "JIPAV".index(e[1])))
+    log(f"  SND agenda: {sum(len(v) for v in out.values())} eventos de {len(out)} debêntures")
+    return out
+
+
+def fluxo_agenda(d: date, eventos: list, base: str, mult: float | None, R: float,
+                 inicio: date | None, cv: "Curva | None", cupom_ref: float | None = None):
+    """Fluxo por 1 unidade de saldo em d, evento a evento. Sem curva (cv=None): em termos do contrato
+    (DI/IPCA se cancelam), para o spread implícito. Com curva: em R$ nominais projetados. Devolve
+    [(t_anos, caixa, desconto_contratual)]."""
+    evs = [(datetime.strptime(e[0], "%d/%m/%Y").date(), e[1], e[2], e[3]) for e in eventos]
+    evs = [e for e in evs if e[0] > d]
+    if not evs:
+        return []
+    jur = [e[0] for e in evs if e[1] in ("J", "I")]
+    prev = jur[0] - (jur[1] - jur[0]) if len(jur) >= 2 else (inicio or d)
+    if inicio and prev < inicio:
+        prev = inicio
+    prev = min(prev, d)
+    m = (mult or 100) / 100
+    di_curto = cv.pre(0.01) if cv else 0.0
+    c_ref = cupom_ref if cupom_ref is not None else next((e[2] / 100 for e in evs if e[1] == "J"), 0.0)
+    saldo = 1.0
+    t_j = (prev - d).days / 365.25      # início do período de juros corrente (negativo = já acumulando)
+    t_p = t_j
+    ultimo_t = 0.0
+
+    def fator(t0, t1, taxa):
+        per = t1 - t0
+        if base in ("DI+", "%DI") and cv:
+            passado = (1 + di_curto) ** max(-t0, 0) if t0 < 0 else 1.0
+            f_di = passado * cv.fator_di(t1) / (cv.fator_di(t0) if t0 > 0 else 1.0)
+            if base == "%DI":
+                mm = taxa / 100 if taxa and taxa > 20 else m
+                return f_di ** mm
+            return f_di * (1 + taxa / 100) ** per
+        if base == "%DI":
+            return 1.0
+        return (1 + taxa / 100) ** per
+
+    caixa_por_t: dict[float, float] = {}
+    for dt, cod, taxa, bs in evs:
+        t = (dt - d).days / 365.25
+        ultimo_t = t
+        caixa = 0.0
+        if cod == "J":
+            caixa = saldo * (fator(t_j, t, taxa) - 1)
+            t_j = t
+        elif cod == "I":                 # PIK: juros do período viram saldo
+            saldo *= fator(t_j, t, taxa)
+            t_j = t
+        elif cod == "P":
+            caixa = saldo * ((1 + taxa / 100) ** (t - t_p) - 1) if taxa else 0.0
+            t_p = t
+        elif cod == "A":
+            amt = (taxa / 100) / R if bs == "FIX" else saldo * taxa / 100
+            amt = min(max(amt, 0.0), saldo)
+            saldo -= amt
+            caixa = amt
+        elif cod == "V":
+            caixa = saldo
+            saldo = 0.0
+        if base in ("IPCA+", "IGPM+") and cv:
+            caixa *= cv.fator_ipca(t)
+        if caixa:
+            caixa_por_t[t] = caixa_por_t.get(t, 0.0) + caixa
+    if saldo > 1e-9:
+        v = saldo * (cv.fator_ipca(ultimo_t) if base in ("IPCA+", "IGPM+") and cv else 1.0)
+        caixa_por_t[ultimo_t] = caixa_por_t.get(ultimo_t, 0.0) + v
+    res = []
+    for t in sorted(caixa_por_t):
+        if not cv:
+            dc = 1 / (1 + c_ref) ** t
+        elif base == "DI+":
+            dc = 1 / (cv.fator_di(t) * (1 + c_ref) ** t)
+        elif base == "%DI":
+            dc = 1 / (cv.fator_di(t) ** m)
+        elif base in ("IPCA+", "IGPM+"):
+            dc = 1 / (cv.fator_ipca(t) * (1 + c_ref) ** t)
+        else:
+            dc = 1 / (1 + c_ref) ** t
+        res.append((t, caixa_por_t[t], dc))
+    return res
+
+
+def saldo_relativo(snd: dict | None) -> float:
+    """Fração do valor de emissão ainda em aberto (para amortizações em % do VNE)."""
+    if snd and snd.get("vne") and snd.get("vn_atual") and \
+            base_indexador(snd.get("indice"), snd.get("mult")) not in ("IPCA+", "IGPM+"):
+        r = snd["vn_atual"] / snd["vne"]
+        if 0.01 < r <= 1.0:
+            return r
+    return 1.0
 
 
 # ----------------------------------------------------------------------------- ANBIMA CRI/CRA
@@ -812,7 +939,8 @@ def tir_moic(fluxo, pu_par: float, preco: float) -> dict:
 
 
 def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict | None,
-                           snd: dict | None, curva: dict | None, cv: "Curva | None" = None) -> dict:
+                           snd: dict | None, curva: dict | None, cv: "Curva | None" = None,
+                           ev: list | None = None) -> dict:
     """% do par e yield implícito (hold to maturity, pagando tudo no vencimento) do PU negociado."""
     pmed = (neg or {}).get("pu_med")
     # ANBIMA primeiro (calcula o par com VNA atualizado); SND como alternativa, pois em
@@ -831,6 +959,28 @@ def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict |
     pct = round(pmed / pu_par * 100, 2) if pmed and pu_par else None
     if not pmed or pct is None or not (YIELD_PCT_MIN <= pct <= YIELD_PCT_MAX):
         return out
+    # 0) debênture com agenda de eventos do SND: cronograma real, evento a evento
+    if snd and ev:
+        base = base_indexador(snd.get("indice"), snd.get("mult"))
+        ini = _data(snd.get("inicio_rent")) or _data(snd.get("dt_emissao"))
+        R = saldo_relativo(snd)
+        if base:
+            out["y_met"] = "agenda"
+            if base != "%DI":
+                cf = [(t_, v_) for t_, v_, _ in fluxo_agenda(d, ev, base, snd.get("mult"), R, ini, None)]
+                c_ref = next((e[2] / 100 for e in ev if e[1] == "J"), (snd.get("taxa") or 0) / 100)
+                if cf:
+                    y = ytm_pela_razao(cf, c_ref, pct)
+                    if y is not None:
+                        out.update(y=y, y_base=base)
+            else:
+                out["y_base"] = "%DI"
+            if cv:
+                fl = fluxo_agenda(d, ev, base, snd.get("mult"), R, ini, cv)
+                if fl:
+                    out.update(tir_moic(fl, pu_par, pmed))
+            if out.get("y") is not None or out.get("tir") is not None:
+                return out
     # 1) debênture com cadastro SND: fluxo de caixa contratual (juros + amortização)
     if snd and snd.get("taxa") is not None:
         base = base_indexador(snd.get("indice"), snd.get("mult"))
@@ -977,6 +1127,12 @@ def empresa_do_ativo(t, cod, neg, anb_cc, snd, anb_deb) -> tuple[str | None, str
 _CACHE: dict = {}
 
 
+def snd_agenda() -> dict:
+    if "agenda" not in _CACHE:
+        _CACHE["agenda"] = coletar_snd_agenda(datetime.now(BRT).date())
+    return _CACHE["agenda"]
+
+
 def snd_cadastro() -> dict:
     if "snd" not in _CACHE:
         _CACHE["snd"] = coletar_snd_cadastro()
@@ -1005,6 +1161,7 @@ def processar(d: date, forcar: bool = False) -> bool:
     snd = snd_cadastro()
     cj = obter_curva(d)
     cv = Curva(cj) if cj else None
+    agenda = snd_agenda()
     if not neg and not anb and not anb_cc:
         log("  sem dados (feriado, fim de semana ou ainda não publicado)")
         return False
@@ -1021,7 +1178,7 @@ def processar(d: date, forcar: bool = False) -> bool:
         a = a_deb or a_cc  # referência ANBIMA (mesmos campos-chave)
         s = snd.get(cod) if t == "DEB" else None
         cvp = curva.get(cod) if t == "DEB" else None
-        py = calcular_preco_e_yield(t, d, n, a, s, cvp, cv)
+        py = calcular_preco_e_yield(t, d, n, a, s, cvp, cv, agenda.get(cod) if t == "DEB" else None)
         serie = atualizar_serie(cod, ds, n, a, py)
         emp, sec = empresa_do_ativo(t, cod, n, a_cc, s, a_deb)
         reg = {
@@ -1068,11 +1225,13 @@ def recalcular() -> None:
         d = date.fromisoformat(dd["data"])
         cj = obter_curva(d)
         cv = Curva(cj) if cj else None
+        agenda = snd_agenda()
         for a in dd["ativos"]:
             p_ant = a.get("p") or {}
             cvp = {"pu_par": p_ant.get("pu_par")} if p_ant.get("fonte_par") == "SND" else None
             s = snd.get(a["c"]) if a.get("t") == "DEB" else None
-            py = calcular_preco_e_yield(a.get("t"), d, a.get("n"), a.get("a"), s, cvp, cv)
+            py = calcular_preco_e_yield(a.get("t"), d, a.get("n"), a.get("a"), s, cvp, cv,
+                                        agenda.get(a["c"]) if a.get("t") == "DEB" else None)
             a["p"] = py
             serie = atualizar_serie(a["c"], dd["data"], a.get("n"), a.get("a"), py)
             a["al"] = alertas(a.get("n"), a.get("a"), py, serie, dd["data"])
@@ -1142,11 +1301,45 @@ def construir_catalogo() -> None:
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
         })
+    escrever_cronogramas(itens, snd, datas[-1])
     cur = sorted((DADOS / "curva").glob("*.json")) if (DADOS / "curva").exists() else []
     if cur:
         escrever_json(DADOS / "curva.json", json.loads(cur[-1].read_text(encoding="utf-8")))
     escrever_json(DADOS / "catalogo.json", {"data": datas[-1], "itens": itens})
     log(f"Catálogo: {len(itens)} títulos, {len({i['k'] for i in itens})} empresas")
+
+
+def escrever_cronogramas(itens: list, snd: dict, ds: str) -> None:
+    """docs/data/cronograma/<COD>.json: eventos da agenda + fluxo projetado em R$ por debênture (curva do dia)."""
+    agenda = snd_agenda()
+    if not agenda:
+        return
+    d = date.fromisoformat(ds)
+    cj = obter_curva(d, baixar=False)
+    cv = Curva(cj) if cj else None
+    pasta = DADOS / "cronograma"
+    n = 0
+    for i in itens:
+        ev, s = agenda.get(i["c"]), snd.get(i["c"])
+        if not ev or not s:
+            continue
+        base = base_indexador(s.get("indice"), s.get("mult"))
+        fluxo = []
+        if cv and base and i.get("par"):
+            fl = fluxo_agenda(d, ev, base, s.get("mult"), saldo_relativo(s),
+                              _data(s.get("inicio_rent")) or _data(s.get("dt_emissao")), cv)
+            pv_c = sum(v * dc for _, v, dc in fl)
+            if pv_c > 0:
+                k = i["par"] / pv_c
+                fluxo = [[(d + timedelta(days=round(t * 365.25))).isoformat(), round(v * k, 4)] for t, v, _ in fl]
+        obj = {"c": i["c"], "base": base, "ev": ev, "fluxo": fluxo, "curva": (cj or {}).get("data"), "par": i.get("par")}
+        f = pasta / f"{i['c']}.json"
+        novo = json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+        if not f.exists() or f.read_text(encoding="utf-8") != novo:
+            f.parent.mkdir(parents=True, exist_ok=True)
+            f.write_text(novo, encoding="utf-8")
+            n += 1
+    log(f"  cronogramas atualizados: {n}")
 
 
 def f2(v) -> str:

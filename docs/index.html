@@ -288,7 +288,7 @@ async function telaEmpresa(k) {
       <th>% do par</th><th title="Spread/juro real implícito, pagando tudo no vencimento">Yield implícito</th><th title="TIR nominal com DI futuro e inflação implícita da curva ANBIMA">TIR nominal</th><th title="Total a receber ÷ preço pago">MOIC</th><th>Taxa ANBIMA</th><th>Volume hoje</th><th class="l">Garantia</th><th class="l"></th>
     </tr></thead><tbody>${itens.map((i, n) => linhaTitulo(i, n)).join("")}</tbody></table></div>
     <div class="card cards">${itens.map((i, n) => cartaoTitulo(i, n)).join("")}</div>
-    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (juros e amortizações do cadastro SND), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 20% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
+    <div class="nota">% do par = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * indicativo ANBIMA, sem negócio nos últimos 30 pregões. Yield implícito (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (cronograma da agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento; DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento). TIR nominal e MOIC projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculado entre 20% e 150% do par; abaixo de 80% do par aparece em vermelho, porque aí o retorno depende da recuperação, não do contrato.</div>`;
   app.querySelectorAll("tr[data-i], .tc[data-i]").forEach(el => el.onclick = () => abrirTitulo(itens[+el.dataset.i]));
 }
 function linhaTitulo(i, n) {
@@ -411,8 +411,10 @@ async function abrirTitulo(i) {
     `<div class="grade">${dest.map(([l, v]) => `<div class="dest"><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      <div class="grade">${dados.filter(([l, v]) => !/^(–|<span class="mut">–<\/span>)$/.test(v)).map(([l, v]) => `<div><div class="l">${l}</div><div class="v">${v}</div></div>`).join("")}</div>
      ${(i.up || i.pa) && i.par ? simulador(i) : ""}
+     <div id="crono"></div>
      <div class="graf" id="graf"><span class="mut">Carregando histórico…</span></div>`;
   if ((i.up || i.pa) && i.par) ligarSimulador(i);
+  carregarCronograma(i);
   det.classList.add("aberto"); det.setAttribute("aria-hidden", "false");
   try { desenhar((await getJSON(`data/series/${encodeURIComponent(i.c)}.json`)).p); }
   catch { document.getElementById("graf").innerHTML = '<span class="mut">Sem histórico de negócios ainda.</span>'; }
@@ -436,6 +438,37 @@ function ligarSimulador(i) {
     document.getElementById("sRes").innerHTML = `<div class="sub">MOIC <b style="color:var(--text-primary);font-size:16px">${f2.format(moic)}x</b> · TIR <b style="color:var(--text-primary);font-size:16px">${tir === null ? "–" : f1.format(tir) + "%"}</b> · retorno ${f1.format((moic - 1) * 100)}%</div>`;
   };
   document.getElementById("sRec").oninput = calc; document.getElementById("sAnos").oninput = calc; calc();
+}
+
+async function carregarCronograma(i) {
+  const el = document.getElementById("crono");
+  let c;
+  try { c = await getJSON(`data/cronograma/${encodeURIComponent(i.c)}.json`); }
+  catch { el.innerHTML = i.t === "DEB" ? "" : '<div class="nota" style="margin:0 0 6px">Cronograma: CRI/CRA ainda sem agenda pública; TIR e MOIC supõem pagamento único no vencimento.</div>'; return; }
+  const nome = { J: "Juros", A: "Amortização", I: "Incorporação de juros (PIK)", P: "Prêmio", V: "Vencimento" };
+  const fx = new Map((c.fluxo || []).map(([d, v]) => [d, v]));
+  const iso = s => s.split("/").reverse().join("-");
+  // agrupa eventos da mesma data e associa o caixa projetado (R$ por debênture)
+  const datas = [...new Set(c.ev.map(e => e[0]))];
+  const usados = new Set();
+  const caixaDe = d => { const alvo = new Date(iso(d)).getTime(); let melhor = null, dist = 9e15;
+    for (const [k, v] of fx) { const dd = Math.abs(new Date(k).getTime() - alvo); if (dd < dist && dd <= 3 * 864e5 && !usados.has(k)) { dist = dd; melhor = k; } }
+    if (melhor) { usados.add(melhor); return fx.get(melhor); } return null; };
+  const linhas = datas.map(d => {
+    const evs = c.ev.filter(e => e[0] === d);
+    const desc = evs.map(e => e[1] === "J" ? `Juros ${c.base === "%DI" ? f2.format(e[2]) + "% DI" : (c.base === "PRE" ? "" : (c.base || "").replace("+", "") + " + ") + f2.format(e[2]) + "%"}`
+      : e[1] === "A" ? `Amort. ${f2.format(e[2])}% ${e[3] === "FIX" ? "do VNE" : "do saldo"}` : e[1] === "I" ? `PIK ${f2.format(e[2])}%` : nome[e[1]]).join(" · ");
+    const cx = caixaDe(d);
+    const pik = evs.some(e => e[1] === "I"), amort = evs.some(e => e[1] === "A" || e[1] === "V");
+    return { d, desc, cx, pik, amort };
+  });
+  const tot = linhas.reduce((s, l) => s + (l.cx || 0), 0);
+  const nA = c.ev.filter(e => e[1] === "A").length, nI = c.ev.filter(e => e[1] === "I").length;
+  el.innerHTML = `<h4 style="font-size:13px;margin:14px 0 4px">Cronograma (agenda SND)</h4>
+    <div class="sub" style="margin-bottom:6px">${c.ev.filter(e => e[1] === "J").length} pagamentos de juros · ${nA ? nA + " amortizações" : "principal no vencimento (bullet)"}${nI ? ` · <span class="neg">${nI} incorporações de juros (PIK)</span>` : ""}${tot ? ` · total projetado R$ ${f2.format(tot)} por debênture` : ""}</div>
+    <div class="card tw" style="max-height:300px"><table><thead><tr><th class="l">Pagamento</th><th class="l">Evento</th><th title="Projeção com a curva ANBIMA de ${dbr(c.curva)}">Caixa projetado (R$)</th></tr></thead>
+    <tbody>${linhas.map(l => `<tr style="cursor:default"><td class="l">${l.d}</td><td class="l">${esc(l.desc)}</td><td>${l.pik && !l.cx ? '<span class="mut">incorporado</span>' : l.cx ? (l.amort ? "<b>" + f2.format(l.cx) + "</b>" : f2.format(l.cx)) : "–"}</td></tr>`).join("")}</tbody></table></div>
+    <div class="nota" style="margin-top:4px">Caixa projetado por debênture, supondo pagamento integral: DI futuro e inflação implícita da curva ANBIMA de ${dbr(c.curva)}, escalado para o PU par de hoje (R$ ${fmt(c.par)}).</div>`;
 }
 
 // ------------------------------------------------------------------ tela: curva de juros
