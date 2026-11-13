@@ -444,7 +444,7 @@ async function abrirTitulo(i) {
   const dados = [
     ["PU negociado", fmt(i.up)], ["PU par (curva)", fmt(i.par)], ["Volume hoje", i.vh ? "R$ " + mi(i.vh) : "–"],
     ["Vencimento", esc(i.ven || "–")], ["Remuneração", esc(i.idx || "–")], ["Taxa ANBIMA", taxaAnb(i.ta, i.idx)],
-    ["PU ANBIMA", fmt(i.pa)], ["Duration (d.u.)", fmt(i.du, f0)], ["Garantia", garCurta(i)],
+    ["PU ANBIMA", fmt(i.pa)], ["Duration (d.u.)", fmt(i.du, f0)], ["Garantia", garTipoTxt(i) + (i.gres && i.gn ? `<div class="sub" style="font-weight:400">${esc(i.gres)}</div>` : "")],
     ["Emissão / série", i.em ? `${esc(i.em)}ª / ${esc(i.se || "–")}` : "–"], ["Qtd. em mercado", i.qm ? f0.format(i.qm) : "–"],
     ["Incentivada (12.431)", i.inc == null ? "–" : i.inc ? "Sim" : "Não"], ["Resgate antecipado", i.ra == null ? "–" : i.ra ? "Previsto" : "Não"],
     ["Categoria ANBIMA", esc((i.cat || "–").replace(/_/g, " "))],
