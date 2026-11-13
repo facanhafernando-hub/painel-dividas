@@ -1,4 +1,4 @@
-"""Diagnóstico: tipos de evento na agenda do SND (cronograma de todas as debêntures)."""
+"""Diagnóstico: base dos percentuais de amortização (VNE x VNA, FIX x VAR) na agenda do SND."""
 import collections, time, urllib.request, urllib.parse
 from datetime import date, timedelta
 
@@ -6,47 +6,39 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 S = "https://www.debentures.com.br/exploreosnd/consultaadados/eventosfinanceiros/agenda_e.asp"
 
 
-def baixa(di, df):
+def agenda(ativo, di=date(2000, 1, 1), df=date(2080, 12, 31)):
     q = urllib.parse.quote
-    u = f"{S}?op_exc=False&ativo=&dt_ini={q(di.strftime('%d/%m/%Y'))}&dt_fim={q(df.strftime('%d/%m/%Y'))}&evento="
-    t0 = time.time()
-    b = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=180).read()
-    linhas = [l.split("\t") for l in b.decode("cp1252", errors="replace").replace("\r", "").split("\n") if l.count("\t") >= 6]
-    return linhas[1:], time.time() - t0, len(b)
+    u = f"{S}?op_exc=False&ativo={ativo}&dt_ini={q(di.strftime('%d/%m/%Y'))}&dt_fim={q(df.strftime('%d/%m/%Y'))}&evento="
+    b = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=120).read()
+    return [[x.strip() for x in l.split("\t")] for l in b.decode("cp1252", errors="replace").replace("\r", "").split("\n") if l.count("\t") >= 6][1:]
 
 
-hoje = date.today()
-tot = []
-for k in range(0, 8):
-    di = hoje + timedelta(days=365 * k)
-    df = di + timedelta(days=364)
+def num(s):
     try:
-        ls, dt, n = baixa(di, df)
-        print(f"{di}..{df}: {len(ls)} eventos, {n/1e6:.1f} MB, {dt:.0f}s")
-        tot += ls
-    except Exception as e:
-        print(di, "erro", e)
-# janela longa de uma vez (o resto até 2080)
-try:
-    ls, dt, n = baixa(hoje + timedelta(days=365 * 8), date(2080, 12, 31))
-    print(f"8a..2080: {len(ls)} eventos, {n/1e6:.1f} MB, {dt:.0f}s"); tot += ls
-except Exception as e:
-    print("longo erro", e)
+        return float(s.replace(".", "").replace(",", "."))
+    except Exception:
+        return 0.0
 
-ev = collections.Counter(r[4].strip() for r in tot)
-print("\nEVENTOS:", ev.most_common())
-for e in ev:
-    tipos = collections.Counter(r[5].strip() for r in tot if r[4].strip() == e)
-    print(f"\n[{e}] tipos:", tipos.most_common(12))
-    amostra = [r for r in tot if r[4].strip() == e][:4]
-    for r in amostra:
-        print("    ", [x.strip() for x in r[:9]])
-print("\nliquidação:", collections.Counter(r[7].strip() if len(r) > 7 else "" for r in tot).most_common(8))
-ativos = {r[3].strip() for r in tot}
-print("ativos com eventos futuros:", len(ativos))
-am = collections.Counter(r[3].strip() for r in tot if r[4].strip().startswith("Amort"))
-print("ativos com amortização:", len(am))
-for cod in ("HAPV15", "HAPVA0", "RAIZ14", "LIGHB4", "RESA17"):
-    print(f"\n{cod}:")
-    for r in [x for x in tot if x[3].strip() == cod][:30]:
-        print("    ", [x.strip() for x in r[:8]])
+
+# pega exemplos de cada base a partir da agenda do próximo ano
+hoje = date.today()
+q = urllib.parse.quote
+u = f"{S}?op_exc=False&ativo=&dt_ini={q(hoje.strftime('%d/%m/%Y'))}&dt_fim={q((hoje + timedelta(days=365)).strftime('%d/%m/%Y'))}&evento="
+b = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": UA}), timeout=120).read()
+ls = [[x.strip() for x in l.split("\t")] for l in b.decode("cp1252", errors="replace").replace("\r", "").split("\n") if l.count("\t") >= 6][1:]
+por_tipo = collections.defaultdict(list)
+for r in ls:
+    if r[4].startswith("Amort"):
+        if r[3] not in por_tipo[r[5]]:
+            por_tipo[r[5]].append(r[3])
+for tipo, ativos in por_tipo.items():
+    print("=" * 70, f"\nTIPO {tipo!r}: {len(ativos)} ativos")
+    for a in ativos[:4]:
+        ev = agenda(a)
+        am = [r for r in ev if r[4].startswith("Amort")]
+        venc = [r for r in ev if r[4] == "Vencimento"]
+        ps = [num(r[6]) for r in am]
+        passado = [num(r[6]) for r in am if r[0][-4:] + r[0][3:5] + r[0][:2] <= hoje.strftime("%Y%m%d")]
+        print(f"  {a}: {len(am)} amortizações (passadas {len(passado)}), soma % total {sum(ps):.2f}, soma passada {sum(passado):.2f}; "
+              f"primeira {am[0][0] if am else '-'}, última {am[-1][0] if am else '-'}, venc {venc[0][0] if venc else '-'}")
+        print("     %:", [round(p, 4) for p in ps[:14]], "..." if len(ps) > 14 else "")
