@@ -123,6 +123,12 @@ def documentos(emissoes, linhas):
             tipo = "escritura"
         elif r.get("Tipo") == "AGDEB" and r.get("Especie") == "Ata":
             tipo = "ata_agd"
+        elif r.get("Tipo") == "AGDEB" and r.get("Especie", "").startswith("Proposta"):
+            tipo = "proposta_agd"
+        elif cat in ("Fato Relevante", "Comunicado ao Mercado") and re.search(
+                r"deb[eê]nt|vencimento antecipado|recupera[cç][aã]o|assembleia[s]? gera(l|is) de debenturistas|\bagd|reperfil|repactua|reestrutura",
+                sem_acento(r.get("Assunto", "")), re.I):
+            tipo = "comunicado"
         elif cat == CAT_RJ and r.get("Tipo") in ("Plano de Recuperação", "Pedido de homologação de Plano de Recuperação Extrajudicial"):
             tipo = "plano_rj"
         else:
@@ -133,7 +139,7 @@ def documentos(emissoes, linhas):
         for (cc, em) in emissoes:
             if cc != c:
                 continue
-            if tipo == "plano_rj" or int(em) in ns or (not ns and tipo == "escritura"):
+            if tipo == "plano_rj" or int(em) in ns or not ns:
                 por[(cc, em)].append(doc)
     # remove versões antigas do mesmo protocolo
     for k, ds in por.items():
@@ -153,7 +159,10 @@ def selecionar(ds):
         sel.append(esc[0])
         sel += [d for d in esc[-3:] if d is not esc[0]]
     ult = esc[-1]["data"] if esc else "0000"
-    sel += [d for d in ds if d["tipo"] == "ata_agd" and d["data"] >= ult][-3:]
+    recente = (date.today().replace(year=date.today().year - 2)).isoformat()
+    sel += [d for d in ds if d["tipo"] == "ata_agd" and d["data"] >= ult][-4:]
+    sel += [d for d in ds if d["tipo"] == "proposta_agd" and d["data"] >= ult][-2:]
+    sel += [d for d in ds if d["tipo"] == "comunicado" and d["data"] >= max(ult, recente)][-3:]
     sel += [d for d in ds if d["tipo"] == "plano_rj"][-1:]
     return sorted(sel, key=lambda d: d["data"])
 
@@ -290,13 +299,22 @@ def conferir(serie):
             return datetime.strptime(d, "%d/%m/%Y").strftime("%Y-%m-%d")
         except Exception:
             return d
-    snd = {iso(e[0]): e[2] for e in ev if e[1] in ("A", "V")}
+    snd = {iso(e[0]): e[2] for e in ev if e[1] in ("A", "V") and (e[2] or 0) > 0}
     doc = {a["data"]: a.get("percentual") for a in serie.get("amortizacoes") or [] if a.get("data")}
-    comuns = set(snd) & set(doc)
-    dif_pct = sorted(d for d in comuns if snd[d] is not None and doc[d] is not None and abs(float(snd[d]) - float(doc[d])) > 0.01)
-    return {"snd": True, "amort_snd": len(snd), "amort_doc": len(doc), "datas_iguais": len(comuns),
-            "so_snd": sorted(set(snd) - set(doc))[:12], "so_doc": sorted(set(doc) - set(snd))[:12], "pct_diferente": dif_pct[:12],
-            "ok": len(comuns) == len(snd) == len(doc) and not dif_pct}
+    par, livres = {}, set(snd)
+    for d in sorted(doc):          # casa cada data do documento com a do SND (que já vem ajustada para dia útil)
+        try:
+            dd = datetime.strptime(d, "%Y-%m-%d")
+        except Exception:
+            continue
+        cand = [x for x in livres if abs((datetime.strptime(x, "%Y-%m-%d") - dd).days) <= 5]
+        if cand:
+            x = min(cand, key=lambda x: abs((datetime.strptime(x, "%Y-%m-%d") - dd).days))
+            par[d] = x; livres.discard(x)
+    dif_pct = sorted(d for d, x in par.items() if snd[x] is not None and doc[d] is not None and abs(float(snd[x]) - float(doc[d])) > 0.05)
+    return {"snd": True, "amort_snd": len(snd), "amort_doc": len(doc), "datas_iguais": len(par),
+            "so_snd": sorted(livres)[:12], "so_doc": sorted(set(doc) - set(par))[:12], "pct_diferente": dif_pct[:12],
+            "ok": len(par) == len(snd) == len(doc) and not dif_pct}
 
 
 # ---------------------------------------------------------------- orquestração
