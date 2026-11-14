@@ -29,6 +29,11 @@
   "razao": "ABC BRASIL COMERCIALIZADORA DE ENERGIA LTDA",
   "fonte": "modelo"
  },
+ "ABECKER EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Abecker",
+  "razao": "ABECKER EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "ACEF": {
   "nome": "ACEF",
   "razao": "ACEF S.A.",
@@ -1629,6 +1634,11 @@
   "razao": "CELESTE ENER. SOL. PEDRA PRETA MT 002 SPE S.A.",
   "fonte": "modelo"
  },
+ "CELM AQUICULTURA": {
+  "nome": "Celm Aquicultura",
+  "razao": "CELM AQUICULTURA S.A.",
+  "fonte": "modelo"
+ },
  "CEMIG DISTRIBUICAO": {
   "nome": "Cemig D",
   "razao": "CEMIG DISTRIBUICAO S/A",
@@ -2214,6 +2224,11 @@
   "razao": "COOPERATIVA AGRICOLA MISTA GENERAL OSORIO LTDA",
   "fonte": "modelo"
  },
+ "COOPERATIVA AGROINDUSTRIAL COPAGRIL": {
+  "nome": "Copagril",
+  "razao": "COOPERATIVA AGROINDUSTRIAL COPAGRIL",
+  "fonte": "modelo"
+ },
  "COOPERATIVA AGROINDUSTRIAL PARAGOMINENSE COOPERNORTE": {
   "nome": "Coopernorte",
   "razao": "COOPERATIVA AGROINDUSTRIAL PARAGOMINENSE - COOPERNORTE",
@@ -2302,6 +2317,11 @@
  "CPR1 AMERICANA EMPREENDIMENTO IMOBILIARIO SPE": {
   "nome": "CPR1 Americana",
   "razao": "CPR1 AMERICANA EMPREENDIMENTO IMOBILIARIO SPE LTDA.",
+  "fonte": "modelo"
+ },
+ "CPR7 CAMPINAS EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "CPR7 Campinas",
+  "razao": "CPR7 CAMPINAS EMPREENDIMENTO IMOBILIARIO SPE LTDA",
   "fonte": "modelo"
  },
  "CPS DE PRODUCAO SUSTENTAVEL": {
@@ -2599,6 +2619,11 @@
   "razao": "DISTRIBUIDORA DE PRODUTOS DE PETRÓLEO CHARRUA LTDA.",
   "fonte": "modelo"
  },
+ "DISTRIBUIDORA EQUADOR DE PRODUTOS DE PETROLEO": {
+  "nome": "Distribuidora Equador",
+  "razao": "DISTRIBUIDORA EQUADOR DE PRODUTOS DE PETROLEO S.A.",
+  "fonte": "modelo"
+ },
  "DIX EMPREENDIMENTOS": {
   "nome": "DIX",
   "razao": "DIX EMPREENDIMENTOS S.A",
@@ -2647,6 +2672,11 @@
  "DURATEX FLORESTAL": {
   "nome": "Duratex Florestal",
   "razao": "Duratex Florestal Ltda",
+  "fonte": "modelo"
+ },
+ "DUVOISIN GARUVA LOTEAMENTOS SPE": {
+  "nome": "Duvoisin Garuva",
+  "razao": "DUVOISIN GARUVA LOTEAMENTOS SPE LTDA",
   "fonte": "modelo"
  },
  "DUX COMPANY": {
@@ -2967,6 +2997,11 @@
  "ENAUTA ENERGIA": {
   "nome": "Enauta",
   "razao": "ENAUTA ENERGIA S.A.",
+  "fonte": "modelo"
+ },
+ "ENCORE EMPREENDIMENTOS SPE": {
+  "nome": "Encore SPE",
+  "razao": "ENCORE EMPREENDIMENTOS SPE S/A.",
   "fonte": "modelo"
  },
  "ENEBRA BRASIL ENERGIA": {
@@ -3772,6 +3807,11 @@
  "GNL BRASIL LOGISTICA": {
   "nome": "GNL Brasil Logística",
   "razao": "GNL BRASIL LOGISTICA S.A.",
+  "fonte": "modelo"
+ },
+ "GNS CONSTRUTORA E INCORPORADORA": {
+  "nome": "GNS Construtora",
+  "razao": "GNS CONSTRUTORA E INCORPORADORA LTDA",
   "fonte": "modelo"
  },
  "GOIAS GERADORA DE ENERGIA RENOVAVEL": {
@@ -5425,9 +5465,19 @@
   "razao": "OPEA SPE 02 COMPANHIA SECURITIZADORA DE CREDITOS FINANCEIROS - AGIBANK",
   "fonte": "modelo"
  },
+ "OPI MALL EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "OPI Mall",
+  "razao": "OPI MALL EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+  "fonte": "modelo"
+ },
  "OPTIPAR PARTICIPACOES": {
   "nome": "Optipar",
   "razao": "OPTIPAR PARTICIPACOES S. A.",
+  "fonte": "modelo"
+ },
+ "OR3 HOTEL E TURISMO BH": {
+  "nome": "OR3 Hotel e Turismo BH",
+  "razao": "OR3 HOTEL E TURISMO BH LTDA.",
   "fonte": "modelo"
  },
  "ORE SECURITIZADORA": {
@@ -5768,6 +5818,11 @@
  "PLUGIFY TECNOLOGIA": {
   "nome": "Plugify",
   "razao": "PLUGIFY TECNOLOGIA S/A",
+  "fonte": "modelo"
+ },
+ "PLURAL 1 PARTICIPACOES SPE": {
+  "nome": "Plural 1",
+  "razao": "PLURAL 1 PARTICIPACOES SPE LTDA",
   "fonte": "modelo"
  },
  "PMZ DISTRIBUIDORA": {
@@ -6118,6 +6173,11 @@
  "RFM E 01 EMPREENDIMENTO IMOBILIARIO": {
   "nome": "RFM-E 01",
   "razao": "RFM-E 01 EMPREENDIMENTO IMOBILIARIO LTDA",
+  "fonte": "modelo"
+ },
+ "RFM E 1100 FRANCA EMPREENDIMENTO IMOBILIARIO": {
+  "nome": "RFM-E 1100 Franca",
+  "razao": "RFM-E 1100 FRANCA EMPREENDIMENTO IMOBILIARIO LTDA",
   "fonte": "modelo"
  },
  "RGE SUL DISTRIBUIDORA DE ENERGIA": {
@@ -7290,6 +7350,11 @@
   "razao": "TWO SQUARE TRANSMISSIONS PARTICIPACOES S/A.",
   "fonte": "modelo"
  },
+ "TZI CAMPO BELO EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "TZI Campo Belo",
+  "razao": "TZI CAMPO BELO EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "UFV GD TM LOCACAO": {
   "nome": "UFV GD TM Locação",
   "razao": "UFV GD TM LOCACAO LTDA",
@@ -7830,6 +7895,11 @@
   "razao": "VITA SERTAO CONCESSIONARIA DE SANEAMENTO S.A.",
   "fonte": "modelo"
  },
+ "VITACON PARTICIPACOES": {
+  "nome": "Vitacon",
+  "razao": "VITACON PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
  "VITAL ENGENHARIA AMBIENTAL": {
   "nome": "Vital Engenharia Ambiental",
   "razao": "VITAL ENGENHARIA AMBIENTAL SA",
@@ -7963,6 +8033,11 @@
  "ZAMP": {
   "nome": "Zamp",
   "razao": "ZAMP S.A.",
+  "fonte": "modelo"
+ },
+ "ZANCHETTA ALIMENTOS": {
+  "nome": "Zanchetta Alimentos",
+  "razao": "ZANCHETTA ALIMENTOS LTDA.",
   "fonte": "modelo"
  },
  "ZX RENOVAVEIS": {
