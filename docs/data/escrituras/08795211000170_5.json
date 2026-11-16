@@ -1,0 +1,194 @@
+{
+ "series": [
+  {
+   "codigo": "MSRO15",
+   "emissao": 5,
+   "serie": "UNI",
+   "data_emissao": "2022-01-10",
+   "vencimento": "2031-04-10",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 4.0,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "Escritura original (2022): 100% Taxa DI + 3,90% a.a., base 252 du. O Anexo I da cessão fiduciária (anexo às propostas de 2026-07-31) descreve a 5ª emissão 'conforme aditada' com spread de 4,00% a.a. A data exata de início da vigência não consta nos trechos. O comunicado de 2026-08-10 fala em 'redução dos juros remuneratórios', o que não bate com 3,90% → 4,00%; deve ter havido aditamento intermediário que não está nos trechos."
+   },
+   "juros": {
+    "periodicidade_meses": 1,
+    "primeira_data": "2022-02-10",
+    "ultima_data": "2031-04-10",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-05-10",
+     "percentual": null,
+     "base": "saldo"
+    }
+   ],
+   "premios": [
+    {
+     "data": null,
+     "descricao": "Prêmio contingente de 10% do valor monetário líquido pago aos acionistas da Emissora em operação de venda, direta ou indireta, das ações (Equity Kicker). É rateado entre os debenturistas da 5ª, 6ª e 7ª emissões, de forma combinada, pela posição credora de cada um. Foi aprovado na AGD de 2026-07-08, ratificada em 2026-08-07. Não tem data certa. A redação final está na Cláusula 6.32 do 2º aditamento, cujo texto integral não consta nos trechos."
+    },
+    {
+     "data": null,
+     "descricao": "Prêmio de 1,75% flat no Resgate Antecipado Facultativo total, permitido a partir de 2023-01-10 (exclusive), conforme a escritura original. É opcional, não é parte do cronograma, e não há confirmação de que tenha sido mantido nos aditamentos."
+    }
+   ],
+   "fonte": "Escritura da 5ª emissão (Doc. 1): cláusulas 6.12 a 6.17, para data de emissão, VNE, juros mensais no dia 10 e remuneração original. Doc. 9 (comunicado de 2026-08-10) e Anexo I da cessão fiduciária (Docs. 5 e 6), para vencimento em 2031-04-10, carência de principal até abril/2027 e amortização mensal no dia 10 a partir de maio/2027. Doc. 7 (AGD de 2026-08-07, que aprovou o 2º aditamento da 5ª emissão), para a existência do aditamento.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 48,
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [
+     "2027-06-10",
+     "2027-07-12",
+     "2027-08-10",
+     "2027-09-10",
+     "2027-10-11",
+     "2027-11-10",
+     "2027-12-10",
+     "2028-01-10",
+     "2028-02-10",
+     "2028-03-10",
+     "2028-04-10",
+     "2028-05-10"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "5ª emissão: o vencimento antecipado do CRA Maestro, comunicado em 2026-04-17, acionou o cross default nas debêntures da 5ª, 6ª e 7ª emissões, conforme notificação do agente fiduciário. A AGD da 7ª emissão (2026-05-08, reaberta em 2026-07-07/08) aprovou a sustação dos efeitos, e o Doc. 7 menciona AGD de 2026-07-08 'ratificada' em 2026-08-07. Nos trechos, a sustação para a 5ª emissão não aparece de forma expressa. Em 2026-08-07, a AGD da 5ª emissão (99,85% das debêntures em circulação) aprovou os Documentos da Reestruturação: 2º aditamento, aditamento da alienação fiduciária e nova cessão fiduciária de conta. O comunicado de 2026-08-10 informa que a reestruturação foi concluída em 2026-08-07 com a assinatura dos aditamentos. Há waiver dos covenants financeiros por 12 meses, a contar de 2026-07-08, e obrigação de capitalização mínima de R$ 50 milhões até 2027-08-06, sob pena de vencimento antecipado automático e exercício de bônus de subscrição. Não há RJ/RE declarada nos trechos.",
+ "lacunas": "1) A tabela de amortização da 5ª emissão (original e do 2º aditamento) não está legível nos trechos. A tabela original está truncada: restam só 2,3810% em 2023-08-10 e 16,6667%, 20% e 25% em 2026-08-10, 09-10 e 10-10, mais 100% no vencimento original de 2027-01-10. Essa tabela foi substituída. O Doc. 9 só informa carência de principal até abril/2027 (inclusive) e amortização mensal a partir de maio/2027, até o vencimento em 2031-04-10. Os percentuais não constam. Se a 5ª tiver o mesmo desenho da 6ª e da 7ª, seriam 48 parcelas de 2,08% a 100% sobre o saldo do VNU, mas isso é inferência e não foi confirmado. 2) Não consta o texto do 2º aditamento da 5ª emissão (Cláusulas 6.13, 6.14, 6.16), nem o do 1º aditamento, que parece ter existido, pois o Doc. 3 fala em carência anterior. A data de vigência do spread de 4,00% e a razão da divergência com a 'redução' citada no comunicado ficam sem esclarecimento. 3) Não há registro de incorporação de juros (PIK) nem de carência de juros para a 5ª emissão. Os juros seguem mensais no dia 10, mas isso não foi confirmado no aditamento. 4) A data de assinatura do 2º aditamento é de 2026-08-07, segundo o comunicado. O texto assinado não está nos trechos. 5) Os Docs. 2 e 4 a 6 tratam principalmente de outras emissões (6ª e 7ª). Só foram usados para a 5ª quando mencionam a 5ª de forma expressa.",
+ "meta": {
+  "emissora": "MAESTRO LOCADORA DE VEICULOS  S.A",
+  "cnpj": "08795211000170",
+  "emissao": "5",
+  "lido_em": "2026-11-16",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-02-01",
+    "tipo": "escritura",
+    "assunto": "Escritura da 5ª Emissão de Debêntures",
+    "protocolo": "023612IPE100120220104459310-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=937318&numSequencia=462052&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-02-12",
+    "tipo": "comunicado",
+    "assunto": "Aprovação 7ª. Emissão de Debêntures",
+    "protocolo": "023612IPE120220250104570011-73",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1334124&numSequencia=858850&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-04-17",
+    "tipo": "comunicado",
+    "assunto": "Vencimento Antecipado CRA (Certificados de Recebíveis do Agronegócio)",
+    "protocolo": "023612IPE170420260134227284-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1506265&numSequencia=1030971&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-12",
+    "tipo": "ata_agd",
+    "assunto": "Sustação dos efeitos do vencimento antecipado automático das Debêntures",
+    "protocolo": "023612IPE080720260116582291-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544202&numSequencia=1068908&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-31",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260243544490-76",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1550749&numSequencia=1075455&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-31",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260217369078-38",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1550752&numSequencia=1075458&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-07",
+    "tipo": "ata_agd",
+    "assunto": "Aprovar a reestruturação da Emissão,",
+    "protocolo": "023612IPE070820260146896191-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554546&numSequencia=1079252&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-07",
+    "tipo": "ata_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260191051373-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554566&numSequencia=1079272&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-07",
+    "tipo": "ata_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260164181030-76",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554571&numSequencia=1079277&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-10",
+    "tipo": "comunicado",
+    "assunto": "Reestruturação Debêntures",
+    "protocolo": "023612IPE070820260125535054-88",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554631&numSequencia=1079337&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 83767,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5309,
+   "output_tokens_details": {
+    "thinking_tokens": 3123
+   },
+   "service_tier": "standard",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08795211000170_5"
+ },
+ "eventos": {
+  "MSRO15": {
+   "evento": "vencimento_antecipado",
+   "data": "2026-04-17",
+   "resumo": "Vencimento antecipado do CRA Maestro acionou cross default. Sustação não consta expressamente para a 5ª emissão. Reestruturação concluída em 2026-08-07, com waiver."
+  }
+ }
+}
