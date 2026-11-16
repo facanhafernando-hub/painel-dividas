@@ -55,6 +55,7 @@ jobs:
           if [ "${{ github.event.inputs.recalcular }}" = "sim" ]; then ARGS="--recalcular"; fi
           # a passada das 23:17 BRT roda já no dia seguinte em UTC, mas o script usa a data de Brasília
           python coletor/coletar.py $ARGS
+          python coletor/auditoria.py || true
 
       - name: Salvar dados no repositório
         if: always()
