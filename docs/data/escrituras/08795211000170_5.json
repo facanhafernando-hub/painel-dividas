@@ -186,9 +186,10 @@
  },
  "eventos": {
   "MSRO15": {
-   "evento": "vencimento_antecipado",
-   "data": "2026-04-17",
-   "resumo": "Vencimento antecipado do CRA Maestro acionou cross default. Sustação não consta expressamente para a 5ª emissão. Reestruturação concluída em 2026-08-07, com waiver."
+   "evento": "reperfilamento",
+   "data": "2026-08-07",
+   "resumo": "Vencimento antecipado do CRA Maestro (17/04/2026) acionou cross default; AGD de 07/08/2026 (99,85% em circulação) aprovou a reestruturação: carência de principal até abr/2027, 48 amortizações mensais a partir de mai/2027, vencimento em abr/2031, bônus de subscrição e equity kicker de 10%. Waiver de covenants por 12 meses; capitalização mínima de R$ 50 mi até 06/08/2027, sob pena de vencimento antecipado automático.",
+   "fonte": "ajuste manual: leitura automática marcou vencimento antecipado, mas a reestruturação aprovada em AGD susta seus efeitos"
   }
  }
 }
