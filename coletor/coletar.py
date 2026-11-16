@@ -1419,16 +1419,47 @@ def construir_catalogo() -> None:
     hoje = {a["c"]: a for a in ult["ativos"]}
     snd = snd_cadastro()
     # último negócio de cada título nos últimos 30 pregões
-    ultimo_neg: dict[str, tuple] = {}
+    # Lote pequeno (< R$ 100 mil) com preço mais de 10 p.p. longe da referência (indicativo ANBIMA do dia ou, sem ele,
+    # mediana dos negócios do título ponderada por volume) não define o preço: fica registrado como negócio atípico.
+    LOTE_MIN, DESVIO_MAX = 100_000, 10.0
+    negs: dict[str, list] = collections.defaultdict(list)
     info: dict[str, dict] = {}
     for ds in datas[-30:]:
         for a in json.loads((DADOS / "daily" / f"{ds}.json").read_text(encoding="utf-8"))["ativos"]:
             info[a["c"]] = a
             if a.get("n"):
                 pp_ = a.get("p") or {}
-                ultimo_neg[a["c"]] = (ds, a["n"].get("pu_med"), a["n"].get("volume"),
+                negs[a["c"]].append(((ds, a["n"].get("pu_med"), a["n"].get("volume"),
                                       pp_.get("pct_par_neg"), pp_.get("y"), pp_.get("y_base"), pp_.get("y_est"),
-                                      pp_.get("tir"), pp_.get("moic"), pp_.get("ret"), pp_.get("prazo"))
+                                      pp_.get("tir"), pp_.get("moic"), pp_.get("ret"), pp_.get("prazo")),
+                                     (a.get("a") or {}).get("pct_par")))
+
+    def mediana_pond(xs):
+        xs = sorted(xs)
+        tot, acc = sum(w for _, w in xs), 0.0
+        for v, w in xs:
+            acc += w
+            if acc >= tot / 2:
+                return v
+        return None
+
+    ultimo_neg: dict[str, tuple] = {}
+    atipico: dict[str, list] = {}
+    for c, h in negs.items():
+        com_pct = [(n[3], n[2] or 0) for n, _ in h if n[3] is not None]
+        med = mediana_pond(com_pct) if len(com_pct) >= 2 and sum(w for _, w in com_pct) > 0 else None
+        escolhido = None
+        for n, pa in reversed(h):
+            ref = pa if pa is not None else med
+            fora = n[3] is not None and ref is not None and (n[2] or 0) < LOTE_MIN and abs(n[3] - ref) > DESVIO_MAX
+            if not fora:
+                escolhido = n
+                break
+            if c not in atipico:
+                atipico[c] = [n[0], n[3], n[2], round(ref, 2)]
+        if escolhido:
+            ultimo_neg[c] = escolhido
+    log(f"  negócios atípicos ignorados no preço (lote < R$ 100 mil, > 10 p.p. da referência): {len(atipico)}")
     cods = {c for c, s in snd.items() if (s.get("qtd_mercado") or 0) > 0} | set(info)
     itens = []
     for c in sorted(cods):
@@ -1465,6 +1496,7 @@ def construir_catalogo() -> None:
             "cnpj": (s or {}).get("cnpj"), "ra": (s or {}).get("resgate_antecipado"),
             "par": (h.get("p") or {}).get("pu_par"),
             "ud": un[0] if un else None, "up": un[1] if un else None, "uv": un[2] if un else None,
+            "uig": atipico.get(c),
             "upp": un[3] if un else None, "uy": un[4] if un else None,
             "uyb": un[5] if un else None, "uye": un[6] if un else None,
             "utir": un[7] if un else (h.get("p") or {}).get("tir"),
