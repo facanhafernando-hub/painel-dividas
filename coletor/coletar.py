@@ -1538,7 +1538,8 @@ def construir_catalogo() -> None:
             "qm": (s or {}).get("qtd_mercado"), "vne": (s or {}).get("vne"),
             "cnpj": (s or {}).get("cnpj"), "ra": (s or {}).get("resgate_antecipado"),
             "par": (h.get("p") or {}).get("pu_par"),
-            "ud": un[0] if un else None, "up": un[1] if un else None, "uv": un[2] if un else None,
+            # PU negociado só quando o negócio define o preço (com % do par); senão o detalhe usa o PU ANBIMA
+            "ud": un[0] if un else None, "up": up_[1] if up_ else None, "uv": un[2] if un else None,
             "uig": atipico.get(c), "udf": defasado.get(c),
             # preço/yield: do último negócio com % do par; se o negócio não tem PU par, do indicativo ANBIMA de hoje
             "upp": up_[3] if up_ else None,
