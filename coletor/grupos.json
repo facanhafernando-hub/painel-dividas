@@ -15,5 +15,69 @@
  "BRF": {
   "grupo": "MARFRIG GLOBAL FOODS",
   "relacao": "subsidiária integral"
+ },
+ "ULTRA SOM SERVICOS MEDICOS": {
+  "grupo": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+  "relacao": "controlada"
+ },
+ "AGUAS DE TERESINA SANEAMENTO SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AGUAS DO PARA A SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AGUAS DO PARA B SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AGUAS DO PARA D SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AGUAS DO RIO 1 SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AGUAS DO RIO 4 SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AGUAS GUARIROBA": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AMBIENTAL CEARA 1 SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "AMBIENTAL CEARA 2 SPE": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "PADOVA PARTICIPACOES": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "PARSAN": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "PROLAGOS CONCESSIONARIA DE SERVICOS PUBLICOS DE AGUA E ESGOTO": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "REGENERA RIO": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "REUSO ITABORAI": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
+ },
+ "RIOGRANDENSE DE SANEAMENTO CORSAN": {
+  "grupo": "AEGEA SANEAMENTO E PARTICIPACOES",
+  "relacao": "controlada"
  }
 }

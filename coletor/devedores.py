@@ -144,6 +144,29 @@ def main():
             pick = {"cnpj": None, "pct": None, "tipo": "pulverizado", "ref": ref[0]}
         if pick:
             escolha[k] = pick
+    # valor unitário da série no fim do mês (Valor_Certificados / Quantidade_Certificados): base para estimar o PU par
+    # dos CRI/CRA que a ANBIMA não precifica (docs/data/cricra_informe.json)
+    def num(x):
+        try:
+            return float((x or "").replace(",", "."))
+        except ValueError:
+            return None
+    inf = {}
+    for r in classe:
+        cod = (r.get("Codigo_CETIP") or "").strip().upper()
+        if not cod:
+            continue
+        ref = (r.get("Data_Referencia") or "", int(r.get("Versao") or 0))
+        q, v = num(r.get("Quantidade_Certificados")), num(r.get("Valor_Certificados"))
+        if cod not in inf or ref > inf[cod]["_ref"]:
+            inf[cod] = {"_ref": ref, "ref": ref[0], "pu": round(v / q, 6) if q and v else None, "q": q, "v": v,
+                        "taxa": r.get("Taxa_Juros"), "classe": r.get("Classe"), "venc": r.get("Data_Vencimento"),
+                        "situacao": r.get("Situacao"), "rating": r.get("Classificacao_Risco_Atual"),
+                        "integralizado": num(r.get("Valor_Total_Integralizado"))}
+    for x in inf.values():
+        x.pop("_ref", None)
+    (DADOS / "cricra_informe.json").write_text(json.dumps(dict(sorted(inf.items())), ensure_ascii=False, indent=0), encoding="utf-8")
+    log(f"valor unitário do informe: {sum(1 for x in inf.values() if x['pu'])} códigos")
     # código CETIP -> certificado
     cod_cert = {}
     for r in classe:

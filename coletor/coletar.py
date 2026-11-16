@@ -966,6 +966,28 @@ def tir_moic(fluxo, pu_par: float, preco: float) -> dict:
 def calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict | None,
                            snd: dict | None, curva: dict | None, cv: "Curva | None" = None,
                            ev: list | None = None) -> dict:
+    """% do par e yield; descarta o PU par do SND quando ele é claramente inconsistente com o mercado."""
+    out = _calcular_preco_e_yield(t, d, neg, anb, snd, curva, cv, ev)
+    pct, y = out.get("pct_par_neg"), out.get("y")
+    if pct is None and (anb or {}).get("pu") and out.get("pu_par"):
+        pct = (anb or {}).get("pct_par")
+    cupom = (snd or {}).get("taxa")
+    motivo = None
+    if (snd or {}).get("vne") is not None and snd["vne"] < 1:
+        motivo = "VNE abaixo de R$ 1 (debênture participativa ou sem valor de face)"
+    elif out.get("fonte_par") == "SND" and pct is not None and pct > 115 and \
+            not (y is not None and -1 < y < (cupom if cupom is not None else 0) + 0.5):
+        motivo = f"PU negociado {pct:.0f}% do PU par do SND sem yield coerente: PU par provavelmente desatualizado"
+    if motivo:
+        for k in ("pu_par", "pct_par_neg", "y", "y_base", "y_met", "tir", "moic", "ret", "prazo", "recebe"):
+            out[k] = None
+        out["par_suspeito"] = motivo
+    return out
+
+
+def _calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict | None,
+                            snd: dict | None, curva: dict | None, cv: "Curva | None" = None,
+                            ev: list | None = None) -> dict:
     """% do par e yield implícito (hold to maturity, pagando tudo no vencimento) do PU negociado."""
     pmed = (neg or {}).get("pu_med")
     # ANBIMA primeiro (calcula o par com VNA atualizado); SND como alternativa, pois em
@@ -1449,6 +1471,7 @@ def construir_catalogo() -> None:
 
     ultimo_neg: dict[str, tuple] = {}
     atipico: dict[str, list] = {}
+    defasado: dict[str, list] = {}
     for c, h in negs.items():
         com_pct = [(n[3], n[2] or 0) for n, _ in h if n[3] is not None]
         med = mediana_pond(com_pct) if len(com_pct) >= 2 and sum(w for _, w in com_pct) > 0 else None
@@ -1462,16 +1485,22 @@ def construir_catalogo() -> None:
         for n, pa in reversed(h):
             ref = pa if pa is not None else (anb_mais_proximo(n[0]) if anb_pct.get(c) else med)
             dif = abs(n[3] - ref) if n[3] is not None and ref is not None else 0
-            # lote pequeno a mais de 10 p.p., ou até R$ 1 mi a mais de 25 p.p. da referência
-            fora = ((n[2] or 0) < LOTE_MIN and dif > DESVIO_MAX) or ((n[2] or 0) < 1_000_000 and dif > 25)
+            # lote < R$ 100 mil a mais de 10 p.p., < R$ 500 mil a mais de 15 p.p., ou < R$ 1 mi a mais de 25 p.p.
+            v_ = n[2] or 0
+            fora = (v_ < LOTE_MIN and dif > DESVIO_MAX) or (v_ < 500_000 and dif > 15) or (v_ < 1_000_000 and dif > 25)
             if not fora:
                 escolhido = n
                 break
             if c not in atipico:
                 atipico[c] = [n[0], n[3], n[2], round(ref, 2)]
         if escolhido:
+            pa_hoje = (anb_pct.get(c) or [(None, None)])[-1]
+            if pa_hoje[0] == datas[-1] and escolhido[3] is not None and pa_hoje[1] is not None \
+                    and len([x for x in datas[-30:] if x > escolhido[0]]) > 10 and abs(escolhido[3] - pa_hoje[1]) > 5:
+                defasado[c] = [escolhido[0], escolhido[3], escolhido[2], round(pa_hoje[1], 2)]
+                escolhido = escolhido[:3] + (None,) + escolhido[4:]      # mantém data/PU, preço pelo indicativo
             ultimo_neg[c] = escolhido
-    log(f"  negócios atípicos ignorados no preço: {len(atipico)}")
+    log(f"  negócios atípicos ignorados no preço: {len(atipico)} | defasados (preço pelo indicativo): {len(defasado)}")
     cods = {c for c, s in snd.items() if (s.get("qtd_mercado") or 0) > 0} | set(info)
     itens = []
     for c in sorted(cods):
@@ -1482,6 +1511,8 @@ def construir_catalogo() -> None:
             continue
         anb = (h.get("a") or a.get("a")) or {}
         un = ultimo_neg.get(c)
+        up_ = un if un and un[3] is not None else None      # negócio com % do par
+        hp = h.get("p") or {}
         emp = a.get("e") or (s or {}).get("empresa")
         dv = devedores_cricra().get(c.upper()) or {} if t in ("CRI", "CRA") else {}
         if t in ("CRI", "CRA") and not anb.get("devedor") and dv.get("nome") and dv.get("tipo") in ("devedor", "cedente"):
@@ -1508,16 +1539,18 @@ def construir_catalogo() -> None:
             "cnpj": (s or {}).get("cnpj"), "ra": (s or {}).get("resgate_antecipado"),
             "par": (h.get("p") or {}).get("pu_par"),
             "ud": un[0] if un else None, "up": un[1] if un else None, "uv": un[2] if un else None,
-            "uig": atipico.get(c),
-            "upp": un[3] if un else None, "uy": un[4] if un else None,
-            "uyb": un[5] if un else None, "uye": un[6] if un else None,
-            "utir": un[7] if un else (h.get("p") or {}).get("tir"),
-            "umoic": un[8] if un else (h.get("p") or {}).get("moic"),
-            "uret": un[9] if un else (h.get("p") or {}).get("ret"),
-            "uprz": un[10] if un else (h.get("p") or {}).get("prazo"),
-            "uind": not un and (h.get("p") or {}).get("ref") == "ANBIMA",
-            "uy": un[4] if un else (h.get("p") or {}).get("y"),
-            "uyb": un[5] if un else (h.get("p") or {}).get("y_base"),
+            "uig": atipico.get(c), "udf": defasado.get(c),
+            # preço/yield: do último negócio com % do par; se o negócio não tem PU par, do indicativo ANBIMA de hoje
+            "upp": up_[3] if up_ else None,
+            "uy": up_[4] if up_ else hp.get("y"),
+            "uyb": up_[5] if up_ else hp.get("y_base"),
+            "uye": up_[6] if up_ else hp.get("y_est"),
+            "utir": up_[7] if up_ else hp.get("tir"),
+            "umoic": up_[8] if up_ else hp.get("moic"),
+            "uret": up_[9] if up_ else hp.get("ret"),
+            "uprz": up_[10] if up_ else hp.get("prazo"),
+            "uind": not up_ and hp.get("ref") == "ANBIMA",
+            "parS": hp.get("par_suspeito"),
             "vh": (h.get("n") or {}).get("volume"),
             "ta": anb.get("tx_ind"), "pa": anb.get("pu"), "ppa": anb.get("pct_par"),
             "du": anb.get("duration"), "cat": anb.get("categoria"), "al": h.get("al") or [],
