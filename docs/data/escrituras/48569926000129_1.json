@@ -1,0 +1,40 @@
+{
+ "meta": {
+  "lido_em": "2026-11-16",
+  "fonte": "manual: ata da AGE de 01/12/2025 que aprovou a emissão, aviso ao mercado da oferta e relatório S&P (documentos públicos no RI da Aegea; a SPE não é companhia aberta e não tem documentos no IPE da CVM)"
+ },
+ "garantias": {
+  "CEAM11": {
+   "codigo": "CEAM11",
+   "emissao": 1,
+   "especie": "com garantia real, com garantia fidejussória adicional",
+   "resumo": "Real (penhor das ações da Ambiental Ceará 2 e cessão fiduciária dos recebíveis da concessão com a Cagece) + fiança da Aegea Saneamento até a liquidação integral",
+   "garantias": [
+    {
+     "tipo": "fiança",
+     "prestador_ou_objeto": "Aegea Saneamento e Participações S.A. (controladora), devedora solidária e principal pagadora",
+     "condicoes": "Vale até a liquidação integral das obrigações garantidas; a ata não prevê liberação. Covenant de dívida líquida/EBITDA da Aegea até 4,0x, apurado anualmente (relatório S&P de 02/12/2025).",
+     "situacao": "vigente",
+     "fonte": "Ata da AGE de 01/12/2025; aviso ao mercado"
+    },
+    {
+     "tipo": "penhor de ações",
+     "prestador_ou_objeto": "Totalidade das ações, atuais e futuras, da Ambiental Ceará 2, detidas pela Aegea, com direitos econômicos e dividendos",
+     "condicoes": "Formalizado em Contrato de Penhor de Ações; pode ser compartilhado pari passu com outros credores (Contrato de Compartilhamento de Garantias).",
+     "situacao": "vigente",
+     "fonte": "Ata da AGE de 01/12/2025"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recebíveis presentes e futuros do Contrato de Concessão do Bloco 2 com a Cagece (esgotamento sanitário), indenizações do poder concedente (extinção, caducidade, reequilíbrio), seguros e contas vinculadas, inclusive a Conta Reserva",
+     "condicoes": "Pode ser compartilhada pari passu com outros credores (Contrato de Compartilhamento de Garantias).",
+     "situacao": "vigente",
+     "fonte": "Ata da AGE de 01/12/2025"
+    }
+   ]
+  }
+ },
+ "garantias_meta": {
+  "lacunas": "Escritura completa não está na CVM; gatilhos de vencimento antecipado e índices da SPE não foram conferidos."
+ }
+}
