@@ -479,7 +479,7 @@ async function telaEmpresa(k) {
   if (st.abrirCod) { const it = itens.find(i => i.c === st.abrirCod); st.abrirCod = null; if (it) abrirTitulo(it); }
 }
 const NOTA_NUMEROS = `<details class="nota"><summary>Como ler os números</summary>
-  <p><b>% do par</b> = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * = indicativo ANBIMA, sem negócio nos últimos 30 pregões. A régua vai até o par (traço = 100%); fica vermelha abaixo de 80%, quando o retorno passa a depender da recuperação e não do contrato. Negócio com lote abaixo de R$ 100 mil e mais de 10 p.p. longe da referência (indicativo ANBIMA do dia ou, sem ele, mediana dos negócios do título) fica marcado como <b>lote atípico</b> e não define o preço.</p>
+  <p><b>% do par</b> = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * = indicativo ANBIMA, sem negócio nos últimos 30 pregões. A régua vai até o par (traço = 100%); fica vermelha abaixo de 80%, quando o retorno passa a depender da recuperação e não do contrato. Negócio com lote abaixo de R$ 100 mil a mais de 10 p.p. da referência, ou de até R$ 1 mi a mais de 25 p.p., fica marcado como <b>lote atípico</b> e não define o preço (referência: indicativo ANBIMA ou, sem ele, mediana dos negócios do título).</p>
   <p><b>Yield implícito</b> (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento. DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento).</p>
   <p><b>TIR nominal e MOIC</b> projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculados entre 5% e 150% do par. † = TIR contratual de título com evento de crédito, só como referência.</p>
   <p><b>Garantia</b> lida nas escrituras e aditamentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. <b>Selos</b> (venc. antecipado, RJ, RE, reperfilada) vêm da leitura de escrituras, atas de AGD e comunicados.</p></details>`;
@@ -569,7 +569,7 @@ const COLS = [
   ["pmax", "PU máx", r => r.n?.pu_max ?? -1, r => fmt(r.n?.pu_max)],
   ["panb", "PU ANBIMA", r => r._panb ?? -1, r => fmt(r._panb)],
   ["tx", "Taxa ANBIMA", r => r.a?.tx_ind ?? -999, r => taxaAnb(r.a?.tx_ind, r.a?.indice)],
-  ["al", "Alertas", r => r.al.length + (atip(r) ? 1 : 0), r => (atip(r) ? '<span class="tag t-warn" title="Lote pequeno com preço longe da referência; não entra no % do par da empresa">Lote atípico</span>' : "") + tags(r.al), "l"],
+  ["al", "Alertas", r => r.al.length + (atip(r) ? 1 : 0), r => (atip(r) ? '<span class="tag t-warn" title="Lote pequeno com preço longe da referência (ANBIMA); não entra no % do par">Lote atípico</span>' : "") + tags(r.al), "l"],
 ];
 function tabelaMercado() {
   const d = st.dia, q = semAc(st.buscaM.trim());
@@ -639,7 +639,7 @@ async function abrirTitulo(i) {
        ${i.crr ? `<div style="margin-top:6px;color:var(--text-primary)">${esc(i.crr)}</div>` : ""}
        ${crGrave(i.cr) ? '<div style="margin-top:6px">O retorno passa a depender da recuperação, não do cronograma original. Use o simulador; a TIR contratual fica só como referência.</div>' : ""}</div>` : "") +
     `<div class="hero">${hero.map(([l, v, x]) => `<div><div class="l">${l}</div><div class="v${v.replace(/<[^>]+>/g, "").length > 13 ? " longo" : ""}">${v}</div><div class="x">${x || "&nbsp;"}</div></div>`).join("")}</div>
-     ${i.uig ? `<div class="sub" style="margin-top:12px"><span class="tag t-warn" style="margin-left:0">Lote atípico</span> ${dbr(i.uig[0])}: R$ ${mi(i.uig[2])} a ${f1.format(i.uig[1])}% do par, contra referência de ${f1.format(i.uig[3])}%. Lote pequeno e longe do preço, por isso não entra no % do par acima.</div>` : ""}
+     ${i.uig ? `<div class="sub" style="margin-top:12px"><span class="tag t-warn" style="margin-left:0">Lote atípico</span> ${dbr(i.uig[0])}: R$ ${mi(i.uig[2])} a ${f1.format(i.uig[1])}% do par, contra referência de ${f1.format(i.uig[3])}%. Lote pequeno para um preço tão longe da referência, por isso não entra no % do par acima.</div>` : ""}
      ${al ? `<div style="margin-top:12px">${al.replace(/margin-left:\d+px/g, "")}</div>` : ""}
      ${crGrave(i.cr) ? sim : ""}
      <div id="gars"></div>

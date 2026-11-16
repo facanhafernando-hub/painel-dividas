@@ -1419,14 +1419,18 @@ def construir_catalogo() -> None:
     hoje = {a["c"]: a for a in ult["ativos"]}
     snd = snd_cadastro()
     # último negócio de cada título nos últimos 30 pregões
-    # Lote pequeno (< R$ 100 mil) com preço mais de 10 p.p. longe da referência (indicativo ANBIMA do dia ou, sem ele,
-    # mediana dos negócios do título ponderada por volume) não define o preço: fica registrado como negócio atípico.
+    # Lote pequeno (< R$ 100 mil) a mais de 10 p.p. da referência, ou lote de até R$ 1 mi a mais de 25 p.p., não define o
+    # preço: fica registrado como negócio atípico. Referência = indicativo ANBIMA (do dia ou o mais próximo) ou, sem ele,
+    # mediana dos negócios do título ponderada por volume.
     LOTE_MIN, DESVIO_MAX = 100_000, 10.0
     negs: dict[str, list] = collections.defaultdict(list)
     info: dict[str, dict] = {}
+    anb_pct: dict[str, list] = collections.defaultdict(list)     # indicativo ANBIMA (% do par) por dia
     for ds in datas[-30:]:
         for a in json.loads((DADOS / "daily" / f"{ds}.json").read_text(encoding="utf-8"))["ativos"]:
             info[a["c"]] = a
+            if (a.get("a") or {}).get("pct_par") is not None:
+                anb_pct[a["c"]].append((ds, a["a"]["pct_par"]))
             if a.get("n"):
                 pp_ = a.get("p") or {}
                 negs[a["c"]].append(((ds, a["n"].get("pu_med"), a["n"].get("volume"),
@@ -1449,9 +1453,17 @@ def construir_catalogo() -> None:
         com_pct = [(n[3], n[2] or 0) for n, _ in h if n[3] is not None]
         med = mediana_pond(com_pct) if len(com_pct) >= 2 and sum(w for _, w in com_pct) > 0 else None
         escolhido = None
+        def anb_mais_proximo(ds):
+            xs = anb_pct.get(c) or []
+            if not xs:
+                return None
+            d0 = date.fromisoformat(ds)
+            return min(xs, key=lambda x: abs((date.fromisoformat(x[0]) - d0).days))[1]
         for n, pa in reversed(h):
-            ref = pa if pa is not None else med
-            fora = n[3] is not None and ref is not None and (n[2] or 0) < LOTE_MIN and abs(n[3] - ref) > DESVIO_MAX
+            ref = pa if pa is not None else (anb_mais_proximo(n[0]) if anb_pct.get(c) else med)
+            dif = abs(n[3] - ref) if n[3] is not None and ref is not None else 0
+            # lote pequeno a mais de 10 p.p., ou até R$ 1 mi a mais de 25 p.p. da referência
+            fora = ((n[2] or 0) < LOTE_MIN and dif > DESVIO_MAX) or ((n[2] or 0) < 1_000_000 and dif > 25)
             if not fora:
                 escolhido = n
                 break
@@ -1459,7 +1471,7 @@ def construir_catalogo() -> None:
                 atipico[c] = [n[0], n[3], n[2], round(ref, 2)]
         if escolhido:
             ultimo_neg[c] = escolhido
-    log(f"  negócios atípicos ignorados no preço (lote < R$ 100 mil, > 10 p.p. da referência): {len(atipico)}")
+    log(f"  negócios atípicos ignorados no preço: {len(atipico)}")
     cods = {c for c, s in snd.items() if (s.get("qtd_mercado") or 0) > 0} | set(info)
     itens = []
     for c in sorted(cods):
