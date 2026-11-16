@@ -1118,7 +1118,7 @@
    "bate_snd": false
   }
  },
- "gasto_usd": 18.5207,
+ "gasto_usd": 18.6334,
  "garantias": {
   "12528708000107_2": {
    "status": "ok",
@@ -2033,6 +2033,13 @@
    "assinatura": "ea2cbc2501bf",
    "codigos": [
     "VBRR11"
+   ]
+  },
+  "08795211000170_5": {
+   "status": "ok",
+   "assinatura": "5f398d684ab6",
+   "codigos": [
+    "MSRO15"
    ]
   }
  }

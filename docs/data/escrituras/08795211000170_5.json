@@ -191,5 +191,135 @@
    "resumo": "Vencimento antecipado do CRA Maestro (17/04/2026) acionou cross default; AGD de 07/08/2026 (99,85% em circulação) aprovou a reestruturação: carência de principal até abr/2027, 48 amortizações mensais a partir de mai/2027, vencimento em abr/2031, bônus de subscrição e equity kicker de 10%. Waiver de covenants por 12 meses; capitalização mínima de R$ 50 mi até 06/08/2027, sob pena de vencimento antecipado automático.",
    "fonte": "ajuste manual: leitura automática marcou vencimento antecipado, mas a reestruturação aprovada em AGD susta seus efeitos"
   }
+ },
+ "garantias": {
+  "MSRO15": {
+   "codigo": "MSRO15",
+   "emissao": 5,
+   "especie": "com garantia real",
+   "garantias": [
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Fluxo mensal de recebíveis da locação de veículos da Maestro Locadora de Veículos S.A. (08.795.211/0001-70), recursos depositados na Conta Vinculada, aplicações financeiras e direitos sobre a titularidade da conta",
+     "condições": "Fluxo Mensal mínimo de 120% da Parcela de Remuneração a vencer (1º Fluxo Mínimo Mensal); a partir da 5ª Data de Pagamento da Remuneração, 120% de amortização mais remuneração. Conta Vinculada movimentada conforme o Contrato de Cessão Fiduciária e o Contrato de Custódia (Itaú Unibanco S.A. como custodiante). Há indício de que a 7ª emissão prevê contas vinculadas travadas apenas em caso de inadimplemento financeiro (AGD de 08/05/2026, sujeita a condições resolutivas).",
+     "situacao": "vigente",
+     "fonte": "Escritura da 5ª Emissão, cláusulas 6.11.1, 6.11.1.1, 6.11.1.2 e 6.11.2"
+    },
+    {
+     "tipo": "alienação fiduciária",
+     "prestador_ou_objeto": "Veículos da frota da Maestro Locadora de Veículos S.A., alienados fiduciariamente em favor dos Debenturistas, representados pelo Agente Fiduciário",
+     "condições": "Limite Mínimo Global: veículos (somados aos valores depositados na Conta Vinculada) de no mínimo 120% do saldo do Valor Nominal Unitário das Debêntures em Circulação mais a Remuneração. Há reforço e recomposição previstos nos Contratos de Garantia. Registro em RTD, órgãos de trânsito e SNG.",
+     "situacao": "vigente",
+     "fonte": "Escritura da 5ª Emissão, cláusula 6.11.3 e 6.11.3.1"
+    },
+    {
+     "tipo": "cessão fiduciária",
+     "prestador_ou_objeto": "Recursos e aplicações financeiras da conta corrente nº 57539-3, agência 0568-6, do Itaú Unibanco S.A. (Conta de Livre Movimentação Garantida), de titularidade da Maestro, e direitos sobre a titularidade da conta",
+     "condições": "Garantia adicional e independente, compartilhada pari passu, só quanto ao seu objeto e ao produto da excussão, entre a 5ª, 6ª e 7ª emissões. O produto da excussão é rateado conforme o Contrato de Cessão Fiduciária da Conta de Livre Movimentação. Do texto da 5ª emissão só se confirmam o escopo de Obrigações Garantidas ampliado e o compartilhamento entre as três emissões, por referência a aditamentos da 6ª e da 7ª. O contrato de cessão foi celebrado em 07/08/2026, conforme a procuração.",
+     "situacao": "vigente",
+     "fonte": "AGD da 5ª emissão de 07/08/2026 (item I e deliberações); minutas de aditamento das 6ª e 7ª emissões (cláusula 6.11.3 e 6.11.3.1); Anexos I e II"
+    }
+   ],
+   "resumo": "Cessão fiduciária de recebíveis/conta vinculada e alienação fiduciária de veículos; conta livre compartilhada (2026)"
+  }
+ },
+ "garantias_meta": {
+  "lido_em": "2026-11-16",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-02-01",
+    "tipo": "escritura",
+    "assunto": "Escritura da 5ª Emissão de Debêntures",
+    "protocolo": "023612IPE100120220104459310-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=937318&numSequencia=462052&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-02-12",
+    "tipo": "comunicado",
+    "assunto": "Aprovação 7ª. Emissão de Debêntures",
+    "protocolo": "023612IPE120220250104570011-73",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1334124&numSequencia=858850&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-04-17",
+    "tipo": "comunicado",
+    "assunto": "Vencimento Antecipado CRA (Certificados de Recebíveis do Agronegócio)",
+    "protocolo": "023612IPE170420260134227284-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1506265&numSequencia=1030971&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-12",
+    "tipo": "ata_agd",
+    "assunto": "Sustação dos efeitos do vencimento antecipado automático das Debêntures",
+    "protocolo": "023612IPE080720260116582291-33",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1544202&numSequencia=1068908&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-31",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260243544490-76",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1550749&numSequencia=1075455&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-07-31",
+    "tipo": "proposta_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260217369078-38",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1550752&numSequencia=1075458&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-07",
+    "tipo": "ata_agd",
+    "assunto": "Aprovar a reestruturação da Emissão,",
+    "protocolo": "023612IPE070820260146896191-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554546&numSequencia=1079252&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-07",
+    "tipo": "ata_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260191051373-91",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554566&numSequencia=1079272&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-07",
+    "tipo": "ata_agd",
+    "assunto": "Aprovar a reestruturação da Emissão",
+    "protocolo": "023612IPE070820260164181030-76",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554571&numSequencia=1079277&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-10",
+    "tipo": "comunicado",
+    "assunto": "Reestruturação Debêntures",
+    "protocolo": "023612IPE070820260125535054-88",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1554631&numSequencia=1079337&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "cnpj_documental": null,
+  "emissora_atual": "Maestro Locadora de Veículos S.A. (CNPJ 08.795.211/0001-70), sem registro de cessão da emissão",
+  "lacunas": "A espécie, na escritura original, é com garantia real, sem fiança nem aval. Não há documento específico da 5ª emissão com a redação final dos aditamentos. A reestruturação de 07/08/2026 aprova alterações nas garantias e aditamentos ao contrato de alienação fiduciária. A conta de livre movimentação foi inferida das minutas das 6ª e 7ª emissões, nas quais a 5ª aparece como beneficiária compartilhada. Também consta o Anexo I com a 5ª emissão com R$80.000.000,00 de valor original (trecho cortado). A escritura da 5ª emissão está parcialmente cortada. Os termos exatos do Contrato de Alienação Fiduciária, incluindo critérios de idade dos veículos, não constam. A ata de 08/05/2026 trata da 7ª emissão e prevê regime transitório de idade dos veículos, não confirmado para a 5ª. Não é possível confirmar a assinatura dos aditamentos nem o cumprimento das condições resolutivas."
  }
 }
