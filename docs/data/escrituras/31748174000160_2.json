@@ -117,7 +117,7 @@
    }
   }
  ],
- "situacao": "VERO12 (2ª emissão Vero): nos trechos não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. ANET12 (2ª emissão America Net, sucedida pela Vero por incorporação): há AGD convocada em 1ª convocação para 2026-02-09 para aprovar o 3º Aditamento. O aditamento equaliza covenants, hipóteses de vencimento antecipado e quóruns com as demais emissões da Vero, converte a espécie de garantia real com fiança para quirografária e exclui as referências à Fiança e à Cessão Fiduciária. O texto do aditamento tem datas ainda em branco ou entre colchetes, portanto a aprovação não está confirmada. Nenhuma das alterações propostas muda o fluxo de pagamentos. Não há vencimento antecipado, suspensão, RJ/RE ou novação em nenhuma das duas.",
+ "situacao": "VERO12 (2ª emissão Vero): nos trechos não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. ANET12 (2ª emissão America Net, sucedida pela Vero por incorporação): há AGD convocada em 1ª convocação para 2026-02-09 para aprovar o 3º Aditamento. O aditamento equaliza covenants, hipóteses de vencimento antecipado e quóruns com as demais emissões da Vero, converte a espécie de garantia real com fiança para quirografária e exclui as referências à Fiança e à Cessão Fiduciária. O texto do aditamento tem datas ainda em branco ou entre colchetes, portanto a aprovação não está confirmada. Nenhuma das alterações propostas muda o fluxo de pagamentos. Não há vencimento antecipado, suspensão, RJ/RE ou novação em nenhuma das duas. Conferido em 17/11/2026 na CVM (IPE): após o Termo de Não Instalação de 09/02/2026 não houve 2ª convocação nem novo aditamento, então a cessão fiduciária segue vigente.",
  "lacunas": "1) VERO12: o VNU não aparece nos trechos (só o montante ofertado de R$ 375 mi); a Data de Emissão (cl. 7.10.1) não foi recortada e foi deduzida de 'sete anos' até 2030-03-17, ou seja, 2023-03-17; a taxa final do bookbuilding não consta (só o intervalo: maior entre IPCA+/2028 + 3,00% e 9,34% a.a.), e o aditamento que a ratifica não foi fornecido. A tabela de prêmios de resgate (cl. 7.17.5) não foi recortada, por isso 'premios' está vazio. Não há aditamentos posteriores nos documentos; o Documento 3, apesar do nome do arquivo, trata da 1ª emissão da Vero (CDI + 2,30%, vencimento 2027-12-08, amortização mensal) e foi excluído por não ser a emissão pedida. 2) ANET12: o 3º Aditamento é minuta com campos em branco ou entre colchetes ([9]/[6] de fevereiro de 2026, '[=]' para a data da incorporação das Fiadoras). Não foram fornecidos a escritura original, o 1º e o 2º aditamentos, nem a ata da AGD de 2026, por isso o cronograma vem da versão consolidada anexa à minuta. A data de início da rentabilidade não consta. A porcentagem de amortização incide sobre o Valor Nominal Atualizado, que cresce com o IPCA, e não sobre o VNE.",
  "meta": {
   "emissora": "VERO S.A.",
@@ -209,24 +209,25 @@
   "ANET12": {
    "codigo": "ANET12",
    "emissao": 2,
-   "especie": "com garantia real, com garantia adicional fidejussória (proposta de alteração para quirografária, não aprovada)",
+   "especie": "com garantia real, com garantia adicional fidejussória (proposta de passar a quirografária não foi aprovada)",
    "garantias": [
     {
      "tipo": "cessão fiduciária",
      "prestador_ou_objeto": "Direitos creditórios cedidos fiduciariamente ao Agente Fiduciário Pentágono S.A. DTVM, conforme o Instrumento Particular de Cessão Fiduciária de Direitos Creditórios em Garantia e Outras Avenças de 23/11/2022 (objeto específico não detalhado).",
-     "condicoes": "Foi originalmente outorgada sob Condição Suspensiva (detalhes não constam nos trechos). A AGD de 09/02/2026 propunha excluí-la e liberá-la, mas não foi instalada (quórum de 8,29%).",
-     "situacao": "vigente (liberação apenas proposta)",
+     "condicoes": "Foi originalmente outorgada sob Condição Suspensiva (detalhes não constam nos trechos). A AGD de 09/02/2026 propunha excluí-la e liberá-la, mas não foi instalada (quórum de 8,29%). Conferido em 17/11/2026 na CVM (IPE): após o Termo de Não Instalação de 09/02/2026 não houve 2ª convocação nem novo aditamento, então a cessão fiduciária segue vigente.",
+     "situacao": "vigente",
      "fonte": "Doc. 7 e 8 (matéria 1 e cláusula 1.1.1 da escritura); Doc. 10 (Termo de Não Instalação)"
     },
     {
      "tipo": "fiança",
      "prestador_ou_objeto": "Fit Telecomunicações America Net Ltda. (CNPJ 10.310.323/0001-35), Rede Informática e Internet S.A. (CNPJ 06.353.249/0001-67), Ultrawave Telecomunicações S.A. e Vero S.A. (CNPJ 31.748.174/0001-60), como Fiadoras",
      "condicoes": "As três primeiras fiadoras foram incorporadas pela America Net (data em branco na minuta). A AGD pretendia excluir as referências à Fiança em razão dessa incorporação, mas não foi instalada. Os termos da fiança não aparecem nos trechos. Não é possível afirmar se a garantia subsiste após a incorporação.",
-     "situacao": "desconhecida (formalmente prevista na escritura; exclusão proposta, não aprovada)",
+     "situacao": "sem efeito prático (fiadoras incorporadas pela emissora)",
      "fonte": "Doc. 8 (minuta com marcações, partes e matéria 1(b)); Doc. 10; Doc. 4 (considerando B)"
     }
    ],
-   "resumo": "Cessão fiduciária de recebíveis (liberação proposta) + fiança de fiadoras já incorporadas (exclusão proposta, AGD não instalada)"
+   "resumo": "Cessão fiduciária de recebíveis, vigente (a AGD de 09/02/2026 que a liberaria não instalou e não houve 2ª convocação) + fiança de fiadoras já incorporadas pela emissora, sem efeito prático",
+   "fonte_manual": "Conferido em 17/11/2026 na CVM (IPE): após o Termo de Não Instalação de 09/02/2026 não houve 2ª convocação nem novo aditamento, então a cessão fiduciária segue vigente."
   },
   "VERO12": {
    "codigo": "VERO12",

@@ -1,0 +1,5 @@
+{
+  "_doc": "Remuneração exibida quando o SND traz a taxa zerada ou errada. Chave = código; valor = texto do indexador. Fonte em _fonte.",
+  "VERO11": "DI + 2,30%",
+  "_fonte": {"VERO11": "Escritura da 1ª emissão da Vero (CVM IPE 30/11/2021): CDI + 2,30% a.a., vencimento 08/12/2027; SND traz DI + 0,00%"}
+}

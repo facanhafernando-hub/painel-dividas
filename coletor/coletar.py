@@ -1445,6 +1445,10 @@ def construir_catalogo() -> None:
     # preço: fica registrado como negócio atípico. Referência = indicativo ANBIMA (do dia ou o mais próximo) ou, sem ele,
     # mediana dos negócios do título ponderada por volume.
     LOTE_MIN, DESVIO_MAX = 100_000, 10.0
+    try:
+        TAXAS_CORR = {k: v for k, v in json.loads((Path(__file__).parent / "taxas_correcoes.json").read_text(encoding="utf-8")).items() if not k.startswith("_")}
+    except Exception:
+        TAXAS_CORR = {}
     negs: dict[str, list] = collections.defaultdict(list)
     info: dict[str, dict] = {}
     anb_pct: dict[str, list] = collections.defaultdict(list)     # indicativo ANBIMA (% do par) por dia
@@ -1532,7 +1536,9 @@ def construir_catalogo() -> None:
             elif base == "PRE":
                 idx_txt = f"{f2(s.get('taxa'))}% a.a."
             elif base:
-                idx_txt = f"{base[:-1]} + {f2(s.get('taxa'))}%"
+                idx_txt = f"{base[:-1]} + {f2(s.get('taxa'))}%" if s.get("taxa") else f"{base[:-1]} + taxa n/d"
+        if c in TAXAS_CORR:
+            idx_txt = TAXAS_CORR[c]
         ag = snd_agenda().get(c) or []
         ven_ag = next((e[0] for e in ag if e[1] == "V"), ag[-1][0] if ag else None)
         itens.append({
