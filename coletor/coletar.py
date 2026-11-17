@@ -1482,12 +1482,19 @@ def construir_catalogo() -> None:
                 return None
             d0 = date.fromisoformat(ds)
             return min(xs, key=lambda x: abs((date.fromisoformat(x[0]) - d0).days))[1]
+        # lotes grandes (>= R$ 1 mi) do título na janela, para contestar lote pequeno fora do preço
+        grandes = [(datas.index(n[0]), n[3]) for n, _ in h if (n[2] or 0) >= 1_000_000 and n[3] is not None and n[0] in datas]
         for n, pa in reversed(h):
             ref = pa if pa is not None else (anb_mais_proximo(n[0]) if anb_pct.get(c) else med)
             dif = abs(n[3] - ref) if n[3] is not None and ref is not None else 0
             # lote < R$ 100 mil a mais de 10 p.p., < R$ 500 mil a mais de 15 p.p., ou < R$ 1 mi a mais de 25 p.p.
             v_ = n[2] or 0
             fora = (v_ < LOTE_MIN and dif > DESVIO_MAX) or (v_ < 500_000 and dif > 15) or (v_ < 1_000_000 and dif > 25)
+            # lote < R$ 100 mil a mais de 5 p.p. da referência, contrariado por lote >= R$ 1 mi em até 10 pregões
+            # que bate com a referência (padrão varejo com ágio x institucional)
+            if not fora and v_ < LOTE_MIN and dif > 5 and n[3] is not None and ref is not None and n[0] in datas:
+                i_ = datas.index(n[0])
+                fora = any(abs(j - i_) <= 10 and abs(p - ref) <= 5 and abs(p - n[3]) > 5 for j, p in grandes)
             if not fora:
                 escolhido = n
                 break

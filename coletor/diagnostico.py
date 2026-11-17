@@ -1,39 +1,37 @@
-"""Diagnóstico: CRA da Klabin (Vert) negociados a ~70% do par. Mostra o que o informe mensal da CVM e a ANBIMA dizem
-sobre cada série: quantidade, valor, saldo, taxa, amortizações e eventos. Saída em docs/data/_debug/klabin_cra.json."""
-import csv, io, json, sys, urllib.request, zipfile
-csv.field_size_limit(10**9)
-CODS = ["CRA0210013B", "CRA020002H1", "CRA020002GZ", "CRA019001E7", "CRA019003JY", "CRA022007EP"]
+"""Diagnóstico: documentos IPE da Vero S.A. (CNPJ 31.748.174/0001-60) em 2026. Lista todos e baixa o texto dos
+ligados a debêntures, AGD, fato relevante e comunicados. Saída em docs/data/_debug/vero_ipe.json."""
+import io, json, subprocess, tempfile, urllib.request, zipfile
 UA = {"User-Agent": "Mozilla/5.0"}
+CNPJ = "31.748.174/0001-60"
 def get(u):
-    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=180).read()
-out = {"cvm": {}, "anbima": []}
-z = zipfile.ZipFile(io.BytesIO(get("https://dados.cvm.gov.br/dados/SECURIT/DOC/INF_MENSAL_CRA/DADOS/inf_mensal_cra_2026.zip")))
-print("arquivos:", z.namelist())
-tabs = {n: list(csv.DictReader(io.StringIO(z.read(n).decode("latin-1")), delimiter=";")) for n in z.namelist()}
-cert = {}
-for n, rows in tabs.items():
-    if "_classe_" in n:
-        for r in rows:
-            if (r.get("Codigo_CETIP") or "").strip().upper() in CODS:
-                cert[r["Codigo_Identificacao_Certificado"]] = r["Codigo_CETIP"].strip().upper()
-print("certificados:", cert)
-for n, rows in tabs.items():
-    sel = [r for r in rows if r.get("Codigo_Identificacao_Certificado") in cert or (r.get("Codigo_CETIP") or "").strip().upper() in CODS]
-    if sel:
-        # só as duas últimas competências de cada certificado
-        sel.sort(key=lambda r: r.get("Data_Referencia") or r.get("Data_Competencia") or "")
-        out["cvm"][n] = sel[-24:]
-        print(n, len(sel), "colunas:", list(sel[0].keys())[:40])
-try:
-    txt = get("https://www.anbima.com.br/pt_br/anbima/TaxasCriCraExport/exportarCSV").decode("latin-1")
-    for l in txt.splitlines():
-        if any(c in l for c in CODS) or l.lower().startswith(("código", "codigo", "emissor", "tipo")):
-            out["anbima"].append(l)
-except Exception as e:
-    out["anbima"].append(f"erro: {e}")
-json.dump(out, open("docs/data/_debug/klabin_cra.json", "w"), ensure_ascii=False, indent=1)
-print(json.dumps(out["anbima"], ensure_ascii=False, indent=1))
-for n, rows in out["cvm"].items():
-    print("=====", n)
-    for r in rows:
-        print(json.dumps({k: v for k, v in r.items() if v not in ("", None)}, ensure_ascii=False))
+    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=240).read()
+z = zipfile.ZipFile(io.BytesIO(get("https://dados.cvm.gov.br/dados/CIA_ABERTA/DOC/IPE/DADOS/ipe_cia_aberta_2026.zip")))
+txt = z.read(z.namelist()[0]).decode("latin-1").splitlines()
+cab = txt[0].split(";")
+rows = [dict(zip(cab, l.split(";"))) for l in txt[1:]]
+rows = [r for r in rows if r.get("CNPJ_Companhia") == CNPJ]
+rows.sort(key=lambda r: r.get("Data_Entrega", ""))
+print(len(rows), "documentos")
+out = {"lista": [{k: r.get(k) for k in ("Data_Entrega", "Data_Referencia", "Categoria", "Tipo", "Especie", "Assunto", "Link_Download")} for r in rows], "textos": []}
+CHAVES = ("debentur", "assembleia", "agd", "fato relevante", "comunicado", "rating", "aditamento", "termo", "ata", "edital", "resgate", "oferta")
+sel = [r for r in rows if any(k in (r.get("Assunto", "") + " " + r.get("Categoria", "") + " " + r.get("Tipo", "")).lower() for k in CHAVES)]
+for r in sel[-40:]:
+    try:
+        b = get(r["Link_Download"])
+        with tempfile.NamedTemporaryFile(suffix=".pdf") as f:
+            f.write(b); f.flush()
+            t = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, text=True, timeout=120).stdout
+        out["textos"].append({"data": r.get("Data_Entrega"), "assunto": r.get("Assunto"), "categoria": r.get("Categoria"), "texto": t[:6000]})
+        print("ok", r.get("Data_Entrega"), r.get("Assunto")[:80])
+    except Exception as e:
+        print("erro", r.get("Assunto"), e)
+import pathlib
+p = pathlib.Path("docs/data/_debug"); p.mkdir(parents=True, exist_ok=True)
+(p / "vero_ipe.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+print("==== LISTA")
+for r in out["lista"]:
+    print(r["Data_Entrega"], "|", r["Categoria"], "|", r["Tipo"], "|", r["Assunto"][:120])
+print("==== TEXTOS")
+for t in out["textos"]:
+    print("\n#####", t["data"], t["assunto"][:120])
+    print(" ".join(t["texto"].split())[:2500])
