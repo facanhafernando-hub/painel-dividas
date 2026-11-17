@@ -8,7 +8,7 @@
   "garantia_conflito": 5,
   "preco_vs_anbima": 3,
   "yield_faltando": 1,
-  "fora_da_curva_emissor": 5,
+  "fora_da_curva_emissor": 6,
   "na_securitizadora": 18,
   "sem_nome_curto": 3
  },
@@ -11033,6 +11033,22 @@
   ],
   "fora_da_curva_emissor": [
    {
+    "c": "22K0934871",
+    "t": "CRI",
+    "emp": "Hapvida",
+    "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+    "msg": "yield 54.68 × mediana do emissor 18.21 (DI+, 8 títulos)",
+    "dif": 36.47
+   },
+   {
+    "c": "BCBF16",
+    "t": "DEB",
+    "emp": "Hapvida",
+    "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+    "msg": "yield 44.00 × mediana do emissor 18.21 (DI+, 8 títulos)",
+    "dif": 25.79
+   },
+   {
     "c": "AEGPB5",
     "t": "DEB",
     "emp": "Aegea",
@@ -11047,14 +11063,6 @@
     "k": "VERO",
     "msg": "yield 26.26 × mediana do emissor 16.38 (IPCA+, 8 títulos)",
     "dif": 9.89
-   },
-   {
-    "c": "BCBF16",
-    "t": "DEB",
-    "emp": "Hapvida",
-    "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
-    "msg": "yield 44.00 × mediana do emissor 17.00 (DI+, 7 títulos)",
-    "dif": 27.0
    },
    {
     "c": "RBRAI7",
