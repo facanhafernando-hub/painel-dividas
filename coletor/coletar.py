@@ -1441,8 +1441,7 @@ def construir_catalogo() -> None:
     hoje = {a["c"]: a for a in ult["ativos"]}
     snd = snd_cadastro()
     # último negócio de cada título nos últimos 30 pregões
-    # Lote pequeno (< R$ 100 mil) a mais de 10 p.p. da referência, ou lote de até R$ 1 mi a mais de 25 p.p., não define o
-    # preço: fica registrado como negócio atípico. Referência = indicativo ANBIMA (do dia ou o mais próximo) ou, sem ele,
+    # Lote fora da referência (ver faixas abaixo) não define o preço: fica registrado como negócio atípico. Referência = indicativo ANBIMA (do dia ou o mais próximo) ou, sem ele,
     # mediana dos negócios do título ponderada por volume.
     LOTE_MIN, DESVIO_MAX = 100_000, 10.0
     try:
@@ -1486,19 +1485,29 @@ def construir_catalogo() -> None:
                 return None
             d0 = date.fromisoformat(ds)
             return min(xs, key=lambda x: abs((date.fromisoformat(x[0]) - d0).days))[1]
-        # lotes grandes (>= R$ 1 mi) do título na janela, para contestar lote pequeno fora do preço
-        grandes = [(datas.index(n[0]), n[3]) for n, _ in h if (n[2] or 0) >= 1_000_000 and n[3] is not None and n[0] in datas]
+        # lotes grandes (>= R$ 1 mi) do título na janela, com o indicativo ANBIMA do dia do lote grande
+        grandes = [(datas.index(n[0]), n, pa) for n, pa in h if (n[2] or 0) >= 1_000_000 and n[3] is not None and n[0] in datas]
+        contrariado = None
         for n, pa in reversed(h):
             ref = pa if pa is not None else (anb_mais_proximo(n[0]) if anb_pct.get(c) else med)
             dif = abs(n[3] - ref) if n[3] is not None and ref is not None else 0
-            # lote < R$ 100 mil a mais de 10 p.p., < R$ 500 mil a mais de 15 p.p., ou < R$ 1 mi a mais de 25 p.p.
+            # lote < R$ 25 mil a mais de 5 p.p., < R$ 100 mil a mais de 10 p.p., < R$ 500 mil a mais de 15 p.p.,
+            # ou < R$ 1 mi a mais de 25 p.p.
             v_ = n[2] or 0
-            fora = (v_ < LOTE_MIN and dif > DESVIO_MAX) or (v_ < 500_000 and dif > 15) or (v_ < 1_000_000 and dif > 25)
-            # lote < R$ 100 mil a mais de 5 p.p. da referência, contrariado por lote >= R$ 1 mi em até 10 pregões
-            # que bate com a referência (padrão varejo com ágio x institucional)
-            if not fora and v_ < LOTE_MIN and dif > 5 and n[3] is not None and ref is not None and n[0] in datas:
+            fora = (v_ < 25_000 and dif > 5) or (v_ < LOTE_MIN and dif > DESVIO_MAX) or (v_ < 500_000 and dif > 15) \
+                or (v_ < 1_000_000 and dif > 25)
+            # lote < R$ 500 mil a mais de 5 p.p. do indicativo ANBIMA, contrariado por lote >= R$ 1 mi em até 10 pregões
+            # que bate com o indicativo (a até 5 p.p.): vale o lote grande (padrão varejo com ágio x institucional)
+            if not fora and v_ < 500_000 and dif > 5 and n[3] is not None and anb_pct.get(c) and n[0] in datas:
                 i_ = datas.index(n[0])
-                fora = any(abs(j - i_) <= 10 and abs(p - ref) <= 5 and abs(p - n[3]) > 5 for j, p in grandes)
+                ok = [b for j_, b, pb in grandes if abs(j_ - i_) <= 10 and abs(b[3] - n[3]) > 5
+                      and abs(b[3] - (pb if pb is not None else anb_mais_proximo(b[0]))) <= 5]
+                if ok:
+                    contrariado = max(ok, key=lambda b: b[0])
+                    if c not in atipico:
+                        atipico[c] = [n[0], n[3], n[2], round(ref, 2)]
+                    escolhido = contrariado
+                    break
             if not fora:
                 escolhido = n
                 break

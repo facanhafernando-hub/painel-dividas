@@ -244,7 +244,7 @@ const ALERTAS = {
 };
 const ESSENCIAIS = ["vencida_antecipadamente", "salto_volume"];
 const tagsE = al => tags((al || []).filter(k => ESSENCIAIS.includes(k)));
-// negócio do dia que a coleta marcou como atípico (lote < R$ 100 mil e > 10 p.p. da referência)
+// negócio que a coleta marcou como atípico (ver regras em NOTA_NUMEROS)
 const atip = r => r._cat?.uig && r._cat.uig[0] === st.dia?.data;
 const OCULTOS = ["desvio_anbima", "negociado_abaixo_par", "indicativo_abaixo_par"];
 const tags = al => (al || []).filter(k => !OCULTOS.includes(k)).map(k => `<span class="tag ${ALERTAS[k]?.[1] || "t-info"}">${ALERTAS[k]?.[0] || k}</span>`).join("");
@@ -479,7 +479,7 @@ async function telaEmpresa(k) {
   if (st.abrirCod) { const it = itens.find(i => i.c === st.abrirCod); st.abrirCod = null; if (it) abrirTitulo(it); }
 }
 const NOTA_NUMEROS = `<details class="nota"><summary>Como ler os números</summary>
-  <p><b>% do par</b> = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * = indicativo ANBIMA, sem negócio nos últimos 30 pregões. A régua vai até o par (traço = 100%); fica vermelha abaixo de 80%, quando o retorno passa a depender da recuperação e não do contrato. Negócio fora da referência (lote abaixo de R$ 100 mil a mais de 10 p.p., abaixo de R$ 500 mil a mais de 15 p.p., ou abaixo de R$ 1 mi a mais de 25 p.p.) fica marcado como <b>lote atípico</b> e não define o preço (referência: indicativo ANBIMA ou, sem ele, mediana dos negócios do título). Negócio com mais de 10 pregões e a mais de 5 p.p. do indicativo ANBIMA de hoje dá lugar ao indicativo.</p>
+  <p><b>% do par</b> = PU negociado ÷ PU de curva (VNA + juros; SND para debêntures, ANBIMA para CRI/CRA). * = indicativo ANBIMA, sem negócio nos últimos 30 pregões. A régua vai até o par (traço = 100%); fica vermelha abaixo de 80%, quando o retorno passa a depender da recuperação e não do contrato. Negócio fora da referência (lote abaixo de R$ 25 mil a mais de 5 p.p., abaixo de R$ 100 mil a mais de 10 p.p., abaixo de R$ 500 mil a mais de 15 p.p., ou abaixo de R$ 1 mi a mais de 25 p.p.) fica marcado como <b>lote atípico</b> e não define o preço (referência: indicativo ANBIMA ou, sem ele, mediana dos negócios do título). Lote abaixo de R$ 500 mil a mais de 5 p.p. do indicativo também cede lugar a um lote de R$ 1 mi ou mais, dos últimos 10 pregões, que bata com o indicativo (padrão varejo com ágio × institucional). Negócio com mais de 10 pregões e a mais de 5 p.p. do indicativo ANBIMA de hoje dá lugar ao indicativo.</p>
   <p><b>Yield implícito</b> (hold to maturity) = taxa que iguala o PU negociado ao fluxo contratual (agenda de eventos do SND: juros, amortizações, PIK e prêmios), supondo que a empresa pague tudo até o vencimento. DI+ sai como spread sobre o DI e IPCA+ como juro real. "≈" = CRI/CRA sem cronograma (supõe pagamento único no vencimento).</p>
   <p><b>TIR nominal e MOIC</b> projetam o fluxo em reais com o DI futuro e a inflação implícita da curva ANBIMA do dia (MOIC = total a receber ÷ preço). Calculados entre 5% e 150% do par. † = TIR contratual de título com evento de crédito, só como referência.</p>
   <p><b>Garantia</b> lida nas escrituras e aditamentos da CVM; com * é só a espécie do SND, que não registra fiança ou aval. <b>Selos</b> (venc. antecipado, RJ, RE, reperfilada) vêm da leitura de escrituras, atas de AGD e comunicados.</p></details>`;
