@@ -384,6 +384,11 @@
   "razao": "ALL WERT INCORPORACAO E URBANISMO LTDA",
   "fonte": "modelo"
  },
+ "ALLIANCA SAUDE E PARTICIPACOES": {
+  "nome": "Alliança Saúde",
+  "razao": "ALLIANCA SAUDE E PARTICIPACOES S.A.",
+  "fonte": "modelo"
+ },
  "ALLIED TECNOLOGIA": {
   "nome": "Allied",
   "razao": "ALLIED TECNOLOGIA S.A.",
@@ -2459,6 +2464,16 @@
   "razao": "DALL CONSTRUCOES LTDA",
   "fonte": "modelo"
  },
+ "DAXO EMPREENDIMENTOS RESIDENCIAL KAA SPE": {
+  "nome": "Daxo Residencial Kaa",
+  "razao": "DAXO EMPREENDIMENTOS RESIDENCIAL KAA SPE S.A",
+  "fonte": "modelo"
+ },
+ "DBGZIBEN PARTICIPACOES": {
+  "nome": "DBGZiben",
+  "razao": "DBGZIBEN PARTICIPACOES LTDA.",
+  "fonte": "modelo"
+ },
  "DCELT DISTRIBUIDORA CATARINENSE DE ENERGIA ELETRICA": {
   "nome": "DCELT",
   "razao": "DCELT DISTRIBUIDORA CATARINENSE DE ENERGIA ELETRICA S/A",
@@ -2512,6 +2527,11 @@
  "DE LOCACAO DAS AMERICAS": {
   "nome": "Locação das Américas",
   "razao": "COMPANHIA DE LOCAÇÃO DAS AMÉRICAS",
+  "fonte": "modelo"
+ },
+ "DE SANEAMENTO DE ALAGOAS CASAL": {
+  "nome": "Casal",
+  "razao": "COMPANHIA DE SANEAMENTO DE ALAGOAS - CASAL",
   "fonte": "modelo"
  },
  "DE SANEAMENTO DE MINAS GERAIS COPASA MG": {
@@ -4024,6 +4044,11 @@
   "razao": "HCO OPPS AERO II FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
+ "HEDGE BRASIL SHOPPING FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA": {
+  "nome": "Hedge Brasil Shopping FII",
+  "razao": "HEDGE BRASIL SHOPPING FUNDO DE INVESTIMENTO IMOBILIARIO DE RESPONSABILIDADE LIMITADA",
+  "fonte": "modelo"
+ },
  "HELBOR EMPREENDIMENTOS": {
   "nome": "Helbor",
   "razao": "HELBOR EMPREENDIMENTOS S/A",
@@ -4960,6 +4985,11 @@
   "razao": "MARSELHA EMPREENDIMENTOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
+ "MARTINI MEAT ARMAZENS GERAIS": {
+  "nome": "Martini Meat",
+  "razao": "MARTINI MEAT S/A ARMAZENS GERAIS",
+  "fonte": "modelo"
+ },
  "MARTINS COMERCIO E SERVICOS DE DISTRIBUICAO": {
   "nome": "Martins",
   "razao": "MARTINS COMERCIO E SERVICOS DE DISTRIBUICAO S.A.",
@@ -5063,6 +5093,11 @@
  "MGC DOURO EMPREENDIMENTOS E PARTICIPACOES": {
   "nome": "MGC Douro",
   "razao": "MGC DOURO EMPREENDIMENTOS E PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
+ "MIGUEL YUNES SPE LIMITADA": {
+  "nome": "Miguel Yunes SPE",
+  "razao": "MIGUEL YUNES SPE LIMITADA",
   "fonte": "modelo"
  },
  "MILLS LOCACAO SERVICOS E LOGISTICA": {
@@ -6605,6 +6640,11 @@
   "razao": "SERTAO I SOLAR ENERGIA SPE S.A.",
   "fonte": "modelo"
  },
+ "SETAI DESIGN BY PININFARINA SPE": {
+  "nome": "Setai Design by Pininfarina",
+  "razao": "SETAI DESIGN BY PININFARINA SPE LTDA",
+  "fonte": "modelo"
+ },
  "SETELOC": {
   "nome": "Seteloc",
   "razao": "SETELOC S.A.",
@@ -7300,6 +7340,11 @@
   "razao": "TRUE  SECURITIZADORA S/A",
   "fonte": "modelo"
  },
+ "TRX SECURITIZADORA": {
+  "nome": "TRX Securitizadora",
+  "razao": "TRX SECURITIZADORA S/A",
+  "fonte": "modelo"
+ },
  "TSM TRANSMISSORA SERRA DA MANTIQUEIRA": {
   "nome": "TSM",
   "razao": "TSM - TRANSMISSORA SERRA DA MANTIQUEIRA S/A",
@@ -7583,6 +7628,11 @@
  "VALE": {
   "nome": "Vale",
   "razao": "VALE S/A",
+  "fonte": "modelo"
+ },
+ "VALE DO JORDAO EMPREENDIMENTOS": {
+  "nome": "Vale do Jordão Empreendimentos",
+  "razao": "VALE DO JORDAO EMPREENDIMENTOS LTDA",
   "fonte": "modelo"
  },
  "VALE DO PONTAL ACUCAR E ETANOL": {
