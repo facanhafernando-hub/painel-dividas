@@ -1423,6 +1423,9 @@ def recalcular() -> None:
         cv = Curva(cj) if cj else None
         agenda = snd_agenda()
         for a in dd["ativos"]:
+            an_ = a.get("a") or {}
+            if a.get("t") in ("CRI", "CRA") and an_ and not an_.get("indice") and an_.get("tx_ind") is not None:
+                an_["indice"] = "PRÉ"           # arquivos antigos: índice em branco = prefixado
             p_ant = a.get("p") or {}
             cvp = {"pu_par": p_ant.get("pu_par")} if p_ant.get("fonte_par") == "SND" else None
             s = snd.get(a["c"]) if a.get("t") == "DEB" else None
