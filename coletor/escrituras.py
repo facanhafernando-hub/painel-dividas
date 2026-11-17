@@ -657,7 +657,8 @@ def ler_garantias(a, idx, idx_p):
     est_usd = (est * PRECO[modo][0] + len(corpo) * 2500 * PRECO[modo][1]) / 1e6
     log(f"pedidos: {len(corpo)} | ~{est / 1e6:.2f} MTok | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
     if idx["gasto_usd"] + est_usd > a.limite_usd:
-        sys.exit(f"ABORTADO: passaria do teto de US$ {a.limite_usd}")
+        log(f"AVISO: garantias não lidas, passaria do teto de US$ {a.limite_usd} (já gasto US$ {idx['gasto_usd']:.2f})")
+        return
     prm = lambda t: {"model": MODELO, "max_tokens": 24000, "system": GARANTIAS, "messages": [{"role": "user", "content": t}]}
     res = {}
     if modo == "direto":
@@ -823,7 +824,16 @@ def main():
     est_usd = (est * PRECO[modo][0] + len(pendentes) * 7000 * PRECO[modo][1]) / 1e6
     log(f"pendentes: {len(pendentes)} | ~{est / 1e6:.2f} MTok de entrada | custo estimado US$ {est_usd:.2f} | já gasto US$ {idx['gasto_usd']:.2f}")
     if idx["gasto_usd"] + est_usd > a.limite_usd:
-        sys.exit(f"ABORTADO: estimativa passaria do teto de US$ {a.limite_usd}")
+        # não falha: lê o que cabe no saldo até o teto e deixa o resto para quando houver crédito
+        saldo, cabe, soma = a.limite_usd - idx["gasto_usd"], [], 0.0
+        for p_ in pendentes:
+            c_ = (len(p_[4]) / 2.6 * PRECO[modo][0] + 7000 * PRECO[modo][1]) / 1e6
+            if soma + c_ <= saldo:
+                cabe.append(p_)
+                soma += c_
+        log(f"AVISO: teto de US$ {a.limite_usd} não comporta tudo; lendo {len(cabe)} de {len(pendentes)} "
+            f"(~US$ {soma:.2f}). Para ler o resto, suba o limite (limite_usd) depois de colocar crédito.")
+        pendentes = cabe
     if not pendentes:
         json.dump(idx, open(idx_p, "w"), ensure_ascii=False, indent=1)
         return
