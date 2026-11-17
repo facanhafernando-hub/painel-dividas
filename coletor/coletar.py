@@ -1453,6 +1453,10 @@ def construir_catalogo() -> None:
     # mediana dos negócios do título ponderada por volume.
     LOTE_MIN, DESVIO_MAX = 100_000, 10.0
     try:
+        INFORME = json.loads((DADOS / "cricra_informe.json").read_text(encoding="utf-8"))
+    except Exception:
+        INFORME = {}
+    try:
         TAXAS_CORR = {k: v for k, v in json.loads((Path(__file__).parent / "taxas_correcoes.json").read_text(encoding="utf-8")).items() if not k.startswith("_")}
     except Exception:
         TAXAS_CORR = {}
@@ -1558,6 +1562,12 @@ def construir_catalogo() -> None:
             idx_txt = TAXAS_CORR[c]
         ag = snd_agenda().get(c) or []
         ven_ag = next((e[0] for e in ag if e[1] == "V"), ag[-1][0] if ag else None)
+        # CRI/CRA fora da ANBIMA: remuneração e vencimento do informe mensal da CVM (só exibição)
+        inf_ = INFORME.get(c) if t in ("CRI", "CRA") and not idx_txt else None
+        if inf_:
+            idx_txt = (inf_.get("taxa") or "").replace(" a.a.", "").replace(" a.a", "").strip() or None
+            if inf_.get("venc") and not anb.get("vencimento") and not ven_ag:
+                ven_ag = "/".join(reversed(inf_["venc"].split("-")))
         itens.append({
             "c": c, "t": t, "e": emp, "k": chave_empresa(emp), "s": a.get("s"),
             "ven": next((v for v in (anb.get("vencimento"), ven_ag, (s or {}).get("venc"))
