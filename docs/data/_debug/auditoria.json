@@ -6,7 +6,7 @@
   "yield_vs_anbima": 7,
   "preco_extremo": 6,
   "garantia_conflito": 5,
-  "preco_vs_anbima": 4,
+  "preco_vs_anbima": 3,
   "yield_faltando": 1,
   "fora_da_curva_emissor": 5,
   "na_securitizadora": 18,
@@ -10731,8 +10731,8 @@
     "t": "CRI",
     "emp": "Hapvida",
     "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
-    "msg": "33.7% do par sem evento de crédito",
-    "ud": "2026-11-13"
+    "msg": "49.7% do par sem evento de crédito",
+    "ud": "2026-11-09"
    },
    {
     "c": "22K0934889",
@@ -11020,16 +11020,6 @@
     "ud": "2026-11-06",
     "uv": 297128.38,
     "dif": -11.5
-   },
-   {
-    "c": "VERO12",
-    "t": "DEB",
-    "emp": "Vero",
-    "k": "VERO",
-    "msg": "negócio 90.7% × ANBIMA 78.7% do par",
-    "ud": "2026-11-16",
-    "uv": 106863.85,
-    "dif": 12.1
    }
   ],
   "yield_faltando": [
@@ -11055,8 +11045,8 @@
     "t": "DEB",
     "emp": "Vero",
     "k": "VERO",
-    "msg": "yield 26.26 × mediana do emissor 16.07 (IPCA+, 8 títulos)",
-    "dif": 10.2
+    "msg": "yield 26.26 × mediana do emissor 16.38 (IPCA+, 8 títulos)",
+    "dif": 9.89
    },
    {
     "c": "BCBF16",
