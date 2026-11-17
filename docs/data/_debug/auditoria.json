@@ -4,17 +4,17 @@
   "negocio_sem_par": 1345,
   "yield_vs_anbima": 8,
   "abaixo50_sem_evento": 15,
-  "preco_vs_anbima": 9,
+  "preco_vs_anbima": 8,
   "preco_extremo": 4,
   "garantia_conflito": 5,
   "negocio_defasado": 1,
   "yield_faltando": 1,
   "fora_da_curva_emissor": 5,
   "na_securitizadora": 19,
-  "sem_nome_curto": 0
+  "sem_nome_curto": 2
  },
  "cobertura": {
-  "itens": 5088,
+  "itens": 5094,
   "com_negocio_30d": 3130,
   "com_pct_par": 1856,
   "com_yield": 1767,
@@ -11058,16 +11058,6 @@
     "ud": "2026-11-06",
     "uv": 297128.38,
     "dif": -11.5
-   },
-   {
-    "c": "VERO12",
-    "t": "DEB",
-    "emp": "Vero",
-    "k": "VERO",
-    "msg": "negócio 90.2% × ANBIMA 78.7% do par",
-    "ud": "2026-11-06",
-    "uv": 5355.68,
-    "dif": 11.5
    }
   ],
   "preco_extremo": [
@@ -11178,8 +11168,8 @@
     "t": "DEB",
     "emp": "Vero",
     "k": "VERO",
-    "msg": "yield 26.26 × mediana do emissor 16.22 (IPCA+, 8 títulos)",
-    "dif": 10.04
+    "msg": "yield 26.26 × mediana do emissor 16.38 (IPCA+, 8 títulos)",
+    "dif": 9.89
    },
    {
     "c": "BCBF16",
@@ -11284,6 +11274,9 @@
     "n": 1
    }
   ],
-  "sem_nome_curto": []
+  "sem_nome_curto": [
+   "AEROPORTO INTERNACIONAL DO RIO",
+   "OME SPE"
+  ]
  }
 }
