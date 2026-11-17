@@ -1072,7 +1072,8 @@ def _calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict 
                        y_base="%DI")
             return out
     # 2) referência ANBIMA (taxa indicativa + PU + duration), boa perto do par
-    if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration") and 70 <= pct <= 130:
+    if anb and anb.get("tx_ind") is not None and anb.get("pu") and anb.get("duration") \
+            and (70 <= pct <= 130 or 0.8 <= pmed / anb["pu"] <= 1.25):      # perto do PU ANBIMA, mesmo abaixo de 70%
         base = base_indexador(anb.get("indice"))
         if base and base != "%DI":
             y = yield_implicito(pmed, anb["pu"], anb["tx_ind"], anb["duration"])
