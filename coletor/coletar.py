@@ -1565,6 +1565,8 @@ def construir_catalogo() -> None:
             "uig": atipico.get(c), "udf": defasado.get(c),
             # preço/yield: do último negócio com % do par; se o negócio não tem PU par, do indicativo ANBIMA de hoje
             "upp": up_[3] if up_ else None,
+            # negócio exatamente no PU de curva e sem indicativo ANBIMA: típico de distribuição primária ou transferência
+            "ucv": bool(up_ and abs(up_[3] - 100) < 0.005 and anb.get("pct_par") is None) or None,
             "uy": up_[4] if up_ else hp.get("y"),
             "uyb": up_[5] if up_ else hp.get("y_base"),
             "uye": up_[6] if up_ else hp.get("y_est"),

@@ -163,18 +163,19 @@
      "tipo": "fiança",
      "prestador_ou_objeto": "Simpar S.A. (Fiadora atual)",
      "condicoes": "Válida até o pagamento integral do Valor Garantido (Cláusulas 4.17.5 e 4.17.6 da Escritura). Segundo a AGD de 23/10/2025, será substituída pela Aegea, com exoneração da Simpar, somente após a conclusão da Operação. Os trechos não mostram se a fiança é solidária nem se há renúncia ao benefício de ordem.",
-     "situacao": "vigente",
+     "situacao": "exonerada (substituída pela Aegea após a conclusão da Operação em 08/12/2025)",
      "fonte": "Escritura de 22/12/2021 (Cláusulas 4.17.5 e 4.17.6, conforme citadas na Proposta da Administração de 19/09/2025); Ata da AGD de 23/10/2025"
     },
     {
      "tipo": "fiança",
      "prestador_ou_objeto": "Aegea Saneamento e Participações S.A. (Nova Fiadora)",
-     "condicoes": "Assume todos os direitos e obrigações da Simpar, nos mesmos termos da Escritura, e será a única fiadora após a substituição. Condição suspensiva: conclusão da Operação (efetiva transferência das ações da Ciclus Ambiental S.A. à Padova Participações S.A., subsidiária integral da Aegea). Condição adicional: envio pela Companhia ao Agente Fiduciário da documentação solicitada, em até 30 dias após a conclusão da Operação (art. 11, X, Resolução CVM 17). A formalização será feita por 5º aditamento à Escritura, também em até 30 dias após a conclusão. Contrapartida aprovada: índice financeiro temporário Dívida Financeira Líquida/EBITDA ≤ 4,00x, apurado anualmente, de 31/12/2025 a 31/12/2029, sobre as demonstrações da Aegea; os índices originais voltam a ser apurados a partir do trimestre findo em 30/09/2030.",
-     "situacao": "proposta",
+     "condicoes": "Assume todos os direitos e obrigações da Simpar, nos mesmos termos da Escritura, e será a única fiadora após a substituição. Condição suspensiva: conclusão da Operação (efetiva transferência das ações da Ciclus Ambiental S.A. à Padova Participações S.A., subsidiária integral da Aegea). Condição adicional: envio pela Companhia ao Agente Fiduciário da documentação solicitada, em até 30 dias após a conclusão da Operação (art. 11, X, Resolução CVM 17). A formalização será feita por 5º aditamento à Escritura, também em até 30 dias após a conclusão. Contrapartida aprovada: índice financeiro temporário Dívida Financeira Líquida/EBITDA ≤ 4,00x, apurado anualmente, de 31/12/2025 a 31/12/2029, sobre as demonstrações da Aegea; os índices originais voltam a ser apurados a partir do trimestre findo em 30/09/2030. Conferido em 17/11/2026: a compra da Ciclus Ambiental pela Padova (Aegea) foi concluída em 08/12/2025 (comunicados da Simpar e da Ciclus Rio), o que cumpre a condição suspensiva aprovada na AGD de 23/10/2025. A fiança passa a ser da Aegea e a Simpar fica exonerada; o 5º aditamento que formaliza a troca não foi conferido.",
+     "situacao": "vigente (condição suspensiva cumprida em 08/12/2025)",
      "fonte": "Proposta da Administração de 19/09/2025 (itens I a III); Ata da AGD de 23/10/2025, 2ª convocação, deliberação sobre a substituição de fiador"
     }
    ],
-   "resumo": "Fiança da Simpar vigente; troca pela Aegea aprovada em AGD, sujeita à conclusão da Operação"
+   "resumo": "Fiança da Aegea (substituiu a Simpar com a conclusão da compra em 08/12/2025); em troca, covenant temporário de dívida líquida/EBITDA ≤ 4,0x na Aegea até 2029",
+   "fonte_manual": "Conferido em 17/11/2026: a compra da Ciclus Ambiental pela Padova (Aegea) foi concluída em 08/12/2025 (comunicados da Simpar e da Ciclus Rio), o que cumpre a condição suspensiva aprovada na AGD de 23/10/2025. A fiança passa a ser da Aegea e a Simpar fica exonerada; o 5º aditamento que formaliza a troca não foi conferido."
   },
   "CCLS21": {
    "codigo": "CCLS21",
@@ -185,18 +186,19 @@
      "tipo": "fiança",
      "prestador_ou_objeto": "Simpar S.A. (Fiadora atual)",
      "condicoes": "Válida até o pagamento integral do Valor Garantido (Cláusulas 4.17.5 e 4.17.6 da Escritura). Segundo a AGD de 23/10/2025, será substituída pela Aegea, com exoneração da Simpar, somente após a conclusão da Operação. Os trechos não mostram se a fiança é solidária nem se há renúncia ao benefício de ordem.",
-     "situacao": "vigente",
+     "situacao": "exonerada (substituída pela Aegea após a conclusão da Operação em 08/12/2025)",
      "fonte": "Escritura de 22/12/2021 (Cláusulas 4.17.5 e 4.17.6, conforme citadas na Proposta da Administração de 19/09/2025); Ata da AGD de 23/10/2025"
     },
     {
      "tipo": "fiança",
      "prestador_ou_objeto": "Aegea Saneamento e Participações S.A. (Nova Fiadora)",
-     "condicoes": "Assume todos os direitos e obrigações da Simpar, nos mesmos termos da Escritura, e será a única fiadora após a substituição. Condição suspensiva: conclusão da Operação (efetiva transferência das ações da Ciclus Ambiental S.A. à Padova Participações S.A., subsidiária integral da Aegea). Condição adicional: envio pela Companhia ao Agente Fiduciário da documentação solicitada, em até 30 dias após a conclusão da Operação (art. 11, X, Resolução CVM 17). A formalização será feita por 5º aditamento à Escritura, também em até 30 dias após a conclusão. Contrapartida aprovada: índice financeiro temporário Dívida Financeira Líquida/EBITDA ≤ 4,00x, apurado anualmente, de 31/12/2025 a 31/12/2029, sobre as demonstrações da Aegea; os índices originais voltam a ser apurados a partir do trimestre findo em 30/09/2030.",
-     "situacao": "proposta",
+     "condicoes": "Assume todos os direitos e obrigações da Simpar, nos mesmos termos da Escritura, e será a única fiadora após a substituição. Condição suspensiva: conclusão da Operação (efetiva transferência das ações da Ciclus Ambiental S.A. à Padova Participações S.A., subsidiária integral da Aegea). Condição adicional: envio pela Companhia ao Agente Fiduciário da documentação solicitada, em até 30 dias após a conclusão da Operação (art. 11, X, Resolução CVM 17). A formalização será feita por 5º aditamento à Escritura, também em até 30 dias após a conclusão. Contrapartida aprovada: índice financeiro temporário Dívida Financeira Líquida/EBITDA ≤ 4,00x, apurado anualmente, de 31/12/2025 a 31/12/2029, sobre as demonstrações da Aegea; os índices originais voltam a ser apurados a partir do trimestre findo em 30/09/2030. Conferido em 17/11/2026: a compra da Ciclus Ambiental pela Padova (Aegea) foi concluída em 08/12/2025 (comunicados da Simpar e da Ciclus Rio), o que cumpre a condição suspensiva aprovada na AGD de 23/10/2025. A fiança passa a ser da Aegea e a Simpar fica exonerada; o 5º aditamento que formaliza a troca não foi conferido.",
+     "situacao": "vigente (condição suspensiva cumprida em 08/12/2025)",
      "fonte": "Proposta da Administração de 19/09/2025 (itens I a III); Ata da AGD de 23/10/2025, 2ª convocação, deliberação sobre a substituição de fiador"
     }
    ],
-   "resumo": "Fiança da Simpar vigente; troca pela Aegea aprovada em AGD, sujeita à conclusão da Operação"
+   "resumo": "Fiança da Aegea (substituiu a Simpar com a conclusão da compra em 08/12/2025); em troca, covenant temporário de dívida líquida/EBITDA ≤ 4,0x na Aegea até 2029",
+   "fonte_manual": "Conferido em 17/11/2026: a compra da Ciclus Ambiental pela Padova (Aegea) foi concluída em 08/12/2025 (comunicados da Simpar e da Ciclus Rio), o que cumpre a condição suspensiva aprovada na AGD de 23/10/2025. A fiança passa a ser da Aegea e a Simpar fica exonerada; o 5º aditamento que formaliza a troca não foi conferido."
   }
  },
  "garantias_meta": {
