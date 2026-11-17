@@ -619,7 +619,9 @@ def coletar_anbima_cricra(d: date) -> dict[str, dict]:
         pu, pct = num(g("pu")), num(g("pct"))
         out[cod] = {
             "devedor": g("dev"), "securitizadora": g("sec"), "serie": g("serie"),
-            "emissao": g("emissao"), "vencimento": g("venc"), "indice": g("idx"),
+            "emissao": g("emissao"), "vencimento": g("venc"),
+            # índice em branco com taxa indicativa = prefixado (a ANBIMA não escreve "PRÉ" no arquivo de CRI/CRA)
+            "indice": g("idx") or ("PRÉ" if num(g("tx")) is not None else ""),
             "tx_compra": num(g("txc")), "tx_venda": num(g("txv")), "tx_ind": num(g("tx")),
             "pu": pu, "pct_par": pct, "duration": num(g("dur")),
             "pu_par": round(pu / (pct / 100), 6) if pu and pct else None,
@@ -1080,6 +1082,8 @@ def _calcular_preco_e_yield(t: str | None, d: date, neg: dict | None, anb: dict 
                 venc = _data(anb.get("vencimento"))
                 if cv and cup is not None and venc and venc > d:
                     out.update(tir_moic(fluxo_nominal(d, venc, base, cup / 100, None, [venc], [venc], cv), pu_par, pmed))
+                elif base == "PRE":
+                    out["tir"] = y          # prefixado: a TIR nominal é o próprio yield
                 return out
     # 3) CRI/CRA sem cronograma: cupom do indexador ANBIMA, supondo pagamento bullet (estimativa)
     if anb and anb.get("indice") and anb.get("vencimento"):
@@ -1543,7 +1547,7 @@ def construir_catalogo() -> None:
             if base == "%DI":
                 idx_txt = f"{f2(s.get('mult'))}% do DI"
             elif base == "PRE":
-                idx_txt = f"{f2(s.get('taxa'))}% a.a."
+                idx_txt = f"{f2(s.get('taxa'))}% a.a." if s.get("taxa") else "prefixado, taxa n/d"
             elif base:
                 idx_txt = f"{base[:-1]} + {f2(s.get('taxa'))}%" if s.get("taxa") else f"{base[:-1]} + taxa n/d"
         if c in TAXAS_CORR:
@@ -1591,7 +1595,11 @@ def construir_catalogo() -> None:
                 itens[-1]["pulv"] = True
         gl = garantias_lidas().get(c.upper())
         if gl:
-            itens[-1].update(gres=gl["res"], gesp=gl["esp"], gn=gl["n"], gtip=gl["tip"], garq=gl["arq"])
+            res_ = gl["res"]
+            if res_ and re.search(r"indetermin|n[ãa]o determin|sem documentos? d|nenhum documento|documentos tratam d", res_, re.I) \
+                    and not re.search(r"garantias previstas", res_, re.I):
+                res_ = "Não identificada: a escritura desta emissão não estava entre os documentos da CVM lidos; vale a espécie registrada no SND"
+            itens[-1].update(gres=res_, gesp=gl["esp"], gn=gl["n"], gtip=gl["tip"], garq=gl["arq"])
             if gl["n"] == 0 and ((s or {}).get("garantia") == "Real" or
                                  re.search(r"n[aã]o (determin|identific|localiz)|sem documento|n[aã]o h[aá] documento", gl["res"] or "", re.I)):
                 itens[-1]["gind"] = True        # leitura não identificou a garantia (não é "sem garantia")
