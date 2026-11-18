@@ -10,7 +10,7 @@
   "yield_faltando": 1,
   "fora_da_curva_emissor": 4,
   "na_securitizadora": 19,
-  "sem_nome_curto": 7
+  "sem_nome_curto": 0
  },
  "cobertura": {
   "itens": 5130,
@@ -19,10 +19,10 @@
   "com_yield": 1818,
   "garantia_lida": 165,
   "com_evento": {
-   "re": 34,
+   "re": 36,
+   "rp": 35,
    "rj": 25,
-   "rp": 33,
-   "va": 4,
+   "va": 3,
    "fa": 2
   }
  },
@@ -511,7 +511,7 @@
    {
     "c": "21F1076965",
     "t": "CRI",
-    "emp": "JPS ADMINISTRACAO E COMERCIO LTDA",
+    "emp": "JPS",
     "k": "JPS ADMINISTRACAO E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 4131091.61
@@ -1351,7 +1351,7 @@
    {
     "c": "22K0640841",
     "t": "CRI",
-    "emp": "ARTHUR LUNDGREN TECIDOS S A CASAS PERNAMBUCANAS",
+    "emp": "Pernambucanas",
     "k": "ARTHUR LUNDGREN TECIDOS CASAS PERNAMBUCANAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 147706.43
@@ -1455,7 +1455,7 @@
    {
     "c": "22K1802248",
     "t": "CRI",
-    "emp": "CIBRAFERTIL COMPANHIA BRASILEIRA DE FERTILIZANTES",
+    "emp": "Cibrafértil",
     "k": "CIBRAFERTIL BRASILEIRA DE FERTILIZANTES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 138865.77
@@ -3687,7 +3687,7 @@
    {
     "c": "24J2539958",
     "t": "CRI",
-    "emp": "ROSELANDIA EMPREENDIMENTOS IMOBILIARIOS LTDA",
+    "emp": "Roselândia",
     "k": "ROSELANDIA EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 4011938.56
@@ -10447,7 +10447,7 @@
    {
     "c": "CRA026004XT",
     "t": "CRA",
-    "emp": "AGRICOLA PANORAMA COMERCIO E REPRESENTACOES LTDA",
+    "emp": "Agrícola Panorama",
     "k": "AGRICOLA PANORAMA COMERCIO E REPRESENTACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 6737694.36
@@ -11503,14 +11503,6 @@
     "n": 1
    }
   ],
-  "sem_nome_curto": [
-   "AEROPORTO INTERNACIONAL DO RIO",
-   "AGRICOLA PANORAMA COMERCIO E REPRESENTACOES",
-   "ARTHUR LUNDGREN TECIDOS CASAS PERNAMBUCANAS",
-   "CIBRAFERTIL BRASILEIRA DE FERTILIZANTES",
-   "JPS ADMINISTRACAO E COMERCIO",
-   "OME SPE",
-   "ROSELANDIA EMPREENDIMENTOS IMOBILIARIOS"
-  ]
+  "sem_nome_curto": []
  }
 }
