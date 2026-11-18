@@ -1,0 +1,143 @@
+{
+ "series": [
+  {
+   "codigo": "HSPA12",
+   "emissao": 2,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": null,
+   "vne": null,
+   "remuneracao": {
+    "indexador": null,
+    "taxa": null,
+    "base": null,
+    "vigente_desde": null,
+    "historico": "A escritura original (06/09/2022) não foi fornecida e os valores originais da remuneração não constam dos trechos. A AGD de 31/10/2024 propunha DI + spread de até 2,80% a.a., base 252 du, mas não foi instalada por falta de quórum, então a proposta não produziu efeitos. Nenhum documento posterior aprova alteração de remuneração."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": null,
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Documentos 1 a 5 (atas e propostas de AGD). Nenhum deles traz o cronograma original ou consolidado. A escritura de 06/09/2022 e seus aditamentos não foram fornecidos.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 12,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2028-01-31",
+     "2028-05-02",
+     "2028-07-31",
+     "2028-10-30",
+     "2029-01-30",
+     "2029-04-30",
+     "2029-07-30",
+     "2029-10-30",
+     "2030-01-30",
+     "2030-04-30",
+     "2030-07-30",
+     "2030-10-30"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "2ª emissão (HSPA12): a Emissora propôs Recuperação Extrajudicial (Grupo Kora Saúde) em 29/04/2026, o que configurou Evento de Vencimento Antecipado Automático (Cláusula 6.1.1, 'iii'). Em 04/05/2026 foi deferido o processamento da RE, com suspensão por 180 dias das execuções contra o grupo. Na AGD de 30/10/2026 (ata entregue em 02/11/2026), com 95,84% das Debêntures em Circulação presentes, foi aprovada a sustação dos efeitos do vencimento antecipado (92,71% a favor, 3,12% contra). Também foi aprovada a liberação/extinção das garantias, incluindo a exclusão da Fiadora, com a espécie passando a quirografária. Os itens (B), (C) e (D) foram suspensos sem deliberação, para reabertura em 15/01/2027 às 15h. A AGD de 31/10/2024, que propunha novos termos, não foi instalada por falta de quórum. Um aditamento à escritura deve ser celebrado em até 10 dias úteis após 30/10/2026, mas não foi fornecido. A adesão do Agente Fiduciário ao Plano de RE ainda está pendente de deliberação.",
+ "lacunas": "Não constam dos trechos: data de emissão, data de vencimento, VNE, remuneração vigente (indexador, taxa e base), periodicidade e datas de juros, cronograma de amortização, prêmios, eventual incorporação de juros e carência. Isso ocorre porque a escritura original e seus aditamentos não foram fornecidos. As datas e valores citados na AGD de 2024 (vencimento em outubro/2030, juros mensais a partir de jan/2028, amortização trimestral a partir de jan/2028, spread de até 2,80%, prêmio de resgate de 1,00% flat) eram apenas propostas, com o dia exato a ser informado na assembleia, e não foram aprovados porque a assembleia não foi instalada. Por isso não são cronograma vigente. As condições de pagamento ao abrigo do Plano de Recuperação Extrajudicial também não constam dos trechos. O aditamento posterior à AGD de 30/10/2026 e o resultado da reabertura de 15/01/2027 também não estão disponíveis.",
+ "meta": {
+  "emissora": "HOSPITAL ANCHIETA S.A.",
+  "cnpj": "02560878000107",
+  "emissao": "2",
+  "lido_em": "2026-11-18",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2024-11-02",
+    "tipo": "ata_agd",
+    "assunto": "Termo de não instalação",
+    "protocolo": "026468IPE311020240204530211-90",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1297561&numSequencia=822287&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2024-11-21",
+    "tipo": "ata_agd",
+    "assunto": "Examinar, discutir e deliberar sobre: Modificar redações, aumentar remuneração, modificar data de vencimento entre outras deliberações",
+    "protocolo": "026468IPE211120240104561712-60",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1306752&numSequencia=831478&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-06-23",
+    "tipo": "ata_agd",
+    "assunto": "A celebração, pela Emissora e pelo Agente Fiduciário, de aditamento à Escritura de Emissão, caso necessário, para refletir as deliberações da presente assembleia.||A contratação de escritório de advocacia para a representação do Agente Fiduciário, em benefício dos interesses e direitos dos Debenturi",
+    "protocolo": "026468IPE230620260121302504-06",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1537733&numSequencia=1062439&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-10-13",
+    "tipo": "proposta_agd",
+    "assunto": "Proposta da Administração AGDEB HSPA12",
+    "protocolo": "026468IPE301020260191750498-41",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576841&numSequencia=1101547&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-10-13",
+    "tipo": "proposta_agd",
+    "assunto": "Edital de convocação AGDEB HSPA12",
+    "protocolo": "026468IPE301020260107319051-69",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1576842&numSequencia=1101548&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-11-02",
+    "tipo": "ata_agd",
+    "assunto": "AGDEB HSPA12",
+    "protocolo": "026468IPE301020260122007687-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1582659&numSequencia=1107365&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 17161,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 1295,
+   "output_tokens_details": {
+    "thinking_tokens": 0
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "02560878000107_2"
+ },
+ "eventos": {
+  "HSPA12": {
+   "evento": "re",
+   "data": "2026-04-29",
+   "resumo": "Emissora propôs RE (Grupo Kora Saúde) em 29/04/2026, com processamento deferido em 04/05/2026. O vencimento antecipado automático foi sustado pela AGD de 30/10/2026."
+  }
+ }
+}

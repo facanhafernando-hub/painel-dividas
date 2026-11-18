@@ -1,0 +1,151 @@
+{
+ "series": [
+  {
+   "codigo": "AEGP19",
+   "emissao": 9,
+   "serie": "UNI",
+   "data_emissao": null,
+   "vencimento": "2028-10-04",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 1.9,
+    "base": "252 du",
+    "vigente_desde": "2021-10-14",
+    "historico": "'100% do CDI + 1,9% a.a. na base 252 no período de 14/10/2021 até 04/10/2028' (Anexos III/IV das escrituras de 2026). Não há atualização monetária. Não consta alteração de taxa."
+   },
+   "juros": {
+    "periodicidade_meses": null,
+    "primeira_data": null,
+    "ultima_data": "2028-10-04",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [],
+   "premios": [],
+   "fonte": "Listas de emissões do Agente Fiduciário (Doc. 1, 2, 5, 6 e 7): Série 1, Emissão 9, R$ 800.000.000,00, 800.000 ativos, vencimento 04/10/2028, status ativo. A escritura da 9ª emissão não foi fornecida.",
+   "confianca": "baixa",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 0,
+    "datas_iguais": 0,
+    "so_snd": [
+     "2027-10-04",
+     "2028-10-04"
+    ],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "19ª emissão (AEGPA9): sem vencimento antecipado, suspensão ou RJ/RE nos documentos. Em 08/08/2025 a emissora lançou oferta de aquisição facultativa das debêntures em circulação (750.000), pelo VNU mais remuneração, sem prêmio. As adesões iam até 25/08/2025 e a liquidação estava prevista até 01/09/2025. A oferta dependia da emissão da 23ª emissão (até R$ 3,2 bi, 7 anos), cujo fim era o reperfilamento do passivo (liability management). Os documentos de 2026-03 ainda listam a 19ª emissão como ATIVA, com vencimento em 25/06/2029, então o resultado da oferta é desconhecido. 23ª emissão: aprovada em RCA de 07/08/2025, sem escritura nos documentos. 25ª emissão: sem informação. 9ª emissão: listada como ATIVA, sem inadimplementos reportados.",
+ "lacunas": "AEGPB3 (23ª): faltam escritura e aditamentos, então data de emissão, vencimento, remuneração e cronogramas de juros e amortização estão em branco. Há um candidato não confirmado nas listas de 2026: R$ 2.273.029.000, CDI + 1,8%, vencimento 22/08/2032, série com a emissão não identificada (o número da emissão foi cortado). Não o atribuí à 23ª. AEGPB5 (25ª): nenhum trecho a identifica. AEGP19 (9ª): só há vencimento (04/10/2028), taxa (100% DI + 1,9%) e volume nas listas do Agente Fiduciário. Faltam data de emissão (14/10/2021 é o início do período de remuneração, não necessariamente a data de emissão), periodicidade e datas de juros, e cronograma de amortização. O VNU de R$ 1.000 foi inferido de R$ 800.000.000 / 800.000 ativos. AEGPA9: na tabela de juros a parcela 7 (25/12/2027) foi cortada pelo recorte, mas decorre da regra semestral (25/06 e 25/12). A escritura prevê amortização extraordinária facultativa a partir de 25/12/2026 (até 98%) e resgate antecipado facultativo, ambos com prêmio de 0,45% a.a. pro rata sobre o prazo remanescente. São eventos opcionais sem data fixa, por isso não os listei em 'premios'. O resultado da oferta de aquisição de 2025 não consta. Os documentos 5, 6 e 7 são escrituras de outras emissões (26ª, 27ª e 28ª), usadas só pelas listas de emissões do Anexo.",
+ "meta": {
+  "emissora": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "cnpj": "08827501000158",
+  "emissao": "9",
+  "lido_em": "2026-11-18",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2018-07-31",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE020720180104331211-82",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=634741&numSequencia=168506&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-07-02",
+    "tipo": "escritura",
+    "assunto": "Instrumento Particular de Escritura da 19ª Emissão de Debêntures Simples da AEGEA",
+    "protocolo": "023396IPE050620240104547511-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256095&numSequencia=780821&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-07-02",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento ao Instrumento Particular de Escritura da 19ª Emissão de Debêntures Simples da AEGEA",
+    "protocolo": "023396IPE280620240104547511-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256097&numSequencia=780823&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-08-07",
+    "tipo": "comunicado",
+    "assunto": "Debêntures Exchange",
+    "protocolo": "023396IPE070820250120257705-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1409192&numSequencia=933904&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Aquisição Facultativa das Debêntures da 19ª Emissão da Companhia",
+    "protocolo": "023396IPE080820250162090867-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1410217&numSequencia=934929&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-03-03",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE270220260122150224-55",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484930&numSequencia=1009636&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-12",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE120320260181007461-94",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489707&numSequencia=1014413&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-03-24",
+    "tipo": "escritura",
+    "assunto": "Emissão de Valores Mobiliários",
+    "protocolo": "023396IPE230320260117741981-37",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494171&numSequencia=1018877&numVersao=1",
+    "explicito": false
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 155700,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 5211,
+   "output_tokens_details": {
+    "thinking_tokens": 2353
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08827501000158_19-23-25-9"
+ },
+ "eventos": {
+  "AEGP19": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "9ª emissão listada como ativa, sem inadimplementos reportados. A oferta de aquisição e o reperfilamento se referem à 19ª emissão, não a esta série."
+  }
+ }
+}

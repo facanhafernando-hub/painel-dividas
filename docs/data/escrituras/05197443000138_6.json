@@ -9,10 +9,10 @@
    "vne": 1000.0,
    "remuneracao": {
     "indexador": "DI+",
-    "taxa": null,
+    "taxa": 1.45,
     "base": "252 du",
     "vigente_desde": null,
-    "historico": "100% da Taxa DI + sobretaxa definida em bookbuilding, limitada a 1,60% a.a. (cláusula 6.14.2 da Escritura). A taxa final seria ratificada em aditamento (cláusulas 2.2.4 e 5.1.9.1), mas esse aditamento não consta dos trechos. Sem atualização monetária do VNU."
+    "historico": "A escritura original fixava 100% da Taxa DI + spread a definir em bookbuilding, limitado a 1,60% a.a. O spread final não aparece no aditamento de bookbuilding, que não foi fornecido. O valor 1,45% vem das listas de emissões do agente fiduciário (Anexo da 5ª emissão, 2023, e Anexos II da 9ª e 10ª emissões, 2025). Não há registro de mudança posterior. Não há atualização monetária."
    },
    "juros": {
     "periodicidade_meses": 6,
@@ -39,13 +39,8 @@
      "base": "saldo"
     }
    ],
-   "premios": [
-    {
-     "data": "2024-10-07",
-     "descricao": "Prêmio de 0,45% a.a. (base 252 du) sobre o prazo médio remanescente. Aplica-se apenas se a emissora optar por Resgate Antecipado Facultativo Total ou Amortização Extraordinária Facultativa (esta limitada a 98% do saldo), possíveis a partir desta data. Não é pagamento programado."
-    }
-   ],
-   "fonte": "Documento 1 (Escritura da 6ª Emissão, entregue em 2021-10-08): cláusulas 6.11 (emissão), 6.12 (vencimento), 6.13 (amortização), 6.14.2 e 6.14.6 (remuneração e pagamento), 6.18 e 6.20 (resgate e amortização facultativos). O Documento 2 (Segundo Aditamento, 2023) trata da sucessão da emissora e de alterações de registro e objeto social. Nos trechos recebidos, ele não altera o cronograma.",
+   "premios": [],
+   "fonte": "Documento 1 (escritura da 6ª emissão BCBF, cláusulas 6.11 a 6.14, incluindo 6.13 para amortização e 6.14.6 para juros). Spread de 1,45% do Documento 3 (lista do agente fiduciário). O Documento 2 (Segundo Aditamento, 2023) só troca a emissora por Hapvida Participações e Investimentos S.A., altera o local de registro e atualiza o objeto social. Nos trechos recebidos ele não mexe no cronograma.",
    "confianca": "media",
    "conferencia_snd": {
     "snd": true,
@@ -59,13 +54,13 @@
    }
   }
  ],
- "situacao": "Emissão 6: nos trechos não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. O Segundo Aditamento (entregue em 2023-04-28) migra a emissora da BCBF Participações S.A. para a Hapvida Participações e Investimentos S.A., que a sucede em direitos e obrigações.",
- "lacunas": "1) A sobretaxa (spread) final não aparece nos trechos. Ela dependia do bookbuilding e seria ratificada em aditamento (o Primeiro Aditamento não foi fornecido); só se sabe que o limite é 1,60% a.a. 2) A tabela de datas de pagamento de juros está ilegível nos trechos. A regra (semestral, dias 07 de abril e outubro, de 2022-04-07 a 2027-10-07) vem do texto da cláusula 6.14.6. 3) O Segundo Aditamento está bastante recortado. Não é possível confirmar se há alteração de cronograma, de remuneração ou de amortização, embora o objeto descrito (sucessão da emissora, registro e objeto social) não sugira isso. 4) Não há indicação de pagamentos já realizados nem de resgate ou amortização facultativos efetuados. O cronograma mostrado é o contratual. 5) Os percentuais de amortização (33,3333%, 50% e 100%) incidem sobre o saldo do VNU, conforme o cabeçalho da tabela da cláusula 6.13. Eles correspondem a 1/3 do VNU em 2025, metade do saldo restante em 2026 e o restante no vencimento.",
+ "situacao": "BCBF16 (6ª emissão): a emissora original BCBF Participações S.A. foi sucedida pela Hapvida Participações e Investimentos S.A. (Segundo Aditamento, 2023). HAPV15 (5ª emissão): há 25.886 debêntures em tesouraria e 974.114 em circulação (Documento 8, 2026-08-25). HAPVA0 (10ª emissão): ainda não há dados de recompra nos trechos recebidos. Os três ativos constam como \"em circulação\" no Documento 8. Esse documento autoriza recompras de até R$ 150 milhões, com R$ 149,9 milhões já usados e liquidação até 2026-12-31. As compras são feitas a mercado, sem prêmio, abaixo do saldo devedor, e não alteram o cronograma contratual. Nos Documentos 3, 4 e 6, as listas do agente fiduciário apontam as três como \"Adimplência Financeira\". Não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação em nenhum documento.",
+ "lacunas": "1) BCBF16: o Primeiro Aditamento (ratificação do bookbuilding, com o spread final) não foi fornecido. A taxa de 1,45% vem de listas do agente fiduciário e não de cláusula contratual. 2) BCBF16: não há versão consolidada da escritura. O Segundo Aditamento aparece só em trechos que não mostram alteração de cronograma, então se assumiu o cronograma da escritura original. 3) BCBF16: a tabela de datas de pagamento de juros está ilegível; a regra (dia 07 de abril e outubro, de 2022-04-07 a 2027-10-07) vem do texto da cláusula 6.14.6. 4) Os documentos não confirmam se as amortizações de BCBF16 de 2025-10-07 e 2026-10-07 já foram pagas, nem o saldo atual. 5) As datas de primeira integralização de HAPV15 e HAPVA0 não aparecem, por isso vigente_desde está nulo. 6) HAPV15 vence em 2030-01-27, e a última data de juros coincide com o vencimento, fora do padrão de 27 de junho e dezembro. 7) Só há a escritura de cada emissão, sem aditamentos nem atas de AGD, então o cronograma é o contratual original. 8) O Documento 8 não traz as quantidades de BCBF16 e HAPVA0 em circulação ou em tesouraria. 9) Resgate antecipado facultativo, amortização extraordinária, prêmios e oferta de resgate são opcionais e não entram como cronograma. Prêmio de BCBF16: 0,45% a.a. sobre o prazo médio, a partir de 2024-10-07. Prêmio de HAPV15: 0,60% a 0,10% flat, a partir de 2025-12-27. Prêmio de HAPVA0: 0,60% a 0,05% flat, a partir de 2027-10-15. 10) Não foi tratado o ajuste de datas de pagamento para dias úteis.",
  "meta": {
   "emissora": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
   "cnpj": "05197443000138",
   "emissao": "6",
-  "lido_em": "2026-11-13",
+  "lido_em": "2026-11-18",
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
@@ -85,32 +80,79 @@
     "versao": "1",
     "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1092999&numSequencia=617728&numVersao=1",
     "explicito": true
+   },
+   {
+    "data": "2023-12-22",
+    "tipo": "escritura",
+    "assunto": "5ª Emissão de Debêntures",
+    "protocolo": "024392IPE151220230104528209-56",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1176895&numSequencia=701621&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-04-24",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250151163146-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-04-24",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE240420250154439325-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365044&numSequencia=889770&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "escritura",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE071020250184374491-09",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-10-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Debêntures",
+    "protocolo": "024392IPE081020250101964273-32",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-08-25",
+    "tipo": "comunicado",
+    "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
+    "protocolo": "024392IPE250820260171572734-05",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1",
+    "explicito": false
    }
   ],
   "uso_grupo": {
-   "input_tokens": 31187,
+   "input_tokens": 145662,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 2280,
+   "output_tokens": 5058,
    "output_tokens_details": {
-    "thinking_tokens": 842
+    "thinking_tokens": 2118
    },
-   "service_tier": "standard",
+   "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "05197443000138_6"
- },
- "eventos": {
-  "BCBF16": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação. O Segundo Aditamento apenas migra a emissora para a Hapvida, que a sucede nas obrigações."
-  }
+  "grupo": "05197443000138_10-5-6"
  },
  "garantias": {
   "BCBF16": {
@@ -155,5 +197,12 @@
   "cnpj_documental": "19276528000116",
   "emissora_atual": "Hapvida Participações e Investimentos S.A. (CNPJ 05.197.443/0001-38), sucessora da BCBF Participações S.A. por cessão aprovada em AGD de 20/03/2023 e formalizada no Segundo Aditamento de 20/04/2023",
   "lacunas": "O Segundo Aditamento aparece em trechos parciais; não consta cláusula expressa de manutenção da fiança, mas a Notre Dame Intermédica Saúde S.A. figura como fiadora e parte do aditamento, e os trechos mostrados não alteram a Cláusula 6.10. O Primeiro Aditamento (citado como celebrado em 'outubro de 2023', provável erro de OCR para 2021) não foi fornecido; seu conteúdo é desconhecido. Não há informação sobre eventual inclusão da Hapvida Participações como fiadora adicional (prevista na definição de Incorporação Permitida) nem sobre liberação da fiança."
+ },
+ "eventos": {
+  "BCBF16": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE ou renegociação; série consta como adimplente. Sucessão pela Hapvida (2023) não alterou o cronograma contratual."
+  }
  }
 }

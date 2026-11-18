@@ -1,0 +1,175 @@
+{
+ "series": [
+  {
+   "codigo": "AEGPA4",
+   "emissao": 14,
+   "serie": "UNI",
+   "data_emissao": "2023-05-05",
+   "vencimento": "2028-10-25",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 3.47,
+    "base": "252 du",
+    "vigente_desde": "2023-10-30",
+    "historico": "100% da Taxa DI + spread de 3,58% a.a. (base 252) desde a Data da Primeira Integralização até 2023-10-30 (exclusive). 100% da Taxa DI + 3,47% a.a. (base 252) a partir de 2023-10-30 (inclusive), conforme AGD e 1º Aditamento de 2023-10-25."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-11-05",
+    "ultima_data": "2028-05-05",
+    "datas_irregulares": [
+     "2023-10-30",
+     "2028-10-25"
+    ],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2026-11-05",
+     "percentual": 33.3333,
+     "base": "vne"
+    },
+    {
+     "data": "2027-11-05",
+     "percentual": 33.3333,
+     "base": "vne"
+    },
+    {
+     "data": "2028-10-25",
+     "percentual": 33.3334,
+     "base": "vne"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2026-10-25",
+     "descricao": "A partir de 2026-10-25, prêmio de 0,45% a.a. (pro rata, base 252 du, sobre o prazo remanescente até o vencimento) em caso de Resgate Antecipado Facultativo Total ou Amortização Extraordinária Facultativa (limitada a 98% do saldo). É opcional, a critério da Emissora. Substituiu a tabela de prêmios decrescentes da escritura original."
+    }
+   ],
+   "fonte": "Doc. 4 (1º Aditamento, 2023-10-25) e Doc. 5 (ata da AGD, 2023-10-25): cláusulas 5.1.3.1, 5.3.2, 5.3.4, 5.4.1 (tabela de amortização), 5.5.1 (tabela de juros), 6.2 e 6.3. A data de emissão, o VNU e a Data da Primeira Integralização (spread original e 100% DI) vêm do Doc. 3 (escritura original).",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [
+     "2027-11-05",
+     "2028-10-25"
+    ],
+    "ok": false
+   }
+  }
+ ],
+ "situacao": "10ª emissão: sem vencimento antecipado ou RJ/RE nos trechos. Em AGD de 2025-10-28, os debenturistas aprovaram o desmembramento da série única em 2 séries (1ª: 1.524.225 debêntures, R$ 1.524.225.000; 2ª: 1.255.775 debêntures, R$ 1.255.775.000). A Data do Desmembramento é 2025-11-03. A 2ª série teve o vencimento alongado até 2036-01-15 e a taxa elevada para 19,5391% a.a., com pagamento extraordinário de juros na Data do Desmembramento. Os quóruns de deliberação também foram reduzidos para 50% mais uma. Trata-se de renegociação/reperfilamento. 14ª emissão: sem vencimento antecipado, suspensão ou RJ/RE. O prazo foi alongado de 2025-05-05 para 2028-10-25 em AGD de 2023-10-25. Em 2025-08-08 a Emissora divulgou oferta de aquisição facultativa dos 1.000.000 de debêntures em circulação, a VNU mais remuneração, sem prêmio. Adesão até 2025-08-25 e liquidação estimada até 2025-08-29. A oferta está condicionada à efetiva emissão da 23ª emissão (até R$ 3,2 bilhões, 7 anos), de liability management. Os trechos não informam se a oferta ou a 23ª emissão foram concluídas.",
+ "lacunas": "1) O código de negociação da 2ª série da 10ª emissão não consta nos trechos; a 1ª série foi mantida como AEGPA0 por presunção. 2) O desmembramento da 10ª emissão tem Data do Desmembramento em 2025-11-03, posterior ao documento (2025-10-30), e a ata da AGD de 2025-10-28 não foi fornecida; os dados vêm do 2º Aditamento. 3) Não é possível confirmar se a oferta de aquisição facultativa da 14ª emissão (agosto de 2025) foi concluída; se foi, parte ou toda a série pode ter sido cancelada ou adquirida. O cronograma da 14ª segue a versão alterada em 2023-10-25. 4) Os saldos atuais de principal não estão nos trechos. Presumiu-se que não houve amortização antecipada, o que não é confirmado. 5) Os percentuais de amortização da 14ª foram registrados como base 'vne': a tabela traz '% do VNU' (33,3333/33,3333/33,3334) e '% do saldo' (33,3333/50/100). 6) A 10ª emissão não informa a data de início da rentabilidade (texto cortado), então 'vigente_desde' da 1ª série ficou null. 7) A data da última parcela da 14ª (2028-10-25) vem do vencimento de 2.000 dias; datas que não sejam dia útil são prorrogadas para o dia útil seguinte (por exemplo, 2023-11-05 caiu em domingo). 8) As parcelas de juros pagas até a data dos documentos não foram verificadas.",
+ "meta": {
+  "emissora": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "cnpj": "08827501000158",
+  "emissao": "14",
+  "lido_em": "2026-11-18",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-05-09",
+    "tipo": "escritura",
+    "assunto": "Escritura da 10° Emissão de Debêntures",
+    "protocolo": "023396IPE270420220104469013-57",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=978925&numSequencia=503659&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2022-05-12",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da 10ª Emissão de Debêntures",
+    "protocolo": "023396IPE090520220104469311-24",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=980919&numSequencia=505653&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-04-25",
+    "tipo": "escritura",
+    "assunto": "Escritura da 14ª Emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, em série única",
+    "protocolo": "023396IPE250420230104504111-49",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1089711&numSequencia=614440&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-10-25",
+    "tipo": "escritura",
+    "assunto": "Primeiro Aditamento da 14ª Emissão de Debêntures",
+    "protocolo": "023396IPE251020230104522412-47",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1154312&numSequencia=679038&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-10-25",
+    "tipo": "ata_agd",
+    "assunto": "Deliberação acerca de alterações de cláusulas da Escritura da 14ª emissão de debêntures",
+    "protocolo": "023396IPE251020230104522412-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1154310&numSequencia=679036&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-08-07",
+    "tipo": "comunicado",
+    "assunto": "Debêntures Exchange",
+    "protocolo": "023396IPE070820250120257705-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1409192&numSequencia=933904&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Aquisição Facultativa das Debêntures da 14ª Emissão da Companhia",
+    "protocolo": "023396IPE080820250173347288-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1410209&numSequencia=934921&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-30",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento da Escritura da 10ª Emissão de Debêntures",
+    "protocolo": "023396IPE291020250119910451-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1437860&numSequencia=962572&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 126265,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 6527,
+   "output_tokens_details": {
+    "thinking_tokens": 3402
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08827501000158_10-14"
+ },
+ "eventos": {
+  "AEGPA4": {
+   "evento": "reperfilamento",
+   "data": "2023-10-25",
+   "resumo": "Prazo alongado de 2025-05-05 para 2028-10-25 por AGD de 2023. Oferta de aquisição facultativa de ago/2025 condicionada à 23ª emissão, sem conclusão informada."
+  }
+ }
+}

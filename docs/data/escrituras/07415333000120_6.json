@@ -1,9 +1,104 @@
 {
- "series": [],
+ "series": [
+  {
+   "codigo": "SIMH16",
+   "emissao": 6,
+   "serie": "UNI",
+   "data_emissao": "2022-12-20",
+   "vencimento": "2032-12-20",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 3.2,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "100% da Taxa DI + 3,20% a.a. desde a Primeira Data de Integralização (data não informada nos trechos). O comunicado de 2026-04-30 confirma a remuneração vigente sem alteração. A escritura prevê repactuação programada do spread em 2029-12-20 (Cláusula 4.4), ainda não ocorrida."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2023-06-20",
+    "ultima_data": "2032-12-20",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2030-12-20",
+     "percentual": 33.3333,
+     "base": "saldo"
+    },
+    {
+     "data": "2031-12-20",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2032-12-20",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "Documento 1 (escritura de 2022-12-06): cláusula 4.1.1 (data de emissão), 4.1.4 (vencimento), 4.1.5 (VNE), 4.3 (remuneração), 4.4 (repactuação), 4.5 (tabela de amortização) e 4.5.2 (pagamento semestral da remuneração, sem carência). Documento 2 (comunicado de 2026-04-30): vencimento, remuneração vigente e volume.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 3,
+    "amort_doc": 3,
+    "datas_iguais": 3,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "6ª emissão (SIMH16): nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. O comunicado de 2026-04-30 mostra pagamentos realizados em 2025-06-20 e 2025-12-20.",
+ "lacunas": "1) Nenhum aditamento, ata de AGD ou plano posterior aparece nos trechos, então o cronograma vem da escritura original. Se houve aditamento, ele não foi visto. 2) A Primeira Data de Integralização não foi informada, por isso 'vigente_desde' ficou null. 3) No comunicado, os valores 79,81982900 (2025-06-20) e 91,87877700 (2025-12-20) aparecem sem os cabeçalhos de coluna. Pela magnitude (cerca de 8-9% sobre o VNE de R$ 1.000, compatível com DI + 3,20% em um semestre e sem amortização antes de 2030), interpretei como pagamentos de juros e não como amortização. Isso é uma inferência e não está escrito no documento. 4) Repactuação do spread em 2029-12-20: o novo spread só será conhecido na Comunicação de Repactuação (180 a 60 dias antes) e não está nos trechos. Se não houver comunicação, a emissora deve resgatar tudo nessa data (Cláusula 4.4.9). 5) Amortização extraordinária facultativa (a partir de 2025-12-20, limite de 98% do saldo) e resgate antecipado facultativo total (a partir de 2025-12-20) têm prêmio de 0,50% a.a. pro rata sobre o prazo remanescente até a repactuação ou o vencimento. São eventos opcionais, sem data definida, e por isso 'premios' ficou vazio. Não há informação sobre exercício desses direitos. 6) Os trechos foram recortados ('[...]'), então cláusulas omitidas podem conter outros detalhes.",
  "meta": {
   "emissora": "SIMPAR S.A.",
   "cnpj": "07415333000120",
-  "emissao": "6"
+  "emissao": "6",
+  "lido_em": "2026-11-18",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2022-12-06",
+    "tipo": "escritura",
+    "assunto": "6ª (sexta) Emissão de Debêntures Simples",
+    "protocolo": "025003IPE281120220104490111-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1038686&numSequencia=563416&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2026-04-30",
+    "tipo": "comunicado",
+    "assunto": "6ª Emissão de Debêntures - SIMH16",
+    "protocolo": "025003IPE311220250102065048-19",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1514173&numSequencia=1038879&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 40901,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2394,
+   "output_tokens_details": {
+    "thinking_tokens": 1011
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "07415333000120_6"
  },
  "garantias": {
   "SIMH16": {
@@ -40,5 +135,12 @@
   "cnpj_documental": null,
   "emissora_atual": "SIMPAR S.A. (CNPJ 07.415.333/0001-20), emissora de todas as séries analisadas",
   "lacunas": "Nenhuma garantia foi identificada nos documentos para as três séries. Fontes: Doc. 1, cláusulas 4.1.3 e 4.1.3.1 (3ª emissão); Doc. 3, cláusulas 4.1.3 e 4.1.3.1 (6ª emissão); Doc. 4 (JSMLA5: 'As Debêntures não contam com garantias'); Doc. 5 (SIMH16: espécie quirografária; Anexo II sem garantias descritas). O Doc. 2 (1º aditivo) só trata do resultado do bookbuilding e das datas de remuneração, sem alterar espécie ou garantias. Nos documentos fornecidos não há comunicado específico para JSMLB5 nem ata de AGD; a ausência de garantia nessa série vem da escritura (3ª emissão, 2 séries quirografárias), e nada indica reforço posterior. A escritura prevê reorganização societária autorizada em que a Simpar ou a Holding permaneceria coobrigada solidária se a emissão fosse transferida a uma controlada elegível. É só uma condição futura, sem indício de ocorrência, e não foi tratada como garantia vigente. A 3ª emissão consta nos documentos como de SIMPAR S.A., não de 'JSL S.A.'. O Doc. 3 indica que a Simpar era antiga JSL S.A. ('2ª emissão da Simpar, antiga 14ª da JSL S.A.'). Não há registro de migração de emissora nas séries analisadas. Os quadros de outras emissões do grupo (Movida, Vamos, CS Brasil etc.) nos Docs. 1 e 3 não se referem às séries analisadas e foram ignorados."
+ },
+ "eventos": {
+  "SIMH16": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, RJ, RE, suspensão de pagamentos ou novação nos trechos. Pagamentos em 20/06/2025 e 20/12/2025 conforme comunicado de 30/04/2026."
+  }
  }
 }

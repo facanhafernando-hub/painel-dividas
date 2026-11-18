@@ -1,0 +1,132 @@
+{
+ "series": [
+  {
+   "codigo": "AEGPB7",
+   "emissao": 17,
+   "serie": "2",
+   "data_emissao": "2023-09-15",
+   "vencimento": "2028-09-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "DI+",
+    "taxa": 2.95,
+    "base": "252 du",
+    "vigente_desde": null,
+    "historico": "A escritura original (set/2023) fixava o spread entre 3,00% e 3,20% a.a., a definir no bookbuilding. O 1º Aditamento (entregue em 2024-07-02) ratificou o resultado do bookbuilding e fixou 100% da Taxa DI + 2,95% a.a., base 252 du. Sem atualização monetária."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2024-03-15",
+    "ultima_data": "2028-09-15",
+    "datas_irregulares": [],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2027-09-15",
+     "percentual": 50.0,
+     "base": "saldo"
+    },
+    {
+     "data": "2028-09-15",
+     "percentual": 100.0,
+     "base": "saldo"
+    }
+   ],
+   "premios": [],
+   "fonte": "1º Aditamento (entregue em 2024-07-02), Anexo B (Escritura Consolidada): cláusula 5.1.3.1 (vencimento), 5.3.2.2 e 5.3.3 (remuneração), 5.4.2 (tabela de amortização) e 5.5.1 (datas de pagamento da remuneração). Os mesmos termos constam da escritura original, exceto o spread. O valor nominal de R$ 1.000,00 vem do Comunicado ao Mercado de 2025-08-08.",
+   "confianca": "alta",
+   "conferencia_snd": {
+    "snd": true,
+    "amort_snd": 2,
+    "amort_doc": 2,
+    "datas_iguais": 2,
+    "so_snd": [],
+    "so_doc": [],
+    "pct_diferente": [],
+    "ok": true
+   }
+  }
+ ],
+ "situacao": "17ª emissão, 2ª série (AEGPB7): não há vencimento antecipado, suspensão de pagamentos, RJ/RE ou novação nos trechos. Em 2025-08-08 a Aegea divulgou oferta de aquisição facultativa das 565.650 debêntures em circulação da 2ª série, sem prêmio. O preço seria o VNU mais a remuneração pro rata desde a última data de pagamento. O prazo de adesão vai até 2025-08-25 e a liquidação está prevista até 2025-09-02. A oferta depende da efetiva emissão da 23ª emissão (até R$ 3,2 bi, série única, 7 anos), cujos recursos serão usados em liability management. Se a oferta não for concluída, o cronograma acima segue vigente. Se for, as debêntures adquiridas poderão sair do cronograma, mas os documentos não dizem se serão canceladas.",
+ "lacunas": "1) A Data de Emissão está truncada nos trechos. Foi deduzida como 2023-09-15 a partir do vencimento em 2028-09-15, 1.827 dias depois. A 1ª Série vence em 2026-09-15, 1.096 dias depois. 2) A data da primeira integralização não aparece, então 'vigente_desde' está null. 3) A linha 7 da tabela de pagamento de juros da 2ª série (2027-03-15) foi omitida nos recortes. Foi inferida pela regra semestral de 15/03 e 15/09. 4) Resultado final do oferta de aquisição facultativa e da 23ª emissão não consta nos trechos. 5) Existem opções facultativas de resgate antecipado total e de amortização extraordinária facultativa (a partir de 2026-03-15 na 2ª série, limitada a 98% do saldo). Ambas têm prêmio de 0,45% a.a., mas não são eventos programados e por isso ficam fora do cronograma. 6) Se o 1º Aditamento tiver sido seguido de outros aditamentos ou AGDs, eles não foram fornecidos.",
+ "meta": {
+  "emissora": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
+  "cnpj": "08827501000158",
+  "emissao": "17",
+  "lido_em": "2026-11-18",
+  "modelo": "claude-sonnet-5-5",
+  "documentos": [
+   {
+    "data": "2023-09-04",
+    "tipo": "escritura",
+    "assunto": "Escritura da 17ª Emissão de debêntures simples, não conversíveis em ações, em até duas séries, da espécie quirografária",
+    "protocolo": "023396IPE040920230104517311-44",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1139910&numSequencia=664639&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-09-04",
+    "tipo": "escritura",
+    "assunto": "Escritura da 17ª Emissão de debêntures simples, não conversíveis em ações, em até duas séries, da espécie quirografária",
+    "protocolo": "023396IPE040920230204502511-44",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1139968&numSequencia=664697&numVersao=2",
+    "explicito": true
+   },
+   {
+    "data": "2024-07-02",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento ao Instrumento Particular de Escritura da 17ª Emissão de Debêntures Simples da AEGEA",
+    "protocolo": "023396IPE250920230104547511-70",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256091&numSequencia=780817&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-08-07",
+    "tipo": "comunicado",
+    "assunto": "Debêntures Exchange",
+    "protocolo": "023396IPE070820250120257705-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1409192&numSequencia=933904&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Aquisição Facultativa das Debêntures da 2ª série da 17ª Emissão da Companhia",
+    "protocolo": "023396IPE080820250136282588-45",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1410216&numSequencia=934928&numVersao=1",
+    "explicito": true
+   }
+  ],
+  "uso_grupo": {
+   "input_tokens": 98150,
+   "cache_creation_input_tokens": 0,
+   "cache_read_input_tokens": 0,
+   "cache_creation": {
+    "ephemeral_5m_input_tokens": 0,
+    "ephemeral_1h_input_tokens": 0
+   },
+   "output_tokens": 2532,
+   "output_tokens_details": {
+    "thinking_tokens": 1133
+   },
+   "service_tier": "batch",
+   "inference_geo": "global",
+   "speed": "standard"
+  },
+  "grupo": "08827501000158_17"
+ },
+ "eventos": {
+  "AEGPB7": {
+   "evento": "nenhum",
+   "data": "2025-08-08",
+   "resumo": "Oferta facultativa de recompra das debêntures da 2ª série, sem prêmio, condicionada à 23ª emissão. Não há vencimento antecipado, RJ ou RE."
+  }
+ }
+}

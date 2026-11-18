@@ -10,9 +10,9 @@
    "remuneracao": {
     "indexador": "outro",
     "taxa": null,
-    "base": null,
+    "base": "252 du",
     "vigente_desde": null,
-    "historico": "Não identificado nos trechos."
+    "historico": "Nenhum documento fornecido traz a escritura da 23ª emissão. Só se sabe que é emissão em série única, de até R$ 3,2 bilhões, com prazo de 7 anos contados da emissão."
    },
    "juros": {
     "periodicidade_meses": null,
@@ -24,7 +24,7 @@
    "incorporacao_juros": [],
    "amortizacoes": [],
    "premios": [],
-   "fonte": "Nenhuma. Os trechos não trazem escritura, aditamento ou ata da 23ª emissão. As listas dos Anexos não mostram o número da emissão para esse item.",
+   "fonte": "Comunicado de 2025-08-07 (aprovação da 23ª emissão em RCA de 07/08/2025) e Comunicado de 2025-08-08 (condição da Oferta de Aquisição Facultativa). Nenhum dos dois traz cronograma.",
    "confianca": "baixa",
    "conferencia_snd": {
     "snd": true,
@@ -42,13 +42,13 @@
    }
   }
  ],
- "situacao": "10ª emissão: Anexos dos Documentos 1, 2 e 3 indicam Status ATIVO. Não há menção a vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. 18ª, 23ª e 25ª: sem informação de status nos trechos.",
- "lacunas": "Os três documentos são escrituras de outras emissões da Aegea: 26ª (série única, prefixada 14,9033% a.a., vencimento 2030-03-15, amortização única), 27ª (DI + 0,76%, vencimento 2034-03-10) e 28ª (prefixada 9,00%, vencimento 2032-03-20). Nenhum trata das emissões 10, 18, 23 ou 25. As únicas informações sobre essas emissões vêm das listas de emissões dos Anexos (Agente Fiduciário), que trazem vencimento, taxa e volume, mas não trazem cronograma de juros nem de amortização. Para a 10ª emissão (AEGPA0): faltam data de emissão, periodicidade e datas de juros, e amortizações. Também não há aditamento, ata de AGD ou plano de recuperação que possa ter alterado o cronograma. Para a 18ª, 23ª e 25ª: as listas omitem o número da emissão na maior parte dos itens (o texto foi cortado). Só aparece rotulado o item da 19ª emissão (CDI + 2,75%, vencimento 2029-06-25) e o da 9ª emissão. Por isso não foi possível associar com segurança nenhum item da lista a esses tickers, e não foi feita inferência por ordem de listagem. Itens da Emissora sem emissão identificada nos Anexos, que poderiam corresponder a essas séries mas não foram atribuídos: PRE 16,3433% com vencimento 2031-01-15; PRE 16,615% com vencimento 2031-01-15; CDI + 2,45% com vencimento 2030-03-20 (fidejussória); PRE 17,2179% com vencimento 2030-03-15; CDI + 1,8% com vencimento 2032-08-22; PRE 17,5344% com vencimento 2036-01-15; CDI + 1,8% com vencimento 2030-12-15; PRE 19,5391% com vencimento 2036-01-15. Para completar, é necessário obter as escrituras, aditamentos e atas das emissões 10, 18, 23 e 25.",
+ "situacao": "19ª emissão (AEGPA9): sem vencimento antecipado, suspensão ou RJ/RE nos documentos. Em 08/08/2025 a emissora lançou oferta de aquisição facultativa das debêntures em circulação (750.000), pelo VNU mais remuneração, sem prêmio. As adesões iam até 25/08/2025 e a liquidação estava prevista até 01/09/2025. A oferta dependia da emissão da 23ª emissão (até R$ 3,2 bi, 7 anos), cujo fim era o reperfilamento do passivo (liability management). Os documentos de 2026-03 ainda listam a 19ª emissão como ATIVA, com vencimento em 25/06/2029, então o resultado da oferta é desconhecido. 23ª emissão: aprovada em RCA de 07/08/2025, sem escritura nos documentos. 25ª emissão: sem informação. 9ª emissão: listada como ATIVA, sem inadimplementos reportados.",
+ "lacunas": "AEGPB3 (23ª): faltam escritura e aditamentos, então data de emissão, vencimento, remuneração e cronogramas de juros e amortização estão em branco. Há um candidato não confirmado nas listas de 2026: R$ 2.273.029.000, CDI + 1,8%, vencimento 22/08/2032, série com a emissão não identificada (o número da emissão foi cortado). Não o atribuí à 23ª. AEGPB5 (25ª): nenhum trecho a identifica. AEGP19 (9ª): só há vencimento (04/10/2028), taxa (100% DI + 1,9%) e volume nas listas do Agente Fiduciário. Faltam data de emissão (14/10/2021 é o início do período de remuneração, não necessariamente a data de emissão), periodicidade e datas de juros, e cronograma de amortização. O VNU de R$ 1.000 foi inferido de R$ 800.000.000 / 800.000 ativos. AEGPA9: na tabela de juros a parcela 7 (25/12/2027) foi cortada pelo recorte, mas decorre da regra semestral (25/06 e 25/12). A escritura prevê amortização extraordinária facultativa a partir de 25/12/2026 (até 98%) e resgate antecipado facultativo, ambos com prêmio de 0,45% a.a. pro rata sobre o prazo remanescente. São eventos opcionais sem data fixa, por isso não os listei em 'premios'. O resultado da oferta de aquisição de 2025 não consta. Os documentos 5, 6 e 7 são escrituras de outras emissões (26ª, 27ª e 28ª), usadas só pelas listas de emissões do Anexo.",
  "meta": {
   "emissora": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
   "cnpj": "08827501000158",
   "emissao": "23",
-  "lido_em": "2026-11-13",
+  "lido_em": "2026-11-18",
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
@@ -57,7 +57,44 @@
     "assunto": "Emissão de Valores Mobiliários",
     "protocolo": "023396IPE020720180104331211-82",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=634741&numSequencia=168506&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=634741&numSequencia=168506&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2024-07-02",
+    "tipo": "escritura",
+    "assunto": "Instrumento Particular de Escritura da 19ª Emissão de Debêntures Simples da AEGEA",
+    "protocolo": "023396IPE050620240104547511-68",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256095&numSequencia=780821&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2024-07-02",
+    "tipo": "escritura",
+    "assunto": "1º Aditamento ao Instrumento Particular de Escritura da 19ª Emissão de Debêntures Simples da AEGEA",
+    "protocolo": "023396IPE280620240104547511-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1256097&numSequencia=780823&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-08-07",
+    "tipo": "comunicado",
+    "assunto": "Debêntures Exchange",
+    "protocolo": "023396IPE070820250120257705-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1409192&numSequencia=933904&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Aquisição Facultativa das Debêntures da 19ª Emissão da Companhia",
+    "protocolo": "023396IPE080820250162090867-71",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1410217&numSequencia=934929&numVersao=1",
+    "explicito": true
    },
    {
     "data": "2026-03-03",
@@ -65,7 +102,8 @@
     "assunto": "Emissão de Valores Mobiliários",
     "protocolo": "023396IPE270220260122150224-55",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484930&numSequencia=1009636&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484930&numSequencia=1009636&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-03-12",
@@ -73,7 +111,8 @@
     "assunto": "Emissão de Valores Mobiliários",
     "protocolo": "023396IPE120320260181007461-94",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489707&numSequencia=1014413&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489707&numSequencia=1014413&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-03-24",
@@ -81,33 +120,27 @@
     "assunto": "Emissão de Valores Mobiliários",
     "protocolo": "023396IPE230320260117741981-37",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494171&numSequencia=1018877&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494171&numSequencia=1018877&numVersao=1",
+    "explicito": false
    }
   ],
   "uso_grupo": {
-   "input_tokens": 89844,
+   "input_tokens": 155700,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 4355,
+   "output_tokens": 5211,
    "output_tokens_details": {
-    "thinking_tokens": 2017
+    "thinking_tokens": 2353
    },
    "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "08827501000158_10-18-23-25"
- },
- "eventos": {
-  "AEGPB3": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Resumo não menciona vencimento antecipado, suspensão de pagamentos, RJ, RE ou renegociação para a 23ª emissão. Status da série não foi informado nos trechos."
-  }
+  "grupo": "08827501000158_19-23-25-9"
  },
  "garantias": {
   "AEGPB3": {
@@ -162,5 +195,12 @@
   "cnpj_documental": null,
   "emissora_atual": "AEGEA SANEAMENTO E PARTICIPAÇÕES S.A. (sem cessão para outra empresa do grupo nos documentos)",
   "lacunas": "1) Os quadros de ativos do agente fiduciário (Oliveira Trust) trazem emissões de outros emissores (Itaúsa, Águas do Rio, CORSAN, Parsan etc.) com fianças e garantias reais. Não foram atribuídos às séries analisadas. 2) AEGPA0: não é possível saber se o ticker corresponde à Série 1 ou à Série 2 após o desmembramento de 28/10/2025. A garantia corporativa da Aegea Finance foi atribuída à Série 1 por inferência, pela posição no quadro, e não há documento que a constitua. O texto da AGD de 28/10/2025 e as demais cláusulas do 2º Aditamento estão omitidos nos trechos. 3) AEGPB3 (23ª emissão): só há o comunicado de 07/08/2025 (quirografária, série única, até R$ 3,2 bi, 7 anos). A escritura não foi fornecida e a emissão não aparece nos quadros. 4) AEGPB5 (25ª emissão): a espécie quirografária vem apenas do quadro de ativos do Doc. 9; a escritura não foi fornecida. 5) AEGPA8: o 1º aditamento tem erros de referência (data de registro e citação à 10ª emissão), sem efeito sobre as garantias."
+ },
+ "eventos": {
+  "AEGPB3": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Emissão aprovada em RCA de 07/08/2025, sem escritura nos documentos. Sem vencimento antecipado, RJ ou RE. A oferta de aquisição refere-se à 19ª emissão, não a esta série."
+  }
  }
 }

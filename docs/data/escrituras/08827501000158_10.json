@@ -3,109 +3,189 @@
   {
    "codigo": "AEGPA0",
    "emissao": 10,
-   "serie": "UNI",
-   "data_emissao": null,
+   "serie": "1",
+   "data_emissao": "2022-04-27",
    "vencimento": "2029-05-15",
    "vne": 1000.0,
    "remuneracao": {
     "indexador": "PRE",
     "taxa": 16.762,
     "base": "252 du",
-    "vigente_desde": "2022-05-11",
-    "historico": "Sem alteração registrada nos trechos. A data 2022-05-11 é o início do período de taxa informado no Anexo (lista de emissões do Agente Fiduciário), não necessariamente a data de emissão."
+    "vigente_desde": null,
+    "historico": "Taxa prefixada de 16,7620% a.a. definida no bookbuilding (1º Aditamento, 2022-05-09). Mantida na 1ª série após o desmembramento de 2025. O documento não informa a data de início da rentabilidade, que é a data de início da vigência."
    },
    "juros": {
-    "periodicidade_meses": null,
-    "primeira_data": null,
-    "ultima_data": null,
+    "periodicidade_meses": 6,
+    "primeira_data": "2022-11-15",
+    "ultima_data": "2029-05-15",
     "datas_irregulares": [],
     "carencia_ate": null
    },
    "incorporacao_juros": [],
-   "amortizacoes": [],
+   "amortizacoes": [
+    {
+     "data": "2029-05-15",
+     "percentual": 100.0,
+     "base": "vne"
+    }
+   ],
    "premios": [],
-   "fonte": "Documento 1 (Anexo III) e Documento 2 (Anexo IV): lista de emissões da Emissora/grupo, 'Série: 1 Emissão: 10'. Só traz vencimento, taxa, volume e quantidade. O VNE de R$ 1.000,00 foi calculado como volume R$ 1.524.225.000,00 ÷ 1.524.225 ativos, não está escrito.",
-   "confianca": "baixa",
+   "fonte": "Doc. 8 (2º Aditamento, 2025-10-30), Anexo A (escritura consolidada em 2 séries): cláusulas 4.6.1, 4.8.1, 4.11.1, 4.12.1 e 4.13.1. Taxa e quantidade conforme Doc. 2 (1º Aditamento).",
+   "confianca": "alta",
    "conferencia_snd": {
     "snd": true,
     "amort_snd": 1,
-    "amort_doc": 0,
-    "datas_iguais": 0,
-    "so_snd": [
-     "2029-05-15"
-    ],
+    "amort_doc": 1,
+    "datas_iguais": 1,
+    "so_snd": [],
     "so_doc": [],
     "pct_diferente": [],
-    "ok": false
+    "ok": true
+   }
+  },
+  {
+   "codigo": null,
+   "emissao": 10,
+   "serie": "2",
+   "data_emissao": "2022-04-27",
+   "vencimento": "2036-01-15",
+   "vne": 1000.0,
+   "remuneracao": {
+    "indexador": "PRE",
+    "taxa": 19.5391,
+    "base": "252 du",
+    "vigente_desde": "2025-11-03",
+    "historico": "Até a Data do Desmembramento (2025-11-03), 16,7620% a.a. pré (série única). A partir de 2025-11-03, 19,5391% a.a. pré, base 252 du."
+   },
+   "juros": {
+    "periodicidade_meses": 6,
+    "primeira_data": "2026-07-15",
+    "ultima_data": "2036-01-15",
+    "datas_irregulares": [
+     "2025-11-03"
+    ],
+    "carencia_ate": null
+   },
+   "incorporacao_juros": [],
+   "amortizacoes": [
+    {
+     "data": "2036-01-15",
+     "percentual": 100.0,
+     "base": "vne"
+    }
+   ],
+   "premios": [
+    {
+     "data": "2025-11-03",
+     "descricao": "Pagamento extraordinário de juros na Data do Desmembramento: juros prefixados de 16,7620% a.a. (base 252 du) sobre o VNU, de 2025-05-15 até 2025-11-03. Não é prêmio, mas pagamento extraordinário aprovado em AGD."
+    }
+   ],
+   "fonte": "Doc. 8 (2º Aditamento, 2025-10-30), considerandos e Anexo A: cláusulas 1.2.2, 3.3, 4.6.1, 4.8.1, 4.11.2, 4.12.1 e 4.13.1.",
+   "confianca": "media",
+   "conferencia_snd": {
+    "snd": false
    }
   }
  ],
- "situacao": "10ª emissão: Anexos dos Documentos 1, 2 e 3 indicam Status ATIVO. Não há menção a vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação. 18ª, 23ª e 25ª: sem informação de status nos trechos.",
- "lacunas": "Os três documentos são escrituras de outras emissões da Aegea: 26ª (série única, prefixada 14,9033% a.a., vencimento 2030-03-15, amortização única), 27ª (DI + 0,76%, vencimento 2034-03-10) e 28ª (prefixada 9,00%, vencimento 2032-03-20). Nenhum trata das emissões 10, 18, 23 ou 25. As únicas informações sobre essas emissões vêm das listas de emissões dos Anexos (Agente Fiduciário), que trazem vencimento, taxa e volume, mas não trazem cronograma de juros nem de amortização. Para a 10ª emissão (AEGPA0): faltam data de emissão, periodicidade e datas de juros, e amortizações. Também não há aditamento, ata de AGD ou plano de recuperação que possa ter alterado o cronograma. Para a 18ª, 23ª e 25ª: as listas omitem o número da emissão na maior parte dos itens (o texto foi cortado). Só aparece rotulado o item da 19ª emissão (CDI + 2,75%, vencimento 2029-06-25) e o da 9ª emissão. Por isso não foi possível associar com segurança nenhum item da lista a esses tickers, e não foi feita inferência por ordem de listagem. Itens da Emissora sem emissão identificada nos Anexos, que poderiam corresponder a essas séries mas não foram atribuídos: PRE 16,3433% com vencimento 2031-01-15; PRE 16,615% com vencimento 2031-01-15; CDI + 2,45% com vencimento 2030-03-20 (fidejussória); PRE 17,2179% com vencimento 2030-03-15; CDI + 1,8% com vencimento 2032-08-22; PRE 17,5344% com vencimento 2036-01-15; CDI + 1,8% com vencimento 2030-12-15; PRE 19,5391% com vencimento 2036-01-15. Para completar, é necessário obter as escrituras, aditamentos e atas das emissões 10, 18, 23 e 25.",
+ "situacao": "10ª emissão: sem vencimento antecipado ou RJ/RE nos trechos. Em AGD de 2025-10-28, os debenturistas aprovaram o desmembramento da série única em 2 séries (1ª: 1.524.225 debêntures, R$ 1.524.225.000; 2ª: 1.255.775 debêntures, R$ 1.255.775.000). A Data do Desmembramento é 2025-11-03. A 2ª série teve o vencimento alongado até 2036-01-15 e a taxa elevada para 19,5391% a.a., com pagamento extraordinário de juros na Data do Desmembramento. Os quóruns de deliberação também foram reduzidos para 50% mais uma. Trata-se de renegociação/reperfilamento. 14ª emissão: sem vencimento antecipado, suspensão ou RJ/RE. O prazo foi alongado de 2025-05-05 para 2028-10-25 em AGD de 2023-10-25. Em 2025-08-08 a Emissora divulgou oferta de aquisição facultativa dos 1.000.000 de debêntures em circulação, a VNU mais remuneração, sem prêmio. Adesão até 2025-08-25 e liquidação estimada até 2025-08-29. A oferta está condicionada à efetiva emissão da 23ª emissão (até R$ 3,2 bilhões, 7 anos), de liability management. Os trechos não informam se a oferta ou a 23ª emissão foram concluídas.",
+ "lacunas": "1) O código de negociação da 2ª série da 10ª emissão não consta nos trechos; a 1ª série foi mantida como AEGPA0 por presunção. 2) O desmembramento da 10ª emissão tem Data do Desmembramento em 2025-11-03, posterior ao documento (2025-10-30), e a ata da AGD de 2025-10-28 não foi fornecida; os dados vêm do 2º Aditamento. 3) Não é possível confirmar se a oferta de aquisição facultativa da 14ª emissão (agosto de 2025) foi concluída; se foi, parte ou toda a série pode ter sido cancelada ou adquirida. O cronograma da 14ª segue a versão alterada em 2023-10-25. 4) Os saldos atuais de principal não estão nos trechos. Presumiu-se que não houve amortização antecipada, o que não é confirmado. 5) Os percentuais de amortização da 14ª foram registrados como base 'vne': a tabela traz '% do VNU' (33,3333/33,3333/33,3334) e '% do saldo' (33,3333/50/100). 6) A 10ª emissão não informa a data de início da rentabilidade (texto cortado), então 'vigente_desde' da 1ª série ficou null. 7) A data da última parcela da 14ª (2028-10-25) vem do vencimento de 2.000 dias; datas que não sejam dia útil são prorrogadas para o dia útil seguinte (por exemplo, 2023-11-05 caiu em domingo). 8) As parcelas de juros pagas até a data dos documentos não foram verificadas.",
  "meta": {
   "emissora": "AEGEA SANEAMENTO E PARTICIPACOES S/A",
   "cnpj": "08827501000158",
   "emissao": "10",
-  "lido_em": "2026-11-13",
+  "lido_em": "2026-11-18",
   "modelo": "claude-sonnet-5-5",
   "documentos": [
    {
-    "data": "2018-07-31",
+    "data": "2022-05-09",
     "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "023396IPE020720180104331211-82",
+    "assunto": "Escritura da 10° Emissão de Debêntures",
+    "protocolo": "023396IPE270420220104469013-57",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=634741&numSequencia=168506&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=978925&numSequencia=503659&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2026-03-03",
+    "data": "2022-05-12",
     "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "023396IPE270220260122150224-55",
+    "assunto": "Primeiro Aditamento da 10ª Emissão de Debêntures",
+    "protocolo": "023396IPE090520220104469311-24",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1484930&numSequencia=1009636&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=980919&numSequencia=505653&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2026-03-12",
+    "data": "2023-04-25",
     "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "023396IPE120320260181007461-94",
+    "assunto": "Escritura da 14ª Emissão de debêntures simples, não conversíveis em ações, da espécie quirografária, em série única",
+    "protocolo": "023396IPE250420230104504111-49",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1489707&numSequencia=1014413&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1089711&numSequencia=614440&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2026-03-24",
+    "data": "2023-10-25",
     "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "023396IPE230320260117741981-37",
+    "assunto": "Primeiro Aditamento da 14ª Emissão de Debêntures",
+    "protocolo": "023396IPE251020230104522412-47",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1494171&numSequencia=1018877&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1154312&numSequencia=679038&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2023-10-25",
+    "tipo": "ata_agd",
+    "assunto": "Deliberação acerca de alterações de cláusulas da Escritura da 14ª emissão de debêntures",
+    "protocolo": "023396IPE251020230104522412-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1154310&numSequencia=679036&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-08-07",
+    "tipo": "comunicado",
+    "assunto": "Debêntures Exchange",
+    "protocolo": "023396IPE070820250120257705-08",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1409192&numSequencia=933904&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-08-08",
+    "tipo": "comunicado",
+    "assunto": "Oferta de Aquisição Facultativa das Debêntures da 14ª Emissão da Companhia",
+    "protocolo": "023396IPE080820250173347288-15",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1410209&numSequencia=934921&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-10-30",
+    "tipo": "escritura",
+    "assunto": "2º Aditamento da Escritura da 10ª Emissão de Debêntures",
+    "protocolo": "023396IPE291020250119910451-84",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1437860&numSequencia=962572&numVersao=1",
+    "explicito": true
    }
   ],
   "uso_grupo": {
-   "input_tokens": 89844,
+   "input_tokens": 126265,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 4355,
+   "output_tokens": 6527,
    "output_tokens_details": {
-    "thinking_tokens": 2017
+    "thinking_tokens": 3402
    },
    "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "08827501000158_10-18-23-25"
- },
- "eventos": {
-  "AEGPA0": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "10ª emissão com status ativo nos anexos da CVM. Não há menção a vencimento antecipado, suspensão de pagamentos, RJ, RE ou reperfilamento."
-  }
+  "grupo": "08827501000158_10-14"
  },
  "garantias": {
   "AEGPA0": {
@@ -159,5 +239,12 @@
   "cnpj_documental": null,
   "emissora_atual": "AEGEA SANEAMENTO E PARTICIPAÇÕES S.A. (sem cessão para outra empresa do grupo nos documentos)",
   "lacunas": "1) Os quadros de ativos do agente fiduciário (Oliveira Trust) trazem emissões de outros emissores (Itaúsa, Águas do Rio, CORSAN, Parsan etc.) com fianças e garantias reais. Não foram atribuídos às séries analisadas. 2) AEGPA0: não é possível saber se o ticker corresponde à Série 1 ou à Série 2 após o desmembramento de 28/10/2025. A garantia corporativa da Aegea Finance foi atribuída à Série 1 por inferência, pela posição no quadro, e não há documento que a constitua. O texto da AGD de 28/10/2025 e as demais cláusulas do 2º Aditamento estão omitidos nos trechos. 3) AEGPB3 (23ª emissão): só há o comunicado de 07/08/2025 (quirografária, série única, até R$ 3,2 bi, 7 anos). A escritura não foi fornecida e a emissão não aparece nos quadros. 4) AEGPB5 (25ª emissão): a espécie quirografária vem apenas do quadro de ativos do Doc. 9; a escritura não foi fornecida. 5) AEGPA8: o 1º aditamento tem erros de referência (data de registro e citação à 10ª emissão), sem efeito sobre as garantias."
+ },
+ "eventos": {
+  "AEGPA0": {
+   "evento": "reperfilamento",
+   "data": "2025-11-03",
+   "resumo": "10ª emissão: AGD de 28/10/2025 desmembrou a série única em 2. A 2ª teve vencimento para 2036 e taxa de 19,5391% a.a. Sem vencimento antecipado nem RJ/RE."
+  }
  }
 }

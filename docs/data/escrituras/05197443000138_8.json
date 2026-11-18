@@ -6,13 +6,13 @@
    "serie": "001",
    "data_emissao": "2024-10-15",
    "vencimento": "2031-10-15",
-   "vne": 1000.0,
+   "vne": null,
    "remuneracao": {
     "indexador": "DI+",
     "taxa": 1.1,
     "base": "252 du",
-    "vigente_desde": null,
-    "historico": "100% da Taxa DI + sobretaxa de 1,10% a.a., exponencial, base 252 dias úteis, contada desde a primeira Data de Integralização. Não há alteração posterior nos trechos."
+    "vigente_desde": "2024-10-15",
+    "historico": "100% da Taxa DI + sobretaxa de 1,10% a.a. Sem alteração. A remuneração conta desde a primeira Data de Integralização da 1ª Série, cuja data não consta dos trechos."
    },
    "juros": {
     "periodicidade_meses": 6,
@@ -32,26 +32,26 @@
    "premios": [
     {
      "data": "2026-10-15",
-     "descricao": "Prêmio flat de 0,60% (15/10/2026 a 15/10/2027, exclusive). Devido somente se a Emissora exercer o Resgate Antecipado Facultativo, que só é possível a partir de 15/10/2026."
+     "descricao": "Prêmio flat de 0,60% sobre o Resgate Antecipado Facultativo, se exercido entre 2026-10-15 (inclusive) e 2027-10-15 (exclusive). O resgate só é possível a partir de 2026-10-15."
     },
     {
      "data": "2027-10-15",
-     "descricao": "Prêmio flat de 0,40% a partir de 15/10/2027, em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,40% se o resgate ocorrer entre 2027-10-15 (inclusive) e 2028-10-15 (exclusive)."
     },
     {
      "data": "2028-10-15",
-     "descricao": "Prêmio flat de 0,20% a partir de 15/10/2028, em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,20% se o resgate ocorrer entre 2028-10-15 (inclusive) e 2029-10-15 (exclusive)."
     },
     {
      "data": "2029-10-15",
-     "descricao": "Prêmio flat de 0,10% a partir de 15/10/2029, em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,10% se o resgate ocorrer entre 2029-10-15 (inclusive) e 2030-10-15 (exclusive)."
     },
     {
      "data": "2030-10-15",
-     "descricao": "Prêmio flat de 0,05% de 15/10/2030 até o vencimento (exclusive), em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,05% se o resgate ocorrer entre 2030-10-15 (inclusive) e a Data de Vencimento da 1ª Série (exclusive)."
     }
    ],
-   "fonte": "Doc. 2 (1º Aditamento e Escritura Consolidada, Anexo A): cláusulas 4.4.1, 4.12.1, 4.12.2 e 4.13.1(i) (cláusula numerada (iii) na consolidada), mais a tabela de prêmios da cláusula 4.16.1.6. O 1º Aditamento corrigiu a 7ª parcela de juros de 17/04/2028 (Doc. 1) para 15/04/2028.",
+   "fonte": "Documento 3 (1º Aditamento e Anexo A, Escritura consolidada da 8ª emissão), cláusulas 4.4.1, 4.12.1, 4.12.2.1, 4.13.1(iii) e 4.16.1.6. O Documento 2 é a versão original, superada pelo aditamento.",
    "confianca": "alta",
    "conferencia_snd": {
     "snd": true,
@@ -70,13 +70,13 @@
    "serie": "002",
    "data_emissao": "2024-10-15",
    "vencimento": "2032-10-15",
-   "vne": 1000.0,
+   "vne": null,
    "remuneracao": {
     "indexador": "DI+",
     "taxa": 1.2,
     "base": "252 du",
-    "vigente_desde": null,
-    "historico": "100% da Taxa DI + sobretaxa de 1,20% a.a., exponencial, base 252 dias úteis, contada desde a primeira Data de Integralização. Não há alteração posterior nos trechos."
+    "vigente_desde": "2024-10-15",
+    "historico": "100% da Taxa DI + sobretaxa de 1,20% a.a. Sem alteração. A remuneração conta desde a primeira Data de Integralização da 2ª Série, cuja data não consta dos trechos."
    },
    "juros": {
     "periodicidade_meses": 6,
@@ -96,26 +96,26 @@
    "premios": [
     {
      "data": "2026-10-15",
-     "descricao": "Prêmio flat de 0,60% (15/10/2026 a 15/10/2027, exclusive). Devido somente se a Emissora exercer o Resgate Antecipado Facultativo, que só é possível a partir de 15/10/2026."
+     "descricao": "Prêmio flat de 0,60% sobre o Resgate Antecipado Facultativo, se exercido entre 2026-10-15 (inclusive) e 2027-10-15 (exclusive). O resgate só é possível a partir de 2026-10-15."
     },
     {
      "data": "2027-10-15",
-     "descricao": "Prêmio flat de 0,40% a partir de 15/10/2027, em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,40% se o resgate ocorrer entre 2027-10-15 (inclusive) e 2028-10-15 (exclusive)."
     },
     {
      "data": "2028-10-15",
-     "descricao": "Prêmio flat de 0,20% a partir de 15/10/2028, em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,20% se o resgate ocorrer entre 2028-10-15 (inclusive) e 2029-10-15 (exclusive)."
     },
     {
      "data": "2029-10-15",
-     "descricao": "Prêmio flat de 0,10% a partir de 15/10/2029, em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,10% se o resgate ocorrer entre 2029-10-15 (inclusive) e 2030-10-15 (exclusive)."
     },
     {
      "data": "2030-10-15",
-     "descricao": "Prêmio flat de 0,05% de 15/10/2030 até o vencimento (exclusive), em caso de Resgate Antecipado Facultativo."
+     "descricao": "Prêmio flat de 0,05% se o resgate ocorrer entre 2030-10-15 (inclusive) e a Data de Vencimento da 2ª Série (exclusive)."
     }
    ],
-   "fonte": "Doc. 2 (1º Aditamento e Escritura Consolidada, Anexo A): cláusulas 4.4.1, 4.12.1, 4.12.3 e 4.13.1(ii) (cláusula numerada (iv) na consolidada), mais a tabela de prêmios da cláusula 4.16.1.6. O 1º Aditamento corrigiu a 7ª parcela de juros de 17/04/2028 (Doc. 1) para 15/04/2028.",
+   "fonte": "Documento 3 (1º Aditamento e Anexo A, Escritura consolidada da 8ª emissão), cláusulas 4.4.1, 4.12.1, 4.12.3.1, 4.13.1(iv) e 4.16.1.6. O Documento 2 é a versão original, superada pelo aditamento.",
    "confianca": "alta",
    "conferencia_snd": {
     "snd": true,
@@ -129,22 +129,32 @@
    }
   }
  ],
- "situacao": "8ª emissão (HAPV18/HAPV28): nenhum vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. Em 25/08/2026 a Companhia comunicou programa de aquisição facultativa de debêntures próprias, de até R$ 150 milhões, a preços de mercado e sem prêmio. O programa inclui HAPV18, HAPV28 e HAPV19, e R$ 149,9 milhões já haviam sido usados. As debêntures adquiridas podem ser canceladas, mantidas em tesouraria ou recolocadas, e isso não altera o cronograma contratual das séries. 9ª emissão (HAPV19): nenhum evento de inadimplência, vencimento antecipado, RJ/RE ou renegociação nos trechos.",
- "lacunas": "1) A Data de Emissão da 8ª emissão aparece truncada nos trechos (\"de 2024\"). Foi inferida como 15/10/2024 a partir dos vencimentos de 7 e 8 anos (15/10/2031 e 15/10/2032) e da cláusula de resgate (24 meses = 15/10/2026). 2) O VNU da 8ª emissão não está nos trechos. O valor de R$ 1.000 foi inferido do total de R$ 2 bi dividido pelas 1.000.000 de debêntures por série (Anexo II dos Docs. 3 e 4). 3) As datas das primeiras integralizações não constam dos trechos, por isso 'vigente_desde' ficou null. 4) Não foram fornecidos atas de AGD, plano de recuperação ou aditamentos posteriores ao 1º Aditamento da 8ª emissão. Também não há aditamento da 9ª emissão. Assumiu-se que não houve outras alterações, mas isso não está confirmado. 5) Os trechos da 9ª emissão vêm de uma escritura entregue em 24/04/2025 (antes da emissão em 16/05/2025), e não há documento posterior confirmando o cronograma final. 6) Algumas datas de juros e de vencimento caem em dia não útil (por exemplo 15/04/2028 e 16/11/2025). Pela cláusula de prorrogação (4.19.1 da 8ª emissão; 4.18.1 da 9ª), o pagamento ocorre no dia útil seguinte, sem acréscimo. 7) As datas de juros intermediárias seguem a regra 15/abr e 15/out (8ª emissão) e 16/mai e 16/nov (9ª emissão). As tabelas completas de parcelas estão parcialmente omitidas nos trechos. 8) A quantidade de debêntures em tesouraria de HAPV18, HAPV28 e HAPV19 não consta dos trechos do Doc. 6. A 10ª emissão (HAPVA0) não foi solicitada e foi ignorada.",
+ "situacao": "7ª emissão (HAPV17): sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos documentos. Em 2026-08-25 havia 960.953 debêntures em circulação e 39.047 em tesouraria, por recompras no mercado secundário a preço inferior ao valor nominal, sem prêmio. Isso não altera o cronograma contratual. 8ª emissão (HAPV18 e HAPV28): sem vencimento antecipado, suspensão, RJ/RE ou novação. O Documento 6 inclui as duas séries entre as autorizadas para recompra (limite de R$ 150 milhões, R$ 149,9 milhões já usados), mas não informa quantidades. Os Documentos 4 e 5 tratam de novas emissões (nova série única, com vencimentos em 2032 e 2033) e de prépagamento de outras emissões (HAPV12, HAPV22, HAPV13). Não dizem respeito às séries pedidas.",
+ "lacunas": "1) HAPV18 e HAPV28: o Valor Nominal Unitário e o valor total da emissão estão em trechos omitidos, então vne = null. O VNU de R$ 1.000,00 é provável, mas não está escrito. A data de emissão (2024-10-15) vem de dedução, pois o prazo de 7 e 8 anos e o resgate a partir do 24º mês (2026-10-15) só fecham com ela. O trecho com a data está truncado. 2) HAPV17: a linha da tabela de prêmio de resgate de 2027-05-10 a 2028-05-10 está omitida, assim como o fim do período de 0,20%. 3) Datas de integralização não constam em nenhum trecho. 4) Datas que caem em dia não útil (HAPV17: 2024-11-10; HAPV18/28: 2028-04-15, sábado) são prorrogadas para o próximo Dia Útil, conforme a cláusula de prorrogação de prazos. As datas acima são as nominais. 5) A Escritura da 8ª emissão tem referência cruzada com erro de numeração (cláusula '4.133'), sem efeito no cronograma. 6) Não há ata de AGD, plano de recuperação ou aditamento posterior ao 1º Aditamento da 8ª emissão nos documentos recebidos. Não é possível confirmar se houve mudanças posteriores.",
  "meta": {
   "emissora": "HAPVIDA PARTICIPACOES E INVESTIMENTOS S.A.",
   "cnpj": "05197443000138",
   "emissao": "8",
-  "lido_em": "2026-11-13",
+  "lido_em": "2026-11-18",
   "modelo": "claude-sonnet-5-5",
   "documentos": [
+   {
+    "data": "2024-05-06",
+    "tipo": "escritura",
+    "assunto": "7ª emissão de Debêntures",
+    "protocolo": "024392IPE060520240104541814-46",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1233451&numSequencia=758177&numVersao=1",
+    "explicito": true
+   },
    {
     "data": "2024-10-14",
     "tipo": "escritura",
     "assunto": "8ª emissão de Debêntures",
     "protocolo": "024392IPE111020240104557912-91",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1291346&numSequencia=816072&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1291346&numSequencia=816072&numVersao=1",
+    "explicito": true
    },
    {
     "data": "2024-10-22",
@@ -152,23 +162,17 @@
     "assunto": "1º Aditamento da Escritura da 8ª emissão de Debêntures",
     "protocolo": "024392IPE211020240104558711-11",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1293582&numSequencia=818308&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1293582&numSequencia=818308&numVersao=1",
+    "explicito": true
    },
    {
     "data": "2025-04-24",
-    "tipo": "escritura",
+    "tipo": "comunicado",
     "assunto": "Oferta de Debêntures",
-    "protocolo": "024392IPE240420250151163146-49",
+    "protocolo": "024392IPE240420250154439325-45",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365043&numSequencia=889769&numVersao=1"
-   },
-   {
-    "data": "2025-10-08",
-    "tipo": "escritura",
-    "assunto": "Oferta de Debêntures",
-    "protocolo": "024392IPE071020250184374491-09",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431002&numSequencia=955714&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1365044&numSequencia=889770&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2025-10-08",
@@ -176,7 +180,8 @@
     "assunto": "Oferta de Debêntures",
     "protocolo": "024392IPE081020250101964273-32",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1431005&numSequencia=955717&numVersao=1",
+    "explicito": false
    },
    {
     "data": "2026-08-25",
@@ -184,38 +189,27 @@
     "assunto": "Redução da Dívida: Recompra de Debêntures e Liquidação Antecipada de Hedge",
     "protocolo": "024392IPE250820260171572734-05",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1561425&numSequencia=1086131&numVersao=1",
+    "explicito": false
    }
   ],
   "uso_grupo": {
-   "input_tokens": 132130,
+   "input_tokens": 92312,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 5839,
+   "output_tokens": 5259,
    "output_tokens_details": {
-    "thinking_tokens": 2026
+    "thinking_tokens": 1606
    },
    "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "05197443000138_8-9"
- },
- "eventos": {
-  "HAPV18": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou renegociação. Programa de recompra facultativa de até R$ 150 mi não altera o cronograma."
-  },
-  "HAPV28": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ/RE ou renegociação. Programa de recompra facultativa de até R$ 150 mi não altera o cronograma."
-  }
+  "grupo": "05197443000138_7-8"
  },
  "garantias": {
   "HAPV18": {
@@ -302,5 +296,17 @@
   "cnpj_documental": null,
   "emissora_atual": "Hapvida Participações e Investimentos S.A. (CNPJ 05.197.443/0001-38)",
   "lacunas": "Os documentos não mostram cessão das emissões a outra emissora. Não há aditamento ou AGD posterior que libere ou altere a fiança dessas séries, então a vigência é presumida a partir dos documentos disponíveis. As escrituras vêm recortadas (trechos omitidos e cláusula 5.9 da 5ª emissão cortada), o que não afeta a identificação da garantia. Os códigos HAPV18 e HAPV28 foram associados às duas séries da 8ª emissão conforme o enunciado, e os documentos não indicam qual é a 1ª e qual é a 2ª. Os comunicados de 2025 (9ª e 10ª emissões) tratam de outras emissões e não alteram as garantias destas séries."
+ },
+ "eventos": {
+  "HAPV18": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação. Recompra autorizada não altera o cronograma contratual."
+  },
+  "HAPV28": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Sem vencimento antecipado, suspensão de pagamentos, RJ, RE ou novação. Recompra autorizada não altera o cronograma contratual."
+  }
  }
 }

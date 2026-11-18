@@ -8,11 +8,11 @@
    "vencimento": "2032-04-15",
    "vne": 1000.0,
    "remuneracao": {
-    "indexador": "IPCA+",
+    "indexador": "PRE",
     "taxa": 9.4735,
     "base": "252 du",
-    "vigente_desde": null,
-    "historico": "A escritura (cl. 4.13.1) fixa a taxa como a maior entre NTN-B 2030 + 1,95% e 9,15% a.a., a definir no bookbuilding. O Anexo II do Documento 5 informa 9,4735% a.a. base 252 para o ativo com vencimento em 15/04/2032, rotulado como 'PRE'."
+    "vigente_desde": "2025-05-13",
+    "historico": "A escritura de 2025-04-22 previa a maior taxa entre NTN-B 2030 + 1,95% a.a. e 9,15% a.a. O bookbuilding, concluído em 2025-05-09, fixou 9,4735% a.a., formalizado no 1º aditamento (cláusula 4.13.1). O relatório do Agente Fiduciário (2026-04-30) registra 'PRE + 9,4735% a.a. base 252' desde 13/05/2025, sem atualização monetária. A escritura e o aditamento ainda falam em 'Valor Nominal Unitário Atualizado' e em Atualização Monetária por IPCA das Debêntures Incentivadas. Há, portanto, uma inconsistência entre os documentos (ver lacunas)."
    },
    "juros": {
     "periodicidade_meses": 6,
@@ -34,8 +34,21 @@
      "base": "saldo"
     }
    ],
-   "premios": [],
-   "fonte": "Documento 2 (escritura da 9ª emissão): cl. 4.7.1 (vencimento), 4.8.1 (VNU), 4.14.1 (juros semestrais), 4.15.1 (amortização do VNU Atualizado). A taxa final vem do Anexo II do Documento 5. A data de emissão foi deduzida do prazo de 7 anos até 15/04/2032.",
+   "premios": [
+    {
+     "data": null,
+     "descricao": "Waiver Fee, parcela incondicionada: 0,15% a.a. flat, pro rata base 365, sobre o saldo devedor (VNU/saldo + remuneração) pelo prazo remanescente até o vencimento. Pagamento em até 10 Dias Úteis após o Comunicado ao Mercado que concluir as assembleias (AGD de 2025-12-29). A data exata de pagamento não consta dos trechos."
+    },
+    {
+     "data": null,
+     "descricao": "Waiver Fee, parcela condicionada: valor remanescente até o total de 2,00% flat sobre o saldo devedor. É devida somente se a Emissora não cumprir ao menos uma das Contrapartidas Estruturais. Pagamento em até 10 dias úteis após a verificação do Índice Financeiro do 4º trimestre de 2026. O ata registra uma contraproposta de debenturista sobre esta parcela, cujo resultado não consta do trecho."
+    },
+    {
+     "data": null,
+     "descricao": "Prêmio de resgate de 0,75% a.a. (flat, pro rata, base 252) previsto na cláusula 5.1.4. Esse prêmio é das Debêntures Institucionais (3ª série), não desta série. A escritura e o aditamento não mostram prêmio de resgate para a 1ª série nos trechos disponíveis."
+    }
+   ],
+   "fonte": "Escritura de 2025-04-22 (cláusulas 4.7.1, 4.14.1 e 4.15.1) e 1º Aditamento consolidado de 2025-05-12 (cláusulas 4.13.1, 4.14.1 e 4.15.1). Taxa confirmada pelo Comunicado de Bookbuilding de 2025-05-12. Relatório do Agente Fiduciário de 2026-04-30 confirma vencimento, juros e amortização. Waiver Fee conforme ata da AGD de 2025-12-29.",
    "confianca": "media",
    "conferencia_snd": {
     "snd": true,
@@ -59,8 +72,8 @@
     "indexador": "DI+",
     "taxa": 2.0,
     "base": "252 du",
-    "vigente_desde": null,
-    "historico": "A escritura (cl. 4.13.5) prevê 100% da Taxa DI + spread limitado a 2,15% a.a. O Anexo II do Documento 5 informa 100% do CDI + 2% a.a. base 252 para o ativo com vencimento em 15/04/2031."
+    "vigente_desde": "2025-05-13",
+    "historico": "A escritura original previa 100% da Taxa DI + spread limitado a 2,15% a.a. O bookbuilding fixou o spread em 2,00% a.a. (1º aditamento, cláusula 4.13.5). O relatório do Agente Fiduciário confirma 100% do CDI + 2% a.a. base 252 de 13/05/2025 a 15/04/2031."
    },
    "juros": {
     "periodicidade_meses": 6,
@@ -100,11 +113,19 @@
    "premios": [
     {
      "data": null,
-     "descricao": "Prêmio de resgate de 0,75% flat a.a., pro rata, base 252 du, sobre o valor resgatado. Aplica-se apenas em Resgate Antecipado Facultativo Total das Debêntures Institucionais (cl. 5.1.4). Não é um pagamento programado."
+     "descricao": "Waiver Fee, parcela incondicionada: 0,15% a.a. flat, pro rata base 365, sobre o saldo devedor (saldo do VNU + remuneração) pelo prazo remanescente até o vencimento. Pagamento em até 10 Dias Úteis após o Comunicado ao Mercado que concluir as assembleias (AGD de 2025-12-29). A data exata de pagamento não consta dos trechos."
+    },
+    {
+     "data": null,
+     "descricao": "Waiver Fee, parcela condicionada: valor remanescente até o total de 2,00% flat sobre o saldo devedor. É devida somente se a Emissora não cumprir ao menos uma das Contrapartidas Estruturais. Pagamento em até 10 dias úteis após a verificação do Índice Financeiro do 4º trimestre de 2026."
+    },
+    {
+     "data": null,
+     "descricao": "Prêmio de resgate antecipado facultativo total: 0,75% a.a. flat, pro rata, base 252, sobre o valor resgatado, pelo prazo entre a data do resgate e o vencimento (cláusula 5.1.4). É condicional e depende de a Emissora exercer o resgate."
     }
    ],
-   "fonte": "Documento 2 (escritura da 9ª emissão): cl. 4.7.1 (vencimento), 4.8.1 (VNU), 4.13.5 (remuneração), 4.14.1 (juros), 4.15.3 (tabela de amortização). A taxa final vem do Anexo II do Documento 5. A data de emissão foi deduzida do prazo de 6 anos até 15/04/2031.",
-   "confianca": "media",
+   "fonte": "Escritura de 2025-04-22 (cláusulas 4.7.1, 4.14.1 e 4.15.3) e 1º Aditamento consolidado de 2025-05-12 (cláusulas 4.13.5, 4.14.1 e 4.15.3). Taxa confirmada pelo Comunicado de Bookbuilding de 2025-05-12. Relatório do Agente Fiduciário de 2026-04-30 confirma vencimento, juros e amortização. Waiver Fee conforme ata da AGD de 2025-12-29.",
+   "confianca": "alta",
    "conferencia_snd": {
     "snd": true,
     "amort_snd": 5,
@@ -117,93 +138,132 @@
    }
   }
  ],
- "situacao": "7ª, 8ª e 9ª emissões: o Anexo II mais recente (Documento 5, 2026-09-11) as lista como ATIVO, com 'não ocorreram inadimplementos no período'. Não há vencimento antecipado, suspensão de pagamentos, RJ/RE nem proposta de novação nos trechos para as séries pedidas. Nenhum aditamento ou ata de AGD das emissões 7, 8 ou 9 foi fornecido, então o cronograma é o original das escrituras.",
- "lacunas": "1) Nenhum documento da 7ª emissão (SUMI17 e SUMI37) foi fornecido. Só há dados do Anexo II do agente fiduciário: vencimento e taxa. Estão ausentes data de emissão, VNE, juros, amortizações e a correspondência exata série/ticker. A série 1 foi associada ao ativo de R$ 336,22 mi (2031) e a série 3 ao de R$ 213,78 mi (2034) apenas pela ordem de listagem; existe também um ativo de volume R$ 0 com vencimento em 15/07/2031, provavelmente a série 2 cancelada. 2) As datas de emissão da 8ª e da 9ª não aparecem nos trechos e foram deduzidas do prazo e do vencimento. 3) Para SUMI18, SUMI19 e SUMI39, as taxas finais do bookbuilding não constam das escrituras recortadas e foram tiradas do Anexo II do agente fiduciário, que para a 9ª série 1 rotula o indexador como 'PRE', embora a cl. 4.12 e o Anexo II do Documento 2 indiquem atualização pelo IPCA. A data de início da vigência da remuneração (Data de Início da Rentabilidade) não consta. 4) Série 2 da 8ª emissão (vencimento 2034) e série 2 da 9ª emissão não foram pedidas e não foram extraídas. O Anexo II sugere que a série 2 da 8ª não foi emitida. 5) Os Documentos 3 (6ª emissão da Giga Mais) e 4 (3ª emissão da DB3) tratam de outras emissões, e o Documento 5 trata de nova emissão com vencimento em 15/02/2032. Todos foram ignorados por não dizerem respeito às séries solicitadas.",
+ "situacao": "9ª emissão (SUMI19 e SUMI39): não há declaração de vencimento antecipado, suspensão de pagamentos, RJ/RE ou proposta de novação nos trechos. Os pagamentos de juros de 2025-10-15 constam como realizados no relatório do Agente Fiduciário de 2026-04-30. Em segunda convocação, em 2025-12-29, foi aprovado o waiver do Índice Financeiro (Dívida Líquida/EBITDA, originalmente ≤ 3,00x) para os exercícios de 2025 e 2026. A aprovação foi de 62,31% das debêntures em circulação na 1ª série e de 90,65% na 3ª série. O waiver está condicionado às Contrapartidas para Waiver e às Contrapartidas Estruturais: cessão fiduciária de recebíveis, restrição a dividendos e mútuos, garantias adicionais em novas dívidas, e medição de covenants. O descumprimento dessas contrapartidas pode caracterizar Evento de Vencimento Antecipado Não Automático (cláusula 6.1.3, inciso (ix)). Não houve alteração do cronograma de juros ou amortização.",
+ "lacunas": "1) Há inconsistência sobre a atualização monetária da SUMI19. A escritura e o aditamento mencionam 'Valor Nominal Unitário Atualizado' e atualização por IPCA para as Debêntures Incentivadas, mas o relatório do Agente Fiduciário de 2026-04-30 informa 'Atualização Monetária: Não há' e 'PRE'. Os trechos de cláusula 4.12 foram omitidos. Se houver IPCA, o indexador seria IPCA+ 9,4735% e as amortizações incidiriam sobre o VNU atualizado. 2) As datas de pagamento do Waiver Fee e os valores finais não constam dos trechos. 3) Na ata da SUMI19, a contraproposta de um debenturista sobre a Parcela Condicionada do Waiver Fee aparece truncada, e seu resultado não é conhecido. 4) Os parâmetros finais do waiver (limites de Índice Financeiro, Contrapartidas Estruturais) vêm de trechos parciais da Proposta da Administração e da ata. Os limites de 3,85x e 3,5x que aparecem nos documentos 5 e 6 pertencem a outras emissões (LMOV11 e a emissão de 2021), não à 9ª emissão. 5) Os trechos não indicam as datas de integralização. A 'vigente_desde' de 2025-05-13 vem do relatório do Agente Fiduciário. 6) O dia útil de pagamento (ajuste de 15/04 e 15/10 quando não forem dias úteis) segue a regra geral da cláusula 4.17 e não foi aplicado às datas. 7) A SUMI29 (2ª série) não foi pedida e não foi extraída.",
  "meta": {
   "emissora": "GIGA MAIS FIBRA TELECOMUNICACOES S.A.",
   "cnpj": "07714104000107",
   "emissao": "9",
-  "lido_em": "2026-11-13",
+  "lido_em": "2026-11-18",
   "modelo": "claude-sonnet-5-5",
   "documentos": [
-   {
-    "data": "2024-10-31",
-    "tipo": "escritura",
-    "assunto": "Escritura da 8ª Emissão de Debêntures",
-    "protocolo": "027502IPE181020240104559609-74",
-    "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1296726&numSequencia=821452&numVersao=1"
-   },
    {
     "data": "2025-04-22",
     "tipo": "escritura",
     "assunto": "Escritura da 9ª Emissão de Debêntures",
     "protocolo": "027502IPE170420250116546072-38",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1363208&numSequencia=887934&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1363208&numSequencia=887934&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2025-05-26",
+    "data": "2025-05-12",
     "tipo": "escritura",
-    "assunto": "Amortização",
-    "protocolo": "027502IPE220520250142261652-56",
+    "assunto": "Primeiro Aditamento da 9ª Emissão de Debêntures",
+    "protocolo": "027502IPE090520250127630387-65",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1383104&numSequencia=907816&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1376560&numSequencia=901272&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2025-05-26",
-    "tipo": "escritura",
-    "assunto": "Amortização",
-    "protocolo": "027502IPE220520250161570862-54",
+    "data": "2025-05-12",
+    "tipo": "comunicado",
+    "assunto": "Bookbuilding da 9ª Emissão de Debêntures",
+    "protocolo": "027502IPE120520250103231841-15",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1383107&numSequencia=907819&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1375921&numSequencia=900633&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2026-07-06",
-    "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "027502IPE260620260180008043-89",
+    "data": "2025-12-18",
+    "tipo": "proposta_agd",
+    "assunto": "Edital de Convocação 9ª Emissão - SUMI19 - 2ª Convocação",
+    "protocolo": "027502IPE291220250195663654-17",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1542112&numSequencia=1066818&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1459047&numSequencia=983759&numVersao=1",
+    "explicito": true
    },
    {
-    "data": "2026-09-11",
-    "tipo": "escritura",
-    "assunto": "Emissão de Valores Mobiliários",
-    "protocolo": "027502IPE100920260162738140-72",
+    "data": "2025-12-22",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da LMOV11",
+    "protocolo": "027502IPE221020250172348376-42",
     "versao": "1",
-    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1567712&numSequencia=1092418&numVersao=1"
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1460412&numSequencia=985118&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-23",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da LMOV11",
+    "protocolo": "027502IPE221020250275650326-85",
+    "versao": "2",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1461153&numSequencia=985859&numVersao=2",
+    "explicito": false
+   },
+   {
+    "data": "2025-12-23",
+    "tipo": "proposta_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Proposta da Administração 9ª Emissão - 2ª Convocação",
+    "protocolo": "027502IPE291220250190371432-16",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1461356&numSequencia=986062&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-29",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da SUMI39",
+    "protocolo": "027502IPE291220250118924895-39",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462051&numSequencia=986757&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-29",
+    "tipo": "ata_agd",
+    "assunto": "Assembleia Geral de Debenturistas - Aprovação do Pleito da SUMI19",
+    "protocolo": "027502IPE291220250162249790-97",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462054&numSequencia=986760&numVersao=1",
+    "explicito": true
+   },
+   {
+    "data": "2025-12-30",
+    "tipo": "comunicado",
+    "assunto": "Comunicado ao Mercado - Conclusão das AGDs",
+    "protocolo": "027502IPE301220250125947665-07",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1462586&numSequencia=987292&numVersao=1",
+    "explicito": false
+   },
+   {
+    "data": "2026-04-30",
+    "tipo": "comunicado",
+    "assunto": "Relatório do Agente Fiduciário SUMI19 e SUMI29 e SUMI39",
+    "protocolo": "027502IPE311220250163550617-13",
+    "versao": "1",
+    "url": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1512794&numSequencia=1037500&numVersao=1",
+    "explicito": true
    }
   ],
   "uso_grupo": {
-   "input_tokens": 132874,
+   "input_tokens": 119527,
    "cache_creation_input_tokens": 0,
    "cache_read_input_tokens": 0,
    "cache_creation": {
     "ephemeral_5m_input_tokens": 0,
     "ephemeral_1h_input_tokens": 0
    },
-   "output_tokens": 7533,
+   "output_tokens": 5489,
    "output_tokens_details": {
-    "thinking_tokens": 4020
+    "thinking_tokens": 1956
    },
    "service_tier": "batch",
    "inference_geo": "global",
    "speed": "standard"
   },
-  "grupo": "07714104000107_7-8-9"
- },
- "eventos": {
-  "SUMI19": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Anexo II de 2026-09-11 lista a série como ativa, sem inadimplementos. Não há vencimento antecipado, RJ, RE nem reperfilamento nos trechos analisados."
-  },
-  "SUMI39": {
-   "evento": "nenhum",
-   "data": null,
-   "resumo": "Anexo II de 2026-09-11 lista a série como ativa, sem inadimplementos. Não há vencimento antecipado, RJ, RE nem reperfilamento nos trechos analisados."
-  }
+  "grupo": "07714104000107_9"
  },
  "garantias": {
   "SUMI19": {
@@ -372,5 +432,17 @@
   "cnpj_documental": null,
   "emissora_atual": "Giga Mais Fibra Telecomunicações S.A. (CNPJ 07.714.104/0001-07); não houve migração de emissora na 9ª emissão",
   "lacunas": "O relatório do AF (30/04/2026) cobre SUMI19 e SUMI29 e traz o trecho da SUMI39 cortado, então a situação efetiva da cessão fiduciária e da alienação fiduciária de ações na SUMI39 não foi confirmada. Não constam os contratos de garantia, nem o texto das cláusulas 9.3.1/6.1.3, nem a lista completa dos Índices Financeiros. O Comunicado ao Mercado de 30/12/2025 aparece truncado. Há ainda inconsistência na ata de SUMI39 (4T27 ≤ 3,00x, sem o 4T26 e o 1T27 listados). O prazo de 90 dias conta do Comunicado ao Mercado, cuja data não foi identificada."
+ },
+ "eventos": {
+  "SUMI19": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Waiver do índice Dívida Líquida/EBITDA aprovado em 2025-12-29 para 2025 e 2026, sem alterar cronograma. Não há vencimento antecipado, RJ ou RE."
+  },
+  "SUMI39": {
+   "evento": "nenhum",
+   "data": null,
+   "resumo": "Waiver do índice Dívida Líquida/EBITDA aprovado em 2025-12-29 para 2025 e 2026, sem alterar cronograma. Não há vencimento antecipado, RJ ou RE."
+  }
  }
 }
