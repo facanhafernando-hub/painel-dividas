@@ -124,6 +124,11 @@
   "razao": "AERIS INDUSTRIA E COMERCIO DE EQUIPAMENTOS PARA GERACAO DE ENERGIA S.A.",
   "fonte": "modelo"
  },
+ "AEROPORTO INTERNACIONAL DO RIO": {
+  "nome": "RIOgaleão",
+  "razao": "AEROPORTO INTERNACIONAL DO RIO S A",
+  "fonte": "modelo"
+ },
  "AETE AMAZONIA EMPRESA TRANSMISSORA DE ENERGIA": {
   "nome": "AETE",
   "razao": "AETE - AMAZONIA EMPRESA TRANSMISSORA DE ENERGIA S.A.",
@@ -162,6 +167,11 @@
  "AGORA SOLUCOES EM TECNOLOGIA DA INFORMACAO E COMUNICACAO": {
   "nome": "Ágora Soluções em TI",
   "razao": "AGORA SOLUCOES EM TECNOLOGIA DA INFORMACAO E COMUNICACAO S A",
+  "fonte": "modelo"
+ },
+ "AGRICOLA PANORAMA COMERCIO E REPRESENTACOES": {
+  "nome": "Agrícola Panorama",
+  "razao": "AGRICOLA PANORAMA COMERCIO E REPRESENTACOES LTDA",
   "fonte": "modelo"
  },
  "AGRICOLA USINA JACAREZINHO": {
@@ -637,6 +647,11 @@
  "ARTESANAL SECURITIZADORA DE CREDITOS": {
   "nome": "Artesanal Securitizadora",
   "razao": "ARTESANAL SECURITIZADORA DE CREDITOS S.A.",
+  "fonte": "modelo"
+ },
+ "ARTHUR LUNDGREN TECIDOS CASAS PERNAMBUCANAS": {
+  "nome": "Pernambucanas",
+  "razao": "ARTHUR LUNDGREN TECIDOS S A CASAS PERNAMBUCANAS",
   "fonte": "modelo"
  },
  "ASA BRANCA HOLDING": {
@@ -1753,6 +1768,11 @@
   "nome": "CTG Brasil",
   "razao": "CHINA THREE GORGES BRASIL ENERGIA S.A.",
   "fonte": "manual"
+ },
+ "CIBRAFERTIL BRASILEIRA DE FERTILIZANTES": {
+  "nome": "Cibrafértil",
+  "razao": "CIBRAFERTIL COMPANHIA BRASILEIRA DE FERTILIZANTES",
+  "fonte": "modelo"
  },
  "CID MOTA I ENERGIA RENOVAVEL": {
   "nome": "Cid Mota I Energia Renovável",
@@ -4554,6 +4574,11 @@
   "razao": "JK 1455 FUNDO DE INVESTIMENTO IMOBILIARIO - FII RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
+ "JPS ADMINISTRACAO E COMERCIO": {
+  "nome": "JPS",
+  "razao": "JPS ADMINISTRACAO E COMERCIO LTDA",
+  "fonte": "modelo"
+ },
  "JS RURAL SOCIEDADE UNIPESSOAL LIMITADA": {
   "nome": "JS Rural",
   "razao": "JS RURAL SOCIEDADE UNIPESSOAL LIMITADA",
@@ -5475,6 +5500,11 @@
   "razao": "OLINDINA PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
+ "OME SPE": {
+  "nome": "OME SPE",
+  "razao": "OME SPE S.A.",
+  "fonte": "modelo"
+ },
  "OMNI TAXI AEREO": {
   "nome": "Omni Táxi Aéreo",
   "razao": "OMNI TAXI AEREO S.A.",
@@ -6333,6 +6363,11 @@
  "ROSARIO DO CATETE AMBIENTAL SOCIEDADE ANONIMA": {
   "nome": "Rosário do Catete Ambiental",
   "razao": "ROSARIO DO CATETE AMBIENTAL SOCIEDADE ANONIMA",
+  "fonte": "modelo"
+ },
+ "ROSELANDIA EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Roselândia",
+  "razao": "ROSELANDIA EMPREENDIMENTOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
  "ROTA DA BR 153 MG GO": {
