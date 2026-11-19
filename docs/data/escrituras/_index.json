@@ -1202,6 +1202,18 @@
    "status": "ok",
    "assinatura": "e0391a70694e",
    "bate_snd": false
+  },
+  "02773542000122_37": {
+   "codigos": [
+    "RBRAC7"
+   ],
+   "status": "texto_vazio"
+  },
+  "25005683000109_41": {
+   "codigos": [
+    "VERTG1"
+   ],
+   "status": "sem_documentos_cvm"
   }
  },
  "gasto_usd": 19.9866,
