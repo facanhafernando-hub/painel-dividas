@@ -1049,6 +1049,11 @@
   "razao": "BEMOL S/A",
   "fonte": "modelo"
  },
+ "BERCO DAS GERAIS EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Berço das Gerais",
+  "razao": "BERCO DAS GERAIS EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "BETA PRODUTORA DE ENERGIA SPE": {
   "nome": "Beta Produtora de Energia",
   "razao": "BETA PRODUTORA DE ENERGIA SPE SA.",
@@ -1127,6 +1132,11 @@
  "BOA SAFRA SEMENTES": {
   "nome": "Boa Safra Sementes",
   "razao": "BOA SAFRA SEMENTES S.A.",
+  "fonte": "modelo"
+ },
+ "BOLD SECURITIZADORA": {
+  "nome": "Bold Securitizadora",
+  "razao": "BOLD SECURITIZADORA S.A.",
   "fonte": "modelo"
  },
  "BON NOME SOLAR PARTICIPACOES": {
@@ -2327,6 +2337,11 @@
  "COSAN": {
   "nome": "Cosan",
   "razao": "COSAN S.A.",
+  "fonte": "modelo"
+ },
+ "CPFL COMERCIALIZACAO BRASIL": {
+  "nome": "CPFL Comercialização Brasil",
+  "razao": "CPFL COMERCIALIZACAO BRASIL S/A",
   "fonte": "modelo"
  },
  "CPFL ENERGIAS RENOVAVEIS": {
@@ -5500,6 +5515,11 @@
   "razao": "OLINDINA PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
+ "OLIVEIRA INCORPORACOES E CONSTRUCOES": {
+  "nome": "Oliveira Incorporações e Construções",
+  "razao": "OLIVEIRA INCORPORACOES E CONSTRUCOES LTDA",
+  "fonte": "modelo"
+ },
  "OME SPE": {
   "nome": "OME SPE",
   "razao": "OME SPE S.A.",
@@ -6103,6 +6123,11 @@
  "RANDONCORP": {
   "nome": "Randoncorp",
   "razao": "RANDONCORP S.A.",
+  "fonte": "modelo"
+ },
+ "RAUL SOARES ENERGIA": {
+  "nome": "Raul Soares Energia",
+  "razao": "RAUL SOARES ENERGIA S.A",
   "fonte": "modelo"
  },
  "RCH EMPREENDIMENTOS IMOBILIARIOS": {
