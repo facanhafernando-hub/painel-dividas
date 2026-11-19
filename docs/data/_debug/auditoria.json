@@ -10,10 +10,10 @@
   "yield_faltando": 1,
   "fora_da_curva_emissor": 8,
   "na_securitizadora": 20,
-  "sem_nome_curto": 5
+  "sem_nome_curto": 0
  },
  "cobertura": {
-  "itens": 5150,
+  "itens": 5151,
   "com_negocio_30d": 3211,
   "com_pct_par": 1882,
   "com_yield": 1830,
@@ -679,7 +679,7 @@
    {
     "c": "21K0732283",
     "t": "CRI",
-    "emp": "RAUL SOARES ENERGIA S.A",
+    "emp": "Raul Soares Energia",
     "k": "RAUL SOARES ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 49182892.6
@@ -1727,7 +1727,7 @@
    {
     "c": "23E1820194",
     "t": "CRI",
-    "emp": "BERCO DAS GERAIS EMPREENDIMENTOS IMOBILIARIOS LTDA",
+    "emp": "Berço das Gerais",
     "k": "BERCO DAS GERAIS EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 395917.56
@@ -6319,7 +6319,7 @@
    {
     "c": "26A5002920",
     "t": "CRI",
-    "emp": "BOLD SECURITIZADORA S.A.",
+    "emp": "Bold Securitizadora",
     "k": "BOLD SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 27997.18
@@ -6871,7 +6871,7 @@
    {
     "c": "26E4609469",
     "t": "CRI",
-    "emp": "OLIVEIRA INCORPORACOES E CONSTRUCOES LTDA",
+    "emp": "Oliveira Incorporações e Construções",
     "k": "OLIVEIRA INCORPORACOES E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 33144961.32
@@ -11693,12 +11693,6 @@
     "n": 1
    }
   ],
-  "sem_nome_curto": [
-   "BERCO DAS GERAIS EMPREENDIMENTOS IMOBILIARIOS",
-   "BOLD SECURITIZADORA",
-   "CPFL COMERCIALIZACAO BRASIL",
-   "OLIVEIRA INCORPORACOES E CONSTRUCOES",
-   "RAUL SOARES ENERGIA"
-  ]
+  "sem_nome_curto": []
  }
 }
