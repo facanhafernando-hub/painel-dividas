@@ -8,12 +8,12 @@
   "abaixo50_sem_evento": 11,
   "garantia_conflito": 5,
   "yield_faltando": 1,
-  "fora_da_curva_emissor": 9,
+  "fora_da_curva_emissor": 8,
   "na_securitizadora": 20,
-  "sem_nome_curto": 2
+  "sem_nome_curto": 0
  },
  "cobertura": {
-  "itens": 5160,
+  "itens": 5161,
   "com_negocio_30d": 3221,
   "com_pct_par": 1878,
   "com_yield": 1826,
@@ -2567,7 +2567,7 @@
    {
     "c": "24A2092008",
     "t": "CRI",
-    "emp": "INCORPORADORA DAY MEDICAL CENTER LTDA",
+    "emp": "Incorporadora Day Medical Center",
     "k": "INCORPORADORA DAY MEDICAL CENTER",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 115421.37
@@ -4239,7 +4239,7 @@
    {
     "c": "24L3102409",
     "t": "CRI",
-    "emp": "PARDAL MARRON PARTICIPACOES S A",
+    "emp": "Pardal Marron",
     "k": "PARDAL MARRON PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 14742089.83
@@ -11612,14 +11612,6 @@
   ],
   "fora_da_curva_emissor": [
    {
-    "c": "DASAB2",
-    "t": "DEB",
-    "emp": "Dasa",
-    "k": "DIAGNOSTICOS DA AMERICA",
-    "msg": "yield 7.02 × mediana do emissor 2.95 (DI+, 8 títulos)",
-    "dif": 4.07
-   },
-   {
     "c": "AEGPB3",
     "t": "DEB",
     "emp": "Aegea",
@@ -11766,9 +11758,6 @@
     "n": 1
    }
   ],
-  "sem_nome_curto": [
-   "INCORPORADORA DAY MEDICAL CENTER",
-   "PARDAL MARRON PARTICIPACOES"
-  ]
+  "sem_nome_curto": []
  }
 }
