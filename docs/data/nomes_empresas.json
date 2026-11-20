@@ -4314,6 +4314,11 @@
   "razao": "INBRANDS S/A",
   "fonte": "modelo"
  },
+ "INCORPORADORA DAY MEDICAL CENTER": {
+  "nome": "Incorporadora Day Medical Center",
+  "razao": "INCORPORADORA DAY MEDICAL CENTER LTDA",
+  "fonte": "modelo"
+ },
  "INDUSTRIA TEXTIL APUCARANA": {
   "nome": "Indústria Têxtil Apucarana",
   "razao": "INDUSTRIA TEXTIL APUCARANA LTDA",
@@ -5698,6 +5703,11 @@
  "PARATY G D": {
   "nome": "Paraty G.D.",
   "razao": "PARATY G.D. S.A.",
+  "fonte": "modelo"
+ },
+ "PARDAL MARRON PARTICIPACOES": {
+  "nome": "Pardal Marron",
+  "razao": "PARDAL MARRON PARTICIPACOES S A",
   "fonte": "modelo"
  },
  "PARINTINS AMAZONAS TRANSMISSORA DE ENERGIA": {
