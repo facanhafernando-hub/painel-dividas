@@ -1214,6 +1214,30 @@
     "VERTG1"
    ],
    "status": "sem_documentos_cvm"
+  },
+  "03852459000101_2": {
+   "codigos": [
+    "EGTI12"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "17875396000113_1": {
+   "codigos": [
+    "VSJH11"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "25005683000109_21": {
+   "codigos": [
+    "VERTB2"
+   ],
+   "status": "sem_documentos_cvm"
+  },
+  "43545284000104_2": {
+   "codigos": [
+    "ABFR12"
+   ],
+   "status": "sem_documentos_cvm"
   }
  },
  "gasto_usd": 19.9866,
