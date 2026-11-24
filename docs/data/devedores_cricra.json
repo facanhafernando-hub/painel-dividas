@@ -245,7 +245,7 @@
 "cnpj": "07698047000110",
 "pct": 80.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "AGRA EMPREENDIMENTOS IMOBILIÁRIOS S/A"
 },
 "10K0024718": {
@@ -392,7 +392,7 @@
 "cnpj": "02950811000189",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "PDG REALTY S/A EMPREENDIMENTOS E PARTICIPACOES"
 },
 "11F0031126": {
@@ -501,7 +501,7 @@
 "cnpj": "02950811000189",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "PDG REALTY S/A EMPREENDIMENTOS E PARTICIPACOES"
 },
 "11H0020280": {
@@ -637,7 +637,7 @@
 "cnpj": "02950811000189",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "PDG REALTY S/A EMPREENDIMENTOS E PARTICIPACOES"
 },
 "11L0018659": {
@@ -23742,7 +23742,7 @@
 "cnpj": "47219348000138",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "CASTOR I EMPREENDIMENTOS IMOBILIARIOS SPE LTDA"
 },
 "25I4138643": {
@@ -23810,7 +23810,7 @@
 "cnpj": "44437896000146",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "SPE INCORPORACAO VILA ROSA LTDA"
 },
 "25I4892150": {
@@ -23859,7 +23859,7 @@
 "cnpj": "44437896000146",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "SPE INCORPORACAO VILA ROSA LTDA"
 },
 "25J2375938": {
@@ -32660,14 +32660,14 @@
 "cnpj": "20770566000100",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE LTDA COOXUPE"
 },
 "CRA024007KA": {
 "cnpj": "20770566000100",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE LTDA COOXUPE"
 },
 "CRA024007KB": {
@@ -34782,14 +34782,14 @@
 "cnpj": "44373108000103",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "COCAL COMERCIO INDUSTRIA CANAA ACUCAR E ALCOOL S.A."
 },
 "CRA025008HN": {
 "cnpj": "44373108000103",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "COCAL COMERCIO INDUSTRIA CANAA ACUCAR E ALCOOL S.A."
 },
 "CRA025008HR": {
@@ -36007,7 +36007,7 @@
 "cnpj": "10807374000177",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "BOA SAFRA SEMENTES S.A",
 "corrigido": "nome da emissão no informe mensal (433ª Eco - Boa Safra) não bate com o devedor informado (Agropecuária Maggi)"
 },
@@ -36015,7 +36015,7 @@
 "cnpj": "10807374000177",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "BOA SAFRA SEMENTES S.A",
 "corrigido": "nome da emissão no informe mensal (433ª Eco - Boa Safra) não bate com o devedor informado (Agropecuária Maggi)"
 },
@@ -36023,9 +36023,23 @@
 "cnpj": "10807374000177",
 "pct": 100.0,
 "tipo": "devedor",
-"ref": "2026-09-01",
+"ref": "2026-10-01",
 "nome": "BOA SAFRA SEMENTES S.A",
 "corrigido": "nome da emissão no informe mensal (433ª Eco - Boa Safra) não bate com o devedor informado (Agropecuária Maggi)"
+},
+"CRA026007EP": {
+"cnpj": "01486546000167",
+"pct": 100.0,
+"tipo": "devedor",
+"ref": "2026-10-01",
+"nome": "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO S/A"
+},
+"CRA026007K9": {
+"cnpj": "34691203000193",
+"pct": 100.0,
+"tipo": "devedor",
+"ref": "2026-10-01",
+"nome": "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO"
 },
 "N/A": {
 "cnpj": "07671368000120",

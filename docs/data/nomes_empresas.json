@@ -34,6 +34,11 @@
   "razao": "ABECKER EMPREENDIMENTOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
+ "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Abmais Urbanismo",
+  "razao": "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
  "ACEF": {
   "nome": "ACEF",
   "razao": "ACEF S.A.",
@@ -4464,6 +4469,11 @@
   "razao": "ISA ENERGIA BRASIL S.A.",
   "fonte": "modelo"
  },
+ "ISV PHV SPE SLQ 402 CONSTRUCAO E INCORPORACAO IMOBILIARIA": {
+  "nome": "ISV - PHV SPE SLQ 402",
+  "razao": "ISV - PHV SPE SLQ 402 CONSTRUCAO E INCORPORACAO IMOBILIARIA LTDA",
+  "fonte": "modelo"
+ },
  "ITAMARACA TRANSMISSORA SPE": {
   "nome": "Itamaracá Transmissora",
   "razao": "ITAMARACA TRANSMISSORA SPE S.A",
@@ -6480,6 +6490,11 @@
   "razao": "SAGA MALLS S.A",
   "fonte": "modelo"
  },
+ "SALAS INCORPORACOES": {
+  "nome": "Salas Incorporações",
+  "razao": "SALAS INCORPORACOES LTDA",
+  "fonte": "modelo"
+ },
  "SALTO DO GUASSUPI ENERGETICA": {
   "nome": "Salto do Guassupi Energética",
   "razao": "SALTO DO GUASSUPI ENERGETICA S/A",
@@ -7613,6 +7628,11 @@
  "USINA DE ENERGIA FOTOVOLTAICA DE COROMANDEL": {
   "nome": "UFV Coromandel",
   "razao": "USINA DE ENERGIA FOTOVOLTAICA DE COROMANDEL S.A.",
+  "fonte": "modelo"
+ },
+ "USINA ENERSUGAR ACUCAR E ALCOOL": {
+  "nome": "Enersugar",
+  "razao": "USINA ENERSUGAR S/A ACUCAR E ALCOOL",
   "fonte": "modelo"
  },
  "USINA JEQUITIBA SPE": {

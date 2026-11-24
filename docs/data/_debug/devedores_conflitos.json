@@ -579,6 +579,16 @@
   ]
  },
  {
+  "codigo": "CRA022009VM",
+  "certificado": "BRECOACRABX0",
+  "nome_emissao": "Série 1 - 190ª Emissão - Café Brasil",
+  "cnpj_informado": "31943818000171",
+  "nome_cnpj": "AGRO QUARTZO ADMINISTRACAO E PARTICIPACOES SOCIEDADE UNIPESSOAL LTDA",
+  "cita": [
+   "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO S/A"
+  ]
+ },
+ {
   "codigo": "CRA02200AYK",
   "certificado": "BRECOACRAC39",
   "nome_emissao": "Série 1, 2 e 3 - 204ª Emissão - Tec Plante",
@@ -715,7 +725,7 @@
   ]
  },
  {
-  "codigo": "CRA026003EC",
+  "codigo": "CRA026003EB",
   "certificado": "BRECOACRAMX7",
   "nome_emissao": "Série 1, 2, 3 E 4 - 452ª Emissão - Ouro Fértil",
   "cnpj_informado": "09608037000171",
@@ -725,7 +735,7 @@
   ]
  },
  {
-  "codigo": "CRA026003EB",
+  "codigo": "CRA026003EC",
   "certificado": "BRECOACRAMX7",
   "nome_emissao": "Série 1, 2, 3 E 4 - 452ª Emissão - Ouro Fértil",
   "cnpj_informado": "09608037000171",
