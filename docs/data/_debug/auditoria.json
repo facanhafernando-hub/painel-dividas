@@ -11,7 +11,7 @@
   "yield_faltando": 1,
   "fora_da_curva_emissor": 9,
   "na_securitizadora": 20,
-  "sem_nome_curto": 4
+  "sem_nome_curto": 1
  },
  "cobertura": {
   "itens": 5182,
@@ -2304,7 +2304,7 @@
    {
     "c": "23J2272828",
     "t": "CRI",
-    "emp": "ISV - PHV SPE SLQ 402 CONSTRUCAO E INCORPORACAO IMOBILIARIA LTDA",
+    "emp": "ISV - PHV SPE SLQ 402",
     "k": "ISV PHV SPE SLQ 402 CONSTRUCAO E INCORPORACAO IMOBILIARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 11165355.63
@@ -4160,7 +4160,7 @@
    {
     "c": "24L2289535",
     "t": "CRI",
-    "emp": "SALAS INCORPORACOES LTDA",
+    "emp": "Salas Incorporações",
     "k": "SALAS INCORPORACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 713083.85
@@ -4648,7 +4648,7 @@
    {
     "c": "25C3470318",
     "t": "CRI",
-    "emp": "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS LTDA",
+    "emp": "Abmais Urbanismo",
     "k": "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 699050.62
@@ -10440,7 +10440,7 @@
    {
     "c": "CRA02500B9T",
     "t": "CRA",
-    "emp": "USINA ENERSUGAR S/A ACUCAR E ALCOOL",
+    "emp": "Enersugar",
     "k": "USINA ENERSUGAR ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 9006862.34
@@ -10864,16 +10864,16 @@
    {
     "c": "CRA026007EP",
     "t": "CRA",
-    "emp": "Eco Securitizadora",
-    "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
+    "emp": "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO S/A",
+    "k": "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 5998778.96
    },
    {
     "c": "CRA026007K9",
     "t": "CRA",
-    "emp": "Eco Securitizadora",
-    "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
+    "emp": "Ecoagro Insumos Fiagro",
+    "k": "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 6549008.12
    },
@@ -11917,15 +11917,15 @@
     "n": 26
    },
    {
-    "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
-    "n": 16
-   },
-   {
     "k": "TRAVESSIA SECURITIZADORA",
     "n": 14
    },
    {
     "k": "VERT SECURITIZADORA",
+    "n": 14
+   },
+   {
+    "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "n": 14
    },
    {
@@ -11974,10 +11974,7 @@
    }
   ],
   "sem_nome_curto": [
-   "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS",
-   "ISV PHV SPE SLQ 402 CONSTRUCAO E INCORPORACAO IMOBILIARIA",
-   "SALAS INCORPORACOES",
-   "USINA ENERSUGAR ACUCAR E ALCOOL"
+   "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO"
   ]
  }
 }
