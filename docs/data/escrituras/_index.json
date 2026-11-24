@@ -1238,6 +1238,12 @@
     "ABFR12"
    ],
    "status": "sem_documentos_cvm"
+  },
+  "16825255000123_1": {
+   "codigos": [
+    "SUHA11"
+   ],
+   "status": "sem_documentos_cvm"
   }
  },
  "gasto_usd": 19.9866,
