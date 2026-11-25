@@ -1394,6 +1394,11 @@
   "razao": "BSB ENERGETICA S.A",
   "fonte": "modelo"
  },
+ "BSI CAPITAL SECURITIZADORA": {
+  "nome": "BSI Capital Securitizadora",
+  "razao": "BSI CAPITAL SECURITIZADORA S.A.",
+  "fonte": "modelo"
+ },
  "BTG PACTUAL COMMODITIES SERTRADING": {
   "nome": "BTG Pactual Commodities (BTG Sertrading)",
   "razao": "BTG PACTUAL COMMODITIES SERTRADING SA",
@@ -1497,6 +1502,11 @@
  "CAEDU COMERCIO VAREJISTA DE ARTIGO DO VESTUARIO": {
   "nome": "Caedu",
   "razao": "CAEDU COMERCIO VAREJISTA DE ARTIGO DO VESTUARIO S/A",
+  "fonte": "modelo"
+ },
+ "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO": {
+  "nome": "Café Brasil",
+  "razao": "CAFE BRASIL INDUSTRIA COMERCIO IMPORTACAO E EXPORTACAO S/A",
   "fonte": "modelo"
  },
  "CAJUINA AB1 HOLDINGS": {
@@ -4744,6 +4754,11 @@
   "razao": "LEO S.A.",
   "fonte": "modelo"
  },
+ "LEROY MERLIN BRASILEIRA DE BRICOLAGEM": {
+  "nome": "Leroy Merlin",
+  "razao": "LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM",
+  "fonte": "modelo"
+ },
  "LEST LINHAS DE ENERGIA DO SERTAO TRANSMISSORA": {
   "nome": "LEST",
   "razao": "LEST – LINHAS DE ENERGIA DO SERTAO TRANSMISSORA S/A",
@@ -5393,6 +5408,11 @@
  "NEOMILLE": {
   "nome": "Neomille",
   "razao": "Neomille S.A.",
+  "fonte": "modelo"
+ },
+ "NEWPORT LOGISTICA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
+  "nome": "Newport Logística FII",
+  "razao": "NEWPORT LOGISTICA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
   "fonte": "modelo"
  },
  "NEXA RECURSOS MINERAIS": {
@@ -7488,6 +7508,11 @@
  "TZI CAMPO BELO EMPREENDIMENTOS IMOBILIARIOS": {
   "nome": "TZI Campo Belo",
   "razao": "TZI CAMPO BELO EMPREENDIMENTOS IMOBILIARIOS LTDA",
+  "fonte": "modelo"
+ },
+ "UBY AGROQUIMICA": {
+  "nome": "Uby Agroquímica",
+  "razao": "UBY AGROQUIMICA S.A",
   "fonte": "modelo"
  },
  "UFV GD TM LOCACAO": {
