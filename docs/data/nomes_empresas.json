@@ -1749,6 +1749,11 @@
   "razao": "CEREAL COMÉRCIO EXPORTAÇÃO E REPRESENTAÇÃO AGROPECUÁRIA S.A.",
   "fonte": "modelo"
  },
+ "CEREAL OURO SEMENTES": {
+  "nome": "Cereal Ouro Sementes",
+  "razao": "CEREAL OURO SEMENTES LTDA",
+  "fonte": "modelo"
+ },
  "CERES CONFINAMENTO": {
   "nome": "Ceres Confinamento",
   "razao": "CERES CONFINAMENTO LTDA",
@@ -3717,6 +3722,11 @@
  "FURNAS CENTRAIS ELETRICAS": {
   "nome": "Furnas",
   "razao": "FURNAS CENTRAIS ELETRICAS S/A",
+  "fonte": "modelo"
+ },
+ "FUTURA AGRONEGOCIOS": {
+  "nome": "Futura Agronegócios",
+  "razao": "FUTURA AGRONEGOCIOS LTDA",
   "fonte": "modelo"
  },
  "FUTURA ENERGIA": {
@@ -7233,6 +7243,11 @@
  "TMXV EFICIENCIA HOLDING": {
   "nome": "TMXV Eficiência",
   "razao": "TMXV EFICIENCIA HOLDING S.A",
+  "fonte": "modelo"
+ },
+ "TOAGRO AGRONEGOCIOS": {
+  "nome": "Toagro Agronegócios",
+  "razao": "TOAGRO AGRONEGOCIOS LTDA",
   "fonte": "modelo"
  },
  "TOCANTINS PARTICIPACOES E EMPREENDIMENTOS": {
