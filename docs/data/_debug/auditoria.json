@@ -10,7 +10,7 @@
   "yield_faltando": 1,
   "fora_da_curva_emissor": 6,
   "na_securitizadora": 21,
-  "sem_nome_curto": 3
+  "sem_nome_curto": 0
  },
  "cobertura": {
   "itens": 5222,
@@ -10239,7 +10239,7 @@
    {
     "c": "CRA025006SH",
     "t": "CRA",
-    "emp": "CEREAL OURO SEMENTES LTDA",
+    "emp": "Cereal Ouro Sementes",
     "k": "CEREAL OURO SEMENTES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 1025065.99
@@ -10967,7 +10967,7 @@
    {
     "c": "CRA026003JT",
     "t": "CRA",
-    "emp": "FUTURA AGRONEGOCIOS LTDA",
+    "emp": "Futura Agronegócios",
     "k": "FUTURA AGRONEGOCIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 1721421.67
@@ -11039,7 +11039,7 @@
    {
     "c": "CRA0260053D",
     "t": "CRA",
-    "emp": "TOAGRO AGRONEGOCIOS LTDA",
+    "emp": "Toagro Agronegócios",
     "k": "TOAGRO AGRONEGOCIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 1598273.91
@@ -12208,10 +12208,6 @@
     "n": 1
    }
   ],
-  "sem_nome_curto": [
-   "CEREAL OURO SEMENTES",
-   "FUTURA AGRONEGOCIOS",
-   "TOAGRO AGRONEGOCIOS"
-  ]
+  "sem_nome_curto": []
  }
 }
