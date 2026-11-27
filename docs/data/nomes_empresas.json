@@ -2864,6 +2864,11 @@
   "razao": "EDIFICIO CONCETTO CAMPOLIM SPE LTDA",
   "fonte": "modelo"
  },
+ "EDIFICIO VERTICE": {
+  "nome": "Edifício Vértice",
+  "razao": "EDIFICIO VERTICE LTDA",
+  "fonte": "modelo"
+ },
  "EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA": {
   "nome": "EDP Espírito Santo",
   "razao": "EDP ESPIRITO SANTO DISTRIBUICAO DE ENERGIA SA",
@@ -4799,6 +4804,11 @@
   "razao": "LIGGA TELECOMUNICACOES S.A",
   "fonte": "modelo"
  },
+ "LIGHT": {
+  "nome": "Light",
+  "razao": "LIGHT S/A",
+  "fonte": "modelo"
+ },
  "LIGHT ENERGIA": {
   "nome": "Light Energia",
   "razao": "LIGHT ENERGIA S.A",
@@ -5233,6 +5243,11 @@
  "MONTEIRO ARANHA": {
   "nome": "Monteiro Aranha",
   "razao": "MONTEIRO ARANHA S/A",
+  "fonte": "modelo"
+ },
+ "MORGANITA EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "Morganita",
+  "razao": "MORGANITA EMPREENDIMENTOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
  "MORI ENERGIA HOLDING": {
@@ -6000,6 +6015,11 @@
   "razao": "PORTOCEM GERACAO DE ENERGIA SA",
   "fonte": "modelo"
  },
+ "POSIDONIA SHIPPING TRADING": {
+  "nome": "Posidonia Shipping & Trading",
+  "razao": "POSIDONIA SHIPPING & TRADING LTDA.",
+  "fonte": "modelo"
+ },
  "POTENGI HOLDINGS": {
   "nome": "Potengi",
   "razao": "POTENGI HOLDINGS S.A.",
@@ -6690,6 +6710,11 @@
   "razao": "SECURITIZADORA DE CREDITOS IMOBILIARIOS VERT S/A",
   "fonte": "modelo"
  },
+ "SEI FRANCISCO DIAS VELHO EMPREENDIMENTO IMOBILIARIO SPE": {
+  "nome": "SEI Francisco Dias Velho",
+  "razao": "SEI FRANCISCO DIAS VELHO EMPREENDIMENTO IMOBILIARIO SPE LTDA.",
+  "fonte": "modelo"
+ },
  "SELF IT ACADEMIAS HOLDING": {
   "nome": "Self It Academias",
   "razao": "SELF IT ACADEMIAS  HOLDING S.A.",
@@ -6808,6 +6833,11 @@
  "SISTAC SISTEMAS DE ACESSO": {
   "nome": "Sistac",
   "razao": "SISTAC - SISTEMAS DE ACESSO S.A.",
+  "fonte": "modelo"
+ },
+ "SK MAESTRO CARDIM EMPREENDIMENTOS IMOBILIARIOS": {
+  "nome": "SK Maestro Cardim",
+  "razao": "SK MAESTRO CARDIM EMPREENDIMENTOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
  "SLC AGRICOLA": {
@@ -7185,6 +7215,11 @@
   "razao": "TERP GLBL BRASIL I PARTICIPACOES S.A.",
   "fonte": "modelo"
  },
+ "TERRA FORTE EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "Terra Forte",
+  "razao": "TERRA FORTE EMPREENDIMENTOS E PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
  "TESC TERMINAL SANTA CATARINA": {
   "nome": "TESC",
   "razao": "TESC - TERMINAL SANTA CATARINA S/A",
@@ -7198,6 +7233,11 @@
  "TEXTIL FARBE": {
   "nome": "Têxtil Farbe",
   "razao": "TEXTIL FARBE SA",
+  "fonte": "modelo"
+ },
+ "TG NOVA IACIARA EMPREENDIMENTO E PARTICIPACOES": {
+  "nome": "TG Nova Iaciara",
+  "razao": "TG - NOVA IACIARA EMPREENDIMENTO E PARTICIPACOES LTDA",
   "fonte": "modelo"
  },
  "TGR SUBHOLDING 4": {
@@ -8028,6 +8068,11 @@
  "VILA MADALENA RESIDENCE EMPREENDIMENTOS IMOBILIARIOS SPE": {
   "nome": "Vila Madalena Residence",
   "razao": "VILA MADALENA RESIDENCE EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
+  "fonte": "modelo"
+ },
+ "VILA OLIMPIA EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Vila Olímpia",
+  "razao": "VILA OLIMPIA EMPREENDIMENTOS IMOBILIARIOS SPE LTDA",
   "fonte": "modelo"
  },
  "VILA PIAUI 1 EMPREENDIMENTOS E PARTICIPACOES": {
