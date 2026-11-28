@@ -1245,6 +1245,12 @@
     "SUHA11"
    ],
    "status": "sem_documentos_cvm"
+  },
+  "60408635000154_1": {
+   "codigos": [
+    "RGHS11"
+   ],
+   "status": "sem_documentos_cvm"
   }
  },
  "gasto_usd": 19.9866,
