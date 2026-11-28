@@ -34,6 +34,11 @@
   "razao": "ABECKER EMPREENDIMENTOS IMOBILIARIOS LTDA",
   "fonte": "modelo"
  },
+ "ABIOYE EMPREENDIMENTOS E PARTICIPACOES": {
+  "nome": "Abioye",
+  "razao": "ABIOYE EMPREENDIMENTOS E PARTICIPACOES S.A",
+  "fonte": "modelo"
+ },
  "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS": {
   "nome": "Abmais Urbanismo",
   "razao": "ABMAIS URBANISMO EMPREENDIMENTOS IMOBILIARIOS LTDA",
@@ -1067,6 +1072,11 @@
  "BETON 01 SPE": {
   "nome": "Beton 01",
   "razao": "BETON 01 SPE S.A",
+  "fonte": "modelo"
+ },
+ "BFABBRIANI INCORPORADORA": {
+  "nome": "BFabbriani",
+  "razao": "BFABBRIANI INCORPORADORA LTDA",
   "fonte": "modelo"
  },
  "BGR CIDADE JARDIM FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA": {
@@ -4349,6 +4359,11 @@
   "razao": "INCORPORADORA DAY MEDICAL CENTER LTDA",
   "fonte": "modelo"
  },
+ "INDIANOPOLIS EMPREENDIMENTOS IMOBILIARIOS SPE": {
+  "nome": "Indianópolis Empreendimentos Imobiliários",
+  "razao": "INDIANOPOLIS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+  "fonte": "modelo"
+ },
  "INDUSTRIA TEXTIL APUCARANA": {
   "nome": "Indústria Têxtil Apucarana",
   "razao": "INDUSTRIA TEXTIL APUCARANA LTDA",
@@ -5004,6 +5019,11 @@
   "razao": "MAIS ARMAZEM LTDA",
   "fonte": "modelo"
  },
+ "MAISON VISCONDE EMPREENDIMENTOS SPE": {
+  "nome": "Maison Visconde",
+  "razao": "MAISON VISCONDE EMPREENDIMENTOS SPE LTDA",
+  "fonte": "modelo"
+ },
  "MANAUS AMBIENTAL": {
   "nome": "Manaus Ambiental",
   "razao": "MANAUS AMBIENTAL S.A.",
@@ -5308,6 +5328,11 @@
  "MTR 44 ADMINISTRACAO DE BENS SPE": {
   "nome": "MTR-44",
   "razao": "MTR-44 ADMINISTRACAO DE BENS SPE LTDA",
+  "fonte": "modelo"
+ },
+ "MTR ESSENCIA BRASILEIRA EMPREENDIMENTOS SPE": {
+  "nome": "MTR Essência Brasileira",
+  "razao": "MTR ESSENCIA BRASILEIRA EMPREENDIMENTOS SPE LTDA",
   "fonte": "modelo"
  },
  "MTX SE CAMANDUCAIA SPE": {
@@ -5925,8 +5950,13 @@
   "razao": "PIRAUI ENERGIA RENOVAVEL S.A.",
   "fonte": "manual"
  },
+ "PLAENGE EMPREENDIMENTOS": {
+  "nome": "Plaenge Empreendimentos",
+  "razao": "PLAENGE EMPREENDIMENTOS LTDA",
+  "fonte": "modelo"
+ },
  "PLAENGE PARTICIPACOES": {
-  "nome": "Plaenge",
+  "nome": "Plaenge Participações",
   "razao": "PLAENGE PARTICIPACOES S/A",
   "fonte": "modelo"
  },
@@ -6963,6 +6993,11 @@
  "SPE APARECIDA LESTE": {
   "nome": "SPE Aparecida Leste",
   "razao": "SPE APARECIDA LESTE LTDA",
+  "fonte": "modelo"
+ },
+ "SPE CASAS FAICALVILLE INCORPORADORA": {
+  "nome": "Casas Faiçalville",
+  "razao": "SPE CASAS FAICALVILLE INCORPORADORA LTDA",
   "fonte": "modelo"
  },
  "SPE CONCESSIONARIA DO AEROPORTO DE ILHEUS": {
@@ -8088,6 +8123,11 @@
  "VILHENA ENERGIA RENOVAVEL": {
   "nome": "Vilhena Energia Renovável",
   "razao": "VILHENA ENERGIA RENOVAVEL S.A.",
+  "fonte": "modelo"
+ },
+ "VILLA ART INDAIA EMPREENDIMENTO SPE": {
+  "nome": "Villa Art Indaiá",
+  "razao": "VILLA ART INDAIA EMPREENDIMENTO SPE LTDA",
   "fonte": "modelo"
  },
  "VILLA LOBOS SP GESTAO EMPRESARIAL": {
