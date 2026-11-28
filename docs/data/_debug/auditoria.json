@@ -1,22 +1,23 @@
 {
- "data": "2026-11-26",
+ "data": "2026-11-27",
  "resumo": {
-  "negocio_sem_par": 1478,
-  "yield_vs_anbima": 10,
-  "preco_extremo": 5,
+  "negocio_sem_par": 1508,
+  "yield_vs_anbima": 12,
+  "preco_extremo": 6,
   "abaixo50_sem_evento": 13,
   "garantia_conflito": 5,
-  "preco_vs_anbima": 1,
+  "preco_vs_anbima": 3,
+  "par_incoerente": 1,
   "yield_faltando": 1,
-  "fora_da_curva_emissor": 7,
+  "fora_da_curva_emissor": 6,
   "na_securitizadora": 21,
-  "sem_nome_curto": 0
+  "sem_nome_curto": 8
  },
  "cobertura": {
-  "itens": 5239,
-  "com_negocio_30d": 3313,
-  "com_pct_par": 1900,
-  "com_yield": 1847,
+  "itens": 5274,
+  "com_negocio_30d": 3354,
+  "com_pct_par": 1909,
+  "com_yield": 1857,
   "garantia_lida": 165,
   "com_evento": {
    "re": 37,
@@ -34,7 +35,7 @@
     "emp": "Vibra Energia",
     "k": "VIBRA ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 15855.4
+    "uv": 1462.56
    },
    {
     "c": "12F0036335",
@@ -58,7 +59,7 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 43819.81
+    "uv": 142938.83
    },
    {
     "c": "13J0119974",
@@ -82,7 +83,7 @@
     "emp": "Apex Group DTVM",
     "k": "APEX GROUP DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4741.22
+    "uv": 18261.75
    },
    {
     "c": "17H0164854",
@@ -98,7 +99,7 @@
     "emp": "Saneatins",
     "k": "DE SANEAMENTO DO TOCANTINS SANEATINS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5509.72
+    "uv": 2656.6
    },
    {
     "c": "17I0181659",
@@ -114,7 +115,7 @@
     "emp": "Localiza Fleet",
     "k": "LOCALIZA FLEET",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 10311.19
+    "uv": 252985.82
    },
    {
     "c": "19F0922610",
@@ -122,7 +123,7 @@
     "emp": "BR Partners Outlet Brasília",
     "k": "BR PARTNERS OUTLET BRASILIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5394266.52
+    "uv": 3500586.15
    },
    {
     "c": "19G0228153",
@@ -138,7 +139,7 @@
     "emp": "BTG Pactual Shoppings FII",
     "k": "BTG PACTUAL SHOPPINGS FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 16194.86
+    "uv": 34099.89
    },
    {
     "c": "19H0135701",
@@ -154,7 +155,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 160705.72
+    "uv": 573359.18
    },
    {
     "c": "19H0262186",
@@ -162,7 +163,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 970706.43
+    "uv": 6052120.92
    },
    {
     "c": "19I0360674",
@@ -170,7 +171,7 @@
     "emp": "Latam (TAM)",
     "k": "TAM LINHAS AEREAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 8818.0
+    "uv": 7058.33
    },
    {
     "c": "19I0737680",
@@ -178,7 +179,7 @@
     "emp": "Calila",
     "k": "CALILA ADMINISTRACAO E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 895310.17
+    "uv": 424724.72
    },
    {
     "c": "19I0737681",
@@ -186,7 +187,7 @@
     "emp": "Calila",
     "k": "CALILA ADMINISTRACAO E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 20007.93
+    "uv": 63316.61
    },
    {
     "c": "19I0737682",
@@ -197,12 +198,28 @@
     "uv": 1999381.56
    },
    {
+    "c": "19I0739560",
+    "t": "CRI",
+    "emp": "Riza Securitizadora",
+    "k": "RIZA SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 2203260.16
+   },
+   {
     "c": "19J0133907",
     "t": "CRI",
     "emp": "Balaroti",
     "k": "BALAROTI COMERCIO DE MATERIAIS DE CONSTRUCAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1752.72
+    "uv": 422.28
+   },
+   {
+    "c": "19K0981679",
+    "t": "CRI",
+    "emp": "Riza Securitizadora",
+    "k": "RIZA SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 4712645.46
    },
    {
     "c": "19K1034250",
@@ -218,7 +235,7 @@
     "emp": "Carvalho Hosken",
     "k": "CARVALHO HOSKEN ENGENHARIA E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7084.84
+    "uv": 4054.74
    },
    {
     "c": "19K1145372",
@@ -226,7 +243,7 @@
     "emp": "Votorantim Cimentos",
     "k": "VOTORANTIM CIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 672442.82
+    "uv": 356793.36
    },
    {
     "c": "19L0816266",
@@ -234,7 +251,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 910448.26
+    "uv": 70093.15
    },
    {
     "c": "19L0838850",
@@ -274,7 +291,7 @@
     "emp": "Tocantins Participações e Empreendimentos",
     "k": "TOCANTINS PARTICIPACOES E EMPREENDIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 15641.4
+    "uv": 194410.49
    },
    {
     "c": "20F0165468",
@@ -282,7 +299,7 @@
     "emp": "Lumi",
     "k": "LUMI EMPREENDIMENTO IMOBILIARIO SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 49887.64
+    "uv": 5087.62
    },
    {
     "c": "20F0689770",
@@ -298,7 +315,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 18813.76
+    "uv": 18826.48
    },
    {
     "c": "20G0703191",
@@ -322,7 +339,7 @@
     "emp": "General Shopping e Outlets FII",
     "k": "GENERAL SHOPPING E OUTLETS DO BRASIL FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 575730.19
+    "uv": 25316993.55
    },
    {
     "c": "20H0695880",
@@ -362,7 +379,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 111075.98
+    "uv": 1128178.09
    },
    {
     "c": "20L0653519",
@@ -394,7 +411,7 @@
     "emp": "Ascenty",
     "k": "ASCENTY DATA CENTERS E TELECOMUNICACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4601.66
+    "uv": 8062.01
    },
    {
     "c": "20L0766583",
@@ -410,7 +427,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1652337.05
+    "uv": 1653506.64
    },
    {
     "c": "21A0772861",
@@ -418,7 +435,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 14897888.84
+    "uv": 14908480.22
    },
    {
     "c": "21A0772862",
@@ -426,7 +443,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 213014.34
+    "uv": 213159.1
    },
    {
     "c": "21B0667100",
@@ -442,7 +459,15 @@
     "emp": "Votorantim Cimentos",
     "k": "VOTORANTIM CIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 80295.69
+    "uv": 303795.76
+   },
+   {
+    "c": "21C0662763",
+    "t": "CRI",
+    "emp": "Riza Securitizadora",
+    "k": "RIZA SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 14765563.14
    },
    {
     "c": "21C0663319",
@@ -458,7 +483,7 @@
     "emp": "MRV",
     "k": "MRV ENGENHARIA E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 225820.92
+    "uv": 398613.51
    },
    {
     "c": "21D0456641",
@@ -466,7 +491,15 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 8759.36
+    "uv": 449279.59
+   },
+   {
+    "c": "21D0457416",
+    "t": "CRI",
+    "emp": "ABIOYE EMPREENDIMENTOS E PARTICIPACOES S.A",
+    "k": "ABIOYE EMPREENDIMENTOS E PARTICIPACOES",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 11601948.32
    },
    {
     "c": "21D0694886",
@@ -474,7 +507,7 @@
     "emp": "Tenda",
     "k": "CONSTRUTORA TENDA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 300269.01
+    "uv": 961626.26
    },
    {
     "c": "21D0698165",
@@ -490,7 +523,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 237710.26
+    "uv": 2077718.4
    },
    {
     "c": "21E0407810",
@@ -530,7 +563,7 @@
     "emp": "HM Engenharia",
     "k": "HM ENGENHARIA E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 35899510.95
+    "uv": 36399743.75
    },
    {
     "c": "21F1076965",
@@ -538,7 +571,7 @@
     "emp": "JPS",
     "k": "JPS ADMINISTRACAO E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4131091.61
+    "uv": 6998610.55
    },
    {
     "c": "21F1076974",
@@ -546,7 +579,7 @@
     "emp": "HM Engenharia",
     "k": "HM ENGENHARIA E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 34104535.4
+    "uv": 34579756.56
    },
    {
     "c": "21F1147735",
@@ -555,6 +588,14 @@
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 12696045.62
+   },
+   {
+    "c": "21G0759091",
+    "t": "CRI",
+    "emp": "BFABBRIANI INCORPORADORA LTDA",
+    "k": "BFABBRIANI INCORPORADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 2506966.83
    },
    {
     "c": "21H0001651",
@@ -602,7 +643,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4366487.7
+    "uv": 20799137.17
    },
    {
     "c": "21H1029266",
@@ -642,7 +683,7 @@
     "emp": "Bem Brasil",
     "k": "BEM BRASIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1234.75
+    "uv": 7917.42
    },
    {
     "c": "21I0682465",
@@ -650,7 +691,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 19999415.0
+    "uv": 19887051.4
    },
    {
     "c": "21I0855537",
@@ -682,7 +723,7 @@
     "emp": "Vila Madalena Residence",
     "k": "VILA MADALENA RESIDENCE EMPREENDIMENTOS IMOBILIARIOS SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3646601.37
+    "uv": 3649194.22
    },
    {
     "c": "21J0001207",
@@ -709,6 +750,14 @@
     "uv": 337.3
    },
    {
+    "c": "21K0001812",
+    "t": "CRI",
+    "emp": "Hapvida",
+    "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 47086.55
+   },
+   {
     "c": "21K0046865",
     "t": "CRI",
     "emp": "Creditas Tempus FIDC",
@@ -722,7 +771,7 @@
     "emp": "Reiter Transportes e Logística",
     "k": "REITER TRANSPORTES E LOGISTICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9934.0
+    "uv": 32311.43
    },
    {
     "c": "21K0732283",
@@ -762,7 +811,7 @@
     "emp": "MS FII",
     "k": "MS FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 94959.4
+    "uv": 208982.34
    },
    {
     "c": "21L0668295",
@@ -770,7 +819,7 @@
     "emp": "FLFC FII",
     "k": "FLFC FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 179388.25
+    "uv": 556685.01
    },
    {
     "c": "21L0668716",
@@ -778,7 +827,7 @@
     "emp": "MS FII",
     "k": "MS FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 985139.81
+    "uv": 2705843.69
    },
    {
     "c": "21L0694148",
@@ -786,7 +835,7 @@
     "emp": "JK 1455 FII",
     "k": "JK 1455 FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1435281.5
+    "uv": 608385.58
    },
    {
     "c": "21L0730011",
@@ -802,7 +851,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 929.63
+    "uv": 555429.09
    },
    {
     "c": "21L0905775",
@@ -818,7 +867,7 @@
     "emp": "Vinci Offices FII",
     "k": "VINCI OFFICES FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1386377.93
+    "uv": 304374.17
    },
    {
     "c": "22A0699149",
@@ -858,7 +907,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 63561818.11
+    "uv": 63591453.34
    },
    {
     "c": "22B0945202",
@@ -874,7 +923,7 @@
     "emp": "Log CP",
     "k": "LOG COMMERCIAL PROPERTIES E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 218080.64
+    "uv": 35236.32
    },
    {
     "c": "22C0509641",
@@ -882,7 +931,7 @@
     "emp": "Log CP",
     "k": "LOG COMMERCIAL PROPERTIES E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 272073.08
+    "uv": 125967.54
    },
    {
     "c": "22C0509668",
@@ -938,7 +987,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 22948.67
+    "uv": 60468.68
    },
    {
     "c": "22D1289011",
@@ -946,7 +995,7 @@
     "emp": "Cyrela Empreendimentos e Participações",
     "k": "CYRELA BRAZIL REALTY EMPREENDIMENTOS E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 24349.75
+    "uv": 19598.16
    },
    {
     "c": "22E0640809",
@@ -970,7 +1019,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 67987.94
+    "uv": 83657.22
    },
    {
     "c": "22E1211649",
@@ -981,12 +1030,20 @@
     "uv": 6615898.94
    },
    {
+    "c": "22E1314511",
+    "t": "CRI",
+    "emp": "PLAENGE EMPREENDIMENTOS LTDA",
+    "k": "PLAENGE EMPREENDIMENTOS",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 9653162.95
+   },
+   {
     "c": "22E1321748",
     "t": "CRI",
     "emp": "Cogna Educação",
     "k": "COGNA EDUCACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4188.25
+    "uv": 180119.9
    },
    {
     "c": "22E1321750",
@@ -994,7 +1051,15 @@
     "emp": "Cogna Educação",
     "k": "COGNA EDUCACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6958.65
+    "uv": 181648.11
+   },
+   {
+    "c": "22E1338401",
+    "t": "CRI",
+    "emp": "Opea Securitizadora",
+    "k": "OPEA SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 1761680.18
    },
    {
     "c": "22F0009409",
@@ -1002,7 +1067,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 475210.21
+    "uv": 242838.23
    },
    {
     "c": "22F0009410",
@@ -1010,7 +1075,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 631080.44
+    "uv": 1430.98
    },
    {
     "c": "22F0236437",
@@ -1026,7 +1091,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 24081.03
+    "uv": 48162.06
    },
    {
     "c": "22F0636862",
@@ -1058,7 +1123,7 @@
     "emp": "PDC II FII",
     "k": "PDC II FUNDO DE INVESTIMENTO IMOBILIARIO FII RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 35234.46
+    "uv": 299751.1
    },
    {
     "c": "22G0279834",
@@ -1066,7 +1131,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1981.5
+    "uv": 649987.04
    },
    {
     "c": "22G0282170",
@@ -1074,7 +1139,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 619799.45
+    "uv": 987504.22
    },
    {
     "c": "22G0282285",
@@ -1090,7 +1155,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 195414.48
+    "uv": 195525.83
    },
    {
     "c": "22G0282305",
@@ -1106,7 +1171,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 608186.55
+    "uv": 776408.04
    },
    {
     "c": "22G0282329",
@@ -1122,7 +1187,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1687761.56
+    "uv": 3375523.12
    },
    {
     "c": "22G0282361",
@@ -1130,7 +1195,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1627809.37
+    "uv": 1321280.65
    },
    {
     "c": "22G0282362",
@@ -1138,7 +1203,7 @@
     "emp": "Alph Tower FII",
     "k": "ALPH TOWER FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1384944.26
+    "uv": 2530978.4
    },
    {
     "c": "22G0282372",
@@ -1178,7 +1243,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 55825.08
+    "uv": 111650.16
    },
    {
     "c": "22G1136327",
@@ -1186,7 +1251,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 63411.72
+    "uv": 126823.44
    },
    {
     "c": "22G1136492",
@@ -1194,7 +1259,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 159140.25
+    "uv": 318280.5
    },
    {
     "c": "22G1232724",
@@ -1202,7 +1267,7 @@
     "emp": "PPP Habitacional SP Lote 1",
     "k": "PPP HABITACIONAL SP LOTE 1",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1213032.4
+    "uv": 2426064.8
    },
    {
     "c": "22G1408286",
@@ -1218,7 +1283,7 @@
     "emp": "You Inc",
     "k": "YOU INC INCORPORADORA E PARTICIPACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9584344.08
+    "uv": 4229896.39
    },
    {
     "c": "22H1422842",
@@ -1234,7 +1299,7 @@
     "emp": "Mercado Envios",
     "k": "MERCADO ENVIOS SERVICOS DE LOGISTICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1959101.22
+    "uv": 107405.12
    },
    {
     "c": "22H1522692",
@@ -1242,7 +1307,7 @@
     "emp": "Mercado Envios",
     "k": "MERCADO ENVIOS SERVICOS DE LOGISTICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1166267.52
+    "uv": 446503.8
    },
    {
     "c": "22H1631360",
@@ -1250,7 +1315,7 @@
     "emp": "Grupo Mateus",
     "k": "ARMAZEM MATEUS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 24503.18
+    "uv": 142714.91
    },
    {
     "c": "22H1664933",
@@ -1282,7 +1347,7 @@
     "emp": "Cury",
     "k": "CURY CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 49449.07
+    "uv": 99829.66
    },
    {
     "c": "22I0020390",
@@ -1306,7 +1371,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1325071.56
+    "uv": 464727.03
    },
    {
     "c": "22I1423539",
@@ -1362,7 +1427,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6564.16
+    "uv": 384412.73
    },
    {
     "c": "22J0000801",
@@ -1370,7 +1435,7 @@
     "emp": "Trisul",
     "k": "TRISUL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 79315.08
+    "uv": 14492.77
    },
    {
     "c": "22J0000802",
@@ -1378,7 +1443,7 @@
     "emp": "Trisul",
     "k": "TRISUL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 37016.4
+    "uv": 19933.53
    },
    {
     "c": "22J0215470",
@@ -1387,6 +1452,14 @@
     "k": "SAGA MALLS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 659598.03
+   },
+   {
+    "c": "22J0311263",
+    "t": "CRI",
+    "emp": "INDIANOPOLIS EMPREENDIMENTOS IMOBILIARIOS SPE LTDA.",
+    "k": "INDIANOPOLIS EMPREENDIMENTOS IMOBILIARIOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 47778798.16
    },
    {
     "c": "22J0344571",
@@ -1402,7 +1475,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 992081.3
+    "uv": 145067.97
    },
    {
     "c": "22J0978144",
@@ -1434,7 +1507,7 @@
     "emp": "Dufrio",
     "k": "REFRIGERACAO DUFRIO COMERCIO E IMPORTACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 62918.16
+    "uv": 2612.75
    },
    {
     "c": "22J1295549",
@@ -1442,7 +1515,7 @@
     "emp": "Dufrio",
     "k": "REFRIGERACAO DUFRIO COMERCIO E IMPORTACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1600.68
+    "uv": 11491.36
    },
    {
     "c": "22K0001010",
@@ -1458,7 +1531,7 @@
     "emp": "Petrobras",
     "k": "PETROLEO BRASILEIRO PETROBRAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1116927.74
+    "uv": 695802.04
    },
    {
     "c": "22K0640841",
@@ -1474,7 +1547,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 54007.42
+    "uv": 488973.88
    },
    {
     "c": "22K0934871",
@@ -1482,7 +1555,7 @@
     "emp": "Hapvida",
     "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 324051.8
+    "uv": 664641.38
    },
    {
     "c": "22K0934880",
@@ -1490,7 +1563,7 @@
     "emp": "Hapvida",
     "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 530062.72
+    "uv": 173593.51
    },
    {
     "c": "22K1360944",
@@ -1514,7 +1587,7 @@
     "emp": "Casa São Paulo Jardins",
     "k": "CASA SAO PAULO JARDINS EMPREENDIMENTO IMOBILIARIO SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 501437.44
+    "uv": 113959.54
    },
    {
     "c": "22K1457799",
@@ -1522,7 +1595,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4282115.14
+    "uv": 671677.8
    },
    {
     "c": "22K1520003",
@@ -1530,7 +1603,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12063434.58
+    "uv": 1774512.82
    },
    {
     "c": "22K1520055",
@@ -1546,7 +1619,7 @@
     "emp": "Rede D'Or",
     "k": "REDE DOR SAO LUIZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 27652.6
+    "uv": 13815.15
    },
    {
     "c": "22K1684666",
@@ -1554,7 +1627,7 @@
     "emp": "HM Engenharia",
     "k": "HM ENGENHARIA E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 34024092.24
+    "uv": 17025006.69
    },
    {
     "c": "22K1685406",
@@ -1570,7 +1643,7 @@
     "emp": "Tex Courier",
     "k": "TEX COURIER",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 101605.2
+    "uv": 11473.71
    },
    {
     "c": "22K1802248",
@@ -1594,7 +1667,7 @@
     "emp": "Hospital Alemão Oswaldo Cruz",
     "k": "HOSPITAL ALEMAO OSWALDO CRUZ",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 48554.26
+    "uv": 127742.0
    },
    {
     "c": "22L0297660",
@@ -1618,7 +1691,7 @@
     "emp": "JK B II FII",
     "k": "FUNDO DE INVESTIMENTO IMOBILIARIO JK B II FII RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12131.0
+    "uv": 100557.78
    },
    {
     "c": "22L1086426",
@@ -1634,7 +1707,7 @@
     "emp": "Multitrans",
     "k": "MULTITRANS TRANSPORTES E ARMAZENS GERAIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 46100.16
+    "uv": 31386.24
    },
    {
     "c": "22L1173045",
@@ -1653,6 +1726,14 @@
     "uv": 5280.6
    },
    {
+    "c": "22L1212138",
+    "t": "CRI",
+    "emp": "Lar",
+    "k": "LAR COOPERATIVA AGROINDUSTRIAL",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 342233.96
+   },
+   {
     "c": "22L1215356",
     "t": "CRI",
     "emp": "Pafil",
@@ -1666,7 +1747,7 @@
     "emp": "Lar",
     "k": "LAR COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 138540.28
+    "uv": 226790.05
    },
    {
     "c": "22L1429186",
@@ -1682,7 +1763,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 719848.06
+    "uv": 156963.87
    },
    {
     "c": "22L1564926",
@@ -1706,7 +1787,7 @@
     "emp": "Allpark",
     "k": "ALLPARK EMPREENDIMENTOS PARTICIPACOES E SERVICOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 429714.58
+    "uv": 40292.96
    },
    {
     "c": "22L2288683",
@@ -1722,7 +1803,7 @@
     "emp": "Automob",
     "k": "AUTOMOB",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 86085.04
+    "uv": 48727.68
    },
    {
     "c": "23A1253566",
@@ -1762,7 +1843,7 @@
     "emp": "Allos",
     "k": "ALLOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6388963.98
+    "uv": 1533271.58
    },
    {
     "c": "23B0587522",
@@ -1770,7 +1851,7 @@
     "emp": "Allos",
     "k": "ALLOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2987350.92
+    "uv": 668905.53
    },
    {
     "c": "23B1476702",
@@ -1778,7 +1859,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 302081.98
+    "uv": 39663.42
    },
    {
     "c": "23B2365601",
@@ -1797,12 +1878,20 @@
     "uv": 22054.82
    },
    {
+    "c": "23C1668294",
+    "t": "CRI",
+    "emp": "MTR ESSENCIA BRASILEIRA EMPREENDIMENTOS SPE LTDA",
+    "k": "MTR ESSENCIA BRASILEIRA EMPREENDIMENTOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 95573596.81
+   },
+   {
     "c": "23C1758107",
     "t": "CRI",
     "emp": "Urba 5 Loteamentos",
     "k": "URBA 5 LOTEAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 14259.18
+    "uv": 5554.61
    },
    {
     "c": "23C2706233",
@@ -1826,7 +1915,7 @@
     "emp": "Automob",
     "k": "AUTOMOB",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 371024.86
+    "uv": 393099.83
    },
    {
     "c": "23D1175169",
@@ -1850,7 +1939,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 72783.64
+    "uv": 926631.48
    },
    {
     "c": "23E1226516",
@@ -1866,7 +1955,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 31044.89
+    "uv": 2606.2
    },
    {
     "c": "23E1820194",
@@ -1882,7 +1971,7 @@
     "emp": "Banco Votorantim",
     "k": "BANCO VOTORANTIM",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 420085.32
+    "uv": 532391.84
    },
    {
     "c": "23F0012602",
@@ -1890,7 +1979,7 @@
     "emp": "Nissei",
     "k": "FARMACIA E DROGARIA NISSEI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 33002.16
+    "uv": 24546.45
    },
    {
     "c": "23F0013404",
@@ -1898,7 +1987,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6074372.91
+    "uv": 1496726.76
    },
    {
     "c": "23F0013602",
@@ -1906,7 +1995,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 103024.06
+    "uv": 2158271.23
    },
    {
     "c": "23F1240696",
@@ -1938,7 +2027,7 @@
     "emp": "Movida",
     "k": "MOVIDA PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 171241.74
+    "uv": 57001.16
    },
    {
     "c": "23F1688312",
@@ -1978,7 +2067,7 @@
     "emp": "Urba 5 Loteamentos",
     "k": "URBA 5 LOTEAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1421.46
+    "uv": 448.14
    },
    {
     "c": "23F2423591",
@@ -2002,7 +2091,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 109462.29
+    "uv": 71439.33
    },
    {
     "c": "23G0006401",
@@ -2026,7 +2115,7 @@
     "emp": "Banco Pan",
     "k": "BANCO PAN",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1083340.5
+    "uv": 260246.73
    },
    {
     "c": "23G0009601",
@@ -2034,7 +2123,7 @@
     "emp": "Dimed",
     "k": "DIMED DISTRIBUIDORA DE MEDICAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 164524.14
+    "uv": 143460.64
    },
    {
     "c": "23G0990636",
@@ -2042,7 +2131,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 67992665.07
+    "uv": 22664221.69
    },
    {
     "c": "23G1149789",
@@ -2058,7 +2147,7 @@
     "emp": "Drogal",
     "k": "DROGAL FARMACEUTICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 60915.06
+    "uv": 46726.42
    },
    {
     "c": "23G1511349",
@@ -2074,7 +2163,7 @@
     "emp": "Bradesco",
     "k": "BANCO BRADESCO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7825976.91
+    "uv": 1787348.13
    },
    {
     "c": "23G1697526",
@@ -2082,7 +2171,7 @@
     "emp": "Bradesco",
     "k": "BANCO BRADESCO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 261565.39
+    "uv": 60150.23
    },
    {
     "c": "23G1697671",
@@ -2122,7 +2211,7 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 680831.76
+    "uv": 226943.92
    },
    {
     "c": "23H0190135",
@@ -2130,7 +2219,7 @@
     "emp": "Itaú Unibanco",
     "k": "ITAU UNIBANCO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2184751.8
+    "uv": 1109620.9
    },
    {
     "c": "23H1070006",
@@ -2138,7 +2227,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3306751.2
+    "uv": 1102250.4
    },
    {
     "c": "23H1074707",
@@ -2155,6 +2244,14 @@
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 32578.11
+   },
+   {
+    "c": "23H1487992",
+    "t": "CRI",
+    "emp": "VILLA ART INDAIA EMPREENDIMENTO SPE LTDA",
+    "k": "VILLA ART INDAIA EMPREENDIMENTO SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 13140138.75
    },
    {
     "c": "23H1607023",
@@ -2186,7 +2283,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2265406.11
+    "uv": 1269375.4
    },
    {
     "c": "23I0013201",
@@ -2202,7 +2299,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 445108.65
+    "uv": 148369.55
    },
    {
     "c": "23I1257218",
@@ -2210,7 +2307,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 69968.94
+    "uv": 9329.32
    },
    {
     "c": "23I1259644",
@@ -2218,7 +2315,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 753357.06
+    "uv": 238539.86
    },
    {
     "c": "23I1260682",
@@ -2226,7 +2323,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 430564.74
+    "uv": 143521.58
    },
    {
     "c": "23I1270600",
@@ -2258,7 +2355,7 @@
     "emp": "Iguatemi",
     "k": "IGUATEMI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 553429.59
+    "uv": 6141.12
    },
    {
     "c": "23J0019602",
@@ -2266,7 +2363,7 @@
     "emp": "Iguatemi",
     "k": "IGUATEMI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 278013.12
+    "uv": 2010220.32
    },
    {
     "c": "23J0019603",
@@ -2290,7 +2387,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 155618.96
+    "uv": 480206.68
    },
    {
     "c": "23J1042731",
@@ -2306,7 +2403,7 @@
     "emp": "Movida",
     "k": "MOVIDA PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 49547.73
+    "uv": 40037.04
    },
    {
     "c": "23J1127331",
@@ -2314,7 +2411,7 @@
     "emp": "Movida",
     "k": "MOVIDA PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 862441.5
+    "uv": 333264.9
    },
    {
     "c": "23J1142107",
@@ -2330,7 +2427,7 @@
     "emp": "Yduqs",
     "k": "YDUQS PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 82169.31
+    "uv": 93855.88
    },
    {
     "c": "23J1216116",
@@ -2346,7 +2443,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 212965.11
+    "uv": 512982.41
    },
    {
     "c": "23J1333602",
@@ -2354,7 +2451,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 370375.71
+    "uv": 8534.46
    },
    {
     "c": "23J1428588",
@@ -2362,7 +2459,7 @@
     "emp": "Movida",
     "k": "MOVIDA PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1364401.02
+    "uv": 915467.71
    },
    {
     "c": "23J1654998",
@@ -2370,7 +2467,7 @@
     "emp": "MRV",
     "k": "MRV ENGENHARIA E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 258120.03
+    "uv": 171369.34
    },
    {
     "c": "23J1655144",
@@ -2378,7 +2475,7 @@
     "emp": "MRV",
     "k": "MRV ENGENHARIA E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6275.88
+    "uv": 2091.96
    },
    {
     "c": "23J1801379",
@@ -2386,7 +2483,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 137530.8
+    "uv": 89481.12
    },
    {
     "c": "23J1829727",
@@ -2418,7 +2515,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5448.72
+    "uv": 24879.29
    },
    {
     "c": "23J2272828",
@@ -2426,7 +2523,7 @@
     "emp": "ISV - PHV SPE SLQ 402",
     "k": "ISV PHV SPE SLQ 402 CONSTRUCAO E INCORPORACAO IMOBILIARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 22348684.14
+    "uv": 8912971.57
    },
    {
     "c": "23K0020405",
@@ -2434,7 +2531,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 192587.13
+    "uv": 47807.39
    },
    {
     "c": "23K0022030",
@@ -2442,7 +2539,7 @@
     "emp": "MRV",
     "k": "MRV ENGENHARIA E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2138138.46
+    "uv": 1655422.01
    },
    {
     "c": "23K0022037",
@@ -2458,7 +2555,7 @@
     "emp": "Cogna",
     "k": "COGNA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2859349.89
+    "uv": 836098.52
    },
    {
     "c": "23K0022043",
@@ -2466,7 +2563,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 258432.63
+    "uv": 115466.9
    },
    {
     "c": "23K0022065",
@@ -2474,7 +2571,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 10388846.94
+    "uv": 3462948.98
    },
    {
     "c": "23K0042231",
@@ -2506,7 +2603,7 @@
     "emp": "Aché",
     "k": "ACHE LABORATORIOS FARMACEUTICOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1287000.51
+    "uv": 429000.17
    },
    {
     "c": "23K1507871",
@@ -2530,7 +2627,7 @@
     "emp": "Elevações Portuárias",
     "k": "ELEVACOES PORTUARIAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 161365064.4
+    "uv": 53788354.8
    },
    {
     "c": "23K1775589",
@@ -2578,7 +2675,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 581492.82
+    "uv": 39513.8
    },
    {
     "c": "23L0014005",
@@ -2586,7 +2683,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4063339.77
+    "uv": 389465.77
    },
    {
     "c": "23L0016008",
@@ -2594,7 +2691,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 890299.17
+    "uv": 236460.39
    },
    {
     "c": "23L0016009",
@@ -2602,7 +2699,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 122926.19
+    "uv": 2087715.65
    },
    {
     "c": "23L0016205",
@@ -2610,7 +2707,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 255454.86
+    "uv": 321518.61
    },
    {
     "c": "23L0016206",
@@ -2650,7 +2747,7 @@
     "emp": "Faro Energy",
     "k": "FARO ENERGY PROJETOS SOLARES HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 401384.76
+    "uv": 75961.26
    },
    {
     "c": "23L1279637",
@@ -2674,7 +2771,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4272.96
+    "uv": 12496.92
    },
    {
     "c": "23L2043099",
@@ -2682,7 +2779,7 @@
     "emp": "Unidas Locadora",
     "k": "UNIDAS LOCADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 331915.38
+    "uv": 425016.98
    },
    {
     "c": "23L2043165",
@@ -2690,7 +2787,7 @@
     "emp": "Unidas Locadora",
     "k": "UNIDAS LOCADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 151130.67
+    "uv": 435261.14
    },
    {
     "c": "23L2290714",
@@ -2714,7 +2811,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 183030.84
+    "uv": 61010.28
    },
    {
     "c": "24A1470431",
@@ -2722,7 +2819,7 @@
     "emp": "Apex Group DTVM",
     "k": "APEX GROUP DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2167680.84
+    "uv": 379320.76
    },
    {
     "c": "24A1781654",
@@ -2754,7 +2851,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 54183.75
+    "uv": 7229.44
    },
    {
     "c": "24A2721507",
@@ -2762,7 +2859,7 @@
     "emp": "Dasa",
     "k": "DIAGNOSTICOS DA AMERICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3106.83
+    "uv": 6347.39
    },
    {
     "c": "24A2947672",
@@ -2778,7 +2875,7 @@
     "emp": "Solfácil IV FIDC",
     "k": "SOLFACIL IV FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 109289.37
+    "uv": 12212.2
    },
    {
     "c": "24B0011201",
@@ -2786,7 +2883,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5596108.5
+    "uv": 2021076.63
    },
    {
     "c": "24B0011602",
@@ -2794,7 +2891,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 365349.63
+    "uv": 698246.21
    },
    {
     "c": "24B0011603",
@@ -2810,7 +2907,7 @@
     "emp": "Itaú Unibanco Holding",
     "k": "ITAU UNIBANCO HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2572951.65
+    "uv": 1233461.36
    },
    {
     "c": "24B0012801",
@@ -2826,7 +2923,7 @@
     "emp": "Lavvi",
     "k": "LAVVI EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 361072.56
+    "uv": 120357.52
    },
    {
     "c": "24B0012803",
@@ -2834,7 +2931,7 @@
     "emp": "Lavvi",
     "k": "LAVVI EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 147822.95
+    "uv": 40018.12
    },
    {
     "c": "24B0013201",
@@ -2842,7 +2939,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 706715.01
+    "uv": 2038.27
    },
    {
     "c": "24B0013202",
@@ -2850,7 +2947,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 399220.32
+    "uv": 279629.91
    },
    {
     "c": "24B0013801",
@@ -2858,7 +2955,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 591328.2
+    "uv": 6202.75
    },
    {
     "c": "24B1276213",
@@ -2906,7 +3003,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 47634.07
+    "uv": 39133.05
    },
    {
     "c": "24C0000001",
@@ -2922,7 +3019,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1311910.5
+    "uv": 34923.39
    },
    {
     "c": "24C0006003",
@@ -2930,7 +3027,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 395378.94
+    "uv": 95409.25
    },
    {
     "c": "24C0006004",
@@ -2938,7 +3035,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 110642.52
+    "uv": 262708.58
    },
    {
     "c": "24C0006005",
@@ -2946,7 +3043,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4421144.67
+    "uv": 521387.79
    },
    {
     "c": "24C1262018",
@@ -2978,7 +3075,7 @@
     "emp": "Helbor",
     "k": "HELBOR EMPREENDIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 44742.17
+    "uv": 1855.0
    },
    {
     "c": "24C1589518",
@@ -2994,7 +3091,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5874.36
+    "uv": 1958.12
    },
    {
     "c": "24C1690314",
@@ -3018,7 +3115,7 @@
     "emp": "Grupo Salta Educação",
     "k": "GRUPO SALTA EDUCACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 131876.82
+    "uv": 26658.07
    },
    {
     "c": "24C2078354",
@@ -3026,7 +3123,7 @@
     "emp": "Grupo Salta Educação",
     "k": "GRUPO SALTA EDUCACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 57873.06
+    "uv": 19291.02
    },
    {
     "c": "24C2078604",
@@ -3034,7 +3131,7 @@
     "emp": "Grupo Salta Educação",
     "k": "GRUPO SALTA EDUCACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 106431.12
+    "uv": 35477.04
    },
    {
     "c": "24C2144441",
@@ -3042,7 +3139,7 @@
     "emp": "Agibank",
     "k": "BANCO AGIBANK",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 495371.34
+    "uv": 75624.04
    },
    {
     "c": "24C2144589",
@@ -3058,7 +3155,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4535.8
+    "uv": 4508.84
    },
    {
     "c": "24D0006601",
@@ -3066,7 +3163,7 @@
     "emp": "Allos",
     "k": "ALLOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 498392.88
+    "uv": 200008.46
    },
    {
     "c": "24D0006603",
@@ -3074,7 +3171,7 @@
     "emp": "Allos",
     "k": "ALLOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1859064.75
+    "uv": 135326.25
    },
    {
     "c": "24D0007011",
@@ -3082,7 +3179,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 33431.79
+    "uv": 4199.5
    },
    {
     "c": "24D2688431",
@@ -3090,7 +3187,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 377976.3
+    "uv": 37983.9
    },
    {
     "c": "24D2688432",
@@ -3106,7 +3203,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6051.24
+    "uv": 2012.62
    },
    {
     "c": "24D2858481",
@@ -3122,7 +3219,7 @@
     "emp": "Kallas",
     "k": "KALLAS INCORPORACOES E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 163268.31
+    "uv": 41699.43
    },
    {
     "c": "24D2944110",
@@ -3130,7 +3227,7 @@
     "emp": "Kallas",
     "k": "KALLAS INCORPORACOES E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1080.01
+    "uv": 20766.04
    },
    {
     "c": "24D2960594",
@@ -3154,7 +3251,7 @@
     "emp": "Cury",
     "k": "CURY CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 86120.23
+    "uv": 154575.66
    },
    {
     "c": "24D3313888",
@@ -3162,7 +3259,7 @@
     "emp": "Cury",
     "k": "CURY CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5077551.45
+    "uv": 816589.89
    },
    {
     "c": "24D3314465",
@@ -3170,7 +3267,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 115290.93
+    "uv": 38430.31
    },
    {
     "c": "24D3418727",
@@ -3218,7 +3315,7 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 211422.63
+    "uv": 49202.68
    },
    {
     "c": "24E1516530",
@@ -3258,7 +3355,7 @@
     "emp": "Hospital Sírio-Libanês",
     "k": "SOCIEDADE BENEFICENTE DE SENHORAS HOSPITAL SIRIO LIBANES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 959125.68
+    "uv": 2117043.07
    },
    {
     "c": "24E2205602",
@@ -3266,7 +3363,15 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 148120.88
+    "uv": 59318.26
+   },
+   {
+    "c": "24E2213960",
+    "t": "CRI",
+    "emp": "MAISON VISCONDE EMPREENDIMENTOS SPE LTDA",
+    "k": "MAISON VISCONDE EMPREENDIMENTOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 2736196.57
    },
    {
     "c": "24E2256413",
@@ -3285,6 +3390,38 @@
     "uv": 44070.63
    },
    {
+    "c": "24E2256646",
+    "t": "CRI",
+    "emp": "MAISON VISCONDE EMPREENDIMENTOS SPE LTDA",
+    "k": "MAISON VISCONDE EMPREENDIMENTOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 9265471.26
+   },
+   {
+    "c": "24E2256761",
+    "t": "CRI",
+    "emp": "MAISON VISCONDE EMPREENDIMENTOS SPE LTDA",
+    "k": "MAISON VISCONDE EMPREENDIMENTOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 3015579.36
+   },
+   {
+    "c": "24E2261281",
+    "t": "CRI",
+    "emp": "MAISON VISCONDE EMPREENDIMENTOS SPE LTDA",
+    "k": "MAISON VISCONDE EMPREENDIMENTOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 1431124.9
+   },
+   {
+    "c": "24E2262952",
+    "t": "CRI",
+    "emp": "MAISON VISCONDE EMPREENDIMENTOS SPE LTDA",
+    "k": "MAISON VISCONDE EMPREENDIMENTOS SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 469717.91
+   },
+   {
     "c": "24E2453531",
     "t": "CRI",
     "emp": "Canal Securitizadora",
@@ -3298,7 +3435,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 326650.86
+    "uv": 96840.05
    },
    {
     "c": "24E2531061",
@@ -3306,7 +3443,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 91705.8
+    "uv": 4389.52
    },
    {
     "c": "24E2535186",
@@ -3322,7 +3459,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 136.84
+    "uv": 12.94
    },
    {
     "c": "24E3617804",
@@ -3362,7 +3499,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 101313.11
+    "uv": 13217.88
    },
    {
     "c": "24F0002201",
@@ -3370,7 +3507,7 @@
     "emp": "Kanastra Securitizadora",
     "k": "KANASTRA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 95239.81
+    "uv": 6097.85
    },
    {
     "c": "24F0002202",
@@ -3394,7 +3531,7 @@
     "emp": "Iguatemi Empresa de Shopping Centers",
     "k": "IGUATEMI EMPRESA DE SHOPPING CENTERS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 51081.02
+    "uv": 25540.51
    },
    {
     "c": "24F1126524",
@@ -3402,7 +3539,7 @@
     "emp": "Iguatemi Empresa de Shopping Centers",
     "k": "IGUATEMI EMPRESA DE SHOPPING CENTERS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4569803.74
+    "uv": 934182.12
    },
    {
     "c": "24F1277461",
@@ -3410,7 +3547,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3889.02
+    "uv": 1944.51
    },
    {
     "c": "24F1532998",
@@ -3426,7 +3563,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 17959754.4
+    "uv": 8979877.2
    },
    {
     "c": "24F1584242",
@@ -3434,7 +3571,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 13455532.56
+    "uv": 6727766.28
    },
    {
     "c": "24F1586813",
@@ -3458,7 +3595,7 @@
     "emp": "Realiza Goiânia I",
     "k": "REALIZA EMPREENDIMENTO GOIANIA I SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 100146.24
+    "uv": 50073.12
    },
    {
     "c": "24F2830801",
@@ -3466,7 +3603,7 @@
     "emp": "Yuny",
     "k": "YUNY INCORPORADORA HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 22622178.7
+    "uv": 11311089.35
    },
    {
     "c": "24G02736824",
@@ -3474,7 +3611,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 32394652.7
+    "uv": 3717627.78
    },
    {
     "c": "24G02736838",
@@ -3482,7 +3619,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 287790.88
+    "uv": 1455172.19
    },
    {
     "c": "24G02736839",
@@ -3490,7 +3627,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2134414.42
+    "uv": 478198.62
    },
    {
     "c": "24G02736840",
@@ -3498,7 +3635,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 132294.08
+    "uv": 262977.16
    },
    {
     "c": "24G02736841",
@@ -3506,7 +3643,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 8633.62
+    "uv": 718089.54
    },
    {
     "c": "24G02736842",
@@ -3514,7 +3651,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 202971.36
+    "uv": 797615.08
    },
    {
     "c": "24G02736843",
@@ -3522,7 +3659,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9482172.04
+    "uv": 1825299.79
    },
    {
     "c": "24G02736844",
@@ -3530,7 +3667,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7031155.26
+    "uv": 199837.64
    },
    {
     "c": "24G02736845",
@@ -3538,7 +3675,7 @@
     "emp": "BTG Pactual Commodities (BTG Sertrading)",
     "k": "BTG PACTUAL COMMODITIES SERTRADING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4618064.46
+    "uv": 4353366.98
    },
    {
     "c": "24G1249772",
@@ -3546,7 +3683,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 124450.9
+    "uv": 62225.45
    },
    {
     "c": "24G1255391",
@@ -3554,7 +3691,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1685002.66
+    "uv": 842501.33
    },
    {
     "c": "24G1557250",
@@ -3562,7 +3699,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1865.76
+    "uv": 31612.03
    },
    {
     "c": "24G1674002",
@@ -3570,7 +3707,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 108343.86
+    "uv": 395304.71
    },
    {
     "c": "24G1674003",
@@ -3578,7 +3715,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 407521.64
+    "uv": 203760.82
    },
    {
     "c": "24G1674077",
@@ -3586,7 +3723,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 231106.48
+    "uv": 115553.24
    },
    {
     "c": "24G1769360",
@@ -3602,7 +3739,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 46683460.94
+    "uv": 49711520.71
    },
    {
     "c": "24G1967273",
@@ -3618,7 +3755,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 457176.91
+    "uv": 7689.41
    },
    {
     "c": "24G2100031",
@@ -3634,7 +3771,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4474.15
+    "uv": 2824.88
    },
    {
     "c": "24G2741426",
@@ -3666,7 +3803,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 304110.88
+    "uv": 152055.44
    },
    {
     "c": "24G4060990",
@@ -3690,7 +3827,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 442934.74
+    "uv": 744376.0
    },
    {
     "c": "24H0022053",
@@ -3698,7 +3835,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 11559.04
+    "uv": 467862.59
    },
    {
     "c": "24H0022054",
@@ -3706,7 +3843,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 303990.96
+    "uv": 535572.84
    },
    {
     "c": "24H0031235",
@@ -3730,7 +3867,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1074383.66
+    "uv": 115080.08
    },
    {
     "c": "24H1685087",
@@ -3738,7 +3875,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 495953.28
+    "uv": 23913.28
    },
    {
     "c": "24H2096743",
@@ -3746,7 +3883,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6471.65
+    "uv": 4526.11
    },
    {
     "c": "24H2367523",
@@ -3770,7 +3907,7 @@
     "emp": "Vamos",
     "k": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 218187.1
+    "uv": 367785.41
    },
    {
     "c": "24I01531624",
@@ -3778,7 +3915,7 @@
     "emp": "Vamos",
     "k": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 520023.92
+    "uv": 22860.68
    },
    {
     "c": "24I1177541",
@@ -3786,7 +3923,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4152.16
+    "uv": 62667.14
    },
    {
     "c": "24I1243199",
@@ -3810,7 +3947,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 448.96
+    "uv": 13.99
    },
    {
     "c": "24I1475522",
@@ -3818,7 +3955,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 51895045.68
+    "uv": 25965972.36
    },
    {
     "c": "24I1521991",
@@ -3826,7 +3963,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 442239.18
+    "uv": 2274919.87
    },
    {
     "c": "24I1586846",
@@ -3834,7 +3971,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 202597.44
+    "uv": 134447.08
    },
    {
     "c": "24I1586940",
@@ -3842,7 +3979,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 149281.48
+    "uv": 74640.74
    },
    {
     "c": "24I1587001",
@@ -3850,7 +3987,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 84095.12
+    "uv": 28551.9
    },
    {
     "c": "24I1656914",
@@ -3882,7 +4019,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 811119.77
+    "uv": 37817.39
    },
    {
     "c": "24I1980417",
@@ -3890,7 +4027,7 @@
     "emp": "True Securitizadora",
     "k": "TRUE SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1106573.58
+    "uv": 140343.81
    },
    {
     "c": "24I2114236",
@@ -3914,7 +4051,7 @@
     "emp": "Cashme",
     "k": "CASHME SOLUCOES FINANCEIRAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 255950.25
+    "uv": 100188.08
    },
    {
     "c": "24I2429043",
@@ -3930,7 +4067,7 @@
     "emp": "FS Infraestrutura",
     "k": "FS INFRAESTRUTURA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 328734.3
+    "uv": 24999689.06
    },
    {
     "c": "24J0943210",
@@ -3938,7 +4075,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 227399.32
+    "uv": 187127.85
    },
    {
     "c": "24J0943225",
@@ -3954,7 +4091,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 14644.7
+    "uv": 8510.29
    },
    {
     "c": "24J0943858",
@@ -3978,7 +4115,7 @@
     "emp": "HBR Realty",
     "k": "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 482815.7
+    "uv": 241407.85
    },
    {
     "c": "24J2539886",
@@ -4026,7 +4163,7 @@
     "emp": "Pernambuco My Beach",
     "k": "PERNAMBUCO EMPREENDIMENTOS E PARTICIPACOES MY BEACH SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 16811787.0
+    "uv": 8405893.5
    },
    {
     "c": "24J4849564",
@@ -4042,7 +4179,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7369.12
+    "uv": 113948.38
    },
    {
     "c": "24J5164617",
@@ -4066,7 +4203,7 @@
     "emp": "Lavvi",
     "k": "LAVVI EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 92347.74
+    "uv": 46173.87
    },
    {
     "c": "24J5247651",
@@ -4074,7 +4211,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9128.59
+    "uv": 53087.75
    },
    {
     "c": "24J5247661",
@@ -4106,7 +4243,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 19192.3
+    "uv": 4306.37
    },
    {
     "c": "24K0003601",
@@ -4178,7 +4315,7 @@
     "emp": "Artesanal Recebíveis Imobiliários FIDC",
     "k": "ARTESANAL RECEBIVEIS IMOBILIARIOS FUNDO DE INVESTIMENTO EM DIREITOS CREDITORIOS RESPONSABILIDADE L",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 115798.66
+    "uv": 668514.86
    },
    {
     "c": "24K2582816",
@@ -4186,7 +4323,15 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 877242.88
+    "uv": 89480.11
+   },
+   {
+    "c": "24K3051531",
+    "t": "CRI",
+    "emp": "SPE CASAS FAICALVILLE INCORPORADORA LTDA",
+    "k": "SPE CASAS FAICALVILLE INCORPORADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 358067.8
    },
    {
     "c": "24K6331624",
@@ -4218,7 +4363,7 @@
     "emp": "Bivi",
     "k": "BIVI HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 130284.92
+    "uv": 21150.58
    },
    {
     "c": "24L0004004",
@@ -4234,7 +4379,7 @@
     "emp": "Bivi",
     "k": "BIVI HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 453427.9
+    "uv": 8349.28
    },
    {
     "c": "24L0004424",
@@ -4250,7 +4395,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 18228858.06
+    "uv": 9121372.59
    },
    {
     "c": "24L1567349",
@@ -4274,7 +4419,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4084.68
+    "uv": 26220460.41
    },
    {
     "c": "24L1957424",
@@ -4282,7 +4427,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 970368.22
+    "uv": 455084.93
    },
    {
     "c": "24L1964965",
@@ -4290,7 +4435,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3274.44
+    "uv": 6235.13
    },
    {
     "c": "24L2014595",
@@ -4362,7 +4507,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2199406.88
+    "uv": 1099703.44
    },
    {
     "c": "24L2322483",
@@ -4370,7 +4515,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 93916.76
+    "uv": 359327.6
    },
    {
     "c": "24L2323039",
@@ -4386,7 +4531,7 @@
     "emp": "BPGM PDC",
     "k": "BPGM PDC EMPREENDIMENTOS E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12110.46
+    "uv": 6055.23
    },
    {
     "c": "24L2429377",
@@ -4394,7 +4539,7 @@
     "emp": "TG Nova Iaciara",
     "k": "TG NOVA IACIARA EMPREENDIMENTO E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 42379269.94
+    "uv": 21189634.97
    },
    {
     "c": "24L2498919",
@@ -4442,7 +4587,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 234338.1
+    "uv": 125908.27
    },
    {
     "c": "24L2711488",
@@ -4458,7 +4603,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1600791.02
+    "uv": 800395.51
    },
    {
     "c": "24L2720216",
@@ -4498,7 +4643,7 @@
     "emp": "Helbor",
     "k": "HELBOR EMPREENDIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 22844592.98
+    "uv": 11422296.49
    },
    {
     "c": "24L2959379",
@@ -4506,7 +4651,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 31725.51
+    "uv": 74889.84
    },
    {
     "c": "24L3102409",
@@ -4530,7 +4675,7 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3238.3
+    "uv": 3184.2
    },
    {
     "c": "24L3363983",
@@ -4538,7 +4683,7 @@
     "emp": "Quintas de São José do Rio Negro",
     "k": "QUINTAS DE SAO JOSE DO RIO NEGRO EMPREENDIMENTO IMOBILIARIO SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 40040933.22
+    "uv": 33114500.32
    },
    {
     "c": "24L3368837",
@@ -4546,7 +4691,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 271413.24
+    "uv": 135706.62
    },
    {
     "c": "24L3703945",
@@ -4570,7 +4715,7 @@
     "emp": "BR Malls",
     "k": "BR MALLS PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 769046.02
+    "uv": 155479.97
    },
    {
     "c": "25A1527197",
@@ -4578,7 +4723,7 @@
     "emp": "BR Malls",
     "k": "BR MALLS PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1815599.52
+    "uv": 1824311.27
    },
    {
     "c": "25A1801229",
@@ -4594,7 +4739,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1543892.64
+    "uv": 368581.73
    },
    {
     "c": "25A1904683",
@@ -4602,7 +4747,7 @@
     "emp": "Cury",
     "k": "CURY CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 151156.92
+    "uv": 187047.27
    },
    {
     "c": "25A1945746",
@@ -4610,7 +4755,7 @@
     "emp": "Cury",
     "k": "CURY CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 482328.28
+    "uv": 60131.95
    },
    {
     "c": "25A1946537",
@@ -4634,7 +4779,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3921.2
+    "uv": 47183.77
    },
    {
     "c": "25A3992922",
@@ -4642,7 +4787,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 287795.3
+    "uv": 52228.75
    },
    {
     "c": "25A4146077",
@@ -4650,7 +4795,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1110151.9
+    "uv": 1170161.12
    },
    {
     "c": "25B0012202",
@@ -4658,7 +4803,7 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 11673.38
+    "uv": 1920.27
    },
    {
     "c": "25B0013406",
@@ -4666,7 +4811,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 21337648.38
+    "uv": 467536.84
    },
    {
     "c": "25B0013407",
@@ -4674,7 +4819,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 84051.48
+    "uv": 982.91
    },
    {
     "c": "25B0013408",
@@ -4682,7 +4827,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 155097.5
+    "uv": 11179.55
    },
    {
     "c": "25B1736622",
@@ -4706,7 +4851,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2735217.84
+    "uv": 653247.98
    },
    {
     "c": "25B2608998",
@@ -4714,7 +4859,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3489938.5
+    "uv": 1262899.2
    },
    {
     "c": "25B2793257",
@@ -4746,7 +4891,7 @@
     "emp": "Iguatemi PPPH",
     "k": "IGUATEMI PPPH PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1549067.38
+    "uv": 185174.82
    },
    {
     "c": "25B3165838",
@@ -4794,7 +4939,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1090473.82
+    "uv": 629170.3
    },
    {
     "c": "25C0023404",
@@ -4802,7 +4947,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1632239.92
+    "uv": 672248.7
    },
    {
     "c": "25C0023405",
@@ -4810,7 +4955,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1760756.42
+    "uv": 144329.24
    },
    {
     "c": "25C0023406",
@@ -4818,7 +4963,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2892832.06
+    "uv": 91823.78
    },
    {
     "c": "25C0023407",
@@ -4858,7 +5003,7 @@
     "emp": "Longitude Incorporação & Urbanismo",
     "k": "LONGITUDE INCORPORACAO URBANISMO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5963.61
+    "uv": 7962.37
    },
    {
     "c": "25C3470318",
@@ -4890,7 +5035,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2066734.2
+    "uv": 261767.96
    },
    {
     "c": "25C3830957",
@@ -4914,7 +5059,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2277.76
+    "uv": 479.97
    },
    {
     "c": "25C3933894",
@@ -4938,7 +5083,7 @@
     "emp": "Log CP",
     "k": "LOG COMMERCIAL PROPERTIES E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3918493.02
+    "uv": 431144.03
    },
    {
     "c": "25D0271049",
@@ -4946,7 +5091,7 @@
     "emp": "Log CP",
     "k": "LOG COMMERCIAL PROPERTIES E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 857933.84
+    "uv": 159991.33
    },
    {
     "c": "25D1678098",
@@ -4986,7 +5131,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 659597.61
+    "uv": 10765.22
    },
    {
     "c": "25D2932713",
@@ -5034,7 +5179,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 279819.78
+    "uv": 208642.34
    },
    {
     "c": "25D4148960",
@@ -5058,7 +5203,7 @@
     "emp": "Nortis",
     "k": "NORTIS INCORPORADORA E CONSTRUTORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 417653.74
+    "uv": 95895.35
    },
    {
     "c": "25E0013296",
@@ -5090,7 +5235,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 160428.68
+    "uv": 162267.98
    },
    {
     "c": "25E0186266",
@@ -5106,7 +5251,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 54003.56
+    "uv": 8409.96
    },
    {
     "c": "25E2773908",
@@ -5138,7 +5283,7 @@
     "emp": "Kanastra Securitizadora",
     "k": "KANASTRA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 892927.9
+    "uv": 558241.36
    },
    {
     "c": "25E3131393",
@@ -5154,7 +5299,7 @@
     "emp": "Melnick",
     "k": "MELNICK DESENVOLVIMENTO IMOBILIARIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 119655.43
+    "uv": 402215.43
    },
    {
     "c": "25E3232141",
@@ -5170,7 +5315,7 @@
     "emp": "Kanastra Securitizadora",
     "k": "KANASTRA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 249467.26
+    "uv": 130600.27
    },
    {
     "c": "25E3532722",
@@ -5234,7 +5379,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7773230.3
+    "uv": 113839.44
    },
    {
     "c": "25F0010602",
@@ -5242,7 +5387,7 @@
     "emp": "Prati-Donaduzzi",
     "k": "PRATI DONADUZZI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 119512.73
+    "uv": 51005.61
    },
    {
     "c": "25F0010603",
@@ -5250,7 +5395,7 @@
     "emp": "Prati-Donaduzzi",
     "k": "PRATI DONADUZZI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 359984.88
+    "uv": 1206830.29
    },
    {
     "c": "25F0010604",
@@ -5266,7 +5411,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 56521.96
+    "uv": 61.63
    },
    {
     "c": "25F2091336",
@@ -5290,7 +5435,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 527389.5
+    "uv": 476395.03
    },
    {
     "c": "25F2734746",
@@ -5362,7 +5507,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 107873.3
+    "uv": 41533.22
    },
    {
     "c": "25F8630698",
@@ -5394,7 +5539,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 693504.24
+    "uv": 1256470.8
    },
    {
     "c": "25G0658368",
@@ -5402,7 +5547,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1359516.24
+    "uv": 471681.58
    },
    {
     "c": "25G0658369",
@@ -5410,7 +5555,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 548701.5
+    "uv": 539727.23
    },
    {
     "c": "25G0658978",
@@ -5418,7 +5563,7 @@
     "emp": "Direcional",
     "k": "DIRECIONAL ENGENHARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 175608.18
+    "uv": 156611.74
    },
    {
     "c": "25G0675225",
@@ -5434,7 +5579,7 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 893994.24
+    "uv": 446997.12
    },
    {
     "c": "25G1027308",
@@ -5450,7 +5595,15 @@
     "emp": "Travessia Securitizadora",
     "k": "TRAVESSIA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 17881.98
+    "uv": 1497609.58
+   },
+   {
+    "c": "25G3629974",
+    "t": "CRI",
+    "emp": "Plano&Plano II",
+    "k": "PLANO E PLANO II",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 765104.07
    },
    {
     "c": "25G3886810",
@@ -5466,7 +5619,7 @@
     "emp": "MRV",
     "k": "MRV ENGENHARIA E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 119466.24
+    "uv": 121925.72
    },
    {
     "c": "25G5109913",
@@ -5482,7 +5635,7 @@
     "emp": "MRV",
     "k": "MRV ENGENHARIA E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 177583.64
+    "uv": 26719.23
    },
    {
     "c": "25G5313963",
@@ -5506,7 +5659,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 246074.05
+    "uv": 337403.17
    },
    {
     "c": "25G5830819",
@@ -5530,7 +5683,7 @@
     "emp": "Brasil Terrenos",
     "k": "BRASIL TERRENOS HOLDING",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 404853.0
+    "uv": 132201.64
    },
    {
     "c": "25H04001266",
@@ -5538,7 +5691,7 @@
     "emp": "Klabin",
     "k": "KLABIN",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1163062.88
+    "uv": 26044.79
    },
    {
     "c": "25H04002165",
@@ -5546,7 +5699,7 @@
     "emp": "Klabin",
     "k": "KLABIN",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3769876.38
+    "uv": 1037337.91
    },
    {
     "c": "25H04807078",
@@ -5578,7 +5731,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 241491.98
+    "uv": 306491.28
    },
    {
     "c": "25H2744350",
@@ -5594,7 +5747,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4602959.1
+    "uv": 2301479.55
    },
    {
     "c": "25H3737311",
@@ -5666,7 +5819,7 @@
     "emp": "Multiplan",
     "k": "MULTIPLAN EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2909417.58
+    "uv": 947279.43
    },
    {
     "c": "25I0014418",
@@ -5674,7 +5827,7 @@
     "emp": "GNI64 RJ",
     "k": "GNI64 RJ EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 500348.44
+    "uv": 287927.66
    },
    {
     "c": "25I0014421",
@@ -5682,7 +5835,7 @@
     "emp": "GNI64 RJ",
     "k": "GNI64 RJ EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 112000.68
+    "uv": 78821.26
    },
    {
     "c": "25I02597050",
@@ -5690,7 +5843,7 @@
     "emp": "Suzano",
     "k": "SUZANO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 343842.9
+    "uv": 46895.41
    },
    {
     "c": "25I02597637",
@@ -5698,7 +5851,7 @@
     "emp": "Suzano",
     "k": "SUZANO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 63656.67
+    "uv": 361606.89
    },
    {
     "c": "25I02598074",
@@ -5706,7 +5859,7 @@
     "emp": "Suzano",
     "k": "SUZANO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1203735.26
+    "uv": 838234.11
    },
    {
     "c": "25I04005166",
@@ -5754,7 +5907,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 994.42
+    "uv": 24099.74
    },
    {
     "c": "25I2731571",
@@ -5762,7 +5915,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2999.22
+    "uv": 6049.71
    },
    {
     "c": "25I2735944",
@@ -5786,7 +5939,7 @@
     "emp": "Kanastra Securitizadora",
     "k": "KANASTRA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 734.24
+    "uv": 202663.52
    },
    {
     "c": "25I3974985",
@@ -5866,7 +6019,7 @@
     "emp": "Adolpho Lindenberg",
     "k": "CONSTRUTORA ADOLPHO LINDENBERG",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5963.49
+    "uv": 136764.89
    },
    {
     "c": "25I4892151",
@@ -5874,7 +6027,7 @@
     "emp": "Adolpho Lindenberg",
     "k": "CONSTRUTORA ADOLPHO LINDENBERG",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3944.04
+    "uv": 2019.05
    },
    {
     "c": "25J0408858",
@@ -5925,12 +6078,20 @@
     "uv": 27586888.99
    },
    {
+    "c": "25J2627136",
+    "t": "CRI",
+    "emp": "Província Securitizadora",
+    "k": "PROVINCIA DE SECURITIZACAO",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 14011006.12
+   },
+   {
     "c": "25J2841065",
     "t": "CRI",
     "emp": "Plural 1",
     "k": "PLURAL 1 PARTICIPACOES SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6684854.28
+    "uv": 6689607.42
    },
    {
     "c": "25J2843984",
@@ -5978,7 +6139,7 @@
     "emp": "Lavvi",
     "k": "LAVVI EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 106019.78
+    "uv": 16420.4
    },
    {
     "c": "25J3035137",
@@ -6018,7 +6179,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 258399.18
+    "uv": 15795.02
    },
    {
     "c": "25J4545788",
@@ -6026,7 +6187,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 981411.74
+    "uv": 191502.09
    },
    {
     "c": "25J4548658",
@@ -6066,7 +6227,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 19415.2
+    "uv": 19804.77
    },
    {
     "c": "25J5363745",
@@ -6106,7 +6267,7 @@
     "emp": "Tegra",
     "k": "TEGRA INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 40169.79
+    "uv": 94304.64
    },
    {
     "c": "25K0012207",
@@ -6114,7 +6275,7 @@
     "emp": "Tegra",
     "k": "TEGRA INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 119103.35
+    "uv": 22307.5
    },
    {
     "c": "25K0012820",
@@ -6122,7 +6283,7 @@
     "emp": "EZTEC",
     "k": "EZ TEC EMPREENDIMENTOS E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 897475.38
+    "uv": 351683.49
    },
    {
     "c": "25K0012821",
@@ -6130,7 +6291,7 @@
     "emp": "EZTEC",
     "k": "EZ TEC EMPREENDIMENTOS E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 822686.79
+    "uv": 851154.7
    },
    {
     "c": "25K0169946",
@@ -6154,7 +6315,7 @@
     "emp": "Monetar DTVM",
     "k": "MONETAR DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 38619.32
+    "uv": 354653.49
    },
    {
     "c": "25K2476340",
@@ -6170,7 +6331,7 @@
     "emp": "Mercado Livre",
     "k": "MERCADO LIVRE BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 789473.48
+    "uv": 20162.3
    },
    {
     "c": "25K2543702",
@@ -6202,7 +6363,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3578957.83
+    "uv": 1000.96
    },
    {
     "c": "25K3380934",
@@ -6210,7 +6371,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 794271.13
+    "uv": 565514.14
    },
    {
     "c": "25K3380950",
@@ -6218,7 +6379,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 624338.56
+    "uv": 291816.47
    },
    {
     "c": "25K3382311",
@@ -6226,7 +6387,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 169150.28
+    "uv": 264284.05
    },
    {
     "c": "25K3382735",
@@ -6234,7 +6395,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 616002.84
+    "uv": 208965.69
    },
    {
     "c": "25K3382870",
@@ -6242,7 +6403,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 349423.42
+    "uv": 124607.55
    },
    {
     "c": "25K3383342",
@@ -6250,7 +6411,7 @@
     "emp": "Beton 01",
     "k": "BETON 01 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4048608.33
+    "uv": 270918.42
    },
    {
     "c": "25K3386828",
@@ -6298,7 +6459,7 @@
     "emp": "Abecker",
     "k": "ABECKER EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 82262415.98
+    "uv": 14281733.79
    },
    {
     "c": "25K3493414",
@@ -6322,7 +6483,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 46396.7
+    "uv": 200698.07
    },
    {
     "c": "25K3665384",
@@ -6338,7 +6499,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 261892.05
+    "uv": 631457.6
    },
    {
     "c": "25K3667062",
@@ -6354,7 +6515,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 308921.46
+    "uv": 20543.68
    },
    {
     "c": "25K3668030",
@@ -6370,7 +6531,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 62896.39
+    "uv": 123522.1
    },
    {
     "c": "25K3669087",
@@ -6413,6 +6574,14 @@
     "uv": 3035900.73
    },
    {
+    "c": "25K3783044",
+    "t": "CRI",
+    "emp": "Quintas de São José do Rio Negro",
+    "k": "QUINTAS DE SAO JOSE DO RIO NEGRO EMPREENDIMENTO IMOBILIARIO SPE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 10094925.98
+   },
+   {
     "c": "25K3796700",
     "t": "CRI",
     "emp": "Catuaí Vista FL FII",
@@ -6434,7 +6603,7 @@
     "emp": "Nortis",
     "k": "NORTIS INCORPORADORA E CONSTRUTORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 96402.04
+    "uv": 97548.36
    },
    {
     "c": "25L0014618",
@@ -6442,7 +6611,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 102643.37
+    "uv": 18661.93
    },
    {
     "c": "25L0158987",
@@ -6450,7 +6619,7 @@
     "emp": "G.C.",
     "k": "G C PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 119121.78
+    "uv": 719033.33
    },
    {
     "c": "25L0159688",
@@ -6466,7 +6635,7 @@
     "emp": "Duratex Florestal",
     "k": "DURATEX FLORESTAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 34928.92
+    "uv": 51549.83
    },
    {
     "c": "25L0402535",
@@ -6514,7 +6683,7 @@
     "emp": "BRZ Empreendimentos e Construções",
     "k": "BRZ EMPREENDIMENTOS E CONSTRUCOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 38213.06
+    "uv": 98243.5
    },
    {
     "c": "25L2385071",
@@ -6530,7 +6699,7 @@
     "emp": "Pacaembu",
     "k": "PACAEMBU CONSTRUTORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 322423.93
+    "uv": 313452.86
    },
    {
     "c": "25L2399538",
@@ -6578,7 +6747,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 75986.66
+    "uv": 22998.44
    },
    {
     "c": "25L2721516",
@@ -6594,7 +6763,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 48380.44
+    "uv": 33998567.74
    },
    {
     "c": "25L2914176",
@@ -6610,7 +6779,7 @@
     "emp": "Even",
     "k": "EVEN CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 200575.74
+    "uv": 299806.68
    },
    {
     "c": "25L3129615",
@@ -6618,7 +6787,7 @@
     "emp": "Ancar IC FII",
     "k": "FUNDO DE INVESTIMENTO IMOBILIARIO FII ANCAR IC RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 120678.63
+    "uv": 22529.64
    },
    {
     "c": "25L3133633",
@@ -6634,7 +6803,7 @@
     "emp": "Morganita",
     "k": "MORGANITA EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 13669046.57
+    "uv": 13678765.68
    },
    {
     "c": "25L3388401",
@@ -6642,7 +6811,7 @@
     "emp": "SK Maestro Cardim",
     "k": "SK MAESTRO CARDIM EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 71238071.49
+    "uv": 71274564.74
    },
    {
     "c": "25L3391922",
@@ -6650,7 +6819,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1500884.75
+    "uv": 20234332.65
    },
    {
     "c": "25L3506484",
@@ -6682,7 +6851,7 @@
     "emp": "Assaí (Sendas)",
     "k": "SENDAS DISTRIBUIDORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 35831.98
+    "uv": 3864.28
    },
    {
     "c": "25L4042919",
@@ -6690,7 +6859,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 40007.21
+    "uv": 200428.94
    },
    {
     "c": "25L4107389",
@@ -6698,7 +6867,7 @@
     "emp": "Patriani Incorporação 38",
     "k": "PATRIANI INCORPORACAO 38 SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 11919.6
+    "uv": 692426.18
    },
    {
     "c": "25L4153713",
@@ -6706,7 +6875,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 21794983.25
+    "uv": 15262019.48
    },
    {
     "c": "25L4477754",
@@ -6722,7 +6891,15 @@
     "emp": "Leverage Securitizadora",
     "k": "LEVERAGE SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 975956.08
+    "uv": 121885.54
+   },
+   {
+    "c": "25L4714638",
+    "t": "CRI",
+    "emp": "Opea Securitizadora",
+    "k": "OPEA SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 54917114.62
    },
    {
     "c": "26A0073288",
@@ -6746,7 +6923,7 @@
     "emp": "Ancar IC",
     "k": "ANCAR IC",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 978815.54
+    "uv": 260748.5
    },
    {
     "c": "26A2041608",
@@ -6778,7 +6955,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 200188.07
+    "uv": 184701.42
    },
    {
     "c": "26A3075493",
@@ -6818,7 +6995,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 79680.56
+    "uv": 5827.71
    },
    {
     "c": "26B0022014",
@@ -6826,7 +7003,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 230642.04
+    "uv": 277315.94
    },
    {
     "c": "26B0022015",
@@ -6858,7 +7035,7 @@
     "emp": "REIT Securitizadora",
     "k": "REIT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 8092.58
+    "uv": 135741.82
    },
    {
     "c": "26B3785481",
@@ -6867,6 +7044,14 @@
     "k": "GAV2 EMPREENDIMENTOS E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 12108726.05
+   },
+   {
+    "c": "26B3785726",
+    "t": "CRI",
+    "emp": "GAV2",
+    "k": "GAV2 EMPREENDIMENTOS E PARTICIPACOES",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 25940552.48
    },
    {
     "c": "26B4696438",
@@ -6890,7 +7075,7 @@
     "emp": "Leverage Securitizadora",
     "k": "LEVERAGE SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2003867.24
+    "uv": 6040597.27
    },
    {
     "c": "26B5378803",
@@ -6914,7 +7099,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 477.93
+    "uv": 71.92
    },
    {
     "c": "26C0014206",
@@ -6922,7 +7107,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 10214.87
+    "uv": 8448.88
    },
    {
     "c": "26C2283913",
@@ -6986,7 +7171,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 97343575.61
+    "uv": 97466.02
    },
    {
     "c": "26C3169856",
@@ -6994,7 +7179,7 @@
     "emp": "Allos",
     "k": "ALLOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 28478.69
+    "uv": 578555.28
    },
    {
     "c": "26C3170159",
@@ -7002,7 +7187,7 @@
     "emp": "Allos",
     "k": "ALLOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 83521.21
+    "uv": 617450.19
    },
    {
     "c": "26C3200414",
@@ -7010,7 +7195,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 40582.09
+    "uv": 111656.55
    },
    {
     "c": "26C3343235",
@@ -7026,7 +7211,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 43641320.6
+    "uv": 999999.99
    },
    {
     "c": "26C4863993",
@@ -7042,7 +7227,15 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 117464.68
+    "uv": 723245.84
+   },
+   {
+    "c": "26C5030200",
+    "t": "CRI",
+    "emp": "Leverage Securitizadora",
+    "k": "LEVERAGE SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 9954188.21
    },
    {
     "c": "26C5210992",
@@ -7058,7 +7251,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3710347.97
+    "uv": 2884446.38
    },
    {
     "c": "26C5955434",
@@ -7074,7 +7267,7 @@
     "emp": "Suzano",
     "k": "SUZANO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 18149301.59
+    "uv": 2885978.62
    },
    {
     "c": "26D00013601",
@@ -7082,7 +7275,7 @@
     "emp": "Suzano",
     "k": "SUZANO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5372738.82
+    "uv": 6124367.88
    },
    {
     "c": "26D0012201",
@@ -7122,7 +7315,7 @@
     "emp": "Klabin",
     "k": "KLABIN",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 55781.99
+    "uv": 128404.71
    },
    {
     "c": "26D06398442",
@@ -7138,7 +7331,7 @@
     "emp": "Klabin",
     "k": "KLABIN",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 506864.39
+    "uv": 411291.02
    },
    {
     "c": "26D06903977",
@@ -7210,7 +7403,7 @@
     "emp": "Leverage Securitizadora",
     "k": "LEVERAGE SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 42808158.39
+    "uv": 37522765.07
    },
    {
     "c": "26D6263110",
@@ -7234,7 +7427,7 @@
     "emp": "Melnick",
     "k": "MELNICK DESENVOLVIMENTO IMOBILIARIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 698548.38
+    "uv": 310640.09
    },
    {
     "c": "26D6588944",
@@ -7242,7 +7435,7 @@
     "emp": "Exes Securitizadora",
     "k": "EXES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 95839.74
+    "uv": 49232.44
    },
    {
     "c": "26D6994045",
@@ -7274,7 +7467,7 @@
     "emp": "FGR Jardins Grécia",
     "k": "FGR INCORPORACOES JARDINS GRECIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 27653.84
+    "uv": 21933.85
    },
    {
     "c": "26E2430186",
@@ -7290,7 +7483,7 @@
     "emp": "Abecker",
     "k": "ABECKER EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 16001690.48
+    "uv": 16093935.75
    },
    {
     "c": "26E3061336",
@@ -7298,7 +7491,7 @@
     "emp": "BTGI Quartzo",
     "k": "BTGI QUARTZO PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 401471.5
+    "uv": 496954.85
    },
    {
     "c": "26E3062318",
@@ -7306,7 +7499,7 @@
     "emp": "BTGI Quartzo",
     "k": "BTGI QUARTZO PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4011.7
+    "uv": 130507.9
    },
    {
     "c": "26E3064087",
@@ -7322,7 +7515,7 @@
     "emp": "BTGI Quartzo",
     "k": "BTGI QUARTZO PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4507.33
+    "uv": 287677.47
    },
    {
     "c": "26E3143319",
@@ -7330,7 +7523,7 @@
     "emp": "BTGI Quartzo",
     "k": "BTGI QUARTZO PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3560.67
+    "uv": 954.97
    },
    {
     "c": "26E3147193",
@@ -7362,7 +7555,7 @@
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 978155.28
+    "uv": 2411099.43
    },
    {
     "c": "26E3526804",
@@ -7402,7 +7595,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 17016267.8
+    "uv": 16820000.0
    },
    {
     "c": "26E4686236",
@@ -7434,7 +7627,7 @@
     "emp": "Iguatemi Empresa de Shopping Centers",
     "k": "IGUATEMI EMPRESA DE SHOPPING CENTERS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 121349.97
+    "uv": 548267.43
    },
    {
     "c": "26F2538567",
@@ -7498,7 +7691,7 @@
     "emp": "BTG Pactual Renda Metropolitana FII",
     "k": "BTG PACTUAL RENDA METROPOLITANA FUNDO DE INVESTIMENTO IMOBILIARIO RESPONSABILIDADE LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1933448.5
+    "uv": 193811.8
    },
    {
     "c": "26F3803328",
@@ -7570,7 +7763,7 @@
     "emp": "Cury",
     "k": "CURY CONSTRUTORA E INCORPORADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 48243.84
+    "uv": 11035.51
    },
    {
     "c": "26G2292884",
@@ -7594,7 +7787,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6402000.27
+    "uv": 131245.84
    },
    {
     "c": "26G2913276",
@@ -7610,7 +7803,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 10459.1
+    "uv": 1175193.65
    },
    {
     "c": "26G3270333",
@@ -7650,7 +7843,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12166.46
+    "uv": 10165.05
    },
    {
     "c": "26G4584385",
@@ -7674,7 +7867,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 221269.52
+    "uv": 543133.24
    },
    {
     "c": "26G4824689",
@@ -7738,7 +7931,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2586931.51
+    "uv": 6032461.34
    },
    {
     "c": "26H2820486",
@@ -7746,7 +7939,7 @@
     "emp": "Multiplan",
     "k": "MULTIPLAN EMPREENDIMENTOS IMOBILIARIOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 8288444.43
+    "uv": 295123.82
    },
    {
     "c": "26H2945498",
@@ -7762,7 +7955,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1295276.78
+    "uv": 429023.77
    },
    {
     "c": "26H2947779",
@@ -7770,7 +7963,7 @@
     "emp": "JHSF",
     "k": "JHSF PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 324549.93
+    "uv": 842079.78
    },
    {
     "c": "26H2954595",
@@ -7786,7 +7979,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6666167.87
+    "uv": 16467898.67
    },
    {
     "c": "26H4496803",
@@ -7794,7 +7987,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 138455444.86
+    "uv": 138969715.21
    },
    {
     "c": "26H4518505",
@@ -7802,7 +7995,7 @@
     "emp": "Bari Securitizadora",
     "k": "BARI SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 43950712.11
+    "uv": 44075452.42
    },
    {
     "c": "26H4706937",
@@ -7818,7 +8011,7 @@
     "emp": "Log CP",
     "k": "LOG COMMERCIAL PROPERTIES E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1533110.46
+    "uv": 1824159.35
    },
    {
     "c": "26H5582330",
@@ -7826,7 +8019,7 @@
     "emp": "Log CP",
     "k": "LOG COMMERCIAL PROPERTIES E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 18416.95
+    "uv": 2039.95
    },
    {
     "c": "26H5593099",
@@ -7843,6 +8036,14 @@
     "k": "COOXUPE COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 20076.89
+   },
+   {
+    "c": "26I0726218",
+    "t": "CRI",
+    "emp": "Província Securitizadora",
+    "k": "PROVINCIA DE SECURITIZACAO",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 10007203.35
    },
    {
     "c": "26I07784404",
@@ -7882,7 +8083,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4296616.78
+    "uv": 3626230.56
    },
    {
     "c": "26I6874580",
@@ -7986,7 +8187,7 @@
     "emp": "Mantiqueira Alimentos",
     "k": "MANTIQUEIRA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 10000042.98
+    "uv": 6647376.28
    },
    {
     "c": "26J07221305",
@@ -7994,7 +8195,7 @@
     "emp": "Adecoagro Vale do Ivinhema",
     "k": "ADECOAGRO VALE DO IVINHEMA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 97799567.26
+    "uv": 6468622.53
    },
    {
     "c": "26J08442690",
@@ -8002,7 +8203,7 @@
     "emp": "Açucareira Quatá",
     "k": "ACUCAREIRA QUATA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 48593357.97
+    "uv": 12487884.65
    },
    {
     "c": "26J1013560",
@@ -8042,7 +8243,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 48876760.6
+    "uv": 3516118.75
    },
    {
     "c": "26J7213565",
@@ -8069,14 +8270,6 @@
     "uv": 18012600.21
    },
    {
-    "c": "AEEP31",
-    "t": "DEB",
-    "emp": "Argo Energia",
-    "k": "ARGO ENERGIA EMPREENDIMENTOS E PARTICIPACOES",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 445710.25
-   },
-   {
     "c": "APFDA1",
     "t": "DEB",
     "emp": "Autopista Fernão Dias",
@@ -8099,14 +8292,6 @@
     "k": "AXS ENERGIA UNIDADE 11",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 103769538.86
-   },
-   {
-    "c": "CAEC42",
-    "t": "DEB",
-    "emp": "Cagece",
-    "k": "DE AGUA E ESGOTO DO CEARA CAGECE",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 381831.01
    },
    {
     "c": "CBHI11",
@@ -8178,15 +8363,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3579375.86
-   },
-   {
-    "c": "CRA019000GT",
-    "t": "CRA",
-    "emp": "Raízen Energia",
-    "k": "RAIZEN ENERGIA",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2138466.8
+    "uv": 1004795.01
    },
    {
     "c": "CRA0190066O",
@@ -8194,7 +8371,7 @@
     "emp": "Adecoagro Vale do Ivinhema",
     "k": "ADECOAGRO VALE DO IVINHEMA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 648518.16
+    "uv": 132608.17
    },
    {
     "c": "CRA01900749",
@@ -8210,7 +8387,7 @@
     "emp": "Vamos",
     "k": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 46821.14
+    "uv": 397180.38
    },
    {
     "c": "CRA020003K0",
@@ -8234,7 +8411,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 82296.31
+    "uv": 8130.55
    },
    {
     "c": "CRA021000SC",
@@ -8242,7 +8419,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 617363.79
+    "uv": 430697.09
    },
    {
     "c": "CRA0210012Y",
@@ -8250,7 +8427,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 250177.62
+    "uv": 586763.91
    },
    {
     "c": "CRA0210012Z",
@@ -8258,7 +8435,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 67398.42
+    "uv": 81806.89
    },
    {
     "c": "CRA02100130",
@@ -8266,7 +8443,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 55715.29
+    "uv": 10505.29
    },
    {
     "c": "CRA02100195",
@@ -8274,7 +8451,7 @@
     "emp": "Planagri",
     "k": "PLANAGRI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3417.44
+    "uv": 7949.85
    },
    {
     "c": "CRA0210019B",
@@ -8282,7 +8459,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1778.43
+    "uv": 4526.04
    },
    {
     "c": "CRA021001EM",
@@ -8290,7 +8467,7 @@
     "emp": "Usina Jacarezinho",
     "k": "AGRICOLA USINA JACAREZINHO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 58538.07
+    "uv": 148838.27
    },
    {
     "c": "CRA021001KH",
@@ -8298,7 +8475,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 71739.48
+    "uv": 745.99
    },
    {
     "c": "CRA021001VB",
@@ -8314,7 +8491,7 @@
     "emp": "Adami",
     "k": "ADAMI MADEIRAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3830.98
+    "uv": 4787.3
    },
    {
     "c": "CRA021002NB",
@@ -8322,7 +8499,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3829.76
+    "uv": 83089.38
    },
    {
     "c": "CRA021002YF",
@@ -8346,7 +8523,7 @@
     "emp": "Pastifício Selmi",
     "k": "PASTIFICIO SELMI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 17727.32
+    "uv": 5078.58
    },
    {
     "c": "CRA021003VT",
@@ -8370,7 +8547,7 @@
     "emp": "Combio",
     "k": "COMBIO ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 375631.99
+    "uv": 317847.92
    },
    {
     "c": "CRA021004NW",
@@ -8386,7 +8563,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3040.45
+    "uv": 43764.77
    },
    {
     "c": "CRA021004T8",
@@ -8402,7 +8579,7 @@
     "emp": "Braskem",
     "k": "BRASKEM",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 115120.63
+    "uv": 4447.22
    },
    {
     "c": "CRA0210059U",
@@ -8410,7 +8587,7 @@
     "emp": "Braskem",
     "k": "BRASKEM",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 37949.21
+    "uv": 8106.34
    },
    {
     "c": "CRA021005L0",
@@ -8426,7 +8603,7 @@
     "emp": "Grupo Fartura",
     "k": "GRUPO FARTURA DE HORTIFRUT",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 61619.6
+    "uv": 10973.58
    },
    {
     "c": "CRA021005QP",
@@ -8450,7 +8627,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3512805.08
+    "uv": 11079892.51
    },
    {
     "c": "CRA02200001",
@@ -8458,7 +8635,7 @@
     "emp": "Gonçalves & Tortola",
     "k": "GONCALVES TORTOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7383.5
+    "uv": 30760.65
    },
    {
     "c": "CRA022000B5",
@@ -8466,7 +8643,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 280216.29
+    "uv": 98395.96
    },
    {
     "c": "CRA022000XE",
@@ -8474,7 +8651,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 30278871.8
+    "uv": 395566.22
    },
    {
     "c": "CRA022001P7",
@@ -8498,7 +8675,7 @@
     "emp": "Bem Brasil",
     "k": "BEM BRASIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 597813.6
+    "uv": 210857.36
    },
    {
     "c": "CRA022003PD",
@@ -8506,7 +8683,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 16783282.0
+    "uv": 13679.44
    },
    {
     "c": "CRA022004H5",
@@ -8514,7 +8691,7 @@
     "emp": "Nardini Agroindustrial",
     "k": "NARDINI AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 184413.71
+    "uv": 112549.96
    },
    {
     "c": "CRA022004S9",
@@ -8522,7 +8699,7 @@
     "emp": "Vamos",
     "k": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 11590731.34
+    "uv": 6117.04
    },
    {
     "c": "CRA022004XY",
@@ -8530,7 +8707,7 @@
     "emp": "Usina Cerradão",
     "k": "USINA CERRADAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 29824507.73
+    "uv": 28831.77
    },
    {
     "c": "CRA0220058Y",
@@ -8562,7 +8739,7 @@
     "emp": "Dexco",
     "k": "DEXCO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 25731.99
+    "uv": 46150.32
    },
    {
     "c": "CRA022006MY",
@@ -8570,7 +8747,7 @@
     "emp": "Dexco",
     "k": "DEXCO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 309601.08
+    "uv": 415664.22
    },
    {
     "c": "CRA022007KG",
@@ -8578,7 +8755,7 @@
     "emp": "Armac",
     "k": "ARMAC LOCACAO LOGISTICA E SERVICOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1129955.33
+    "uv": 196163.09
    },
    {
     "c": "CRA022007KH",
@@ -8586,7 +8763,7 @@
     "emp": "Armac",
     "k": "ARMAC LOCACAO LOGISTICA E SERVICOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1376677.13
+    "uv": 903799.75
    },
    {
     "c": "CRA022007PU",
@@ -8602,7 +8779,7 @@
     "emp": "Combio",
     "k": "COMBIO ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 24692283.2
+    "uv": 1001137.86
    },
    {
     "c": "CRA022008C1",
@@ -8610,7 +8787,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1226.06
+    "uv": 4906.25
    },
    {
     "c": "CRA022008C4",
@@ -8626,7 +8803,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 111157.71
+    "uv": 33919.79
    },
    {
     "c": "CRA022008T1",
@@ -8650,7 +8827,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6923.92
+    "uv": 12586.88
    },
    {
     "c": "CRA022009Q2",
@@ -8682,7 +8859,7 @@
     "emp": "FS Infraestrutura",
     "k": "FS INFRAESTRUTURA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 30017.22
+    "uv": 9356.52
    },
    {
     "c": "CRA02200AC9",
@@ -8690,7 +8867,7 @@
     "emp": "Agro Quartzo",
     "k": "AGRO QUARTZO ADMINISTRACAO E PARTICIPACOES SOCIEDADE UNIPESSOAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 362609.04
+    "uv": 62155.8
    },
    {
     "c": "CRA02200CCH",
@@ -8762,7 +8939,7 @@
     "emp": "Vale do Pontal",
     "k": "VALE DO PONTAL ACUCAR E ETANOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9807.6
+    "uv": 20434.78
    },
    {
     "c": "CRA0230020A",
@@ -8770,7 +8947,7 @@
     "emp": "Engelhart CTP",
     "k": "ENGELHART CTP BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 302560.87
+    "uv": 88900.94
    },
    {
     "c": "CRA023002GX",
@@ -8778,7 +8955,7 @@
     "emp": "Integrada",
     "k": "INTEGRADA COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3443.91
+    "uv": 6033.78
    },
    {
     "c": "CRA023002XL",
@@ -8794,7 +8971,7 @@
     "emp": "Engelhart CTP",
     "k": "ENGELHART CTP BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 296257.83
+    "uv": 152773.36
    },
    {
     "c": "CRA023004S9",
@@ -8810,7 +8987,7 @@
     "emp": "Engelhart CTP",
     "k": "ENGELHART CTP BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 113455.85
+    "uv": 503443.24
    },
    {
     "c": "CRA0230099D",
@@ -8818,7 +8995,7 @@
     "emp": "Usinas Itamarati",
     "k": "USINAS ITAMARATI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2000964.48
+    "uv": 2436.46
    },
    {
     "c": "CRA023009VL",
@@ -8829,12 +9006,20 @@
     "uv": 2114.89
    },
    {
+    "c": "CRA02300ASX",
+    "t": "CRA",
+    "emp": "Usina Cerradão",
+    "k": "USINA CERRADAO",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 21587116.32
+   },
+   {
     "c": "CRA02300BQD",
     "t": "CRA",
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2628.31
+    "uv": 2628.97
    },
    {
     "c": "CRA02300BVT",
@@ -8842,7 +9027,7 @@
     "emp": "Pantanal Agrícola",
     "k": "PANTANAL AGRICOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 42652.44
+    "uv": 107364.96
    },
    {
     "c": "CRA02300CCI",
@@ -8850,7 +9035,7 @@
     "emp": "FS Indústria de Biocombustíveis",
     "k": "FS INDUSTRIA DE BIOCOMBUSTIVEIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 318520.6
+    "uv": 288254.3
    },
    {
     "c": "CRA02300CNN",
@@ -8866,7 +9051,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1108437.72
+    "uv": 171785.98
    },
    {
     "c": "CRA02300CYT",
@@ -8874,7 +9059,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 969930.44
+    "uv": 265121.2
    },
    {
     "c": "CRA02300EYX",
@@ -8882,7 +9067,7 @@
     "emp": "Ipiranga Produtos de Petróleo",
     "k": "IPIRANGA PRODUTOS DE PETROLEO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1055760.1
+    "uv": 1537454.43
    },
    {
     "c": "CRA02300EZ2",
@@ -8890,7 +9075,7 @@
     "emp": "Ipiranga Produtos de Petróleo",
     "k": "IPIRANGA PRODUTOS DE PETROLEO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1540506.5
+    "uv": 308372.96
    },
    {
     "c": "CRA02300GCX",
@@ -8898,7 +9083,7 @@
     "emp": "Ipiranga Produtos de Petróleo",
     "k": "IPIRANGA PRODUTOS DE PETROLEO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 60673.3
+    "uv": 49805.71
    },
    {
     "c": "CRA02300HA9",
@@ -8914,7 +9099,7 @@
     "emp": "Pantanal Agrícola",
     "k": "PANTANAL AGRICOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 68260.76
+    "uv": 2143.84
    },
    {
     "c": "CRA02300HQX",
@@ -8930,7 +9115,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 38781.56
+    "uv": 48625.54
    },
    {
     "c": "CRA02300HWJ",
@@ -8938,7 +9123,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6239992.76
+    "uv": 437322.95
    },
    {
     "c": "CRA02300J4X",
@@ -8946,7 +9131,7 @@
     "emp": "Casafertil",
     "k": "CASAFERTIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12699.08
+    "uv": 6349.54
    },
    {
     "c": "CRA02300JAH",
@@ -8954,7 +9139,7 @@
     "emp": "Alcoeste Bioenergia Fernandópolis",
     "k": "ALCOESTE BIOENERGIA FERNANDOPOLIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9842.47
+    "uv": 1991.34
    },
    {
     "c": "CRA02300JG1",
@@ -8970,7 +9155,7 @@
     "emp": "Raízen Energia",
     "k": "RAIZEN ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2045823.9
+    "uv": 673154.82
    },
    {
     "c": "CRA02300JR6",
@@ -8978,7 +9163,7 @@
     "emp": "Raízen Energia",
     "k": "RAIZEN ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1294412.87
+    "uv": 2513500.49
    },
    {
     "c": "CRA02300JR7",
@@ -8986,7 +9171,7 @@
     "emp": "Raízen Energia",
     "k": "RAIZEN ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1024537.21
+    "uv": 1846182.9
    },
    {
     "c": "CRA02300K7T",
@@ -8994,7 +9179,7 @@
     "emp": "Regional Agro Insumos",
     "k": "REGIONAL AGRO INSUMOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4229.79
+    "uv": 6354.42
    },
    {
     "c": "CRA02300KZL",
@@ -9034,7 +9219,7 @@
     "emp": "Minerva VI",
     "k": "MINERVA VI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1763843.37
+    "uv": 1121310.36
    },
    {
     "c": "CRA02300MOR",
@@ -9042,7 +9227,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2006068.83
+    "uv": 971628.5
    },
    {
     "c": "CRA02300MU9",
@@ -9050,7 +9235,7 @@
     "emp": "Banco ABC Brasil",
     "k": "BANCO ABC BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 337562.49
+    "uv": 10278.12
    },
    {
     "c": "CRA02300MZT",
@@ -9058,7 +9243,7 @@
     "emp": "Madero",
     "k": "MADERO INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 255330.8
+    "uv": 3346110.16
    },
    {
     "c": "CRA02300MZU",
@@ -9066,7 +9251,7 @@
     "emp": "Madero",
     "k": "MADERO INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2670.4
+    "uv": 6937.86
    },
    {
     "c": "CRA02300NAX",
@@ -9074,7 +9259,7 @@
     "emp": "Dexco",
     "k": "DEXCO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6288571.07
+    "uv": 1911633.75
    },
    {
     "c": "CRA02300NX7",
@@ -9082,7 +9267,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2870066.6
+    "uv": 4434.5
    },
    {
     "c": "CRA02300NX8",
@@ -9090,7 +9275,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 620978.77
+    "uv": 841193.24
    },
    {
     "c": "CRA02300P01",
@@ -9099,6 +9284,14 @@
     "k": "SANSAO FLORINDO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 10124.7
+   },
+   {
+    "c": "CRA02300PGP",
+    "t": "CRA",
+    "emp": "Copagril",
+    "k": "COOPERATIVA AGROINDUSTRIAL COPAGRIL",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 6110226.78
    },
    {
     "c": "CRA02300PXD",
@@ -9138,7 +9331,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6095.32
+    "uv": 6099.91
    },
    {
     "c": "CRA02300RGX",
@@ -9162,7 +9355,7 @@
     "emp": "Camil",
     "k": "CAMIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 16599.78
+    "uv": 148511.2
    },
    {
     "c": "CRA02300S37",
@@ -9170,7 +9363,7 @@
     "emp": "FS Indústria de Biocombustíveis",
     "k": "FS INDUSTRIA DE BIOCOMBUSTIVEIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 202214.3
+    "uv": 147930.87
    },
    {
     "c": "CRA02300SPE",
@@ -9178,7 +9371,7 @@
     "emp": "FS Indústria de Biocombustíveis",
     "k": "FS INDUSTRIA DE BIOCOMBUSTIVEIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 295884.58
+    "uv": 69820.49
    },
    {
     "c": "CRA02300SV0",
@@ -9186,7 +9379,7 @@
     "emp": "Vamos",
     "k": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4018.72
+    "uv": 20077.49
    },
    {
     "c": "CRA02300SV1",
@@ -9194,7 +9387,7 @@
     "emp": "Vamos",
     "k": "VAMOS LOCACAO DE CAMINHOES MAQUINAS E EQUIPAMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3719.86
+    "uv": 1859.93
    },
    {
     "c": "CRA02300SV3",
@@ -9202,7 +9395,7 @@
     "emp": "Ferrari Agroindústria",
     "k": "FERRARI AGROINDUSTRIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 76977.66
+    "uv": 102460.81
    },
    {
     "c": "CRA02300SV4",
@@ -9218,7 +9411,7 @@
     "emp": "Ferrari Agroindústria",
     "k": "FERRARI AGROINDUSTRIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 269758.84
+    "uv": 412867.17
    },
    {
     "c": "CRA02300TSC",
@@ -9226,7 +9419,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 91635.4
+    "uv": 2183.26
    },
    {
     "c": "CRA02300TSD",
@@ -9234,7 +9427,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4324493.32
+    "uv": 414755.59
    },
    {
     "c": "CRA02300TSF",
@@ -9242,7 +9435,7 @@
     "emp": "BTG Pactual",
     "k": "BANCO BTG PACTUAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3635648.94
+    "uv": 196272.8
    },
    {
     "c": "CRA02300UEL",
@@ -9250,7 +9443,7 @@
     "emp": "Pantanal Agrícola",
     "k": "PANTANAL AGRICOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7786209.04
+    "uv": 88810.28
    },
    {
     "c": "CRA02300UEN",
@@ -9258,7 +9451,7 @@
     "emp": "Pantanal Agrícola",
     "k": "PANTANAL AGRICOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 218501.34
+    "uv": 9031597.55
    },
    {
     "c": "CRA02300UV7",
@@ -9266,7 +9459,7 @@
     "emp": "Pantanal Agrícola",
     "k": "PANTANAL AGRICOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12291.88
+    "uv": 6145.94
    },
    {
     "c": "CRA02300V0V",
@@ -9274,7 +9467,7 @@
     "emp": "Província Securitizadora",
     "k": "PROVINCIA DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1067.36
+    "uv": 56874.4
    },
    {
     "c": "CRA02300VBU",
@@ -9282,7 +9475,7 @@
     "emp": "Unidas Locações",
     "k": "UNIDAS LOCACOES E SERVICOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 408964.44
+    "uv": 93380.03
    },
    {
     "c": "CRA02300VHE",
@@ -9306,7 +9499,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 211349.92
+    "uv": 769352.4
    },
    {
     "c": "CRA024000B6",
@@ -9314,7 +9507,7 @@
     "emp": "FS Indústria de Biocombustíveis",
     "k": "FS INDUSTRIA DE BIOCOMBUSTIVEIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 541333.52
+    "uv": 6449.77
    },
    {
     "c": "CRA024000B9",
@@ -9322,7 +9515,7 @@
     "emp": "FS Indústria de Biocombustíveis",
     "k": "FS INDUSTRIA DE BIOCOMBUSTIVEIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 15405.8
+    "uv": 59033.32
    },
    {
     "c": "CRA024000GR",
@@ -9330,7 +9523,7 @@
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 67952.62
+    "uv": 75797.0
    },
    {
     "c": "CRA024000XF",
@@ -9346,7 +9539,7 @@
     "emp": "Enebra",
     "k": "ENEBRA BRASIL ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 24468.86
+    "uv": 12234.43
    },
    {
     "c": "CRA024001E3",
@@ -9354,7 +9547,7 @@
     "emp": "Banco ABC Brasil",
     "k": "BANCO ABC BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5355350.62
+    "uv": 3881934.41
    },
    {
     "c": "CRA024001E4",
@@ -9362,7 +9555,7 @@
     "emp": "Banco ABC Brasil",
     "k": "BANCO ABC BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 768761.4
+    "uv": 269243.39
    },
    {
     "c": "CRA024001E5",
@@ -9370,7 +9563,7 @@
     "emp": "Banco ABC Brasil",
     "k": "BANCO ABC BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3566.94
+    "uv": 32362.42
    },
    {
     "c": "CRA024001E7",
@@ -9378,7 +9571,7 @@
     "emp": "Banco ABC Brasil",
     "k": "BANCO ABC BRASIL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 597553.86
+    "uv": 212025.84
    },
    {
     "c": "CRA024001P5",
@@ -9386,7 +9579,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1553203.84
+    "uv": 585139.42
    },
    {
     "c": "CRA024001P6",
@@ -9394,7 +9587,7 @@
     "emp": "JSL",
     "k": "JSL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1554306.24
+    "uv": 433886.28
    },
    {
     "c": "CRA024001Q8",
@@ -9402,7 +9595,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 143033.16
+    "uv": 73128.15
    },
    {
     "c": "CRA024001Q9",
@@ -9410,7 +9603,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1422835.12
+    "uv": 1019551.02
    },
    {
     "c": "CRA024001QA",
@@ -9418,7 +9611,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 617190.54
+    "uv": 120050.81
    },
    {
     "c": "CRA024001UP",
@@ -9442,7 +9635,7 @@
     "emp": "Vicunha II",
     "k": "VICUNHA II",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 65960.96
+    "uv": 32980.48
    },
    {
     "c": "CRA024002GX",
@@ -9466,7 +9659,7 @@
     "emp": "JF Citrus",
     "k": "JF CITRUS AGROPECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 222284.06
+    "uv": 139516.18
    },
    {
     "c": "CRA024002MI",
@@ -9474,7 +9667,7 @@
     "emp": "JF Citrus",
     "k": "JF CITRUS AGROPECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 64415.6
+    "uv": 32207.8
    },
    {
     "c": "CRA0240038Q",
@@ -9490,7 +9683,7 @@
     "emp": "Terra Forte",
     "k": "TERRA FORTE EMPREENDIMENTOS E PARTICIPACOES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 89954259.94
+    "uv": 44977129.97
    },
    {
     "c": "CRA024003JT",
@@ -9506,7 +9699,7 @@
     "emp": "Lar",
     "k": "LAR COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2575835.46
+    "uv": 426444.01
    },
    {
     "c": "CRA024004H6",
@@ -9514,7 +9707,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 984296.86
+    "uv": 224823.46
    },
    {
     "c": "CRA024004MP",
@@ -9522,7 +9715,7 @@
     "emp": "São Salvador Alimentos",
     "k": "SAO SALVADOR ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2479244.06
+    "uv": 7283.29
    },
    {
     "c": "CRA024004MQ",
@@ -9530,7 +9723,7 @@
     "emp": "São Salvador Alimentos",
     "k": "SAO SALVADOR ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 38525.19
+    "uv": 186954.14
    },
    {
     "c": "CRA024004MR",
@@ -9546,7 +9739,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 442217.0
+    "uv": 247510.85
    },
    {
     "c": "CRA024005K1",
@@ -9578,7 +9771,7 @@
     "emp": "Camil",
     "k": "CAMIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 405456.7
+    "uv": 234873.69
    },
    {
     "c": "CRA0240066C",
@@ -9586,7 +9779,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1256352.32
+    "uv": 628176.16
    },
    {
     "c": "CRA0240066E",
@@ -9594,7 +9787,7 @@
     "emp": "FS Florestal",
     "k": "FS FLORESTAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 17540107.24
+    "uv": 238419.98
    },
    {
     "c": "CRA0240066H",
@@ -9602,7 +9795,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1685106.04
+    "uv": 42453.3
    },
    {
     "c": "CRA0240066I",
@@ -9610,7 +9803,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 93622.29
+    "uv": 37965.86
    },
    {
     "c": "CRA024006BT",
@@ -9642,7 +9835,7 @@
     "emp": "Adecoagro Vale do Ivinhema",
     "k": "ADECOAGRO VALE DO IVINHEMA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1227430.76
+    "uv": 204348.25
    },
    {
     "c": "CRA024006Y2",
@@ -9650,7 +9843,7 @@
     "emp": "Adecoagro Vale do Ivinhema",
     "k": "ADECOAGRO VALE DO IVINHEMA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 502393.78
+    "uv": 74257.73
    },
    {
     "c": "CRA024006Y3",
@@ -9658,7 +9851,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 57012.44
+    "uv": 138380.07
    },
    {
     "c": "CRA024006Y4",
@@ -9667,6 +9860,14 @@
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 467543.04
+   },
+   {
+    "c": "CRA0240073P",
+    "t": "CRA",
+    "emp": "Província Securitizadora",
+    "k": "PROVINCIA DE SECURITIZACAO",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 27029999.76
    },
    {
     "c": "CRA024007KA",
@@ -9714,7 +9915,7 @@
     "emp": "Charrua",
     "k": "DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1172119.74
+    "uv": 52854.06
    },
    {
     "c": "CRA0240086J",
@@ -9722,7 +9923,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 80957.94
+    "uv": 246728.47
    },
    {
     "c": "CRA024008C3",
@@ -9730,7 +9931,7 @@
     "emp": "Alcoeste Bioenergia Fernandópolis",
     "k": "ALCOESTE BIOENERGIA FERNANDOPOLIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 109332.21
+    "uv": 36444.07
    },
    {
     "c": "CRA024008C4",
@@ -9738,7 +9939,7 @@
     "emp": "BE8",
     "k": "BE8",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 227143.59
+    "uv": 49083.46
    },
    {
     "c": "CRA024008C5",
@@ -9754,7 +9955,7 @@
     "emp": "Supply Chain Armazéns Gerais",
     "k": "SUPPLY CHAIN ARMAZENS GERAIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 815037.63
+    "uv": 19856.48
    },
    {
     "c": "CRA024008N8",
@@ -9770,7 +9971,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 64684.74
+    "uv": 11452.99
    },
    {
     "c": "CRA0240099F",
@@ -9778,7 +9979,7 @@
     "emp": "Vale do Tijuco",
     "k": "VALE DO TIJUCO ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 461101.95
+    "uv": 112535.84
    },
    {
     "c": "CRA024009VM",
@@ -9794,7 +9995,7 @@
     "emp": "Vera Cruz Agropecuária",
     "k": "VERA CRUZ AGRO PECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 190099.06
+    "uv": 64793.19
    },
    {
     "c": "CRA024009VO",
@@ -9810,7 +10011,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 57570.12
+    "uv": 26120.38
    },
    {
     "c": "CRA02400AHX",
@@ -9818,7 +10019,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 33656.26
+    "uv": 108168.88
    },
    {
     "c": "CRA02400AHY",
@@ -9826,7 +10027,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 108229.32
+    "uv": 36076.44
    },
    {
     "c": "CRA02400AHZ",
@@ -9834,7 +10035,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 99398.55
+    "uv": 32922.61
    },
    {
     "c": "CRA02400ANK",
@@ -9842,7 +10043,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 17500.05
+    "uv": 611517.11
    },
    {
     "c": "CRA02400ANS",
@@ -9850,7 +10051,7 @@
     "emp": "Alcoolquímica",
     "k": "ALCOOLQUIMICA NACIONAL ALCOOLQUIMICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3245296.77
+    "uv": 1081765.59
    },
    {
     "c": "CRA02400AYO",
@@ -9858,7 +10059,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1056305.52
+    "uv": 352101.84
    },
    {
     "c": "CRA02400CI3",
@@ -9866,7 +10067,7 @@
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 328750.8
+    "uv": 37356.86
    },
    {
     "c": "CRA02400CI4",
@@ -9882,7 +10083,7 @@
     "emp": "ERB Aratinga",
     "k": "ERB ARATINGA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 26789575.92
+    "uv": 8929858.64
    },
    {
     "c": "CRA02400D9U",
@@ -9906,7 +10107,7 @@
     "emp": "ACP Agro",
     "k": "ACP AGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 412040.88
+    "uv": 96679.81
    },
    {
     "c": "CRA02400DW3",
@@ -9914,7 +10115,7 @@
     "emp": "ACP Agro",
     "k": "ACP AGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 416694.42
+    "uv": 147891.34
    },
    {
     "c": "CRA0250005L",
@@ -9930,7 +10131,7 @@
     "emp": "Boa Safra Sementes",
     "k": "BOA SAFRA SEMENTES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 197271.57
+    "uv": 65757.19
    },
    {
     "c": "CRA025000GP",
@@ -9954,7 +10155,7 @@
     "emp": "Charrua",
     "k": "DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 326593.17
+    "uv": 146654.32
    },
    {
     "c": "CRA025000MC",
@@ -9962,7 +10163,7 @@
     "emp": "Charrua",
     "k": "DISTRIBUIDORA DE PRODUTOS DE PETROLEO CHARRUA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1479961.35
+    "uv": 193162.94
    },
    {
     "c": "CRA025000MD",
@@ -9970,7 +10171,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 552499.44
+    "uv": 3823.14
    },
    {
     "c": "CRA025000ME",
@@ -9978,7 +10179,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 66564.3
+    "uv": 22188.1
    },
    {
     "c": "CRA025000MF",
@@ -9986,7 +10187,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 329693.88
+    "uv": 109897.96
    },
    {
     "c": "CRA025000MH",
@@ -10002,7 +10203,7 @@
     "emp": "Eucatex",
     "k": "EUCATEX INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 153984.87
+    "uv": 30813.44
    },
    {
     "c": "CRA025000S0",
@@ -10010,7 +10211,7 @@
     "emp": "Eucatex",
     "k": "EUCATEX INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2485844.76
+    "uv": 419925.95
    },
    {
     "c": "CRA025000S2",
@@ -10018,7 +10219,7 @@
     "emp": "Eucatex",
     "k": "EUCATEX INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 645043.92
+    "uv": 215014.64
    },
    {
     "c": "CRA025000S7",
@@ -10034,15 +10235,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 543271.62
-   },
-   {
-    "c": "CRA0250018H",
-    "t": "CRA",
-    "emp": "MBRF",
-    "k": "MARFRIG GLOBAL FOODS",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 683878.47
+    "uv": 181090.54
    },
    {
     "c": "CRA0250018O",
@@ -10050,7 +10243,7 @@
     "emp": "Bioenergética Vale do Paracatu",
     "k": "BIOENERGETICA VALE DO PARACATU",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5606.32
+    "uv": 5304.5
    },
    {
     "c": "CRA025001E1",
@@ -10090,7 +10283,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 96959.84
+    "uv": 161399.96
    },
    {
     "c": "CRA025002MH",
@@ -10098,7 +10291,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 78885.42
+    "uv": 26295.14
    },
    {
     "c": "CRA025002S1",
@@ -10106,7 +10299,7 @@
     "emp": "Minerva",
     "k": "MINERVA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1421516.1
+    "uv": 447094.6
    },
    {
     "c": "CRA02500336",
@@ -10122,7 +10315,7 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1655478.3
+    "uv": 829728.27
    },
    {
     "c": "CRA0250038Q",
@@ -10130,7 +10323,7 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 645113.7
+    "uv": 413550.22
    },
    {
     "c": "CRA0250038R",
@@ -10138,7 +10331,7 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3918506.16
+    "uv": 1720062.75
    },
    {
     "c": "CRA025003E9",
@@ -10178,7 +10371,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9555.38
+    "uv": 48918.98
    },
    {
     "c": "CRA025003PI",
@@ -10186,7 +10379,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 797431.8
+    "uv": 265810.6
    },
    {
     "c": "CRA025003PJ",
@@ -10194,7 +10387,7 @@
     "emp": "Riza Securitizadora",
     "k": "RIZA SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2358707.94
+    "uv": 237620.97
    },
    {
     "c": "CRA025003UX",
@@ -10202,7 +10395,7 @@
     "emp": "Cooxupé",
     "k": "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE COOXUPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2638963.41
+    "uv": 1004079.6
    },
    {
     "c": "CRA025003UY",
@@ -10210,7 +10403,7 @@
     "emp": "Cooxupé",
     "k": "COOPERATIVA REGIONAL DE CAFEICULTORES EM GUAXUPE COOXUPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1200032.49
+    "uv": 997006.18
    },
    {
     "c": "CRA0250040I",
@@ -10218,7 +10411,7 @@
     "emp": "Natural One",
     "k": "NATURAL ONE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 653902.11
+    "uv": 73392.83
    },
    {
     "c": "CRA0250040J",
@@ -10226,7 +10419,7 @@
     "emp": "Eco Securitizadora",
     "k": "ECO SECURITIZADORA DE DIREITOS CREDITORIOS DO AGRONEGOCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 181469.1
+    "uv": 253782.76
    },
    {
     "c": "CRA02500461",
@@ -10282,7 +10475,7 @@
     "emp": "Ecoagro Insumos Fiagro",
     "k": "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 699650.58
+    "uv": 80610.82
    },
    {
     "c": "CRA025004S9",
@@ -10298,7 +10491,7 @@
     "emp": "Gonçalves & Tortola",
     "k": "GONCALVES TORTOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 38032.08
+    "uv": 20039905.98
    },
    {
     "c": "CRA0250053F",
@@ -10306,7 +10499,7 @@
     "emp": "Gonçalves & Tortola",
     "k": "GONCALVES TORTOLA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 346038.63
+    "uv": 37640.22
    },
    {
     "c": "CRA0250053G",
@@ -10346,7 +10539,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7778724.39
+    "uv": 1045187.15
    },
    {
     "c": "CRA0250066C",
@@ -10362,7 +10555,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 94338.42
+    "uv": 31446.14
    },
    {
     "c": "CRA025006BT",
@@ -10370,7 +10563,7 @@
     "emp": "Agroterenas",
     "k": "AGROTERENAS CANA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3138.96
+    "uv": 1046.92
    },
    {
     "c": "CRA025006BV",
@@ -10378,7 +10571,7 @@
     "emp": "Agroterenas",
     "k": "AGROTERENAS CANA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 3060.66
+    "uv": 19612.71
    },
    {
     "c": "CRA025006NC",
@@ -10386,7 +10579,7 @@
     "emp": "Lar",
     "k": "LAR COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 112652.83
+    "uv": 159857.13
    },
    {
     "c": "CRA025006ND",
@@ -10394,7 +10587,7 @@
     "emp": "Lar",
     "k": "LAR COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 602678.04
+    "uv": 200892.68
    },
    {
     "c": "CRA025006SH",
@@ -10426,7 +10619,7 @@
     "emp": "Usinas Itamarati",
     "k": "USINAS ITAMARATI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 62344.76
+    "uv": 49197.62
    },
    {
     "c": "CRA025006SS",
@@ -10434,7 +10627,7 @@
     "emp": "Boa Safra Sementes",
     "k": "BOA SAFRA SEMENTES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 749241.9
+    "uv": 1010540.78
    },
    {
     "c": "CRA025006SU",
@@ -10442,7 +10635,7 @@
     "emp": "Boa Safra Sementes",
     "k": "BOA SAFRA SEMENTES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 82253.28
+    "uv": 118283.37
    },
    {
     "c": "CRA025006SV",
@@ -10450,7 +10643,7 @@
     "emp": "Boa Safra Sementes",
     "k": "BOA SAFRA SEMENTES",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 73696.32
+    "uv": 19745.39
    },
    {
     "c": "CRA0250073L",
@@ -10458,7 +10651,7 @@
     "emp": "Mantiqueira Alimentos",
     "k": "MANTIQUEIRA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 714348.21
+    "uv": 63182.91
    },
    {
     "c": "CRA0250073M",
@@ -10466,7 +10659,7 @@
     "emp": "Mantiqueira Alimentos",
     "k": "MANTIQUEIRA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 305279.4
+    "uv": 16768.38
    },
    {
     "c": "CRA0250073N",
@@ -10474,7 +10667,7 @@
     "emp": "Mantiqueira Alimentos",
     "k": "MANTIQUEIRA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 94027.2
+    "uv": 231432.57
    },
    {
     "c": "CRA02500795",
@@ -10498,7 +10691,7 @@
     "emp": "Cereal Representação Agropecuária",
     "k": "CEREAL COMERCIO EXPORTACAO E REPRESENTACAO AGROPECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1850874.27
+    "uv": 547889.64
    },
    {
     "c": "CRA025007KF",
@@ -10506,7 +10699,7 @@
     "emp": "Cereal Representação Agropecuária",
     "k": "CEREAL COMERCIO EXPORTACAO E REPRESENTACAO AGROPECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 51392.85
+    "uv": 19396.03
    },
    {
     "c": "CRA025007VE",
@@ -10530,7 +10723,15 @@
     "emp": "Neomille",
     "k": "NEOMILLE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 503774.1
+    "uv": 20637.62
+   },
+   {
+    "c": "CRA025008C3",
+    "t": "CRA",
+    "emp": "Neomille",
+    "k": "NEOMILLE",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 153360.71
    },
    {
     "c": "CRA025008HM",
@@ -10538,7 +10739,7 @@
     "emp": "Cocal",
     "k": "COCAL COMERCIO INDUSTRIA CANAA ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 61294443.18
+    "uv": 222304.76
    },
    {
     "c": "CRA025008HN",
@@ -10546,7 +10747,7 @@
     "emp": "Cocal",
     "k": "COCAL COMERCIO INDUSTRIA CANAA ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 7553.4
+    "uv": 761853.38
    },
    {
     "c": "CRA025008HR",
@@ -10554,7 +10755,7 @@
     "emp": "Nardini Agroindustrial",
     "k": "NARDINI AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1634574.24
+    "uv": 985862.18
    },
    {
     "c": "CRA025008N5",
@@ -10570,7 +10771,7 @@
     "emp": "Três Tentos",
     "k": "TRES TENTOS AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 382318.47
+    "uv": 127439.49
    },
    {
     "c": "CRA025008N9",
@@ -10578,7 +10779,7 @@
     "emp": "Três Tentos",
     "k": "TRES TENTOS AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 601726.92
+    "uv": 200575.64
    },
    {
     "c": "CRA025008NA",
@@ -10586,7 +10787,7 @@
     "emp": "Três Tentos",
     "k": "TRES TENTOS AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1828243.47
+    "uv": 924124.92
    },
    {
     "c": "CRA025008NB",
@@ -10594,7 +10795,7 @@
     "emp": "Bem Brasil",
     "k": "BEM BRASIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 286550.04
+    "uv": 58232.36
    },
    {
     "c": "CRA025008NE",
@@ -10610,7 +10811,7 @@
     "emp": "JF Citrus",
     "k": "JF CITRUS AGROPECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 594424.5
+    "uv": 1924.57
    },
    {
     "c": "CRA025008Y9",
@@ -10618,7 +10819,7 @@
     "emp": "Usina Batatais Açúcar e Álcool",
     "k": "USINA BATATAIS ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 97238.4
+    "uv": 44443.51
    },
    {
     "c": "CRA025008YA",
@@ -10626,7 +10827,7 @@
     "emp": "Usina Batatais Açúcar e Álcool",
     "k": "USINA BATATAIS ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 723163.47
+    "uv": 117681.46
    },
    {
     "c": "CRA025008YH",
@@ -10650,7 +10851,7 @@
     "emp": "JF Citrus",
     "k": "JF CITRUS AGROPECUARIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 182811.48
+    "uv": 60937.16
    },
    {
     "c": "CRA0250099D",
@@ -10658,7 +10859,7 @@
     "emp": "Seara",
     "k": "SEARA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 40527.0
+    "uv": 3995.52
    },
    {
     "c": "CRA025009EX",
@@ -10666,7 +10867,7 @@
     "emp": "Seara",
     "k": "SEARA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 90461.4
+    "uv": 30153.8
    },
    {
     "c": "CRA025009EY",
@@ -10698,7 +10899,7 @@
     "emp": "Jalles Machado",
     "k": "JALLES MACHADO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 594330.06
+    "uv": 35011.48
    },
    {
     "c": "CRA025009Q3",
@@ -10706,7 +10907,7 @@
     "emp": "Jalles Machado",
     "k": "JALLES MACHADO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 533942.97
+    "uv": 467503.38
    },
    {
     "c": "CRA025009VN",
@@ -10714,7 +10915,7 @@
     "emp": "Eucatex",
     "k": "EUCATEX INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 908536.17
+    "uv": 786384.25
    },
    {
     "c": "CRA025009VO",
@@ -10722,7 +10923,7 @@
     "emp": "Eucatex",
     "k": "EUCATEX INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 199326.78
+    "uv": 269066.65
    },
    {
     "c": "CRA025009VP",
@@ -10730,7 +10931,7 @@
     "emp": "Eucatex",
     "k": "EUCATEX INDUSTRIA E COMERCIO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 607436.07
+    "uv": 188833.82
    },
    {
     "c": "CRA02500A15",
@@ -10738,7 +10939,7 @@
     "emp": "Açucareira Quatá",
     "k": "ACUCAREIRA QUATA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 274353.15
+    "uv": 1225056.95
    },
    {
     "c": "CRA02500A17",
@@ -10754,7 +10955,7 @@
     "emp": "ACP Agro",
     "k": "ACP AGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 426935.97
+    "uv": 10388245.56
    },
    {
     "c": "CRA02500AC9",
@@ -10762,7 +10963,7 @@
     "emp": "Camil",
     "k": "CAMIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6113527.02
+    "uv": 314630.24
    },
    {
     "c": "CRA02500ACA",
@@ -10770,7 +10971,7 @@
     "emp": "Camil",
     "k": "CAMIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1463470.71
+    "uv": 84053.98
    },
    {
     "c": "CRA02500ACB",
@@ -10786,7 +10987,7 @@
     "emp": "Camil",
     "k": "CAMIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 9784.38
+    "uv": 3261.46
    },
    {
     "c": "CRA02500AHT",
@@ -10794,7 +10995,7 @@
     "emp": "C.Vale",
     "k": "C VALE COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 702951.42
+    "uv": 793526.74
    },
    {
     "c": "CRA02500AHV",
@@ -10802,7 +11003,7 @@
     "emp": "C.Vale",
     "k": "C VALE COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 104639.99
+    "uv": 2080.47
    },
    {
     "c": "CRA02500B9L",
@@ -10818,7 +11019,7 @@
     "emp": "Griffood",
     "k": "GRIFFOOD BRASIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 12373.92
+    "uv": 3726.46
    },
    {
     "c": "CRA02500B9N",
@@ -10826,7 +11027,7 @@
     "emp": "Griffood",
     "k": "GRIFFOOD BRASIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 560673.69
+    "uv": 186891.23
    },
    {
     "c": "CRA02500B9O",
@@ -10834,7 +11035,7 @@
     "emp": "Griffood",
     "k": "GRIFFOOD BRASIL ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 94638.66
+    "uv": 1965.66
    },
    {
     "c": "CRA02500B9T",
@@ -10882,7 +11083,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 10128.06
+    "uv": 3376.02
    },
    {
     "c": "CRA02500BVX",
@@ -10890,7 +11091,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 354266.85
+    "uv": 74063.16
    },
    {
     "c": "CRA02500BW5",
@@ -10898,7 +11099,7 @@
     "emp": "JS Rural",
     "k": "JS RURAL SOCIEDADE UNIPESSOAL LIMITADA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5859126.84
+    "uv": 1728408.96
    },
    {
     "c": "CRA02500C1D",
@@ -10906,7 +11107,7 @@
     "emp": "Alibem",
     "k": "ALIBEM ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 18753.3
+    "uv": 6251.1
    },
    {
     "c": "CRA02500C6X",
@@ -10922,7 +11123,7 @@
     "emp": "Lasa",
     "k": "LASA LINHARES AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 40013882.12
+    "uv": 3998713.11
    },
    {
     "c": "CRA02500CT5",
@@ -10933,12 +11134,20 @@
     "uv": 13531.4
    },
    {
+    "c": "CRA02600001",
+    "t": "CRA",
+    "emp": "Vera Cruz Agropecuária",
+    "k": "VERA CRUZ AGRO PECUARIA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 95621.54
+   },
+   {
     "c": "CRA02600002",
     "t": "CRA",
     "emp": "Canal Securitizadora",
     "k": "CANAL DE SECURITIZACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 58952.13
+    "uv": 22160.72
    },
    {
     "c": "CRA0260005Q",
@@ -10954,7 +11163,7 @@
     "emp": "Frigol",
     "k": "FRIGOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 29314.47
+    "uv": 9771.49
    },
    {
     "c": "CRA0260005V",
@@ -10962,7 +11171,7 @@
     "emp": "Frigol",
     "k": "FRIGOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1415130.06
+    "uv": 59880.37
    },
    {
     "c": "CRA0260005W",
@@ -10978,7 +11187,7 @@
     "emp": "Caramuru",
     "k": "CARAMURU ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4729608.6
+    "uv": 1278333.62
    },
    {
     "c": "CRA026000ME",
@@ -10986,7 +11195,7 @@
     "emp": "Caramuru",
     "k": "CARAMURU ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 11953.05
+    "uv": 27542.71
    },
    {
     "c": "CRA026000MG",
@@ -10994,7 +11203,7 @@
     "emp": "Caramuru",
     "k": "CARAMURU ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 2941.48
+    "uv": 99551.42
    },
    {
     "c": "CRA026000S8",
@@ -11018,7 +11227,7 @@
     "emp": "Lar",
     "k": "LAR COOPERATIVA AGROINDUSTRIAL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 396450.81
+    "uv": 390557.59
    },
    {
     "c": "CRA026001JN",
@@ -11050,7 +11259,7 @@
     "emp": "Ecoagro Insumos Fiagro",
     "k": "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 463193.64
+    "uv": 164826.3
    },
    {
     "c": "CRA026001UT",
@@ -11059,6 +11268,22 @@
     "k": "MINERVA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 104767.95
+   },
+   {
+    "c": "CRA0260020G",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 993844.83
+   },
+   {
+    "c": "CRA0260020J",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 993374.51
    },
    {
     "c": "CRA026002GX",
@@ -11098,7 +11323,7 @@
     "emp": "Seara",
     "k": "SEARA ALIMENTOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1099400.88
+    "uv": 45288.69
    },
    {
     "c": "CRA02600337",
@@ -11114,7 +11339,7 @@
     "emp": "Ceres Confinamento",
     "k": "CERES CONFINAMENTO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1904070.48
+    "uv": 634690.16
    },
    {
     "c": "CRA026003JT",
@@ -11138,7 +11363,7 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5592459.36
+    "uv": 3668273.98
    },
    {
     "c": "CRA0260040Q",
@@ -11146,7 +11371,7 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4866156.24
+    "uv": 4911002.2
    },
    {
     "c": "CRA026004H8",
@@ -11154,7 +11379,15 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4399354.71
+    "uv": 1029821.3
+   },
+   {
+    "c": "CRA026004H9",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 992787.44
    },
    {
     "c": "CRA026004HB",
@@ -11165,6 +11398,22 @@
     "uv": 4399354.71
    },
    {
+    "c": "CRA026004HC",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 992787.44
+   },
+   {
+    "c": "CRA026004HE",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 992787.44
+   },
+   {
     "c": "CRA026004HH",
     "t": "CRA",
     "emp": "Ceres Securitizadora",
@@ -11173,12 +11422,20 @@
     "uv": 4400836.49
    },
    {
+    "c": "CRA026004HI",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 993576.75
+   },
+   {
     "c": "CRA026004MP",
     "t": "CRA",
     "emp": "Vale do Tijuco",
     "k": "VALE DO TIJUCO ACUCAR E ALCOOL",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1781128.38
+    "uv": 1032998.69
    },
    {
     "c": "CRA026004XT",
@@ -11202,7 +11459,7 @@
     "emp": "Ceres Securitizadora",
     "k": "CERES SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4399522.27
+    "uv": 4498430.77
    },
    {
     "c": "CRA026005K2",
@@ -11210,7 +11467,7 @@
     "emp": "Artesanal Securitizadora",
     "k": "ARTESANAL SECURITIZADORA DE CREDITOS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5423732.94
+    "uv": 5874711.71
    },
    {
     "c": "CRA0260060P",
@@ -11218,7 +11475,7 @@
     "emp": "Amaggi",
     "k": "AGROPECUARIA MAGGI",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 320009.23
+    "uv": 923343.16
    },
    {
     "c": "CRA0260060Q",
@@ -11242,7 +11499,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5661953.7
+    "uv": 1887317.9
    },
    {
     "c": "CRA026006BU",
@@ -11250,7 +11507,7 @@
     "emp": "MBRF",
     "k": "MARFRIG GLOBAL FOODS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 5228163.24
+    "uv": 1742721.08
    },
    {
     "c": "CRA026006BW",
@@ -11285,6 +11542,14 @@
     "uv": 404883.96
    },
    {
+    "c": "CRA02600799",
+    "t": "CRA",
+    "emp": "Ceres Securitizadora",
+    "k": "CERES SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 993601.33
+   },
+   {
     "c": "CRA026007EP",
     "t": "CRA",
     "emp": "Café Brasil",
@@ -11298,7 +11563,7 @@
     "emp": "Ecoagro Insumos Fiagro",
     "k": "RESPONSABILIDADE LIMITADA DO ECOAGRO INSUMOS FIAGRO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 690525.3
+    "uv": 278718.5
    },
    {
     "c": "CRA026007VD",
@@ -11330,15 +11595,7 @@
     "emp": "Vale",
     "k": "VALE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 202847.04
-   },
-   {
-    "c": "EATEA3",
-    "t": "DEB",
-    "emp": "Amazonense de Transmissão de Energia",
-    "k": "EMPRESA AMAZONENSE DE TRANSMISSAO DE ENERGIA",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 189316.02
+    "uv": 2507337.0
    },
    {
     "c": "ENTE18",
@@ -11355,14 +11612,6 @@
     "k": "EMPRESA PARAENSE DE TRANSMISSAO DE ENERGIA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 10910690.74
-   },
-   {
-    "c": "ETSG14",
-    "t": "DEB",
-    "emp": "EBTE",
-    "k": "EBTE EMPRESA BRASILEIRA DE TRANSMISSAO DE ENERGIA",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 189329.48
    },
    {
     "c": "FEPS11",
@@ -11389,12 +11638,12 @@
     "uv": 20939002.94
    },
    {
-    "c": "IEPS11",
+    "c": "HFTE14",
     "t": "DEB",
-    "emp": "Interligação Elétrica Paraguaçu",
-    "k": "INTERLIGACAO ELETRICA PARAGUACU",
+    "emp": "Hidro Forte",
+    "k": "HIDRO FORTE ADMINISTRACAO E OPERACAO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 189765.89
+    "uv": 2670760.41
    },
    {
     "c": "IGSS11",
@@ -11538,7 +11787,7 @@
     "emp": "Petrobras",
     "k": "PETROLEO BRASILEIRO PETROBRAS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 4302670.11
+    "uv": 323148.49
    },
    {
     "c": "NC002301D8F",
@@ -11602,7 +11851,7 @@
     "emp": "Alsol",
     "k": "ALSOL ENERGIAS RENOVAVEIS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 23584.63
+    "uv": 23176.95
    },
    {
     "c": "NC0026006SK",
@@ -11629,12 +11878,20 @@
     "uv": 73142.56
    },
    {
+    "c": "NC002600AI3",
+    "t": "NC",
+    "emp": "Posidonia Shipping & Trading",
+    "k": "POSIDONIA SHIPPING TRADING",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 24288476.0
+   },
+   {
     "c": "NC002600G7H",
     "t": "NC",
     "emp": "Gerais Saneamento",
     "k": "GERAIS SANEAMENTO",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 27309206.22
+    "uv": 754035.34
    },
    {
     "c": "NC002600HG3",
@@ -11658,7 +11915,7 @@
     "emp": "Travessia Créditos Financeiros",
     "k": "TRAVESSIA SECURITIZADORA DE CREDITOS FINANCEIROS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 1932491.02
+    "uv": 570594.98
    },
    {
     "c": "PCHSE6",
@@ -11685,14 +11942,6 @@
     "uv": 10008401.15
    },
    {
-    "c": "PNVL16",
-    "t": "DEB",
-    "emp": "Dimed",
-    "k": "DIMED DISTRIBUIDORA DE MEDICAMENTOS",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 375713.61
-   },
-   {
     "c": "PPTE11",
     "t": "DEB",
     "emp": "Porto Primavera Transmissora",
@@ -11715,22 +11964,6 @@
     "k": "RIO CASCA ENERGETICA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 180513.81
-   },
-   {
-    "c": "RCHE12",
-    "t": "DEB",
-    "emp": "RCH Empreendimentos Imobiliários",
-    "k": "RCH EMPREENDIMENTOS IMOBILIARIOS",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 376673.51
-   },
-   {
-    "c": "RDLA17",
-    "t": "DEB",
-    "emp": "Via Lagos",
-    "k": "CONCESSIONARIA DA RODOVIA DOS LAGOS",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 824586.13
    },
    {
     "c": "RIOS11",
@@ -11770,7 +12003,7 @@
     "emp": "Sobral I Solar",
     "k": "SOBRAL I SOLAR ENERGIA SPE",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 174205.57
+    "uv": 1673088.14
    },
    {
     "c": "SPEA13",
@@ -11779,14 +12012,6 @@
     "k": "SPE CONCESSIONARIA DO AEROPORTO DE ILHEUS",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 7363905.24
-   },
-   {
-    "c": "TSSAA9",
-    "t": "DEB",
-    "emp": "Travessia Securitizadora",
-    "k": "TRAVESSIA SECURITIZADORA",
-    "msg": "tem negócio mas não tem PU par (sem % do par)",
-    "uv": 6156682.48
    },
    {
     "c": "TSSAB9",
@@ -11811,6 +12036,22 @@
     "k": "VERT SECURITIZADORA",
     "msg": "tem negócio mas não tem PU par (sem % do par)",
     "uv": 421736.0
+   },
+   {
+    "c": "VERTE8",
+    "t": "DEB",
+    "emp": "Vert Companhia Securitizadora",
+    "k": "VERT SECURITIZADORA",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 226859.55
+   },
+   {
+    "c": "VIMT13",
+    "t": "DEB",
+    "emp": "Via Brasil MT-320",
+    "k": "VIA BRASIL MT 320 CONCESSIONARIA DE RODOVIAS",
+    "msg": "tem negócio mas não tem PU par (sem % do par)",
+    "uv": 1506043.79
    },
    {
     "c": "VLIDA0",
@@ -11859,80 +12100,96 @@
     "t": "CRI",
     "emp": "Cyrela Empreendimentos e Participações",
     "k": "CYRELA BRAZIL REALTY EMPREENDIMENTOS E PARTICIPACOES",
-    "msg": "yield 8.88 × taxa ANBIMA 5.88 com preços iguais (98.5/100.0)",
-    "dif": 3.0
+    "msg": "yield 4.09 × taxa ANBIMA 5.86 com preços iguais (100.9/100.0)",
+    "dif": -1.77
+   },
+   {
+    "c": "AEGP19",
+    "t": "DEB",
+    "emp": "Aegea",
+    "k": "AEGEA SANEAMENTO E PARTICIPACOES",
+    "msg": "yield 4.74 × taxa ANBIMA 3.10 com preços iguais (96.7/98.6)",
+    "dif": 1.64
    },
    {
     "c": "BRST11",
     "t": "DEB",
     "emp": "Brisanet",
     "k": "BRISANET SERVICOS DE TELECOMUNICACOES",
-    "msg": "yield 7.20 × taxa ANBIMA 5.13 com preços iguais (99.0/100.5)",
-    "dif": 2.07
+    "msg": "yield 7.76 × taxa ANBIMA 5.22 com preços iguais (98.6/100.4)",
+    "dif": 2.54
    },
    {
-    "c": "CASN13",
+    "c": "CCROB4",
     "t": "DEB",
-    "emp": "Casan",
-    "k": "CATARINENSE DE AGUAS E SANEAMENTO CASAN",
-    "msg": "yield 4.70 × taxa ANBIMA 3.08 com preços iguais (100.7/102.1)",
-    "dif": 1.62
+    "emp": "Motiva",
+    "k": "MOTIVA INFRAESTRUTURA DE MOBILIDADE",
+    "msg": "yield 7.28 × taxa ANBIMA 5.67 com preços iguais (97.2/98.7)",
+    "dif": 1.61
    },
    {
     "c": "CPLD15",
     "t": "DEB",
     "emp": "Copel Distribuição",
     "k": "COPEL DISTRIBUICAO",
-    "msg": "yield 4.99 × taxa ANBIMA 3.23 com preços iguais (99.2/100.9)",
-    "dif": 1.76
+    "msg": "yield 4.99 × taxa ANBIMA 3.24 com preços iguais (99.2/100.9)",
+    "dif": 1.75
    },
    {
-    "c": "CRA0220099D",
+    "c": "CRA02200795",
     "t": "CRA",
-    "emp": "Central Cresol Baser",
-    "k": "CENTRAL CRESOL BASER",
-    "msg": "yield -0.55 × taxa ANBIMA 1.31 com preços iguais (101.7/100.8)",
-    "dif": -1.86
+    "emp": "Araguaia",
+    "k": "ARAGUAIA",
+    "msg": "yield 11.00 × taxa ANBIMA 7.37 com preços iguais (98.4/100.4)",
+    "dif": 3.63
+   },
+   {
+    "c": "CRA0240005N",
+    "t": "CRA",
+    "emp": "Cereal Representação Agropecuária",
+    "k": "CEREAL COMERCIO EXPORTACAO E REPRESENTACAO AGROPECUARIA",
+    "msg": "yield 3.67 × taxa ANBIMA 1.86 com preços iguais (98.2/99.9)",
+    "dif": 1.81
    },
    {
     "c": "ENJG21",
     "t": "DEB",
     "emp": "Energética Jaguara",
     "k": "ENERGETICA JAGUARA",
-    "msg": "yield 7.33 × taxa ANBIMA 5.01 com preços iguais (99.8/100.4)",
-    "dif": 2.32
+    "msg": "yield 6.82 × taxa ANBIMA 5.11 com preços iguais (99.9/100.4)",
+    "dif": 1.71
    },
    {
     "c": "ENMI21",
     "t": "DEB",
     "emp": "Energética Miranda",
     "k": "ENERGETICA MIRANDA",
-    "msg": "yield 6.53 × taxa ANBIMA 4.95 com preços iguais (100.0/100.4)",
-    "dif": 1.58
-   },
-   {
-    "c": "ENMTA3",
-    "t": "DEB",
-    "emp": "Energisa MT",
-    "k": "ENERGISA MATO GROSSO DISTRIBUIDORA DE ENERGIA",
-    "msg": "yield 6.55 × taxa ANBIMA 4.19 com preços iguais (98.1/100.0)",
-    "dif": 2.36
+    "msg": "yield 6.53 × taxa ANBIMA 4.89 com preços iguais (100.0/100.4)",
+    "dif": 1.64
    },
    {
     "c": "ETEN12",
     "t": "DEB",
     "emp": "Energisa Transmissão",
     "k": "ENERGISA TRANSMISSAO DE ENERGIA",
-    "msg": "yield 7.25 × taxa ANBIMA 5.20 com preços iguais (97.5/99.2)",
-    "dif": 2.05
+    "msg": "yield 7.25 × taxa ANBIMA 5.07 com preços iguais (97.5/99.3)",
+    "dif": 2.18
    },
    {
-    "c": "UNTE11",
+    "c": "OMGE41",
     "t": "DEB",
-    "emp": "Unifique",
-    "k": "UNIFIQUE TELECOMUNICACOES",
-    "msg": "yield 6.83 × taxa ANBIMA 4.16 com preços iguais (98.9/100.9)",
-    "dif": 2.67
+    "emp": "Serena Geração",
+    "k": "SERENA GERACAO",
+    "msg": "yield 7.95 × taxa ANBIMA 5.94 com preços iguais (98.7/99.6)",
+    "dif": 2.01
+   },
+   {
+    "c": "RSAN34",
+    "t": "DEB",
+    "emp": "Aegea",
+    "k": "AEGEA SANEAMENTO E PARTICIPACOES",
+    "msg": "yield 6.68 × taxa ANBIMA 5.10 com preços iguais (98.5/99.5)",
+    "dif": 1.58
    }
   ],
   "preco_extremo": [
@@ -11953,6 +12210,15 @@
     "msg": "7.5% do par",
     "ud": "2026-11-13",
     "uv": 399689.58
+   },
+   {
+    "c": "BHIAB1",
+    "t": "DEB",
+    "emp": "Casas Bahia",
+    "k": "GRUPO CASAS BAHIA",
+    "msg": "10.0% do par",
+    "ud": "2026-11-26",
+    "uv": 1995355.22
    },
    {
     "c": "ELFA12",
@@ -12004,8 +12270,8 @@
     "t": "DEB",
     "emp": "CSN Mineração",
     "k": "CSN MINERACAO",
-    "msg": "45.2% do par sem evento de crédito",
-    "ud": "2026-11-23"
+    "msg": "45.5% do par sem evento de crédito",
+    "ud": "2026-11-27"
    },
    {
     "c": "CSNAA4",
@@ -12131,10 +12397,39 @@
     "t": "DEB",
     "emp": "CSN Mineração",
     "k": "CSN MINERACAO",
-    "msg": "negócio 45.2% × ANBIMA 56.6% do par",
-    "ud": "2026-11-23",
-    "uv": 547344.84,
-    "dif": -11.4
+    "msg": "negócio 45.5% × ANBIMA 57.3% do par",
+    "ud": "2026-11-27",
+    "uv": 458152.95,
+    "dif": -11.8
+   },
+   {
+    "c": "VERO13",
+    "t": "DEB",
+    "emp": "Vero",
+    "k": "VERO",
+    "msg": "negócio 59.7% × ANBIMA 80.1% do par",
+    "ud": "2026-11-25",
+    "uv": 727606.56,
+    "dif": -20.4
+   },
+   {
+    "c": "VERO44",
+    "t": "DEB",
+    "emp": "Vero",
+    "k": "VERO",
+    "msg": "negócio 68.6% × ANBIMA 79.0% do par",
+    "ud": "2026-11-25",
+    "uv": 41478.71,
+    "dif": -10.4
+   }
+  ],
+  "par_incoerente": [
+   {
+    "c": "CSCF11",
+    "t": "DEB",
+    "emp": "Consignados I Securitizadora",
+    "k": "CONSIGNADOS I SECURITIZADORA DE CREDITOS FINANCEIROS",
+    "msg": "PU par 10.57 × VNE 1000"
    }
   ],
   "yield_faltando": [
@@ -12148,70 +12443,62 @@
   ],
   "fora_da_curva_emissor": [
    {
-    "c": "VERO12",
+    "c": "VERO13",
     "t": "DEB",
     "emp": "Vero",
     "k": "VERO",
-    "msg": "yield 27.70 × mediana do emissor 16.58 (IPCA+, 8 títulos)",
-    "dif": 11.12
+    "msg": "yield 30.56 × mediana do emissor 18.57 (IPCA+, 8 títulos)",
+    "dif": 11.99
    },
    {
-    "c": "BCBF16",
+    "c": "HAPV15",
     "t": "DEB",
     "emp": "Hapvida",
     "k": "HAPVIDA PARTICIPACOES E INVESTIMENTOS",
-    "msg": "yield 30.32 × mediana do emissor 15.02 (DI+, 7 títulos)",
-    "dif": 15.3
-   },
-   {
-    "c": "RSAN34",
-    "t": "DEB",
-    "emp": "Aegea",
-    "k": "AEGEA SANEAMENTO E PARTICIPACOES",
-    "msg": "yield 4.98 × mediana do emissor 14.62 (IPCA+, 18 títulos)",
-    "dif": -9.64
+    "msg": "yield 20.10 × mediana do emissor 11.32 (DI+, 7 títulos)",
+    "dif": 8.78
    },
    {
     "c": "RBRAI7",
     "t": "DEB",
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
-    "msg": "yield 21.71 × mediana do emissor 2.40 (DI+, 10 títulos)",
-    "dif": 19.31
+    "msg": "yield 21.71 × mediana do emissor 2.39 (DI+, 10 títulos)",
+    "dif": 19.32
    },
    {
     "c": "RBRAW3",
     "t": "DEB",
     "emp": "Opea Securitizadora",
     "k": "OPEA SECURITIZADORA",
-    "msg": "yield 7.95 × mediana do emissor 2.40 (DI+, 10 títulos)",
-    "dif": 5.55
+    "msg": "yield 7.95 × mediana do emissor 2.39 (DI+, 10 títulos)",
+    "dif": 5.56
    },
    {
     "c": "VERTC8",
     "t": "DEB",
     "emp": "Vert Companhia Securitizadora",
     "k": "VERT SECURITIZADORA",
-    "msg": "yield -1.82 × mediana do emissor 2.92 (DI+, 20 títulos)",
-    "dif": -4.75
+    "msg": "yield -1.82 × mediana do emissor 3.10 (DI+, 18 títulos)",
+    "dif": -4.92
    },
    {
     "c": "ZXEI11",
     "t": "DEB",
     "emp": "ZX Renováveis",
     "k": "ZX RENOVAVEIS",
-    "msg": "yield 9.46 × mediana do emissor -0.25 (IPCA+, 3 títulos)",
-    "dif": 9.71
+    "msg": "yield 9.43 × mediana do emissor -0.26 (IPCA+, 3 títulos)",
+    "dif": 9.69
    }
   ],
   "na_securitizadora": [
    {
     "k": "RIZA SECURITIZADORA",
-    "n": 174
+    "n": 177
    },
    {
     "k": "OPEA SECURITIZADORA",
-    "n": 87
+    "n": 89
    },
    {
     "k": "CANAL DE SECURITIZACAO",
@@ -12219,7 +12506,7 @@
    },
    {
     "k": "PROVINCIA DE SECURITIZACAO",
-    "n": 60
+    "n": 63
    },
    {
     "k": "BARI SECURITIZADORA",
@@ -12227,7 +12514,7 @@
    },
    {
     "k": "LEVERAGE SECURITIZADORA",
-    "n": 26
+    "n": 27
    },
    {
     "k": "TRAVESSIA SECURITIZADORA",
@@ -12242,15 +12529,15 @@
     "n": 14
    },
    {
+    "k": "CERES SECURITIZADORA",
+    "n": 14
+   },
+   {
     "k": "KANASTRA SECURITIZADORA",
     "n": 10
    },
    {
     "k": "HABITASEC SECURITIZADORA",
-    "n": 5
-   },
-   {
-    "k": "CERES SECURITIZADORA",
     "n": 5
    },
    {
@@ -12290,6 +12577,15 @@
     "n": 1
    }
   ],
-  "sem_nome_curto": []
+  "sem_nome_curto": [
+   "ABIOYE EMPREENDIMENTOS E PARTICIPACOES",
+   "BFABBRIANI INCORPORADORA",
+   "INDIANOPOLIS EMPREENDIMENTOS IMOBILIARIOS SPE",
+   "MAISON VISCONDE EMPREENDIMENTOS SPE",
+   "MTR ESSENCIA BRASILEIRA EMPREENDIMENTOS SPE",
+   "PLAENGE EMPREENDIMENTOS",
+   "SPE CASAS FAICALVILLE INCORPORADORA",
+   "VILLA ART INDAIA EMPREENDIMENTO SPE"
+  ]
  }
 }
